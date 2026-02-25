@@ -12,7 +12,7 @@ This page goes over how to **create and properly configure an Animator Controlle
 ## Overview
 
 Every Character Type can include an **Animator Controller**.  
-This controller provides uesable animations from the sprites contained within the **Base Spritesheet** set in the **Character Type**
+This controller provides useable animations from the sprites contained within the **Base Spritesheet** in the **Character Type**
 
 All characters using the same **Character Type** can use a single **Animator Controller**. No need to create a separate Animator/Override Controller for every new character.
 

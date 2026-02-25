@@ -2269,10 +2269,40 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-templates.md",
+      "source_relative_path": "docs/character-templates/character-templates.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-templates.html"
+          "relative_path": "docs/character-templates/character-templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-templates/layered-character-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-templates/layered-character-templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-templates/randomized-layered-character-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-templates/randomized-layered-character-templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-templates/unified-character-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-templates/unified-character-templates.html"
         }
       },
       "version": ""
@@ -2363,6 +2393,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/project-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/temp.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/temp.html"
         }
       },
       "version": ""
@@ -2612,6 +2652,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-renderer-components/unified-character-renderer-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-renderer-components/unified-character-renderer-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/create-character-template-guide.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/create-character-template-guide.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-templates/layered-character-group-template.png",
       "output": {
         "resource": {
@@ -2642,10 +2702,40 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-templates/unified-character-template.png",
+      "source_relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-name.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-templates/unified-character-template.png"
+          "relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-name.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-spritesheet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-spritesheet.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/unified-character-templates/unified-character-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/unified-character-templates/unified-character-template.png"
         }
       },
       "version": ""

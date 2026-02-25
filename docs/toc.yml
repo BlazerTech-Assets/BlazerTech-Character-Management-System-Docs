@@ -15,8 +15,6 @@
     href: unified-character-type.md
   - name: Layered Character Type
     href: layered-character-type.md
-  - name: Character Templates
-    href: character-templates.md
   - name: Character Usage
     href: character-usage.md
   - name: Character Animation Setup
@@ -35,6 +33,16 @@
     href: character-grouping-system.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
+
+  - name: 📋Character Templates
+  - name: Character Templates
+    href: character-templates/character-templates.md
+  - name: Unified Character Templates
+    href: character-templates/unified-character-templates.md
+  - name: Layered Character Templates
+    href: character-templates/layered-character-templates.md
+  - name: Temp
+    href: temp.md
 
   - name: 🧑Character Creation Menu System (Alpha)
   - name: Character Creator Overview

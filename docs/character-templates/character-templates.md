@@ -8,6 +8,11 @@ summary: Blueprints for creating characters during runtime.
 A **Character Template** is a blueprint for creating characters from a defined [Character Type](xref:character-types).  
 They provide an easy way to use characters anywhere in your project.
 
+**Character Templates** can be created by **right clicking** the project window and navigating to  
+`Create > BlazerTech > Character Management System > Character Templates`.
+
+<img src="~/images/character-templates/create-character-template-guide.png" alt="Create Character Tempalte Guide" width="500" />
+
 ---
 
 ## Shared Fields
@@ -16,9 +21,9 @@ Fields required by all **Character Templates**.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Character Type** | `UnifiedCharacterTypeSO` / `LayeredCharacterTypeSO` | Reference to the Character Type this template is based on.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType) |
-| **Character Name** | `String` | Name for characters created from this template (does **not** need to be unique).<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName) |
-| **Character Display Name** | `String` | Optional display name shown for characters created from this template.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName) |
+| **Character Type** | `UnifiedCharacterTypeSO` / `LayeredCharacterTypeSO` | Reference to the Character Type the template is based on.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType) |
+| **Character Name** | `String` | Name for characters created from the template (does **not** need to be unique).<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName) |
+| **Character Display Name** | `String` | Optional display name shown for characters created from the template.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName) |
 
 ---
 

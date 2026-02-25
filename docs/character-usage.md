@@ -166,7 +166,7 @@ The **Random Layered Character Renderer** component creates and renders a **comp
 All **Animator Handler components** require a reference to an **Animator component**.
 
 > [!TIP]
-> An **Animator Controller** can be assigned to any **Character Type** and be automatically used a character of that type is used.
+> An **Animator Controller** can be assigned to any **Character Type** and be automatically used when a character of that type is used.
 
 ---
 

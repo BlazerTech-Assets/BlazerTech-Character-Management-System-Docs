@@ -27,7 +27,7 @@ This guide covers the **requirements** and **installation steps** for the **Blaz
 
 ## Installation Steps
 
-### prerequisites
+### Prerequisites
 Make sure **Naughty Attributes** and **Addressables** are both installed and the **Addressables Settings file** has been creeated ([See above^^](#required-packages)).
 
 ### Importing

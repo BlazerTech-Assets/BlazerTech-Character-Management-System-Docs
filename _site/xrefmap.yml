@@ -8865,7 +8865,7 @@ references:
   href: docs/character-layers.html
 - uid: character-templates
   name: Character Templates
-  href: docs/character-templates.html
+  href: docs/character-templates/character-templates.html
 - uid: character-type-core
   name: Character Type Core
   href: docs/character-type-core.html
@@ -8893,6 +8893,12 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
+- uid: temp
+  name: temp
+  href: docs/temp.html
+- uid: unified-character-templates
+  name: Unified Character Templates
+  href: docs/character-templates/unified-character-templates.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html
