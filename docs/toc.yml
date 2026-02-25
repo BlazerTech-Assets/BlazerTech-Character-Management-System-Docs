@@ -41,6 +41,8 @@
     href: character-templates/unified-character-templates.md
   - name: Layered Character Templates
     href: character-templates/layered-character-templates.md
+  - name: Randomized Layered Character Templates
+    href: character-templates/randomized-layered-character-templates.md
   - name: Temp
     href: temp.md
 

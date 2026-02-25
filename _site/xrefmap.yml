@@ -8896,9 +8896,9 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
-- uid: temp
-  name: Layered Character Templates
-  href: docs/temp.html
+- uid: randomized-layered-character-templates
+  name: Randomized Layered Character Templates
+  href: docs/character-templates/randomized-layered-character-templates.html
 - uid: unified-character-templates
   name: Unified Character Templates
   href: docs/character-templates/unified-character-templates.html

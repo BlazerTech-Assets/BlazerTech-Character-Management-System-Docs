@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Randomized Layered Character Templates | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Randomized Layered Character Templates | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-templates/randomized-layered-character-templates.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Randomized Layered Character Templates | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Randomized Layered Character Templates | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Blueprints for creating randomized layered characters during runtime.">
+      <meta name="twitter:description" content="Blueprints for creating randomized layered characters during runtime.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,148 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="randomized-layered-character-templates">
+<h1 id="randomized-layered-character-templates">Randomized Layered Character Templates</h1>
 
+<p>A <strong>Randomized Layered Character Template</strong> is a <strong>Scriptable Object</strong> used to create <strong>Randomized Layered Characters</strong> at runtime.</p>
+<p>Unlike standard Character Templates where the output is always the same result, a Randomized Character Template creates a random character each time based on a set of configured rules.</p>
+<hr>
+<h2 id="when-should-you-use-this">When Should You Use this?</h2>
+<p>Use a <strong>Randomized Layered Character Template</strong> when:</p>
+<ul>
+<li>You need randomized NPC generation.</li>
+<li>You want varied background characters with set rules</li>
+<li>You want controlled randomness with filtering or weighting</li>
+</ul>
+<p>This system gives you fine control over how each layer is selected.</p>
+<hr>
+<h2 id="workflow-overview">Workflow Overview</h2>
+<ol>
+<li>Create a <strong>Randomized Layered Character Template</strong></li>
+<li>Assign a <strong>Character Type</strong></li>
+<li>Set the default name</li>
+<li>Configure Selection Mode for each layer</li>
+<li>Assign the template to a <strong>Layered Character Renderer</strong></li>
+</ol>
+<p>The template can now procedurally generate controlled, reusable character variations.</p>
+<hr>
+<h2 id="basic-setup">Basic Setup</h2>
+<h3 id="create">Create</h3>
+<p>To create a Randomized Layered Character Template <code>right click</code> the <code>Project window</code> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Randomized Layered Character Template</code>.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/randomized-layered-character-template.png" alt="Randomized Layered Character Template"></p>
+<h3 id="character-type">Character Type</h3>
+<p>Assign the <strong>Character Type asset</strong> that all characters created from this template will use.</p>
+<p><img src="../../images/character-templates/layered-character-templates/layered-character-template-character-type.png" alt="Layered Character Template: Character Type"></p>
+<p>This is used to determine:</p>
+<ul>
+<li>The available <strong>layers</strong> of the character</li>
+<li>The available <strong>Layer Options</strong> for each layer.</li>
+<li>The <strong>Animator Controller</strong> used to animate the character</li>
+</ul>
+<p>Once assigned, a configurable list of layers will appear.</p>
+<h3 id="default-character-name">Default Character Name</h3>
+<p>Set the default name assigned when a character is created from this template.</p>
+<p>You may also optionally set a <strong>Display Name</strong> for use alongside created characters in-game.</p>
+<p><img src="../../images/character-templates/layered-character-templates/layered-character-template-character-name.png" alt="Layered Character Template: Character Name"></p>
+<hr>
+<h2 id="layer-randomization-settings">Layer Randomization Settings</h2>
+<p>When a <strong>Character Type</strong> has been assigned, a list of layers appears.<br>
+Each entry represents a layer defined in the <strong>Character Type</strong>.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/randomized-layered-character-template-layers-list.png" alt="Layered Character Template: Layers List"></p>
+<p>Each entry has a <strong>Selection Mode</strong> which determines how a <strong>Layer Option</strong> is chosen for that layer.<br>
+Each layer can be configured independently.</p>
+<hr>
+<h3 id="selection-mode-any">Selection Mode: Any</h3>
+<p>Selects a <strong>Layer Option</strong> completely at random from all available options.<br>
+This is the default and simplest option.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-any.png" alt="Selection Mode: Any"></p>
+<p><code>Allow Blank</code> determines if a blank <strong>Layer Option</strong> can be selected.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>Allow Blank</code> can only be enabled if the layer itself supports blank options.</p>
+</div>
+<p><strong>Best for</strong>: Fully random generation with minimal setup.</p>
+<hr>
+<h3 id="selection-mode-allow-list">Selection Mode: Allow List</h3>
+<p>Selects randomly from a specific list of allowed Layer Options.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-allow-list.png" alt="Selection Mode: Allow List"></p>
+<p><strong>Pros</strong>:</p>
+<ul>
+<li>Precise control over available options</li>
+</ul>
+<p><strong>Cons</strong>:</p>
+<ul>
+<li>Can be hard to manage if <strong>Layers Options</strong> are change often.</li>
+</ul>
+<hr>
+<h3 id="selection-mode-weighted-allow-list">Selection Mode: Weighted Allow List</h3>
+<p>Works like the standard <a href="#selection-mode-allow-list">Allow List</a> with the addition of a <code>Weight</code> property for each <strong>Layer Option</strong> selected.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-weighted-allow-list.png" alt="Selection Mode: Weighted Allow List"></p>
+<p>Higher weights increase the likelihood of selection.</p>
+<p><strong>Example</strong>: If Option A has weight 2 and Option B has weight 1, Option A is twice as likely to be selected.</p>
+<p><strong>Pros</strong>:</p>
+<ul>
+<li>Precise control over available options</li>
+<li>Adjustable probability</li>
+</ul>
+<p><strong>Cons</strong>:</p>
+<ul>
+<li>Can be hard to manage if <strong>Layers Options</strong> are added/removed often.</li>
+<li>Requires manual balancing</li>
+</ul>
+<p><strong>Best for</strong>: Common vs rare visual elements.</p>
+<hr>
+<h3 id="selection-mode-regex">Selection Mode: Regex</h3>
+<p>Uses a <strong>Regular Expression</strong> pattern to dynamically match Layer Options by name.
+<a href="https://en.wikipedia.org/wiki/Regular_expression">Learn more about Regular Expressions here</a></p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-regex.png" alt="Selection Mode: Regex"></p>
+<p>The regex pattern filters <strong>Layer Options</strong> at runtime and randomly chooses from the list.</p>
+<p>Example pattern: <strong>Flannel|T-shirt</strong></p>
+<p>This matches any <strong>Layer Option</strong> containing either “Flannel” or “T-shirt”.</p>
+<p>The <strong>Regex Matches</strong> list shows which options currently match your pattern.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>matches are evaluated at runtime, not cached in the editor. The <strong>Regex Matches</strong> list is for editor visualization only.</p>
+</div>
+<h4 id="additional-settings">Additional Settings</h4>
+<ul>
+<li><strong>Allow Blank</strong> — Include blank as a possible result</li>
+<li><strong>Case Sensitive</strong> — Toggle case sensitivity</li>
+<li><strong>Invert Match</strong> — Treat the pattern as a blacklist</li>
+</ul>
+<p><strong>Pros</strong>:</p>
+<ul>
+<li>Highly flexible</li>
+<li>Automatically adapts when <strong>Layer Options</strong> change</li>
+</ul>
+<p><strong>Cons</strong>:</p>
+<ul>
+<li>Steep learning curve if new to Regular Expressions</li>
+</ul>
+<p><strong>Best for</strong>: Situations where <strong>Layer Options</strong> are frequently added or removed.</p>
+<hr>
+<h3 id="selection-mode-fixed">Selection mode: Fixed</h3>
+<p>Always selects a specific Layer Option.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-fixed.png" alt="Selection Mode: Regex"></p>
+<p><strong>Best for</strong>: Layers that should never change.</p>
+<hr>
+<h3 id="selection-mode-blank">Selection Mode: Blank</h3>
+<p>Always selects a blank Layer Option.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/selection-mode-blank.png" alt="Selection Mode: Regex"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Only available if the layer is allowed to be blank. Can be toggled in the <a class="xref" href="../character-layers.html#include-none-option">Layer Definition Asset</a></p>
+</div>
+<p><strong>Best for</strong>: Explicitly disabling a layer.</p>
+<hr>
+<h2 id="runtime-usage">Runtime Usage</h2>
+<p><strong>Randomized Layered Character Templates</strong> can be used in the same <strong>Layered Character Renderer Component</strong> that the standard <strong>Layered Character Templates</strong> use. This component will create a character from the template and animate it using the <strong>Animator Controller</strong> assigned in the <strong>Character Type</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If <code>Use Cache</code> is enabled it will use the same character every time after the first character is created. If you want to create a new randomized character each time, disable this setting.</p>
+</div>
+<p><a class="xref" href="../character-usage.html#layered-character-template-renderer">Read More → Layered Character Renderer component</a></p>
 
 </article>
 

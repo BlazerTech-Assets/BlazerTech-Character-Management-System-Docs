@@ -2732,6 +2732,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/randomized-layered-character-template-layers-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/randomized-layered-character-template-layers-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/randomized-layered-character-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/randomized-layered-character-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-allow-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-allow-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-any.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-any.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-blank.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-blank.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-fixed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-fixed.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-regex.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-regex.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-weighted-allow-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/randomized-layered-character-templates/selection-mode-weighted-allow-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-templates/unified-character-templates/unified-character-template-character-name.png",
       "output": {
         "resource": {
