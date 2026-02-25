@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Layered Character Templates | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Layered Character Templates | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Layered Character Templates | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Layered Character Templates | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Create and configure templates for Layered Characters.">
+      <meta name="twitter:description" content="Create and configure templates for Layered Characters.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -101,7 +101,91 @@
         </div>
 
         <article data-uid="temp">
+<h1 id="layered-character-templates">Layered Character Templates</h1>
 
+<p>A <strong>Layered Character Template</strong> is a <strong>Scriptable Object</strong> used to create <strong>Layered Characters</strong> at runtime.</p>
+<p>It acts as a reusable blueprint that defines:</p>
+<ul>
+<li>The <strong>Character Type</strong> the character will use</li>
+<li>The <strong>default name</strong> assigned when created</li>
+<li>The <strong>Layer Options</strong> selected for each character layer</li>
+</ul>
+<p>Layered templates are designed for characters that support modular customization.</p>
+<hr>
+<h1 id="when-should-you-use-this">When Should You Use This?</h1>
+<p>Use a <strong>Layered Character Template</strong> when:</p>
+<ul>
+<li>Your character uses multiple visual layers</li>
+<li>You want customizable or editable characters</li>
+<li>You plan to support runtime editing or randomization</li>
+</ul>
+<p>Layered Templates work seamlessly with the <strong>Character Creator system</strong>.</p>
+<hr>
+<h1 id="creating-a-layered-character-template">Creating a Layered Character Template</h1>
+<ol>
+<li>Right click in the <strong>Project Window</strong></li>
+<li>Navigate to:
+Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Layered Character Template</li>
+</ol>
+<p><img src="../images/character-templates/layered-character-templates/layered-character-template.png" alt="Layered Character Template"></p>
+<hr>
+<h1 id="configuration">Configuration</h1>
+<p>Once created, configure the following fields.</p>
+<hr>
+<h2 id="1-character-type">1. Character Type</h2>
+<p>Assign the <strong>Character Type</strong> that all characters created from this template will use.</p>
+<p><img src="../images/character-templates/layered-character-templates/layered-character-template-character-type.png" alt="Layered Character Template: Character Type"></p>
+<p>This determines:</p>
+<ul>
+<li>The available <strong>layers</strong></li>
+<li>The available <strong>Layer Options</strong> per layer</li>
+<li>The <strong>Animator Controller</strong> used for animation</li>
+</ul>
+<p>Once assigned, the template will automatically display the layer list.</p>
+<hr>
+<h2 id="2-default-name">2. Default Name</h2>
+<p>Set the default name assigned when a character is created from this template.</p>
+<p>You may optionally assign a <strong>Display Name</strong> for use in UI or gameplay systems.</p>
+<p><img src="../images/character-templates/layered-character-templates/layered-character-template-character-name.png" alt="Layered Character Template: Character Name"></p>
+<hr>
+<h2 id="3-selecting-layer-options">3. Selecting Layer Options</h2>
+<p>When a Character Type is assigned, a list of layers appears.</p>
+<p><img src="../images/character-templates/layered-character-templates/layered-character-template-layers-list.png" alt="Layered Character Template: Layers List"></p>
+<p>Each entry represents a layer defined in the Character Type.</p>
+<p>For each layer:</p>
+<ul>
+<li>A dropdown lists all available <strong>Layer Options</strong></li>
+<li>Select the option that should be used by default</li>
+</ul>
+<p>When a character is created from this template, all selected layer options are applied automatically.</p>
+<p>This allows you to:</p>
+<ul>
+<li>Create predefined character presets</li>
+<li>Quickly define NPC variations</li>
+<li>Establish a default player appearance</li>
+</ul>
+<hr>
+<h1 id="runtime-usage">Runtime Usage</h1>
+<p>To use a <strong>Layered Character Template</strong>, assign it to a:</p>
+<p><strong>Layered Character Renderer</strong> component.</p>
+<p><img src="/images/character-renderer-components/layered-character-renderer-component.png" alt="Layered Character Renderer Component"></p>
+<p>At runtime the component will:</p>
+<ol>
+<li>Create a character instance from the template</li>
+<li>Apply the selected Layer Options</li>
+<li>Use the Character Type’s Animator Controller to animate the character</li>
+</ol>
+<p><a class="xref" href="character-usage.html#layered-character-template-renderer">Read More → Layered Character Renderer Component</a></p>
+<hr>
+<h1 id="workflow-summary">Workflow Summary</h1>
+<ol>
+<li>Create a <strong>Layered Character Template</strong></li>
+<li>Assign a <strong>Character Type</strong></li>
+<li>Set the default name</li>
+<li>Choose Layer Options for each layer</li>
+<li>Attach the template to a <strong>Layered Character Renderer</strong></li>
+</ol>
+<p>The template can now be reused to consistently generate that layered character configuration.</p>
 
 </article>
 

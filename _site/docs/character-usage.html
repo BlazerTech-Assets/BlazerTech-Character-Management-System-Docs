@@ -129,9 +129,10 @@
 <hr>
 <h2 id="the-character-shader">The Character Shader</h2>
 <p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
-Sprites from the <strong>Base Spritesheet</strong> assigned in a <strong>Character Type</strong> are rendered in a component such as a <strong>Sprite Renderer</strong> or used in an <strong>Animator Controller</strong>.</p>
+Sprites from the <strong>Base Spritesheet</strong> whic is assigned in a <strong>Character Type asset</strong> are rendered in a component such as a <strong>Sprite Renderer</strong> or used in an <strong>Animator Controller</strong>.</p>
 <p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
 If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<p>This approach means only the <strong>Base Spritesheet</strong> needs to be sliced, all other spritesheets should have a <code>Sprite Mode</code> of <code>Single</code>.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If a <strong>Character Renderer</strong> component is used the shader will be applied automatically.</p>

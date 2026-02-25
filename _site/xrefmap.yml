@@ -8881,6 +8881,9 @@ references:
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
+- uid: layered-character-templates
+  name: Layered Character Templates
+  href: docs/character-templates/layered-character-templates.html
 - uid: layered-character-type
   name: Layered Character Type
   href: docs/layered-character-type.html
@@ -8894,7 +8897,7 @@ references:
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
 - uid: temp
-  name: temp
+  name: Layered Character Templates
   href: docs/temp.html
 - uid: unified-character-templates
   name: Unified Character Templates

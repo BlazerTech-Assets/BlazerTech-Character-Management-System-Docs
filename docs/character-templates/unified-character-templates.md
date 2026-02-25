@@ -5,7 +5,7 @@ summary: Blueprints for creating unified characters during runtime.
 
 # Unified Character Templates
 
-A Unified Character Template is a scriptable Object and is the most common method to create Unified Characters at runtime.
+A **Unified Character Template** is a **Scriptable Object** and is the most common method to create **Unified Characters** at runtime.
 
 It acts as a reusable blueprint that defines:
 
@@ -15,11 +15,23 @@ It acts as a reusable blueprint that defines:
 
 ---
 
+## Workflow Overview
+
+1. Create a **Unified Character Template** asset
+2. Assign a **Character Type**
+3. Set the default name
+4. Assign a properly structured spritesheet
+5. Attach the template to a **Unified Character Renderer** component
+
+The template can now be reused anywhere in your project to consistently create that character.
+
+---
+
 ## Setup
 
 ### Create
 
-To create a Unified Character Template `right click` the Project window and navigate to  
+To create a Unified Character Template `right click` the `Project window` and navigate to  
 `Create > BlazerTech > Character Management System > Character Templates > Unified Character Template`.
 
 ![Unified Character Template](~/images/character-templates/unified-character-templates/unified-character-template.png)
@@ -32,8 +44,8 @@ Assign the **Character Type asset** that all characters created from this templa
 
 This is used to determine:
 
-- If the Character Spritesheet is valid
-- The Animator Controller used to animate the character
+- If the **Character Spritesheet** is valid
+- The **Animator Controller** used to animate the character
 
 
 ### Default Character Name
@@ -56,10 +68,12 @@ The assigned spritesheet:
 
 - Must be the same size as the **Base Spritesheet** in the Character Type  
 - Must contain all the same animations and frames in the **Base Spritesheet** in the Character Type.
+- Must have the `Sprite Mode` set to `Single` (See [The Character Shader](xref:character-usage#the-character-shader) for more info as to why)
 
 > [!CAUTION]
 > If the assigned spritesheet is not the correct size it will be rejected at runtime.
 
+---
 
 ## Runtime Usage
 

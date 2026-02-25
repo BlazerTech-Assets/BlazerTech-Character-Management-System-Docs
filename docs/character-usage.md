@@ -18,10 +18,12 @@ The **BlazerTech Character Management System** includes the runtime components n
 ## The Character Shader
 
 A shader is used to visually display a character over the **Base Spritesheet**.  
-Sprites from the **Base Spritesheet** assigned in a **Character Type** are rendered in a component such as a **Sprite Renderer** or used in an **Animator Controller**.
+Sprites from the **Base Spritesheet** whic is assigned in a **Character Type asset** are rendered in a component such as a **Sprite Renderer** or used in an **Animator Controller**.
 
 If a **Unified Character** is used, the shader takes the single spritesheet of the character and shows that over the **Base Spritesheet**.  
 If a **Layered Character** is used, the shader combines all layers into the final rendered character.  
+
+This approach means only the **Base Spritesheet** needs to be sliced, all other spritesheets should have a `Sprite Mode` of `Single`.
 
 > [!NOTE]
 > If a **Character Renderer** component is used the shader will be applied automatically.

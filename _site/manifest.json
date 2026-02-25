@@ -2652,6 +2652,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-renderer-components/layered-character-renderer-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-renderer-components/layered-character-renderer-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-renderer-components/unified-character-renderer-component.png",
       "output": {
         "resource": {
@@ -2682,20 +2692,40 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-templates/layered-character-template-layers-list.png",
+      "source_relative_path": "images/character-templates/layered-character-templates/layered-character-template-character-name.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-templates/layered-character-template-layers-list.png"
+          "relative_path": "images/character-templates/layered-character-templates/layered-character-template-character-name.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-templates/layered-character-template.png",
+      "source_relative_path": "images/character-templates/layered-character-templates/layered-character-template-character-type.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-templates/layered-character-template.png"
+          "relative_path": "images/character-templates/layered-character-templates/layered-character-template-character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/layered-character-templates/layered-character-template-layers-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/layered-character-templates/layered-character-template-layers-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-templates/layered-character-templates/layered-character-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/layered-character-templates/layered-character-template.png"
         }
       },
       "version": ""
