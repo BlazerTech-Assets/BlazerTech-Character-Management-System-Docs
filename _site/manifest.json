@@ -2389,10 +2389,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-usage/character-renderer-components/layered-character-template-renderer.md",
       "output": {
         ".html": {
           "relative_path": "docs/character-usage/character-renderer-components/layered-character-template-renderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/random-layered-character-renderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/random-layered-character-renderer.html"
         }
       },
       "version": ""
@@ -2732,26 +2752,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-renderer-components/layered-character-renderer-component.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-renderer-components/layered-character-renderer-component.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/character-renderer-components/unified-character-renderer-component.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-renderer-components/unified-character-renderer-component.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/character-templates/create-character-template-guide.png",
       "output": {
         "resource": {
@@ -2986,6 +2986,36 @@
       "output": {
         "resource": {
           "relative_path": "images/character-types/layered-character-type-asset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-renderer-component/add-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-renderer-component/add-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-renderer-component/layered-character-renderer-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-renderer-component/layered-character-renderer-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/unified-character-renderer-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/unified-character-renderer-component.png"
         }
       },
       "version": ""

@@ -886,11 +886,21 @@
   },
   "docs/character-usage/character-renderer-components/character-renderer-components.html": {
     "href": "docs/character-usage/character-renderer-components/character-renderer-components.html",
+    "title": "Character Renderer Components | BlazerTech Character Management System",
+    "summary": "Character Renderer Components Character Renderer components will load and display characters depending on the type. Components Renderer Component Used For Layered Character Group Renderer Load a saved Layered Character from a group. Layered Character Template Renderer Create and render a Layered Character from a template. Unified Character Template Renderer Create and render a Unified Character from a template. Random Layered Character Renderer Create a new Layered Character with completely random layer options."
+  },
+  "docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.html": {
+    "href": "docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.html",
     "title": "| BlazerTech Character Management System",
     "summary": ""
   },
   "docs/character-usage/character-renderer-components/layered-character-template-renderer.html": {
     "href": "docs/character-usage/character-renderer-components/layered-character-template-renderer.html",
+    "title": "Layered Character Renderer Component | BlazerTech Character Management System",
+    "summary": "Layered Character Renderer Component Creates a layered character from a Layered Character Template and displays it. This component is responsible for: Creating a layered character Assigning the Character Shader Assigning the Animator Controller (Optional) Handling Overlay Layers Requirements: A Layered Character Type At least one Layered Character Template Setup Add Component Add the component to a game object by clicking the Add Component button at the bottom of the inspector window"
+  },
+  "docs/character-usage/character-renderer-components/random-layered-character-renderer.html": {
+    "href": "docs/character-usage/character-renderer-components/random-layered-character-renderer.html",
     "title": "| BlazerTech Character Management System",
     "summary": ""
   },

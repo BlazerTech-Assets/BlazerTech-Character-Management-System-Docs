@@ -8863,6 +8863,9 @@ references:
 - uid: character-layers
   name: Character Layers
   href: docs/character-layers.html
+- uid: character-renderer-components
+  name: Character Renderer Components
+  href: docs/character-usage/character-renderer-components/character-renderer-components.html
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates/character-templates.html
@@ -8881,6 +8884,9 @@ references:
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
+- uid: layered-character-template-renderer-component
+  name: Layered Character Renderer Component
+  href: docs/character-usage/character-renderer-components/layered-character-template-renderer.html
 - uid: layered-character-templates
   name: Layered Character Templates
   href: docs/character-templates/layered-character-templates.html
