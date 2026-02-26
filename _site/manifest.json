@@ -2329,10 +2329,90 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-usage.md",
+      "source_relative_path": "docs/character-usage/character-animator-handler-components/character-animator-handler-components.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-usage.html"
+          "relative_path": "docs/character-usage/character-animator-handler-components/character-animator-handler-components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-movement-controller-components/character-movement-controller-components.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-movement-controller-components/character-movement-controller-components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-movement-controller-components/top-down-movement-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-movement-controller-components/top-down-movement-controller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/character-renderer-components.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/character-renderer-components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/layered-character-template-renderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/layered-character-template-renderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/unified-character-template-renderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/unified-character-template-renderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-usage.html"
         }
       },
       "version": ""

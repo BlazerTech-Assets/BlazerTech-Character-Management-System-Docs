@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Usage | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Usage | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-usage.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-usage/character-usage.html">
+
+    <meta property="og:title" content="Character Usage | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Usage | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Included components for rendering and animating characters.">
+      <meta name="twitter:description" content="Included components for rendering and animating characters.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-usage">
+<h1 id="character-usage">Character Usage</h1>
+
+<p>The <strong>BlazerTech Character Management System</strong> includes the runtime components needed to <strong>load</strong>, <strong>render</strong>, <strong>animate</strong> and <strong>control</strong> characters.</p>
+<table>
+<thead>
+<tr>
+<th>Component Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#character-renderer-components">Character Renderer components</a></td>
+<td>Load and render characters.</td>
+</tr>
+<tr>
+<td><a href="#character-animator-handlers">Character Animator Handler component</a></td>
+<td>Control specific <strong>paramters</strong> set in an <strong>Animator Controller</strong> used to properly animate a character.</td>
+</tr>
+<tr>
+<td><a href="#character-controllers">Character Movement components</a></td>
+<td>Handle player input and movement logic.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="the-character-shader">The Character Shader</h2>
+<p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
+Sprites from the <strong>Base Spritesheet</strong> whic is assigned in a <strong>Character Type asset</strong> are rendered in a component such as a <strong>Sprite Renderer</strong> or used in an <strong>Animator Controller</strong>.</p>
+<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
+If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<p>This approach means only the <strong>Base Spritesheet</strong> needs to be sliced, all other spritesheets should have a <code>Sprite Mode</code> of <code>Single</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a <strong>Character Renderer</strong> component is used the shader will be applied automatically.</p>
+</div>
+<hr>
+<h2 id="character-renderer-components">Character Renderer Components</h2>
+<p>Character Renderer components will load and display any character regardless of the type</p>
+<h3 id="components">Components</h3>
+<table>
+<thead>
+<tr>
+<th>Renderer Component</th>
+<th>Used For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></td>
+<td>Load a saved <strong>Layered Character</strong> from a group.</td>
+</tr>
+<tr>
+<td><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></td>
+<td>Create and render a <strong>Layered Character</strong> from a template.</td>
+</tr>
+<tr>
+<td><a href="#unified-character-template-renderer">Unified Character Template Renderer</a></td>
+<td>Create and render a <strong>Unified Character</strong> from a template.</td>
+</tr>
+<tr>
+<td><a href="#random-layered-character-renderer">Random Layered Character Renderer</a></td>
+<td>Create a new <strong>Layered Character</strong> with completely random layer options.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="character-renderer-core-fields">Character Renderer Core Fields</h3>
+<p>All Character Renderer components have the following fields.</p>
+<h4 id="references">References</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renderer</strong></td>
+<td><code>Renderer</code></td>
+<td>Reference to a <strong>Renderer</strong> component such as a <strong>Sprite Renderer</strong>. Used to apply character shader.</td>
+</tr>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td><code>Bool</code></td>
+<td>Automatically assigns the Animator Controller from the referenced Character Type.</td>
+</tr>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>Reference to an <strong>Animator</strong> component to apply the animator controller. Only shown if  <strong>Set Animator Controller</strong> is true.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="loading-settings">Loading Settings</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Option to load character <strong>asynchronously</strong> or <strong>synchronously</strong>.</td>
+</tr>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td><code>Bool</code></td>
+<td>If true the the character will be loaded when the <strong>Start</strong> method is called.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="unified-character-template-renderer">Unified Character Template Renderer</h2>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html">UnifiedCharacterTemplateRenderer</a>.</li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li>A <a class="xref" href="../unified-character-type.html">Unified Character Type</a>.</li>
+<li>At least one <a class="xref" href="../character-templates/character-templates.html#unified-character-template">Unified Character Template</a>.</li>
+</ul>
+<p>The <strong>Unified Character Template Renderer</strong> component renderers a <strong>Unified Character</strong> from a <strong>Unified Character Template</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Unified Character Template</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, your character will be displayed.</li>
+</ol>
+<hr>
+<h2 id="layered-character-renderers">Layered Character Renderers</h2>
+<h3 id="layered-character-group-renderer">Layered Character Group Renderer</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html">LayeredCharacterGroupRenderer</a>.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="../layered-character-type.html">Layered Character Type</a>.</li>
+<li>At least one <strong>Layered Character</strong> saved in a group.</li>
+</ul>
+<p><a class="xref" href="../character-grouping-system.html">Read More → Character Groups</a></p>
+<p>The <strong>Layered Character Group Renderer</strong> component renderers a previously saved <strong>Layered Character</strong> from a <strong>Character Group</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Character Type</strong> you want to load a character from.</li>
+<li>Select the <strong>Character Group</strong> (Primary, Flexible or Fixed) and configure parameters.</li>
+</ol>
+<h4 id="character-groups">Character Groups</h4>
+<p>After a <strong>Character Type</strong> has been referenced, you can choose which group you want to load a <strong>Layered Character</strong> from:</p>
+<table>
+<thead>
+<tr>
+<th>Group Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Character Slot</strong></td>
+<td>A single character contained in the Character Type. No additional parameters required.</td>
+</tr>
+<tr>
+<td><strong>Flexible Group</strong></td>
+<td>A group of characters that can be added, removed, or edited at any time.</td>
+</tr>
+<tr>
+<td><strong>Fixed Group</strong></td>
+<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+</tr>
+</tbody>
+</table>
+<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Group Name</strong></td>
+<td><code>String</code></td>
+<td>A unique name used to find the fixed or flexible group.</td>
+</tr>
+<tr>
+<td><strong>Character Load Method</strong></td>
+<td><code>Enum</code></td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="layered-character-template-renderer">Layered Character Template Renderer</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html">LayeredCharacterTemplateRenderer</a>.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="../layered-character-type.html">Layered Character Type</a>.</li>
+<li>At least one <a class="xref" href="../character-templates/character-templates.html#layered-character-template">Layered Character Template</a>.</li>
+</ul>
+<p>The <strong>Layered Character Template Renderer</strong> component renderers a <strong>Layered Character</strong> from a <strong>Layered Character Template</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Layered Character Template</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, your character will be displayed.</li>
+</ol>
+<hr>
+<h3 id="random-layered-character-renderer">Random Layered Character Renderer</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html">RandomLayeredCharacterRenderer</a>.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="../layered-character-type.html">Layered Character Type</a>.</li>
+</ul>
+<p>The <strong>Random Layered Character Renderer</strong> component creates and renders a <strong>completely random Layered Character</strong>. A random option is chosen from every layer.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Layered Character Type</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, a new completely randomized character will be displayed.</li>
+</ol>
+<hr>
+<h2 id="character-animator-handlers">Character Animator Handlers</h2>
+<p><strong>Animator Handler components</strong> control parameters set within an Animator Controller.</p>
+<p>All <strong>Animator Handler components</strong> require a reference to an <strong>Animator component</strong>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>An <strong>Animator Controller</strong> can be assigned to any <strong>Character Type</strong> and be automatically used when a character of that type is used.</p>
+</div>
+<hr>
+<h3 id="top-down-character-animator-handler">Top Down Character Animator Handler</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html">TopDownCharacterAnimatorHandler</a>.</li>
+</ul>
+<p>The <strong>Top-Down Character Animator Handler</strong> synces <strong>parameters</strong> in an <strong>Animator Controller</strong> to values within the <a href="#top-down-movement-controller">Top Down Movement Controller</a>.</p>
+<h4 id="inspector-fields">Inspector Fields</h4>
+<p><strong>References:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>The <strong>Animator component</strong> used to set parameters.</td>
+</tr>
+<tr>
+<td><strong>Movement Controller</strong></td>
+<td><code>TopDownMovementController</code></td>
+<td>The <strong>Top Down Movement Controller</strong> component used to listen for movement.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Names:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Is Moving Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate whether the character is moving.<br>Set to <code>true</code> when movement is detected.</td>
+</tr>
+<tr>
+<td><strong>Horizontal Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for horizontal input.<br><code>-1</code> when moving left and <code>1</code> when moving right.</td>
+</tr>
+<tr>
+<td><strong>Vertical Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for vertical input.<br><code>-1</code> when moving down and <code>1</code> when moving up.</td>
+</tr>
+<tr>
+<td><strong>Sprint Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>sprinting</strong>.<br><code>True</code> when sprinting, otherwise <code>false</code>.<br>Only available when <code>Sprint</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
+</tr>
+<tr>
+<td><strong>Crouch Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>crouching</strong>.<br><code>True</code> when crouched, otherwise <code>false</code>.<br>Only available when <code>Crouch</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>Reads movement and state data from the referenced <strong>Top Down Movement Controller</strong>.</li>
+<li>Updates Animator Controller paramters in-real time to reflect the character's state.</li>
+<li>Animator Controller uses those parameters to play specific animations.</li>
+</ul>
+<p><strong>Available Methods:</strong></p>
+<ul>
+<li><code>ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
+<li><code>PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
+<li><code>PlayDefaultAnimation()</code>: Play the default animation state defined in the <strong>Animator Controller</strong>.</li>
+</ul>
+<p><img src="../../images/character-animation/top-down-character-animator-handler-component.png" alt="Top-Down Character Animator Handler Component"></p>
+<hr>
+<h3 id="top-down-character-physics-animator-handler">Top-Down Character Physics Animator Handler</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html">TopDownCharacterPhysicsAnimatorHandler</a>.</li>
+</ul>
+<p>The <strong>Top-Down Character Physics Animator Handler</strong> is physics-driven.<br>
+Every fixed update the position of the game object the component is attached to is compared to it's possition last frame.<br>
+This is used to determine the direction the character is moving and speed the character is traveling at.</p>
+<h4 id="inspector-fields-1">Inspector Fields</h4>
+<p><strong>References:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>The <strong>Animator component</strong> used to set parameters.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Names:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Is Moving Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate whether the character is moving.<br>Set to <code>true</code> when movement is detected.</td>
+</tr>
+<tr>
+<td><strong>Horizontal Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for horizontal input.<br><code>-1</code> when moving left and <code>1</code> when moving right.</td>
+</tr>
+<tr>
+<td><strong>Vertical Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for vertical input.<br><code>-1</code> when moving down and <code>1</code> when moving up.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sprint Animation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Sprint</strong></td>
+<td><code>Bool</code></td>
+<td>If true, enables sprinting animations when speed is greater than <strong>Sprint Min Speed</strong>.</td>
+</tr>
+<tr>
+<td><strong>Sprint Min Speed</strong></td>
+<td><code>Float</code></td>
+<td>Minimum speed required to trigger sprint animation.</td>
+</tr>
+<tr>
+<td><strong>Sprint Parameter Name</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for the sprint state (default: &quot;Is Sprinting&quot;).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Crouch Animation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Crouch</strong></td>
+<td><code>Bool</code></td>
+<td>If true, enables crouching animations when speed is less than <strong>Crouch Max Speed</strong>.</td>
+</tr>
+<tr>
+<td><strong>Crouch Max Speed</strong></td>
+<td><code>Float</code></td>
+<td>Maximum speed for crouch animations to be used.</td>
+</tr>
+<tr>
+<td><strong>Crouch Parameter Name</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for the crouch state (default: &quot;Is Crouching&quot;).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>Calculates movement each <code>FixedUpdate()</code> by comparing current and previous positions.</li>
+<li>Determines direction and speed, then updates Animator parameters.</li>
+<li>Optionally toggles sprint/crouch states when enabled.</li>
+<li>Animator Controller uses those parameters to play specific animations.</li>
+</ul>
+<p><strong>Available Methods:</strong></p>
+<ul>
+<li><code>ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
+<li><code>PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
+<li><code>PlayDefaultAnimation()</code>: Play the default animation state defined in the <strong>Animator Controller</strong>.</li>
+</ul>
+<p><img src="../../images/character-animation/top-down-character-physics-animator-handler-component.png" alt="Top-Down Character Physics Animator Handler Component"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Due to the nature of how the <strong>Top-Down Character Physics Animator Handler</strong> works, crouch animations can only be played when the character is moving.</p>
+</div>
+<hr>
+<h2 id="character-controllers">Character Controllers</h2>
+<p><strong>Character Controllers</strong> are included components which let the player control the movement of a game object.</p>
+<p>When used with a <strong>Character Animator Hander</strong> you can both control and aniamte any character with ease.</p>
+<hr>
+<h3 id="top-down-movement-controller">Top Down Movement Controller</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../../api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html">TopDownMovementController</a>.</li>
+</ul>
+<p>The <strong>Top Down Movement Controller</strong> handles player movement for top-down 2d games where there are 4 directions the player can move (Left, right, up, down).</p>
+<h4 id="input-configuration">Input Configuration</h4>
+<p>This component uses Unitys <strong>New Input System</strong>. Every input action is configurable.</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
+<h5 id="input-actions">Input Actions</h5>
+<table>
+<thead>
+<tr>
+<th>Input Action</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Action</strong></td>
+<td><code>Vector2</code></td>
+<td>The input action used to control player movement along the X and Y axes.</td>
+</tr>
+<tr>
+<td><strong>Sprint Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player sprint. (If enabled)</td>
+</tr>
+<tr>
+<td><strong>Crouch Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player crouch. (If enabled)</td>
+</tr>
+</tbody>
+</table>
+<p>A default <strong>Input Action asset</strong> is included under the <code>/Input Actions</code> subfolder.<br>
+This asset contains the default input actions for moving, sprinting and crouching.</p>
+<h5 id="auto-enable-actions">Auto Enable Actions</h5>
+<p>If <strong>Auto Enable Actions</strong> is checked, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
+This is useful when not using a <strong>PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html">project‑wide input actions asset</a> that handles enabling automatically.</p>
+<h4 id="movement-settings">Movement Settings</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Speed</strong></td>
+<td><code>Float</code></td>
+<td>Base walk speed (Default: <code>6.5</code>).</td>
+</tr>
+<tr>
+<td><strong>Can Move</strong></td>
+<td><code>Bool</code></td>
+<td>Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sprinting--crouching">Sprinting &amp; Crouching</h4>
+<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
+Each system has customizable speed and button mode options.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td><code>Float</code></td>
+<td>Movement speed while sprint or crouching.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Determines whether the button must be held or toggled. (Default: <code>Hold</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="references-1">References</h4>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rigidbody2D</strong></td>
+<td><code>Rigidbody2D</code></td>
+<td>Required reference used for applying movement.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="runtime-properties">Runtime Properties</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IsMoving</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently moving.</td>
+</tr>
+<tr>
+<td><strong>IsSprinting</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently sprinting.</td>
+</tr>
+<tr>
+<td><strong>IsCrouching</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently crouching.</td>
+</tr>
+<tr>
+<td><strong>Movement</strong></td>
+<td><code>Vector2</code></td>
+<td>Current normalized movement direction.</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Designed to be used along with a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
+</div>
+<hr>
+<h2 id="character-display-name-renderer">Character Display Name Renderer</h2>
+<p>The <strong>Character Display Name Renderer</strong> component provides an easy way to render the <code>Display Name</code> of a character on screen.</p>
+<h3 id="config">Config</h3>
+<p>Setup how you'll get a reference to a character. There are two options.</p>
+<ol>
+<li><strong>From Character Renderer</strong>
+<ul>
+<li>Assign a reference to a <a href="#character-renderer-components">Character Renderer component</a> and get the character from there.</li>
+</ul>
+</li>
+<li><strong>From Character Group</strong>
+<ul>
+<li>Find a character from a group. Assign the <strong>Character Type</strong> you want to use and the group you want to load from.</li>
+<li>Read more about character groups <a class="xref" href="../character-grouping-system.html">here</a>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="references-2">References</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display Name Parent</strong></td>
+<td><code>GameObject</code></td>
+<td>Parent GameObject used to disable text when <code>Display Name</code> is blank.</td>
+</tr>
+<tr>
+<td><strong>Display Name Text</strong></td>
+<td><code>TMP_Text</code></td>
+<td>Reference to a <code>TMP Text</code> component used to render the <code>Display Name</code> text.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use a canvas with a <code>Render Mode</code> set to <code>World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of our character and follow along with it.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-usage.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

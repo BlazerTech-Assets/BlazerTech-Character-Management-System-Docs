@@ -15,8 +15,32 @@
     href: unified-character-type.md
   - name: Layered Character Type
     href: layered-character-type.md
+
   - name: Character Usage
-    href: character-usage.md
+  - name: Overview
+    href: character-usage/character-usage.md
+  - name: Character Renderer Components
+    href: character-usage/character-renderer-components/character-renderer-components.md
+    items:
+      - name: Layered Character Template Renderer
+        href: character-usage/character-renderer-components/layered-character-template-renderer.md
+      - name: Unified Character Template Renderer
+        href: character-usage/character-renderer-components/unified-character-template-renderer.md
+
+  - name: Character Animator Handler Components
+    href: character-usage/character-animator-handler-components/character-animator-handler-components.md
+    items:
+      - name: Top Down Character Animator Handler
+        href: character-usage/character-animator-handler-components/top-down-character-animator-handler.md
+      - name: Top-Down Character Physics Animator Handler
+        href: character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md
+    
+  - name: Character Movement Controller Components
+    href: character-usage/character-movement-controller-components/character-movement-controller-components.md
+    items:
+      - name: Top Down Character Movement Controller
+        href: character-usage/character-movement-controller-components/top-down-movement-controller.md
+
   - name: Character Animation Setup
     href: character-animation-setup.md
 

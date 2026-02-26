@@ -5,7 +5,7 @@ summary: Step-by-step guide to setup an Animator Controller for use with a Chara
 
 # Character Animation Setup
 
-This page goes over how to **create and properly configure an Animator Controller** to be used by a [Character Type](xref:character-types).
+This page goes over how to **create and properly configure an Animator Controller** to be used by a [Character Type](xref:character-types) asset.
 
 ---
 

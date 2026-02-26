@@ -103,7 +103,7 @@
         <article data-uid="character-animation-setup">
 <h1 id="character-animation-setup">Character Animation Setup</h1>
 
-<p>This page goes over how to <strong>create and properly configure an Animator Controller</strong> to be used by a <a class="xref" href="character-types.html">Character Type</a>.</p>
+<p>This page goes over how to <strong>create and properly configure an Animator Controller</strong> to be used by a <a class="xref" href="character-types.html">Character Type</a> asset.</p>
 <hr>
 <h2 id="overview">Overview</h2>
 <p>Every Character Type can include an <strong>Animator Controller</strong>.<br>
@@ -113,7 +113,7 @@ This controller provides useable animations from the sprites contained within th
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>All animations <strong>must only use sprites from the Base Spritesheet</strong>.<br>
-If sprites from other sheets are used, they <strong>will not render correctly</strong> when used with the <a class="xref" href="character-usage.html#the-character-shader">Character Shader</a>.</p>
+If sprites from other sheets are used, they <strong>will not render correctly</strong> when used with the <a class="xref" href="character-usage/character-usage.html#the-character-shader">Character Shader</a>.</p>
 </div>
 <p>If you already have your own movement and animator handling scripts, you can setup the <strong>Animator Controller</strong>
 however you need for you project. That means you can create your own parameters, animation states, blend trees, etc.</p>
@@ -342,7 +342,7 @@ This way when the character stops moving they'll go back to playing The idle ani
 </ol>
 <p>It should look like this.</p>
 <p><img src="../images/character-types/character-type-character-controller-field.png" alt="Animator Controller Field in Inspector"></p>
-<p>When used with a <a class="xref" href="character-usage.html#character-renderer-components">Character Renderer component</a>,<br>
+<p>When used with a <a class="xref" href="character-usage/character-usage.html#character-renderer-components">Character Renderer component</a>,<br>
 the assigned Animator Controller will automatically be applied at runtime.</p>
 
 </article>
