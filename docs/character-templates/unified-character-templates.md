@@ -58,17 +58,24 @@ You may also optionally set a **Display Name** for use alongside created charact
 
 ### Character Spritesheet
 
-Assign the spritesheet that contains all animations and frames needed.
+Assign a spritesheet that has the same size and layout as the Character Spritesheet in the attached Character Type.
 
 ![Unified Character Template: Character Spritesheet](~/images/character-templates/unified-character-templates/unified-character-template-character-spritesheet.png)
 
+> [!NOTE]
+> When the **Character Spritesheet** is assigned, the spritesheet is marked as **Addressable** automatically, allowing it to be loaded/unloaded during runtime.
+
 #### Spritesheet Requirements
 
-The assigned spritesheet:
+When a character is created from the template the spritesheet will replace the **Base Spritesheet** used in the **Character Type**, this means the spritesheet must contain the same animations and layout.  
 
-- Must be the same size as the **Base Spritesheet** in the Character Type  
-- Must contain all the same animations and frames in the **Base Spritesheet** in the Character Type.
-- Must have the `Sprite Mode` set to `Single` (See [The Character Shader](xref:character-usage#the-character-shader) for more info as to why)
+Read more about the [Character Shader](xref:character-usage#the-character-shader) for more info.
+
+The assigned spritesheet must:
+
+- Be the same size as the **Base Spritesheet** in the Character Type  
+- Contain all the same animations and frames in the **Base Spritesheet** in the Character Type
+- Have the `Sprite Mode` set to `Single`
 
 > [!CAUTION]
 > If the assigned spritesheet is not the correct size it will be rejected at runtime.

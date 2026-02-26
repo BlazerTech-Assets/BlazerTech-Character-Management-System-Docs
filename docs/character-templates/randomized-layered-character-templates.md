@@ -7,7 +7,7 @@ summary: Blueprints for creating randomized layered characters during runtime.
 
 A **Randomized Layered Character Template** is a **Scriptable Object** used to create **Randomized Layered Characters** at runtime.
 
-Unlike standard Character Templates where the output is always the same result, a Randomized Character Template creates a random character each time based on a set of configured rules.
+Unlike standard Character Templates where the output is always the same result, a **Randomized Character Template** creates a random character each time based on a set of pre-configured rules.
 
 ---
 
@@ -134,7 +134,7 @@ Higher weights increase the likelihood of selection.
 
 ### Selection Mode: Regex
 
-Uses a **Regular Expression** pattern to dynamically match Layer Options by name.
+Uses a **Regular Expression** pattern to dynamically match Layer Options by name.  
 [Learn more about Regular Expressions here](https://en.wikipedia.org/wiki/Regular_expression)
 
 ![Selection Mode: Regex](~/images/character-templates/randomized-layered-character-templates/selection-mode-regex.png)

@@ -139,14 +139,20 @@
 <p>You may also optionally set a <strong>Display Name</strong> for use alongside created characters in-game.</p>
 <p><img src="../../images/character-templates/unified-character-templates/unified-character-template-character-name.png" alt="Unified Character Template: Character Name"></p>
 <h3 id="character-spritesheet">Character Spritesheet</h3>
-<p>Assign the spritesheet that contains all animations and frames needed.</p>
+<p>Assign a spritesheet that has the same size and layout as the Character Spritesheet in the attached Character Type.</p>
 <p><img src="../../images/character-templates/unified-character-templates/unified-character-template-character-spritesheet.png" alt="Unified Character Template: Character Spritesheet"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When the <strong>Character Spritesheet</strong> is assigned, the spritesheet is marked as <strong>Addressable</strong> automatically, allowing it to be loaded/unloaded during runtime.</p>
+</div>
 <h4 id="spritesheet-requirements">Spritesheet Requirements</h4>
-<p>The assigned spritesheet:</p>
+<p>When a character is created from the template the spritesheet will replace the <strong>Base Spritesheet</strong> used in the <strong>Character Type</strong>, this means the spritesheet must contain the same animations and layout.</p>
+<p>Read more about the <a class="xref" href="../character-usage.html#the-character-shader">Character Shader</a> for more info.</p>
+<p>The assigned spritesheet must:</p>
 <ul>
-<li>Must be the same size as the <strong>Base Spritesheet</strong> in the Character Type</li>
-<li>Must contain all the same animations and frames in the <strong>Base Spritesheet</strong> in the Character Type.</li>
-<li>Must have the <code>Sprite Mode</code> set to <code>Single</code> (See <a class="xref" href="../character-usage.html#the-character-shader">The Character Shader</a> for more info as to why)</li>
+<li>Be the same size as the <strong>Base Spritesheet</strong> in the Character Type</li>
+<li>Contain all the same animations and frames in the <strong>Base Spritesheet</strong> in the Character Type</li>
+<li>Have the <code>Sprite Mode</code> set to <code>Single</code></li>
 </ul>
 <div class="CAUTION">
 <h5>Caution</h5>

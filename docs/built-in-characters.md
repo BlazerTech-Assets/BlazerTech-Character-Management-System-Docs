@@ -42,5 +42,5 @@ Then enter play mode and you'll see the character you created from the template.
 
 ![Layered Character Template Renderer Component Example](/images/misc/layered-character-template-renderer-component.png)
 
-## Read Also
+## Related
 - [Character Templates](xref:character-templates)
