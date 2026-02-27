@@ -3042,6 +3042,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/random-layered-character-renderer/add-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/random-layered-character-renderer/add-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/random-layered-character-renderer/character-specifications.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/random-layered-character-renderer/character-specifications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/components/character-renderer-components/renderer.png",
       "output": {
         "resource": {

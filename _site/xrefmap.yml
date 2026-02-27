@@ -8902,6 +8902,9 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
+- uid: random-layered-character-renderer-component
+  name: Layered Character Renderer Component
+  href: docs/character-usage/character-renderer-components/random-layered-character-renderer.html
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html

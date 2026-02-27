@@ -45,7 +45,7 @@ The **Character Shader** will be applied to this renderer.
 
 If your **Character Type** asset includes an **Animator Controller**, it can be applied automatically when the character is loaded.  
 
-To enabled this:
+To enable this:
 1. Enable `Set Animator Controller`.
 2. Assign the target Animator component.
 
@@ -84,6 +84,7 @@ Assign a **Unified Character Template** asset.
 This will be used to create a new character based on the specifications of the template.
 
 ![Character Specifications](~/images/components/character-renderer-components/unified-character-template-renderer/assign-template.png)
+
 ---
 
 ### Hit Play

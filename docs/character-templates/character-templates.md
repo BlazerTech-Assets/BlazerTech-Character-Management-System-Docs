@@ -95,7 +95,4 @@ Used to create randomized modular character based on a set of pre-defined rules.
 ## Related
 
 - [Character Types](xref:character-types)  
-- [Unified Character Templates](xref:unified-character-templates)  
-- [Layered Character Templates](xref:layered-character-templates)  
-- [Randomized Layered Character Templates](xref:randomized-layered-character-templates)  
 - [Character Usage](xref:character-usage)  

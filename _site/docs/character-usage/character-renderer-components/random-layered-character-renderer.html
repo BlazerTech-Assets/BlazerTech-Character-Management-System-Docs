@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Layered Character Renderer Component | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Layered Character Renderer Component | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-usage/character-renderer-components/random-layered-character-renderer.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Layered Character Renderer Component | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Layered Character Renderer Component | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Component for creating and displaying a completely randomized Layered Character in-game">
+      <meta name="twitter:description" content="Component for creating and displaying a completely randomized Layered Character in-game">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,92 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="random-layered-character-renderer-component">
+<h1 id="layered-character-renderer-component">Layered Character Renderer Component</h1>
 
+<p>The <strong>Random Layered Character Renderer</strong> creates a new completely randomized <strong>Layered Character</strong> by selecting a random <strong>Layer Option</strong> for each layer of the character.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This component contains no options for controlling how the character is randomized. For advanced character randomization use a <a class="xref" href="../../character-templates/randomized-layered-character-templates.html">Randomized Layered Character Template</a>.</p>
+</div>
+<p>This component is responsible for:</p>
+<ul>
+<li>Creating a random <strong>layered character</strong></li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
+<li>Managing <strong>Overlay Layers</strong></li>
+</ul>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li>A <a class="xref" href="../../layered-character-type.html">Layered Character Type</a></li>
+</ul>
+<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" alt="Random Layered Character Renderer Component"></p>
+<hr>
+<h2 id="setup">Setup</h2>
+<h3 id="add-component">Add Component</h3>
+<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
+<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/add-component.png" alt="Add Random Layered Character Renderer Component"></p>
+<hr>
+<h3 id="assign-renderer-component">Assign Renderer Component</h3>
+<p>Assign the component responsible for rendering the character's sprites.</p>
+<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
+The <strong>Character Shader</strong> will be applied to this renderer.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/renderer.png" alt="Renderer Reference"></p>
+<hr>
+<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
+<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p>To enable this:</p>
+<ol>
+<li>Enable <code>Set Animator Controller</code>.</li>
+<li>Assign the target Animator component.</li>
+</ol>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/animator.png" alt="Animator Reference"></p>
+<hr>
+<h3 id="configure-loading-settings">Configure Loading Settings</h3>
+<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/loading-settings.png" alt="Loading Mode"></p>
+<table>
+<thead>
+<tr>
+<th>Loading Mode</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asynchronous</strong></td>
+<td>Loads the character in the background.</td>
+<td>No frame stutters or freezes.</td>
+<td>Character is temporarily invisible while loading.</td>
+</tr>
+<tr>
+<td><strong>Synchronous</strong></td>
+<td>Loads the character on the main thread.</td>
+<td>Character is immedietely renderered the same frame.</td>
+<td>May cause frame stutters depending on spritesheet size.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="recommended-usage">Recommended Usage</h4>
+<ul>
+<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+</ul>
+<hr>
+<h4 id="load-character-on-start">Load Character On Start</h4>
+<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
+<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
+<hr>
+<h3 id="assign-character-type">Assign Character Type</h3>
+<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+The renderer will create a randomized character using the <strong>Character Type</strong> asset you assign.</p>
+<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/character-specifications.png" alt="Character Specifications"></h2>
+<h3 id="hit-play">Hit Play</h3>
+<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
+<p>Enter Play Mode.</p>
+<p>If <code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong>, the character will be automatically created and displayed.</p>
 
 </article>
 

@@ -45,7 +45,7 @@ The **Character Shader** will be applied to this renderer.
 
 If your **Character Type** asset includes an **Animator Controller**, it can be applied automatically when the character is loaded.  
 
-To enabled this:
+To enable this:
 1. Enable `Set Animator Controller`.
 2. Assign the target Animator component.
 
