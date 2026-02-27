@@ -2992,20 +2992,60 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/components/character-renderer-components/layered-character-renderer-component/add-component.png",
+      "source_relative_path": "images/components/character-renderer-components/animator.png",
       "output": {
         "resource": {
-          "relative_path": "images/components/character-renderer-components/layered-character-renderer-component/add-component.png"
+          "relative_path": "images/components/character-renderer-components/animator.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/components/character-renderer-components/layered-character-renderer-component/layered-character-renderer-component.png",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-template-renderer/add-component.png",
       "output": {
         "resource": {
-          "relative_path": "images/components/character-renderer-components/layered-character-renderer-component/layered-character-renderer-component.png"
+          "relative_path": "images/components/character-renderer-components/layered-character-template-renderer/add-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-template-renderer/assign-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-template-renderer/assign-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/loading-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/loading-settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/renderer.png"
         }
       },
       "version": ""
@@ -3086,6 +3126,16 @@
       "output": {
         "resource": {
           "relative_path": "images/misc/limezu-modular-characters-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/misc/play-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/misc/play-buttons.png"
         }
       },
       "version": ""

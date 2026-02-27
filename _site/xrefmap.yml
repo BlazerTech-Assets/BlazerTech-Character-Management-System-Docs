@@ -8905,6 +8905,9 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
+- uid: temp
+  name: Layered Character Template Renderer Component
+  href: docs/temp.html
 - uid: unified-character-templates
   name: Unified Character Templates
   href: docs/character-templates/unified-character-templates.html

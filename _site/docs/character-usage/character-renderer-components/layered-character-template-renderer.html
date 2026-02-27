@@ -103,24 +103,98 @@
         <article data-uid="layered-character-template-renderer-component">
 <h1 id="layered-character-renderer-component">Layered Character Renderer Component</h1>
 
-<p>Creates a layered character from a Layered Character Template and displays it.</p>
+<p>The <strong>Layered Character Template Renderer</strong> creates a new <strong>Layered Character</strong> from a <strong>Layered Character Template</strong> and renders it in-game.</p>
 <p>This component is responsible for:</p>
 <ul>
 <li>Creating a <strong>layered character</strong></li>
-<li>Assigning the <strong>Character Shader</strong></li>
-<li>Assigning the Animator Controller (Optional)</li>
-<li>Handling Overlay Layers</li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
+<li>Managing <strong>Overlay Layers</strong></li>
 </ul>
 <p><strong>Requirements</strong>:</p>
 <ul>
 <li>A <a class="xref" href="../../layered-character-type.html">Layered Character Type</a></li>
 <li>At least one <a class="xref" href="../../character-templates/character-templates.html#layered-character-template">Layered Character Template</a></li>
 </ul>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png" alt="Layered Character Template Renderer Component"></p>
 <hr>
 <h2 id="setup">Setup</h2>
 <h3 id="add-component">Add Component</h3>
-<p>Add the component to a game object by clicking the <code>Add Component</code> button at the bottom of the inspector window</p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-renderer-component/add-component.png" alt="Add Layered Character Renderer Component"></p>
+<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/add-component.png" alt="Add Layered Character Template Renderer Component"></p>
+<hr>
+<h3 id="assign-renderer-component">Assign Renderer Component</h3>
+<p>Assign the component responsible for rendering the character's sprites.</p>
+<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
+The <strong>Character Shader</strong> will be applied to this renderer.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/renderer.png" alt="Renderer Reference"></p>
+<hr>
+<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
+<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p>To enabled this:</p>
+<ol>
+<li>Enable <code>Set Animator Controller</code>.</li>
+<li>Assign the target Animator component.</li>
+</ol>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/animator.png" alt="Animator Reference"></p>
+<hr>
+<h3 id="configure-loading-settings">Configure Loading Settings</h3>
+<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/loading-settings.png" alt="Loading Mode"></p>
+<table>
+<thead>
+<tr>
+<th>Loading Mode</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asynchronous</strong></td>
+<td>Loads the character in the background.</td>
+<td>No frame stutters or freezes.</td>
+<td>Character is temporarily invisible while loading.</td>
+</tr>
+<tr>
+<td><strong>Synchronous</strong></td>
+<td>Loads the character on the main thread.</td>
+<td>Character is immedietely renderered the same frame.</td>
+<td>May cause frame stutters depending on spritesheet size.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="recommended-usage">Recommended Usage</h4>
+<ul>
+<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+</ul>
+<hr>
+<h4 id="load-character-on-start">Load Character On Start</h4>
+<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
+<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
+<hr>
+<h3 id="assign-template">Assign Template</h3>
+<p>Assign a <strong>Layered Character Template</strong> asset.<br>
+This will be used to create a new character based on the specifications of the template.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/assign-template.png" alt="Character Specifications"></p>
+<hr>
+<h4 id="use-cache">Use Cache</h4>
+<p>Determines whether previously created characters are resued.</p>
+<ul>
+<li><strong>Enabled</strong><br>
+If a character has already been created using the same template, the cached instance is reused.</li>
+<li><strong>Disabled</strong><br>
+A new character will always be created regardless of if one already exists.</li>
+</ul>
+<p>In most cases keep this enabled for improved performance.<br>
+Disable when using a <strong>Randomized Template</strong>, so a new random character is created each time.</p>
+<hr>
+<h3 id="hit-play">Hit Play</h3>
+<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
+<p>Enter Play Mode.</p>
+<p>If <code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong>, the character will be automatically created and displayed.</p>
 
 </article>
 

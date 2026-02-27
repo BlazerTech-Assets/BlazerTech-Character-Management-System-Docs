@@ -47,6 +47,8 @@
 
   - name: Character Animation Setup
     href: character-animation-setup.md
+  - name: Temp
+    href: temp.md
 
   - name: 📚Docs
   - name: Project Settings
@@ -71,8 +73,6 @@
     href: character-templates/layered-character-templates.md
   - name: Randomized Layered Character Templates
     href: character-templates/randomized-layered-character-templates.md
-  - name: Temp
-    href: temp.md
 
   - name: 🧑Character Creation Menu System (Alpha)
   - name: Character Creator Overview
