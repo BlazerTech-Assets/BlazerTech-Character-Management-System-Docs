@@ -8908,6 +8908,9 @@ references:
 - uid: temp
   name: Layered Character Template Renderer Component
   href: docs/temp.html
+- uid: unified-character-template-renderer-component
+  name: Layered Character Renderer Component
+  href: docs/character-usage/character-renderer-components/unified-character-template-renderer.html
 - uid: unified-character-templates
   name: Unified Character Templates
   href: docs/character-templates/unified-character-templates.html

@@ -3062,6 +3062,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/unified-character-template-renderer/add-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/unified-character-template-renderer/add-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/unified-character-template-renderer/assign-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/unified-character-template-renderer/assign-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/logos/blazertech-character-management-system-cover-iamge.png",
       "output": {
         "resource": {

@@ -11,10 +11,10 @@
   - name: 🔸Essential Docs
   - name: Character Types
     href: character-types.md
-  - name: Unified Character Type
-    href: unified-character-type.md
   - name: Layered Character Type
     href: layered-character-type.md
+  - name: Unified Character Type
+    href: unified-character-type.md
 
   - name: Character Usage
   - name: Overview
@@ -22,10 +22,10 @@
   - name: Character Renderer Components
     href: character-usage/character-renderer-components/character-renderer-components.md
     items:
-      - name: Unified Character Template Renderer
-        href: character-usage/character-renderer-components/unified-character-template-renderer.md
       - name: Layered Character Template Renderer
         href: character-usage/character-renderer-components/layered-character-template-renderer.md
+      - name: Unified Character Template Renderer
+        href: character-usage/character-renderer-components/unified-character-template-renderer.md
       - name: Random Layered Character Renderer
         href: character-usage/character-renderer-components/random-layered-character-renderer.md
       - name: Layered Character Group Entry Renderer
