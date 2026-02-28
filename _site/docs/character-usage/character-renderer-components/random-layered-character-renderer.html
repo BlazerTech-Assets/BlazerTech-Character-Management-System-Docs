@@ -121,7 +121,19 @@
 </ul>
 <p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" alt="Random Layered Character Renderer Component"></p>
 <hr>
+<h2 id="quick-setup-overview">Quick Setup Overview</h2>
+<p>Quick overview of how to setup the <strong>Random Layered Character Renderer</strong> component.</p>
+<ol>
+<li>Add the component to a <strong>GameObject</strong>.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure <strong>Loading Settings</strong>.</li>
+<li>Assign the <strong>Layered Character Type</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, a new completely randomized character will be displayed.</li>
+</ol>
+<hr>
 <h2 id="setup">Setup</h2>
+<p>Full step-by-step guide to setup the <strong>Random Layered Character Renderer</strong> component.</p>
 <h3 id="add-component">Add Component</h3>
 <p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
 <p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/add-component.png" alt="Add Random Layered Character Renderer Component"></p>
@@ -130,7 +142,7 @@
 <p>Assign the component responsible for rendering the character's sprites.</p>
 <p>In most cases, this will be a <strong>Sprite Renderer</strong>.
 The <strong>Character Shader</strong> will be applied to this renderer.</p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/renderer.png" alt="Renderer Reference"></p>
+<p><img src="../../../images/components/character-renderer-components/renderer.png" alt="Renderer Reference"></p>
 <hr>
 <h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
 <p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
@@ -139,11 +151,11 @@ The <strong>Character Shader</strong> will be applied to this renderer.</p>
 <li>Enable <code>Set Animator Controller</code>.</li>
 <li>Assign the target Animator component.</li>
 </ol>
-<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/animator.png" alt="Animator Reference"></p>
+<p><img src="../../../images/components/character-renderer-components/animator.png" alt="Animator Reference"></p>
 <hr>
 <h3 id="configure-loading-settings">Configure Loading Settings</h3>
 <p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/loading-settings.png" alt="Loading Mode"></p>
+<p><img src="../../../images/components/character-renderer-components/loading-settings.png" alt="Loading Mode"></p>
 <table>
 <thead>
 <tr>

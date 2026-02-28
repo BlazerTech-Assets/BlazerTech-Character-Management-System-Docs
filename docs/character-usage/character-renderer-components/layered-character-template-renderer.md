@@ -21,7 +21,22 @@ This component is responsible for:
 
 ---
 
+## Quick Setup Overview
+
+Quick overview of how to setup the **Layered Character Template Renderer** component.
+
+1. Add the component to a **GameObject**.
+2. Assign **Renderer** (Usually a Sprite Renderer).
+3. optionally assign **Animator**.
+4. Configure **Loading Settings**.
+5. Assign the **Layered Character Template** you want to use.
+6. Play your game and if **Load Character On Start** is enabled, your character will be displayed.
+
+---
+
 ## Setup
+
+Full step-by-step guide to setup the **Layered Character Template Renderer** component.
 
 ### Add Component
 Add the component to a GameObject by clicking `Add Component` in the inspector window.
@@ -37,7 +52,7 @@ Assign the component responsible for rendering the character's sprites.
 In most cases, this will be a **Sprite Renderer**.
 The **Character Shader** will be applied to this renderer.
 
-![Renderer Reference](~/images/components/character-renderer-components/layered-character-template-renderer/renderer.png)
+![Renderer Reference](~/images/components/character-renderer-components/renderer.png)
 
 ---
 
@@ -49,7 +64,7 @@ To enable this:
 1. Enable `Set Animator Controller`.
 2. Assign the target Animator component.
 
-![Animator Reference](~/images/components/character-renderer-components/layered-character-template-renderer/animator.png)
+![Animator Reference](~/images/components/character-renderer-components/animator.png)
 
 ---
 
@@ -57,7 +72,7 @@ To enable this:
 
 The **Loading Mode** determines how the character is loaded at runtime. This can significantly impact performance.
 
-![Loading Mode](~/images/components/character-renderer-components/layered-character-template-renderer/loading-settings.png)
+![Loading Mode](~/images/components/character-renderer-components/loading-settings.png)
 
 | Loading Mode     | Description                             | Advantages                                          | Cons                                                    |
 | ---------------- | --------------------------------------- | --------------------------------------------------- | ------------------------------------------------------- |

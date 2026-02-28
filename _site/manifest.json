@@ -3002,6 +3002,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/add-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/add-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/create-character-if-null.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/create-character-if-null.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/fixed-character-group.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/fixed-character-group.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/flexible-character-group.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/flexible-character-group.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/group-types.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/group-types.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/primary-slot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/layered-character-group-entry-renderer/primary-slot.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/components/character-renderer-components/layered-character-template-renderer/add-component.png",
       "output": {
         "resource": {
