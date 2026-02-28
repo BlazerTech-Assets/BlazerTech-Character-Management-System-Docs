@@ -3,7 +3,7 @@ uid: layered-character-template-renderer-component
 summary: Component for creating and displaying a Layered Character from a Layered Character Template in-game
 ---
 
-# Layered Character Renderer Component
+# Layered Character Template Renderer Component
 
 The **Layered Character Template Renderer** creates a new **Layered Character** from a **Layered Character Template** and renders it in-game.
 

@@ -5,7 +5,7 @@ summary: Settings for the **BlazerTech Character Management System**.
 
 # Project Settings
 
-All global settings for the **BlazerTech Character Management System** are managed through the Project Settings window.  
+All global settings for the **BlazerTech Character Management System** are managed through the **Project Settings window**.  
 Located under **`Edit > Project Settings > BlazerTech > Character Management System`**.
 
 ![Project Settings](~/images/project-settings/project-settings.png)
@@ -48,7 +48,7 @@ The **Active Character Types** list contains all **Character Type assets** that 
 
 ![Active Character Types list](~/images/project-settings/active-character-types-list.png)
 
-When a new Character Type is created, the user is prompted to add it to the **Active Character Types list** before proceeding.
+When a new Character Type is created, You are prompted to add it to the **Active Character Types list** before proceeding.
 
 ![Add Character Type to list](~/images/project-settings/add-character-type-to-list.png)
 

@@ -3,7 +3,7 @@ uid: unified-character-template-renderer-component
 summary: Component for creating and displaying a Unified Character from a Unified Character Template in-game
 ---
 
-# Layered Character Renderer Component
+# Unified Character Template Renderer Component
 
 The **Unified Character Template Renderer** creates a new **Unified Character** from a **Unified Character Template** and renders it in-game.
 

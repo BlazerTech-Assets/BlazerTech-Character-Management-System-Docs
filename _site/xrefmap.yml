@@ -8885,7 +8885,7 @@ references:
   name: BlazerTech Character Management System
   href: index.html
 - uid: layered-character-template-renderer-component
-  name: Layered Character Renderer Component
+  name: Layered Character Template Renderer Component
   href: docs/character-usage/character-renderer-components/layered-character-template-renderer.html
 - uid: layered-character-templates
   name: Layered Character Templates
@@ -8903,7 +8903,7 @@ references:
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
 - uid: random-layered-character-renderer-component
-  name: Layered Character Renderer Component
+  name: Random Layered Character Renderer Component
   href: docs/character-usage/character-renderer-components/random-layered-character-renderer.html
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
@@ -8912,7 +8912,7 @@ references:
   name: Layered Character Template Renderer Component
   href: docs/temp.html
 - uid: unified-character-template-renderer-component
-  name: Layered Character Renderer Component
+  name: Unified Character Template Renderer Component
   href: docs/character-usage/character-renderer-components/unified-character-template-renderer.html
 - uid: unified-character-templates
   name: Unified Character Templates

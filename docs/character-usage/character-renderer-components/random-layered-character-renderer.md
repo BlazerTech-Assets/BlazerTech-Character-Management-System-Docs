@@ -3,7 +3,7 @@ uid: random-layered-character-renderer-component
 summary: Component for creating and displaying a completely randomized Layered Character in-game
 ---
 
-# Layered Character Renderer Component
+# Random Layered Character Renderer Component
 
 The **Random Layered Character Renderer** creates a new completely randomized **Layered Character** by selecting a random **Layer Option** for each layer of the character.  
 

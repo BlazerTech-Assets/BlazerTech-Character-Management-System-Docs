@@ -103,7 +103,14 @@
         <article data-uid="character-renderer-components">
 <h1 id="character-renderer-components">Character Renderer Components</h1>
 
-<p>Character Renderer components will load and display characters depending on the type.</p>
+<p>Character Renderer components will load and render characters in-game.</p>
+<p><strong>All renderer components handle</strong>:</p>
+<ol>
+<li>Creating/loading a character</li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> if applicable</li>
+<li>Managing <strong>Overlay Layers</strong></li>
+</ol>
 <h2 id="components">Components</h2>
 <table>
 <thead>
@@ -113,10 +120,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></td>
-<td>Load a saved <strong>Layered Character</strong> from a group.</td>
-</tr>
 <tr>
 <td><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></td>
 <td>Create and render a <strong>Layered Character</strong> from a template.</td>
@@ -129,8 +132,51 @@
 <td><a href="#random-layered-character-renderer">Random Layered Character Renderer</a></td>
 <td>Create a new <strong>Layered Character</strong> with completely random layer options.</td>
 </tr>
+<tr>
+<td><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></td>
+<td>Load a saved <strong>Layered Character</strong> from a group.</td>
+</tr>
 </tbody>
 </table>
+<hr>
+<h2 id="layered-character-template-renderer">Layered Character Template Renderer</h2>
+<p>Creates a <strong>Layered Character</strong> from a <strong>Layered Character Template</strong> and displays it in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png" alt="Layered Character Template Renderer Component"></p>
+<ul>
+<li><a class="xref" href="layered-character-template-renderer.html">Read More → Layered Character Template Renderer</a></li>
+</ul>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../layered-character-type.html">Layered Character Type</a></li>
+<li>At least one <a class="xref" href="../../character-templates/character-templates.html#layered-character-template">Layered Character Template</a></li>
+</ul>
+<hr>
+<h2 id="unified-character-template-renderer">Unified Character Template Renderer</h2>
+<p>Creates a Unified Character from a Unified Character Template and displays it in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Unified Character Template Renderer Component"></p>
+<ul>
+<li><a class="xref" href="unified-character-template-renderer.html">Read More → Unified Character Template Renderer</a></li>
+</ul>
+<h3 id="requirements-1">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../unified-character-type.html">Unified Character Type</a></li>
+<li>At least one <a class="xref" href="../../character-templates/character-templates.html#Unified-character-template">Unified Character Template</a></li>
+</ul>
+<hr>
+<h2 id="random-layered-character-renderer">Random Layered Character Renderer</h2>
+<p>Creates a completely randomized <strong>Layered Character</strong> from a <strong>Layered Character Type</strong>.<br>
+The <strong>Random Layered Character Renderer</strong> component looks at every layer in the <strong>Character Type</strong> and selects a random <strong>Layer Option</strong> for each layer.</p>
+<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" alt="Random Layered Character Renderer Component"></p>
+<ul>
+<li><a class="xref" href="random-layered-character-renderer.html">Read More → Random Layered Character Renderer</a></li>
+</ul>
+<h3 id="requirements-2">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../layered-character-type.html">Layered Character Type</a></li>
+</ul>
+<hr>
+<h2 id="layered-character-group-renderer">Layered Character Group Renderer</h2>
+<h3 id="requirements-3">Requirements</h3>
 
 </article>
 
