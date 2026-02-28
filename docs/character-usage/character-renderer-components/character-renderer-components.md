@@ -20,7 +20,7 @@ Character Renderer components will load and render characters in-game.
 | [Layered Character Template Renderer](#layered-character-template-renderer) | Create and render a **Layered Character** from a template.               |
 | [Unified Character Template Renderer](#unified-character-template-renderer) | Create and render a **Unified Character** from a template.               |
 | [Random Layered Character Renderer](#random-layered-character-renderer)     | Create a new **Layered Character** with completely random layer options. |
-| [Layered Character Group Renderer](#layered-character-group-renderer)       | Load a saved **Layered Character** from a group.                         |
+| [Layered Character Group Entry Renderer](#layered-character-group-entry-renderer)       | Load a saved **Layered Character** from a group.                         |
 
 ---
 
@@ -67,6 +67,21 @@ The **Random Layered Character Renderer** component looks at every layer in the 
 
 ---
 
-## Layered Character Group Renderer
+## Layered Character Group Entry Renderer
+
+Loads a **Layered Character** of a specific **Layered Character Type** from a **Layered Character Group** and displays it in-game.
+
+![Layered Character Group Entry Renderer Component](~/images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png)
+
+- [Read More → Layered Character Group Entry Renderer](xref:layered-character-group-entry-renderer-component)  
 
 ### Requirements
+- A [Layered Character Type](xref:layered-character-type)
+- At least one **Layered Character** saved in a group
+
+---
+
+## Related
+- [Character Templates](xref:character-templates)
+- [Character Types](xref:character-types)
+- [Character Groups](xref:character-grouping-system)
