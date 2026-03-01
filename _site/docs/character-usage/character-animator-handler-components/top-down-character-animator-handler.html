@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Top Down Character Animator Handler | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Top Down Character Animator Handler | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Top Down Character Animator Handler | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Top Down Character Animator Handler | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Component for synchronizing parameters in an Animator Controller to the values in a movement controller">
+      <meta name="twitter:description" content="Component for synchronizing parameters in an Animator Controller to the values in a movement controller">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,86 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="top-down-character-animator-handler-component">
+<h1 id="top-down-character-animator-handler">Top Down Character Animator Handler</h1>
 
+<p>Syncs <strong>parameters</strong> in an <strong>Animator Controller</strong> to values within the <a class="xref" href="../character-movement-controller-components/top-down-movement-controller.html">Top Down Movement Controller</a> component.</p>
+<p><img src="../../../images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png" alt="Top Down Character Animator Handler Component"></p>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li>Reads movement and state data from the assigned <strong>Top Down Movement Controller</strong> component.</li>
+<li>Updates <strong>Animator Controller paramters</strong> in-real time to reflect the character's state.</li>
+<li><strong>Animator Controller</strong> uses those <strong>parameters</strong> to play specific animations.</li>
+</ul>
+<hr>
+<h2 id="inspector-fields">Inspector Fields</h2>
+<h3 id="references">References</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>The <strong>Animator component</strong> used to set parameters.</td>
+</tr>
+<tr>
+<td><strong>Movement Controller</strong></td>
+<td><code>TopDownMovementController</code></td>
+<td>The <strong>Top Down Movement Controller</strong> component used to listen for movement.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-names">Parameter Names</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Is Moving Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate whether the character is moving.<br>Set to <code>true</code> when movement is detected.</td>
+</tr>
+<tr>
+<td><strong>Horizontal Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for horizontal input.<br><code>-1</code> when moving left and <code>1</code> when moving right.</td>
+</tr>
+<tr>
+<td><strong>Vertical Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for vertical input.<br><code>-1</code> when moving down and <code>1</code> when moving up.</td>
+</tr>
+<tr>
+<td><strong>Sprint Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>sprinting</strong>.<br><code>True</code> when sprinting, otherwise <code>false</code>.<br>Only available when <code>Sprint</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
+</tr>
+<tr>
+<td><strong>Crouch Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>crouching</strong>.<br><code>True</code> when crouched, otherwise <code>false</code>.<br>Only available when <code>Crouch</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="public-methods">Public Methods</h2>
+<p>All of these methods can be called directly from any instance of the <strong>Top Down Character Animator Handler</strong> component.</p>
+<ul>
+<li><code>ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
+<li><code>PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
+<li><code>PlayDefaultAnimation()</code>: Play the default animation state defined in the <strong>Animator Controller</strong>.</li>
+</ul>
 
 </article>
 

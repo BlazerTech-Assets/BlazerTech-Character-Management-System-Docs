@@ -8911,6 +8911,15 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
+- uid: top-down-character-animator-handler-component
+  name: Top Down Character Animator Handler
+  href: docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html
+- uid: top-down-character-movement-controller-component
+  name: Top Down Character Movement Controller
+  href: docs/character-usage/character-movement-controller-components/top-down-movement-controller.html
+- uid: top-down-character-physics-animator-handler-component
+  name: Top Down Character Physics Animator Handler
+  href: docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.html
 - uid: unified-character-template-renderer-component
   name: Unified Character Template Renderer Component
   href: docs/character-usage/character-renderer-components/unified-character-template-renderer.html

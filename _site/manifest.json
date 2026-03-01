@@ -2712,26 +2712,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-animation/top-down-character-animator-handler-component.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-animation/top-down-character-animator-handler-component.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/character-animation/top-down-character-physics-animator-handler-component.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-animation/top-down-character-physics-animator-handler-component.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/character-creator-setup/ccm-relay-usage-example.png",
       "output": {
         "resource": {
@@ -2986,6 +2966,26 @@
       "output": {
         "resource": {
           "relative_path": "images/character-types/layered-character-type-asset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png"
         }
       },
       "version": ""
