@@ -24,6 +24,7 @@ Syncs **parameters** in an **Animator Controller** to values within the [Top Dow
 | Parameter               | Type                        | Description                                                                 |
 | ----------------------- | --------------------------- | --------------------------------------------------------------------------- |
 | **Animator**            | `Animator`                  | The **Animator component** used to set parameters.                          |
+| **Default Direction**   | `Enum`                      | The default direction the character should face.                            |
 | **Movement Controller** | `TopDownMovementController` | The **Top Down Movement Controller** component used to listen for movement. |
 
 ### Parameter Names

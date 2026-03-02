@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Character Animator Handler Components | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Character Animator Handler Components | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-usage/character-animator-handler-components/character-animator-handler-components.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Animator Handler Components | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Animator Handler Components | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Components for controlling parameters in an Animator Controller">
+      <meta name="twitter:description" content="Components for controlling parameters in an Animator Controller">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,29 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="character-animator-handler-components">
+<h1 id="character-animator-handler-components">Character Animator Handler Components</h1>
 
+<p><strong>Animator Handler components</strong> control <strong>parameters</strong> within an <strong>Animator Controller</strong>.</p>
+<p>All <strong>Animator Handler components</strong> require a reference to an <strong>Animator component</strong>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>An <strong>Animator Controller</strong> can be assigned in any <strong>Character Type</strong> asset and be automatically used when a character of that type is used.</p>
+</div>
+<hr>
+<h2 id="top-down-character-animator-handler">Top Down Character Animator Handler</h2>
+<p>Reads input from a <a href="xref:top-down-movement-controller-component">Top Down Movement Controller</a> component to update <strong>paramters</strong> in an <strong>Animator Controller</strong>.</p>
+<p><img src="../../../images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png" alt="Top Down Character Animator Handler Component"></p>
+<ul>
+<li><a class="xref" href="top-down-character-animator-handler.html">Read More → Top Down Character Animator Handler</a></li>
+</ul>
+<hr>
+<h2 id="top-down-character-phsics-animator-handler">Top Down Character Phsics Animator Handler</h2>
+<p>A physics driven component, every frame the GameObjects position is compared to its position last frame to determine <strong>direction</strong> and <strong>speed</strong>. This information is then used to update <strong>paramters</strong> in an <strong>Animator Controller</strong>.</p>
+<p><img src="../../../images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png" alt="Top Down Character Physics Animator Handler Component"></p>
+<ul>
+<li><a class="xref" href="top-down-character-physics-animator-handler.html">Read More → Top Down Character Physics Animator Handler</a></li>
+</ul>
 
 </article>
 

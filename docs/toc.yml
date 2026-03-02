@@ -16,7 +16,7 @@
   - name: Unified Character Type
     href: unified-character-type.md
 
-  - name: Character Usage
+  - name: Character Usage Components
   - name: Overview
     href: character-usage/character-usage.md
   - name: Character Renderer Components
@@ -36,7 +36,7 @@
     items:
       - name: Top Down Character Animator Handler
         href: character-usage/character-animator-handler-components/top-down-character-animator-handler.md
-      - name: Top-Down Character Physics Animator Handler
+      - name: Top Down Character Physics Animator Handler
         href: character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md
     
   - name: Character Movement Controller Components

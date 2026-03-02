@@ -5,7 +5,7 @@ summary: Component for synchronizing parameters in an Animator Controller to the
 
 # Top Down Character Physics Animator Handler
 
-The **Top-Down Character Physics Animator Handler** is physics-driven, Every fixed update the position of the GameObject the component is attached to is compared to it's possition last frame.  
+The **Top-Down Character Physics Animator Handler** is physics-driven, Every fixed update the position of the GameObject the component is attached to is compared to its possition last frame.  
 
 This is used to determine the **direction** the character is moving and **speed** the character is traveling at.
 

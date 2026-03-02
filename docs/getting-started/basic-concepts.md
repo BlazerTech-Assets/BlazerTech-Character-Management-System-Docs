@@ -10,7 +10,7 @@ This page introduces the **main features** of the **Character Management System*
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
 - [**Character Usage**](#character-usage) – Scripts to load and render characters.  
 - [**Built-in Modular Characters**](#built-in-characters) - Modular characters pre-setup and ready for use.
-- [**Character Grouping System**](#character-grouping-system) - Groups used to store and saved characters.
+- [**Character Grouping System**](#character-grouping-system) - Groups used to save and manage characters.
 - [**Character Creator**](#character-creator) – Modular UI framework for building customizable characters in-game.  
 
 ---

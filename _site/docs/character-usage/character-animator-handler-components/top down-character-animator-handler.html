@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Top Down Character Physics Animator Handler | BlazerTech Character Management System </title>
+      <title>Top Down Character Animator Handler | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Top Down Character Physics Animator Handler | BlazerTech Character Management System ">
+      <meta name="title" content="Top Down Character Animator Handler | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/logos/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-animator-handler-components/top down-character-animator-handler.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -32,13 +32,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="/docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.html">
+<meta property="og:url" content="/docs/character-usage/character-animator-handler-components/top down-character-animator-handler.html">
 
-    <meta property="og:title" content="Top Down Character Physics Animator Handler | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Top Down Character Physics Animator Handler | BlazerTech Character Management System">
+    <meta property="og:title" content="Top Down Character Animator Handler | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Top Down Character Animator Handler | BlazerTech Character Management System">
 
-      <meta property="og:description" content="Component for synchronizing parameters in an Animator Controller to the direction and speed of a GameObject">
-      <meta name="twitter:description" content="Component for synchronizing parameters in an Animator Controller to the direction and speed of a GameObject">
+      <meta property="og:description" content="Component for synchronizing parameters in an Animator Controller to the values in a movement controller">
+      <meta name="twitter:description" content="Component for synchronizing parameters in an Animator Controller to the values in a movement controller">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,23 +100,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="top-down-character-physics-animator-handler-component">
-<h1 id="top-down-character-physics-animator-handler">Top Down Character Physics Animator Handler</h1>
+        <article data-uid="top-down-character-animator-handler-component">
+<h1 id="top-down-character-animator-handler">Top Down Character Animator Handler</h1>
 
-<p>The <strong>Top-Down Character Physics Animator Handler</strong> is physics-driven, Every fixed update the position of the GameObject the component is attached to is compared to its possition last frame.</p>
-<p>This is used to determine the <strong>direction</strong> the character is moving and <strong>speed</strong> the character is traveling at.</p>
-<p><img src="../../../images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png" alt="Top Down Character Physics Animator Handler Component"></p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>Due to the nature of how the <strong>Top-Down Character Physics Animator Handler</strong> works, crouch animations can only be played when the character is moving.</p>
-</div>
-<hr>
+<p>Syncs <strong>parameters</strong> in an <strong>Animator Controller</strong> to values within the <a class="xref" href="../character-movement-controller-components/top-down-movement-controller.html">Top Down Movement Controller</a> component.</p>
+<p><img src="../../../images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png" alt="Top Down Character Animator Handler Component"></p>
 <h2 id="how-it-works">How It Works</h2>
 <ul>
-<li>Calculates movement each <code>FixedUpdate()</code> by comparing current and previous positions.</li>
-<li>Determines direction and speed, then updates <strong>Animator parameters</strong>.</li>
-<li>Optionally toggles <strong>sprint/crouch</strong> states when enabled.</li>
-<li><strong>Animator Controller</strong> uses those parameters to play specific animations.</li>
+<li>Reads movement and state data from the assigned <strong>Top Down Movement Controller</strong> component.</li>
+<li>Updates <strong>Animator Controller paramters</strong> in-real time to reflect the character's state.</li>
+<li><strong>Animator Controller</strong> uses those <strong>parameters</strong> to play specific animations.</li>
 </ul>
 <hr>
 <h2 id="inspector-fields">Inspector Fields</h2>
@@ -134,6 +127,11 @@
 <td><strong>Animator</strong></td>
 <td><code>Animator</code></td>
 <td>The <strong>Animator component</strong> used to set parameters.</td>
+</tr>
+<tr>
+<td><strong>Movement Controller</strong></td>
+<td><code>TopDownMovementController</code></td>
+<td>The <strong>Top Down Movement Controller</strong> component used to listen for movement.</td>
 </tr>
 </tbody>
 </table>
@@ -162,65 +160,21 @@
 <td><code>String</code></td>
 <td>The <strong>Animator parameter name</strong> for vertical input.<br><code>-1</code> when moving down and <code>1</code> when moving up.</td>
 </tr>
-</tbody>
-</table>
-<h3 id="sprint-animation">Sprint Animation</h3>
-<table>
-<thead>
 <tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Enable Sprint</strong></td>
+<td><strong>Sprint Param</strong></td>
 <td><code>Bool</code></td>
-<td>If true, enables sprinting animations when speed is greater than <strong>Sprint Min Speed</strong>.</td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>sprinting</strong>.<br><code>True</code> when sprinting, otherwise <code>false</code>.<br>Only available when <code>Sprint</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
 </tr>
 <tr>
-<td><strong>Sprint Min Speed</strong></td>
-<td><code>Float</code></td>
-<td>Minimum speed required to trigger sprint animation.</td>
-</tr>
-<tr>
-<td><strong>Sprint Parameter Name</strong></td>
-<td><code>String</code></td>
-<td>The <strong>Animator parameter name</strong> for the sprint state (default: &quot;Is Sprinting&quot;).</td>
-</tr>
-</tbody>
-</table>
-<h3 id="crouch-animation">Crouch Animation</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Enable Crouch</strong></td>
+<td><strong>Crouch Param</strong></td>
 <td><code>Bool</code></td>
-<td>If true, enables crouching animations when speed is less than <strong>Crouch Max Speed</strong>.</td>
-</tr>
-<tr>
-<td><strong>Crouch Max Speed</strong></td>
-<td><code>Float</code></td>
-<td>Maximum speed for crouch animations to be used.</td>
-</tr>
-<tr>
-<td><strong>Crouch Parameter Name</strong></td>
-<td><code>String</code></td>
-<td>The <strong>Animator parameter name</strong> for the crouch state (default: &quot;Is Crouching&quot;).</td>
+<td>The <strong>Animator parameter name</strong> used to indicate when the character is <strong>crouching</strong>.<br><code>True</code> when crouched, otherwise <code>false</code>.<br>Only available when <code>Crouch</code> is enabled in the <strong>Top Down Movement Controller</strong>.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="public-methods">Public Methods</h2>
-<p>All of these methods can be called directly from any instance of the <strong>Top Down Character Physics Animator Handler</strong> component.</p>
+<p>All of these methods can be called directly from any instance of the <strong>Top Down Character Animator Handler</strong> component.</p>
 <ul>
 <li><code>ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
 <li><code>PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
@@ -230,7 +184,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-animator-handler-components/top down-character-animator-handler.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -8851,6 +8851,9 @@ references:
 - uid: character-animation-setup
   name: Character Animation Setup
   href: docs/character-animation-setup.html
+- uid: character-animator-handler-components
+  name: Character Animator Handler Components
+  href: docs/character-usage/character-animator-handler-components/character-animator-handler-components.html
 - uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html
