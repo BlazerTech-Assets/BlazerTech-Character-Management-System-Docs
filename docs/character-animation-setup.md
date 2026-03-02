@@ -215,9 +215,9 @@ Once your Animator Controller is ready:
 2. In the **Inspector**, find the **Character Controller** field.
 3. Drag your new **Animator Controller** into this field.
 
-It should look like this.
+It should look like this:
 
 ![Animator Controller Field in Inspector](~/images/character-types/character-type-character-controller-field.png)
 
 When used with a [Character Renderer component](xref:character-usage#character-renderer-components),  
-the assigned Animator Controller will automatically be applied at runtime.
+the assigned **Animator Controller** will automatically be applied at runtime.

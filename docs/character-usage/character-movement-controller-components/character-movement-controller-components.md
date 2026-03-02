@@ -13,9 +13,9 @@ When used with a [Character Animator Hander](xref:character-animator-handler-com
 
 Handles character movement along the X and Y axis for 2d top-down games.
 
-- Uses the New Input System
-- Optional Sprint and Crouch support
-- Handles movement through a Rigidbody2D component.
+- Uses the **New Input System**.
+- Optional **Sprint** and **Crouch** support
+- Handles movement through a **Rigidbody2D** component.
 
 ![Top Down Character Movement Controller Component](~/images/components/character-movement-controllers/top-down-character-movement-controller/top-down-character-movement-controller.png)
 
