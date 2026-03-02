@@ -8860,12 +8860,18 @@ references:
 - uid: character-creator-setup
   name: Character Creator Setup
   href: docs/character-creator/character-creator-setup.html
+- uid: character-display-name-renderer-component
+  name: Character Display Name Renderer
+  href: docs/character-usage/character-renderer-components/character-display-name-renderer.html
 - uid: character-grouping-system
   name: Character Grouping System
   href: docs/character-grouping-system.html
 - uid: character-layers
   name: Character Layers
   href: docs/character-layers.html
+- uid: character-movement-controller-components
+  name: Character Movement Controller Components
+  href: docs/character-usage/character-movement-controller-components/character-movement-controller-components.html
 - uid: character-renderer-components
   name: Character Renderer Components
   href: docs/character-usage/character-renderer-components/character-renderer-components.html

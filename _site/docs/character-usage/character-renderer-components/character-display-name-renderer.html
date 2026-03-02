@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Top Down Character Movement Controller | BlazerTech Character Management System </title>
+      <title>Character Display Name Renderer | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Top Down Character Movement Controller | BlazerTech Character Management System ">
+      <meta name="title" content="Character Display Name Renderer | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/logos/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-movement-controller-components/top-down-movement-controller.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/character-display-name-renderer.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -32,13 +32,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="/docs/character-usage/character-movement-controller-components/top-down-movement-controller.html">
+<meta property="og:url" content="/docs/character-usage/character-renderer-components/character-display-name-renderer.html">
 
-    <meta property="og:title" content="Top Down Character Movement Controller | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Top Down Character Movement Controller | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Display Name Renderer | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Display Name Renderer | BlazerTech Character Management System">
 
-      <meta property="og:description" content="character controller for 2d four-directional movement.">
-      <meta name="twitter:description" content="character controller for 2d four-directional movement.">
+      <meta property="og:description" content="Component for displaying the name of a character in-game">
+      <meta name="twitter:description" content="Component for displaying the name of a character in-game">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,149 +100,110 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="top-down-character-movement-controller-component">
-<h1 id="top-down-character-movement-controller">Top Down Character Movement Controller</h1>
+        <article data-uid="character-display-name-renderer-component">
+<h1 id="character-display-name-renderer">Character Display Name Renderer</h1>
 
-<p>Handles player movement for 2d top-down games where there are four directions the player can move (Left, right, up, down).</p>
-<h2 id="input-configuration">Input Configuration</h2>
-<p>This component uses Unitys <strong>New Input System</strong>. Every input action is configurable.</p>
-<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
-<h3 id="input-actions">Input Actions</h3>
+<p>Provides an easy way to show the Display Name of a character in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png" alt="Character Display Name Renderer"></p>
+<hr>
+<h2 id="config">Config</h2>
+<p>Choose how you'll get a reference to a character. There are two options:</p>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png" alt="Fetch Character Mode"></p>
+<hr>
+<h3 id="from-character-renderer">From Character Renderer</h3>
+<p>Uses a <a class="xref" href="character-renderer-components.html">Character renderer component</a> to find a character.</p>
+<p>Assign a reference to a <strong>Character Renderer component</strong>.</p>
+<p>When the Character Renderer component loads a character:</p>
+<ol>
+<li>The <strong>Display Name Renderer</strong> will be notified and retrieve the character.</li>
+<li>The <strong>display Name Renderer</strong> will get the <strong>Display Name</strong> of the character and set the text of the assigned text component to the characters display name.</li>
+</ol>
+<hr>
+<h3 id="from-character-group">From Character Group</h3>
+<p>Attempts to find a character from a character group at runtime.</p>
+<h4 id="assign-character-type">Assign Character Type</h4>
+<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+This will be used when looking for a character group.</p>
+<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" alt="Character Specifications"></h2>
+<h4 id="set-character-group-type">Set Character Group Type</h4>
+<p>Choose the type of group you want to load from.</p>
 <table>
 <thead>
 <tr>
-<th>Input Action</th>
-<th>Type</th>
-<th>Usage</th>
+<th>Group Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Move Action</strong></td>
-<td><code>Vector2</code></td>
-<td>The input action used to control player movement along the X and Y axes.</td>
+<td><strong>Primary Character Slot</strong></td>
+<td>A single character attached to the Character Type asset. No additional parameters required.</td>
 </tr>
 <tr>
-<td><strong>Sprint Action</strong></td>
-<td><code>Button</code></td>
-<td>The input action used to let the player sprint. (If enabled)</td>
+<td><strong>Flexible Group</strong></td>
+<td>A group of characters that can be added, removed, or edited at any time.</td>
 </tr>
 <tr>
-<td><strong>Crouch Action</strong></td>
-<td><code>Button</code></td>
-<td>The input action used to let the player crouch. (If enabled)</td>
+<td><strong>Fixed Group</strong></td>
+<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
 </tr>
 </tbody>
 </table>
-<p>A default <strong>Input Action asset</strong> is included under the <code>/Input Actions</code> subfolder.<br>
-This asset contains the default input actions for moving, sprinting and crouching.</p>
-<h3 id="auto-enable-actions">Auto Enable Actions</h3>
-<p>If <strong>Auto Enable Actions</strong> is enabled, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
-This is useful when not using a <strong>PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html">project‑wide input actions asset</a> that handles enabling automatically.</p>
-<h2 id="movement-settings">Movement Settings</h2>
+<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Parameter</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Move Speed</strong></td>
-<td><code>Float</code></td>
-<td>Base walk speed (Default: <code>6.5</code>).</td>
+<td><strong>Character Group Name</strong></td>
+<td><code>String</code></td>
+<td>A unique name used to find the Fixed or Flexible group.</td>
 </tr>
 <tr>
-<td><strong>Can Move</strong></td>
-<td><code>Bool</code></td>
-<td>Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sprinting--crouching">Sprinting &amp; Crouching</h2>
-<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
-Each system has customizable speed and button mode options.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Speed</strong></td>
-<td><code>Float</code></td>
-<td>Movement speed while sprint or crouching.</td>
-</tr>
-<tr>
-<td><strong>Mode</strong></td>
+<td><strong>Character Load Method</strong></td>
 <td><code>Enum</code></td>
-<td>Determines whether the button must be held or toggled. (Default: <code>Hold</code>)</td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
 </tr>
 </tbody>
 </table>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/group-types.png" alt="Character Group Types"></p>
 <h2 id="references">References</h2>
 <table>
 <thead>
 <tr>
-<th>Reference</th>
+<th>Field</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Rigidbody2D</strong></td>
-<td><code>Rigidbody2D</code></td>
-<td>Required reference used for applying movement.</td>
+<td><strong>Display Name Parent</strong></td>
+<td><code>GameObject</code></td>
+<td>Parent GameObject used to disable text when <code>Display Name</code> is blank.</td>
+</tr>
+<tr>
+<td><strong>Display Name Text</strong></td>
+<td><code>TMP_Text</code></td>
+<td>Reference to a <code>TMP Text</code> component used to render the <code>Display Name</code> text.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="runtime-properties">Runtime Properties</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>IsMoving</strong></td>
-<td><code>bool</code></td>
-<td>True if the player is currently moving.</td>
-</tr>
-<tr>
-<td><strong>IsSprinting</strong></td>
-<td><code>bool</code></td>
-<td>True if the player is currently sprinting.</td>
-</tr>
-<tr>
-<td><strong>IsCrouching</strong></td>
-<td><code>bool</code></td>
-<td>True if the player is currently crouching.</td>
-</tr>
-<tr>
-<td><strong>Movement</strong></td>
-<td><code>Vector2</code></td>
-<td>Current normalized movement direction.</td>
-</tr>
-</tbody>
-</table>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/References.png" alt="References"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Designed to be used along with a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
+<p>Use a canvas with a <code>Render Mode</code> set to <code>World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of the character and follow along with it.</p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-movement-controller-components/top-down-movement-controller.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/character-display-name-renderer.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

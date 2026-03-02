@@ -105,7 +105,7 @@ This will be used when looking for a character group.
 
 ### Set Character Group Type
 
-Choose wthe type of group you want to load from.
+Choose the type of group you want to load from.
 
 | Group Type                 | Description                                                                                           |
 | -------------------------- | ----------------------------------------------------------------------------------------------------- |

@@ -2379,6 +2379,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-usage/character-renderer-components/character-display-name-renderer.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-usage/character-renderer-components/character-display-name-renderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-usage/character-renderer-components/character-renderer-components.md",
       "output": {
         ".html": {
@@ -2992,10 +3002,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/components/character-movement-controllers/top-down-character-movement-controller/top-down-character-movement-controller.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-movement-controllers/top-down-character-movement-controller/top-down-character-movement-controller.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/components/character-renderer-components/animator.png",
       "output": {
         "resource": {
           "relative_path": "images/components/character-renderer-components/animator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/character-display-name-renderer/References.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/character-display-name-renderer/References.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/character-display-name-renderer/character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/character-display-name-renderer/character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/components/character-renderer-components/character-display-name-renderer/group-types.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/components/character-renderer-components/character-display-name-renderer/group-types.png"
         }
       },
       "version": ""

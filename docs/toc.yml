@@ -30,6 +30,8 @@
         href: character-usage/character-renderer-components/random-layered-character-renderer.md
       - name: Layered Character Group Entry Renderer
         href: character-usage/character-renderer-components/layered-character-group-entry-renderer.md
+      - name: Character Display Name Renderer
+        href: character-usage/character-renderer-components/character-display-name-renderer.md
 
   - name: Character Animator Handler Components
     href: character-usage/character-animator-handler-components/character-animator-handler-components.md
