@@ -21,7 +21,7 @@ Choose how you'll get a reference to a character. There are two options:
 
 ### From Character Renderer
 
-Uses a [Character renderer component](xref:character-renderer-components) to find a character.
+Uses a [Character Renderer component](xref:character-renderer-components) to find a character.
 
 Assign a reference to a **Character Renderer component**.
 
