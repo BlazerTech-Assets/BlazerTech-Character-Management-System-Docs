@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Types | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Types | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types/character-types.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-types/character-types.html">
+
+    <meta property="og:title" content="Character Types | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Types | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Unified vs Layered Character Types and which one works best for your project.">
+      <meta name="twitter:description" content="Unified vs Layered Character Types and which one works best for your project.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-types">
+<h1 id="character-types">Character Types</h1>
+
+<p>The <strong>Character Management System</strong> contains two types of characters, both meant for different use cases.</p>
+<p>Check out the difference between them below:</p>
+<h2 id="unified-characters">Unified Characters</h2>
+<p>A Unified Character contains one single spritesheet that contains all frames of the character.</p>
+<p><img src="../../images/character-types/unified-character-type-showcase.png" alt="Unified Character Types Showcase"></p>
+<p>These are the simplest characters to setup and use but lack runtime customization since the character is pre-created beforehand.</p>
+<hr>
+<h2 id="layered-characters">Layered Characters</h2>
+<p>A Layered Character is split into multiple spritesheets. Each spritesheet is a layer of the character. At runtime each spritesheet is layered on top of each other to create the finalized character.<br>
+Every spritesheet must be the exact same size and contain the same frame sizes and position to work properly.</p>
+<p><img src="../../images/character-types/layered-character-type-showcase.png" alt="Layered Character Types Showcase"></p>
+<p>Here's an example, we've got a character with four layers: <strong>Body, Outfit, Hairstyle and Accessory</strong>.</p>
+<p>When the character is rendered, the body is rendered first, then the outfit on top of that, then the hairstyle and finally the accessory.<br>
+The order the spritesheets are layered can be changed in the editor.</p>
+<hr>
+<h2 id="the-character-type-asset">The Character Type Asset</h2>
+<p>Character types are <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a> that define core aspects of a character. They are the heart of the <strong>Character Management System</strong>.</p>
+<p><img src="../../images/character-types/character-type-assets.png" alt="Character Type Assets"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All characters <strong>Require</strong> a <strong>Character Type</strong>.</p>
+</div>
+<hr>
+<h3 id="how-to-create-a-character-type">How to Create a Character Type</h3>
+<p>Character Types can be created by <code>right clicking</code> the <code>Project window</code> and navigating to:<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; (Choose Character Type)</code></p>
+<p>When creating a <strong>Character Type</strong> you'll need to choose whether it'll be a <strong>Layered</strong> or <strong>Unified Character Type</strong>.<br>
+<strong>Character Types</strong> can only create characters of one type.</p>
+<p><img src="../../images/character-types/create-character-type.png" alt="Create Character Type"></p>
+<!-- ---
+
+### Overview
+
+| Field                                                                    | Type                      | Description                                           |
+| ------------------------------------------------------------------------ | ------------------------- | ----------------------------------------------------- |
+| **[CharacterTypeID](xref:character-type-core#character-type-id)**        | String                    | A **unique** identifer for every Character Type asset |
+| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet for all characters  |
+| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used for all characters       |
+| **[Pixels per Unit](xref:character-type-core#character-controller)**     | Int                       | The PPU of your Base Spritesheet                      | -->
+<hr>
+<h2 id="character-type-setup">Character Type Setup</h2>
+<h3 id="active-character-types-list">Active Character Types List</h3>
+<p>A list of all <strong>Character Type assets</strong> which will be initialized at runtime.<br>
+This list can be found under <strong>Proejct Settings &gt; BlazerTech &gt; Character Management System</strong></p>
+<p><img src="../../images/project-settings/active-character-types-list.png" alt="Active Character Type List"></p>
+<p>When a new Character Type asset is created you'll be promped to add it to the Active Character Types list before continuing.</p>
+<p><img src="../../images/project-settings/add-character-type-to-list.png" alt="Add Character Type to List"></p>
+<h3 id="character-type-id">Character Type ID</h3>
+<p>This is a <strong>unique identifier</strong> for the Character Type asset. It <strong>cannot</strong> be the same as any other identifier in the <strong>Active Character Types</strong> list or the <strong>Character Type asset</strong> will fail to initialize at runtime.</p>
+<p><img src="../../images/character-types/fields/character-type-id.png" alt="Character Type ID Field"></p>
+<h3 id="base-spritesheet">Base Spritesheet</h3>
+<p>Defines the layout that all other spritesheet must follow.</p>
+<p>This spritesheet should be sliced into frames, these are the frames that are used for every character using the same <strong>Character Type asset</strong>.</p>
+<p><img src="../../images/character-types/fields/base-spritesheet.png" alt="Base Spritesheet Field"></p>
+<h3 id="animator-controller-optional">Animator Controller (Optional)</h3>
+<p>All characters use frames from the <strong>Base Spritesheet</strong>, this means a single <strong>Animator Controller</strong> can be used to animate all characters of the same <strong>Character Type asset</strong>. No need to create a new <strong>Animator/Override Controller</strong> for every character.</p>
+<p>Check out <a class="xref" href="../character-animation-setup.html">Character Animation Setup</a> for more info about how to correctly configure your <strong>Animator Controller</strong>.</p>
+<p><img src="../../images/character-types/fields/animator-controller.png" alt="Animator Controller Field"></p>
+<h3 id="pixels-per-unit">Pixels Per Unit</h3>
+<p>Should be the same PPU set in the <strong>Base Spritesheet</strong>.</p>
+<p><img src="../../images/character-types/fields/pixels-per-unit.png" alt="Pixels Per Unit Field"></p>
+<hr>
+<h2 id="character-type-variants">Character Type Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Modularity</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified</strong></td>
+<td>Single spritesheet</td>
+<td>Pre-created, fixed characters</td>
+</tr>
+<tr>
+<td><strong>Layered</strong></td>
+<td>Layered spritesheets</td>
+<td>Modular, editable characters</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1-unified-character-type">1. Unified Character Type</h3>
+<p>characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<ul>
+<li><strong>Use Case:</strong> Characters with fixed, pre-created appearances.</li>
+<li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
+</ul>
+<p><a href="unified-character-type.html">Read More → Unified Character Type</a></p>
+<hr>
+<h3 id="2-layered-character-type">2. Layered Character Type</h3>
+<p>Characters consist of a set of spritesheets, each containing one visual layer of the character.</p>
+<ul>
+<li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
+<li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory.</li>
+</ul>
+<p><a href="layered-character-type.html">Read More → Layered Character Type</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types/character-types.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

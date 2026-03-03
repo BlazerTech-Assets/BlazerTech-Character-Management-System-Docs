@@ -15,12 +15,12 @@ Character Renderer components will load and render characters in-game.
 
 ## Components
 
-| Renderer Component                                                          | Used For                                                                 |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [Layered Character Template Renderer](#layered-character-template-renderer) | Create and render a **Layered Character** from a template.               |
-| [Unified Character Template Renderer](#unified-character-template-renderer) | Create and render a **Unified Character** from a template.               |
-| [Random Layered Character Renderer](#random-layered-character-renderer)     | Create a new **Layered Character** with completely random layer options. |
-| [Layered Character Group Entry Renderer](#layered-character-group-entry-renderer)       | Load a saved **Layered Character** from a group.                         |
+| Renderer Component                                                                | Used For                                                                 |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Layered Character Template Renderer](#layered-character-template-renderer)       | Create and render a **Layered Character** from a template.               |
+| [Unified Character Template Renderer](#unified-character-template-renderer)       | Create and render a **Unified Character** from a template.               |
+| [Random Layered Character Renderer](#random-layered-character-renderer)           | Create a new **Layered Character** with completely random layer options. |
+| [Layered Character Group Entry Renderer](#layered-character-group-entry-renderer) | Load a saved **Layered Character** from a group.                         |
 
 ---
 

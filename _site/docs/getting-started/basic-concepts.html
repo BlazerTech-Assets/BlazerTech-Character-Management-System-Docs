@@ -37,8 +37,8 @@
     <meta property="og:title" content="Basic Concepts | BlazerTech Character Management System">
     <meta name="twitter:title" content="Basic Concepts | BlazerTech Character Management System">
 
-      <meta property="og:description" content="Overview of all main features for the BlazerTech Character Management System.">
-      <meta name="twitter:description" content="Overview of all main features for the BlazerTech Character Management System.">
+      <meta property="og:description" content="Overview of all main features of the BlazerTech Character Management System.">
+      <meta name="twitter:description" content="Overview of all main features of the BlazerTech Character Management System.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -105,7 +105,9 @@
 
 <p>This page introduces the <strong>main features</strong> of the <strong>Character Management System</strong>:</p>
 <ul>
-<li><a href="#character-types"><strong>Character Types</strong></a> – Defines the core of every character.</li>
+<li><a href="#types-of-characters"><strong>Types of Characters</strong></a> – The two fundamental differents kinds of characters.</li>
+<li><a href="#character-type-assets"><strong>Character Type Assets</strong></a> – The core of every character.</li>
+<li><a href="#the-character-shader"><strong>The Character Shader</strong></a> – How characters are rendered in-game.</li>
 <li><a href="#character-templates"><strong>Character Templates</strong></a> – Blueprints for creating characters later.</li>
 <li><a href="#character-usage"><strong>Character Usage</strong></a> – Scripts to load and render characters.</li>
 <li><a href="#built-in-characters"><strong>Built-in Modular Characters</strong></a> - Modular characters pre-setup and ready for use.</li>
@@ -113,47 +115,60 @@
 <li><a href="#character-creator"><strong>Character Creator</strong></a> – Modular UI framework for building customizable characters in-game.</li>
 </ul>
 <hr>
-<h2 id="character-types">Character Types</h2>
-<img src="../../images/character-types/character-types.png" alt="Character Types" width="500">  
-<p>A <strong>Character Type</strong> is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that defines how<br>
-a character works. There are two kinds:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Best For</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Unified Character Type</strong></td>
-<td>A single spritesheet containing a fully assembled character. No runtime customization.</td>
-<td>Characters with fixed, pre-set appearances.</td>
-</tr>
-<tr>
-<td><strong>Layered Character Type</strong></td>
-<td>Multiple spritesheets, each containing one visual layer (body, outfit, hair, etc.).</td>
-<td>Customizable player characters, dynamic or randomized NPCs.</td>
-</tr>
-</tbody>
-</table>
-<p>Every <strong>Character Type</strong> contains a <strong>Base Spritesheet</strong>. This spritesheet contains all animations every character of that type will need to contain.<br>
-New characters can then be easily added by simply adding a new spritesheet or multiple spritesheets if using layered characters.</p>
-<p>Optionally an <strong>Animator Controller</strong> can be setup with all animations using sprites from the <strong>Base Spritesheet</strong>. With this setup only a single <strong>Animator Controller</strong> is required. No need to create a new <strong>Animator Controller</strong> or <strong>Override Controller</strong> for each new character.</p>
+<h2 id="types-of-characters">Types of Characters</h2>
+<img src="../../images/character-types/character-types-showcase.png" alt="Character Types" width="500">  
+<p>The <strong>Character Management System</strong> contains two types of characters for different use cases.</p>
+<h3 id="unified-characters">Unified Characters</h3>
+<p>A <strong>Unified Character</strong> uses a <strong>single spritesheet</strong> containing the full character with all animations and frames.</p>
+<p><strong>Unified Characters</strong> are easy to setup and use but lack runtime customization since the character is pre-created in one spritesheet.</p>
+<h3 id="layered-characters">Layered Characters</h3>
+<p>A <strong>Layered Character</strong> combines <strong>multiple spritesheets</strong> into one at runtime to create the final character.<br>
+Every spritesheet must be the same size and contain the same frame sizes and positioning to work properly.</p>
+<p>Each spritesheet is layered on top of another in order at runtime.</p>
+<p>For example: If we had a character with four layers: <strong>Body, Outfit, Hairstyle and Accessory</strong>.</p>
+<p>When the character is used, the body layer will be renderered first, then the outfit on top of that, then the hairstyle and finally the accessory layer.<br>
+You can control the order the layers are rendered in.</p>
+<hr>
+<h2 id="character-type-assets">Character Type Assets</h2>
+<p>Every character is defined by a <strong>Character Type asset</strong>, which is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a></p>
+<p>A Character Type:</p>
 <ul>
-<li><a class="xref" href="../character-types.html">Read More → Character Types</a></li>
-<li><a class="xref" href="../unified-character-type.html">Read More → Unified Character Type</a></li>
-<li><a class="xref" href="../layered-character-type.html">Read More → Layered Character Type</a></li>
+<li>Defines if a character is <strong>Unified</strong> or <strong>Layered</strong></li>
+<li>Stores the <strong>Base Spritesheet</strong></li>
+<li>References a single <strong>shared Animator Controller</strong> for all characters to use (Optional)</li>
 </ul>
+<h3 id="base-spritesheet">Base Spritesheet</h3>
+<p>The <strong>Base Spritesheet</strong> defines the layout that all other spritesheets must follow.</p>
+<p>This spritesheet is sliced into multiple frames, these are the frames that are used for any character using the same Character Type asset.</p>
+<hr>
+<h2 id="the-character-shader">The Character Shader</h2>
+<p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
+Sprites from the <strong>Base Spritesheet</strong> are used directly in a renderer component (such as a <strong>Sprite Renderer</strong>) or used in an <strong>Animator Controller</strong>.</p>
+<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and renders that over the <strong>Base Spritesheet</strong>.<br>
+If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<p>The renderer component is only ever using sprites from the <strong>Base Spritesheet</strong> meaning all other spritesheet do <strong>NOT</strong> need to be sliced, they should instead have a <code>Sprite Mode</code> of <code>Single</code>.</p>
+<p>This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer</a> component is used the shader will be applied automatically.</p>
+</div>
 <hr>
 <h2 id="character-templates">Character Templates</h2>
-<p>A <strong>Character Template</strong> is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that acts as a <strong>blueprint</strong> for creating characters later. Templates are supported for both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
+<p>A <strong>Character Template</strong> is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that acts as a <strong>blueprint</strong> for creating characters later at runtime. Templates are supported for both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
+<p>Templates allow you to create a character once and resue it anywhere it in your project just by referencing it.</p>
+<p>Additionally templates provide extra functionality for <strong>Layered Characters</strong> allowing you to <strong>randomize specific layers</strong> based on pre-set rules you define in the editor.</p>
 <p><a class="xref" href="../character-templates/character-templates.html">Read More → Character Templates</a></p>
 <hr>
 <h2 id="character-usage">Character Usage</h2>
 <h3 id="character-renderer-components">Character Renderer Components</h3>
-<p>Once a <strong>Unified or Layered Character</strong> has been created, it can be used through one the following scripts:</p>
+<p><strong>Character Renderer components</strong> are responsible for loading and showing a character in-game.</p>
+<p><strong>Renderer components handle</strong>:</p>
+<ol>
+<li>Creating/loading a character</li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> if applicable</li>
+<li>Managing <strong>Overlay Layers</strong></li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -163,37 +178,40 @@ New characters can then be easily added by simply adding a new spritesheet or mu
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../character-usage/character-usage.html#layered-character-group-renderer">Layered Character Group Renderer</a></td>
-<td>Load and render pre-existing Layered Character from a group.</td>
+<td><a class="xref" href="../character-usage/character-renderer-components/layered-character-template-renderer.html">Layered Character Template Renderer</a></td>
+<td>Create and show a <strong>Layered Character</strong> from a template.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../character-usage/character-usage.html#layered-character-template-renderer">Layered Character Template Renderer</a></td>
-<td>Create/load and render a Layered Character from a template.</td>
+<td><a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Unified Character Template Renderer</a></td>
+<td>Create and show a <strong>Unified Character</strong> from a template.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../character-usage/character-usage.html#unified-character-template-renderer">Unified Character Template Renderer</a></td>
-<td>Create/load and render a Unified Character from a template.</td>
+<td><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html">Random Layered Character Renderer</a></td>
+<td>Create and show a new <strong>Layered Character</strong> with completely random layer options.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../character-usage/character-renderer-components/layered-character-group-entry-renderer.html">Layered Character Group Entry Renderer</a></td>
+<td>Load and render a saved <strong>Layered Character</strong> from a group.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="character-shader">Character Shader</h3>
-<p>Shaders are how the final Unified or Layered Character are rendered. Sprites from the <strong>Base Spritesheet</strong> defined in the <strong>Character Type</strong> are used in a renderer component such as a <strong>Sprite Renderer</strong>.</p>
-<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
-If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
-<p><a class="xref" href="../character-usage/character-usage.html">Read More → Character Usage</a></p>
 <hr>
 <h2 id="built-in-characters">Built-in Characters</h2>
-<p>Modular characters are included within the <strong>BlazerTech Character Management System</strong>.
-They can be freely used inside any project. These characters will also be purchasable separately upon the full release of the Character Management System</p>
-<p>The <strong>BlazerTech Modular Characters</strong> consist of 4 layers:</p>
+<p>The <strong>BlazerTech Character Management System</strong> includes fully configured modular characters which can be used in any commercial or non-commercial project.</p>
+<p>The <strong>BlazerTech Modular Characters</strong> consist of four layers:</p>
 <ol>
 <li><strong>Body</strong></li>
 <li><strong>Outfit</strong></li>
 <li><strong>Hairstyle</strong></li>
 <li><strong>Accessory</strong></li>
 </ol>
-<p>A <strong>Layered Character Type</strong> for these characters are already included and fully setup. New characters can be created by using a <a class="xref" href="../character-templates/character-templates.html#layered-character-template">Layered Character Tempate</a>, amongst other ways not listed here.</p>
-<p>Additionally a <a class="xref" href="../unified-character-type.html">Unified Character Type</a> is setup with a set of pre-made characters made by combining various layer options.</p>
+<p>Included:</p>
+<ul>
+<li>Layered Character Type</li>
+<li>Unified Character Type</li>
+<li>A few Layered and Unified sample templates</li>
+</ul>
+<p>These characters will also be purchasable separately upon the full release of the Character Management System</p>
 <p><a class="xref" href="../built-in-characters.html">Read More → Built-In Characters</a></p>
 <hr>
 <h2 id="character-grouping-system">Character Grouping System</h2>
@@ -223,7 +241,7 @@ Prefabs can be combined and customized to create whatever design you want.<br>
 It makes the process of building a <strong>Character Creation Menu</strong> into your game easy.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>The <strong>Character Creator</strong> only works with <strong>Layered Characters</strong>. <strong>Unified Characters do not support runtime customization.</strong></p>
+<p>The <strong>Character Creator</strong> only works with <strong>Layered Characters</strong>. <strong>Unified Characters</strong> do not support runtime customization.</p>
 </div>
 <h3 id="example-use-cases">Example Use Cases</h3>
 <ol>

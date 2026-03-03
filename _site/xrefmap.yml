@@ -8868,7 +8868,7 @@ references:
   href: docs/character-grouping-system.html
 - uid: character-layers
   name: Character Layers
-  href: docs/character-layers.html
+  href: docs/character-types/character-layers.html
 - uid: character-movement-controller-components
   name: Character Movement Controller Components
   href: docs/character-usage/character-movement-controller-components/character-movement-controller-components.html
@@ -8878,15 +8878,9 @@ references:
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates/character-templates.html
-- uid: character-type-core
-  name: Character Type Core
-  href: docs/character-type-core.html
 - uid: character-types
   name: Character Types
-  href: docs/character-types.html
-- uid: character-usage
-  name: Character Usage
-  href: docs/character-usage/character-usage.html
+  href: docs/character-types/character-types.html
 - uid: installation
   name: Installation and Requirements
   href: docs/getting-started/installation-and-requirements.html
@@ -8904,7 +8898,7 @@ references:
   href: docs/character-templates/layered-character-templates.html
 - uid: layered-character-type
   name: Layered Character Type
-  href: docs/layered-character-type.html
+  href: docs/character-types/layered-character-type.html
 - uid: limezu-modern-interiors-support
   name: LimeZu Modern Interiors Support
   href: docs/limezu-modern-interiors-support.html
@@ -8937,4 +8931,4 @@ references:
   href: docs/character-templates/unified-character-templates.html
 - uid: unified-character-type
   name: Unified Character Type
-  href: docs/unified-character-type.html
+  href: docs/character-types/unified-character-type.html

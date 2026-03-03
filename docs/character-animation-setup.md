@@ -11,10 +11,12 @@ This page goes over how to **create and properly configure an Animator Controlle
 
 ## Overview
 
-Every Character Type can include an **Animator Controller**.  
-This controller provides useable animations from the sprites contained within the **Base Spritesheet** in the **Character Type**
+Every **Character Type asset** can include an **Animator Controller**.  
+All animations should use sprites from the **Base Spritesheet** assigned in the **Character Type asset**.
 
 All characters using the same **Character Type** can use a single **Animator Controller**. No need to create a separate Animator/Override Controller for every new character.
+
+Confused how it's possible to only use one **Animator Controller** for every character? Read about [The Character Shader](xref:basic-concepts#the-character-shader).
 
 The setup process is the same for both **Unified** and **Layered Character Types**.
 

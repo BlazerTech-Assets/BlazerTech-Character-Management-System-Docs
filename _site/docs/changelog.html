@@ -114,16 +114,16 @@ This log follows the <a href="https://keepachangelog.com/en/1.1.0/">Keep a Chang
 <li>Added <a class="xref" href="project-settings.html#save-format">binary saving support</a> (Toggleable in project settings page).</li>
 <li>Added <a class="xref" href="project-settings.html#auto-save-triggers">Auto Save Triggers</a> options in project settings page.</li>
 <li>Added <a class="xref" href="project-settings.html#debug-options">debug log options</a> in project settings page.</li>
-<li>Added <a class="xref" href="character-usage/character-usage.html#character-display-name-renderer">Character Display Name Renderer</a> component for displaying a characters name.</li>
+<li>Added <a href="xref:character-usage#character-display-name-renderer">Character Display Name Renderer</a> component for displaying a characters name.</li>
 <li>Added <strong>ICharacter interface</strong> for instances where any type of character can be used.</li>
-<li>Added <strong>assignable Input Actions</strong> to the <a class="xref" href="character-usage/character-usage.html#top-down-movement-controller">Top Down Movement Controller</a> component.</li>
-<li>Added <strong>hold/toggle</strong> options for <strong>sprint/couch</strong> states in the <a class="xref" href="character-usage/character-usage.html#top-down-movement-controller">Top Down Movement Controller</a> component.</li>
+<li>Added <strong>assignable Input Actions</strong> to the <a href="xref:character-usage#top-down-movement-controller">Top Down Movement Controller</a> component.</li>
+<li>Added <strong>hold/toggle</strong> options for <strong>sprint/couch</strong> states in the <a href="xref:character-usage#top-down-movement-controller">Top Down Movement Controller</a> component.</li>
 <li>Added <code>Create Character If Null</code> bool to <strong>Layered Character Group Renderer</strong> component.</li>
 <li>Added <strong>Active Character Types</strong> list in <a class="xref" href="project-settings.html">Project Settings page</a>. (Replaces Addressables requirement for Character Types)</li>
 </ul>
 <h3 id="changed">Changed</h3>
 <ul>
-<li>Converted <a class="xref" href="character-usage/character-usage.html#top-down-movement-controller">Top Down Movement Controller</a> to use the <strong>New Input System</strong>.</li>
+<li>Converted <a href="xref:character-usage#top-down-movement-controller">Top Down Movement Controller</a> to use the <strong>New Input System</strong>.</li>
 <li>Replaced Character Type assets <code>ISValid</code> bool with a check if the Character Type asset is contained within the <code>Valid Character Types</code> list within the <code>CMS Reference Handler</code>.</li>
 <li>Moved Character Shader out of Character Type asset and into a centralized dictionary with an entry for each validated Character Type.</li>
 <li>Migrated Character Type initialization to use pre-set list inside Project Settings page instead of loading through Addressables.</li>
@@ -137,8 +137,8 @@ This log follows the <a href="https://keepachangelog.com/en/1.1.0/">Keep a Chang
 <h2 id="020---10-23-2025">[0.2.0] - 10-23-2025</h2>
 <h3 id="added-1">Added</h3>
 <ul>
-<li>Added <a class="xref" href="character-usage/character-usage.html#top-down-character-physics-animator-handler">Top-Down Character Physics Animator Handler component</a>. Uses the direction and speed of the game object to set parameters within an Animator Controller.</li>
-<li>Added <a class="xref" href="character-usage/character-usage.html#random-layered-character-renderer">Random Layered Character Renderer component</a>. Automatically creates a new layered character at runtime using the selected Character Type and random layer options.</li>
+<li>Added <a href="xref:character-usage#top-down-character-physics-animator-handler">Top-Down Character Physics Animator Handler component</a>. Uses the direction and speed of the game object to set parameters within an Animator Controller.</li>
+<li>Added <a href="xref:character-usage#random-layered-character-renderer">Random Layered Character Renderer component</a>. Automatically creates a new layered character at runtime using the selected Character Type and random layer options.</li>
 <li>Added randomized NPCs sample scene (Sample 2).</li>
 <li>Added <a class="xref" href="built-in-characters.html">Built-In Character documentation page</a>. Explains wha's included and how to use the built-in modular characters.</li>
 <li>Added <a class="xref" href="character-animation-setup.html">Character Animation Setup documentation page</a>. Explains the setup process for animations and animator controllers for your characters.</li>

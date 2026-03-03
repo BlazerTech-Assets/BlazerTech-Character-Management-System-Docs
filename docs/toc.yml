@@ -8,17 +8,19 @@
   - name: Changelog
     href: changelog.md
 
-  - name: 🔸Essential Docs
   - name: Character Types
-    href: character-types.md
+  - name: Character Types
+    href: character-types/character-types.md
   - name: Layered Character Type
-    href: layered-character-type.md
+    href: character-types/layered-character-type.md
   - name: Unified Character Type
-    href: unified-character-type.md
+    href: character-types/unified-character-type.md
+  - name: Character Layers
+    href: character-types/character-layers.md
+  - name: Character Overlay Layers
+    href: character-types/character-overlay-layers
 
   - name: Character Usage Components
-  - name: Overview
-    href: character-usage/character-usage.md
   - name: Character Renderer Components
     href: character-usage/character-renderer-components/character-renderer-components.md
     items:
@@ -52,20 +54,6 @@
   - name: Temp
     href: temp.md
 
-  - name: 📚Docs
-  - name: Project Settings
-    href: project-settings.md
-  - name: Built In Characters
-    href: built-in-characters.md
-  - name: Character Layers
-    href: character-layers.md
-  - name: Character Type Core
-    href: character-type-core.md
-  - name: Character Grouping System
-    href: character-grouping-system.md
-  - name: LimeZu Modern Interiors Support
-    href: limezu-modern-interiors-support.md
-
   - name: 📋Character Templates
   - name: Character Templates
     href: character-templates/character-templates.md
@@ -75,6 +63,17 @@
     href: character-templates/layered-character-templates.md
   - name: Randomized Layered Character Templates
     href: character-templates/randomized-layered-character-templates.md
+
+  - name: 📚Docs
+  - name: Project Settings
+    href: project-settings.md
+  - name: Built In Characters
+    href: built-in-characters.md
+  - name: Character Grouping System
+    href: character-grouping-system.md
+  - name: LimeZu Modern Interiors Support
+    href: limezu-modern-interiors-support.md
+
 
   - name: 🧑Character Creation Menu System (Alpha)
   - name: Character Creator Overview

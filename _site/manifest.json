@@ -2259,16 +2259,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-layers.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/character-layers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/character-templates/character-templates.md",
       "output": {
         ".html": {
@@ -2309,20 +2299,50 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-type-core.md",
+      "source_relative_path": "docs/character-types/character-layers.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-type-core.html"
+          "relative_path": "docs/character-types/character-layers.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-types.md",
+      "source_relative_path": "docs/character-types/character-overlay-layers.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-types.html"
+          "relative_path": "docs/character-types/character-overlay-layers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-types/character-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-types/character-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-types/layered-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-types/layered-character-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-types/unified-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-types/unified-character-type.html"
         }
       },
       "version": ""
@@ -2439,16 +2459,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-usage/character-usage.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/character-usage/character-usage.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/getting-started/basic-concepts.md",
       "output": {
         ".html": {
@@ -2473,16 +2483,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/getting-started/quick-start.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/layered-character-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/layered-character-type.html"
         }
       },
       "version": ""
@@ -2526,16 +2526,6 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/unified-character-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/unified-character-type.html"
         }
       },
       "version": ""
@@ -2952,6 +2942,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-types/character-type-assets.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/character-type-assets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-types/character-type-character-controller-field.png",
       "output": {
         "resource": {
@@ -2962,10 +2962,70 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-types/character-types.png",
+      "source_relative_path": "images/character-types/character-types-showcase.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-types/character-types.png"
+          "relative_path": "images/character-types/character-types-showcase.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/create-character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/create-character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/fields/Capture.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/fields/Capture.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/fields/animator-controller.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/fields/animator-controller.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/fields/base-spritesheet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/fields/base-spritesheet.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/fields/character-type-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/fields/character-type-id.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/fields/pixels-per-unit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/fields/pixels-per-unit.png"
         }
       },
       "version": ""
@@ -2976,6 +3036,36 @@
       "output": {
         "resource": {
           "relative_path": "images/character-types/layered-character-type-asset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-character-type-showcase.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-character-type-showcase.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/unified-character-type-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/unified-character-type-asset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/unified-character-type-showcase.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/unified-character-type-showcase.png"
         }
       },
       "version": ""

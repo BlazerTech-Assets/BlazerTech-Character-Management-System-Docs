@@ -143,7 +143,7 @@ and select either <strong>Layered Character Type</strong> or <strong>Unified Cha
 <p>You can name this asset whatever you'd like.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Unsure which <strong>Character Type</strong> to create? Read more about the difference between them <a class="xref" href="../character-types.html#character-type-variants">here</a></p>
+<p>Unsure which <strong>Character Type</strong> to create? Read more about the difference between them <a class="xref" href="../character-types/character-types.html#character-type-variants">here</a></p>
 </div>
 <h3 id="character-type-core-fields">Character Type Core Fields</h3>
 <p>The following fields are required regardless of the Character Type you choose.</p>
@@ -156,11 +156,11 @@ All characters will need to have a spritesheet that is the exact same size as th
 <p>The Base Spritesheet will represent all characters of the same type. It's Recommended to make this spritesheet include your most barebones character.</p>
 <p>Set <strong>Sprite Mode</strong> of the spritesheet to <strong>Multiple</strong> (to slice frames individually).</p>
 <ul>
-<li><a class="xref" href="../character-type-core.html#base-spritesheet">Read More → Base Spritesheet</a></li>
+<li><a href="xref:character-type-core#base-spritesheet">Read More → Base Spritesheet</a></li>
 </ul>
 <h4 id="character-controller-optional"><strong>Character Controller</strong> (Optional)</h4>
 <p>You can optionally assign an <strong>Animator Controller</strong> for characters of this type.<br>
-Animations should only use sprites from the <strong>Base Spritesheet</strong> otherwise they won't be renderered correctly with the <a class="xref" href="../character-usage/character-usage.html#the-character-shader">Character Shader</a>.</p>
+Animations should only use sprites from the <strong>Base Spritesheet</strong> otherwise they won't be renderered correctly with the <a href="xref:character-usage#the-character-shader">Character Shader</a>.</p>
 <p>If you’re using your own movement or animator handling scripts, you can configure the <strong>Animator Controller</strong> however best fits your system.
 However the <strong>Character Management System</strong> also includes built-in movement and animator handler scripts Which require the <strong>Animator Controller</strong> be setup with specific parameters</p>
 <ul>
@@ -168,8 +168,8 @@ However the <strong>Character Management System</strong> also includes built-in 
 </ul>
 <p>Later in this guide when you learn how to render your character, you’ll see how the <strong>Character Controller</strong> can be automatically applied when the character is used.</p>
 <ul>
-<li><a class="xref" href="../character-usage/character-usage.html#the-character-shader">Read More → Character Shader</a></li>
-<li><a class="xref" href="../character-type-core.html#character-controller">Read More → Character Controller</a></li>
+<li><a href="xref:character-usage#the-character-shader">Read More → Character Shader</a></li>
+<li><a href="xref:character-type-core#character-controller">Read More → Character Controller</a></li>
 </ul>
 <div class="IMPORTANT">
 <h5>Important</h5>
@@ -183,7 +183,7 @@ Each layer must be defined as it's own Character Layer Definition Asset.</p>
 <code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code>.</p>
 <p>Each <strong>Character Layer Definition</strong> represents a single visual layer and contains a list of possible spritesheets (Called <strong>Layer Options</strong>)</p>
 <ul>
-<li>Read <a class="xref" href="../character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</li>
+<li>Read <a class="xref" href="../character-types/character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</li>
 </ul>
 <h2 id="2create-a-character-template">2️⃣Create a Character Template</h2>
 <p>Once your Character Type is setup, it's time to create a character.<br>
