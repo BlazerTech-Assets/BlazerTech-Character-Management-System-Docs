@@ -78,7 +78,7 @@ This list can be found under **Proejct Settings > BlazerTech > Character Managem
 
 ![Active Character Type List](~/images/project-settings/active-character-types-list.png)
 
-When a new Character Type asset is created you'll be promped to add it to the Active Character Types list before continuing.
+When a new Character Type asset is created you'll be promped to add it to the **Active Character Types list** before continuing.
 
 ![Add Character Type to List](~/images/project-settings/add-character-type-to-list.png)
 
@@ -110,14 +110,16 @@ Should be the same PPU set in the **Base Spritesheet**.
 
 ![Pixels Per Unit Field](~/images/character-types/fields/pixels-per-unit.png)
 
+## Related
+- [Layered Character Type](xref:layered-character-type)
+- [Unified Character Type](xref:unified-character-type)
 
 
 
 
 
 
-
----
+<!-- ---
 
 ## Character Type Variants
 
@@ -142,4 +144,4 @@ Characters consist of a set of spritesheets, each containing one visual layer of
 - **Use Case:** Customizable player characters or dynamically generated NPCs.  
 - **Example:** Body, Outfit, Hairstyle, Accessory.  
 
-[Read More → Layered Character Type](layered-character-type.md)
+[Read More → Layered Character Type](layered-character-type.md) -->

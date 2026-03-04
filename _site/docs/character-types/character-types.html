@@ -148,7 +148,7 @@ The order the spritesheets are layered can be changed in the editor.</p>
 <p>A list of all <strong>Character Type assets</strong> which will be initialized at runtime.<br>
 This list can be found under <strong>Proejct Settings &gt; BlazerTech &gt; Character Management System</strong></p>
 <p><img src="../../images/project-settings/active-character-types-list.png" alt="Active Character Type List"></p>
-<p>When a new Character Type asset is created you'll be promped to add it to the Active Character Types list before continuing.</p>
+<p>When a new Character Type asset is created you'll be promped to add it to the <strong>Active Character Types list</strong> before continuing.</p>
 <p><img src="../../images/project-settings/add-character-type-to-list.png" alt="Add Character Type to List"></p>
 <h3 id="character-type-id">Character Type ID</h3>
 <p>This is a <strong>unique identifier</strong> for the Character Type asset. It <strong>cannot</strong> be the same as any other identifier in the <strong>Active Character Types</strong> list or the <strong>Character Type asset</strong> will fail to initialize at runtime.</p>
@@ -164,45 +164,37 @@ This list can be found under <strong>Proejct Settings &gt; BlazerTech &gt; Chara
 <h3 id="pixels-per-unit">Pixels Per Unit</h3>
 <p>Should be the same PPU set in the <strong>Base Spritesheet</strong>.</p>
 <p><img src="../../images/character-types/fields/pixels-per-unit.png" alt="Pixels Per Unit Field"></p>
-<hr>
-<h2 id="character-type-variants">Character Type Variants</h2>
-<table>
-<thead>
-<tr>
-<th>Variant</th>
-<th>Modularity</th>
-<th>Best For</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Unified</strong></td>
-<td>Single spritesheet</td>
-<td>Pre-created, fixed characters</td>
-</tr>
-<tr>
-<td><strong>Layered</strong></td>
-<td>Layered spritesheets</td>
-<td>Modular, editable characters</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="1-unified-character-type">1. Unified Character Type</h3>
-<p>characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<h2 id="related">Related</h2>
 <ul>
-<li><strong>Use Case:</strong> Characters with fixed, pre-created appearances.</li>
-<li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
+<li><a class="xref" href="layered-character-type.html">Layered Character Type</a></li>
+<li><a class="xref" href="unified-character-type.html">Unified Character Type</a></li>
 </ul>
-<p><a href="unified-character-type.html">Read More → Unified Character Type</a></p>
-<hr>
-<h3 id="2-layered-character-type">2. Layered Character Type</h3>
-<p>Characters consist of a set of spritesheets, each containing one visual layer of the character.</p>
-<ul>
-<li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
-<li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory.</li>
-</ul>
-<p><a href="layered-character-type.html">Read More → Layered Character Type</a></p>
+<!-- ---
+
+## Character Type Variants
+
+| Variant     | Modularity           | Best For                      |
+| ----------- | -------------------- | ----------------------------- |
+| **Unified** | Single spritesheet   | Pre-created, fixed characters |
+| **Layered** | Layered spritesheets | Modular, editable characters  |
+
+---
+
+### 1. Unified Character Type
+characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.  
+- **Use Case:** Characters with fixed, pre-created appearances.  
+- **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
+
+[Read More → Unified Character Type](unified-character-type.md)
+
+---
+
+### 2. Layered Character Type
+Characters consist of a set of spritesheets, each containing one visual layer of the character.  
+- **Use Case:** Customizable player characters or dynamically generated NPCs.  
+- **Example:** Body, Outfit, Hairstyle, Accessory.  
+
+[Read More → Layered Character Type](layered-character-type.md) -->
 
 </article>
 
