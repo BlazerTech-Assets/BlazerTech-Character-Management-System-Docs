@@ -103,14 +103,22 @@
         <article data-uid="layered-character-type">
 <h1 id="layered-character-type">Layered Character Type</h1>
 
-<p>A layered character is made from multiple layers, these layers are stacked upon each other to form the final character.<br>
+<p>A Layered Character Type is an asset which holds core information needed for all your <strong>Layered Characters</strong> such as the <strong>Base Character Spritesheet</strong> and an <strong>Animator Controller</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/layered-character-type-asset.png" alt="Layered Character Type Asset"></p>
+<hr>
+<h2 id="layered-characters">Layered Characters</h2>
+<p>A <strong>Layered Character</strong> is made from <strong>multiple layers</strong>, each layer is its own <strong>spritesheet</strong>. Every spritesheet must be the same size and contain the same <strong>frame sizes</strong> and <strong>positioning</strong>.</p>
+<p>Each layer is stacked upon each other to create the final character.<br>
 Ex: <strong>Body &gt; Outfit &gt; Hairstyle &gt; Accessory</strong> - Each layer is added one by one in order.</p>
+<p><img src="../../images/character-types/layered-characters/layered-character-example.png" alt="Layered Character Example"></p>
 <hr>
-<h2 id="creating-a-layered-character-type">Creating a Layered Character Type</h2>
-<p>to create a new layered character type right click the <strong>Project</strong> window and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type</strong>.</p>
+<h2 id="create-layered-character-type-asset">Create Layered Character Type Asset</h2>
+<p>to create a new layered character type <code>right click</code> the <code>Project</code> window and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type</code>.</p>
+<p><img src="../../images/character-types/layered-characters/create-layered-character-type.png" alt="Create Layered Character Type Asset"></p>
 <hr>
-<h3 id="setting-up-a-layered-character-type">Setting up a Layered Character Type</h3>
-<p>The following properties must be set:</p>
+<h2 id="setup">Setup</h2>
+<p>Setup the core fields every Character Type has, below is an overview of those fields:</p>
 <table>
 <thead>
 <tr>
@@ -121,26 +129,51 @@ Ex: <strong>Body &gt; Outfit &gt; Hairstyle &gt; Accessory</strong> - Each layer
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="xref:character-type-core#character-type-id">CharacterTypeID</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Characte Type ID</a></strong></td>
 <td>String</td>
 <td>A <strong>unique</strong> identifer</td>
 </tr>
 <tr>
-<td><strong><a href="xref:character-type-core#base-spritesheet">BaseSpritesheet</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
 <td>Sprite</td>
-<td>The default character spritesheet</td>
+<td>The <strong>character spritesheet</strong> used by all characters</td>
 </tr>
 <tr>
-<td><strong><a href="xref:character-type-core#character-controller">CharacterController</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#animator-controller-optional">Animator Controller</a></strong></td>
 <td>RuntimeAnimatorController</td>
-<td>The Animator Controller used</td>
+<td>Single <strong>Animator Controller</strong> for all characters</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="character-types.html#pixels-per-unit">Pixels Per Unit</a></strong></td>
+<td>int</td>
+<td>PPU of your Base Spritesheet</td>
 </tr>
 </tbody>
 </table>
+<p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
 <hr>
-<h3 id="setting-up-character-layers">Setting up Character Layers</h3>
-<p>At the bottom of your <strong>Layered Character Type</strong> is a list of <strong>Character Layers</strong>. Each layer is a <strong>Scriptable Object</strong> that contains all available options for that layer of your character.</p>
-<p>Refer to <a href="character-layers.html">Character Layers</a> for how to create and setup character layers.</p>
+<h3 id="character-layers">Character Layers</h3>
+<p>At the bottom of the <strong>Layered Character Type</strong> is a list of <strong>Character Layers</strong>. Each entry is a Character Layer Definition asset which contains the following information regarding each layer:</p>
+<ul>
+<li><strong>Layer Name</strong></li>
+<li><strong>If the layer can be blank</strong></li>
+<li><strong>Layer Options</strong></li>
+</ul>
+<p>To create a Character Layer Definition <code>right click</code> the <code>Project window</code> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layerd Character Types &gt; Layer Definition</code></p>
+<p>Create a <strong>Layer Definition</strong> for each layer you want your characters to have.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" alt="Create Character Layer Definition Asset"></p>
+<p>Once created, add each <strong>Layer Definition</strong> to the <strong>layers</strong> list in the <strong>Layered Character Type asset</strong>.<br>
+The order they appear in the list will determine the order the layers are combined.</p>
+<p><img src="../../images/character-types/layered-characters/layers-list.png" alt="Layers List"></p>
+<p>Read <a href="character-layers.html">Character Layer Defintion Setup</a> to learn how to setup each <strong>Character Layer Definition</strong>.</p>
+<hr>
+<h2 id="create-a-layered-character">Create a Layered Character</h2>
+<p>it is assumed you already have a <strong>Layered Character Type</strong> created and setup, including your <strong>Character Layer Defintion</strong> assets.</p>
+<h3 id="character-templates">Character Templates</h3>
+<p>A character template acts as a blueprint for a character</p>
+<hr>
+<h2 id="create-a-layered-character-in-c">Create a Layered Character in C#</h2>
 
 </article>
 

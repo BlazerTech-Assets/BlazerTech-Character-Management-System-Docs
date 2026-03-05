@@ -39,7 +39,9 @@ Each spritesheet is layered on top of another in order at runtime.
 For example: If we had a character with four layers: **Body, Outfit, Hairstyle and Accessory**.
 
 When the character is used, the body layer will be renderered first, then the outfit on top of that, then the hairstyle and finally the accessory layer.  
-You can control the order the layers are rendered in.
+You have full control over the order the layers are rendered in.
+
+![Layered Character Example](~/images/character-types/layered-characters/layered-character-example.png)
 
 ---
 

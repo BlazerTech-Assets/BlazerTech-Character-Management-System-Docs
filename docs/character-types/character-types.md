@@ -5,143 +5,222 @@ summary: Unified vs Layered Character Types and which one works best for your pr
 
 # Character Types
 
-The **Character Management System** contains two types of characters, both meant for different use cases.
+The **Character Management System** supports two different character structures: **Unified Characters** and **Layered Characters**.  
 
-Check out the difference between them below:
+Once setup, both can be used the same way but differ in how the character is rendered and how it can be customized.
+
+Read below to choose the correct type for your project.
+
+---
+
+## Choosing a Character Type
+
+| Feature               | Unified Character               | Layered Character                       |
+| --------------------- | ------------------------------- | --------------------------------------- |
+| Spritesheets          | One complete spritesheet        | Multiple layered spritesheets           |
+| Runtime Customization | ❌ No                            | ✅ Yes                                   |
+| Setup Complexity      | Simple                          | Moderate                                |
+| Best For              | Fixed characters or simple NPCs | Customizable characters or dynamic NPCs |
+
+---
 
 ## Unified Characters
 
-A Unified Character contains one single spritesheet that contains all frames of the character.
+A **Unified Character** uses a single spritesheet that contains the fully assembled character.
 
-![Unified Character Types Showcase](~/images/character-types/unified-character-type-showcase.png)
+![Unified Character Types Showcase](~/images/character-types/unified-characters/unified-character-type-showcase.png)
 
-These are the simplest characters to setup and use but lack runtime customization since the character is pre-created beforehand.
+### Best Used For
+- Characters with fixed appearances
+- Story characters that never change
+- Projects that do not need character customization
 
+Unified Characters are the **simplest to create and manage**, but they do **not support any runtime customzation** since the character is fully assembled beforehand.
 
 ---
 
 ## Layered Characters
 
-A Layered Character is split into multiple spritesheets. Each spritesheet is a layer of the character. At runtime each spritesheet is layered on top of each other to create the finalized character.  
-Every spritesheet must be the exact same size and contain the same frame sizes and position to work properly.
+A **Layered Character** is split into multiple spritesheets. Each spritesheet is a layer of the character.
 
-![Layered Character Types Showcase](~/images/character-types/layered-character-type-showcase.png)
+![Layered Character Types Showcase](~/images/character-types/layered-characters/layered-character-type-showcase.png)
 
-Here's an example, we've got a character with four layers: **Body, Outfit, Hairstyle and Accessory**.
+At runtime the system stacks each layer together to create the final character.
 
-When the character is rendered, the body is rendered first, then the outfit on top of that, then the hairstyle and finally the accessory.  
-The order the spritesheets are layered can be changed in the editor.
+For example a character may contain the layers:
+- **Body**
+- **Outfit**
+- **Hairstyle**
+- **Accessory**
 
+When the character is rendered:
 
+1. The body renders first
+2. The outfit renders on top of that
+3. the hairstyle renders above that
+4. accessory layer renders last
+
+The **layer order can be configured inside the editor**.
+
+### Requirements
+All layer spritesheets must:
+- Be the **exact same size**
+- Use the **same layout**
+- Align to the **same animation frames**
+
+### Best Used For
+- Customizable player characters
+- Randomly generated NPCs
 ---
 
 ## The Character Type Asset
-
-Character types are [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that define core aspects of a character. They are the heart of the **Character Management System**.
+Character types are the heart of the **Character Management System**, they are implemented using [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html).
 
 ![Character Type Assets](~/images/character-types/character-type-assets.png)
 
+A Character Type asset stores the core configuration used by all characters of that type.
+
+**This includes**:
+- Base Spritesheet all characters use
+- Animator Controller
+- Layer Definitions (For Layered Character Types)
+
+
 > [!NOTE]
-> All characters **Require** a **Character Type**.
+> A **Character Type asset** must exist before characters can be created.
 
 ---
 
-### How to Create a Character Type
+### Create a Character Type
 
-Character Types can be created by `right clicking` the `Project window` and navigating to:  
+A new Character Type asset can be created by **right clicking the Project window** and navigating to  
 `Create > BlazerTech > Character Management System > (Choose Character Type)`
 
-When creating a **Character Type** you'll need to choose whether it'll be a **Layered** or **Unified Character Type**.  
-**Character Types** can only create characters of one type.
+You will then choose which character type to create:
+- **Unified Character Type**
+- **Layered Character Type**
+  
+A **Character Type can only create characters of the same type**.
 
 ![Create Character Type](~/images/character-types/create-character-type.png)
 
-<!-- ---
+> [!NOTE]
+> You will need a new **Character Type** for each set of characters that have a different spritesheet layout (EG: different animations, number of frames, etc.)
 
-### Overview
+---
 
-| Field                                                                    | Type                      | Description                                           |
-| ------------------------------------------------------------------------ | ------------------------- | ----------------------------------------------------- |
-| **[CharacterTypeID](xref:character-type-core#character-type-id)**        | String                    | A **unique** identifer for every Character Type asset |
-| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet for all characters  |
-| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used for all characters       |
-| **[Pixels per Unit](xref:character-type-core#character-controller)**     | Int                       | The PPU of your Base Spritesheet                      | -->
+## Active Character Types List
+
+The **Active Character Types list** determines which Character Types are initialized when the game starts.
+
+It can be found under: **Project Settings > BlazerTech > Character Management System**.
+
+![Active Character Type List](~/images/project-settings/active-character-types-list.png)
+
+Only Character Types in this list will be useable at runtime.
+
+When creating a new **Character Type asset** you will be promped to add it to the **Active Character Types list** automatically.
+
+![Add Character Type to List](~/images/project-settings/add-character-type-to-list.png)
 
 ---
 
 ## Character Type Setup
 
-### Active Character Types List
+This section explains how to configure the fields inside the **Character Type asset**.  
+Setup specific to only **Layered** or **Unified Character Types** will be found in their own pages.
 
-A list of all **Character Type assets** which will be initialized at runtime.  
-This list can be found under **Proejct Settings > BlazerTech > Character Management System**
+---
 
-![Active Character Type List](~/images/project-settings/active-character-types-list.png)
 
-When a new Character Type asset is created you'll be promped to add it to the **Active Character Types list** before continuing.
-
-![Add Character Type to List](~/images/project-settings/add-character-type-to-list.png)
+---
 
 ### Character Type ID
 
-This is a **unique identifier** for the Character Type asset. It **cannot** be the same as any other identifier in the **Active Character Types** list or the **Character Type asset** will fail to initialize at runtime.
+A **unique identifier** for the Character Type
 
 ![Character Type ID Field](~/images/character-types/fields/character-type-id.png)
 
+This ID **must be unique** among all Character Types listed in the **Active Character Types list**.
+
+If two Character Types share the same ID, initialization will fail at runtime.
+
+---
+
 ### Base Spritesheet
 
-Defines the layout that all other spritesheet must follow.
-
-This spritesheet should be sliced into frames, these are the frames that are used for every character using the same **Character Type asset**.
+The spritesheet all characters of the same type will use.
 
 ![Base Spritesheet Field](~/images/character-types/fields/base-spritesheet.png)
 
+The **Base Spritesheet** contains all animation frames that characters of this type will use.  
+This spritesheet acts as a **template for frame positions, sizes and animations**.
+
+All characters using the same **Character Type** must follow this layout.
+
+#### Why All Characters Use the Same Base Spritesheet
+
+The [Character Shader](xref:basic-concepts#the-character-shader) uses the animation frames from the **Base Spritesheet** to determine **which frame should be displayed**.
+
+instead of changing the animation itself, the shader replaces the visual sprites with the character's own spritesheet.
+
+This allows:
+- One **Animator Controller** to animate every character
+- New characters to be added without creating new animations
+
+#### Base Spritesheet Settings
+
+The **Base Spritesheet** must use the correct import settings to work properly.  
+
+| Setting         | Value              | Reason                                          |
+| --------------- | ------------------ | ----------------------------------------------- |
+| **Sprite**      | Multiple           | Allows the spritesheet to be sliced into frames |
+| **Compression** | None (Recommended) | Prevents artifacts in pixel art                 |
+| **Filter Mode** | Point (No Filter)  | Keeps pixel art sharp                           |
+
+#### Spritesheet Layout Requirements
+
+All character spritesheets for this Character Type must:
+- Use the **same frame sizes**
+- Use the **same frame positions**
+- Contain the **same animation frames**
+
+This guarantees that animations line up correctly across all characters.
+
+##### Example
+If the **Base Spritesheet** contains the following animations:
+- Idle (4 frames)
+- Walk (6 frames)
+- Run (6 frames)
+
+Then **every character spritesheet must also contain those same frames in the same positions**.
+
+---
+
 ### Animator Controller (Optional)
 
-All characters use frames from the **Base Spritesheet**, this means a single **Animator Controller** can be used to animate all characters of the same **Character Type asset**. No need to create a new **Animator/Override Controller** for every character.
-
-Check out [Character Animation Setup](xref:character-animation-setup) for more info about how to correctly configure your **Animator Controller**.
+All character share the same spritesheet layout, meaning **one Animator Controller can animate every character of a single type**.
 
 ![Animator Controller Field](~/images/character-types/fields/animator-controller.png)
 
+This removes the need to create separate **Animator Controllers** or **Animator Override Controllers** for each character.
+
+See [Character Animation Setup](xref:character-animation-setup) for instructions on configuring your **Animator Controller**.
+
+---
+
 ### Pixels Per Unit
 
-Should be the same PPU set in the **Base Spritesheet**.
+The **render scale** of the character.
 
 ![Pixels Per Unit Field](~/images/character-types/fields/pixels-per-unit.png)
+
+This value should match the **Pixels Per Unit** setting used in the **Base Spritesheet**.
+
+---
 
 ## Related
 - [Layered Character Type](xref:layered-character-type)
 - [Unified Character Type](xref:unified-character-type)
-
-
-
-
-
-
-<!-- ---
-
-## Character Type Variants
-
-| Variant     | Modularity           | Best For                      |
-| ----------- | -------------------- | ----------------------------- |
-| **Unified** | Single spritesheet   | Pre-created, fixed characters |
-| **Layered** | Layered spritesheets | Modular, editable characters  |
-
----
-
-### 1. Unified Character Type
-characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.  
-- **Use Case:** Characters with fixed, pre-created appearances.  
-- **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
-
-[Read More → Unified Character Type](unified-character-type.md)
-
----
-
-### 2. Layered Character Type
-Characters consist of a set of spritesheets, each containing one visual layer of the character.  
-- **Use Case:** Customizable player characters or dynamically generated NPCs.  
-- **Example:** Body, Outfit, Hairstyle, Accessory.  
-
-[Read More → Layered Character Type](layered-character-type.md) -->
+- [Character Templates](xref:character-templates)
+- [Character Renderer Components](xref:character-renderer-components)

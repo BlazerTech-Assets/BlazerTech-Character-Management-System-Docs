@@ -103,98 +103,212 @@
         <article data-uid="character-types">
 <h1 id="character-types">Character Types</h1>
 
-<p>The <strong>Character Management System</strong> contains two types of characters, both meant for different use cases.</p>
-<p>Check out the difference between them below:</p>
+<p>The <strong>Character Management System</strong> supports two different character structures: <strong>Unified Characters</strong> and <strong>Layered Characters</strong>.</p>
+<p>Once setup, both can be used the same way but differ in how the character is rendered and how it can be customized.</p>
+<p>Read below to choose the correct type for your project.</p>
+<hr>
+<h2 id="choosing-a-character-type">Choosing a Character Type</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Unified Character</th>
+<th>Layered Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spritesheets</td>
+<td>One complete spritesheet</td>
+<td>Multiple layered spritesheets</td>
+</tr>
+<tr>
+<td>Runtime Customization</td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Setup Complexity</td>
+<td>Simple</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Best For</td>
+<td>Fixed characters or simple NPCs</td>
+<td>Customizable characters or dynamic NPCs</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <h2 id="unified-characters">Unified Characters</h2>
-<p>A Unified Character contains one single spritesheet that contains all frames of the character.</p>
-<p><img src="../../images/character-types/unified-character-type-showcase.png" alt="Unified Character Types Showcase"></p>
-<p>These are the simplest characters to setup and use but lack runtime customization since the character is pre-created beforehand.</p>
+<p>A <strong>Unified Character</strong> uses a single spritesheet that contains the fully assembled character.</p>
+<p><img src="../../images/character-types/unified-characters/unified-character-type-showcase.png" alt="Unified Character Types Showcase"></p>
+<h3 id="best-used-for">Best Used For</h3>
+<ul>
+<li>Characters with fixed appearances</li>
+<li>Story characters that never change</li>
+<li>Projects that do not need character customization</li>
+</ul>
+<p>Unified Characters are the <strong>simplest to create and manage</strong>, but they do <strong>not support any runtime customzation</strong> since the character is fully assembled beforehand.</p>
 <hr>
 <h2 id="layered-characters">Layered Characters</h2>
-<p>A Layered Character is split into multiple spritesheets. Each spritesheet is a layer of the character. At runtime each spritesheet is layered on top of each other to create the finalized character.<br>
-Every spritesheet must be the exact same size and contain the same frame sizes and position to work properly.</p>
-<p><img src="../../images/character-types/layered-character-type-showcase.png" alt="Layered Character Types Showcase"></p>
-<p>Here's an example, we've got a character with four layers: <strong>Body, Outfit, Hairstyle and Accessory</strong>.</p>
-<p>When the character is rendered, the body is rendered first, then the outfit on top of that, then the hairstyle and finally the accessory.<br>
-The order the spritesheets are layered can be changed in the editor.</p>
+<p>A <strong>Layered Character</strong> is split into multiple spritesheets. Each spritesheet is a layer of the character.</p>
+<p><img src="../../images/character-types/layered-characters/layered-character-type-showcase.png" alt="Layered Character Types Showcase"></p>
+<p>At runtime the system stacks each layer together to create the final character.</p>
+<p>For example a character may contain the layers:</p>
+<ul>
+<li><strong>Body</strong></li>
+<li><strong>Outfit</strong></li>
+<li><strong>Hairstyle</strong></li>
+<li><strong>Accessory</strong></li>
+</ul>
+<p>When the character is rendered:</p>
+<ol>
+<li>The body renders first</li>
+<li>The outfit renders on top of that</li>
+<li>the hairstyle renders above that</li>
+<li>accessory layer renders last</li>
+</ol>
+<p>The <strong>layer order can be configured inside the editor</strong>.</p>
+<h3 id="requirements">Requirements</h3>
+<p>All layer spritesheets must:</p>
+<ul>
+<li>Be the <strong>exact same size</strong></li>
+<li>Use the <strong>same layout</strong></li>
+<li>Align to the <strong>same animation frames</strong></li>
+</ul>
+<h3 id="best-used-for-1">Best Used For</h3>
+<ul>
+<li>Customizable player characters</li>
+<li>Randomly generated NPCs</li>
+</ul>
 <hr>
 <h2 id="the-character-type-asset">The Character Type Asset</h2>
-<p>Character types are <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a> that define core aspects of a character. They are the heart of the <strong>Character Management System</strong>.</p>
+<p>Character types are the heart of the <strong>Character Management System</strong>, they are implemented using <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
 <p><img src="../../images/character-types/character-type-assets.png" alt="Character Type Assets"></p>
+<p>A Character Type asset stores the core configuration used by all characters of that type.</p>
+<p><strong>This includes</strong>:</p>
+<ul>
+<li>Base Spritesheet all characters use</li>
+<li>Animator Controller</li>
+<li>Layer Definitions (For Layered Character Types)</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>All characters <strong>Require</strong> a <strong>Character Type</strong>.</p>
+<p>A <strong>Character Type asset</strong> must exist before characters can be created.</p>
 </div>
 <hr>
-<h3 id="how-to-create-a-character-type">How to Create a Character Type</h3>
-<p>Character Types can be created by <code>right clicking</code> the <code>Project window</code> and navigating to:<br>
+<h3 id="create-a-character-type">Create a Character Type</h3>
+<p>A new Character Type asset can be created by <strong>right clicking the Project window</strong> and navigating to<br>
 <code>Create &gt; BlazerTech &gt; Character Management System &gt; (Choose Character Type)</code></p>
-<p>When creating a <strong>Character Type</strong> you'll need to choose whether it'll be a <strong>Layered</strong> or <strong>Unified Character Type</strong>.<br>
-<strong>Character Types</strong> can only create characters of one type.</p>
+<p>You will then choose which character type to create:</p>
+<ul>
+<li><strong>Unified Character Type</strong></li>
+<li><strong>Layered Character Type</strong></li>
+</ul>
+<p>A <strong>Character Type can only create characters of the same type</strong>.</p>
 <p><img src="../../images/character-types/create-character-type.png" alt="Create Character Type"></p>
-<!-- ---
-
-### Overview
-
-| Field                                                                    | Type                      | Description                                           |
-| ------------------------------------------------------------------------ | ------------------------- | ----------------------------------------------------- |
-| **[CharacterTypeID](xref:character-type-core#character-type-id)**        | String                    | A **unique** identifer for every Character Type asset |
-| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet for all characters  |
-| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used for all characters       |
-| **[Pixels per Unit](xref:character-type-core#character-controller)**     | Int                       | The PPU of your Base Spritesheet                      | -->
+<div class="NOTE">
+<h5>Note</h5>
+<p>You will need a new <strong>Character Type</strong> for each set of characters that have a different spritesheet layout (EG: different animations, number of frames, etc.)</p>
+</div>
+<hr>
+<h2 id="active-character-types-list">Active Character Types List</h2>
+<p>The <strong>Active Character Types list</strong> determines which Character Types are initialized when the game starts.</p>
+<p>It can be found under: <strong>Project Settings &gt; BlazerTech &gt; Character Management System</strong>.</p>
+<p><img src="../../images/project-settings/active-character-types-list.png" alt="Active Character Type List"></p>
+<p>Only Character Types in this list will be useable at runtime.</p>
+<p>When creating a new <strong>Character Type asset</strong> you will be promped to add it to the <strong>Active Character Types list</strong> automatically.</p>
+<p><img src="../../images/project-settings/add-character-type-to-list.png" alt="Add Character Type to List"></p>
 <hr>
 <h2 id="character-type-setup">Character Type Setup</h2>
-<h3 id="active-character-types-list">Active Character Types List</h3>
-<p>A list of all <strong>Character Type assets</strong> which will be initialized at runtime.<br>
-This list can be found under <strong>Proejct Settings &gt; BlazerTech &gt; Character Management System</strong></p>
-<p><img src="../../images/project-settings/active-character-types-list.png" alt="Active Character Type List"></p>
-<p>When a new Character Type asset is created you'll be promped to add it to the <strong>Active Character Types list</strong> before continuing.</p>
-<p><img src="../../images/project-settings/add-character-type-to-list.png" alt="Add Character Type to List"></p>
+<p>This section explains how to configure the fields inside the <strong>Character Type asset</strong>.<br>
+Setup specific to only <strong>Layered</strong> or <strong>Unified Character Types</strong> will be found in their own pages.</p>
+<hr>
+<hr>
 <h3 id="character-type-id">Character Type ID</h3>
-<p>This is a <strong>unique identifier</strong> for the Character Type asset. It <strong>cannot</strong> be the same as any other identifier in the <strong>Active Character Types</strong> list or the <strong>Character Type asset</strong> will fail to initialize at runtime.</p>
+<p>A <strong>unique identifier</strong> for the Character Type</p>
 <p><img src="../../images/character-types/fields/character-type-id.png" alt="Character Type ID Field"></p>
+<p>This ID <strong>must be unique</strong> among all Character Types listed in the <strong>Active Character Types list</strong>.</p>
+<p>If two Character Types share the same ID, initialization will fail at runtime.</p>
+<hr>
 <h3 id="base-spritesheet">Base Spritesheet</h3>
-<p>Defines the layout that all other spritesheet must follow.</p>
-<p>This spritesheet should be sliced into frames, these are the frames that are used for every character using the same <strong>Character Type asset</strong>.</p>
+<p>The spritesheet all characters of the same type will use.</p>
 <p><img src="../../images/character-types/fields/base-spritesheet.png" alt="Base Spritesheet Field"></p>
+<p>The <strong>Base Spritesheet</strong> contains all animation frames that characters of this type will use.<br>
+This spritesheet acts as a <strong>template for frame positions, sizes and animations</strong>.</p>
+<p>All characters using the same <strong>Character Type</strong> must follow this layout.</p>
+<h4 id="why-all-characters-use-the-same-base-spritesheet">Why All Characters Use the Same Base Spritesheet</h4>
+<p>The <a class="xref" href="../getting-started/basic-concepts.html#the-character-shader">Character Shader</a> uses the animation frames from the <strong>Base Spritesheet</strong> to determine <strong>which frame should be displayed</strong>.</p>
+<p>instead of changing the animation itself, the shader replaces the visual sprites with the character's own spritesheet.</p>
+<p>This allows:</p>
+<ul>
+<li>One <strong>Animator Controller</strong> to animate every character</li>
+<li>New characters to be added without creating new animations</li>
+</ul>
+<h4 id="base-spritesheet-settings">Base Spritesheet Settings</h4>
+<p>The <strong>Base Spritesheet</strong> must use the correct import settings to work properly.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sprite</strong></td>
+<td>Multiple</td>
+<td>Allows the spritesheet to be sliced into frames</td>
+</tr>
+<tr>
+<td><strong>Compression</strong></td>
+<td>None (Recommended)</td>
+<td>Prevents artifacts in pixel art</td>
+</tr>
+<tr>
+<td><strong>Filter Mode</strong></td>
+<td>Point (No Filter)</td>
+<td>Keeps pixel art sharp</td>
+</tr>
+</tbody>
+</table>
+<h4 id="spritesheet-layout-requirements">Spritesheet Layout Requirements</h4>
+<p>All character spritesheets for this Character Type must:</p>
+<ul>
+<li>Use the <strong>same frame sizes</strong></li>
+<li>Use the <strong>same frame positions</strong></li>
+<li>Contain the <strong>same animation frames</strong></li>
+</ul>
+<p>This guarantees that animations line up correctly across all characters.</p>
+<h5 id="example">Example</h5>
+<p>If the <strong>Base Spritesheet</strong> contains the following animations:</p>
+<ul>
+<li>Idle (4 frames)</li>
+<li>Walk (6 frames)</li>
+<li>Run (6 frames)</li>
+</ul>
+<p>Then <strong>every character spritesheet must also contain those same frames in the same positions</strong>.</p>
+<hr>
 <h3 id="animator-controller-optional">Animator Controller (Optional)</h3>
-<p>All characters use frames from the <strong>Base Spritesheet</strong>, this means a single <strong>Animator Controller</strong> can be used to animate all characters of the same <strong>Character Type asset</strong>. No need to create a new <strong>Animator/Override Controller</strong> for every character.</p>
-<p>Check out <a class="xref" href="../character-animation-setup.html">Character Animation Setup</a> for more info about how to correctly configure your <strong>Animator Controller</strong>.</p>
+<p>All character share the same spritesheet layout, meaning <strong>one Animator Controller can animate every character of a single type</strong>.</p>
 <p><img src="../../images/character-types/fields/animator-controller.png" alt="Animator Controller Field"></p>
+<p>This removes the need to create separate <strong>Animator Controllers</strong> or <strong>Animator Override Controllers</strong> for each character.</p>
+<p>See <a class="xref" href="../character-animation-setup.html">Character Animation Setup</a> for instructions on configuring your <strong>Animator Controller</strong>.</p>
+<hr>
 <h3 id="pixels-per-unit">Pixels Per Unit</h3>
-<p>Should be the same PPU set in the <strong>Base Spritesheet</strong>.</p>
+<p>The <strong>render scale</strong> of the character.</p>
 <p><img src="../../images/character-types/fields/pixels-per-unit.png" alt="Pixels Per Unit Field"></p>
+<p>This value should match the <strong>Pixels Per Unit</strong> setting used in the <strong>Base Spritesheet</strong>.</p>
+<hr>
 <h2 id="related">Related</h2>
 <ul>
 <li><a class="xref" href="layered-character-type.html">Layered Character Type</a></li>
 <li><a class="xref" href="unified-character-type.html">Unified Character Type</a></li>
+<li><a class="xref" href="../character-templates/character-templates.html">Character Templates</a></li>
+<li><a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer Components</a></li>
 </ul>
-<!-- ---
-
-## Character Type Variants
-
-| Variant     | Modularity           | Best For                      |
-| ----------- | -------------------- | ----------------------------- |
-| **Unified** | Single spritesheet   | Pre-created, fixed characters |
-| **Layered** | Layered spritesheets | Modular, editable characters  |
-
----
-
-### 1. Unified Character Type
-characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.  
-- **Use Case:** Characters with fixed, pre-created appearances.  
-- **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
-
-[Read More → Unified Character Type](unified-character-type.md)
-
----
-
-### 2. Layered Character Type
-Characters consist of a set of spritesheets, each containing one visual layer of the character.  
-- **Use Case:** Customizable player characters or dynamically generated NPCs.  
-- **Example:** Body, Outfit, Hairstyle, Accessory.  
-
-[Read More → Layered Character Type](layered-character-type.md) -->
 
 </article>
 
