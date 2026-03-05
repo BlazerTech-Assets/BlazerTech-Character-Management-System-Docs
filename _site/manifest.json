@@ -3092,6 +3092,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-types/unified-characters/create-unified-character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/unified-characters/create-unified-character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-types/unified-characters/unified-character-type-asset.png",
       "output": {
         "resource": {

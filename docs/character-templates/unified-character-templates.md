@@ -69,7 +69,7 @@ Assign a spritesheet that has the same size and layout as the Character Spritesh
 
 When a character is created from the template the spritesheet will replace the **Base Spritesheet** used in the **Character Type**, this means the spritesheet must contain the same animations and layout.  
 
-Read more about the [Character Shader](xref:character-usage#the-character-shader) for more info.
+Read more about the [Character Shader](xref:basic-concepts#the-character-shader) for more info.
 
 The assigned spritesheet must:
 

@@ -37,8 +37,8 @@
     <meta property="og:title" content="Unified Character Type | BlazerTech Character Management System">
     <meta name="twitter:title" content="Unified Character Type | BlazerTech Character Management System">
 
-      <meta property="og:description" content="Deep dive into Unified Characters and how to setup them up.">
-      <meta name="twitter:description" content="Deep dive into Unified Characters and how to setup them up.">
+      <meta property="og:description" content="Deep dive into Unified Characters and how to set up a Unified Character Type.">
+      <meta name="twitter:description" content="Deep dive into Unified Characters and how to set up a Unified Character Type.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -103,12 +103,39 @@
         <article data-uid="unified-character-type">
 <h1 id="unified-character-type">Unified Character Type</h1>
 
-<p>A <strong>Unified Character</strong> is made of one single premade spritesheet which contains every animation of the character.</p>
-<h2 id="creating-a-unified-character-type">Creating a Unified Character Type</h2>
-<p>to create a new <strong>Unified character type</strong> right click the <strong>Project</strong> window and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Unified Character Type</strong>.</p>
+<p>A <strong>Unified Character Type</strong> defines how a <strong>Unified Character</strong> is structured.</p>
+<p>It contains the core data shared across all characters of that type, such as the <strong>Base Spritesheet</strong> and <strong>Animator Controller</strong>.</p>
+<p>A <strong>Unified Character</strong> uses a <strong>single spritesheet</strong> that contains the complete character and all its animations.</p>
+<p><img src="../../images/character-types/unified-characters/unified-character-type-asset.png" alt="Unified Character Type Asset"></p>
 <hr>
-<h3 id="setting-up-a-unified-character-type">Setting up a Unified Character Type</h3>
-<p>The following properties must be set:</p>
+<h2 id="unified-characters">Unified Characters</h2>
+<p>A Unified Character has all animations and frames contained in a single spritesheet.</p>
+<p>This means unlike <strong>Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in it's own spritesheet.</p>
+<p>For example, if your game contains a set of characters, each character variation would have its own spritesheet.
+Example list:</p>
+<ul>
+<li>Knight</li>
+<li>Knight (Armored)</li>
+<li>Knight (Winter Outfit)</li>
+</ul>
+<p>Each character spritesheet must follow the same frame layout so that all animation align correctly.</p>
+<p>All Unified Character Spritesheets must share:</p>
+<ul>
+<li>The same Spritesheet size</li>
+<li>The same frame sizes</li>
+<li>The same frame positioning</li>
+</ul>
+<hr>
+<h2 id="create-a-unified-character-type-asset">Create a Unified Character Type Asset</h2>
+<p>To create a new Unified Character Type:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Unified Character Type</strong></li>
+</ol>
+<p><img src="../../images/character-types/unified-characters/create-unified-character-type.png" alt="Create Unified Character Type Asset"></p>
+<hr>
+<h2 id="character-type-setup">Character Type Setup</h2>
+<p>A <strong>Unified Character Type</strong> uses the same core properties shared by all <strong>Character Types</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -119,24 +146,39 @@
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="xref:character-type-core#character-type-id">CharacterTypeID</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Characte Type ID</a></strong></td>
 <td>String</td>
 <td>A <strong>unique</strong> identifer</td>
 </tr>
 <tr>
-<td><strong><a href="xref:character-type-core#base-spritesheet">BaseSpritesheet</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
 <td>Sprite</td>
-<td>The default character spritesheet</td>
+<td>The <strong>character spritesheet</strong> used by all characters</td>
 </tr>
 <tr>
-<td><strong><a href="xref:character-type-core#character-controller">CharacterController</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#animator-controller-optional">Animator Controller</a></strong></td>
 <td>RuntimeAnimatorController</td>
-<td>The Animator Controller used</td>
+<td>Single <strong>Animator Controller</strong> for all characters</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="character-types.html#pixels-per-unit">Pixels Per Unit</a></strong></td>
+<td>int</td>
+<td>PPU of your Base Spritesheet</td>
 </tr>
 </tbody>
 </table>
-<p>That's it! Once your <strong>Unified Character Type</strong> is all setup you can create a <strong>Unified Character Template</strong> to make characters from this <strong>Character Type</strong>.</p>
-<p><a href="character-templates.md#unified-character-template">🔗 Read More → Unified Character Templates</a></p>
+<p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
+<hr>
+<h2 id="creating-unified-characters">Creating Unified Characters</h2>
+<p>The only way to create Unified Characters is through a <strong>Unified Character Template</strong>.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
+<p>Inside the template you'll assign the <strong>character spritesheet</strong> you want to use.</p>
+<p><a class="xref" href="../character-templates/unified-character-templates.html">Read More → Unified Character Templates</a></p>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
+</ul>
 
 </article>
 

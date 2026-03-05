@@ -123,3 +123,6 @@ Characters can be created in several ways:
 ## Runtime Creation through C#
 
 (To be written)
+
+## Related
+- [Character Types](xref:character-types)
