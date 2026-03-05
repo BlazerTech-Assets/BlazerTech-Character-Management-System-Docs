@@ -1,6 +1,6 @@
 ---
 uid: character-types
-summary: Unified vs Layered Character Types and which one works best for your project.
+summary: Learn the difference between Unified and Layered Characters and which one works best for your project.
 ---
 
 # Character Types
@@ -37,6 +37,8 @@ A **Unified Character** uses a single spritesheet that contains the fully assemb
 
 Unified Characters are the **simplest to create and manage**, but they do **not support any runtime customzation** since the character is fully assembled beforehand.
 
+[Read More → Unified Character Type](xref:unified-character-type)  
+
 ---
 
 ## Layered Characters
@@ -71,6 +73,9 @@ All layer spritesheets must:
 ### Best Used For
 - Customizable player characters
 - Randomly generated NPCs
+
+[Read More → Layered Character Type](xref:layered-character-type)  
+
 ---
 
 ## The Character Type Asset

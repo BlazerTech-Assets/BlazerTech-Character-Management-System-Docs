@@ -5,7 +5,7 @@ summary: Component for creating and displaying a completely randomized Layered C
 
 # Random Layered Character Renderer Component
 
-The **Random Layered Character Renderer** creates a new completely randomized **Layered Character** by selecting a random **Layer Option** for each layer of the character.  
+The **Random Layered Character Renderer** creates a new completely randomized **Layered Character** at runtime by selecting a random **Layer Option** for each layer of the character.  
 
 > [!NOTE]
 > This component contains no options for controlling how the character is randomized. For advanced character randomization use a [Randomized Layered Character Template](xref:randomized-layered-character-templates).

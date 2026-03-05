@@ -1,11 +1,13 @@
 ---
 uid: layered-character-type
-summary: Deep dive into Layered Characters and how to setup a Layered Character Type plus layers.
+summary: Deep dive into Layered Characters and how to setup a Layered Character Type and its layers.
 ---
 
 # Layered Character Type
 
-A Layered Character Type is an asset which holds core information needed for all your **Layered Characters** such as the **Base Character Spritesheet** and an **Animator Controller**.
+A **Layered Character Type** defines how a **Layered Character** is structured.
+
+It contains the core data shared by all character of that type, such as the **Base Spritesheet**, **Animator Controller**, and the list of **Character Layers** that make up the character.
 
 ![Layered Character Type Asset](~/images/character-types/layered-characters/layered-character-type-asset.png)
 
@@ -13,26 +15,42 @@ A Layered Character Type is an asset which holds core information needed for all
 
 ## Layered Characters
 
-A **Layered Character** is made from **multiple layers**, each layer is its own **spritesheet**. Every spritesheet must be the same size and contain the same **frame sizes** and **positioning**.  
+A **Layered Character** is built from **multiple spritesheet layers** stacked on top of each other.
 
-Each layer is stacked upon each other to create the final character.  
-Ex: **Body > Outfit > Hairstyle > Accessory** - Each layer is added one by one in order.
+Each layer represents a different visual component of the character.
+
+All layers must follow the **same spritesheet layout**:
+- Same **spritesheet size**
+- Same **frame sizes**
+- Same **frame positioning**
+
+Because every layer shares the same spritesheet layout, all layers align perfectly when stacked together.
+
+**Example Layered Character**:
+1. Body
+2. Outfit
+3. Hairstyle
+4. Accessory
+
+The final character is rendered by combining all layers in order.
 
 ![Layered Character Example](~/images/character-types/layered-characters/layered-character-example.png)
 
 ---
 ## Create Layered Character Type Asset
 
-to create a new layered character type `right click` the `Project` window and navigate to  
-`Create > BlazerTech > Character Management System > Layered Character Type`.
+To create a new Layered Character Type:
+
+1. `Right click` the **Project window**
+2. Navigate to: **Create > BlazerTech > Character Management System > Layered Character Type**
 
 ![Create Layered Character Type Asset](~/images/character-types/layered-characters/create-layered-character-type.png)
 
 ---
 
-## Setup
+## Character Type Setup
 
-Setup the core fields every Character Type has, below is an overview of those fields:  
+A **Layered Character Type** uses the same core properties shared by all **Character Types**.
 
 | Property                                                                     | Type                      | Description                                          |
 | ---------------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------- |
@@ -47,35 +65,61 @@ Read [Character Type Setup](xref:character-types#character-type-setup) for a ste
 
 ### Character Layers
 
-At the bottom of the **Layered Character Type** is a list of **Character Layers**. Each entry is a Character Layer Definition asset which contains the following information regarding each layer:  
+The Layered Character Type also defines the layers used to build the character.
+
+Each entry in the **Layers** list references a **Character Layer Definition** asset.
+
+A Character Layer Definition describes how a single layer behaves, including:
 - **Layer Name**
-- **If the layer can be blank**
-- **Layer Options**
+- Whether the **layer can be blank**
+- The available **Layer Options** (Spritesheets)
 
-To create a Character Layer Definition `right click` the `Project window` and navigate to  
-`Create > BlazerTech > Character Management System > Layerd Character Types > Layer Definition`
+Example layers: **Body, Outfit, Hairstyle, Accessory**
 
-Create a **Layer Definition** for each layer you want your characters to have.
+Each layer corresponds to one spritesheet layer used when rendering the character.
+
+---
+
+#### Create Character Layer Definitions
+
+To create a Character Layer Definition:
+1. `Right click` the **Project window**
+2. navigate to: **Create > BlazerTech > Character Management System > Layerd Character Types > Layer Definition**
 
 ![Create Character Layer Definition Asset](~/images/character-types/layered-characters/character-layers/create-character-layer-definition.png)
 
-Once created, add each **Layer Definition** to the **layers** list in the **Layered Character Type asset**.  
-The order they appear in the list will determine the order the layers are combined.
+Create a **Layer Definition** for each layer you want your characters to have.
+
+---
+
+#### Assign Layers
+
+After creating the **Layer Defintions**:
+1. Open your **Layered Character Type**
+2. Add each **Layer Definition** to the **Layers** list
 
 ![Layers List](~/images/character-types/layered-characters/layers-list.png)
+
+The **order of the layers in this list determines the render order**.
+
+Layers are drawn **from top to bottom in the list**, meaning: Top of List = Rendered First (Behind) Bottom of List = Rendered Last (In Front)
 
 Read [Character Layer Defintion Setup](character-layers.md) to learn how to setup each **Character Layer Definition**.
 
 ---
 
-## Create a Layered Character
+## Creating Layered Characters
 
-it is assumed you already have a **Layered Character Type** created and setup, including your **Character Layer Defintion** assets.
+Once your **Layered Character Type** and **Character Layers** are configured, you can begin creating characters.
 
-### Character Templates
+Characters can be created in several ways:
 
-A character template acts as a blueprint for a character
+- [Layered Character Templates](xref:layered-character-templates) (Simplest workflow)
+- [Random Character Generation](xref:random-layered-character-renderer-component)
+- [Runtime creation through C#](#runtime-creation-through-c)
 
 ---
 
-## Create a Layered Character in C#
+## Runtime Creation through C#
+
+(To be written)

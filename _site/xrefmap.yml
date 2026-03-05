@@ -8914,9 +8914,6 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
-- uid: temp
-  name: Character Types
-  href: docs/temp.html
 - uid: top-down-character-animator-handler-component
   name: Top Down Character Animator Handler
   href: docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html
