@@ -37,8 +37,8 @@
     <meta property="og:title" content="Character Layers | BlazerTech Character Management System">
     <meta name="twitter:title" content="Character Layers | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Explore Character Layers and their Definition assets that store all available spritesheets for each layer of a Layered Character.">
+      <meta name="twitter:description" content="Explore Character Layers and their Definition assets that store all available spritesheets for each layer of a Layered Character.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -103,56 +103,138 @@
         <article data-uid="character-layers">
 <h1 id="character-layers">Character Layers</h1>
 
-<p>A Character Layer is an asset that contains all available character spritesheets for a specific layer of a character.<br>
-Character Layers are meant to be used along with a <a class="xref" href="layered-character-type.html">Layered Character Type</a> asset.</p>
-<p>To create a layer <strong>right click</strong> the <strong>project window</strong> and navigate to<br>
-<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code>.</p>
-<p>After the <strong>Character Layer</strong> has been created make sure to add it to the <strong>layers list</strong> inside your <strong>Layered Character Type</strong>.</p>
+<p>A <strong>Character Layer</strong> is a spritesheet that contains one visual element of a character. When multiple layers are combined they create a finalized character.</p>
+<hr>
+<h2 id="character-layer-definitions">Character Layer Definitions</h2>
+<p><strong>Character Layer Definitions</strong> are <strong>scriptable objects</strong> that define all available spritesheets that can be used for a specifc layer of a <strong>Layered Character</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/character-layer-definition.png" alt="Character Layer Definition asset"></p>
+<p>Each <strong>Layered Character</strong> is built by combining multiple layers together.<br>
+Example Character Layers:</p>
+<ul>
+<li><strong>Body</strong></li>
+<li><strong>Outfit</strong></li>
+<li><strong>hairstyle</strong></li>
+<li><strong>Accessory</strong></li>
+</ul>
+<p><strong>Character Layer Definitions</strong> are connected directly to a <a class="xref" href="layered-character-type.html">Layered Character Type asset</a>.</p>
+<hr>
+<h2 id="creating-a-character-layer-definition">Creating a Character Layer Definition</h2>
+<p>To create a new Layer Definition:</p>
+<ol>
+<li><strong>Right click</strong> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Layer Definition</strong></li>
+</ol>
+<p><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" alt="Create Character Layer Definition"></p>
+<p>Create a new <strong>Layer Definition</strong> for every layer you want your characters to have.</p>
+<p>Once all <strong>Layer Defintions</strong> have been created, add them to the <strong>Layers list</strong> inside your <strong>Layered Character Type</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/layers-list.png" alt="Layers List"></p>
+<p>The <strong>order of the layers in this list determines the render order</strong>.</p>
+<p>Layers are drawn <strong>from top to bottom in the list</strong>, meaning: Top of List = Rendered First (Behind) Bottom of List = Rendered Last (In Front)</p>
+<hr>
 <h2 id="character-layer-options">Character Layer Options</h2>
-<p>A <a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">Character Layer Option</a> is a wrapper for a character spritesheet which allows for easy loading/unloading of the spritesheet when needed.</p>
-<p>A list of Layer Options is kept in every Character Layer. The list represents all valid character spritesheets for a specific layer of the character.</p>
+<p>A <strong>Character Layer Option</strong> represents a single spritesheet that can be used for a layer.</p>
+<p>Each entry in the <strong>Layer Options list</strong> corresponds to one possible appearance for that layer.</p>
+<p>For a <strong>Layered Character</strong> to be created, a <strong>Layer Option</strong> must be chosen from every layer.</p>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p>All spritesheets used as layer options must be the exact same size as the <a href="xref:character-type-core#base-spritesheet">Base Spritesheet</a> set in the <strong>Layered Character Type</strong> or they will be invalid!</p>
+<p>All layer spritesheets must be the exact same size as the <a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a> defined in the <strong>Layered Character Type asset</strong>.<br>
+If the dimensions do not match, the spritesheet will be considered <strong>invalid</strong>.</p>
 </div>
 <p><img src="../../images/character-types/character-layers/character-layer-options-list.png" alt="Character Layer Options List"></p>
-<p><strong>Layer Options</strong> are not added to the list manually. Instead go to the spritesheet you want to be included as an option for that layer:</p>
+<hr>
+<h2 id="adding-layer-options">Adding Layer Options</h2>
+<p><strong>Layer Options</strong> are <strong>not added manually</strong> to the list.</p>
+<p>Instead, they are automatically collected using Unity Addressables.</p>
+<p>To add a spritesheet as a valid option.</p>
 <ol>
-<li>Mark it as an <strong>Addressable</strong> in the <strong>Inspector</strong>.</li>
-<li>give it a label.<br>
-Make sure the label the sprite has is the same label assigned in the <a href="#layer-asset-label">Layer Asset label</a> field of the <strong>Character Layer</strong> asset you created.</li>
+<li>Select the spritesheet in the <strong>Project window</strong></li>
+<li>In the <strong>Inspector</strong>, enabled <strong>Addressable</strong> at the top</li>
+<li>Assign the correct <strong>Addressables Label</strong>.</li>
 </ol>
+<p>The label must match the <a href="#layer-asset-label">Layer Asset Label</a> configured in the <strong>Character Layer Definition asset</strong>.</p>
 <p><img src="../../images/character-types/character-layers/layer-option-addressables-marking.png" alt="Layer Option Addressables Marking"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>You can mark an entire folder as <strong>addressable</strong> and give it a tag which will automatically be applied to everything in the folder.</p>
+<p>You can mark an <strong>entire folder</strong> as Addressable and assign a label.<br>
+All assets inside the folder will be automatically marked as Addressable and inherit the label.</p>
 </div>
-<p>Once all your spritesheets are marked as addressable and have the correct tag, go back to your character layer asset and click the <a href="#collect-layer-options">Collect Layer Options</a> button to populate the <strong>Layer Options</strong> List.</p>
+<p>After labeling all spritesheets, return to the <strong>Character Layer Definition asset</strong> and press <strong>Collect Layer Options</strong></p>
+<p><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" alt="Collect Layer Options button"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>The <strong>Layered Character Type</strong> also contains a <strong>Collect Layer Options</strong> button which will collect layer options for all layers in the <strong>Layers list</strong>.</p>
+<p>The <strong>Layered Character Type</strong> asset also contains a <strong>Collect Layer Options</strong> button which collects options for all layers at once.</p>
 </div>
+<hr>
+<h3 id="spritesheet-settings">Spritesheet Settings</h3>
+<h4 id="required-settings">Required Settings</h4>
+<ul>
+<li><strong>Sprite Mode = Single</strong><br>
+This is required because frames from the spritesheet are not used directly but instead the whole spritesheet is given to the <strong>Character Shader</strong>.</li>
+</ul>
+<p><a class="xref" href="../getting-started/basic-concepts.html#the-character-shader">Read More → The Character Shader</a></p>
+<h4 id="recommended-settings">Recommended Settings</h4>
+<ul>
+<li><strong>Filter Mode = Point (No Filter)</strong> - Keeps image sharp</li>
+<li><strong>Compression = None</strong> - Generally not needed for pixel art</li>
+</ul>
+<h4 id="spritesheet-blurry">Spritesheet Blurry?</h4>
+<p>If your spritesheet is blurry even after setting the <strong>Filter Mode</strong> to <strong>Point</strong>, check if the <strong>spritesheet size</strong> is greater than the <strong>Max Size</strong> setting. If it is, increase the <strong>Max Size</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/character-spritesheet-max-size.png" alt="Character Spritesheet Max Size Setting"></p>
 <hr>
 <h2 id="fields">Fields</h2>
-<h3 id="attached-character-type">Attached Character Type</h3>
-<p>The <strong>Layered Character Type</strong> the layer is meant to be used for.</p>
-<h3 id="layer-name">Layer Name</h3>
-<p>The name of the layer. Used in the <a class="xref" href="../character-creator/character-creator-overview.html">Character Creator</a> when displaying character layer names.<br>
-Does <strong>NOT</strong> need to be unique.</p>
-<h3 id="layer-asset-label">Layer Asset Label</h3>
-<p>The <strong>Addressables label</strong> used to collect spritesheets and load them into <strong>Layer Options</strong>. The <strong>Character Management System</strong> uses Unitys <strong>Addressables package</strong> to dynamically load/unload sprites when needed. Select the label you'd like to use and make sure all character spritesheets meant to be used for this layer are marked as Addressable and have the same label.</p>
-<h3 id="include-none-option">Include None Option</h3>
-<p>if toggled a blank option will be added to the list of <strong>Layer Options</strong>. This will essentially allow a character to be created without using that layer since if the blank option is chosen, an empty sprite will be used.</p>
-<p><img src="../../images/character-types/character-layers/character-layer.png" alt="Character Layer"></p>
+<p>Below is a description of every field in the <strong>Character Layer Definition asset</strong>.</p>
 <hr>
-<h2 id="buttons">Buttons</h2>
+<h3 id="attached-character-type">Attached Character Type</h3>
+<p>The <strong>Layered Character Type asset</strong> that this layer belongs to.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/attached-character-type.png" alt="Attached Character Type Field"></p>
+<p>This is used to ensure the layer only collects spritesheets that match the Base Spritesheet size.</p>
+<hr>
+<h3 id="layer-name">Layer Name</h3>
+<p>The display name of the layer.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/layer-name.png" alt="Layer Name Field"></p>
+<p>This name is used by the <a class="xref" href="../character-creator/character-creator-overview.html">Character Creator</a> when showing layer names in the UI.</p>
+<p>The name <strong>does not need to be unique</strong>.</p>
+<hr>
+<h3 id="layer-asset-label">Layer Asset Label</h3>
+<p>The Addressables Label used to collect spritesheets for this layer.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/layer-asset-label.png" alt="Layer Asset Label Field"></p>
+<p>The Character Management System uses Unity Addressables to dynamically load and unload spritesheets.</p>
+<p>All spritesheets intended for this layer must:</p>
+<ul>
+<li>Be marked as <strong>Addressable</strong></li>
+<li>Use the <strong>same label</strong> configured in this field.</li>
+</ul>
+<p>When the <strong>Collect Layer Options</strong> button is pressed, all spritesheets using this label are added to the <strong>Layer Options list</strong>.</p>
+<p>Read <a href="#adding-layer-options">Adding Layer Options</a> for more info.</p>
+<hr>
+<h3 id="include-blank-option">Include Blank Option</h3>
+<p>If enabled, a <strong>blank option</strong> will be automatically added to the <strong>Layer Options list</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/include-blank-option.png" alt="Include Blank Option Field"></p>
+<p>This allows characters to be created <strong>without using that layer</strong>.</p>
+<p><strong>Example use cases</strong>:</p>
+<ul>
+<li>Characters without accessories</li>
+<li>Characters without facial hair</li>
+</ul>
+<p>If this option is selected at runtime, an <strong>empty sprite</strong> will be used instead of a spritesheet.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/include-blank-option.png" alt="Include Blank Option"></p>
+<hr>
+<h2 id="inspector-buttons">Inspector Buttons</h2>
+<p><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" alt="Button"></p>
 <h3 id="collect-layer-options">Collect Layer Options</h3>
-<p>Finds all sprites matching the <strong>Layer Asset Label</strong> and are the same size as the <strong>Base Spritesheet</strong>. If so it gets added it to the <a href="#character-layer-options">Layer Options</a> list.</p>
+<p>Searches for all spritesheets that:</p>
+<ul>
+<li>Are marked as <strong>Addressable</strong></li>
+<li>Match the <strong>Layer Asset Label</strong></li>
+<li>Have the same <strong>texture dimensions</strong> as the <strong>Base Spritesheet</strong></li>
+</ul>
+<p>If all conditions are met, the spritesheet is added to the Layer Options list.</p>
+<hr>
 <h3 id="clear-options-list">Clear Options List</h3>
-<p>Clears the Layer Options list.</p>
+<p>Removes all entries from the <strong>Layer Options list</strong>.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Can be undon using <strong>control/command + Z</strong>.</p>
+<p>This action can be undon using <strong>Ctrl + Z</strong> (Windows) or <strong>Command + Z</strong> (Mac).</p>
 </div>
 
 </article>

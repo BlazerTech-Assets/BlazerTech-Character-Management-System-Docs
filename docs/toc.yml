@@ -8,7 +8,7 @@
   - name: Changelog
     href: changelog.md
 
-  - name: Character Types
+  - name: 🟧Character Types
   - name: Character Types
     href: character-types/character-types.md
   - name: Layered Character Type
@@ -20,7 +20,7 @@
   - name: Character Overlay Layers
     href: character-types/character-overlay-layers
 
-  - name: Character Usage Components
+  - name: 🟩Character Usage Components
   - name: Character Renderer Components
     href: character-usage/character-renderer-components/character-renderer-components.md
     items:
@@ -54,7 +54,7 @@
   - name: Temp
     href: temp.md
 
-  - name: 📋Character Templates
+  - name: 🟦Character Templates
   - name: Character Templates
     href: character-templates/character-templates.md
   - name: Unified Character Templates
@@ -64,7 +64,7 @@
   - name: Randomized Layered Character Templates
     href: character-templates/randomized-layered-character-templates.md
 
-  - name: 📚Docs
+  - name: 🟪Other Docs
   - name: Project Settings
     href: project-settings.md
   - name: Built In Characters
@@ -75,7 +75,7 @@
     href: limezu-modern-interiors-support.md
 
 
-  - name: 🧑Character Creation Menu System (Alpha)
+  - name: 🟨Character Creation Menu System (Alpha)
   - name: Character Creator Overview
     href: character-creator/character-creator-overview.md
   - name: Character Creator Setup

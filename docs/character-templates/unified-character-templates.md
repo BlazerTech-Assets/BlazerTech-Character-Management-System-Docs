@@ -88,4 +88,4 @@ Once the **Character Template** is setup it can be assigned in a **Unified Chara
 
 ![Unified Character Renderer Component](/images/character-renderer-components/unified-character-renderer-component.png)
 
-[Read More → Unified Character Renderer component](xref:character-usage#unified-character-template-renderer)
+[Read More → Unified Character Renderer component](xref:unified-character-template-renderer)

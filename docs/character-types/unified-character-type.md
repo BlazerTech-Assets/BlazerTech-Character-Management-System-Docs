@@ -17,9 +17,9 @@ A **Unified Character** uses a **single spritesheet** that contains the complete
 
 ## Unified Characters
 
-A Unified Character has all animations and frames contained in a single spritesheet.
+A **Unified Character** has the entire character contained in a single spritesheet.
 
-This means unlike **Layered Characters**, the character is not built from multiple layers, instead, each character is self contained in it's own spritesheet.
+This means unlike **Layered Characters**, the character is not built from multiple layers, instead, each character is self contained in its own spritesheet.
 
 For example, if your game contains a set of characters, each character variation would have its own spritesheet.
 Example list:
@@ -27,12 +27,12 @@ Example list:
 - Knight (Armored)
 - Knight (Winter Outfit)
 
-Each character spritesheet must follow the same frame layout so that all animation align correctly.
+Each character spritesheet must follow the same layout so that all animations align correctly.
 
-All Unified Character Spritesheets must share:
-- The same Spritesheet size
-- The same frame sizes
-- The same frame positioning
+**All Unified Character Spritesheets must share**:
+- The same **Spritesheet size**
+- The same **frame sizes**
+- The same **frame positioning**
 
 ---
 
@@ -63,13 +63,16 @@ Read [Character Type Setup](xref:character-types#character-type-setup) for a ste
 
 ## Creating Unified Characters
 
-The only way to create Unified Characters is through a **Unified Character Template**.
+A **Unified Character** can be created through a **Unified Character Template**.
 
 ![Unified Character Template](~/images/character-templates/unified-character-templates/unified-character-template.png)
 
-Inside the template you'll assign the **character spritesheet** you want to use.
+The template will store a reference to the spritesheet for that character.  
+
+The **Unified Character Template Renderer** component can create and render a **Unified Character** from a template.
 
 [Read More → Unified Character Templates](xref:unified-character-templates)  
+[Read More → Unified Character Template Renderer component](xref:unified-character-template-renderer-component)  
 
 ---
 

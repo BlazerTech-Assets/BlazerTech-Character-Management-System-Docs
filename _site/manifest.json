@@ -3002,6 +3002,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/character-layer-definition.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/character-layer-definition.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-types/layered-characters/character-layers/character-layer-options-list.png",
       "output": {
         "resource": {
@@ -3012,10 +3022,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-types/layered-characters/character-layers/character-layer.png",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/character-spritesheet-max-size.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-types/layered-characters/character-layers/character-layer.png"
+          "relative_path": "images/character-types/layered-characters/character-layers/character-spritesheet-max-size.png"
         }
       },
       "version": ""
@@ -3026,6 +3036,66 @@
       "output": {
         "resource": {
           "relative_path": "images/character-types/layered-characters/character-layers/create-character-layer-definition.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/fields/attached-character-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/fields/attached-character-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/fields/include-blank-option.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/fields/include-blank-option.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/fields/layer-asset-label.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/fields/layer-asset-label.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/fields/layer-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/fields/layer-name.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/include-blank-option.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/include-blank-option.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-characters/character-layers/inspector-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-characters/character-layers/inspector-buttons.png"
         }
       },
       "version": ""

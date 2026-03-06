@@ -109,8 +109,8 @@
 <p><img src="../../images/character-types/unified-characters/unified-character-type-asset.png" alt="Unified Character Type Asset"></p>
 <hr>
 <h2 id="unified-characters">Unified Characters</h2>
-<p>A Unified Character has all animations and frames contained in a single spritesheet.</p>
-<p>This means unlike <strong>Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in it's own spritesheet.</p>
+<p>A <strong>Unified Character</strong> has the entire character contained in a single spritesheet.</p>
+<p>This means unlike <strong>Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in its own spritesheet.</p>
 <p>For example, if your game contains a set of characters, each character variation would have its own spritesheet.
 Example list:</p>
 <ul>
@@ -118,12 +118,12 @@ Example list:</p>
 <li>Knight (Armored)</li>
 <li>Knight (Winter Outfit)</li>
 </ul>
-<p>Each character spritesheet must follow the same frame layout so that all animation align correctly.</p>
-<p>All Unified Character Spritesheets must share:</p>
+<p>Each character spritesheet must follow the same layout so that all animations align correctly.</p>
+<p><strong>All Unified Character Spritesheets must share</strong>:</p>
 <ul>
-<li>The same Spritesheet size</li>
-<li>The same frame sizes</li>
-<li>The same frame positioning</li>
+<li>The same <strong>Spritesheet size</strong></li>
+<li>The same <strong>frame sizes</strong></li>
+<li>The same <strong>frame positioning</strong></li>
 </ul>
 <hr>
 <h2 id="create-a-unified-character-type-asset">Create a Unified Character Type Asset</h2>
@@ -170,10 +170,12 @@ Example list:</p>
 <p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
 <hr>
 <h2 id="creating-unified-characters">Creating Unified Characters</h2>
-<p>The only way to create Unified Characters is through a <strong>Unified Character Template</strong>.</p>
+<p>A <strong>Unified Character</strong> can be created through a <strong>Unified Character Template</strong>.</p>
 <p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
-<p>Inside the template you'll assign the <strong>character spritesheet</strong> you want to use.</p>
-<p><a class="xref" href="../character-templates/unified-character-templates.html">Read More → Unified Character Templates</a></p>
+<p>The template will store a reference to the spritesheet for that character.</p>
+<p>The <strong>Unified Character Template Renderer</strong> component can create and render a <strong>Unified Character</strong> from a template.</p>
+<p><a class="xref" href="../character-templates/unified-character-templates.html">Read More → Unified Character Templates</a><br>
+<a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Read More → Unified Character Template Renderer component</a></p>
 <hr>
 <h2 id="related">Related</h2>
 <ul>
