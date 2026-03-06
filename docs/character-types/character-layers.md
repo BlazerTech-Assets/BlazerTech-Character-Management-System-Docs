@@ -7,7 +7,6 @@ summary: Explore Character Layers and their Definition assets that store all ava
 
 A **Character Layer** is a spritesheet that contains one visual element of a character. When multiple layers are combined they create a finalized character.
 
-
 ---
 
 ## Character Layer Definitions

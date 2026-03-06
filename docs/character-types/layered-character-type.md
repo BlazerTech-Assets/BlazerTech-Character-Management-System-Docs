@@ -65,11 +65,11 @@ Read [Character Type Setup](xref:character-types#character-type-setup) for a ste
 
 ### Character Layers
 
-The Layered Character Type also defines the layers used to build the character.
+The **Layered Character Type** also defines the layers used to build the character.
 
 Each entry in the **Layers** list references a **Character Layer Definition** asset.
 
-A Character Layer Definition describes how a single layer behaves, including:
+A **Character Layer Definition** describes how a single layer behaves, including:
 - **Layer Name**
 - Whether the **layer can be blank**
 - The available **Layer Options** (Spritesheets)
