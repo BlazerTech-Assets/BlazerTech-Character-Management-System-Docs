@@ -104,7 +104,7 @@
 <h1 id="layered-character-type">Layered Character Type</h1>
 
 <p>A <strong>Layered Character Type</strong> defines how a <strong>Layered Character</strong> is structured.</p>
-<p>It contains the core data shared by all character of that type, such as the <strong>Base Spritesheet</strong>, <strong>Animator Controller</strong>, and the list of <strong>Character Layers</strong> that make up the character.</p>
+<p>It contains the core data shared by all characters of that type, such as the <strong>Base Spritesheet</strong>, <strong>Animator Controller</strong>, and the list of <strong>Character Layers</strong> that make up the character.</p>
 <p><img src="../../images/character-types/layered-characters/layered-character-type-asset.png" alt="Layered Character Type Asset"></p>
 <hr>
 <h2 id="layered-characters">Layered Characters</h2>
@@ -147,9 +147,9 @@
 </thead>
 <tbody>
 <tr>
-<td><strong><a class="xref" href="character-types.html#character-type-id">Characte Type ID</a></strong></td>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Character Type ID</a></strong></td>
 <td>String</td>
-<td>A <strong>unique</strong> identifer</td>
+<td>A <strong>unique</strong> identifier</td>
 </tr>
 <tr>
 <td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
@@ -180,35 +180,35 @@
 <li>The available <strong>Layer Options</strong> (Spritesheets)</li>
 </ul>
 <p>Example layers: <strong>Body, Outfit, Hairstyle, Accessory</strong></p>
-<p>Each layer corresponds to one spritesheet layer used when rendering the character.</p>
+<p>Each layer corresponds to one spritesheet that is combined during rendering.</p>
 <hr>
 <h4 id="create-character-layer-definitions">Create Character Layer Definitions</h4>
 <p>To create a Character Layer Definition:</p>
 <ol>
 <li><code>Right click</code> the <strong>Project window</strong></li>
-<li>navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layerd Character Types &gt; Layer Definition</strong></li>
+<li>navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Types &gt; Layer Definition</strong></li>
 </ol>
 <p><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" alt="Create Character Layer Definition Asset"></p>
 <p>Create a <strong>Layer Definition</strong> for each layer you want your characters to have.</p>
 <hr>
 <h4 id="assign-layers">Assign Layers</h4>
-<p>After creating the <strong>Layer Defintions</strong>:</p>
+<p>After creating the <strong>Layer Definitions</strong>:</p>
 <ol>
 <li>Open your <strong>Layered Character Type</strong></li>
 <li>Add each <strong>Layer Definition</strong> to the <strong>Layers</strong> list</li>
 </ol>
 <p><img src="../../images/character-types/layered-characters/layers-list.png" alt="Layers List"></p>
 <p>The <strong>order of the layers in this list determines the render order</strong>.</p>
-<p>Layers are drawn <strong>from top to bottom in the list</strong>, meaning:</p>
+<p>Layers are rendered <strong>from top to bottom in the list</strong>, meaning:</p>
 <ul>
 <li>Top of List = Rendered First (Behind)</li>
 <li>Bottom of List = Rendered Last (In Front)</li>
 </ul>
-<p>Read <a class="xref" href="character-layers.html">Character Layer Defintions</a> to learn how to setup each <strong>Character Layer Definition</strong>.</p>
+<p>Read <a class="xref" href="character-layers.html">Character Layer Definitions</a> to learn how to setup each <strong>Character Layer Definition</strong>.</p>
 <hr>
 <h2 id="creating-layered-characters">Creating Layered Characters</h2>
 <p>Once your <strong>Layered Character Type</strong> and <strong>Character Layers</strong> are configured, you can begin creating characters.</p>
-<p>Characters can be created in several ways:</p>
+<p><strong>Layered Characters</strong> can be created in several ways:</p>
 <ul>
 <li><a class="xref" href="../character-templates/layered-character-templates.html">Layered Character Templates</a> (Simplest workflow)</li>
 <li><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html">Random Character Generation</a></li>
@@ -216,10 +216,73 @@
 </ul>
 <hr>
 <h2 id="runtime-creation-through-c">Runtime Creation through C#</h2>
-<p>(To be written)</p>
+<h3 id="create-default-layered-character">Create Default Layered Character</h3>
+<p>This creates a new <strong>Layered Character</strong> using the <strong>default Layer Options</strong> for each Layer.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
+using UnityEngine;
+
+public class CreateDefaultLayeredCharacter : MonoBehaviour
+{
+    [SerializeField] LayeredCharacterTypeSO characterType;
+
+    LayeredCharacter character;
+    private void Start()
+    {
+        character = new LayeredCharacter(&quot;layered-character&quot;, characterType, &quot;Layered Character&quot;);
+    }
+}
+
+</code></pre>
+<hr>
+<h3 id="create-randomized-layered-character">Create Randomized Layered Character</h3>
+<p>This creates a new <strong>Layered Character</strong> and grabs a <strong>completely random Layer Option</strong> for each Layer.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
+using UnityEngine;
+
+public class CreateRandomizedLayeredCharacter : MonoBehaviour
+{
+    [SerializeField] LayeredCharacterTypeSO characterType;
+
+    LayeredCharacter character;
+    private void Start()
+    {
+        character = new LayeredCharacter(&quot;layered-character&quot;, characterType, &quot;Layered Character&quot;, LayeredCharacterCreationMode.RandomizedLayerOptions);
+    }
+}
+</code></pre>
+<hr>
+<h3 id="create-layered-character-with-specific-options">Create Layered Character With Specific Options</h3>
+<p>This creates a new <strong>Layered Character</strong> by grabbing the <strong>second layer option</strong> for every layer if available, if not the <strong>first layer option</strong> is grabbed instead.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CreateLayeredCharacter : MonoBehaviour
+{
+    [SerializeField] LayeredCharacterTypeSO characterType;
+
+    LayeredCharacter character;
+    private void Start()
+    {
+        List&lt;CharacterLayerOption&gt; layerOptions = new();
+
+        foreach (var layer in characterType.Layers)
+        {
+            var layerOption = layer.GetLayerOptionFromIndex(1);
+            layerOption ??= layer.GetLayerOptionFromIndex(0);
+
+            layerOptions.Add(layerOption);
+        }
+
+        character = new(&quot;layered-character&quot;, characterType, layerOptions, &quot;Layered Character&quot;);
+    }
+}
+</code></pre>
+<hr>
 <h2 id="related">Related</h2>
 <ul>
 <li><a class="xref" href="character-types.html">Character Types</a></li>
+<li><a class="xref" href="character-layers.html">Character Layers</a></li>
 </ul>
 
 </article>

@@ -54,7 +54,7 @@ Once all **Layer Defintions** have been created, add them to the **Layers list**
 
 The **order of the layers in this list determines the render order**.
 
-Layers are drawn **from top to bottom in the list**, meaning:
+Layers are rendered **from top to bottom in the list**, meaning:
 - Top of List = Rendered First (Behind)
 - Bottom of List = Rendered Last (In Front)
 
