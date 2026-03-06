@@ -5,21 +5,32 @@ summary: Explore Character Layers and their Definition assets that store all ava
 
 # Character Layers
 
-A **Character Layer** is a spritesheet that contains one visual element of a character. When multiple layers are combined they create a finalized character.
+A **Character Layer** represents a single visual component of a character such as a **body**, **outfit**, or **hairstyle**.
+
+A **Layered Character** is created by stacking multiple layers together.  
+Each layer uses a **spritesheet** that contains all animation frames for that part of the character.
+
+There are three main concepts involved when working with layers:
+
+| Concept | Description |
+|------|------|
+| **Character Layer** | A visual part of a character (Body, Outfit, Hair, etc.) |
+| **Character Layer Definition** | An asset that defines all spritesheets available for that layer |
+| **Character Layer Option** | A single spritesheet that can be used for that layer |
 
 ---
 
 ## Character Layer Definitions
 
-**Character Layer Definitions** are **scriptable objects** that define all available spritesheets that can be used for a specifc layer of a **Layered Character**.  
+**Character Layer Definitions** are **scriptable objects** that define all available spritesheets that can be used for a specific layer of a **Layered Character**.  
 
 ![Character Layer Definition asset](~/images/character-types/layered-characters/character-layers/character-layer-definition.png)
 
 Each **Layered Character** is built by combining multiple layers together.  
-Example Character Layers:
+**Example Character Layers**:
 - **Body**
 - **Outfit**
-- **hairstyle**
+- **Hairstyle**
 - **Accessory**
 
 **Character Layer Definitions** are connected directly to a [Layered Character Type asset](xref:layered-character-type).
@@ -43,7 +54,9 @@ Once all **Layer Defintions** have been created, add them to the **Layers list**
 
 The **order of the layers in this list determines the render order**.
 
-Layers are drawn **from top to bottom in the list**, meaning: Top of List = Rendered First (Behind) Bottom of List = Rendered Last (In Front)
+Layers are drawn **from top to bottom in the list**, meaning:
+- Top of List = Rendered First (Behind)
+- Bottom of List = Rendered Last (In Front)
 
 ---
 
@@ -53,14 +66,15 @@ A **Character Layer Option** represents a single spritesheet that can be used fo
 
 Each entry in the **Layer Options list** corresponds to one possible appearance for that layer.
 
+![Character Layer Options List](~/images/character-types/character-layers/character-layer-options-list.png)
+
 For a **Layered Character** to be created, a **Layer Option** must be chosen from every layer.
 
 > [!CAUTION]
 > All layer spritesheets must be the exact same size as the [Base Spritesheet](xref:character-types#base-spritesheet) defined in the **Layered Character Type asset**.  
 > If the dimensions do not match, the spritesheet will be considered **invalid**.
 
-![Character Layer Options List](~/images/character-types/character-layers/character-layer-options-list.png)
-
+A [Character Layer Option](xref:BlazerTech.CharacterManagement.Characters.CharacterLayerOption) is internally used by the **Character Management System** to reference and load the spritesheet when the character is created.
 
 ---
 
@@ -70,10 +84,10 @@ For a **Layered Character** to be created, a **Layer Option** must be chosen fro
 
 Instead, they are automatically collected using Unity Addressables.
 
-To add a spritesheet as a valid option.
+To add a spritesheet as a valid option:
 
 1. Select the spritesheet in the **Project window**
-2. In the **Inspector**, enabled **Addressable** at the top
+2. In the **Inspector**, enable **Addressable** at the top
 3. Assign the correct **Addressables Label**.
 
 The label must match the [Layer Asset Label](#layer-asset-label) configured in the **Character Layer Definition asset**.
@@ -93,13 +107,25 @@ After labeling all spritesheets, return to the **Character Layer Definition asse
 
 ---
 
-### Spritesheet Settings
+### Spritesheet Requirements
+
+> [!IMPORTANT]
+> All layer spritesheets must use the **same frame layout** as the **Base Spritesheet**.
+> 
+> This means:
+> - Same **texture dimensions**
+> - Same **frame sizes**
+> - Same **frame positions**
 
 #### Required Settings
-- **Sprite Mode = Single**  
-This is required because frames from the spritesheet are not used directly but instead the whole spritesheet is given to the **Character Shader**.
 
-[Read More → The Character Shader](xref:basic-concepts#the-character-shader)  
+- **Sprite Mode = Single**
+
+Layer spritesheets must use **Single** mode because the system does **not use individual sprite frames**.
+
+Instead, the **entire spritesheet texture** is passed to the **Character Shader**, which handles rendering the character.
+
+[Read More → The Character Shader](xref:basic-concepts#the-character-shader)
 
 #### Recommended Settings
 - **Filter Mode = Point (No Filter)** - Keeps image sharp
@@ -196,4 +222,4 @@ If all conditions are met, the spritesheet is added to the Layer Options list.
 Removes all entries from the **Layer Options list**.
 
 > [!TIP]
-> This action can be undon using **Ctrl + Z** (Windows) or **Command + Z** (Mac).
+> This action can be undone using **Ctrl + Z** (Windows) or **Command + Z** (Mac).

@@ -102,7 +102,9 @@ After creating the **Layer Defintions**:
 
 The **order of the layers in this list determines the render order**.
 
-Layers are drawn **from top to bottom in the list**, meaning: Top of List = Rendered First (Behind) Bottom of List = Rendered Last (In Front)
+Layers are drawn **from top to bottom in the list**, meaning:
+- Top of List = Rendered First (Behind)
+- Bottom of List = Rendered Last (In Front)
 
 Read [Character Layer Defintions](xref:character-layers) to learn how to setup each **Character Layer Definition**.
 
