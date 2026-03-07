@@ -214,12 +214,12 @@ animatorHandler.PlayAnimation("AnimationName");
 Once your Animator Controller is ready:
 
 1. Select your **Character Type asset**.
-2. In the **Inspector**, find the **Character Controller** field.
+2. In the **Inspector**, find the **Animator Controller** field.
 3. Drag your new **Animator Controller** into this field.
 
 It should look like this:
 
-![Animator Controller Field in Inspector](~/images/character-types/character-type-character-controller-field.png)
+![Animator Controller Field in Inspector](~/images/character-types/character-type-animator-controller-field.png)
 
 When used with a [Character Renderer component](xref:character-renderer-components),  
 the assigned **Animator Controller** will automatically be applied at runtime.

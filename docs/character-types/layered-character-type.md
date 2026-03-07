@@ -126,7 +126,7 @@ Once your **Layered Character Type** and **Character Layers** are configured, yo
 
 ### Create Default Layered Character
 
-This creates a new **Layered Character** using the **default Layer Options** for each Layer.
+This script creates a new **Layered Character** using the **default Layer Options** for each Layer.
 
 ```cs
 using BlazerTech.CharacterManagement.Characters;
@@ -149,7 +149,7 @@ public class CreateDefaultLayeredCharacter : MonoBehaviour
 
 ### Create Randomized Layered Character
 
-This creates a new **Layered Character** and grabs a **completely random Layer Option** for each Layer.
+This script creates a new **Layered Character** and grabs a **completely random Layer Option** for each Layer.
 
 ```cs
 using BlazerTech.CharacterManagement.Characters;
@@ -171,7 +171,7 @@ public class CreateRandomizedLayeredCharacter : MonoBehaviour
 
 ### Create Layered Character With Specific Options
 
-This creates a new **Layered Character** by grabbing the **second layer option** for every layer if available, if not the **first layer option** is grabbed instead.
+This script creates a new **Layered Character** by grabbing the **second layer option** for every layer if available, if not, the **first layer option** is grabbed instead.
 
 ```cs
 using BlazerTech.CharacterManagement.Characters;

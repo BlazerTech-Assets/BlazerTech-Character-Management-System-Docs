@@ -2912,6 +2912,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-types/character-type-animator-controller-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/character-type-animator-controller-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-types/character-type-assets.png",
       "output": {
         "resource": {
