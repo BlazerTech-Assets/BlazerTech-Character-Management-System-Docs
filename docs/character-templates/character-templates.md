@@ -27,7 +27,7 @@ A Character Template defines:
 
 At runtime, a **Renderer component** can be used to easily create and display a character from a template.
 
-[Read More → Character Renderer Components](xref:character-usage#character-renderer-components)
+[Read More → Character Renderer Components](xref:character-renderer-components)
 
 ---
 

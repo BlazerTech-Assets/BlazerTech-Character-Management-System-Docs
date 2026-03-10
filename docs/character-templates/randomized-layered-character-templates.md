@@ -193,9 +193,12 @@ Always selects a blank Layer Option.
 
 **Randomized Layered Character Templates** can be used in the same **Layered Character Renderer component** that the standard **Layered Character Templates** use.  
 
+![Layered Character Renderer Component](~/images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png)
+
 This component will create a character from the template and animate it using the **Animator Controller** assigned in the **Character Type**.
 
 > [!NOTE]
-> If `Use Cache` is enabled it will use the same character every time after the first character is created. If you want to create a new randomized character each time, disable this setting.
+> If `Use Cache` is enabled it will use the same character every time after the first character is created.  
+> **If you want to create a new randomized character each time, disable this setting**.
 
-[Read More → Layered Character Renderer component](xref:character-usage#layered-character-template-renderer)
+[Read More → Layered Character Template Renderer component](xref:layered-character-template-renderer-component)

@@ -74,8 +74,8 @@ When a character is created from this template, all selected **Layer Options** a
 
 ## Runtime Usage
 
-Once the **Character Template** is setup it can be assigned in a **Layered Character Renderer component** which at runtime will create a character from the template and animate it using the **Animator Controller** assigned in the **Character Type**.
+Once the **Character Template** is setup it can be assigned in a **Layered Character Template Renderer component** which at runtime will create a character from the template and animate it using the **Animator Controller** assigned in the **Character Type**.
 
-![Layered Character Renderer Component](/images/character-renderer-components/layered-character-renderer-component.png)
+![Layered Character Renderer Component](~/images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png)
 
-[Read More → Layered Character Renderer component](xref:character-usage#layered-character-template-renderer)
+[Read More → Layered Character Template Renderer component](xref:layered-character-template-renderer-component)

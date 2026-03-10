@@ -84,8 +84,8 @@ The assigned spritesheet must:
 
 ## Runtime Usage
 
-Once the **Character Template** is setup it can be assigned in a **Unified Character Renderer component** which at runtime will create a character from the template and animate it using the **Animator Controller** assigned in the **Character Type**.
+Once the **Character Template** is setup it can be assigned in a **Unified Character Template Renderer component** which at runtime will create a character from the template and animate it using the **Animator Controller** assigned in the **Character Type**.
 
-![Unified Character Renderer Component](/images/character-renderer-components/unified-character-renderer-component.png)
+![Unified Character Renderer Component](~/images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png)
 
-[Read More → Unified Character Renderer component](xref:unified-character-template-renderer)
+[Read More → Unified Character Template Renderer component](xref:unified-character-template-renderer-component)
