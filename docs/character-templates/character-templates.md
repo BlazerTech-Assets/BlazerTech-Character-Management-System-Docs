@@ -95,4 +95,4 @@ Used to create randomized modular character based on a set of pre-defined rules.
 ## Related
 
 - [Character Types](xref:character-types)  
-- [Character Usage](xref:character-usage)  
+- [Character Renderer Components](xref:character-renderer-components)  
