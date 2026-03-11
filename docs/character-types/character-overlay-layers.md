@@ -151,6 +151,12 @@ Apply an offset to the Overlay Layer in the amount of Units specified.
 
 ## Overlay Layer Extensions
 
+Overlay Layer Extensions let you add additional functionality to an Overlay Layer.
+
+In the Inspector is an Overlay Layer Extensions list.
+
+Each entry is a prefab that must contain a script that inherits from the OverlayLayerExtension class.
+
 ---
 
 ## Overlay Layer Usage
