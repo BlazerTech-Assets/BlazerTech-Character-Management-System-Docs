@@ -1,12 +1,14 @@
 ---
 uid: character-overlay-layers
-summary: Learn how Character Overlay Layers work and how they are used to extend characters with additional visuals and animations.
+summary: Learn how Character Overlay Layers work and how they are used to extend characters with additional visual elements.
 ---
 
 # Character Overlay Layers
 
 Character Overlay Layers allow you to add additional spritesheets that are layered above or below a character.  
 These work on both Unified and Layered Characters. 
+
+![Character Overlay Layer](~/images/overlay-layers/character-overlay-layer.png)
 
 They are typically used for equipment, armor, or other optional elements for a character.
 

@@ -2259,6 +2259,46 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-overlay-layers/character-overlay-layer-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-overlay-layers/character-overlay-layer-configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-overlay-layers/character-overlay-layer-extensions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-overlay-layers/character-overlay-layer-extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-overlay-layers/character-overlay-layer-usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-overlay-layers/character-overlay-layer-usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-overlay-layers/character-overlay-layers.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-overlay-layers/character-overlay-layers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-templates/character-templates.md",
       "output": {
         ".html": {
@@ -2303,16 +2343,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/character-types/character-layers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/character-types/character-overlay-layers.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/character-types/character-overlay-layers.html"
         }
       },
       "version": ""
@@ -3592,10 +3622,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/overlay-layers/character-overlay-layer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/character-overlay-layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/overlay-layers/create-character-overlay-layer.png",
       "output": {
         "resource": {
           "relative_path": "images/overlay-layers/create-character-overlay-layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/default-overlay-layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/default-overlay-layers.png"
         }
       },
       "version": ""
@@ -3616,6 +3666,46 @@
       "output": {
         "resource": {
           "relative_path": "images/overlay-layers/overlay-controller-synced-parameters-section.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/references/animator-controller-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/references/animator-controller-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/references/character-type-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/references/character-type-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/settings/layer-sorting-mode-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/settings/layer-sorting-mode-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/settings/offset-mode-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/settings/offset-mode-field.png"
         }
       },
       "version": ""

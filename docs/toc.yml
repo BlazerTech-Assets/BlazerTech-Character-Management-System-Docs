@@ -20,8 +20,6 @@
   href: character-types/unified-character-type.md
 - name: Character Animation Setup
   href: character-animation-setup.md
-- name: Character Overlay Layers
-  href: character-types/character-overlay-layers
 
 - name: 🟩Character Usage Components
 - name: Character Renderer Components
@@ -64,6 +62,16 @@
   href: character-templates/layered-character-templates.md
 - name: Randomized Layered Character Templates
   href: character-templates/randomized-layered-character-templates.md
+
+- name: 🔳Character Overlay Layers
+- name: Character Overlay Layers
+  href: character-overlay-layers/character-overlay-layers.md
+- name: Character Overlay Layer Configuration
+  href: character-overlay-layers/character-overlay-layer-configuration.md
+- name: Character Overlay Layer Extensions
+  href: character-overlay-layers/character-overlay-layer-extensions.md
+- name: Character Overlay Layer Usage
+  href: character-overlay-layers/character-overlay-layer-usage.md
 
 - name: 🟪Included Content
 - name: Built In Characters
