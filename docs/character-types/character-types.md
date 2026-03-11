@@ -210,6 +210,11 @@ All character share the same spritesheet layout, meaning **one Animator Controll
 
 This removes the need to create separate **Animator Controllers** or **Animator Override Controllers** for each character.
 
+> [!NOTE]
+> An **Animator Controller** is not required if your project uses a different system for animating your characters. The only requirement is only sprites from the **Base Spritesheet** are used.  
+> 
+> Confused? [Read more about the Character Shader here](xref:basic-concepts#the-character-shader).
+
 See [Character Animation Setup](xref:character-animation-setup) for instructions on configuring your **Animator Controller**.
 
 ---

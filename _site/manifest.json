@@ -3562,6 +3562,66 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/create-character-overlay-layer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/create-character-overlay-layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/overlay-controller-parameter-validation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/overlay-controller-parameter-validation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overlay-layers/overlay-controller-synced-parameters-section.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overlay-layers/overlay-controller-synced-parameters-section.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-1.png",
       "output": {
         "resource": {

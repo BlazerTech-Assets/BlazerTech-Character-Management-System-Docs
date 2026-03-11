@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Character Overlay Layers | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Character Overlay Layers | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-types/character-overlay-layers.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Overlay Layers | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Overlay Layers | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Learn how Character Overlay Layers work and how they are used to extend characters with additional visuals and animations.">
+      <meta name="twitter:description" content="Learn how Character Overlay Layers work and how they are used to extend characters with additional visuals and animations.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,120 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="character-overlay-layers">
+<h1 id="character-overlay-layers">Character Overlay Layers</h1>
 
+<p>Character Overlay Layers allow you to add additional spritesheets that are layered above or below a character.<br>
+These work on both Unified and Layered Characters.</p>
+<p>They are typically used for equipment, armor, or other optional elements for a character.</p>
+<p>Overlay Layers use a completely separate spritesheet and Animator Controller.<br>
+This is the only instance where a spritesheet does NOT need to be the same size or follow the same layout as the Base Spritesheet.</p>
+<p>Overlay Layer Animator Controllers can have their paramters be synced to the parameters of the Character Type Aniamtor Controller.<br>
+This means Overlay Layers can be synced to the character or be animated separately.</p>
+<hr>
+<h2 id="when-to-use-overlay-layers">When To Use Overlay Layers</h2>
+<p>Overlay Layers are useful when you need to add additional elements to a charcter without modifying the base character.</p>
+<h3 id="common-use-cases">Common Use Cases</h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equipment</td>
+<td>Weapons, shields, any helds items</td>
+</tr>
+<tr>
+<td>Additional Clothing</td>
+<td>Armor, helmet</td>
+</tr>
+<tr>
+<td>Effects</td>
+<td>Auras, glow effects</td>
+</tr>
+<tr>
+<td>Damage/Health Indicators</td>
+<td>Scatches, blood, burn marks</td>
+</tr>
+<tr>
+<td>NPC Identification and Indicators</td>
+<td>Quest markers, team colors, enemy highlights</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-overlay-layers-work">How Overlay Layers Work</h2>
+<p>An <strong>Overlay Layer</strong> is a scriptable object that lives in your assets folder, this asset stores all info needed for an <strong>Overlay Layer</strong> to be used.</p>
+<p>Every <strong>Character Overlay Layer</strong> contains its own:</p>
+<ul>
+<li>Spritesheet</li>
+<li>Animator Controller</li>
+</ul>
+<p>The <strong>Animators parameters</strong> can be synchronized to the paramters in the <strong>Character Type Animator Controller</strong>.<br>
+This allow the <strong>Overlay Layer</strong> to be synced to the Charcter or animated on its own.</p>
+<hr>
+<h2 id="creating-an-overlay-layer">Creating an Overlay Layer</h2>
+<p>To create a new Overlay Layer asset:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Overlay Layers</strong></li>
+</ol>
+<p><img src="../../images/overlay-layers/create-character-overlay-layer.png" alt="Create Character Overlay Layer"></p>
+<hr>
+<h2 id="overlay-layer-setup">Overlay Layer Setup</h2>
+<h3 id="character-type">Character Type</h3>
+<p>Assign the <strong>Character Type asset</strong> that this <strong>Overlay Layer</strong> is meant to be used with.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Overlay Layers can only be used alongside their assigned Character Type.</p>
+</div>
+<h3 id="animator-controller-optional">Animator Controller (Optional)</h3>
+<p>Assign the <strong>Animator Controller</strong> that will be used to animate the <strong>Overlay Layer</strong>.</p>
+<p><strong>Overlay Layers</strong> use a separate <strong>Animator Controller</strong> from the <strong>Character Type</strong>. This <strong>Controller</strong> can either be completely separate and play its own animations or have its paramters synced to the paramters of the <strong>Animator Controller</strong> in the assigned <strong>Character Type</strong>.</p>
+<p>It's down to you to decide how you want to setup your <strong>Animator Controller</strong>.</p>
+<hr>
+<h3 id="animation-sync-mode">Animation Sync Mode</h3>
+<p>Determines if and how the <strong>Overlay Layers Animator Controller</strong> is synchronized to the <strong>Character Type Animator Controller</strong>.</p>
+<h4 id="full-parameter-sync">Full Parameter Sync</h4>
+<p>All parameters in the Overlay Layer Animator Controller are synchronized to the Character Type Animator Controller.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" alt="Animation Sync Mode: Full Paramter Sync"></p>
+<p>This option assumes that both Animator Controllers share the exact same parameters.</p>
+<p>When this option is selected, a new section is exposed at the bottom of the inspector titled &quot;Overlay Layer Parameter Validation&quot;.<br>
+This section compares the two Animator Controllers and shows you if the Overlay Layers Animator Controller is missing any parameters.</p>
+<p><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" alt="Overlay Controller Parameter Validation Section"></p>
+<h4 id="partial-parameter-sync">Partial Parameter Sync</h4>
+<p>Only selected parameters are synchronized to the Overlay Layer Animator Controller.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" alt="Animation Sync Mode: Partial Paramter Sync"></p>
+<p>When this option is selected, a new section is appears at the bottom of the inspector titled &quot;Overlay Controller Synced Parameters&quot;</p>
+<p>This section contains a list of all paramters in the Character Type Animator Controller.</p>
+<p>If a parameter with the same name and type exists in the Overlay Layer Animator Controller then the parameter can be enabled here and will be synced during runtime.<br>
+If not the parameter cannot be enabled and a warning will appear stating the parmater does not exist in the Overlay Layer Animator Controller.</p>
+<p><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" alt="Overlay Controller Synced Parameters Section"></p>
+<h4 id="not-synced">Not Synced</h4>
+<p>The Overlay Layers Animator Controller is not synchronized at all. This allows the Overlay Layer to be animated separately of the character.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" alt="Animation Sync Mode: Not Synced"></p>
+<hr>
+<h3 id="layer-sorting-mode">Layer Sorting Mode</h3>
+<p>Decides how the Overlay Layer is rendered in relation to the Character.</p>
+<h4 id="in-front-of-character">In Front of Character</h4>
+<p>The Overlay Layer is rendered in front of the character.</p>
+<h4 id="behind-character">Behind Character</h4>
+<p>The Overlay Layer is rendered behind the character.</p>
+<hr>
+<h3 id="offset-mode">Offset Mode</h3>
+<p>Sometimes the Overlay Layer might not line up correctly with your character. If it doesn't you can apply can offset to it.</p>
+<p>The Offset Mode determines what unit of measurement is used to apply the offset.</p>
+<h4 id="pixel-offset">Pixel Offset</h4>
+<p>Apply an offset to the Overlay Layer in the amount of Pixels specificed, which is then converted to Units at runtime.</p>
+<h4 id="unit-offset">Unit Offset</h4>
+<p>Apply an offset to the Overlay Layer in the amount of Units specified.</p>
+<hr>
+<h2 id="overlay-layer-extensions">Overlay Layer Extensions</h2>
+<hr>
+<h2 id="overlay-layer-usage">Overlay Layer Usage</h2>
 
 </article>
 

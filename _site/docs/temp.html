@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Character Overlay Layers | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Character Overlay Layers | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Overlay Layers | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Overlay Layers | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Learn how Character Overlay Layers work and how they are used to extend characters with additional visuals and animations.">
+      <meta name="twitter:description" content="Learn how Character Overlay Layers work and how they are used to extend characters with additional visuals and animations.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,8 +100,149 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="temp">
+<h1 id="character-overlay-layers">Character Overlay Layers</h1>
 
+<p><strong>Character Overlay Layers</strong> allow you to add additional visuals and animation layers on top of a character.<br>
+They are typically used for equipment, effects, or other elements that need to animate independently from the base character.</p>
+<p>Overlay Layers work alongside the character's <strong>Animator Controller</strong> and synchronize specific parameters so the overlay animations stay in sync with the base character.</p>
+<hr>
+<h2 id="when-to-use-overlay-layers">When To Use Overlay Layers</h2>
+<p>Overlay Layers are useful when you need to add additional animated elements to a character without modifying the base character sprites.</p>
+<h3 id="common-use-cases">Common Use Cases</h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equipment</td>
+<td>Weapons, shields</td>
+</tr>
+<tr>
+<td>Clothing</td>
+<td>Jackets, armor</td>
+</tr>
+<tr>
+<td>Effects</td>
+<td>Auras, glow effects</td>
+</tr>
+<tr>
+<td>Special states</td>
+<td>Injuries, status effects</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="how-overlay-layers-work">How Overlay Layers Work</h2>
+<p>A <strong>Character Overlay Layer</strong> contains its own:</p>
+<ul>
+<li><strong>Spritesheet</strong></li>
+<li><strong>Animator Controller</strong></li>
+<li><strong>Animation Clips</strong></li>
+</ul>
+<p>The overlay animations are synchronized with the base character through <strong>Animator Parameters</strong>.</p>
+<h3 id="basic-workflow">Basic Workflow</h3>
+<ol>
+<li>The base character plays an animation.</li>
+<li>The overlay layer listens for specific <strong>Animator Parameters</strong>.</li>
+<li>The overlay animator updates its animation to match the character.</li>
+</ol>
+<p>This ensures the overlay remains synchronized with the base character's animation state.</p>
+<hr>
+<h2 id="creating-an-overlay-layer">Creating an Overlay Layer</h2>
+<p>Overlay Layers are defined using a <strong>Scriptable Object</strong>.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>Create a new <strong>Character Overlay Layer</strong> asset.</li>
+<li>Assign the <strong>Overlay Animator Controller</strong>.</li>
+<li>Configure the <strong>Spritesheet</strong> used by the overlay.</li>
+<li>Define which <strong>Animator Parameters</strong> should be synchronized.</li>
+</ol>
+<hr>
+<h2 id="overlay-layer-properties">Overlay Layer Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Overlay Layer ID</strong></td>
+<td>String</td>
+<td>Unique identifier for the overlay layer</td>
+</tr>
+<tr>
+<td><strong>Animator Controller</strong></td>
+<td>RuntimeAnimatorController</td>
+<td>Controller used for the overlay animations</td>
+</tr>
+<tr>
+<td><strong>Spritesheet</strong></td>
+<td>Sprite</td>
+<td>Base spritesheet used for the overlay</td>
+</tr>
+<tr>
+<td><strong>Synced Parameters</strong></td>
+<td>List</td>
+<td>Animator parameters synchronized with the base character</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="parameter-synchronization">Parameter Synchronization</h2>
+<p>Overlay layers stay synchronized with the base character by copying selected <strong>Animator Parameters</strong>.</p>
+<p>Only parameters that exist in <strong>both animator controllers</strong> can be synchronized.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a parameter exists in the overlay controller but not in the base controller, synchronization will not occur.</p>
+</div>
+<h3 id="supported-parameter-types">Supported Parameter Types</h3>
+<ul>
+<li>Bool</li>
+<li>Float</li>
+<li>Int</li>
+<li>Trigger</li>
+</ul>
+<hr>
+<h2 id="using-overlay-layers-in-characters">Using Overlay Layers In Characters</h2>
+<p>Overlay Layers can be attached to characters at runtime.</p>
+<h3 id="example-use-cases">Example Use Cases</h3>
+<ul>
+<li>Equipping a weapon</li>
+<li>Adding armor</li>
+<li>Applying visual status effects</li>
+</ul>
+<p>Multiple overlay layers can be active at the same time.</p>
+<hr>
+<h2 id="editor-validation">Editor Validation</h2>
+<p>The editor includes validation tools that help ensure the overlay layer is configured correctly.</p>
+<p>Common validation checks include:</p>
+<ul>
+<li>Missing Animator Controller</li>
+<li>Invalid or missing synced parameters</li>
+<li>Parameters that do not exist in both controllers</li>
+</ul>
+<hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Keep overlay animator controllers simple.</li>
+<li>Only synchronize parameters that are required.</li>
+<li>Use overlays for independent visuals rather than core character layers.</li>
+</ul>
+<hr>
+<h2 id="related-pages">Related Pages</h2>
+<ul>
+<li><a class="xref" href="character-types/layered-character-type.html">Layered Character Type</a></li>
+<li><a class="xref" href="character-types/character-types.html">Character Types</a></li>
+<li><a href="xref:character-usage">Character Usage</a></li>
+</ul>
 
 </article>
 
