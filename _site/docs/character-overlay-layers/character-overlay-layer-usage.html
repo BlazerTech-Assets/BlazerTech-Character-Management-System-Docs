@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Overlay Layers | BlazerTech Character Management System </title>
+      <title>Character Overlay Layer Usage | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Overlay Layers | BlazerTech Character Management System ">
+      <meta name="title" content="Character Overlay Layer Usage | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/character-overlay-layers/character-overlay-layer-usage.html">
 
-    <meta property="og:title" content="Character Overlay Layers | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Character Overlay Layers | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Overlay Layer Usage | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Overlay Layer Usage | BlazerTech Character Management System">
 
       <meta property="og:description" content="Learn how to apply Overlay Layers to characters at runtime.">
       <meta name="twitter:description" content="Learn how to apply Overlay Layers to characters at runtime.">
@@ -101,73 +101,93 @@
         </div>
 
         <article data-uid="character-overlay-layer-usage">
-<h1 id="character-overlay-layers">Character Overlay Layers</h1>
+<h1 id="character-overlay-layer-usage">Character Overlay Layer Usage</h1>
 
 <p>This page explains how to apply <strong>Overlay Layers</strong> to a character using a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer Component</a>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>A character must be loaded before an <strong>Overlay Layer</strong> can be added through a <strong>Character Renderer component</strong>.</p>
-</div>
-<h2 id="default-overlay-layers">Default Overlay Layers</h2>
-<p>In every <strong>Character Renderer component</strong> is the <strong>Default Overlay Layers</strong> list. Every Overlay Layer in this list will be automatically applied to the character when loaded.</p>
-<p>This is useful if you want a character to always spawn with a item/clothing/visual element.</p>
+<p>Overlay Layers can be applied in two ways:</p>
+<ol>
+<li>Automatically when the character loads</li>
+<li>Dynamically at runtime through code</li>
+</ol>
+<!-- > [!NOTE]
+> A character must be loaded before an **Overlay Layer** can be added through a **Character Renderer component**. -->
+<h2 id="applying-overlay-layers-automatically">Applying Overlay Layers Automatically</h2>
+<h3 id="default-overlay-layers">Default Overlay Layers</h3>
+<p>Every <strong>Character Renderer component</strong> contains a <strong>Default Overlay Layers</strong> list.</p>
+<p>Any Overlay Layer in this list is automatically applied when the character is loaded.</p>
 <p><img src="../../images/overlay-layers/default-overlay-layers.png" alt="Default Overlay Layers"></p>
-<p><strong>Overlay Layers</strong> will be applied in the order listed.</p>
+<p>This is useful when a character should always spawn with specific visual elements.</p>
+<p><strong>Overlay Layers are applied in the order listed</strong>.</p>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p>Make sure the <strong>Overlay Layers(s)</strong> you assign use the same <strong>Character Type</strong> your character uses, otherwise the Overlay Layer will <strong>NOT</strong> be applied.</p>
+<p><strong>Overlay Layers</strong> must use the <strong>same Character Type</strong> as the character they are applied to.<br>
+If the <strong>Character Types</strong> do not match, the <strong>Overlay Layer</strong> will not be applied.</p>
 </div>
 <hr>
 <h2 id="managing-overlay-layers-through-code">Managing Overlay Layers Through Code</h2>
-<p>All <strong>Character Renderer Components</strong> provide methods for <strong>adding, removing, and rearanging Overlay Layers</strong> at runtime.</p>
-<p>All methods are contained within the <strong>OverlayLayerHandler</strong> subclass which all <strong>Character Renderer Components</strong> have an instance of.</p>
+<p>Overlay Layers can also be <strong>added, removed, or reordered at runtime</strong>.</p>
+<p>All functionality is provided through the <strong>OverlayLayerHandler</strong>, which exists on every <strong>Character Renderer component</strong>.</p>
+<p>This handler manages all overlay layers currently applied to the character.</p>
 <hr>
-<h3 id="add-overlay-layer">Add Overlay Layer</h3>
-<p>This script adds the an Overlay Layer to a character whenever the <strong>alpha 1</strong> key is pressed. Pressing the button multiple times will add a duplicate of the Overlay Layer each time.</p>
-<pre><code class="lang-CS">using BlazerTech.CharacterManagement.Components;
+<h3 id="accessing-the-overlaylayerhandler">Accessing the OverlayLayerHandler</h3>
+<p>Every <strong>Character Renderer component</strong> exposes the handler through the <code>OverlayLayerHandler</code> property.</p>
+<p>Example reference:</p>
+<pre><code class="lang-cs">CharacterRenderer.OverlayLayerHandler
+</code></pre>
+<p>Once accessed, the handler can be used to manager <strong>Overlay Layers</strong>.</p>
+<hr>
+<h3 id="adding-an-overlay-layer">Adding an Overlay Layer</h3>
+<p>Adds a new Overlay Layer to the character.</p>
+<pre><code class="lang-cs">AddOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+</code></pre>
+<h4 id="behavior">Behavior</h4>
+<ul>
+<li>Instantiates the Overlay Layer</li>
+<li>Adds it to the end of list of active Overlay Layers</li>
+<li>Initializes the Overlay Layer</li>
+</ul>
+<p>If the same Overlay Layer is added multiple times, <strong>duplicates will be created</strong>.</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.AddOverlayLayer(overlayLayer);
+</code></pre>
+<hr>
+<h3 id="removing-an-overlay-layer">Removing an Overlay Layer</h3>
+<p>Removes an overlay Layer from a character.</p>
+<pre><code class="lang-cs">RemoveOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+</code></pre>
+<h4 id="behavior-1">Behavior</h4>
+<ul>
+<li>Searches for the first instance of the Overlay Layer</li>
+<li>Removes it if found</li>
+</ul>
+<p>If multiple instances of the same overlay layer exist, <strong>only the first instance is removed</strong>.</p>
+<h4 id="example-1">Example</h4>
+<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.RemoveOverlayLayer(overlayLayer);
+</code></pre>
+<hr>
+<h3 id="changing-overlay-layer-order">Changing Overlay Layer Order</h3>
+<p>Overlay Layers are rendered based on their GameObject position in the hierarchy</p>
+<p>You can change the position of an Overlay Layer using:</p>
+<pre><code class="lang-cs">ChangeOverlayLayerIndex(CharacterOverlayLayerSO overlayLayer, int newIndex)
+</code></pre>
+<h4 id="behavior-2">Behavior</h4>
+<ul>
+<li>Finds the Overlay Layer</li>
+<li>Moves it to the specified index</li>
+<li>Updates the GameObjects position in the hierarchy</li>
+</ul>
+<h4 id="example-2">Example</h4>
+<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.ChangeOverlayLayerIndex(overlayLayer, 1);
+</code></pre>
+<p>If the index is outside the valid range, the value is <strong>clamped automatically</strong>.</p>
+<hr>
+<h2 id="example-script">Example Script</h2>
+<p>The following example demonstrates adding an <strong>Overlay Layer</strong> and moving it to a specific position.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Components;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class AddOverlayLayerOnPress : MonoBehaviour
-{
-    [SerializeField] CharacterRendererBase characterRenderer;
-
-    [SerializeField] CharacterOverlayLayerSO overlayLayer;
-
-    void Update()
-    {
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-            characterRenderer.OverlayLayerHandler.AddOverlayLayer(overlayLayer);
-    }
-}
-</code></pre>
-<hr>
-<h3 id="remove-overlay-layer">Remove Overlay Layer</h3>
-<p>This script removes a specific Overlay Layer whenever the Alpha 1 key is pressed. If duplicates of the same Overlay Layer are present, only the first instance will be removed.</p>
-<pre><code class="lang-CS">using BlazerTech.CharacterManagement.Components;
-using UnityEngine;
-using UnityEngine.InputSystem;
-
-public class RemoveOverlayLayerOnPress : MonoBehaviour
-{
-    [SerializeField] CharacterRendererBase characterRenderer;
-
-    [SerializeField] CharacterOverlayLayerSO overlayLayer;
-
-    void Update()
-    {
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-            characterRenderer.OverlayLayerHandler.RemoveOverlayLayer(overlayLayer);
-    }
-}
-</code></pre>
-<h3 id="change-overlay-layer-index">Change Overlay Layer Index</h3>
-<p>This script adds an Overlay Layer and sets it to the second index whenever the <strong>Alpha 1</strong> key is pressed. If there are no other Overlay Layers present, the call to change its index does nothing.</p>
-<pre><code class="lang-CS">using BlazerTech.CharacterManagement.Components;
-using UnityEngine;
-using UnityEngine.InputSystem;
-
-public class AddOverLayerAndSetIndexOnPress : MonoBehaviour
 {
     [SerializeField] CharacterRendererBase characterRenderer;
 
@@ -183,6 +203,13 @@ public class AddOverLayerAndSetIndexOnPress : MonoBehaviour
     }
 }
 </code></pre>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-overlay-layers.html">Character Overlay Layers</a></li>
+<li><a class="xref" href="character-overlay-layer-configuration.html">Character Overlay Layer Configuration</a></li>
+<li><a class="xref" href="character-overlay-layer-extensions.html">Character Overlay Layer Extensions</a></li>
+</ul>
 
 </article>
 

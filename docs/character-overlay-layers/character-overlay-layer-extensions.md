@@ -172,7 +172,7 @@ public class GunShootOLE : OverlayLayerExtension
 In this example:
 
 1. The extension checks input every frame.
-2. When E is pressed, it actives a trigger titled `Shoot`.
+2. When **E** is pressed, it actives a trigger titled `Shoot`.
 3. Only the Overlay Layer animates, letting the rest of the body animate separately.
 
 ---
