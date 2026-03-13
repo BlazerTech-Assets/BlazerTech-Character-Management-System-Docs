@@ -8872,12 +8872,12 @@ references:
 - uid: character-movement-controller-components
   name: Character Movement Controller Components
   href: docs/character-usage/character-movement-controller-components/character-movement-controller-components.html
-- uid: character-overlay-layer Extensions
-  name: Character Overlay Layer Extensions
-  href: docs/character-overlay-layers/character-overlay-layer-extensions.html
 - uid: character-overlay-layer-configuration
   name: Character Overlay Layer Configuration
   href: docs/character-overlay-layers/character-overlay-layer-configuration.html
+- uid: character-overlay-layer-extensions
+  name: Character Overlay Layer Extensions
+  href: docs/character-overlay-layers/character-overlay-layer-extensions.html
 - uid: character-overlay-layer-usage
   name: Character Overlay Layers
   href: docs/character-overlay-layers/character-overlay-layer-usage.html

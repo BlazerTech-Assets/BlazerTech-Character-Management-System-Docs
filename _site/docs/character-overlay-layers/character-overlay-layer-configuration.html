@@ -103,9 +103,22 @@
         <article data-uid="character-overlay-layer-configuration">
 <h1 id="character-overlay-layer-configuration">Character Overlay Layer Configuration</h1>
 
-<p>This page will go over the process of creating and configuring an <strong>Overlay Layer asset</strong>.</p>
+<p>This page explains how to create and configure a <strong>Character Overlay Layer asset</strong>.</p>
+<p>Overlay Layers let you add additional visual elements to a character. They can be used for equipement, visual effects, accessories, or any other visuals that need extra functionality or need to be animated separately from the character.</p>
 <p>Not sure what a <strong>Character Overlay Layer</strong> is?</p>
 <p><a class="xref" href="character-overlay-layers.html">Read More → Character Overlay Layers</a></p>
+<hr>
+<h2 id="quick-setup-overview">Quick Setup Overview</h2>
+<p>A typical workflow for configuring an overlay layer looks like this:</p>
+<ol>
+<li>Create the <strong>Overlay Layer asset</strong></li>
+<li>Assign a <strong>Character Type</strong> asset</li>
+<li>Assign an <strong>Animator Controller</strong> (Optional)</li>
+<li>Choose the appropriate <strong>Animation Sync Mode</strong></li>
+<li>Set the <strong>Layer Sorting Mode</strong></li>
+<li>Adjust <strong>Offsets</strong> if the overlay does not line up correctly</li>
+<li>Add any <strong>Overlay Layer Extensions</strong> if additional logic is required</li>
+</ol>
 <hr>
 <h2 id="creating-an-overlay-layer">Creating an Overlay Layer</h2>
 <p>To create a new Overlay Layer asset:</p>
@@ -117,61 +130,93 @@
 <hr>
 <h1 id="overlay-layer-setup">Overlay Layer Setup</h1>
 <h2 id="character-type">Character Type</h2>
-<p>Assign the <strong>Character Type asset</strong> that this <strong>Overlay Layer</strong> is meant to be used with.</p>
+<p>Assign the <strong>Character Type asset</strong> that this <strong>Overlay Layer</strong> will be used with.</p>
 <p><img src="../../images/overlay-layers/references/character-type-field.png" alt="Character Type Field"></p>
+<p>Overlay Layers are tied to a specific Character Type so the system knows which characters the Overlay Layer is compatible with.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Overlay Layers can only be used alongside their assigned Character Type.</p>
+<p>Overlay Layers can only be used with their assigned Character Type.</p>
 </div>
 <h2 id="animator-controller-optional">Animator Controller (Optional)</h2>
-<p>Assign the <strong>Animator Controller</strong> that will be used to animate the <strong>Overlay Layer</strong>.</p>
+<p>Assign the <strong>Animator Controller</strong> used to animate the <strong>Overlay Layer</strong>.</p>
 <p><img src="../../images/overlay-layers/references/animator-controller-field.png" alt="Animator Controller Field"></p>
-<p><strong>Overlay Layers</strong> use a separate <strong>Animator Controller</strong> from the <strong>Character Type</strong>. This <strong>Controller</strong> can either be completely separate and play its own animations or have its paramters synced to the paramters of the <strong>Animator Controller</strong> in the assigned <strong>Character Type</strong>.</p>
-<p>It's down to you to decide how you want to setup your <strong>Animator Controller</strong>.</p>
+<p>Overlay Layers use their own Animator Controller, separate from the controlled used by the character itself.</p>
+<p>This controller can:</p>
+<ul>
+<li>Play its own independant animations</li>
+<li>Synchronize paramters with the characters Animator Controller</li>
+<li>Combine both approaches</li>
+</ul>
+<p>How the controller behaves depends on the <a href="#animation-sync-mode">Animation Sync Mode</a> selected.</p>
 <hr>
 <h2 id="animation-sync-mode">Animation Sync Mode</h2>
-<p>Determines if and how the <strong>Overlay Layers Animator Controller</strong> is synchronized to the <strong>Character Type Animator Controller</strong>.</p>
+<p>Determines whether the <strong>Overlay Layer Animator Controller</strong> synchronizes parameters with the <strong>Character Type Animator Controller</strong>.</p>
 <h3 id="full-parameter-sync">Full Parameter Sync</h3>
-<p>All parameters in the <strong>Overlay Layer Animator Controller</strong> are synchronized to the <strong>Character Type Animator Controller</strong>.</p>
+<p>All parameters in the <strong>Overlay Layer Animator Controller</strong> are synchronized with the parameters in the <strong>Character Type Animator Controller</strong>.</p>
+<p>This mode assumes both controllers contain the <strong>same parameters with identical names and types</strong>.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" alt="Animation Sync Mode: Full Paramter Sync"></p>
-<p>This option assumes that both Animator Controllers share the exact same parameters.</p>
-<p>When this option is selected, a new section is exposed at the bottom of the inspector titled &quot;Overlay Layer Parameter Validation&quot;.<br>
-This section compares the two Animator Controllers and shows you if the Overlay Layers Animator Controller is missing any parameters.</p>
+<p>When this mode is selected, a new section appears in the inspector called:</p>
+<p><strong>Overlay Layer Parameter Validation</strong></p>
+<p>This section compares the two Animator Controllers and checks whether the Overlay Controller is missing any paramters required for synchronization.</p>
 <p><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" alt="Overlay Controller Parameter Validation Section"></p>
+<p>If any paramters are not included in the Overlay Controller at runtime, an error will be thrown for each missing parameter.</p>
 <hr>
 <h3 id="partial-parameter-sync">Partial Parameter Sync</h3>
-<p>Only selected parameters are synchronized to the Overlay Layer Animator Controller.</p>
+<p>Only selected parameters are synchronized between the two Animator Controllers.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" alt="Animation Sync Mode: Partial Paramter Sync"></p>
-<p>When this option is selected, a new section is appears at the bottom of the inspector titled &quot;Overlay Controller Synced Parameters&quot;</p>
-<p>This section contains a list of all paramters in the Character Type Animator Controller.</p>
-<p>If a parameter with the same name and type exists in the Overlay Layer Animator Controller then the parameter can be enabled here and will be synced during runtime.<br>
-If not the parameter cannot be enabled and a warning will appear stating the parmater does not exist in the Overlay Layer Animator Controller.</p>
+<p>When this mode is selected, a new section appears in the inspector called:</p>
+<p><strong>Overlay Controller Synced Parameters</strong></p>
+<p>This section lists all parameters found in the <strong>Character Type Animator Controller</strong>.</p>
+<p>Paramters can be enabled if a parameter with the same <strong>name</strong> and <strong>type</strong> exist in the <strong>Overlay Layer Animator Controller</strong>.<br>
+If the parameter does not exist in the <strong>Overlay Controller</strong>, the parameter cannot be enabled and a notice will be displayed.</p>
 <p><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" alt="Overlay Controller Synced Parameters Section"></p>
 <hr>
 <h3 id="not-synced">Not Synced</h3>
-<p>The Overlay Layers Animator Controller is not synchronized at all. This allows the Overlay Layer to be animated separately of the character.</p>
+<p>The <strong>Overlay Layer Animator Controller</strong> runs completely independently from the character.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" alt="Animation Sync Mode: Not Synced"></p>
+<p>This mode is great for visual elements that need to play their own animations and don't care about the state of the character.</p>
 <hr>
 <h2 id="layer-sorting-mode">Layer Sorting Mode</h2>
-<p>Decides how the Overlay Layer is rendered in relation to the Character.</p>
+<p>Determines how the <strong>Overlay Layer</strong> is rendered in relation to the Character.</p>
 <p><img src="../../images/overlay-layers/settings/layer-sorting-mode-field.png" alt="Layer Sorting Mode Field"></p>
 <hr>
 <h3 id="in-front-of-character">In Front of Character</h3>
-<p>The Overlay Layer is rendered in front of the character.</p>
+<p>The <strong>Overlay Layer</strong> is rendered <strong>in front of the character</strong>.</p>
+<p>This is typically used for things like:</p>
+<ul>
+<li>Weapons</li>
+<li>Held objects</li>
+<li>Damage/Health Indicators</li>
+</ul>
 <hr>
 <h3 id="behind-character">Behind Character</h3>
-<p>The Overlay Layer is rendered behind the character.</p>
+<p>The <strong>Overlay Layer</strong> is rendered <strong>behind the character</strong>.</p>
+<p>This is useful for things like:</p>
+<ul>
+<li>Back-mounted equipement</li>
+<li>Capes</li>
+<li>Wings</li>
+</ul>
 <hr>
 <h2 id="offset-mode">Offset Mode</h2>
-<p>Sometimes the Overlay Layer might not line up correctly with your character. If it doesn't you can apply an offset to it.</p>
+<p>Sometimes the Overlay Layer might not line up correctly with the character sprite.<br>
+Offsets allow you to manually adjust its position.</p>
 <p><img src="../../images/overlay-layers/settings/offset-mode-field.png" alt="Offset Mode Field"></p>
-<p>The Offset Mode determines what unit of measurement is used to apply the offset.</p>
+<p>The <strong>Offset Mode</strong> determines how the offset values are interpreted.</p>
+<ol>
+<li><strong>Pixel Offset</strong> - Applies the offset in pixels, which are converted to <strong>Unity Units</strong> at runtime.</li>
+<li><strong>Unit Offset</strong> - Applies the offset directly in <strong>Unity World Units</strong>.</li>
+</ol>
 <hr>
-<h3 id="pixel-offset">Pixel Offset</h3>
-<p>Apply an offset to the Overlay Layer in the amount of Pixels specificed, which is then converted to Units at runtime.</p>
-<hr>
-<h3 id="unit-offset">Unit Offset</h3>
-<p>Apply an offset to the Overlay Layer in the amount of Units specified.</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><p>Learn how to apply an Overlay Layer to a character at runtime.<br>
+<a class="xref" href="character-overlay-layer-usage.html">Read More → Character Overlay Layer Usage</a></p>
+</li>
+<li><p>Learn how to extend Overlay Layers with custom behavior<br>
+<a class="xref" href="character-overlay-layer-extensions.html">Read More → Character Overlay Layer Extensions</a></p>
+</li>
+</ul>
 
 </article>
 

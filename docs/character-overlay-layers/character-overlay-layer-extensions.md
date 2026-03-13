@@ -1,5 +1,5 @@
 ---
-uid: character-overlay-layer Extensions
+uid: character-overlay-layer-extensions
 summary: Learn how to extend Character Overlay Layers with custom runtime behavior using Overlay Layer Extensions.
 ---
 
