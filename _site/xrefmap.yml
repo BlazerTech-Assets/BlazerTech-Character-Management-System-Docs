@@ -8872,6 +8872,9 @@ references:
 - uid: character-movement-controller-components
   name: Character Movement Controller Components
   href: docs/character-usage/character-movement-controller-components/character-movement-controller-components.html
+- uid: character-overlay-layer Extensions
+  name: Character Overlay Layer Extensions
+  href: docs/character-overlay-layers/character-overlay-layer-extensions.html
 - uid: character-overlay-layer-configuration
   name: Character Overlay Layer Configuration
   href: docs/character-overlay-layers/character-overlay-layer-configuration.html
@@ -8923,9 +8926,6 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
-- uid: temp
-  name: Character Overlay Layers
-  href: docs/temp.html
 - uid: top-down-character-animator-handler-component
   name: Top Down Character Animator Handler
   href: docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html

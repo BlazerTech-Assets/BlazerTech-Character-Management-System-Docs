@@ -132,12 +132,13 @@
 <h2 id="animation-sync-mode">Animation Sync Mode</h2>
 <p>Determines if and how the <strong>Overlay Layers Animator Controller</strong> is synchronized to the <strong>Character Type Animator Controller</strong>.</p>
 <h3 id="full-parameter-sync">Full Parameter Sync</h3>
-<p>All parameters in the Overlay Layer Animator Controller are synchronized to the Character Type Animator Controller.</p>
+<p>All parameters in the <strong>Overlay Layer Animator Controller</strong> are synchronized to the <strong>Character Type Animator Controller</strong>.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" alt="Animation Sync Mode: Full Paramter Sync"></p>
 <p>This option assumes that both Animator Controllers share the exact same parameters.</p>
 <p>When this option is selected, a new section is exposed at the bottom of the inspector titled &quot;Overlay Layer Parameter Validation&quot;.<br>
 This section compares the two Animator Controllers and shows you if the Overlay Layers Animator Controller is missing any parameters.</p>
 <p><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" alt="Overlay Controller Parameter Validation Section"></p>
+<hr>
 <h3 id="partial-parameter-sync">Partial Parameter Sync</h3>
 <p>Only selected parameters are synchronized to the Overlay Layer Animator Controller.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" alt="Animation Sync Mode: Partial Paramter Sync"></p>
@@ -146,6 +147,7 @@ This section compares the two Animator Controllers and shows you if the Overlay 
 <p>If a parameter with the same name and type exists in the Overlay Layer Animator Controller then the parameter can be enabled here and will be synced during runtime.<br>
 If not the parameter cannot be enabled and a warning will appear stating the parmater does not exist in the Overlay Layer Animator Controller.</p>
 <p><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" alt="Overlay Controller Synced Parameters Section"></p>
+<hr>
 <h3 id="not-synced">Not Synced</h3>
 <p>The Overlay Layers Animator Controller is not synchronized at all. This allows the Overlay Layer to be animated separately of the character.</p>
 <p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" alt="Animation Sync Mode: Not Synced"></p>
@@ -153,8 +155,10 @@ If not the parameter cannot be enabled and a warning will appear stating the par
 <h2 id="layer-sorting-mode">Layer Sorting Mode</h2>
 <p>Decides how the Overlay Layer is rendered in relation to the Character.</p>
 <p><img src="../../images/overlay-layers/settings/layer-sorting-mode-field.png" alt="Layer Sorting Mode Field"></p>
+<hr>
 <h3 id="in-front-of-character">In Front of Character</h3>
 <p>The Overlay Layer is rendered in front of the character.</p>
+<hr>
 <h3 id="behind-character">Behind Character</h3>
 <p>The Overlay Layer is rendered behind the character.</p>
 <hr>
@@ -162,8 +166,10 @@ If not the parameter cannot be enabled and a warning will appear stating the par
 <p>Sometimes the Overlay Layer might not line up correctly with your character. If it doesn't you can apply an offset to it.</p>
 <p><img src="../../images/overlay-layers/settings/offset-mode-field.png" alt="Offset Mode Field"></p>
 <p>The Offset Mode determines what unit of measurement is used to apply the offset.</p>
+<hr>
 <h3 id="pixel-offset">Pixel Offset</h3>
 <p>Apply an offset to the Overlay Layer in the amount of Pixels specificed, which is then converted to Units at runtime.</p>
+<hr>
 <h3 id="unit-offset">Unit Offset</h3>
 <p>Apply an offset to the Overlay Layer in the amount of Units specified.</p>
 

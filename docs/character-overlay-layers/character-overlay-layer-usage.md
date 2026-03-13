@@ -12,7 +12,9 @@ This page explains how to apply **Overlay Layers** to a character using a [Chara
 
 ## Default Overlay Layers
 
-In every Character Renderer Component is the **Default Overlay Layers** list. Every Overlay Layer in this list will be automatically applied to the character when loaded.
+In every **Character Renderer component** is the **Default Overlay Layers** list. Every Overlay Layer in this list will be automatically applied to the character when loaded. 
+
+This is useful if you want a character to always spawn with a item/clothing/visual element.
 
 ![Default Overlay Layers](~/images/overlay-layers/default-overlay-layers.png)
 

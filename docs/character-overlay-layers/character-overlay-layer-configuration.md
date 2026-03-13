@@ -53,8 +53,7 @@ Determines if and how the **Overlay Layers Animator Controller** is synchronized
 
 ### Full Parameter Sync
 
-
-All parameters in the Overlay Layer Animator Controller are synchronized to the Character Type Animator Controller.
+All parameters in the **Overlay Layer Animator Controller** are synchronized to the **Character Type Animator Controller**.
 
 ![Animation Sync Mode: Full Paramter Sync](~/images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png)
 
@@ -64,6 +63,8 @@ When this option is selected, a new section is exposed at the bottom of the insp
 This section compares the two Animator Controllers and shows you if the Overlay Layers Animator Controller is missing any parameters.
 
 ![Overlay Controller Parameter Validation Section](~/images/overlay-layers/overlay-controller-parameter-validation.png)
+
+---
 
 ### Partial Parameter Sync
 
@@ -80,6 +81,8 @@ If not the parameter cannot be enabled and a warning will appear stating the par
 
 ![Overlay Controller Synced Parameters Section](~/images/overlay-layers/overlay-controller-synced-parameters-section.png)
 
+---
+
 ### Not Synced
 
 The Overlay Layers Animator Controller is not synchronized at all. This allows the Overlay Layer to be animated separately of the character.
@@ -94,9 +97,13 @@ Decides how the Overlay Layer is rendered in relation to the Character.
 
 ![Layer Sorting Mode Field](~/images/overlay-layers/settings/layer-sorting-mode-field.png)
 
+---
+
 ### In Front of Character
 
 The Overlay Layer is rendered in front of the character.
+
+---
 
 ### Behind Character
 
@@ -112,9 +119,13 @@ Sometimes the Overlay Layer might not line up correctly with your character. If 
 
 The Offset Mode determines what unit of measurement is used to apply the offset.
 
+---
+
 ### Pixel Offset
 
 Apply an offset to the Overlay Layer in the amount of Pixels specificed, which is then converted to Units at runtime.
+
+---
 
 ### Unit Offset
 
