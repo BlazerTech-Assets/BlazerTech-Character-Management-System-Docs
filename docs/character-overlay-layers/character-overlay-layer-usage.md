@@ -12,8 +12,7 @@ Overlay Layers can be applied in two ways:
 1. Automatically when the character loads
 2. Dynamically at runtime through code
 
-<!-- > [!NOTE]
-> A character must be loaded before an **Overlay Layer** can be added through a **Character Renderer component**. -->
+---
 
 ## Applying Overlay Layers Automatically
 
