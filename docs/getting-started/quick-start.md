@@ -15,6 +15,8 @@ This guide will cover the setup process for both **Unified** and **Layered Chara
 > [!TIP]
 > It's recommended to read through the [Basic Concepts](xref:basic-concepts) before reading the **Quick Start Guide**.
 
+---
+
 ## Video Guides
 
 Prefer video guides? I've got you covered!

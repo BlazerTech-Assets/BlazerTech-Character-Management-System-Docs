@@ -949,6 +949,26 @@
     "title": "Installation and Requirements | BlazerTech Character Management System",
     "summary": "Installation and Requirements This guide covers the requirements and installation steps for the BlazerTech Character Management System (BT-CMS). Required Packages Note All required packages must be installed and correctly configured before importing BT-CMS. Package Purpose Notes / Links Addressables Dynamically load/unload character spritesheets. Found in the Unity Registry via Package Manager. Naughty Attributes Adds additional attributes to the Unity Inspector. Installation Guide Unity Asset Store Link Important Addressables Settings file must be created before importing BT-CMS. If not created beforehand the included characters will not be functional. To create the settings file navigate to: Window > Asset Management > Addressables > Groups > Create Addressables Settings. Installation Steps Prerequisites Make sure Naughty Attributes and Addressables are both installed and the Addressables Settings file has been creeated (See above^^). Importing Itch.io: If bought from Itch.io, download BlazerTech Character Management System.unitypackage and drag and drop it into your project. Unity Asset Store: If bought from the Unity Asset Store, navigate to Window > Package Manager > My Assets and find BlazerTech Character Management System from within the list. Click Download if not already downloaded and then Import. Import Popup: Regardless of the installation method a popup will appear prompting you to import the BlazerTech Character Management System into your project. Make sure all assets are selected and click the Import button. After Installtion Here's some things to do after installing the BlazerTech Character Management System: Checkout the Quick Start Guide to learn how to setup your own characters or use the included ones. Read More → Quick Start Play sample scenes - Go into the Samples folder and run some of the sample scenes to learn more about the Character Management System. Create your own character type - make a new character type asset to use your own character spritesheets or third party ones. Read More → Character Types Implement a character creation menu - Use the modular Character Creator System to create your own in-game character creation menu. Read More → Character Creator Overview"
   },
+  "docs/getting-started/quick-start-guide/create-a-character-template.html": {
+    "href": "docs/getting-started/quick-start-guide/create-a-character-template.html",
+    "title": "Create A Character Template | BlazerTech Character Management System",
+    "summary": "Create A Character Template"
+  },
+  "docs/getting-started/quick-start-guide/create-a-character-type.html": {
+    "href": "docs/getting-started/quick-start-guide/create-a-character-type.html",
+    "title": "Create A Character Type | BlazerTech Character Management System",
+    "summary": "Create A Character Type"
+  },
+  "docs/getting-started/quick-start-guide/quick-start-guide.html": {
+    "href": "docs/getting-started/quick-start-guide/quick-start-guide.html",
+    "title": "Quick Start Guide | BlazerTech Character Management System",
+    "summary": "Quick Start Guide Welcome to the BlazerTech Character Management System! This guide will get you on your feet and teach you the basics of setting up the core for all your characters along with creating and rendering your first character. This guide will cover the setup process for both Unified and Layered Characters. Tip It's recommended to read through the Basic Concepts before reading the Quick Start Guide. Steps Create A Character Type Create A Character Template Use Your Character Video Guides Prefer video guides? I've got you covered! Covers: Layered Character Type Setup. Layered Character Template Setup. Rendering a layered character from a template. Covers: Unified Character Type Setup. Unified Character Template Setup. Rendering a unified character from a template. Note These videos will become dated fast as I continue to improve the Character Managemnt System meaning the content in them may not always be 100% accurate to the current version. Finalized versions of these videos will be created close to the full release."
+  },
+  "docs/getting-started/quick-start-guide/use-your-character.html": {
+    "href": "docs/getting-started/quick-start-guide/use-your-character.html",
+    "title": "Use Your Character | BlazerTech Character Management System",
+    "summary": "Use Your Character"
+  },
   "docs/getting-started/quick-start.html": {
     "href": "docs/getting-started/quick-start.html",
     "title": "Quick Start Guide | BlazerTech Character Management System",

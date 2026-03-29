@@ -2509,6 +2509,46 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/getting-started/quick-start-guide/create-a-character-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started/quick-start-guide/create-a-character-template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started/quick-start-guide/create-a-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started/quick-start-guide/create-a-character-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started/quick-start-guide/quick-start-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started/quick-start-guide/quick-start-guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started/quick-start-guide/use-your-character.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started/quick-start-guide/use-your-character.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/getting-started/quick-start.md",
       "output": {
         ".html": {

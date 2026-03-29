@@ -8920,6 +8920,18 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
+- uid: quick-start-create-a-character-template
+  name: Create A Character Template
+  href: docs/getting-started/quick-start-guide/create-a-character-template.html
+- uid: quick-start-create-a-character-type
+  name: Create A Character Type
+  href: docs/getting-started/quick-start-guide/create-a-character-type.html
+- uid: quick-start-guide
+  name: Quick Start Guide
+  href: docs/getting-started/quick-start-guide/quick-start-guide.html
+- uid: quick-start-use-your-character
+  name: Use Your Character
+  href: docs/getting-started/quick-start-guide/use-your-character.html
 - uid: random-layered-character-renderer-component
   name: Random Layered Character Renderer Component
   href: docs/character-usage/character-renderer-components/random-layered-character-renderer.html
