@@ -6,7 +6,7 @@ summary: Overview of all main features of the BlazerTech Character Management Sy
 # Basic Concepts
 
 This page introduces the **main features** of the **Character Management System**:  
-- [**Types of Characters**](#types-of-characters) – The two fundamental differents kinds of characters.  
+- [**Types of Characters**](#types-of-characters) – The two fundamental different kinds of characters.  
 - [**Character Type Assets**](#character-type-assets) – The core of every character.  
 - [**The Character Shader**](#the-character-shader) – How characters are rendered in-game.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  

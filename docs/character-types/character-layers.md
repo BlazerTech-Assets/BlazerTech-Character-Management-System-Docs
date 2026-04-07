@@ -82,7 +82,7 @@ A [Character Layer Option](xref:BlazerTech.CharacterManagement.Characters.Charac
 
 **Layer Options** are **not added manually** to the list.
 
-Instead, they are automatically collected using Unity Addressables.
+Instead, they are automatically collected using Unity's Addressables system.
 
 To add a spritesheet as a valid option:
 
@@ -92,7 +92,7 @@ To add a spritesheet as a valid option:
 
 The label must match the [Layer Asset Label](#layer-asset-label) configured in the **Character Layer Definition asset**.
 
-![Layer Option Addressables Marking](~/images/character-types/character-layers/layer-option-addressables-marking.png)
+![Layer Option Addressables Marking](~/images/character-types/layered-characters/character-layers/layer-option-addressables-marking.png)
 
 > [!TIP]
 > You can mark an **entire folder** as Addressable and assign a label.  
