@@ -5,9 +5,9 @@ summary:
 
 # Create A Character Type
 
-A Character Type is an asset which stores the fundemental information needed for your characters.  
+A **Character Type** is an asset which stores the **fundemental information needed for your characters**.  
 
-This guide will walk you through how to create and setup one.
+This guide will walk you through how to create and set one up.
 
 [Read More → Character Type Assets](xref:basic-concepts#character-type-assets)
 
@@ -58,27 +58,27 @@ This is a **unique** identifier for this Character Type. Make sure it's **not** 
 ### Field 2: Base Spritesheet
 
 This spritesheet determines the layout of all character spritesheets using this same type.  
-All other character spritesheets must be the same size and contain the same frames contained within the Base Spritesheet.
+All other character spritesheets must be the same size and contain the same frames contained within the **Base Spritesheet**.
 
-The **Base Spritesheet** should be your character in it's most basic barebones state.  
+The **Base Spritesheet** should be your character in its most basic barebones state.  
 
 ![Base Spritesheet](/images/character-types/fields/base-spritesheet.png)
 
-For more information about the **Base Spritesheet** [read here](xref:character-types#base-spritesheet)
+For more information about the **Base Spritesheet** [read here](xref:character-types#base-spritesheet).
 
 ### Optional Field: Animator Controller
 
-An **Animator Controller** can be assigned to your Character Type asset which will be used automatically when a character is rendered in-game.
+An **Animator Controller** can be assigned in your **Character Type asset** which will be used automatically when a character is rendered in-game.
 
 This is not required if you have your own system for animating your characters.
 
 Animations should only use sprites from the **Base Spritesheet**, otherwise they won't be renderered correctly. [Read more](xref:basic-concepts#the-character-shader).
 
-If you’re using your own movement or animator handling scripts, you can configure the **Animator Controller** however best fits your system.
-However the **Character Management System** also includes built-in movement and animator handler scripts Which require the **Animator Controller** be setup with specific parameters
+If you’re using your own **movement** or **animator handling scripts**, you can configure the **Animator Controller** however best fits your system.
+However the **Character Management System** also includes **built-in movement** and **animator handler scripts** Which require the **Animator Controller** be setup with specific parameters
 - [Read More → Character Animation Setup](xref:character-animation-setup)  
 
-Later in this guide when you learn how to render your character, you’ll see how the **Character Controller** can be automatically applied when the character is used.
+Later in this guide when you learn how to render your character, you’ll see how the **Animator Controller** can be automatically applied when the character is used.
 
 - [Read More → Animator Controller](xref:character-types#animator-controller-optional)  
 

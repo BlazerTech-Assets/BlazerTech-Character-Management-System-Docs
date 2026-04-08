@@ -8,7 +8,7 @@ summary: A quick start guide to get you started using the BlazerTech Character M
 ![Logo](~/images/logos/blazertech-character-management-system-cover-iamge.png)
 
 Welcome to the **BlazerTech Character Management System**!  
-This guide will get you on your feet and teach you the basics of setting up the core for all your characters along with creating and rendering your first character.
+This guide will get you on your feet and teach you how to setup the core for all your characters along with creating and rendering your first character.
 
 This guide will cover the setup process for both **Unified** and **Layered Characters**.
 
@@ -22,6 +22,8 @@ This guide will cover the setup process for both **Unified** and **Layered Chara
 1. [Create A Character Type](xref:quick-start-create-a-character-type)
 2. [Create A Character Template](xref:quick-start-create-a-character-template)
 3. [Use Your Character](xref:quick-start-use-your-character)
+
+If this is your first time, start with the first step and work your way down.
 
 ---
 
@@ -59,6 +61,6 @@ Prefer video guides? I've got you covered!
 - Rendering a unified character from a template.
 
 > [!NOTE]
-> These videos will become dated fast as I continue to improve the **Character Managemnt System** meaning the content in them may not always be 100% accurate to the current version.  
+> These videos will become dated fast as I continue to improve the **Character Managemnt System**, meaning the content in them may not always be 100% accurate to the current version.  
 > 
 > Finalized versions of these videos will be created close to the full release.

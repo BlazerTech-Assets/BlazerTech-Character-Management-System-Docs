@@ -103,6 +103,68 @@
         <article data-uid="quick-start-use-your-character">
 <h1 id="use-your-character">Use Your Character</h1>
 
+<p>We're now going to create a <strong>character</strong> from the <strong>Character Template</strong> you've created and <strong>render it in-game</strong>.</p>
+<p><strong>Character Renderer components</strong> can create characters and render them for us. They handle all the setup for you meaning all you need to do is <strong>assign your Template</strong>.</p>
+<hr>
+<h2 id="1setup">1️⃣Setup</h2>
+<p>Create a new GameObject, this will be our character.</p>
+<p>If you're using a <strong>Unified Character Type</strong> add the <strong>Unified Character Template Renderer</strong> component.<br>
+If you're using a <strong>Layered Character Type</strong> add the <strong>Layered Character Template Renderer</strong> component.</p>
+<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Character Template Renderer Component"></p>
+<h3 id="character-renderer-fields">Character Renderer Fields</h3>
+<p>The following fields are required and must be set for all <strong>Character Renderers</strong>.</p>
+<h4 id="references"><strong>References</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renderer</strong></td>
+<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will be applied to this.</td>
+</tr>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
+</tr>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <code>Animator</code> component to assign the controller to.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Asynchronous</code>: loads in the background without freezing gameplay.<br><code>Synchronous</code>: loads immediately but may briefly freeze the game.</td>
+</tr>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td>Automatically loads the character in <code>Start()</code>. If disabled, <code>GetAndShowCharacter()</code> must be called manually.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="template-reference"><strong>Template Reference</strong></h4>
+<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
+This defines which character is created at runtime.</p>
+<hr>
+<h2 id="2test-your-character">2️⃣Test Your Character</h2>
+<p>Now entry <strong>Play Mode</strong>.<br>
+If <code>Load Character On Start</code> is enabled, you'll see your character in-game.</p>
+<p><strong>Congrats!</strong><br>
+You now have your first character rendered at runtime! Creating more characters is as easy as seting up a new <strong>Character Template</strong>.</p>
+<p><strong>Happy game making!</strong></p>
 
 </article>
 
