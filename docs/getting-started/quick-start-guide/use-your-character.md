@@ -15,8 +15,8 @@ We're now going to create a **character** from the **Character Template** you've
 
 Create a new GameObject, this will be our character.
 
-If you're using a **Unified Character Type** add the **Unified Character Template Renderer** component.  
-If you're using a **Layered Character Type** add the **Layered Character Template Renderer** component.
+If you're using a **Unified Character Type**, add the **Unified Character Template Renderer** component.  
+If you're using a **Layered Character Type**, add the **Layered Character Template Renderer** component.
 
 ![Character Template Renderer Component](~/images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png)
 

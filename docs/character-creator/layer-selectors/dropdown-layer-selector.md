@@ -9,7 +9,7 @@ uid: ccm-dropdown-layer-selector
 A **Dropdown Layer Selector** is a standard dropdown UI element.  
 When opened, it displays a list of all available options for the assigned character layer.
 
-![Dropdown Layer Selector](~/images/ccm-layer-selectors/dropdown-layer-selector.png)
+![Dropdown Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/dropdown-layer-selector.png)
 
 ---
 

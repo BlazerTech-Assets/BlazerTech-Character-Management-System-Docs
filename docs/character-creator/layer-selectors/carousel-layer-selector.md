@@ -8,7 +8,7 @@ uid: ccm-carousel-layer-selector
 
 A **Carousel Layer Selector** displays the currently selected layer option and contains left/right buttons to cycle through other options available for the assigned layer.
 
-![Carousel Layer Selector](~/images/ccm-layer-selectors/carousel-layer-selector.png)
+![Carousel Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/carousel-layer-selector.png)
 
 ---
 

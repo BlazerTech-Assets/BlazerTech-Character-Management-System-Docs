@@ -8,9 +8,9 @@ uid: ccm-grid-layer-selector
 
 A **Grid Layer Selector** contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.
 
-![Grid Layer Selector](~/images/ccm-layer-selectors/grid-layer-selector.png)
-![Grid Layer Selector](~/images/ccm-layer-selectors/grid-layer-selector-variant-2.png)
+![Grid Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png)
 
+![Grid Layer Selector Variant 2](~/images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png)
 ---
 
 ## Prefabs

@@ -9,7 +9,7 @@ A **Tab Layer Selector** won't do much on it's own. It must be paired with anoth
 > [!NOTE]
 > The **Tab Layer Selector** was designed to work with [Grid Layer Selectors](xref:ccm-grid-layer-selector) & [List Layer Selectors](xref:ccm-list-layer-selector) originally but can work with any **Layer Selector**.
 
-![Tab Layer Selector](~/images/ccm-layer-selectors/tab-layer-selector.png)
+![Tab Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/tab-layer-selector.png)
 
 
 ---
@@ -33,7 +33,7 @@ These will work out of the box without any extra setup required.
 
 ---
 
-## Setting up the second Layer Selector
+## Setting Up The Second Layer Selector
 The `CCMSelectedlayerTabHandler` component can be used to change the assigned layer of another selector to the one selected in the [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
 It takes two references:
 1. **Character Layer Selection Manager** - Used to detect when the selected layer has been changed.

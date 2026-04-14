@@ -2602,156 +2602,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/ccm-character-preview/character-preview-animation-buttons.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-character-preview/character-preview-animation-buttons.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-character-preview/character-preview-complete.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-character-preview/character-preview-complete.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-character-preview/character-preview-rotation-buttons.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-character-preview/character-preview-rotation-buttons.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-character-preview/core-character-preview.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-character-preview/core-character-preview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-character-randomization/controlled-randomization-example.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-character-randomization/controlled-randomization-example.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-history/history-panel-sprite-preview.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-history/history-panel-sprite-preview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-history/history-panel-text.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-history/history-panel-text.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-history/history-undo-redo-buttons.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-history/history-undo-redo-buttons.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/carousel-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/carousel-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/dropdown-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/dropdown-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/grid-layer-selector-variant-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/grid-layer-selector-variant-2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/grid-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/grid-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/list-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/list-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-layer-selectors/tab-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-layer-selectors/tab-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ccm-loading-screen/loading-screen.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ccm-loading-screen/loading-screen.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/character-animation/character-animator-blend-tree.png",
       "output": {
         "resource": {
@@ -2776,6 +2626,176 @@
       "output": {
         "resource": {
           "relative_path": "images/character-animation/character-animator-parameters.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-animation-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-animation-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-complete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-complete.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-rotation-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-rotation-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/core-character-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/core-character-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/history-panel-sprite-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/history-panel-sprite-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/history-panel-text.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/history-panel-text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/history-tracker-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/history-tracker-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/history-undo-redo-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/history-undo-redo-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/carousel-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/carousel-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/dropdown-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/dropdown-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/layer-selectors.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/layer-selectors.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-layer-selectors/tab-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-layer-selectors/tab-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen.png"
         }
       },
       "version": ""

@@ -8,7 +8,7 @@ uid: ccm-list-layer-selector
 
 A **List Layer Selector** contains a vertical list where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.
 
-![List Layer Selector](~/images/ccm-layer-selectors/list-layer-selector.png)
+![List Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png)
 
 ---
 
