@@ -103,69 +103,100 @@
         <article data-uid="ccm-loading-screens">
 <h1 id="loading-screens">Loading Screens</h1>
 
-<p>The <strong>Character Creation Menu</strong> takes time to open since it needs to load all layer options. A loading screen can be added to hide the Character Creation Menu and give the player something to look at until the menu is ready.</p>
-<img src="../../images/ccm-loading-screen/loading-screen.png" alt="Loading Screen Example" width="500">
+<p>When a <strong>Character Creation Menu</strong> is first opened it can take time before the menu is ready as it needs to load all layer options first.<br>
+A <strong>loading screen</strong> can be used to hide the <strong>Character Creation Menu</strong> while it loads and give the player something to look at until the menu is ready.</p>
+<img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-1.png" alt="Loading Screen Example" width="500">
+<hr>
 <h2 id="how-it-works">How It Works</h2>
-<p>Just like the Character Creation Menu itself; loading screens are also modular.</p>
-<p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is the core of the loading screen. It should live outside of the loading screen contents but still within the Character Creation Menu contents since it will be in charge of enabling/disabling the loading screen.</p>
-<ul>
-<li>The <code>Loading Screen Handler</code> requires a reference to the parent of the loading screen (Named <strong>Contents</strong> in all prefabs).</li>
-<li>Optionally a loading finished delay can be added to wait a fixed amount of time after loading is finished before disabling the loading screen. This can be helpful to allow loading bars/text to catch up.</li>
-</ul>
-<h2 id="prefabs">Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Loading Screen</strong></p>
-</div>
-<p>Within the base <strong>Loading Screen</strong> folder is the <strong>Loading Screen Core</strong> prefab. This is the bare minimum required for a loading screen. It contains the Loading Screen Handler component and loading screen contents which only contains an image. No additional functionality is included.</p>
-<h3 id="loading-screen-component-prefabs">Loading Screen Component Prefabs</h3>
-<p>Located in the <strong>/Loading Screen Components</strong> subfolder are prefabs which add additional functionality to the loading screen. These can be added to the <strong>Loading Screen Core</strong> prefab.</p>
-<ul>
-<li><strong>Loading Progress Text</strong> - Adds progress text indicating how far loading has progressed.</li>
-<li><strong>Loading Bar</strong> - Adds a progress bar which fills up as the loading progresses.</li>
-<li><strong>Loading Repeating Text</strong> - Adds text which cylces through a list of pre-set strings.</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Make sure to set the reference to the <strong>Loading Screen Handler</strong> after instantiating any loading screen component prefabs.</p>
-</div>
-<h3 id="complete-loading-screen-prefabs">Complete Loading Screen Prefabs</h3>
-<p>Located in the <strong>/Complete Loading Screens</strong> subfolder are prefabs which contain the <strong>Core Loading Screen</strong> plus other functionality.</p>
+<p>Just like the Character Creation Menu itself, loading screens are also modular. Pieces can be added or removed to create your own loading screen.</p>
+<p><strong>The Hierarchy is as follows:</strong></p>
 <ol>
-<li>Loading Screen [+Text, Bar]</li>
+<li><p><strong>First GameObject</strong> manages the loading screen and holds the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component. This GameObject should be kept enabled.</p>
+</li>
+<li><p><strong>Second GameObject</strong> holds the actual contents of the loading screen. This is the GameObject the <strong>Loading Screen Handler</strong> enables and disables. This GameObject can be kept enabled or disabled, it's state in the editor doesn't matter since it will be controlled by the <strong>Loading Screen Handler</strong>.</p>
+</li>
 </ol>
+<p>The <strong>Contents</strong> GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.</p>
+<p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png" alt="Loading Screen Hierarchy"></p>
+<h3 id="loading-screen-handler-component">Loading Screen Handler Component</h3>
+<p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is responsible for toggling the state of a loading screen.</p>
+<p>When enabled, the Loading Screen Handler automatically enabled the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
+<p><strong>The component has two fields:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Delay After Loading Finished</strong></td>
+<td>The time in milliseconds to wait before disabling the menu after loading has finished</td>
+</tr>
+<tr>
+<td><strong>Loading Screen Contents</strong></td>
+<td>The parent GameObject containing the actual contents of the loading screen</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png" alt="CCM Loading Screen Handler Component"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p>Loading Screen prefabs are available to easily drop into your own project.</p>
+<p>These prefabs are located under <strong>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</strong>.</p>
+<h3 id="core-prefab">Core Prefab</h3>
+<p>Contained within the <strong>Core</strong> Subfolder.</p>
+<p>A loading screen in its most basic state. Only a background to display during the loading process.</p>
+<p>This prefab can be added to using the <a href="#additions">Additions prefabs</a>.</p>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Contained within the <strong>Pre-Setup</strong> subfolder.</p>
+<p>Complete Loading Screens with other features included. These are drag and drop solutions.<br>
+Any of the Pre-Setup Loading Screen prefabs can be included in any Character Creation Menu without any other setup required.</p>
+<p>[INCLUDE IMAGE HERE]</p>
+<h3 id="additions-prefabs">Additions Prefabs</h3>
+<p>Contained within the <strong>Additions</strong> Subfolder.</p>
+<p>Additional prefabs that can be added to the <a href="#core">Core loading screen prefab</a>.</p>
+<p><strong>These prefabs include the following</strong>:</p>
+<ul>
+<li><strong>Loading Bar</strong> - A progress bar that fills as the Character Creation Menu loads.</li>
+<li><strong>Loading Icon</strong> - An animated icon that spins repeately.</li>
+<li><strong>Loading Progress Text</strong> - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%</li>
+<li><strong>Loading Repeating Text</strong> - Text which cycles through a list of preset sentences at a set interval.</li>
+</ul>
+<p>[INCLUDE COMPILATION IMAGE HERE]</p>
+<hr>
 <h2 id="loading-screen-components">Loading Screen Components</h2>
 <div class="NOTE">
 <h5>Note</h5>
 <p>All loading screen components require a reference to the <strong>Loading Screen handler</strong>.</p>
 </div>
-<p>Additional components can be added to a loading screen to add functionality (Note:):</p>
-<ul>
-<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html">CCMLoadingScreenProgressText</a>
+<p>These components can be added to a loading screen to add additional features.<br>
+They're also used in the <a href="#additions-prefabs">Additions Prefabs</a>. If you're looking for a simple drag and drop implementation, use those instead.</p>
+<h3 id="loadingscreenprogresstext">LoadingScreenProgressText</h3>
 <ul>
 <li>Adds progress text indicating how far loading has progressed.</li>
 <li>Requires a <code>TMP Text</code> component reference.</li>
 <li><code>Loading String</code> can be modified to change the loading bar text. <strong>{0}</strong> will be replaced with the loading percentage.</li>
 <li><code>Smoothing Speed</code> value can be changed to modify lerp speed through loading progress.</li>
 </ul>
-</li>
-<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html">CCMLoadingScreenProgressBar</a>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html">Component Link</a></p>
+<h3 id="loadingscreenprogressbar">LoadingScreenProgressBar</h3>
 <ul>
 <li>Adds a progress bar which fills up as the loading progresses.</li>
 <li>Requires an <code>image</code> component reference</li>
 <li>The <code>image</code> components <code>Image Type</code> should be set to filled. The <code>Fill Amount</code> can then be modifed automatically to fill up the progress bar.</li>
 <li><code>Smoothing Speed</code> value can be changed to modify loading bar lerp speed through loading progress.</li>
 </ul>
-</li>
-<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText.html">LoadingScreenRepeatingText</a>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html">Component Link</a></p>
+<h3 id="loadingscreenrepeatingtext">LoadingScreenRepeatingText</h3>
 <ul>
 <li>Adds text which cylces through a list of pre-set strings.</li>
 <li>Requires a <code>TMP Text</code> component reference.</li>
 <li>A list of strings containing the repeating text must be set.</li>
 <li>Repeating text cycle duration can be modified (Default = 0.5 seconds).</li>
 </ul>
-</li>
-</ul>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText.html">Component Link</a></p>
 
 </article>
 

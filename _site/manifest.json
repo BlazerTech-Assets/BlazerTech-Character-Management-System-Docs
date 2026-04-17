@@ -2792,10 +2792,30 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen.png",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-1.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen.png"
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png"
         }
       },
       "version": ""
