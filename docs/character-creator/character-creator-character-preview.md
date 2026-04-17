@@ -18,9 +18,9 @@ Within the **Pre-Setup** subfolder are three prefabs all completely setup and re
 
 The included prefabs are as follows:
 
-- Character Preview - Shows an animated preview of the character with no other controls.
-- Character Preview [+Rotation Controls] - Includes buttons on the left and right to rotate the character.
-- Character Preview [+Rotation Controls, Anim Buttons] - Includes rotation controls and buttons at the bottom to switch the animation the character is playing.
+- **Character Preview** - Shows an animated preview of the character with no other controls.
+- **Character Preview [+Rotation Controls]** - Includes buttons on the left and right to rotate the character.
+- **Character Preview [+Rotation Controls, Anim Buttons]** - Includes rotation controls and buttons at the bottom to switch the animation the character is playing.
 
 <img src="~/images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="700" />
 
