@@ -89,7 +89,7 @@ Additional prefabs that can be added to the [Core loading screen prefab](#core).
 These components can be added to a loading screen to add additional features.  
 They're also used in the [Additions Prefabs](#additions-prefabs). If you're looking for a simple drag and drop implementation, use those instead.
 
-### LoadingScreenProgressText
+### LoadingScreenProgressText Component
 
 - Adds progress text indicating how far loading has progressed.
 - Requires a `TMP Text` component reference.
@@ -98,7 +98,7 @@ They're also used in the [Additions Prefabs](#additions-prefabs). If you're look
 
 [Component Link](xref:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText)
 
-### LoadingScreenProgressBar
+### LoadingScreenProgressBar Component
 
 - Adds a progress bar which fills up as the loading progresses.
 -  Requires an `image` component reference
@@ -107,7 +107,7 @@ They're also used in the [Additions Prefabs](#additions-prefabs). If you're look
 
 [Component Link](xref:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar)
 
-### LoadingScreenRepeatingText
+### LoadingScreenRepeatingText Component
 
   - Adds text which cylces through a list of pre-set strings.
   - Requires a `TMP Text` component reference.

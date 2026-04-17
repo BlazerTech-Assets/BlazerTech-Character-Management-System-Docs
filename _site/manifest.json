@@ -2822,6 +2822,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-menu-controls/menu-controls-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-menu-controls/menu-controls-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-menu-controls/temp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-menu-controls/temp.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creator-setup/ccm-relay-usage-example.png",
       "output": {
         "resource": {

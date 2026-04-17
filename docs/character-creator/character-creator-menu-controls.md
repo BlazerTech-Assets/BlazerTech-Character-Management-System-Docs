@@ -9,40 +9,97 @@ uid: ccm-menu-controls
 
 # Character Creator Menu Controls
 
-Menu Controls are buttons that enhance the functionality of the **Character Creation Menu**.  
-They include the following:
-- **Back/Close menu button**.
-- **Save Character/Confirm changes button**.
-- **Reset character button**.
-- **Randomize character button**.
+Menu Controls are UI buttons that provide core user actions such as saving, closing, randomizing and reseting a character.
 
-## The Character Creation Menu Relay Component
+The included prefabs can be quickly added to a **Character Creation Menu** or replaced with custom implementations using the CCM Relay component.
 
-The [CCMRelay] component is used to relay methods to the `Character Creation Menu Manager`. The setup works like this:
-1. Add the `CCM Relay` component to a game object.
-2. Add a `button` component and set the `On Click` event to call a method on the `CCM Relay` component.
-
-![CCM Relay Usage Example](~/images/character-creator-setup/ccm-relay-usage-example.png)
-
-### CCM Relay Methods
-
-The following are all public methods on the `CCM Relay` component:
-
-- [DisableMenu()] - Disable and close the **Character Creation Menu** if open.
-- [SaveCharacter()] - Save the character assigned in the **Character Creation Menu** and add it to a group if applicable.
-- [RandomizeEntireCharacter()] - Randomize all layers of the character assigned in the **Character Creation Menu**.
-- [ResetCharacter()] - Reset the character in the **Character Creation Menu** to the state it was in when the menu was first opened.
+![Menu Controls Example](~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png)
 
 ---
 
-## Menu Control Prefabs
+## Included Actions
 
+Menu Controls provide the following actions:
 
-> [!TIP]
-> Prefabs Location: **Prefabs > Character Creator > Menu Controls**
+- Close or exit the Character Creation Menu.
+- Save or confirm character changes.
+- Reset the character to its original state.
+- Randomize the characters appearance.
 
-The following prefabs are pre-setup with the above mentioned controls.
-- **Menu Controls (Core, Horizontal Group)** - Only contains a back and save character button.
-- **Menu Controls (Full, Horizontal Group)** - Contains back, save character, randomize and reset buttons. All contained in a horizontal layout group.
-- **(Menu Controls [Full + Undo_Redo])** - Contains back, save character, randomize and undo/redo buttons for use with the **History Tracker** component.
-- **Menu Controls [Full]** - Contains back, save character, randomize and reset buttons in a grid shape.
+---
+
+## Prefabs
+
+**Prefabs Location**: `Prefabs > Character Creator > Modules > Menu Controls`.
+
+Ready-made prefabs are included and can be used without any additional setup. Drag and drop them directly into your Character Creation Menu hierarchy and they're immediately ready to be used.
+
+### Variants
+
+Within the prefabs folder you'll see 4 variation folders. The only difference between variants is the sprites used.
+
+**Available prefabs**:
+
+1. Menu Controls [Back, Confirm, Randomize, Reset]
+2. Menu Controls [Back, Confirm, Randomize]
+3. Menu Controls [Back, Confirm]
+
+The brackets dictate what actions are included in the prefab.
+
+### Generic Buttons
+
+Inside the same prefabs directory, the **Generic Buttons** folder contains individual button prefabs with no default assigned functionality.
+
+Each prefab includes:
+
+- A UI Button
+- A **CCM Relay** component
+
+When using the generic button prefabs, add an **On Click** event to the button and assign the **CCM Relay** component. You can then call different methods on the **CCM Relay** component to perform actions such as saving changes or exiting the menu.
+
+---
+
+## CCM Relay Component
+
+The **CCM Relay** (Character Creation Menu Relay) component acts as a bridge between the UI and the Character Creation Menu system.
+
+It forwards button events to the active Character Creation Menu Manager, making it easy to setup simple functionality without writing any code.
+
+### Usage
+
+To create a custom button using the **CCM Relay**:
+
+1. Add the `CCM Relay` component to a GameObject
+2. Add the Unity `Button` component
+3. Assign the Buttons **On Click** event to call a method on the **CCM Relay** component
+
+### Example
+![CCM Relay Usage Example](~/images/character-creator-setup/ccm-relay-usage-example.png)
+
+---
+
+## CCM Relay Methods
+
+The following public methods are available on the **CCM Relay** component:
+
+### DisableMenu()
+
+Closes the disables the **Character Creation Menu**.
+
+---
+
+### SaveCharacter()
+
+Saves changes made to the currently edited character.
+
+---
+
+### RandomizeEntireCharacter()
+
+Randomizes all character layers of the character currently being edited.
+
+---
+
+### ResetCharacter()
+
+Restores the character to the state it was in when the **Character Creation Menu** was first opened.
