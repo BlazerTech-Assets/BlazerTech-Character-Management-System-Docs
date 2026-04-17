@@ -113,14 +113,14 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 <ol>
 <li><p><strong>First GameObject</strong> manages the loading screen and holds the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component. This GameObject should be kept enabled.</p>
 </li>
-<li><p><strong>Second GameObject</strong> holds the actual contents of the loading screen. This is the GameObject the <strong>Loading Screen Handler</strong> enables and disables. This GameObject can be kept enabled or disabled, it's state in the editor doesn't matter since it will be controlled by the <strong>Loading Screen Handler</strong>.</p>
+<li><p><strong>Second GameObject</strong> holds the actual contents of the loading screen. This is the GameObject the <strong>Loading Screen Handler</strong> enables and disables. This GameObject can be kept enabled or disabled, its state in the editor doesn't matter since it will be controlled by the <strong>Loading Screen Handler</strong>.</p>
 </li>
 </ol>
 <p>The <strong>Contents</strong> GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.</p>
 <p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png" alt="Loading Screen Hierarchy"></p>
 <h3 id="loading-screen-handler-component">Loading Screen Handler Component</h3>
 <p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is responsible for toggling the state of a loading screen.</p>
-<p>When enabled, the Loading Screen Handler automatically enabled the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
+<p>When the Character Creation Menu is enabled, the Loading Screen Handler automatically enables the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
 <p><strong>The component has two fields:</strong></p>
 <table>
 <thead>
@@ -144,7 +144,7 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 <hr>
 <h2 id="prefabs">Prefabs</h2>
 <p>Loading Screen prefabs are available to easily drop into your own project.</p>
-<p>These prefabs are located under <strong>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</strong>.</p>
+<p>These prefabs are located under <code>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</code>.</p>
 <h3 id="core-prefab">Core Prefab</h3>
 <p>Contained within the <strong>Core</strong> Subfolder.</p>
 <p>A loading screen in its most basic state. Only a background to display during the loading process.</p>
@@ -160,7 +160,7 @@ Any of the Pre-Setup Loading Screen prefabs can be included in any Character Cre
 <p><strong>These prefabs include the following</strong>:</p>
 <ul>
 <li><strong>Loading Bar</strong> - A progress bar that fills as the Character Creation Menu loads.</li>
-<li><strong>Loading Icon</strong> - An animated icon that spins repeately.</li>
+<li><strong>Loading Icon</strong> - An animated icon that spins repeatedly.</li>
 <li><strong>Loading Progress Text</strong> - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%</li>
 <li><strong>Loading Repeating Text</strong> - Text which cycles through a list of preset sentences at a set interval.</li>
 </ul>

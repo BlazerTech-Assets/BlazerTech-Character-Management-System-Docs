@@ -2632,40 +2632,40 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-animation-buttons.png",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-controls).png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-animation-buttons.png"
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-controls).png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-complete.png",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-contrtolls, anim buttons).png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-complete.png"
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-contrtolls, anim buttons).png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-rotation-buttons.png",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-rotation-buttons.png"
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-character-preview/core-character-preview.png",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-previews-example.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-character-preview/core-character-preview.png"
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-previews-example.png"
         }
       },
       "version": ""
@@ -2826,16 +2826,6 @@
       "output": {
         "resource": {
           "relative_path": "images/character-creation-menu/ccm-menu-controls/menu-controls-example.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-menu-controls/temp.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-creation-menu/ccm-menu-controls/temp.png"
         }
       },
       "version": ""

@@ -19,7 +19,7 @@ Just like the Character Creation Menu itself, loading screens are also modular. 
 
 1. **First GameObject** manages the loading screen and holds the [CCMLoadingScreenHandler](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler) component. This GameObject should be kept enabled.
    
-2. **Second GameObject** holds the actual contents of the loading screen. This is the GameObject the **Loading Screen Handler** enables and disables. This GameObject can be kept enabled or disabled, it's state in the editor doesn't matter since it will be controlled by the **Loading Screen Handler**.
+2. **Second GameObject** holds the actual contents of the loading screen. This is the GameObject the **Loading Screen Handler** enables and disables. This GameObject can be kept enabled or disabled, its state in the editor doesn't matter since it will be controlled by the **Loading Screen Handler**.
 
 The **Contents** GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.
 
@@ -29,7 +29,7 @@ The **Contents** GameObject will hold the loading screen background and any addi
 
 The [CCMLoadingScreenHandler](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler) component is responsible for toggling the state of a loading screen.
 
-When enabled, the Loading Screen Handler automatically enabled the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.
+When the Character Creation Menu is enabled, the Loading Screen Handler automatically enables the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.
 
 **The component has two fields:**
 
@@ -46,7 +46,7 @@ When enabled, the Loading Screen Handler automatically enabled the loading scree
 
 Loading Screen prefabs are available to easily drop into your own project.
 
-These prefabs are located under **Pefabs > Character Creator > Modules > Loading Screen**.
+These prefabs are located under `Pefabs > Character Creator > Modules > Loading Screen`.
 
 ### Core Prefab
 
@@ -74,7 +74,7 @@ Additional prefabs that can be added to the [Core loading screen prefab](#core).
 **These prefabs include the following**:
 
 - **Loading Bar** - A progress bar that fills as the Character Creation Menu loads.
-- **Loading Icon** - An animated icon that spins repeately. 
+- **Loading Icon** - An animated icon that spins repeatedly. 
 - **Loading Progress Text** - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%
 - **Loading Repeating Text** - Text which cycles through a list of preset sentences at a set interval.
 
