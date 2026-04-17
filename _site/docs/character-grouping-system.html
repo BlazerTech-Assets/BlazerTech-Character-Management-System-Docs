@@ -101,60 +101,60 @@
         </div>
 
         <article data-uid="character-grouping-system">
-<h1 id="character-grouping-system" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="5">Character Grouping System</h1>
+<h1 id="character-grouping-system">Character Grouping System</h1>
 
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="7">Character groups are a convenient way to store/sort characters. They are for <a class="xref" href="character-types/layered-character-type.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=7>Layered Characters</a> only.
+<p>Character groups are a convenient way to store/sort characters. They are for <a class="xref" href="character-types/layered-character-type.html">Layered Characters</a> only.
 Characters in a group are automatically saved to disk and loaded again next session.</p>
-<h2 id="the-primary-character-slot" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="10">The Primary Character Slot</h2>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="12">Every Character Type contains a <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="12">Primary Character Slot</strong> which can hold a singular character. This is useful for simple setups where only one character is used.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="14">The main use for the <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="14">Primary Character Slot</strong> is for use with the <a class="xref" href="character-creator/character-creator-overview.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=14>Character Creation Menu</a>.<br>
-The menu can be opened using the character contained within the <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="15">Primary Character Slot</strong>.</p>
-<h2 id="group-types" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="17">Group Types</h2>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="19"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="19">There are two types of groups:</strong></p>
-<h3 id="flexible-group-type" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="21">Flexible Group Type</h3>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="23">A dynamic list. Characters can be added, removed or edited at any time.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="25">Flexibe Groups are great when you want the player to have full control of the list.
+<h2 id="the-primary-character-slot">The Primary Character Slot</h2>
+<p>Every Character Type contains a <strong>Primary Character Slot</strong> which can hold a singular character. This is useful for simple setups where only one character is used.</p>
+<p>The main use for the <strong>Primary Character Slot</strong> is for use with the <a class="xref" href="character-creator/character-creator-overview.html">Character Creation Menu</a>.<br>
+The menu can be opened using the character contained within the <strong>Primary Character Slot</strong>.</p>
+<h2 id="group-types">Group Types</h2>
+<p><strong>There are two types of groups:</strong></p>
+<h3 id="flexible-group-type">Flexible Group Type</h3>
+<p>A dynamic list. Characters can be added, removed or edited at any time.</p>
+<p>Flexibe Groups are great when you want the player to have full control of the list.
 For example a list of playable characters with the ability for the player to create new characters.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="28"><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=28>API</a></p>
-<h3 id="fixed-group-type" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="29">Fixed Group Type</h3>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="31">A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="33">Best for situations where an immutable list is needed. Such as a set of pre-created characters the player can edit the designs of but not change the count. Or a set of playable characters the player can choose from.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="35"><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=35>API</a></p>
-<hr sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="37">
-<h2 id="character-group-registries" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="38">Character Group Registries</h2>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="39">The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=39>CharacterGroupRegistry</a> is a wrapper class. An instance of this class exists for each <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="39">Layered Character Type</strong>.
-This wrapper class holds the <a href="#the-primary-character-slot" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="40">Primary Character Slot</a> as well as all flexible and fixed groups created for the same <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="40">Layered Character Type</strong>.</p>
-<h2 id="character-group-manager" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="42">Character Group Manager</h2>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="44">The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber=44>LayeredCharacterGroupManager</a> is a static class which handles all groups.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="46">The Layered Character Group Manager contains a dictionary of type <code sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="46">CharacterGroupRegistry</code>. One entry for each <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="46">Layered Character Type</strong> used.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="48">The <code sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="48">LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO type)</code> method can be used to retrieve the registry for a specific <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="48">Character Type</strong>.</p>
-<hr sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="50">
-<h2 id="character-group-templates" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="52">Character Group Templates</h2>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="54">A <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="54">Layered Character Group Template</strong> is a scriptable object. It is a blueprint for creating a flexible or fixed group during runtime.</p>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="56">To create a Layered Character Group Template <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="56">right click</strong> the project window and navigate to <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="56">Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Layered Character Group Template</strong></p>
-<div class="TIP" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="58">
+<p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">API</a></p>
+<h3 id="fixed-group-type">Fixed Group Type</h3>
+<p>A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</p>
+<p>Best for situations where an immutable list is needed. Such as a set of pre-created characters the player can edit the designs of but not change the count. Or a set of playable characters the player can choose from.</p>
+<p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html">API</a></p>
+<hr>
+<h2 id="character-group-registries">Character Group Registries</h2>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> is a wrapper class. An instance of this class exists for each <strong>Layered Character Type</strong>.
+This wrapper class holds the <a href="#the-primary-character-slot">Primary Character Slot</a> as well as all flexible and fixed groups created for the same <strong>Layered Character Type</strong>.</p>
+<h2 id="character-group-manager">Character Group Manager</h2>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> is a static class which handles all groups.</p>
+<p>The Layered Character Group Manager contains a dictionary of type <code>CharacterGroupRegistry</code>. One entry for each <strong>Layered Character Type</strong> used.</p>
+<p>The <code>LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO type)</code> method can be used to retrieve the registry for a specific <strong>Character Type</strong>.</p>
+<hr>
+<h2 id="character-group-templates">Character Group Templates</h2>
+<p>A <strong>Layered Character Group Template</strong> is a scriptable object. It is a blueprint for creating a flexible or fixed group during runtime.</p>
+<p>To create a Layered Character Group Template <strong>right click</strong> the project window and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Layered Character Group Template</strong></p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="59">If a <strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="59">Layered Character Group Template</strong> is placed inside a folder titled <code sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="59">Resources</code> the group will be automatically created at runtime.</p>
+<p>If a <strong>Layered Character Group Template</strong> is placed inside a folder titled <code>Resources</code> the group will be automatically created at runtime.</p>
 </div>
-<p sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="61"><img src="../images/character-templates/layered-character-group-template.png" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="61" alt="Layered Character Group Template Example"></p>
-<h3 id="fields" sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="63">Fields</h3>
-<ul sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="65">
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="65"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="65">Default Group Name</strong> - The name of the group when it's created. Can be overriden.</li>
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="66"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="66">Character Type</strong> - The Character Type the group will be for when created.</li>
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="67"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="67">Group Type</strong> - The type of group that will be created. Flexible or Fixed.</li>
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="68"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="68">Character In Group</strong><br>
+<p><img src="../images/character-templates/layered-character-group-template.png" alt="Layered Character Group Template Example"></p>
+<h3 id="fields">Fields</h3>
+<ul>
+<li><strong>Default Group Name</strong> - The name of the group when it's created. Can be overriden.</li>
+<li><strong>Character Type</strong> - The Character Type the group will be for when created.</li>
+<li><strong>Group Type</strong> - The type of group that will be created. Flexible or Fixed.</li>
+<li><strong>Character In Group</strong><br>
 A list of all characters that will be created and put in the group when the group is created.<br>
 Each entry has two options:</li>
 </ul>
-<ol sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="71">
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="71"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="71">New Character</strong>
-<ul sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="72">
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="72">Creates a new character with the supplied name.</li>
+<ol>
+<li><strong>New Character</strong>
+<ul>
+<li>Creates a new character with the supplied name.</li>
 </ul>
 </li>
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="73"><strong sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="73">Character Template</strong>
-<ul sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="74">
-<li sourcefile="docs/character-grouping-system.md" sourcestartlinenumber="74">Creates a new character using the supplied Layered Character Template.</li>
+<li><strong>Character Template</strong>
+<ul>
+<li>Creates a new character using the supplied Layered Character Template.</li>
 </ul>
 </li>
 </ol>

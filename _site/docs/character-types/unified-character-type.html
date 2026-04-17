@@ -101,85 +101,85 @@
         </div>
 
         <article data-uid="unified-character-type">
-<h1 id="unified-character-type" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="6">Unified Character Type</h1>
+<h1 id="unified-character-type">Unified Character Type</h1>
 
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="8">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="8">Unified Character Type</strong> defines how a <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="8">Unified Character</strong> is structured.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="10">It contains the core data shared across all characters of that type, such as the <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="10">Base Spritesheet</strong> and <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="10">Animator Controller</strong>.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="12">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="12">Unified Character</strong> uses a <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="12">single spritesheet</strong> that contains the complete character and all its animations.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="14"><img src="../../images/character-types/unified-characters/unified-character-type-asset.png" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="14" alt="Unified Character Type Asset"></p>
-<hr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="16">
-<h2 id="unified-characters" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="18">Unified Characters</h2>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="20">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="20">Unified Character</strong> has the entire character contained in a single spritesheet.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="22">This means unlike <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="22">Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in its own spritesheet.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="24">For example, if your game contains a set of characters, each character variation would have its own spritesheet.
+<p>A <strong>Unified Character Type</strong> defines how a <strong>Unified Character</strong> is structured.</p>
+<p>It contains the core data shared across all characters of that type, such as the <strong>Base Spritesheet</strong> and <strong>Animator Controller</strong>.</p>
+<p>A <strong>Unified Character</strong> uses a <strong>single spritesheet</strong> that contains the complete character and all its animations.</p>
+<p><img src="../../images/character-types/unified-characters/unified-character-type-asset.png" alt="Unified Character Type Asset"></p>
+<hr>
+<h2 id="unified-characters">Unified Characters</h2>
+<p>A <strong>Unified Character</strong> has the entire character contained in a single spritesheet.</p>
+<p>This means unlike <strong>Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in its own spritesheet.</p>
+<p>For example, if your game contains a set of characters, each character variation would have its own spritesheet.
 Example list:</p>
-<ul sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="26">
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="26">Knight</li>
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="27">Knight (Armored)</li>
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="28">Knight (Winter Outfit)</li>
+<ul>
+<li>Knight</li>
+<li>Knight (Armored)</li>
+<li>Knight (Winter Outfit)</li>
 </ul>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="30">Each character spritesheet must follow the same layout so that all animations align correctly.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="32"><strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="32">All Unified Character Spritesheets must share</strong>:</p>
-<ul sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="33">
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="33">The same <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="33">Spritesheet size</strong></li>
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="34">The same <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="34">frame sizes</strong></li>
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="35">The same <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="35">frame positioning</strong></li>
+<p>Each character spritesheet must follow the same layout so that all animations align correctly.</p>
+<p><strong>All Unified Character Spritesheets must share</strong>:</p>
+<ul>
+<li>The same <strong>Spritesheet size</strong></li>
+<li>The same <strong>frame sizes</strong></li>
+<li>The same <strong>frame positioning</strong></li>
 </ul>
-<hr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="37">
-<h2 id="create-a-unified-character-type-asset" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="39">Create a Unified Character Type Asset</h2>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="41">To create a new Unified Character Type:</p>
-<ol sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="42">
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="42"><code sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="42">Right click</code> the <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="42">Project window</strong></li>
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="43">Navigate to: <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="43">Create &gt; BlazerTech &gt; Character Management System &gt; Unified Character Type</strong></li>
+<hr>
+<h2 id="create-a-unified-character-type-asset">Create a Unified Character Type Asset</h2>
+<p>To create a new Unified Character Type:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Unified Character Type</strong></li>
 </ol>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="45"><img src="../../images/character-types/unified-characters/create-unified-character-type.png" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="45" alt="Create Unified Character Type Asset"></p>
-<hr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="47">
-<h2 id="character-type-setup" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="49">Character Type Setup</h2>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="51">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="51">Unified Character Type</strong> uses the same core properties shared by all <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="51">Character Types</strong>.</p>
-<table sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="53">
+<p><img src="../../images/character-types/unified-characters/create-unified-character-type.png" alt="Create Unified Character Type Asset"></p>
+<hr>
+<h2 id="character-type-setup">Character Type Setup</h2>
+<p>A <strong>Unified Character Type</strong> uses the same core properties shared by all <strong>Character Types</strong>.</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="53">
-<th sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="53">Property</th>
-<th sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="53">Type</th>
-<th sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="53">Description</th>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55">
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55"><strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55"><a class="xref" href="character-types.html#character-type-id" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=55>Characte Type ID</a></strong></td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55">String</td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="55">unique</strong> identifer</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Characte Type ID</a></strong></td>
+<td>String</td>
+<td>A <strong>unique</strong> identifer</td>
 </tr>
-<tr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56">
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56"><strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56"><a class="xref" href="character-types.html#base-spritesheet" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=56>Base Spritesheet</a></strong></td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56">Sprite</td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56">The <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="56">character spritesheet</strong> used by all characters</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
+<td>Sprite</td>
+<td>The <strong>character spritesheet</strong> used by all characters</td>
 </tr>
-<tr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57">
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57"><strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57"><a class="xref" href="character-types.html#animator-controller-optional" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=57>Animator Controller</a></strong></td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57">RuntimeAnimatorController</td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57">Single <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="57">Animator Controller</strong> for all characters</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#animator-controller-optional">Animator Controller</a></strong></td>
+<td>RuntimeAnimatorController</td>
+<td>Single <strong>Animator Controller</strong> for all characters</td>
 </tr>
-<tr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="58">
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="58"><strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="58"><a class="xref" href="character-types.html#pixels-per-unit" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=58>Pixels Per Unit</a></strong></td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="58">int</td>
-<td sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="58">PPU of your Base Spritesheet</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#pixels-per-unit">Pixels Per Unit</a></strong></td>
+<td>int</td>
+<td>PPU of your Base Spritesheet</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="60">Read <a class="xref" href="character-types.html#character-type-setup" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=60>Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
-<hr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="62">
-<h2 id="creating-unified-characters" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="64">Creating Unified Characters</h2>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="66">A <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="66">Unified Character</strong> can be created through a <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="66">Unified Character Template</strong>.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="68"><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="68" alt="Unified Character Template"></p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="70">The template will store a reference to the spritesheet for that character.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="72">The <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="72">Unified Character Template Renderer</strong> component can create and render a <strong sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="72">Unified Character</strong> from a template.</p>
-<p sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="74"><a class="xref" href="../character-templates/unified-character-templates.html" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=74>Read More → Unified Character Templates</a><br>
-<a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=75>Read More → Unified Character Template Renderer component</a></p>
-<hr sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="77">
-<h2 id="related" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="79">Related</h2>
-<ul sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="80">
-<li sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber="80"><a class="xref" href="character-types.html" sourcefile="docs/character-types/unified-character-type.md" sourcestartlinenumber=80>Character Types</a></li>
+<p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
+<hr>
+<h2 id="creating-unified-characters">Creating Unified Characters</h2>
+<p>A <strong>Unified Character</strong> can be created through a <strong>Unified Character Template</strong>.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
+<p>The template will store a reference to the spritesheet for that character.</p>
+<p>The <strong>Unified Character Template Renderer</strong> component can create and render a <strong>Unified Character</strong> from a template.</p>
+<p><a class="xref" href="../character-templates/unified-character-templates.html">Read More → Unified Character Templates</a><br>
+<a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Read More → Unified Character Template Renderer component</a></p>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
 </ul>
 
 </article>

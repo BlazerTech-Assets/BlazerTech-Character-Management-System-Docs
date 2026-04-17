@@ -101,48 +101,48 @@
         </div>
 
         <article data-uid="ccm-list-layer-selector">
-<h1 id="list-layer-selector" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="5">List Layer Selector</h1>
+<h1 id="list-layer-selector">List Layer Selector</h1>
 
-<h2 id="overview" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="7">Overview</h2>
-<p sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="9">A <strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="9">List Layer Selector</strong> contains a vertical list where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
-<p sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="11"><img src="../../../images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="11" alt="List Layer Selector"></p>
-<hr sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="13">
-<h2 id="prefabs" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="15">Prefabs</h2>
-<div class="TIP" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="17">
+<h2 id="overview">Overview</h2>
+<p>A <strong>List Layer Selector</strong> contains a vertical list where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
+<p><img src="../../../images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png" alt="List Layer Selector"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="18">Location: <strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="18">Prefabs &gt; Character Creator &gt; Layer Selectors &gt; List Selector</strong></p>
+<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; List Selector</strong></p>
 </div>
-<h3 id="layer-selector-prefabs" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="20">Layer Selector Prefabs</h3>
-<ul sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="21">
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="21"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="21">Layer List Selector</strong> – Most common list selector. Each element in the list is displayed as a both text &amp; sprite.</li>
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="22"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="22">Layer List Selector [+Title]</strong> – Same as #1 but includes a title with the name of the assigned layer at the top.</li>
+<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<ul>
+<li><strong>Layer List Selector</strong> – Most common list selector. Each element in the list is displayed as a both text &amp; sprite.</li>
+<li><strong>Layer List Selector [+Title]</strong> – Same as #1 but includes a title with the name of the assigned layer at the top.</li>
 </ul>
-<h3 id="pre-setup-prefabs" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="24">Pre-Setup Prefabs</h3>
-<p sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="25">Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber=25>Character Layer Selection Manager</a>.<br>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
 These will work out of the box without any extra setup required.</p>
-<ul sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="28">
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="28"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="28">List Selectors [Auto Create]</strong> – Instantiates list selectors [+Title] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="29"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="29">List Selectors [Initialize Existing]</strong> – Uses list selectors already present in the prefab hierarchy.</li>
+<ul>
+<li><strong>List Selectors [Auto Create]</strong> – Instantiates list selectors [+Title] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
+<li><strong>List Selectors [Initialize Existing]</strong> – Uses list selectors already present in the prefab hierarchy.</li>
 </ul>
-<h3 id="list-entries" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="31">List Entries</h3>
-<p sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="32">A list entry is referenced in a Layer List Selector and defines how each entry in the list looks and functions.
-They live in the <strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="33">/List Entries subfolder</strong>.<br>
-The following are pre-created entries that can be used in any <strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="34">Layer List Selector</strong>:</p>
-<ol sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="35">
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="35"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="35">Layer Option List Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="36"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="36">Layer Option List Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
+<h3 id="list-entries">List Entries</h3>
+<p>A list entry is referenced in a Layer List Selector and defines how each entry in the list looks and functions.
+They live in the <strong>/List Entries subfolder</strong>.<br>
+The following are pre-created entries that can be used in any <strong>Layer List Selector</strong>:</p>
+<ol>
+<li><strong>Layer Option List Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
+<li><strong>Layer Option List Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
 </ol>
-<hr sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="38">
-<h2 id="customization" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="40">Customization</h2>
-<ul sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="42">
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="42"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="42">Names</strong> – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="43"><strong sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="43">Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the list and individual element backgrounds.</li>
+<hr>
+<h2 id="customization">Customization</h2>
+<ul>
+<li><strong>Names</strong> – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
+<li><strong>Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the list and individual element backgrounds.</li>
 </ul>
-<hr sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="45">
-<h2 id="limitations" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="47">Limitations</h2>
-<ul sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="49">
-<li sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber="49">The list can take up a lot of space whem multiple are used at a time. Works best when used with a<br>
-<a class="xref" href="tab-layer-selector.html" sourcefile="docs/character-creator/layer-selectors/list-layer-selector.md" sourcestartlinenumber=50>Tab Layer Selector</a>.</li>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>The list can take up a lot of space whem multiple are used at a time. Works best when used with a<br>
+<a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
 </ul>
 
 </article>

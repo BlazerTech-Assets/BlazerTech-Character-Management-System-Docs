@@ -101,97 +101,97 @@
         </div>
 
         <article data-uid="character-renderer-components">
-<h1 id="character-renderer-components" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="6">Character Renderer Components</h1>
+<h1 id="character-renderer-components">Character Renderer Components</h1>
 
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="8">Character Renderer components will load and render characters in-game.</p>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="10"><strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="10">All renderer components handle</strong>:</p>
-<ol sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="11">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="11">Creating/loading a character</li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="12">Applying the <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="12">Character Shader</strong></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="13">Assigning the <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="13">Animator Controller</strong> if applicable</li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="14">Managing <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="14">Overlay Layers</strong></li>
+<p>Character Renderer components will load and render characters in-game.</p>
+<p><strong>All renderer components handle</strong>:</p>
+<ol>
+<li>Creating/loading a character</li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> if applicable</li>
+<li>Managing <strong>Overlay Layers</strong></li>
 </ol>
-<h2 id="components" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="16">Components</h2>
-<table sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="18">
+<h2 id="components">Components</h2>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="18">
-<th sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="18">Renderer Component</th>
-<th sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="18">Used For</th>
+<tr>
+<th>Renderer Component</th>
+<th>Used For</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="20">
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="20"><a href="#layered-character-template-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="20">Layered Character Template Renderer</a></td>
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="20">Create and render a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="20">Layered Character</strong> from a template.</td>
+<tr>
+<td><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></td>
+<td>Create and render a <strong>Layered Character</strong> from a template.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="21">
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="21"><a href="#unified-character-template-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="21">Unified Character Template Renderer</a></td>
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="21">Create and render a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="21">Unified Character</strong> from a template.</td>
+<tr>
+<td><a href="#unified-character-template-renderer">Unified Character Template Renderer</a></td>
+<td>Create and render a <strong>Unified Character</strong> from a template.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="22">
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="22"><a href="#random-layered-character-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="22">Random Layered Character Renderer</a></td>
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="22">Create a new <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="22">Layered Character</strong> with completely random layer options.</td>
+<tr>
+<td><a href="#random-layered-character-renderer">Random Layered Character Renderer</a></td>
+<td>Create a new <strong>Layered Character</strong> with completely random layer options.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="23">
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="23"><a href="#layered-character-group-entry-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="23">Layered Character Group Entry Renderer</a></td>
-<td sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="23">Load a saved <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="23">Layered Character</strong> from a group.</td>
+<tr>
+<td><a href="#layered-character-group-entry-renderer">Layered Character Group Entry Renderer</a></td>
+<td>Load a saved <strong>Layered Character</strong> from a group.</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="25">
-<h2 id="layered-character-template-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="27">Layered Character Template Renderer</h2>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="29">Creates a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="29">Layered Character</strong> from a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="29">Layered Character Template</strong> and displays it in-game.</p>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="31"><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="31" alt="Layered Character Template Renderer Component"></p>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="33">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="33"><a class="xref" href="layered-character-template-renderer.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=33>Read More → Layered Character Template Renderer</a></li>
+<hr>
+<h2 id="layered-character-template-renderer">Layered Character Template Renderer</h2>
+<p>Creates a <strong>Layered Character</strong> from a <strong>Layered Character Template</strong> and displays it in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-template-renderer/layered-character-template-renderer.png" alt="Layered Character Template Renderer Component"></p>
+<ul>
+<li><a class="xref" href="layered-character-template-renderer.html">Read More → Layered Character Template Renderer</a></li>
 </ul>
-<h3 id="requirements" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="35">Requirements</h3>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="36">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="36">A <a class="xref" href="../../character-types/layered-character-type.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=36>Layered Character Type</a></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="37">At least one <a class="xref" href="../../character-templates/character-templates.html#layered-character-template" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=37>Layered Character Template</a></li>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
+<li>At least one <a class="xref" href="../../character-templates/character-templates.html#layered-character-template">Layered Character Template</a></li>
 </ul>
-<hr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="39">
-<h2 id="unified-character-template-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="41">Unified Character Template Renderer</h2>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="43">Creates a Unified Character from a Unified Character Template and displays it in-game.</p>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="45"><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="45" alt="Unified Character Template Renderer Component"></p>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="47">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="47"><a class="xref" href="unified-character-template-renderer.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=47>Read More → Unified Character Template Renderer</a></li>
+<hr>
+<h2 id="unified-character-template-renderer">Unified Character Template Renderer</h2>
+<p>Creates a Unified Character from a Unified Character Template and displays it in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Unified Character Template Renderer Component"></p>
+<ul>
+<li><a class="xref" href="unified-character-template-renderer.html">Read More → Unified Character Template Renderer</a></li>
 </ul>
-<h3 id="requirements-1" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="49">Requirements</h3>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="50">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="50">A <a class="xref" href="../../character-types/unified-character-type.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=50>Unified Character Type</a></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="51">At least one <a class="xref" href="../../character-templates/character-templates.html#Unified-character-template" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=51>Unified Character Template</a></li>
+<h3 id="requirements-1">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../character-types/unified-character-type.html">Unified Character Type</a></li>
+<li>At least one <a class="xref" href="../../character-templates/character-templates.html#Unified-character-template">Unified Character Template</a></li>
 </ul>
-<hr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="53">
-<h2 id="random-layered-character-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="55">Random Layered Character Renderer</h2>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="57">Creates a completely randomized <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="57">Layered Character</strong> from a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="57">Layered Character Type</strong>.<br>
-The <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="58">Random Layered Character Renderer</strong> component looks at every layer in the <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="58">Character Type</strong> and selects a random <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="58">Layer Option</strong> for each layer.</p>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="60"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="60" alt="Random Layered Character Renderer Component"></p>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="62">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="62"><a class="xref" href="random-layered-character-renderer.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=62>Read More → Random Layered Character Renderer</a></li>
+<hr>
+<h2 id="random-layered-character-renderer">Random Layered Character Renderer</h2>
+<p>Creates a completely randomized <strong>Layered Character</strong> from a <strong>Layered Character Type</strong>.<br>
+The <strong>Random Layered Character Renderer</strong> component looks at every layer in the <strong>Character Type</strong> and selects a random <strong>Layer Option</strong> for each layer.</p>
+<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" alt="Random Layered Character Renderer Component"></p>
+<ul>
+<li><a class="xref" href="random-layered-character-renderer.html">Read More → Random Layered Character Renderer</a></li>
 </ul>
-<h3 id="requirements-2" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="64">Requirements</h3>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="65">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="65">A <a class="xref" href="../../character-types/layered-character-type.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=65>Layered Character Type</a></li>
+<h3 id="requirements-2">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
 </ul>
-<hr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="68">
-<h2 id="layered-character-group-entry-renderer" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="70">Layered Character Group Entry Renderer</h2>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="72">Loads a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="72">Layered Character</strong> of a specific <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="72">Layered Character Type</strong> from a <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="72">Layered Character Group</strong> and displays it in-game.</p>
-<p sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="74"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="74" alt="Layered Character Group Entry Renderer Component"></p>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="76">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="76"><a class="xref" href="layered-character-group-entry-renderer.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=76>Read More → Layered Character Group Entry Renderer</a></li>
+<hr>
+<h2 id="layered-character-group-entry-renderer">Layered Character Group Entry Renderer</h2>
+<p>Loads a <strong>Layered Character</strong> of a specific <strong>Layered Character Type</strong> from a <strong>Layered Character Group</strong> and displays it in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png" alt="Layered Character Group Entry Renderer Component"></p>
+<ul>
+<li><a class="xref" href="layered-character-group-entry-renderer.html">Read More → Layered Character Group Entry Renderer</a></li>
 </ul>
-<h3 id="requirements-3" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="78">Requirements</h3>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="79">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="79">A <a class="xref" href="../../character-types/layered-character-type.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=79>Layered Character Type</a></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="80">At least one <strong sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="80">Layered Character</strong> saved in a group</li>
+<h3 id="requirements-3">Requirements</h3>
+<ul>
+<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
+<li>At least one <strong>Layered Character</strong> saved in a group</li>
 </ul>
-<hr sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="82">
-<h2 id="related" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="84">Related</h2>
-<ul sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="85">
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="85"><a class="xref" href="../../character-templates/character-templates.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=85>Character Templates</a></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="86"><a class="xref" href="../../character-types/character-types.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=86>Character Types</a></li>
-<li sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber="87"><a class="xref" href="../../character-grouping-system.html" sourcefile="docs/character-usage/character-renderer-components/character-renderer-components.md" sourcestartlinenumber=87>Character Groups</a></li>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="../../character-templates/character-templates.html">Character Templates</a></li>
+<li><a class="xref" href="../../character-types/character-types.html">Character Types</a></li>
+<li><a class="xref" href="../../character-grouping-system.html">Character Groups</a></li>
 </ul>
 
 </article>

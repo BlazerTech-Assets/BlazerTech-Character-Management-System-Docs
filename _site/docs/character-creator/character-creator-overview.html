@@ -101,167 +101,167 @@
         </div>
 
         <article data-uid="character-creator-overview">
-<h1 id="character-creator" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="5">Character Creator</h1>
+<h1 id="character-creator">Character Creator</h1>
 
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="7">The <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="7">Character Creator</strong> is a modular prefab based framework for building <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="7">Character Creation Menus</strong>.</p>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="9">A <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="9">Character Creation Menu</strong> is a menu that lets your players design their own characters for use later in your game. These menus could be used to create a player character, or customize the look of other NPCs.</p>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="11">It's fully customizable; combine and edit different prefabs to create the exact design you want.</p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="13">
-<h2 id="character-creator-modules" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="15">Character Creator Modules</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="17">The Character Creator is <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="17">modular</strong>, it's split into a bunch of smaller pieces each with a simple task. When these pieces are put together they form a complete and functioning <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="17">Character Creation Menu</strong>.</p>
-<table sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="19">
+<p>The <strong>Character Creator</strong> is a modular prefab based framework for building <strong>Character Creation Menus</strong>.</p>
+<p>A <strong>Character Creation Menu</strong> is a menu that lets your players design their own characters for use later in your game. These menus could be used to create a player character, or customize the look of other NPCs.</p>
+<p>It's fully customizable; combine and edit different prefabs to create the exact design you want.</p>
+<hr>
+<h2 id="character-creator-modules">Character Creator Modules</h2>
+<p>The Character Creator is <strong>modular</strong>, it's split into a bunch of smaller pieces each with a simple task. When these pieces are put together they form a complete and functioning <strong>Character Creation Menu</strong>.</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="19">
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="19">Module</th>
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="19">Description</th>
+<tr>
+<th>Module</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="21">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="21"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="21"><a href="#layer-selectors" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="21">Layer Selectors</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="21">Changes the visual elements of each layer of the character.</td>
+<tr>
+<td><strong><a href="#layer-selectors">Layer Selectors</a></strong></td>
+<td>Changes the visual elements of each layer of the character.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="22">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="22"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="22"><a href="#character-preview" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="22">Character Preview</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="22">Displays an animated or static preview of the character that live updates when changes are made.</td>
+<tr>
+<td><strong><a href="#character-preview">Character Preview</a></strong></td>
+<td>Displays an animated or static preview of the character that live updates when changes are made.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="23">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="23"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="23"><a href="#menu-controls" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="23">Menu Controls</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="23">Essential controls for the menu such as Save, Back and Reset buttons.</td>
+<tr>
+<td><strong><a href="#menu-controls">Menu Controls</a></strong></td>
+<td>Essential controls for the menu such as Save, Back and Reset buttons.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="24">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="24"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="24"><a href="#character-history" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="24">Character History</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="24">History panels with options to revert to previous versions of the character.</td>
+<tr>
+<td><strong><a href="#character-history">Character History</a></strong></td>
+<td>History panels with options to revert to previous versions of the character.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="25">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="25"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="25"><a href="#randomization-controls" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="25">Randomization Controls</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="25">Simple randomization buttons &amp; advanced randomization buttons with options to randomize specific layers.</td>
+<tr>
+<td><strong><a href="#randomization-controls">Randomization Controls</a></strong></td>
+<td>Simple randomization buttons &amp; advanced randomization buttons with options to randomize specific layers.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="26">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="26"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="26"><a href="#loading-screens" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="26">Loading Screens</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="26">Backgrounds with animated elements that had the menu while it's loading.</td>
+<tr>
+<td><strong><a href="#loading-screens">Loading Screens</a></strong></td>
+<td>Backgrounds with animated elements that had the menu while it's loading.</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="28">
-<h2 id="layer-selectors" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="30">Layer Selectors</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="32">A <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="32">Layer Selector</strong> is any UI element that lets the player change a specific <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="32">layer</strong> of a <a class="xref" href="../character-types/layered-character-type.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=32>Layered Character</a>.<br>
+<hr>
+<h2 id="layer-selectors">Layer Selectors</h2>
+<p>A <strong>Layer Selector</strong> is any UI element that lets the player change a specific <strong>layer</strong> of a <a class="xref" href="../character-types/layered-character-type.html">Layered Character</a>.<br>
 The following selector types are included.</p>
-<table sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="35">
+<table>
 <thead>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="35">
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="35">Selector Type</th>
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="35">Description</th>
+<tr>
+<th>Selector Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="37">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="37"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="37"><a class="xref" href="layer-selectors/dropdown-layer-selector.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=37>Dropdown Selector</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="37">Simple dropdown listing all options for a layer.</td>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/dropdown-layer-selector.html">Dropdown Selector</a></strong></td>
+<td>Simple dropdown listing all options for a layer.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="38">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="38"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="38"><a class="xref" href="layer-selectors/carousel-layer-selector.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=38>Carousel Selector</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="38">Displays the current option with arrows to cycle left/right through other layer options.</td>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/carousel-layer-selector.html">Carousel Selector</a></strong></td>
+<td>Displays the current option with arrows to cycle left/right through other layer options.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="39">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="39"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="39"><a class="xref" href="layer-selectors/Grid-layer-selector.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=39>Grid Selector</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="39">A grid of preview thumbnails for each layer option.</td>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/Grid-layer-selector.html">Grid Selector</a></strong></td>
+<td>A grid of preview thumbnails for each layer option.</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="40">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="40"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="40"><a class="xref" href="layer-selectors/list-layer-selector.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=40>List Selector</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="40">A vertical or horizontal list of options (optionally with preview images).</td>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/list-layer-selector.html">List Selector</a></strong></td>
+<td>A vertical or horizontal list of options (optionally with preview images).</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="41">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="41"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="41"><a class="xref" href="layer-selectors/tab-layer-selector.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=41>Tab Selector</a></strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="41">Works alongside another selector. Clicking a tab switches which layer the other selector controls.</td>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/tab-layer-selector.html">Tab Selector</a></strong></td>
+<td>Works alongside another selector. Clicking a tab switches which layer the other selector controls.</td>
 </tr>
 </tbody>
 </table>
 <img src="../../images/character-creation-menu/ccm-layer-selectors/layer-selectors.png" alt="Layer Selectors" width="500">  
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="45"><a class="xref" href="layer-selectors/layer-selector-setup.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=45>Read More → Layer Selector Setup</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="47">
-<h2 id="character-preview" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="49">Character Preview</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="51">The <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="51">Character Preview</strong> shows the character currently being customized. Options include:</p>
-<ul sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="53">
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="53"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="53">Static Sprite Preview</strong> – Displays the <code sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="53">preview sprite</code> defined in the Character Type.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="54"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="54">Animated Preview</strong> – Uses an Animator Controller to play character animations.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="55"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="55">Animation Swapping</strong> – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="56"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="56">Rotate Character</strong> – Add rotation buttons to view the character from different sides.</li>
+<p><a class="xref" href="layer-selectors/layer-selector-setup.html">Read More → Layer Selector Setup</a></p>
+<hr>
+<h2 id="character-preview">Character Preview</h2>
+<p>The <strong>Character Preview</strong> shows the character currently being customized. Options include:</p>
+<ul>
+<li><strong>Static Sprite Preview</strong> – Displays the <code>preview sprite</code> defined in the Character Type.</li>
+<li><strong>Animated Preview</strong> – Uses an Animator Controller to play character animations.</li>
+<li><strong>Animation Swapping</strong> – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.</li>
+<li><strong>Rotate Character</strong> – Add rotation buttons to view the character from different sides.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="58"><a class="xref" href="character-creator-character-preview.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=58>Read More → Character Preview</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="60">
-<h2 id="menu-controls" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="62">Menu Controls</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="64">Necessary controls for every <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="64">Character Creation Menu</strong> along with some additional niceties. These controls include:</p>
-<ul sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="66">
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="66">Back/Close menu button</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="67">Save changes button</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="68">Reset character button</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="69">Simple Randomization button</li>
+<p><a class="xref" href="character-creator-character-preview.html">Read More → Character Preview</a></p>
+<hr>
+<h2 id="menu-controls">Menu Controls</h2>
+<p>Necessary controls for every <strong>Character Creation Menu</strong> along with some additional niceties. These controls include:</p>
+<ul>
+<li>Back/Close menu button</li>
+<li>Save changes button</li>
+<li>Reset character button</li>
+<li>Simple Randomization button</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="71"><a class="xref" href="character-creator-menu-controls.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=71>Read More → Menu Controls</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="73">
-<h2 id="character-history" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="75">Character History</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="77">Changes made to the character can be recorded using the <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="77">CCM History Tracker</strong> component.<br>
-Each time a layer is modified, a <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="78">snapshot</strong> is stored.</p>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="80">The component contains the following settings:</p>
-<ul sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="81">
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="81"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="81">Snapshot Limit</strong> – Configurable between <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="81">1–100</strong> (default: 30).</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="82"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="82">Preserve First Snapshot</strong> – Optionally prevent the first snapshot from being overwritten when the limit is reached.</li>
+<p><a class="xref" href="character-creator-menu-controls.html">Read More → Menu Controls</a></p>
+<hr>
+<h2 id="character-history">Character History</h2>
+<p>Changes made to the character can be recorded using the <strong>CCM History Tracker</strong> component.<br>
+Each time a layer is modified, a <strong>snapshot</strong> is stored.</p>
+<p>The component contains the following settings:</p>
+<ul>
+<li><strong>Snapshot Limit</strong> – Configurable between <strong>1–100</strong> (default: 30).</li>
+<li><strong>Preserve First Snapshot</strong> – Optionally prevent the first snapshot from being overwritten when the limit is reached.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="84"><img src="../../images/character-creation-menu/ccm-history/history-tracker-component.png" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="84" alt="History Tracker Component"></p>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="86"><a class="xref" href="history/character-creator-history-tracking-system.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=86>Read More → History Tracking System</a></p>
-<h3 id="undo--redo" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="88">Undo &amp; Redo</h3>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="90">Use the <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="90">CCM Timeline Button Handler</strong> component on a button to undo or redo changes on the <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="90">History Tracker</strong> component.</p>
+<p><img src="../../images/character-creation-menu/ccm-history/history-tracker-component.png" alt="History Tracker Component"></p>
+<p><a class="xref" href="history/character-creator-history-tracking-system.html">Read More → History Tracking System</a></p>
+<h3 id="undo--redo">Undo &amp; Redo</h3>
+<p>Use the <strong>CCM Timeline Button Handler</strong> component on a button to undo or redo changes on the <strong>History Tracker</strong> component.</p>
 <img src="../../images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500">
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="94"><a class="xref" href="history/character-creator-history-undo-redo.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=94>Read More → History Undo/Redo</a></p>
-<h3 id="history-panels" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="96">History Panels</h3>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="98">A <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="98">History Panel</strong> displays the list of snapshots recorded in the <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="98">History Tracker</strong>. Players can click an entry to revert back to that version of the character.</p>
-<table sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="100">
+<p><a class="xref" href="history/character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></p>
+<h3 id="history-panels">History Panels</h3>
+<p>A <strong>History Panel</strong> displays the list of snapshots recorded in the <strong>History Tracker</strong>. Players can click an entry to revert back to that version of the character.</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="100">
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="100">Panel Type</th>
-<th sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="100">Description</th>
+<tr>
+<th>Panel Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="102">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="102"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="102">Text Based</strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="102">Each entry contains text describing what was changed (often in a vertical list).</td>
+<tr>
+<td><strong>Text Based</strong></td>
+<td>Each entry contains text describing what was changed (often in a vertical list).</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="103">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="103"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="103">Sprite Based</strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="103">Each entry shows a snapshot preview image (often in a horizontal list).</td>
+<tr>
+<td><strong>Sprite Based</strong></td>
+<td>Each entry shows a snapshot preview image (often in a horizontal list).</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="104">
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="104"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="104">Hybrid</strong></td>
-<td sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="104">Show both text and preview images in each entry.</td>
+<tr>
+<td><strong>Hybrid</strong></td>
+<td>Show both text and preview images in each entry.</td>
 </tr>
 </tbody>
 </table>
 <img src="../../images/character-creation-menu/ccm-history/history-panel-text.png" alt="History Panel Text" width="400">
 <br><br>
 <img src="../../images/character-creation-menu/ccm-history/history-panel-sprite-preview.png" alt="History Panel Sprite Preview" width="500">  
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="110"><a class="xref" href="history/character-creator-history-panels.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=110>Read More → History Panels</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="112">
-<h2 id="randomization-controls" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="114">Randomization Controls</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="115">Character randomization functionality can be added in multiple differents ways</p>
-<ul sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="116">
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="116"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="116">Randomize Button</strong> - A simple Randomize button which randomizes all layers of the character.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="117"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="117">Controlled Randomization</strong> - A randomize button with additional options to select which layers to randomize.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="118"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="118">Layer Specific Randomization</strong> - Randomization buttons included in <a href="#layer-selectors" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="118">Layer Selectors</a>.</li>
+<p><a class="xref" href="history/character-creator-history-panels.html">Read More → History Panels</a></p>
+<hr>
+<h2 id="randomization-controls">Randomization Controls</h2>
+<p>Character randomization functionality can be added in multiple differents ways</p>
+<ul>
+<li><strong>Randomize Button</strong> - A simple Randomize button which randomizes all layers of the character.</li>
+<li><strong>Controlled Randomization</strong> - A randomize button with additional options to select which layers to randomize.</li>
+<li><strong>Layer Specific Randomization</strong> - Randomization buttons included in <a href="#layer-selectors">Layer Selectors</a>.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="120"><a class="xref" href="character-creator-character-randomization.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=120>Read More → Character Randomization</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="122">
-<h2 id="loading-screens" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="124">Loading Screens</h2>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="125">Loading screens hide the <strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="125">Character Creation Menu</strong> while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.</p>
-<p sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="127"><a class="xref" href="character-creator-loading-screens.html" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber=127>Read More → Loading Screen</a></p>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="129">
-<h2 id="other-features" sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="131">Other Features</h2>
-<ul sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="133">
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="133"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="133">Mid-Play Editing</strong> – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.</li>
-<li sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="134"><strong sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="134">Optional Display Name</strong> – Add a name field so players can assign a display name to their character.</li>
+<p><a class="xref" href="character-creator-character-randomization.html">Read More → Character Randomization</a></p>
+<hr>
+<h2 id="loading-screens">Loading Screens</h2>
+<p>Loading screens hide the <strong>Character Creation Menu</strong> while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.</p>
+<p><a class="xref" href="character-creator-loading-screens.html">Read More → Loading Screen</a></p>
+<hr>
+<h2 id="other-features">Other Features</h2>
+<ul>
+<li><strong>Mid-Play Editing</strong> – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.</li>
+<li><strong>Optional Display Name</strong> – Add a name field so players can assign a display name to their character.</li>
 </ul>
-<hr sourcefile="docs/character-creator/character-creator-overview.md" sourcestartlinenumber="136">
+<hr>
 
 </article>
 

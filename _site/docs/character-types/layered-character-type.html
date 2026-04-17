@@ -101,124 +101,124 @@
         </div>
 
         <article data-uid="layered-character-type">
-<h1 id="layered-character-type" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="6">Layered Character Type</h1>
+<h1 id="layered-character-type">Layered Character Type</h1>
 
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="8">A <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="8">Layered Character Type</strong> defines how a <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="8">Layered Character</strong> is structured.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="10">It contains the core data shared by all characters of that type, such as the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="10">Base Spritesheet</strong>, <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="10">Animator Controller</strong>, and the list of <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="10">Character Layers</strong> that make up the character.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="12"><img src="../../images/character-types/layered-characters/layered-character-type-asset.png" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="12" alt="Layered Character Type Asset"></p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="14">
-<h2 id="layered-characters" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="16">Layered Characters</h2>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="18">A <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="18">Layered Character</strong> is built from <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="18">multiple spritesheet layers</strong> stacked on top of each other.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="20">Each layer represents a different visual component of the character.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="22">All layers must follow the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="22">same spritesheet layout</strong>:</p>
-<ul sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="23">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="23">Same <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="23">spritesheet size</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="24">Same <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="24">frame sizes</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="25">Same <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="25">frame positioning</strong></li>
+<p>A <strong>Layered Character Type</strong> defines how a <strong>Layered Character</strong> is structured.</p>
+<p>It contains the core data shared by all characters of that type, such as the <strong>Base Spritesheet</strong>, <strong>Animator Controller</strong>, and the list of <strong>Character Layers</strong> that make up the character.</p>
+<p><img src="../../images/character-types/layered-characters/layered-character-type-asset.png" alt="Layered Character Type Asset"></p>
+<hr>
+<h2 id="layered-characters">Layered Characters</h2>
+<p>A <strong>Layered Character</strong> is built from <strong>multiple spritesheet layers</strong> stacked on top of each other.</p>
+<p>Each layer represents a different visual component of the character.</p>
+<p>All layers must follow the <strong>same spritesheet layout</strong>:</p>
+<ul>
+<li>Same <strong>spritesheet size</strong></li>
+<li>Same <strong>frame sizes</strong></li>
+<li>Same <strong>frame positioning</strong></li>
 </ul>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="27">Because every layer shares the same spritesheet layout, all layers align perfectly when stacked together.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="29"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="29">Example Layered Character</strong>:</p>
-<ol sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="30">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="30">Body</li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="31">Outfit</li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="32">Hairstyle</li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="33">Accessory</li>
+<p>Because every layer shares the same spritesheet layout, all layers align perfectly when stacked together.</p>
+<p><strong>Example Layered Character</strong>:</p>
+<ol>
+<li>Body</li>
+<li>Outfit</li>
+<li>Hairstyle</li>
+<li>Accessory</li>
 </ol>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="35">The final character is rendered by combining all layers in order.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="37"><img src="../../images/character-types/layered-characters/layered-character-example.png" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="37" alt="Layered Character Example"></p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="39">
-<h2 id="create-layered-character-type-asset" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="40">Create Layered Character Type Asset</h2>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="42">To create a new Layered Character Type:</p>
-<ol sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="44">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="44"><code sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="44">Right click</code> the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="44">Project window</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="45">Navigate to: <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="45">Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type</strong></li>
+<p>The final character is rendered by combining all layers in order.</p>
+<p><img src="../../images/character-types/layered-characters/layered-character-example.png" alt="Layered Character Example"></p>
+<hr>
+<h2 id="create-layered-character-type-asset">Create Layered Character Type Asset</h2>
+<p>To create a new Layered Character Type:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type</strong></li>
 </ol>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="47"><img src="../../images/character-types/layered-characters/create-layered-character-type.png" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="47" alt="Create Layered Character Type Asset"></p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="49">
-<h2 id="character-type-setup" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="51">Character Type Setup</h2>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="53">A <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="53">Layered Character Type</strong> uses the same core properties shared by all <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="53">Character Types</strong>.</p>
-<table sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="55">
+<p><img src="../../images/character-types/layered-characters/create-layered-character-type.png" alt="Create Layered Character Type Asset"></p>
+<hr>
+<h2 id="character-type-setup">Character Type Setup</h2>
+<p>A <strong>Layered Character Type</strong> uses the same core properties shared by all <strong>Character Types</strong>.</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="55">
-<th sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="55">Property</th>
-<th sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="55">Type</th>
-<th sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="55">Description</th>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57">
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57"><a class="xref" href="character-types.html#character-type-id" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=57>Character Type ID</a></strong></td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57">String</td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57">A <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="57">unique</strong> identifier</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Character Type ID</a></strong></td>
+<td>String</td>
+<td>A <strong>unique</strong> identifier</td>
 </tr>
-<tr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58">
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58"><a class="xref" href="character-types.html#base-spritesheet" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=58>Base Spritesheet</a></strong></td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58">Sprite</td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58">The <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="58">character spritesheet</strong> used by all characters</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
+<td>Sprite</td>
+<td>The <strong>character spritesheet</strong> used by all characters</td>
 </tr>
-<tr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59">
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59"><a class="xref" href="character-types.html#animator-controller-optional" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=59>Animator Controller</a></strong></td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59">RuntimeAnimatorController</td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59">Single <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="59">Animator Controller</strong> for all characters</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#animator-controller-optional">Animator Controller</a></strong></td>
+<td>RuntimeAnimatorController</td>
+<td>Single <strong>Animator Controller</strong> for all characters</td>
 </tr>
-<tr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="60">
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="60"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="60"><a class="xref" href="character-types.html#pixels-per-unit" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=60>Pixels Per Unit</a></strong></td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="60">int</td>
-<td sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="60">PPU of your Base Spritesheet</td>
+<tr>
+<td><strong><a class="xref" href="character-types.html#pixels-per-unit">Pixels Per Unit</a></strong></td>
+<td>int</td>
+<td>PPU of your Base Spritesheet</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="62">Read <a class="xref" href="character-types.html#character-type-setup" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=62>Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="64">
-<h3 id="character-layers" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="66">Character Layers</h3>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="68">The <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="68">Layered Character Type</strong> also defines the layers used to build the character.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="70">Each entry in the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="70">Layers</strong> list references a <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="70">Character Layer Definition</strong> asset.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="72">A <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="72">Character Layer Definition</strong> describes how a single layer behaves, including:</p>
-<ul sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="73">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="73"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="73">Layer Name</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="74">Whether the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="74">layer can be blank</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="75">The available <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="75">Layer Options</strong> (Spritesheets)</li>
+<p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
+<hr>
+<h3 id="character-layers">Character Layers</h3>
+<p>The <strong>Layered Character Type</strong> also defines the layers used to build the character.</p>
+<p>Each entry in the <strong>Layers</strong> list references a <strong>Character Layer Definition</strong> asset.</p>
+<p>A <strong>Character Layer Definition</strong> describes how a single layer behaves, including:</p>
+<ul>
+<li><strong>Layer Name</strong></li>
+<li>Whether the <strong>layer can be blank</strong></li>
+<li>The available <strong>Layer Options</strong> (Spritesheets)</li>
 </ul>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="77">Example layers: <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="77">Body, Outfit, Hairstyle, Accessory</strong></p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="79">Each layer corresponds to one spritesheet that is combined during rendering.</p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="81">
-<h4 id="create-character-layer-definitions" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="83">Create Character Layer Definitions</h4>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="85">To create a Character Layer Definition:</p>
-<ol sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="86">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="86"><code sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="86">Right click</code> the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="86">Project window</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="87">navigate to: <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="87">Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Types &gt; Layer Definition</strong></li>
+<p>Example layers: <strong>Body, Outfit, Hairstyle, Accessory</strong></p>
+<p>Each layer corresponds to one spritesheet that is combined during rendering.</p>
+<hr>
+<h4 id="create-character-layer-definitions">Create Character Layer Definitions</h4>
+<p>To create a Character Layer Definition:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Types &gt; Layer Definition</strong></li>
 </ol>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="89"><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="89" alt="Create Character Layer Definition Asset"></p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="91">Create a <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="91">Layer Definition</strong> for each layer you want your characters to have.</p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="93">
-<h4 id="assign-layers" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="95">Assign Layers</h4>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="97">After creating the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="97">Layer Definitions</strong>:</p>
-<ol sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="98">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="98">Open your <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="98">Layered Character Type</strong></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="99">Add each <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="99">Layer Definition</strong> to the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="99">Layers</strong> list</li>
+<p><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" alt="Create Character Layer Definition Asset"></p>
+<p>Create a <strong>Layer Definition</strong> for each layer you want your characters to have.</p>
+<hr>
+<h4 id="assign-layers">Assign Layers</h4>
+<p>After creating the <strong>Layer Definitions</strong>:</p>
+<ol>
+<li>Open your <strong>Layered Character Type</strong></li>
+<li>Add each <strong>Layer Definition</strong> to the <strong>Layers</strong> list</li>
 </ol>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="101"><img src="../../images/character-types/layered-characters/layers-list.png" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="101" alt="Layers List"></p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="103">The <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="103">order of the layers in this list determines the render order</strong>.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="105">Layers are rendered <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="105">from top to bottom in the list</strong>, meaning:</p>
-<ul sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="106">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="106">Top of List = Rendered First (Behind)</li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="107">Bottom of List = Rendered Last (In Front)</li>
+<p><img src="../../images/character-types/layered-characters/layers-list.png" alt="Layers List"></p>
+<p>The <strong>order of the layers in this list determines the render order</strong>.</p>
+<p>Layers are rendered <strong>from top to bottom in the list</strong>, meaning:</p>
+<ul>
+<li>Top of List = Rendered First (Behind)</li>
+<li>Bottom of List = Rendered Last (In Front)</li>
 </ul>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="109">Read <a class="xref" href="character-layers.html" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=109>Character Layer Definitions</a> to learn how to setup each <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="109">Character Layer Definition</strong>.</p>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="111">
-<h2 id="creating-layered-characters" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="113">Creating Layered Characters</h2>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="115">Once your <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="115">Layered Character Type</strong> and <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="115">Character Layers</strong> are configured, you can begin creating characters.</p>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="117"><strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="117">Layered Characters</strong> can be created in several ways:</p>
-<ul sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="119">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="119"><a class="xref" href="../character-templates/layered-character-templates.html" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=119>Layered Character Templates</a> (Simplest workflow)</li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="120"><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=120>Random Character Generation</a></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="121"><a href="#runtime-creation-through-c" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="121">Runtime creation through C#</a></li>
+<p>Read <a class="xref" href="character-layers.html">Character Layer Definitions</a> to learn how to setup each <strong>Character Layer Definition</strong>.</p>
+<hr>
+<h2 id="creating-layered-characters">Creating Layered Characters</h2>
+<p>Once your <strong>Layered Character Type</strong> and <strong>Character Layers</strong> are configured, you can begin creating characters.</p>
+<p><strong>Layered Characters</strong> can be created in several ways:</p>
+<ul>
+<li><a class="xref" href="../character-templates/layered-character-templates.html">Layered Character Templates</a> (Simplest workflow)</li>
+<li><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html">Random Character Generation</a></li>
+<li><a href="#runtime-creation-through-c">Runtime creation through C#</a></li>
 </ul>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="123">
-<h2 id="runtime-creation-through-c" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="125">Runtime Creation through C#</h2>
-<h3 id="create-default-layered-character" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="127">Create Default Layered Character</h3>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="129">This script creates a new <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="129">Layered Character</strong> using the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="129">default Layer Options</strong> for each Layer.</p>
-<pre><code class="lang-cs" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="131">using BlazerTech.CharacterManagement.Characters;
+<hr>
+<h2 id="runtime-creation-through-c">Runtime Creation through C#</h2>
+<h3 id="create-default-layered-character">Create Default Layered Character</h3>
+<p>This script creates a new <strong>Layered Character</strong> using the <strong>default Layer Options</strong> for each Layer.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
 using UnityEngine;
 
 public class CreateDefaultLayeredCharacter : MonoBehaviour
@@ -233,10 +233,10 @@ public class CreateDefaultLayeredCharacter : MonoBehaviour
 }
 
 </code></pre>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="148">
-<h3 id="create-randomized-layered-character" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="150">Create Randomized Layered Character</h3>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="152">This script creates a new <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="152">Layered Character</strong> and grabs a <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="152">completely random Layer Option</strong> for each Layer.</p>
-<pre><code class="lang-cs" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="154">using BlazerTech.CharacterManagement.Characters;
+<hr>
+<h3 id="create-randomized-layered-character">Create Randomized Layered Character</h3>
+<p>This script creates a new <strong>Layered Character</strong> and grabs a <strong>completely random Layer Option</strong> for each Layer.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
 using UnityEngine;
 
 public class CreateRandomizedLayeredCharacter : MonoBehaviour
@@ -250,10 +250,10 @@ public class CreateRandomizedLayeredCharacter : MonoBehaviour
     }
 }
 </code></pre>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="170">
-<h3 id="create-layered-character-with-specific-options" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="172">Create Layered Character With Specific Options</h3>
-<p sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="174">This script creates a new <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="174">Layered Character</strong> by grabbing the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="174">second layer option</strong> for every layer if available, if not, the <strong sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="174">first layer option</strong> is grabbed instead.</p>
-<pre><code class="lang-cs" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="176">using BlazerTech.CharacterManagement.Characters;
+<hr>
+<h3 id="create-layered-character-with-specific-options">Create Layered Character With Specific Options</h3>
+<p>This script creates a new <strong>Layered Character</strong> by grabbing the <strong>second layer option</strong> for every layer if available, if not, the <strong>first layer option</strong> is grabbed instead.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Characters;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -278,11 +278,11 @@ public class CreateLayeredCharacter : MonoBehaviour
     }
 }
 </code></pre>
-<hr sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="203">
-<h2 id="related" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="205">Related</h2>
-<ul sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="206">
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="206"><a class="xref" href="character-types.html" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=206>Character Types</a></li>
-<li sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber="207"><a class="xref" href="character-layers.html" sourcefile="docs/character-types/layered-character-type.md" sourcestartlinenumber=207>Character Layers</a></li>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
+<li><a class="xref" href="character-layers.html">Character Layers</a></li>
 </ul>
 
 </article>

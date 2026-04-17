@@ -101,51 +101,51 @@
         </div>
 
         <article data-uid="ccm-grid-layer-selector">
-<h1 id="grid-layer-selector" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="5">Grid Layer Selector</h1>
+<h1 id="grid-layer-selector">Grid Layer Selector</h1>
 
-<h2 id="overview" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="7">Overview</h2>
-<p sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="9">A <strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="9">Grid Layer Selector</strong> contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
-<p sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="11"><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="11" alt="Grid Layer Selector"></p>
-<h2 id="grid-layer-selector-variant-2" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="14"><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="14" alt="Grid Layer Selector Variant 2"></h2>
-<h2 id="prefabs" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="16">Prefabs</h2>
-<div class="TIP" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="18">
+<h2 id="overview">Overview</h2>
+<p>A <strong>Grid Layer Selector</strong> contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
+<p><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png" alt="Grid Layer Selector"></p>
+<h2 id="grid-layer-selector-variant-2"><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png" alt="Grid Layer Selector Variant 2"></h2>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="19">Location: <strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="19">Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Grid Selector</strong></p>
+<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Grid Selector</strong></p>
 </div>
-<h3 id="layer-selector-prefabs" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="21">Layer Selector Prefabs</h3>
-<ul sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="22">
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="22"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="22">Layer Grid Selector [Sprite]</strong> – Most common grid selector. Each element in the grid is displayed as a sprite.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="23"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="23">Layer Grid Selector [Text]</strong> – Each element in the grid is displayed as text.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="24"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="24">Layer Grid Selector [Sprite + Text]</strong> - Hybrid. Each element in the grid is displayed as both sprite and text.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="25"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="25">Layer Grid Selector [Vertical + Title]</strong> – Grid is vertical &amp; includes a title with the name of the assigned layer at the top.</li>
+<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<ul>
+<li><strong>Layer Grid Selector [Sprite]</strong> – Most common grid selector. Each element in the grid is displayed as a sprite.</li>
+<li><strong>Layer Grid Selector [Text]</strong> – Each element in the grid is displayed as text.</li>
+<li><strong>Layer Grid Selector [Sprite + Text]</strong> - Hybrid. Each element in the grid is displayed as both sprite and text.</li>
+<li><strong>Layer Grid Selector [Vertical + Title]</strong> – Grid is vertical &amp; includes a title with the name of the assigned layer at the top.</li>
 </ul>
-<h3 id="pre-setup-prefabs" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="27">Pre-Setup Prefabs</h3>
-<p sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="28">Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber=28>Character Layer Selection Manager</a>.<br>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
 These will work out of the box without any extra setup required.</p>
-<ul sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="31">
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="31"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="31">Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="32"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="32">Grid Selectors [Initialize Existing]</strong> – Uses grid selectors already present in the prefab hierarchy.</li>
+<ul>
+<li><strong>Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
+<li><strong>Grid Selectors [Initialize Existing]</strong> – Uses grid selectors already present in the prefab hierarchy.</li>
 </ul>
-<h3 id="grid-entries" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="34">Grid Entries</h3>
-<p sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="35">A grid entry is referenced in a Layer Grid Selector and defines how each entry in the grid looks and functions.
-They live in the <strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="36">/Grid Entries subfolder</strong>.<br>
-The following are pre-created entries that can be used in any <strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="37">Layer Grid Selector</strong>:</p>
-<ol sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="38">
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="38"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="38">Layer Option Grid Element [Sprite]</strong> - Displays only a sprite preview of what the layer option looks like.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="39"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="39">Layer Option Grid Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="40"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="40">Layer Option Grid Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
+<h3 id="grid-entries">Grid Entries</h3>
+<p>A grid entry is referenced in a Layer Grid Selector and defines how each entry in the grid looks and functions.
+They live in the <strong>/Grid Entries subfolder</strong>.<br>
+The following are pre-created entries that can be used in any <strong>Layer Grid Selector</strong>:</p>
+<ol>
+<li><strong>Layer Option Grid Element [Sprite]</strong> - Displays only a sprite preview of what the layer option looks like.</li>
+<li><strong>Layer Option Grid Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
+<li><strong>Layer Option Grid Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
 </ol>
-<hr sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="42">
-<h2 id="customization" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="44">Customization</h2>
-<ul sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="46">
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="46"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="46">Names</strong> – If grid elements have a display mode of text they can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="47"><strong sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="47">Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the grid and individual element backgrounds.</li>
+<hr>
+<h2 id="customization">Customization</h2>
+<ul>
+<li><strong>Names</strong> – If grid elements have a display mode of text they can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
+<li><strong>Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the grid and individual element backgrounds.</li>
 </ul>
-<hr sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="49">
-<h2 id="limitations" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="51">Limitations</h2>
-<ul sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="53">
-<li sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber="53">The grid can be quite big and clunky at times. Works best when used with a<br>
-<a class="xref" href="tab-layer-selector.html" sourcefile="docs/character-creator/layer-selectors/Grid-layer-selector.md" sourcestartlinenumber=54>Tab Layer Selector</a>.</li>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>The grid can be quite big and clunky at times. Works best when used with a<br>
+<a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
 </ul>
 
 </article>

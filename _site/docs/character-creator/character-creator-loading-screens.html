@@ -101,102 +101,102 @@
         </div>
 
         <article data-uid="ccm-loading-screens">
-<h1 id="loading-screens" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="5">Loading Screens</h1>
+<h1 id="loading-screens">Loading Screens</h1>
 
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="7">When a <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="7">Character Creation Menu</strong> is first opened it can take time before the menu is ready as it needs to load all layer options first.<br>
-A <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="8">loading screen</strong> can be used to hide the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="8">Character Creation Menu</strong> while it loads and give the player something to look at until the menu is ready.</p>
+<p>When a <strong>Character Creation Menu</strong> is first opened it can take time before the menu is ready as it needs to load all layer options first.<br>
+A <strong>loading screen</strong> can be used to hide the <strong>Character Creation Menu</strong> while it loads and give the player something to look at until the menu is ready.</p>
 <img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-1.png" alt="Loading Screen Example" width="500">
-<hr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="12">
-<h2 id="how-it-works" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="14">How It Works</h2>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="16">Just like the Character Creation Menu itself, loading screens are also modular. Pieces can be added or removed to create your own loading screen.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="18"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="18">The Hierarchy is as follows:</strong></p>
-<ol sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="20">
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="20"><p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="20"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="20">First GameObject</strong> manages the loading screen and holds the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber=20>CCMLoadingScreenHandler</a> component. This GameObject should be kept enabled.</p>
+<hr>
+<h2 id="how-it-works">How It Works</h2>
+<p>Just like the Character Creation Menu itself, loading screens are also modular. Pieces can be added or removed to create your own loading screen.</p>
+<p><strong>The Hierarchy is as follows:</strong></p>
+<ol>
+<li><p><strong>First GameObject</strong> manages the loading screen and holds the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component. This GameObject should be kept enabled.</p>
 </li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="22"><p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="22"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="22">Second GameObject</strong> holds the actual contents of the loading screen. This is the GameObject the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="22">Loading Screen Handler</strong> enables and disables. This GameObject can be kept enabled or disabled, it's state in the editor doesn't matter since it will be controlled by the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="22">Loading Screen Handler</strong>.</p>
+<li><p><strong>Second GameObject</strong> holds the actual contents of the loading screen. This is the GameObject the <strong>Loading Screen Handler</strong> enables and disables. This GameObject can be kept enabled or disabled, it's state in the editor doesn't matter since it will be controlled by the <strong>Loading Screen Handler</strong>.</p>
 </li>
 </ol>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="24">The <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="24">Contents</strong> GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="26"><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="26" alt="Loading Screen Hierarchy"></p>
-<h3 id="loading-screen-handler-component" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="28">Loading Screen Handler Component</h3>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="30">The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber=30>CCMLoadingScreenHandler</a> component is responsible for toggling the state of a loading screen.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="32">When enabled, the Loading Screen Handler automatically enabled the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="34"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="34">The component has two fields:</strong></p>
-<table sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="36">
+<p>The <strong>Contents</strong> GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.</p>
+<p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png" alt="Loading Screen Hierarchy"></p>
+<h3 id="loading-screen-handler-component">Loading Screen Handler Component</h3>
+<p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is responsible for toggling the state of a loading screen.</p>
+<p>When enabled, the Loading Screen Handler automatically enabled the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
+<p><strong>The component has two fields:</strong></p>
+<table>
 <thead>
-<tr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="36">
-<th sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="36">Field</th>
-<th sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="36">Description</th>
+<tr>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="38">
-<td sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="38"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="38">Delay After Loading Finished</strong></td>
-<td sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="38">The time in milliseconds to wait before disabling the menu after loading has finished</td>
+<tr>
+<td><strong>Delay After Loading Finished</strong></td>
+<td>The time in milliseconds to wait before disabling the menu after loading has finished</td>
 </tr>
-<tr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="39">
-<td sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="39"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="39">Loading Screen Contents</strong></td>
-<td sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="39">The parent GameObject containing the actual contents of the loading screen</td>
+<tr>
+<td><strong>Loading Screen Contents</strong></td>
+<td>The parent GameObject containing the actual contents of the loading screen</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="41"><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="41" alt="CCM Loading Screen Handler Component"></p>
-<hr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="43">
-<h2 id="prefabs" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="45">Prefabs</h2>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="47">Loading Screen prefabs are available to easily drop into your own project.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="49">These prefabs are located under <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="49">Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</strong>.</p>
-<h3 id="core-prefab" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="51">Core Prefab</h3>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="53">Contained within the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="53">Core</strong> Subfolder.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="55">A loading screen in its most basic state. Only a background to display during the loading process.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="57">This prefab can be added to using the <a href="#additions" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="57">Additions prefabs</a>.</p>
-<h3 id="pre-setup-prefabs" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="59">Pre-Setup Prefabs</h3>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="61">Contained within the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="61">Pre-Setup</strong> subfolder.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="63">Complete Loading Screens with other features included. These are drag and drop solutions.<br>
+<p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png" alt="CCM Loading Screen Handler Component"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p>Loading Screen prefabs are available to easily drop into your own project.</p>
+<p>These prefabs are located under <strong>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</strong>.</p>
+<h3 id="core-prefab">Core Prefab</h3>
+<p>Contained within the <strong>Core</strong> Subfolder.</p>
+<p>A loading screen in its most basic state. Only a background to display during the loading process.</p>
+<p>This prefab can be added to using the <a href="#additions">Additions prefabs</a>.</p>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Contained within the <strong>Pre-Setup</strong> subfolder.</p>
+<p>Complete Loading Screens with other features included. These are drag and drop solutions.<br>
 Any of the Pre-Setup Loading Screen prefabs can be included in any Character Creation Menu without any other setup required.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="66">[INCLUDE IMAGE HERE]</p>
-<h3 id="additions-prefabs" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="68">Additions Prefabs</h3>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="70">Contained within the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="70">Additions</strong> Subfolder.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="72">Additional prefabs that can be added to the <a href="#core" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="72">Core loading screen prefab</a>.</p>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="74"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="74">These prefabs include the following</strong>:</p>
-<ul sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="76">
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="76"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="76">Loading Bar</strong> - A progress bar that fills as the Character Creation Menu loads.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="77"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="77">Loading Icon</strong> - An animated icon that spins repeately.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="78"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="78">Loading Progress Text</strong> - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="79"><strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="79">Loading Repeating Text</strong> - Text which cycles through a list of preset sentences at a set interval.</li>
+<p>[INCLUDE IMAGE HERE]</p>
+<h3 id="additions-prefabs">Additions Prefabs</h3>
+<p>Contained within the <strong>Additions</strong> Subfolder.</p>
+<p>Additional prefabs that can be added to the <a href="#core">Core loading screen prefab</a>.</p>
+<p><strong>These prefabs include the following</strong>:</p>
+<ul>
+<li><strong>Loading Bar</strong> - A progress bar that fills as the Character Creation Menu loads.</li>
+<li><strong>Loading Icon</strong> - An animated icon that spins repeately.</li>
+<li><strong>Loading Progress Text</strong> - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%</li>
+<li><strong>Loading Repeating Text</strong> - Text which cycles through a list of preset sentences at a set interval.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="81">[INCLUDE COMPILATION IMAGE HERE]</p>
-<hr sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="83">
-<h2 id="loading-screen-components" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="85">Loading Screen Components</h2>
-<div class="NOTE" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="86">
+<p>[INCLUDE COMPILATION IMAGE HERE]</p>
+<hr>
+<h2 id="loading-screen-components">Loading Screen Components</h2>
+<div class="NOTE">
 <h5>Note</h5>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="87">All loading screen components require a reference to the <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="87">Loading Screen handler</strong>.</p>
+<p>All loading screen components require a reference to the <strong>Loading Screen handler</strong>.</p>
 </div>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="89">These components can be added to a loading screen to add additional features.<br>
-They're also used in the <a href="#additions-prefabs" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="90">Additions Prefabs</a>. If you're looking for a simple drag and drop implementation, use those instead.</p>
-<h3 id="loadingscreenprogresstext-component" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="92">LoadingScreenProgressText Component</h3>
-<ul sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="94">
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="94">Adds progress text indicating how far loading has progressed.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="95">Requires a <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="95">TMP Text</code> component reference.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="96"><code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="96">Loading String</code> can be modified to change the loading bar text. <strong sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="96">{0}</strong> will be replaced with the loading percentage.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="97"><code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="97">Smoothing Speed</code> value can be changed to modify lerp speed through loading progress.</li>
+<p>These components can be added to a loading screen to add additional features.<br>
+They're also used in the <a href="#additions-prefabs">Additions Prefabs</a>. If you're looking for a simple drag and drop implementation, use those instead.</p>
+<h3 id="loadingscreenprogresstext-component">LoadingScreenProgressText Component</h3>
+<ul>
+<li>Adds progress text indicating how far loading has progressed.</li>
+<li>Requires a <code>TMP Text</code> component reference.</li>
+<li><code>Loading String</code> can be modified to change the loading bar text. <strong>{0}</strong> will be replaced with the loading percentage.</li>
+<li><code>Smoothing Speed</code> value can be changed to modify lerp speed through loading progress.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="99"><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber=99>Component Link</a></p>
-<h3 id="loadingscreenprogressbar-component" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="101">LoadingScreenProgressBar Component</h3>
-<ul sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="103">
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="103">Adds a progress bar which fills up as the loading progresses.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="104">Requires an <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="104">image</code> component reference</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="105">The <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="105">image</code> components <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="105">Image Type</code> should be set to filled. The <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="105">Fill Amount</code> can then be modifed automatically to fill up the progress bar.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="106"><code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="106">Smoothing Speed</code> value can be changed to modify loading bar lerp speed through loading progress.</li>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html">Component Link</a></p>
+<h3 id="loadingscreenprogressbar-component">LoadingScreenProgressBar Component</h3>
+<ul>
+<li>Adds a progress bar which fills up as the loading progresses.</li>
+<li>Requires an <code>image</code> component reference</li>
+<li>The <code>image</code> components <code>Image Type</code> should be set to filled. The <code>Fill Amount</code> can then be modifed automatically to fill up the progress bar.</li>
+<li><code>Smoothing Speed</code> value can be changed to modify loading bar lerp speed through loading progress.</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="108"><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber=108>Component Link</a></p>
-<h3 id="loadingscreenrepeatingtext-component" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="110">LoadingScreenRepeatingText Component</h3>
-<ul sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="112">
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="112">Adds text which cylces through a list of pre-set strings.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="113">Requires a <code sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="113">TMP Text</code> component reference.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="114">A list of strings containing the repeating text must be set.</li>
-<li sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="115">Repeating text cycle duration can be modified (Default = 0.5 seconds).</li>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html">Component Link</a></p>
+<h3 id="loadingscreenrepeatingtext-component">LoadingScreenRepeatingText Component</h3>
+<ul>
+<li>Adds text which cylces through a list of pre-set strings.</li>
+<li>Requires a <code>TMP Text</code> component reference.</li>
+<li>A list of strings containing the repeating text must be set.</li>
+<li>Repeating text cycle duration can be modified (Default = 0.5 seconds).</li>
 </ul>
-<p sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber="117"><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText.html" sourcefile="docs/character-creator/character-creator-loading-screens.md" sourcestartlinenumber=117>Component Link</a></p>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText.html">Component Link</a></p>
 
 </article>
 

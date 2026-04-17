@@ -101,190 +101,190 @@
         </div>
 
         <article data-uid="quick-start">
-<h1 id="quick-start-guide" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="6">Quick Start Guide</h1>
+<h1 id="quick-start-guide">Quick Start Guide</h1>
 
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="8"><img src="../../images/logos/blazertech-character-management-system-cover-iamge.png" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="8" alt="Logo"></p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="10">Welcome to the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="10">BlazerTech Character Management System</strong>!<br>
+<p><img src="../../images/logos/blazertech-character-management-system-cover-iamge.png" alt="Logo"></p>
+<p>Welcome to the <strong>BlazerTech Character Management System</strong>!<br>
 This guide will get you on your feet and teach you the basics of setting up the core for all your characters along with creating and rendering your first character.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="13">This guide will cover the setup process for both <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="13">Unified</strong> and <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="13">Layered Characters</strong>.</p>
-<div class="TIP" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="15">
+<p>This guide will cover the setup process for both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="16">It's recommended to read through the <a class="xref" href="basic-concepts.html" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=16>Basic Concepts</a> before reading the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="16">Quick Start Guide</strong>.</p>
+<p>It's recommended to read through the <a class="xref" href="basic-concepts.html">Basic Concepts</a> before reading the <strong>Quick Start Guide</strong>.</p>
 </div>
-<hr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="18">
-<h2 id="video-guides" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="20">Video Guides</h2>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="22">Prefer video guides? I've got you covered!</p>
+<hr>
+<h2 id="video-guides">Video Guides</h2>
+<p>Prefer video guides? I've got you covered!</p>
 <iframe width="720" height="405" src="https://www.youtube.com/embed/JMOD0XNIkFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>  
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="33"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="33">Covers:</strong></p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="34">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="34">Layered Character Type Setup.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="35">Layered Character Template Setup.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="36">Rendering a layered character from a template.</li>
+<p><strong>Covers:</strong></p>
+<ul>
+<li>Layered Character Type Setup.</li>
+<li>Layered Character Template Setup.</li>
+<li>Rendering a layered character from a template.</li>
 </ul>
 <iframe width="720" height="405" src="https://www.youtube.com/embed/GT25zq6KCCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="48"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="48">Covers:</strong></p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="49">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="49">Unified Character Type Setup.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="50">Unified Character Template Setup.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="51">Rendering a unified character from a template.</li>
+<p><strong>Covers:</strong></p>
+<ul>
+<li>Unified Character Type Setup.</li>
+<li>Unified Character Template Setup.</li>
+<li>Rendering a unified character from a template.</li>
 </ul>
-<div class="NOTE" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="53">
+<div class="NOTE">
 <h5>Note</h5>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="54">These videos will become dated fast as I continue to improve the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="54">Character Managemnt System</strong>.<br>
+<p>These videos will become dated fast as I continue to improve the <strong>Character Managemnt System</strong>.<br>
 Finalized versions of these videos will be created close to the full release.</p>
 </div>
-<h2 id="1create-a-character-type" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="57">1️⃣Create a Character Type</h2>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="59">If you only plan to use the built-in characters you can skip straight to <a href="#2create-a-character-template" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="59">Creating a Character Template</a>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="61">Create a Character Type asset:</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="64"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="64">Right click</strong> the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="64">Project window</strong> and navigate to<br>
-<code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="65">Create &gt; BlazerTech &gt; Character Management System</code><br>
-and select either <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="66">Layered Character Type</strong> or <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="66">Unified Character Type</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="68">You can name this asset whatever you'd like.</p>
-<div class="TIP" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="70">
+<h2 id="1create-a-character-type">1️⃣Create a Character Type</h2>
+<p>If you only plan to use the built-in characters you can skip straight to <a href="#2create-a-character-template">Creating a Character Template</a>.</p>
+<p>Create a Character Type asset:</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System</code><br>
+and select either <strong>Layered Character Type</strong> or <strong>Unified Character Type</strong>.</p>
+<p>You can name this asset whatever you'd like.</p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="71">Unsure which <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="71">Character Type</strong> to create? Read more about the difference between them <a class="xref" href="../character-types/character-types.html#character-type-variants" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=71>here</a></p>
+<p>Unsure which <strong>Character Type</strong> to create? Read more about the difference between them <a class="xref" href="../character-types/character-types.html#character-type-variants">here</a></p>
 </div>
-<h3 id="character-type-core-fields" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="74">Character Type Core Fields</h3>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="76">The following fields are required regardless of the Character Type you choose.</p>
-<h4 id="character-type-id" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="78"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="78">Character Type ID</strong></h4>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="79">A <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="79">unique</strong> identifier for this Character Type.
-Must <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="80">not</strong> be the same any other Character Types.</p>
-<h4 id="base-spritesheet" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="82"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="82">Base Spritesheet</strong></h4>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="83">The core spritesheet that defines all animations &amp; individual frames that characters of this type will include.<br>
-All characters will need to have a spritesheet that is the exact same size as the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="84">Base Spritesheet</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="86">The Base Spritesheet will represent all characters of the same type. It's Recommended to make this spritesheet include your most barebones character.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="88">Set <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="88">Sprite Mode</strong> of the spritesheet to <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="88">Multiple</strong> (to slice frames individually).</p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="90">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="90"><a href="xref:character-type-core#base-spritesheet" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="90">Read More → Base Spritesheet</a></li>
+<h3 id="character-type-core-fields">Character Type Core Fields</h3>
+<p>The following fields are required regardless of the Character Type you choose.</p>
+<h4 id="character-type-id"><strong>Character Type ID</strong></h4>
+<p>A <strong>unique</strong> identifier for this Character Type.
+Must <strong>not</strong> be the same any other Character Types.</p>
+<h4 id="base-spritesheet"><strong>Base Spritesheet</strong></h4>
+<p>The core spritesheet that defines all animations &amp; individual frames that characters of this type will include.<br>
+All characters will need to have a spritesheet that is the exact same size as the <strong>Base Spritesheet</strong>.</p>
+<p>The Base Spritesheet will represent all characters of the same type. It's Recommended to make this spritesheet include your most barebones character.</p>
+<p>Set <strong>Sprite Mode</strong> of the spritesheet to <strong>Multiple</strong> (to slice frames individually).</p>
+<ul>
+<li><a href="xref:character-type-core#base-spritesheet">Read More → Base Spritesheet</a></li>
 </ul>
-<h4 id="character-controller-optional" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="92"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="92">Character Controller</strong> (Optional)</h4>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="93">You can optionally assign an <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="93">Animator Controller</strong> for characters of this type.<br>
-Animations should only use sprites from the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="94">Base Spritesheet</strong> otherwise they won't be renderered correctly with the <a href="xref:character-usage#the-character-shader" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="94">Character Shader</a>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="96">If you’re using your own movement or animator handling scripts, you can configure the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="96">Animator Controller</strong> however best fits your system.
-However the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="97">Character Management System</strong> also includes built-in movement and animator handler scripts Which require the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="97">Animator Controller</strong> be setup with specific parameters</p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="98">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="98"><a class="xref" href="../character-animation-setup.html" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=98>Read More → Character Animation Setup</a></li>
+<h4 id="character-controller-optional"><strong>Character Controller</strong> (Optional)</h4>
+<p>You can optionally assign an <strong>Animator Controller</strong> for characters of this type.<br>
+Animations should only use sprites from the <strong>Base Spritesheet</strong> otherwise they won't be renderered correctly with the <a href="xref:character-usage#the-character-shader">Character Shader</a>.</p>
+<p>If you’re using your own movement or animator handling scripts, you can configure the <strong>Animator Controller</strong> however best fits your system.
+However the <strong>Character Management System</strong> also includes built-in movement and animator handler scripts Which require the <strong>Animator Controller</strong> be setup with specific parameters</p>
+<ul>
+<li><a class="xref" href="../character-animation-setup.html">Read More → Character Animation Setup</a></li>
 </ul>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="100">Later in this guide when you learn how to render your character, you’ll see how the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="100">Character Controller</strong> can be automatically applied when the character is used.</p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="102">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="102"><a href="xref:character-usage#the-character-shader" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="102">Read More → Character Shader</a></li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="103"><a href="xref:character-type-core#character-controller" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="103">Read More → Character Controller</a></li>
+<p>Later in this guide when you learn how to render your character, you’ll see how the <strong>Character Controller</strong> can be automatically applied when the character is used.</p>
+<ul>
+<li><a href="xref:character-usage#the-character-shader">Read More → Character Shader</a></li>
+<li><a href="xref:character-type-core#character-controller">Read More → Character Controller</a></li>
 </ul>
-<div class="IMPORTANT" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="105">
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="106"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="106">No further setup is required for Unified Character Types.</strong></p>
+<p><strong>No further setup is required for Unified Character Types.</strong></p>
 </div>
-<h3 id="layered-character-type-setup" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="108">Layered Character Type Setup</h3>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="110">Layered Characters are composed of multiple layers (eg: Body, Outfit, Hairstyle, Accessory), we need to define what those layers are.<br>
+<h3 id="layered-character-type-setup">Layered Character Type Setup</h3>
+<p>Layered Characters are composed of multiple layers (eg: Body, Outfit, Hairstyle, Accessory), we need to define what those layers are.<br>
 Each layer must be defined as it's own Character Layer Definition Asset.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="113">To create a new layer:</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="115"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="115">Right click</strong> the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="115">Project window</strong> and navigate to<br>
-<code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="116">Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="118">Each <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="118">Character Layer Definition</strong> represents a single visual layer and contains a list of possible spritesheets (Called <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="118">Layer Options</strong>)</p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="120">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="120">Read <a class="xref" href="../character-types/character-layers.html" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=120>Character Layers</a> to learn how to properly setup each layer and add Layer Options.</li>
+<p>To create a new layer:</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code>.</p>
+<p>Each <strong>Character Layer Definition</strong> represents a single visual layer and contains a list of possible spritesheets (Called <strong>Layer Options</strong>)</p>
+<ul>
+<li>Read <a class="xref" href="../character-types/character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</li>
 </ul>
-<h2 id="2create-a-character-template" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="123">2️⃣Create a Character Template</h2>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="125">Once your Character Type is setup, it's time to create a character.<br>
-There are many ways to create a character but for this guide we'll be using the simplest one, a <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="126">Character Template</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="128">You can think of a <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="128">Character Template</strong> as a blueprint that lets you create a character from it later during runtime.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="130"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="130">Right click</strong> the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="130">Project window</strong> and navigate to<br>
-<code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="131">Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code><br>
-and select either <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="132">Layered Character Template</strong> or <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="132">Unified Character Template</strong>.</p>
-<hr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="134">
-<h3 id="unified-character-template-setup" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="136">Unified Character Template Setup</h3>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="138">A <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="138">Unified Character Template</strong> requires:</p>
-<ol sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="139">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="139">A reference to it's <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="139">Unified Character Type</strong>.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="140">A <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="140">name</strong> for the character when it gets created.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="141">A reference to the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="141">spritesheet</strong> of the character.</li>
+<h2 id="2create-a-character-template">2️⃣Create a Character Template</h2>
+<p>Once your Character Type is setup, it's time to create a character.<br>
+There are many ways to create a character but for this guide we'll be using the simplest one, a <strong>Character Template</strong>.</p>
+<p>You can think of a <strong>Character Template</strong> as a blueprint that lets you create a character from it later during runtime.</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code><br>
+and select either <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
+<hr>
+<h3 id="unified-character-template-setup">Unified Character Template Setup</h3>
+<p>A <strong>Unified Character Template</strong> requires:</p>
+<ol>
+<li>A reference to it's <strong>Unified Character Type</strong>.</li>
+<li>A <strong>name</strong> for the character when it gets created.</li>
+<li>A reference to the <strong>spritesheet</strong> of the character.</li>
 </ol>
-<h4 id="spritesheet-requirements" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="143">Spritesheet Requirements:</h4>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="144">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="144">Must be the exact same size as the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="144">Base Spritesheet</strong> assigned in the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="144">Character Type</strong> and contain the same animations.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="145"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="145">Sprite Mode:</strong> <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="145">Single</code> — We won't be using the spritesheet directly. it'll be passed to the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="145">Character Shader</strong>.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="146"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="146">Filter Mode:</strong> <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="146">Point (No Filter)</code>.</li>
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="147">(Optionally) <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="147">Compression:</strong> <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="147">None</code> (Generally not needed for pixel art).</li>
+<h4 id="spritesheet-requirements">Spritesheet Requirements:</h4>
+<ul>
+<li>Must be the exact same size as the <strong>Base Spritesheet</strong> assigned in the <strong>Character Type</strong> and contain the same animations.</li>
+<li><strong>Sprite Mode:</strong> <code>Single</code> — We won't be using the spritesheet directly. it'll be passed to the <strong>Character Shader</strong>.</li>
+<li><strong>Filter Mode:</strong> <code>Point (No Filter)</code>.</li>
+<li>(Optionally) <strong>Compression:</strong> <code>None</code> (Generally not needed for pixel art).</li>
 </ul>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="149">That's it! Now go to <a href="#3character-usage" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="149">Character Usage</a> to see it in action.</p>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="151">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="151"><a class="xref" href="../character-templates/character-templates.html#unified-character-template" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=151>Read Also → Unified Character Templates</a></li>
+<p>That's it! Now go to <a href="#3character-usage">Character Usage</a> to see it in action.</p>
+<ul>
+<li><a class="xref" href="../character-templates/character-templates.html#unified-character-template">Read Also → Unified Character Templates</a></li>
 </ul>
-<hr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="153">
-<h3 id="layered-character-template-setup" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="155">Layered Character Template Setup</h3>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="156">A <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="156">Layered Character Template</strong> requires a reference to the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="156">Layered Character Type</strong>. As well as a name for the character when it gets created.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="158">Once the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="158">Character Type</strong> has been assigned, a list of <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="158">layers</strong> will appear. These are the same layers you setup in the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="158">Layered Character Type</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="160">Each entry lets you select a Layer Option through a dropdown.<br>
+<hr>
+<h3 id="layered-character-template-setup">Layered Character Template Setup</h3>
+<p>A <strong>Layered Character Template</strong> requires a reference to the <strong>Layered Character Type</strong>. As well as a name for the character when it gets created.</p>
+<p>Once the <strong>Character Type</strong> has been assigned, a list of <strong>layers</strong> will appear. These are the same layers you setup in the <strong>Layered Character Type</strong>.</p>
+<p>Each entry lets you select a Layer Option through a dropdown.<br>
 Additionally the search bar can be used to narrow down the list.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="163"><img src="../../images/character-templates/layered-character-template-layers-list.png" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="163" alt="Layered Character Template Layers List"></p>
-<div class="TIP" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="165">
+<p><img src="../../images/character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="166">If the layers list ever appears incorrect or invalid, click <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="166">Recreate List</strong> at the bottom to refresh the list.<br>
-(Note: This will <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="167">reset</strong> any selected options)</p>
+<p>If the layers list ever appears incorrect or invalid, click <strong>Recreate List</strong> at the bottom to refresh the list.<br>
+(Note: This will <strong>reset</strong> any selected options)</p>
 </div>
-<ul sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="169">
-<li sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="169"><a class="xref" href="../character-templates/character-templates.html#layered-character-template" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber=169>Read Also → Layered Character Templates</a></li>
+<ul>
+<li><a class="xref" href="../character-templates/character-templates.html#layered-character-template">Read Also → Layered Character Templates</a></li>
 </ul>
-<hr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="171">
-<h2 id="3character-usage" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="173">3️⃣Character Usage</h2>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="174">The easiest way to use a character is with a <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="174">Character Renderer</strong> component.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="176">If you're using a <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="176">Unified Character Type</strong> add the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="176">Unified Character Template Renderer</strong> component.<br>
-If you're using a <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="177">Layered Character Type</strong> add the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="177">Layered Character Template Renderer</strong> component.</p>
-<h3 id="character-renderer-fields" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="179">Character Renderer Fields</h3>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="180">The following fields are required for all <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="180">Character Renderers</strong>.</p>
-<h4 id="references" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="182"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="182">References</strong></h4>
-<table sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="183">
+<hr>
+<h2 id="3character-usage">3️⃣Character Usage</h2>
+<p>The easiest way to use a character is with a <strong>Character Renderer</strong> component.</p>
+<p>If you're using a <strong>Unified Character Type</strong> add the <strong>Unified Character Template Renderer</strong> component.<br>
+If you're using a <strong>Layered Character Type</strong> add the <strong>Layered Character Template Renderer</strong> component.</p>
+<h3 id="character-renderer-fields">Character Renderer Fields</h3>
+<p>The following fields are required for all <strong>Character Renderers</strong>.</p>
+<h4 id="references"><strong>References</strong></h4>
+<table>
 <thead>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="183">
-<th sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="183">Field</th>
-<th sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="183">Description</th>
+<tr>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185">
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185">Renderer</strong></td>
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185">Typically a <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185">Sprite Renderer</code>. The <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="185">Character Shader</strong> will be applied to this.</td>
+<tr>
+<td><strong>Renderer</strong></td>
+<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will be applied to this.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="186">
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="186"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="186">Set Animator Controller</strong></td>
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="186">Toggles whether to use the <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="186">Character Controller</strong> from the Character Type.</td>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="187">
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="187"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="187">Animator</strong></td>
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="187">The <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="187">Animator</code> component to assign the controller to.</td>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <code>Animator</code> component to assign the controller to.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="loading-settings" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="189"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="189">Loading Settings</strong></h4>
-<table sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="190">
+<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<table>
 <thead>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="190">
-<th sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="190">Field</th>
-<th sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="190">Description</th>
+<tr>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192">
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192">Loading Mode</strong></td>
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192"><code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192">Asynchronous</code>: loads in the background without freezing gameplay.<br><code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="192">Synchronous</code>: loads immediately but may briefly freeze the game.</td>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Asynchronous</code>: loads in the background without freezing gameplay.<br><code>Synchronous</code>: loads immediately but may briefly freeze the game.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193">
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193">Load Character On Start</strong></td>
-<td sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193">Automatically loads the character in <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193">Start()</code>. If disabled, <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="193">GetAndShowCharacter()</code> must be called manually.</td>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td>Automatically loads the character in <code>Start()</code>. If disabled, <code>GetAndShowCharacter()</code> must be called manually.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="template-reference" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="195"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="195">Template Reference</strong></h4>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="196">At the bottom of the component, assign your <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="196">Character Template</strong> (Unified or Layered).<br>
+<h4 id="template-reference"><strong>Template Reference</strong></h4>
+<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
 This defines which character is created at runtime.</p>
-<h2 id="4test-your-character" sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="199">4️⃣Test Your Character</h2>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="200">Now enter <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="200">Play Mode</strong>.<br>
-If <code sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="201">Load Character On Start</code> is enabled then you'll see your character in-gama.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="203"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="203">Congrats!</strong><br>
-You now have your first working character! Creating more is as easy as creating and setting up a new <strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="204">Character Template</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="206"><strong sourcefile="docs/getting-started/quick-start.md" sourcestartlinenumber="206">Happy game making!</strong></p>
+<h2 id="4test-your-character">4️⃣Test Your Character</h2>
+<p>Now enter <strong>Play Mode</strong>.<br>
+If <code>Load Character On Start</code> is enabled then you'll see your character in-gama.</p>
+<p><strong>Congrats!</strong><br>
+You now have your first working character! Creating more is as easy as creating and setting up a new <strong>Character Template</strong>.</p>
+<p><strong>Happy game making!</strong></p>
 
 </article>
 

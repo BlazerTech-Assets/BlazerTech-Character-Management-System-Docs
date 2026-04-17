@@ -101,70 +101,70 @@
         </div>
 
         <article data-uid="quick-start-use-your-character">
-<h1 id="use-your-character" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="6">Use Your Character</h1>
+<h1 id="use-your-character">Use Your Character</h1>
 
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="8">We're now going to create a <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="8">character</strong> from the <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="8">Character Template</strong> you've created and <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="8">render it in-game</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="10"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="10">Character Renderer components</strong> can create characters and render them for us. They handle all the setup for you meaning all you need to do is <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="10">assign your Template</strong>.</p>
-<hr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="12">
-<h2 id="1setup" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="14">1️⃣Setup</h2>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="16">Create a new GameObject, this will be our character.</p>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="18">If you're using a <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="18">Unified Character Type</strong>, add the <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="18">Unified Character Template Renderer</strong> component.<br>
-If you're using a <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="19">Layered Character Type</strong>, add the <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="19">Layered Character Template Renderer</strong> component.</p>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="21"><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="21" alt="Character Template Renderer Component"></p>
-<h3 id="character-renderer-fields" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="23">Character Renderer Fields</h3>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="24">The following fields are required and must be set for all <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="24">Character Renderers</strong>.</p>
-<h4 id="references" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="26"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="26">References</strong></h4>
-<table sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="27">
+<p>We're now going to create a <strong>character</strong> from the <strong>Character Template</strong> you've created and <strong>render it in-game</strong>.</p>
+<p><strong>Character Renderer components</strong> can create characters and render them for us. They handle all the setup for you meaning all you need to do is <strong>assign your Template</strong>.</p>
+<hr>
+<h2 id="1setup">1️⃣Setup</h2>
+<p>Create a new GameObject, this will be our character.</p>
+<p>If you're using a <strong>Unified Character Type</strong>, add the <strong>Unified Character Template Renderer</strong> component.<br>
+If you're using a <strong>Layered Character Type</strong>, add the <strong>Layered Character Template Renderer</strong> component.</p>
+<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Character Template Renderer Component"></p>
+<h3 id="character-renderer-fields">Character Renderer Fields</h3>
+<p>The following fields are required and must be set for all <strong>Character Renderers</strong>.</p>
+<h4 id="references"><strong>References</strong></h4>
+<table>
 <thead>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="27">
-<th sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="27">Field</th>
-<th sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="27">Description</th>
+<tr>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29">
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29">Renderer</strong></td>
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29">Typically a <code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29">Sprite Renderer</code>. The <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="29">Character Shader</strong> will be applied to this.</td>
+<tr>
+<td><strong>Renderer</strong></td>
+<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will be applied to this.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="30">
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="30"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="30">Set Animator Controller</strong></td>
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="30">Toggles whether to use the <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="30">Character Controller</strong> from the Character Type.</td>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="31">
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="31"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="31">Animator</strong></td>
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="31">The <code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="31">Animator</code> component to assign the controller to.</td>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <code>Animator</code> component to assign the controller to.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="loading-settings" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="33"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="33">Loading Settings</strong></h4>
-<table sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="34">
+<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<table>
 <thead>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="34">
-<th sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="34">Field</th>
-<th sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="34">Description</th>
+<tr>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36">
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36">Loading Mode</strong></td>
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36"><code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36">Asynchronous</code>: loads in the background without freezing gameplay.<br><code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="36">Synchronous</code>: loads immediately but may briefly freeze the game.</td>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Asynchronous</code>: loads in the background without freezing gameplay.<br><code>Synchronous</code>: loads immediately but may briefly freeze the game.</td>
 </tr>
-<tr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37">
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37">Load Character On Start</strong></td>
-<td sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37">Automatically loads the character in <code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37">Start()</code>. If disabled, <code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="37">GetAndShowCharacter()</code> must be called manually.</td>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td>Automatically loads the character in <code>Start()</code>. If disabled, <code>GetAndShowCharacter()</code> must be called manually.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="template-reference" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="39"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="39">Template Reference</strong></h4>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="40">At the bottom of the component, assign your <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="40">Character Template</strong> (Unified or Layered).<br>
+<h4 id="template-reference"><strong>Template Reference</strong></h4>
+<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
 This defines which character is created at runtime.</p>
-<hr sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="43">
-<h2 id="2test-your-character" sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="45">2️⃣Test Your Character</h2>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="47">Now entry <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="47">Play Mode</strong>.<br>
-If <code sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="48">Load Character On Start</code> is enabled, you'll see your character in-game.</p>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="50"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="50">Congrats!</strong><br>
-You now have your first character rendered at runtime! Creating more characters is as easy as seting up a new <strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="51">Character Template</strong>.</p>
-<p sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="53"><strong sourcefile="docs/getting-started/quick-start-guide/use-your-character.md" sourcestartlinenumber="53">Happy game making!</strong></p>
+<hr>
+<h2 id="2test-your-character">2️⃣Test Your Character</h2>
+<p>Now entry <strong>Play Mode</strong>.<br>
+If <code>Load Character On Start</code> is enabled, you'll see your character in-game.</p>
+<p><strong>Congrats!</strong><br>
+You now have your first character rendered at runtime! Creating more characters is as easy as seting up a new <strong>Character Template</strong>.</p>
+<p><strong>Happy game making!</strong></p>
 
 </article>
 

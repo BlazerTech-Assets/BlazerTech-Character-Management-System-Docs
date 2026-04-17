@@ -101,27 +101,27 @@
         </div>
 
         <article data-uid="ccm-character-randomization">
-<h1 id="character-randomization" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="5">Character Randomization</h1>
+<h1 id="character-randomization">Character Randomization</h1>
 
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="7">The character in the Character Creation Menu can be completely randomized by randomizing every layer or randomize only specific layers.</p>
-<h2 id="complete-character-randomization" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="9">Complete Character Randomization</h2>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="10">This is the simplest option. A button can be setup with the <code sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="10">CCM Relay</code> component. The button should call the <code sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="10">RandomizeEntireCharacter</code> method on the <code sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="10">CCM Relay</code> which will then randomize all layers of the character.</p>
-<div class="TIP" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="12">
+<p>The character in the Character Creation Menu can be completely randomized by randomizing every layer or randomize only specific layers.</p>
+<h2 id="complete-character-randomization">Complete Character Randomization</h2>
+<p>This is the simplest option. A button can be setup with the <code>CCM Relay</code> component. The button should call the <code>RandomizeEntireCharacter</code> method on the <code>CCM Relay</code> which will then randomize all layers of the character.</p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="13">A complete randomization button prefab can be located in <strong sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="13">Prefabs &gt; Character Creator &gt; Randomization &gt; Randomize Character Button</strong></p>
+<p>A complete randomization button prefab can be located in <strong>Prefabs &gt; Character Creator &gt; Randomization &gt; Randomize Character Button</strong></p>
 </div>
-<hr sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="15">
-<h2 id="single-layer-randomization" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="17">Single Layer Randomization</h2>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="18">Some Layer Selectors include a variant that contains a randomize button that when pressed will randomize that layer of the character.</p>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="20">If a Layer Selector does <strong sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="20">not</strong> include a variant with a randomize button; one can be added easily.<br>
-Add a button component that <strong sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="21">On Click</strong> calls <strong sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="21"><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber=21>CharacterLayerSelector.RandomizeLayer()</a></strong></p>
-<hr sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="23">
-<h2 id="controlled-randomization" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="25">Controlled Randomization</h2>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="26">A controlled randomization button contains extra options to only randomize the selected layers.</p>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="28"><img src="../../images/ccm-character-randomization/controlled-randomization-example.png" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="28" alt="Controlled Randomization"></p>
-<div class="TIP" sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="30">
+<hr>
+<h2 id="single-layer-randomization">Single Layer Randomization</h2>
+<p>Some Layer Selectors include a variant that contains a randomize button that when pressed will randomize that layer of the character.</p>
+<p>If a Layer Selector does <strong>not</strong> include a variant with a randomize button; one can be added easily.<br>
+Add a button component that <strong>On Click</strong> calls <strong><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer">CharacterLayerSelector.RandomizeLayer()</a></strong></p>
+<hr>
+<h2 id="controlled-randomization">Controlled Randomization</h2>
+<p>A controlled randomization button contains extra options to only randomize the selected layers.</p>
+<p><img src="../../images/ccm-character-randomization/controlled-randomization-example.png" alt="Controlled Randomization"></p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="31">A prefab is locatated in <strong sourcefile="docs/character-creator/character-creator-character-randomization.md" sourcestartlinenumber="31">Prefabs &gt; Character Creator &gt; Randomization &gt; Controlled Randomization Button</strong></p>
+<p>A prefab is locatated in <strong>Prefabs &gt; Character Creator &gt; Randomization &gt; Controlled Randomization Button</strong></p>
 </div>
 
 </article>

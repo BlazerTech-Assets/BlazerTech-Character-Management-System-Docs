@@ -101,69 +101,69 @@
         </div>
 
         <article data-uid="installation">
-<h1 id="installation-and-requirements" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="6">Installation and Requirements</h1>
+<h1 id="installation-and-requirements">Installation and Requirements</h1>
 
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="8">This guide covers the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="8">requirements</strong> and <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="8">installation steps</strong> for the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="8">BlazerTech Character Management System</strong> (BT-CMS).</p>
-<hr sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="10">
-<h2 id="required-packages" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="12">Required Packages</h2>
-<div class="NOTE" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="14">
+<p>This guide covers the <strong>requirements</strong> and <strong>installation steps</strong> for the <strong>BlazerTech Character Management System</strong> (BT-CMS).</p>
+<hr>
+<h2 id="required-packages">Required Packages</h2>
+<div class="NOTE">
 <h5>Note</h5>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="15">All required packages must be installed and correctly configured <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="15">before importing BT-CMS</strong>.</p>
+<p>All required packages must be installed and correctly configured <strong>before importing BT-CMS</strong>.</p>
 </div>
-<table sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="17">
+<table>
 <thead>
-<tr sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="17">
-<th sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="17">Package</th>
-<th sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="17">Purpose</th>
-<th sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="17">Notes / Links</th>
+<tr>
+<th>Package</th>
+<th>Purpose</th>
+<th>Notes / Links</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19">
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19">Addressables</strong></td>
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19">Dynamically load/unload character spritesheets.</td>
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19">Found in the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="19">Unity Registry</strong> via Package Manager.</td>
+<tr>
+<td><strong>Addressables</strong></td>
+<td>Dynamically load/unload character spritesheets.</td>
+<td>Found in the <strong>Unity Registry</strong> via Package Manager.</td>
 </tr>
-<tr sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20">
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20">Naughty Attributes</strong></td>
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20">Adds additional attributes to the Unity Inspector.</td>
-<td sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20"><a href="https://dbrizov.github.io/na-docs/general/installation.html" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20">Installation Guide</a> <br> <a href="https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="20">Unity Asset Store Link</a></td>
+<tr>
+<td><strong>Naughty Attributes</strong></td>
+<td>Adds additional attributes to the Unity Inspector.</td>
+<td><a href="https://dbrizov.github.io/na-docs/general/installation.html">Installation Guide</a> <br> <a href="https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996">Unity Asset Store Link</a></td>
 </tr>
 </tbody>
 </table>
-<div class="IMPORTANT" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="22">
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="23"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="23">Addressables Settings file</strong> must be created <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="23">before</strong> importing BT-CMS. If not created beforehand the included characters will not be functional.
-To create the settings file navigate to: <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="24">Window &gt; Asset Management &gt; Addressables &gt; Groups &gt; Create Addressables Settings</code>.</p>
+<p><strong>Addressables Settings file</strong> must be created <strong>before</strong> importing BT-CMS. If not created beforehand the included characters will not be functional.
+To create the settings file navigate to: <code>Window &gt; Asset Management &gt; Addressables &gt; Groups &gt; Create Addressables Settings</code>.</p>
 </div>
-<hr sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="26">
-<h2 id="installation-steps" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="28">Installation Steps</h2>
-<h3 id="prerequisites" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="30">Prerequisites</h3>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="31">Make sure <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="31">Naughty Attributes</strong> and <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="31">Addressables</strong> are both installed and the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="31">Addressables Settings file</strong> has been creeated (<a href="#required-packages" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="31">See above^^</a>).</p>
-<h3 id="importing" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="33">Importing</h3>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="34"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="34">Itch.io:</strong></p>
-<ul sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="35">
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="35">If bought from Itch.io, download <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="35">BlazerTech Character Management System.unitypackage</code> and drag and drop it into your project.</li>
+<hr>
+<h2 id="installation-steps">Installation Steps</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Make sure <strong>Naughty Attributes</strong> and <strong>Addressables</strong> are both installed and the <strong>Addressables Settings file</strong> has been creeated (<a href="#required-packages">See above^^</a>).</p>
+<h3 id="importing">Importing</h3>
+<p><strong>Itch.io:</strong></p>
+<ul>
+<li>If bought from Itch.io, download <code>BlazerTech Character Management System.unitypackage</code> and drag and drop it into your project.</li>
 </ul>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="37"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="37">Unity Asset Store:</strong></p>
-<ul sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">If bought from the Unity Asset Store, navigate to <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">Window &gt; Package Manager &gt; My Assets</code> and find <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">BlazerTech Character Management System</code> from within the list. Click <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">Download</code> if not already downloaded and then <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="38">Import</code>.</li>
+<p><strong>Unity Asset Store:</strong></p>
+<ul>
+<li>If bought from the Unity Asset Store, navigate to <code>Window &gt; Package Manager &gt; My Assets</code> and find <code>BlazerTech Character Management System</code> from within the list. Click <code>Download</code> if not already downloaded and then <code>Import</code>.</li>
 </ul>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="40"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="40">Import Popup:</strong></p>
-<ul sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="41">
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="41">Regardless of the installation method a popup will appear prompting you to import the <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="41">BlazerTech Character Management System</code> into your project. Make sure all assets are selected and click the <code sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="41">Import</code> button.<br>
-<img src="../../images/setup/import-popup.png" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="42" alt="Import Popup"></li>
+<p><strong>Import Popup:</strong></p>
+<ul>
+<li>Regardless of the installation method a popup will appear prompting you to import the <code>BlazerTech Character Management System</code> into your project. Make sure all assets are selected and click the <code>Import</code> button.<br>
+<img src="../../images/setup/import-popup.png" alt="Import Popup"></li>
 </ul>
-<h3 id="after-installtion" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="44">After Installtion</h3>
-<p sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="45">Here's some things to do after installing the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="45">BlazerTech Character Management System</strong>:</p>
-<ol sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="46">
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="46">Checkout the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="46">Quick Start Guide</strong> to learn how to setup your own characters or use the included ones.<br>
-<a class="xref" href="quick-start.html" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber=47>Read More → Quick Start</a></li>
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="48"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="48">Play sample scenes</strong> - Go into the <strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="48">Samples</strong> folder and run some of the sample scenes to learn more about the Character Management System.</li>
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="49"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="49">Create your own character type</strong> - make a new character type asset to use your own character spritesheets or third party ones.<br>
-<a class="xref" href="../character-types/character-types.html" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber=50>Read More → Character Types</a></li>
-<li sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="51"><strong sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber="51">Implement a character creation menu</strong> - Use the modular Character Creator System to create your own in-game character creation menu.<br>
-<a class="xref" href="../character-creator/character-creator-overview.html" sourcefile="docs/getting-started/installation-and-requirements.md" sourcestartlinenumber=52>Read More → Character Creator Overview</a></li>
+<h3 id="after-installtion">After Installtion</h3>
+<p>Here's some things to do after installing the <strong>BlazerTech Character Management System</strong>:</p>
+<ol>
+<li>Checkout the <strong>Quick Start Guide</strong> to learn how to setup your own characters or use the included ones.<br>
+<a class="xref" href="quick-start.html">Read More → Quick Start</a></li>
+<li><strong>Play sample scenes</strong> - Go into the <strong>Samples</strong> folder and run some of the sample scenes to learn more about the Character Management System.</li>
+<li><strong>Create your own character type</strong> - make a new character type asset to use your own character spritesheets or third party ones.<br>
+<a class="xref" href="../character-types/character-types.html">Read More → Character Types</a></li>
+<li><strong>Implement a character creation menu</strong> - Use the modular Character Creator System to create your own in-game character creation menu.<br>
+<a class="xref" href="../character-creator/character-creator-overview.html">Read More → Character Creator Overview</a></li>
 </ol>
 
 </article>

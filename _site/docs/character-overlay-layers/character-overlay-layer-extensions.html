@@ -101,39 +101,39 @@
         </div>
 
         <article data-uid="character-overlay-layer-extensions">
-<h1 id="character-overlay-layer-extensions" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="6">Character Overlay Layer Extensions</h1>
+<h1 id="character-overlay-layer-extensions">Character Overlay Layer Extensions</h1>
 
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="8"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="8">Overlay Layers</strong> can be extended to add additonal functionality to them.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="10">In the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="10">Character Overlay Layer asset</strong> is an <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="10">Overlay Layer Extensions</strong> list.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="12">Each entry in the list is a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="12">Prefab</strong> which must contain a script that inherits from <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="12">OverlayLayerExtension</strong></p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="14">
-<h2 id="the-overlay-layer-extension-class" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="16">The Overlay Layer Extension Class</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="18"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="18">Overlay Layer Extensions</strong> allow you to attach custom login to a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="18">Character Overlay Layer</strong>.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="20">An Overlay Layer Extension is a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="20">Prefab containg a script</strong> that inherits from <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="20">OverlayLayerExtension</code>.<br>
-When an <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="21">Overlay Layer</strong> is used, the extension is instantiated and given access to important components such as the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="21">Sprite Renderer</strong>, <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="21">Animator</strong>, and <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="21">GameObject</strong> used by the Overlay Layer.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="23">This allows Overlay Layers to provide their own gameplay logic or interactions.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="25">
-<h2 id="how-overlay-layer-extensions-work" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="27">How Overlay Layer Extensions Work</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="29">Each Character Overlay Layer asset contains a list of Overlay Layer Extensions.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="31">Every entry in the list is a Prefab that:</p>
-<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="33">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="33">Contains a script that inherits from the OverlayLayerExtension class</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="34">Implements the logic for the extension</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="35">Is automatically instantiated when the Overlay Layer is created at runtime.</li>
+<p><strong>Overlay Layers</strong> can be extended to add additonal functionality to them.</p>
+<p>In the <strong>Character Overlay Layer asset</strong> is an <strong>Overlay Layer Extensions</strong> list.</p>
+<p>Each entry in the list is a <strong>Prefab</strong> which must contain a script that inherits from <strong>OverlayLayerExtension</strong></p>
+<hr>
+<h2 id="the-overlay-layer-extension-class">The Overlay Layer Extension Class</h2>
+<p><strong>Overlay Layer Extensions</strong> allow you to attach custom login to a <strong>Character Overlay Layer</strong>.</p>
+<p>An Overlay Layer Extension is a <strong>Prefab containg a script</strong> that inherits from <code>OverlayLayerExtension</code>.<br>
+When an <strong>Overlay Layer</strong> is used, the extension is instantiated and given access to important components such as the <strong>Sprite Renderer</strong>, <strong>Animator</strong>, and <strong>GameObject</strong> used by the Overlay Layer.</p>
+<p>This allows Overlay Layers to provide their own gameplay logic or interactions.</p>
+<hr>
+<h2 id="how-overlay-layer-extensions-work">How Overlay Layer Extensions Work</h2>
+<p>Each Character Overlay Layer asset contains a list of Overlay Layer Extensions.</p>
+<p>Every entry in the list is a Prefab that:</p>
+<ol>
+<li>Contains a script that inherits from the OverlayLayerExtension class</li>
+<li>Implements the logic for the extension</li>
+<li>Is automatically instantiated when the Overlay Layer is created at runtime.</li>
 </ol>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="37">When the Overlay Layer Extension is initialized, it recieves an <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="37">OverlayLayerContext</code> object.<br>
+<p>When the Overlay Layer Extension is initialized, it recieves an <code>OverlayLayerContext</code> object.<br>
 This object provides references to the key components used by the Overlay Layer.<br>
 These components are:</p>
-<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="40">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="40">GameObject of the Overlay Layer</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="41">Sprite Renderer Component</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="42">Animator Component</li>
+<ul>
+<li>GameObject of the Overlay Layer</li>
+<li>Sprite Renderer Component</li>
+<li>Animator Component</li>
 </ul>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="44">
-<h2 id="overlaylayercontext-class" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="46">OverlayLayerContext Class</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="48"><code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="48">OverlayLayerContext</code> is passed to every extension when it's initialized.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="50"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="50">It contains references to the core objects used by the Overlay Layer</strong>.</p>
-<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="52">public sealed class OverlayLayerContext
+<hr>
+<h2 id="overlaylayercontext-class">OverlayLayerContext Class</h2>
+<p><code>OverlayLayerContext</code> is passed to every extension when it's initialized.</p>
+<p><strong>It contains references to the core objects used by the Overlay Layer</strong>.</p>
+<pre><code class="lang-cs">public sealed class OverlayLayerContext
 {
     public SpriteRenderer SpriteRenderer { get; }
     public Animator Animator { get; }
@@ -147,43 +147,43 @@ These components are:</p>
     }
 }
 </code></pre>
-<h3 id="available-references" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="68">Available References</h3>
-<table sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="70">
+<h3 id="available-references">Available References</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="70">
-<th sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="70">Property</th>
-<th sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="70">Description</th>
+<tr>
+<th>Property</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="72">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="72"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="72">GameObject</strong></td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="72">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="72">GameObject</strong> created for the overlay layer</td>
+<tr>
+<td><strong>GameObject</strong></td>
+<td>The <strong>GameObject</strong> created for the overlay layer</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="73">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="73"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="73">SpriteRenderer</strong></td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="73">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="73">SpriteRenderer</strong> component rendering Overlay Layer sprites</td>
+<tr>
+<td><strong>SpriteRenderer</strong></td>
+<td>The <strong>SpriteRenderer</strong> component rendering Overlay Layer sprites</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="74">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="74"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="74">Animator</strong></td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="74">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="74">Animator</strong> component controlling the Overlay layer animations</td>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <strong>Animator</strong> component controlling the Overlay layer animations</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="76">These references allow Overlay Layer Extensions to full intereact with the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="76">Overlay Layer</strong>.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="78">Examples:</p>
-<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="80">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="80"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="80">Trigger animations</strong></li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="81"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="81">Change sprites or materials</strong></li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="82"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="82">Enable or disable the layer</strong></li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="83"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="83">Add additional components</strong></li>
+<p>These references allow Overlay Layer Extensions to full intereact with the <strong>Overlay Layer</strong>.</p>
+<p>Examples:</p>
+<ul>
+<li><strong>Trigger animations</strong></li>
+<li><strong>Change sprites or materials</strong></li>
+<li><strong>Enable or disable the layer</strong></li>
+<li><strong>Add additional components</strong></li>
 </ul>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="85">
-<h2 id="setup-guide" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="87">Setup Guide</h2>
-<h3 id="create-the-extension-script" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="89">Create the Extension Script</h3>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="91">Create a new script that inherits from <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="91">OverlayLayerExtension</code>.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="93"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="93">Example</strong>:</p>
-<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="95">using BlazerTech.CharacterManagement.Core;
+<hr>
+<h2 id="setup-guide">Setup Guide</h2>
+<h3 id="create-the-extension-script">Create the Extension Script</h3>
+<p>Create a new script that inherits from <code>OverlayLayerExtension</code>.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Core;
 using UnityEngine;
 
 public class ExampleOverlayLayerExtension : OverlayLayerExtension
@@ -196,36 +196,36 @@ public class ExampleOverlayLayerExtension : OverlayLayerExtension
     }
 }
 </code></pre>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="110">The <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="110">OverlayLayerContext</code> class gives you access to the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="110">Overlay Layer components</strong>.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="112">
-<h3 id="create-the-extension-prefab" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="114">Create the Extension Prefab</h3>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="116">Now we need to create a new GameObject prefab that contains our new Extension script.</p>
-<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="118">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="118">Create a new <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="118">GameObject</strong> in your scene and name it.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="119">Attach your <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="119">Overlay Layer Extension script</strong>.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="120">Configure any variable on your component.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="121">Drag the GameObject into your <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="121">Project window</strong> to create a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="121">Prefab</strong>.</li>
+<p>The <code>OverlayLayerContext</code> class gives you access to the <strong>Overlay Layer components</strong>.</p>
+<hr>
+<h3 id="create-the-extension-prefab">Create the Extension Prefab</h3>
+<p>Now we need to create a new GameObject prefab that contains our new Extension script.</p>
+<ol>
+<li>Create a new <strong>GameObject</strong> in your scene and name it.</li>
+<li>Attach your <strong>Overlay Layer Extension script</strong>.</li>
+<li>Configure any variable on your component.</li>
+<li>Drag the GameObject into your <strong>Project window</strong> to create a <strong>Prefab</strong>.</li>
 </ol>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="123"><img src="../../images/overlay-layers/extensions/overlay-layer-extension-gameobject.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="123" alt="Overlay Layer Extension GameObject Example"></p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="125">This prefab will be instnatied when the Overlay Layer is created during runtime.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="127">
-<h3 id="add-the-extension-prefab-to-the-overlay-layer" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="129">Add the Extension Prefab to the Overlay Layer</h3>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="131">Lets attach the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="131">Overlay Layer Extension prefab</strong> we just created to the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="131">Character Overlay Layer asset</strong>.</p>
-<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="133">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="133">Select your <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="133">Character Overlay Layer asset</strong>.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="134">Locate the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="134">Overlay Layer Extensions</strong> list.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="135">Add a new element to the list.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="136">Assign your <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="136">Extension Prefab</strong>.</li>
+<p><img src="../../images/overlay-layers/extensions/overlay-layer-extension-gameobject.png" alt="Overlay Layer Extension GameObject Example"></p>
+<p>This prefab will be instnatied when the Overlay Layer is created during runtime.</p>
+<hr>
+<h3 id="add-the-extension-prefab-to-the-overlay-layer">Add the Extension Prefab to the Overlay Layer</h3>
+<p>Lets attach the <strong>Overlay Layer Extension prefab</strong> we just created to the <strong>Character Overlay Layer asset</strong>.</p>
+<ol>
+<li>Select your <strong>Character Overlay Layer asset</strong>.</li>
+<li>Locate the <strong>Overlay Layer Extensions</strong> list.</li>
+<li>Add a new element to the list.</li>
+<li>Assign your <strong>Extension Prefab</strong>.</li>
 </ol>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="138"><img src="../../images/overlay-layers/extensions/overlay-layer-extensions-list.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="138" alt="Overlay Layer Extensions List Example"></p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="140">When the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="140">Overlay Layer</strong> is used during runtime, all <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="140">Overlay Layer Extensions</strong> will be instantiated in the order listed as <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="140">children of the Overlay Layer</strong> and initialized.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="142">
-<h2 id="overlay-layer-extension-example" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="144">Overlay Layer Extension Example</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="146">The follow example is used in the Modern Interiors Integration package.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="148">It simulates a character firing a weapon.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="150">The Overlay Layer only contains the characters hands, allowing the shooting animation to play independently from the main character body.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="152">When the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="152">E key</strong> is pressed, the extension triggers a <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="152">Shoot</code> animation on the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="152">Overlay Layer</strong>.</p>
-<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="154">using BlazerTech.CharacterManagement.Core;
+<p><img src="../../images/overlay-layers/extensions/overlay-layer-extensions-list.png" alt="Overlay Layer Extensions List Example"></p>
+<p>When the <strong>Overlay Layer</strong> is used during runtime, all <strong>Overlay Layer Extensions</strong> will be instantiated in the order listed as <strong>children of the Overlay Layer</strong> and initialized.</p>
+<hr>
+<h2 id="overlay-layer-extension-example">Overlay Layer Extension Example</h2>
+<p>The follow example is used in the Modern Interiors Integration package.</p>
+<p>It simulates a character firing a weapon.</p>
+<p>The Overlay Layer only contains the characters hands, allowing the shooting animation to play independently from the main character body.</p>
+<p>When the <strong>E key</strong> is pressed, the extension triggers a <code>Shoot</code> animation on the <strong>Overlay Layer</strong>.</p>
+<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Core;
 using UnityEngine.InputSystem;
 
 public class GunShootOLE : OverlayLayerExtension
@@ -241,18 +241,18 @@ public class GunShootOLE : OverlayLayerExtension
     }
 }
 </code></pre>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="172">In this example:</p>
-<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="174">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="174">The extension checks input every frame.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="175">When <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="175">E</strong> is pressed, it actives a trigger titled <code sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="175">Shoot</code>.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="176">Only the Overlay Layer animates, letting the rest of the body animate separately.</li>
+<p>In this example:</p>
+<ol>
+<li>The extension checks input every frame.</li>
+<li>When <strong>E</strong> is pressed, it actives a trigger titled <code>Shoot</code>.</li>
+<li>Only the Overlay Layer animates, letting the rest of the body animate separately.</li>
 </ol>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="178">
-<h2 id="related" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="180">Related</h2>
-<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="181">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="181"><a class="xref" href="character-overlay-layers.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber=181>Character Overlay Layers</a></li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="182"><a class="xref" href="character-overlay-layer-configuration.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber=182>Character Overlay Layer Configuration</a></li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber="183"><a class="xref" href="character-overlay-layer-usage.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-extensions.md" sourcestartlinenumber=183>Character Overlay Layer Usage</a></li>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-overlay-layers.html">Character Overlay Layers</a></li>
+<li><a class="xref" href="character-overlay-layer-configuration.html">Character Overlay Layer Configuration</a></li>
+<li><a class="xref" href="character-overlay-layer-usage.html">Character Overlay Layer Usage</a></li>
 </ul>
 
 </article>

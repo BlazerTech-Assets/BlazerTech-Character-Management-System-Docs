@@ -101,66 +101,66 @@
         </div>
 
         <article data-uid="character-overlay-layers">
-<h1 id="character-overlay-layers" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="6">Character Overlay Layers</h1>
+<h1 id="character-overlay-layers">Character Overlay Layers</h1>
 
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="8">Character Overlay Layers allow you to add additional spritesheets that are layered above or below a character.<br>
+<p>Character Overlay Layers allow you to add additional spritesheets that are layered above or below a character.<br>
 These work on both Unified and Layered Characters.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="11"><img src="../../images/overlay-layers/character-overlay-layer.png" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="11" alt="Character Overlay Layer"></p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="13">They are typically used for equipment, armor, or other optional elements for a character.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="15"><strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="15">Overlay Layers</strong> use a completely separate <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="15">spritesheet</strong> and <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="15">Animator Controller</strong>.<br>
-This is the only instance where a spritesheet does <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="16">NOT</strong> need to be the same size or follow the same layout as the <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="16">Base Spritesheet</strong>.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="18"><strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="18">Overlay Layer Animator Controllers</strong> can optionally have their paramters be synced to the parameters of the <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="18">Character Type Aniamtor Controller</strong> during runtime.<br>
-This means <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="19">Overlay Layers</strong> can be synced to the character or be animated separately.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="21">
-<h2 id="when-to-use-overlay-layers" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="23">When To Use Overlay Layers</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="25">Overlay Layers are useful when you need to add additional elements to a charcter without modifying the base character.</p>
-<h3 id="common-use-cases" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="27">Common Use Cases</h3>
-<table sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="29">
+<p><img src="../../images/overlay-layers/character-overlay-layer.png" alt="Character Overlay Layer"></p>
+<p>They are typically used for equipment, armor, or other optional elements for a character.</p>
+<p><strong>Overlay Layers</strong> use a completely separate <strong>spritesheet</strong> and <strong>Animator Controller</strong>.<br>
+This is the only instance where a spritesheet does <strong>NOT</strong> need to be the same size or follow the same layout as the <strong>Base Spritesheet</strong>.</p>
+<p><strong>Overlay Layer Animator Controllers</strong> can optionally have their paramters be synced to the parameters of the <strong>Character Type Aniamtor Controller</strong> during runtime.<br>
+This means <strong>Overlay Layers</strong> can be synced to the character or be animated separately.</p>
+<hr>
+<h2 id="when-to-use-overlay-layers">When To Use Overlay Layers</h2>
+<p>Overlay Layers are useful when you need to add additional elements to a charcter without modifying the base character.</p>
+<h3 id="common-use-cases">Common Use Cases</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="29">
-<th sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="29">Use Case</th>
-<th sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="29">Example</th>
+<tr>
+<th>Use Case</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="31">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="31">Equipment</td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="31">Weapons, shields, any helds items</td>
+<tr>
+<td>Equipment</td>
+<td>Weapons, shields, any helds items</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="32">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="32">Additional Clothing</td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="32">Armor, helmet</td>
+<tr>
+<td>Additional Clothing</td>
+<td>Armor, helmet</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="33">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="33">Effects</td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="33">Auras, glow effects</td>
+<tr>
+<td>Effects</td>
+<td>Auras, glow effects</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="34">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="34">Damage/Health Indicators</td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="34">Scatches, blood, burn marks</td>
+<tr>
+<td>Damage/Health Indicators</td>
+<td>Scatches, blood, burn marks</td>
 </tr>
-<tr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="35">
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="35">NPC Identification and Indicators</td>
-<td sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="35">Quest markers, team colors, enemy highlights</td>
+<tr>
+<td>NPC Identification and Indicators</td>
+<td>Quest markers, team colors, enemy highlights</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="37">
-<h2 id="how-overlay-layers-work" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="39">How Overlay Layers Work</h2>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="41">An <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="41">Overlay Layer</strong> is a scriptable object that lives in your assets folder, this asset stores all info needed for an <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="41">Overlay Layer</strong> to be used.</p>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="43">Every <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="43">Character Overlay Layer</strong> contains its own:</p>
-<ul sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="45">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="45">Spritesheet</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="46">Animator Controller</li>
+<hr>
+<h2 id="how-overlay-layers-work">How Overlay Layers Work</h2>
+<p>An <strong>Overlay Layer</strong> is a scriptable object that lives in your assets folder, this asset stores all info needed for an <strong>Overlay Layer</strong> to be used.</p>
+<p>Every <strong>Character Overlay Layer</strong> contains its own:</p>
+<ul>
+<li>Spritesheet</li>
+<li>Animator Controller</li>
 </ul>
-<p sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="48">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="48">Animators parameters</strong> can be synchronized to the paramters in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="48">Character Type Animator Controller</strong>.<br>
-This allow the <strong sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="49">Overlay Layer</strong> to be synced to the Charcter or animated on its own.</p>
-<hr sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="51">
-<h2 id="setup--usage" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="53">Setup &amp; Usage</h2>
-<ul sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="55">
-<li sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="55"><a class="xref" href="character-overlay-layer-configuration.html" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber=55>Character Overlay Layer Configuration</a> - Learn how to create and setup a Character Overlay Layer</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="56"><a class="xref" href="character-overlay-layer-extensions.html" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber=56>Character Overlay Layer Extensions</a> - Learn how to extend the functionality of a Character Overlay Layer with custom logic.</li>
-<li sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber="57"><a class="xref" href="character-overlay-layer-usage.html" sourcefile="docs/character-overlay-layers/character-overlay-layers.md" sourcestartlinenumber=57>Character Overlay Layer Usage</a> - Learn how to apply your Character Overlay Layer to a charactar during runtime.</li>
+<p>The <strong>Animators parameters</strong> can be synchronized to the paramters in the <strong>Character Type Animator Controller</strong>.<br>
+This allow the <strong>Overlay Layer</strong> to be synced to the Charcter or animated on its own.</p>
+<hr>
+<h2 id="setup--usage">Setup &amp; Usage</h2>
+<ul>
+<li><a class="xref" href="character-overlay-layer-configuration.html">Character Overlay Layer Configuration</a> - Learn how to create and setup a Character Overlay Layer</li>
+<li><a class="xref" href="character-overlay-layer-extensions.html">Character Overlay Layer Extensions</a> - Learn how to extend the functionality of a Character Overlay Layer with custom logic.</li>
+<li><a class="xref" href="character-overlay-layer-usage.html">Character Overlay Layer Usage</a> - Learn how to apply your Character Overlay Layer to a charactar during runtime.</li>
 </ul>
 
 </article>

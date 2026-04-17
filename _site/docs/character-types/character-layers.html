@@ -101,181 +101,181 @@
         </div>
 
         <article data-uid="character-layers">
-<h1 id="character-layers" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="6">Character Layers</h1>
+<h1 id="character-layers">Character Layers</h1>
 
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="8">A <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="8">Character Layer</strong> represents a single visual component of a character such as a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="8">body</strong>, <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="8">outfit</strong>, or <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="8">hairstyle</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="10">A <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="10">Layered Character</strong> is created by stacking multiple layers together.<br>
-Each layer uses a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="11">spritesheet</strong> that contains all animation frames for that part of the character.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="13">There are three main concepts involved when working with layers:</p>
-<table sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="15">
+<p>A <strong>Character Layer</strong> represents a single visual component of a character such as a <strong>body</strong>, <strong>outfit</strong>, or <strong>hairstyle</strong>.</p>
+<p>A <strong>Layered Character</strong> is created by stacking multiple layers together.<br>
+Each layer uses a <strong>spritesheet</strong> that contains all animation frames for that part of the character.</p>
+<p>There are three main concepts involved when working with layers:</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="15">
-<th sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="15">Concept</th>
-<th sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="15">Description</th>
+<tr>
+<th>Concept</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="17">
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="17"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="17">Character Layer</strong></td>
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="17">A visual part of a character (Body, Outfit, Hair, etc.)</td>
+<tr>
+<td><strong>Character Layer</strong></td>
+<td>A visual part of a character (Body, Outfit, Hair, etc.)</td>
 </tr>
-<tr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="18">
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="18"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="18">Character Layer Definition</strong></td>
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="18">An asset that defines all spritesheets available for that layer</td>
+<tr>
+<td><strong>Character Layer Definition</strong></td>
+<td>An asset that defines all spritesheets available for that layer</td>
 </tr>
-<tr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="19">
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="19"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="19">Character Layer Option</strong></td>
-<td sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="19">A single spritesheet that can be used for that layer</td>
+<tr>
+<td><strong>Character Layer Option</strong></td>
+<td>A single spritesheet that can be used for that layer</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="21">
-<h2 id="character-layer-definitions" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="23">Character Layer Definitions</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="25"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="25">Character Layer Definitions</strong> are <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="25">scriptable objects</strong> that define all available spritesheets that can be used for a specific layer of a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="25">Layered Character</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="27"><img src="../../images/character-types/layered-characters/character-layers/character-layer-definition.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="27" alt="Character Layer Definition asset"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="29">Each <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="29">Layered Character</strong> is built by combining multiple layers together.<br>
-<strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="30">Example Character Layers</strong>:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="31">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="31"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="31">Body</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="32"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="32">Outfit</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="33"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="33">Hairstyle</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="34"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="34">Accessory</strong></li>
+<hr>
+<h2 id="character-layer-definitions">Character Layer Definitions</h2>
+<p><strong>Character Layer Definitions</strong> are <strong>scriptable objects</strong> that define all available spritesheets that can be used for a specific layer of a <strong>Layered Character</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/character-layer-definition.png" alt="Character Layer Definition asset"></p>
+<p>Each <strong>Layered Character</strong> is built by combining multiple layers together.<br>
+<strong>Example Character Layers</strong>:</p>
+<ul>
+<li><strong>Body</strong></li>
+<li><strong>Outfit</strong></li>
+<li><strong>Hairstyle</strong></li>
+<li><strong>Accessory</strong></li>
 </ul>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="36"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="36">Character Layer Definitions</strong> are connected directly to a <a class="xref" href="layered-character-type.html" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber=36>Layered Character Type asset</a>.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="38">
-<h2 id="creating-a-character-layer-definition" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="40">Creating a Character Layer Definition</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="42">To create a new Layer Definition:</p>
-<ol sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="44">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="44"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="44">Right click</strong> the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="44">Project window</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="45">Navigate to: <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="45">Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Layer Definition</strong></li>
+<p><strong>Character Layer Definitions</strong> are connected directly to a <a class="xref" href="layered-character-type.html">Layered Character Type asset</a>.</p>
+<hr>
+<h2 id="creating-a-character-layer-definition">Creating a Character Layer Definition</h2>
+<p>To create a new Layer Definition:</p>
+<ol>
+<li><strong>Right click</strong> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Layer Definition</strong></li>
 </ol>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="47"><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="47" alt="Create Character Layer Definition"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="49">Create a new <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="49">Layer Definition</strong> for every layer you want your characters to have.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="51">Once all <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="51">Layer Defintions</strong> have been created, add them to the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="51">Layers list</strong> inside your <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="51">Layered Character Type</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="53"><img src="../../images/character-types/layered-characters/layers-list.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="53" alt="Layers List"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="55">The <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="55">order of the layers in this list determines the render order</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="57">Layers are rendered <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="57">from top to bottom in the list</strong>, meaning:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="58">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="58">Top of List = Rendered First (Behind)</li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="59">Bottom of List = Rendered Last (In Front)</li>
+<p><img src="../../images/character-types/layered-characters/character-layers/create-character-layer-definition.png" alt="Create Character Layer Definition"></p>
+<p>Create a new <strong>Layer Definition</strong> for every layer you want your characters to have.</p>
+<p>Once all <strong>Layer Defintions</strong> have been created, add them to the <strong>Layers list</strong> inside your <strong>Layered Character Type</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/layers-list.png" alt="Layers List"></p>
+<p>The <strong>order of the layers in this list determines the render order</strong>.</p>
+<p>Layers are rendered <strong>from top to bottom in the list</strong>, meaning:</p>
+<ul>
+<li>Top of List = Rendered First (Behind)</li>
+<li>Bottom of List = Rendered Last (In Front)</li>
 </ul>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="61">
-<h2 id="character-layer-options" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="63">Character Layer Options</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="65">A <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="65">Character Layer Option</strong> represents a single spritesheet that can be used for a layer.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="67">Each entry in the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="67">Layer Options list</strong> corresponds to one possible appearance for that layer.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="69"><img src="../../images/character-types/character-layers/character-layer-options-list.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="69" alt="Character Layer Options List"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="71">For a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="71">Layered Character</strong> to be created, a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="71">Layer Option</strong> must be chosen from every layer.</p>
-<div class="CAUTION" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="73">
+<hr>
+<h2 id="character-layer-options">Character Layer Options</h2>
+<p>A <strong>Character Layer Option</strong> represents a single spritesheet that can be used for a layer.</p>
+<p>Each entry in the <strong>Layer Options list</strong> corresponds to one possible appearance for that layer.</p>
+<p><img src="../../images/character-types/character-layers/character-layer-options-list.png" alt="Character Layer Options List"></p>
+<p>For a <strong>Layered Character</strong> to be created, a <strong>Layer Option</strong> must be chosen from every layer.</p>
+<div class="CAUTION">
 <h5>Caution</h5>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="74">All layer spritesheets must be the exact same size as the <a class="xref" href="character-types.html#base-spritesheet" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber=74>Base Spritesheet</a> defined in the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="74">Layered Character Type asset</strong>.<br>
-If the dimensions do not match, the spritesheet will be considered <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="75">invalid</strong>.</p>
+<p>All layer spritesheets must be the exact same size as the <a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a> defined in the <strong>Layered Character Type asset</strong>.<br>
+If the dimensions do not match, the spritesheet will be considered <strong>invalid</strong>.</p>
 </div>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="77">A <a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber=77>Character Layer Option</a> is internally used by the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="77">Character Management System</strong> to reference and load the spritesheet when the character is created.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="79">
-<h2 id="adding-layer-options" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="81">Adding Layer Options</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="83"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="83">Layer Options</strong> are <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="83">not added manually</strong> to the list.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="85">Instead, they are automatically collected using Unity's Addressables system.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="87">To add a spritesheet as a valid option:</p>
-<ol sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="89">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="89">Select the spritesheet in the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="89">Project window</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="90">In the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="90">Inspector</strong>, enable <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="90">Addressable</strong> at the top</li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="91">Assign the correct <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="91">Addressables Label</strong>.</li>
+<p>A <a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">Character Layer Option</a> is internally used by the <strong>Character Management System</strong> to reference and load the spritesheet when the character is created.</p>
+<hr>
+<h2 id="adding-layer-options">Adding Layer Options</h2>
+<p><strong>Layer Options</strong> are <strong>not added manually</strong> to the list.</p>
+<p>Instead, they are automatically collected using Unity's Addressables system.</p>
+<p>To add a spritesheet as a valid option:</p>
+<ol>
+<li>Select the spritesheet in the <strong>Project window</strong></li>
+<li>In the <strong>Inspector</strong>, enable <strong>Addressable</strong> at the top</li>
+<li>Assign the correct <strong>Addressables Label</strong>.</li>
 </ol>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="93">The label must match the <a href="#layer-asset-label" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="93">Layer Asset Label</a> configured in the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="93">Character Layer Definition asset</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="95"><img src="../../images/character-types/layered-characters/character-layers/layer-option-addressables-marking.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="95" alt="Layer Option Addressables Marking"></p>
-<div class="TIP" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="97">
+<p>The label must match the <a href="#layer-asset-label">Layer Asset Label</a> configured in the <strong>Character Layer Definition asset</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/layer-option-addressables-marking.png" alt="Layer Option Addressables Marking"></p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="98">You can mark an <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="98">entire folder</strong> as Addressable and assign a label.<br>
+<p>You can mark an <strong>entire folder</strong> as Addressable and assign a label.<br>
 All assets inside the folder will be automatically marked as Addressable and inherit the label.</p>
 </div>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="101">After labeling all spritesheets, return to the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="101">Character Layer Definition asset</strong> and press <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="101">Collect Layer Options</strong></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="103"><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="103" alt="Collect Layer Options button"></p>
-<div class="TIP" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="105">
+<p>After labeling all spritesheets, return to the <strong>Character Layer Definition asset</strong> and press <strong>Collect Layer Options</strong></p>
+<p><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" alt="Collect Layer Options button"></p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="106">The <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="106">Layered Character Type</strong> asset also contains a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="106">Collect Layer Options</strong> button which collects options for all layers at once.</p>
+<p>The <strong>Layered Character Type</strong> asset also contains a <strong>Collect Layer Options</strong> button which collects options for all layers at once.</p>
 </div>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="108">
-<h3 id="spritesheet-requirements" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="110">Spritesheet Requirements</h3>
-<div class="IMPORTANT" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="112">
+<hr>
+<h3 id="spritesheet-requirements">Spritesheet Requirements</h3>
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="113">All layer spritesheets must use the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="113">same frame layout</strong> as the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="113">Base Spritesheet</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="115">This means:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="116">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="116">Same <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="116">texture dimensions</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="117">Same <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="117">frame sizes</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="118">Same <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="118">frame positions</strong></li>
+<p>All layer spritesheets must use the <strong>same frame layout</strong> as the <strong>Base Spritesheet</strong>.</p>
+<p>This means:</p>
+<ul>
+<li>Same <strong>texture dimensions</strong></li>
+<li>Same <strong>frame sizes</strong></li>
+<li>Same <strong>frame positions</strong></li>
 </ul>
 </div>
-<h4 id="required-settings" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="120">Required Settings</h4>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="122">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="122"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="122">Sprite Mode = Single</strong></li>
+<h4 id="required-settings">Required Settings</h4>
+<ul>
+<li><strong>Sprite Mode = Single</strong></li>
 </ul>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="124">Layer spritesheets must use <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="124">Single</strong> mode because the system does <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="124">not use individual sprite frames</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="126">Instead, the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="126">entire spritesheet texture</strong> is passed to the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="126">Character Shader</strong>, which handles rendering the character.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="128"><a class="xref" href="../getting-started/basic-concepts.html#the-character-shader" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber=128>Read More → The Character Shader</a></p>
-<h4 id="recommended-settings" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="130">Recommended Settings</h4>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="131">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="131"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="131">Filter Mode = Point (No Filter)</strong> - Keeps image sharp</li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="132"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="132">Compression = None</strong> - Generally not needed for pixel art</li>
+<p>Layer spritesheets must use <strong>Single</strong> mode because the system does <strong>not use individual sprite frames</strong>.</p>
+<p>Instead, the <strong>entire spritesheet texture</strong> is passed to the <strong>Character Shader</strong>, which handles rendering the character.</p>
+<p><a class="xref" href="../getting-started/basic-concepts.html#the-character-shader">Read More → The Character Shader</a></p>
+<h4 id="recommended-settings">Recommended Settings</h4>
+<ul>
+<li><strong>Filter Mode = Point (No Filter)</strong> - Keeps image sharp</li>
+<li><strong>Compression = None</strong> - Generally not needed for pixel art</li>
 </ul>
-<h4 id="spritesheet-blurry" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="134">Spritesheet Blurry?</h4>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">If your spritesheet is blurry even after setting the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">Filter Mode</strong> to <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">Point</strong>, check if the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">spritesheet size</strong> is greater than the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">Max Size</strong> setting. If it is, increase the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="135">Max Size</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="137"><img src="../../images/character-types/layered-characters/character-layers/character-spritesheet-max-size.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="137" alt="Character Spritesheet Max Size Setting"></p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="139">
-<h2 id="fields" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="141">Fields</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="143">Below is a description of every field in the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="143">Character Layer Definition asset</strong>.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="145">
-<h3 id="attached-character-type" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="147">Attached Character Type</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="149">The <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="149">Layered Character Type asset</strong> that this layer belongs to.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="151"><img src="../../images/character-types/layered-characters/character-layers/fields/attached-character-type.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="151" alt="Attached Character Type Field"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="153">This is used to ensure the layer only collects spritesheets that match the Base Spritesheet size.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="155">
-<h3 id="layer-name" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="157">Layer Name</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="159">The display name of the layer.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="161"><img src="../../images/character-types/layered-characters/character-layers/fields/layer-name.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="161" alt="Layer Name Field"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="163">This name is used by the <a class="xref" href="../character-creator/character-creator-overview.html" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber=163>Character Creator</a> when showing layer names in the UI.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="165">The name <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="165">does not need to be unique</strong>.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="167">
-<h3 id="layer-asset-label" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="169">Layer Asset Label</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="171">The Addressables Label used to collect spritesheets for this layer.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="173"><img src="../../images/character-types/layered-characters/character-layers/fields/layer-asset-label.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="173" alt="Layer Asset Label Field"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="175">The Character Management System uses Unity Addressables to dynamically load and unload spritesheets.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="177">All spritesheets intended for this layer must:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="178">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="178">Be marked as <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="178">Addressable</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="179">Use the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="179">same label</strong> configured in this field.</li>
+<h4 id="spritesheet-blurry">Spritesheet Blurry?</h4>
+<p>If your spritesheet is blurry even after setting the <strong>Filter Mode</strong> to <strong>Point</strong>, check if the <strong>spritesheet size</strong> is greater than the <strong>Max Size</strong> setting. If it is, increase the <strong>Max Size</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/character-spritesheet-max-size.png" alt="Character Spritesheet Max Size Setting"></p>
+<hr>
+<h2 id="fields">Fields</h2>
+<p>Below is a description of every field in the <strong>Character Layer Definition asset</strong>.</p>
+<hr>
+<h3 id="attached-character-type">Attached Character Type</h3>
+<p>The <strong>Layered Character Type asset</strong> that this layer belongs to.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/attached-character-type.png" alt="Attached Character Type Field"></p>
+<p>This is used to ensure the layer only collects spritesheets that match the Base Spritesheet size.</p>
+<hr>
+<h3 id="layer-name">Layer Name</h3>
+<p>The display name of the layer.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/layer-name.png" alt="Layer Name Field"></p>
+<p>This name is used by the <a class="xref" href="../character-creator/character-creator-overview.html">Character Creator</a> when showing layer names in the UI.</p>
+<p>The name <strong>does not need to be unique</strong>.</p>
+<hr>
+<h3 id="layer-asset-label">Layer Asset Label</h3>
+<p>The Addressables Label used to collect spritesheets for this layer.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/layer-asset-label.png" alt="Layer Asset Label Field"></p>
+<p>The Character Management System uses Unity Addressables to dynamically load and unload spritesheets.</p>
+<p>All spritesheets intended for this layer must:</p>
+<ul>
+<li>Be marked as <strong>Addressable</strong></li>
+<li>Use the <strong>same label</strong> configured in this field.</li>
 </ul>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="181">When the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="181">Collect Layer Options</strong> button is pressed, all spritesheets using this label are added to the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="181">Layer Options list</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="183">Read <a href="#adding-layer-options" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="183">Adding Layer Options</a> for more info.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="185">
-<h3 id="include-blank-option" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="187">Include Blank Option</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="189">If enabled, a <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="189">blank option</strong> will be automatically added to the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="189">Layer Options list</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="191"><img src="../../images/character-types/layered-characters/character-layers/fields/include-blank-option.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="191" alt="Include Blank Option Field"></p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="193">This allows characters to be created <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="193">without using that layer</strong>.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="195"><strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="195">Example use cases</strong>:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="196">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="196">Characters without accessories</li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="197">Characters without facial hair</li>
+<p>When the <strong>Collect Layer Options</strong> button is pressed, all spritesheets using this label are added to the <strong>Layer Options list</strong>.</p>
+<p>Read <a href="#adding-layer-options">Adding Layer Options</a> for more info.</p>
+<hr>
+<h3 id="include-blank-option">Include Blank Option</h3>
+<p>If enabled, a <strong>blank option</strong> will be automatically added to the <strong>Layer Options list</strong>.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/fields/include-blank-option.png" alt="Include Blank Option Field"></p>
+<p>This allows characters to be created <strong>without using that layer</strong>.</p>
+<p><strong>Example use cases</strong>:</p>
+<ul>
+<li>Characters without accessories</li>
+<li>Characters without facial hair</li>
 </ul>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="199">If this option is selected at runtime, an <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="199">empty sprite</strong> will be used instead of a spritesheet.</p>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="201"><img src="../../images/character-types/layered-characters/character-layers/include-blank-option.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="201" alt="Include Blank Option"></p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="203">
-<h2 id="inspector-buttons" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="205">Inspector Buttons</h2>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="207"><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="207" alt="Button"></p>
-<h3 id="collect-layer-options" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="209">Collect Layer Options</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="211">Searches for all spritesheets that:</p>
-<ul sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="213">
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="213">Are marked as <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="213">Addressable</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="214">Match the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="214">Layer Asset Label</strong></li>
-<li sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="215">Have the same <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="215">texture dimensions</strong> as the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="215">Base Spritesheet</strong></li>
+<p>If this option is selected at runtime, an <strong>empty sprite</strong> will be used instead of a spritesheet.</p>
+<p><img src="../../images/character-types/layered-characters/character-layers/include-blank-option.png" alt="Include Blank Option"></p>
+<hr>
+<h2 id="inspector-buttons">Inspector Buttons</h2>
+<p><img src="../../images/character-types/layered-characters/character-layers/inspector-buttons.png" alt="Button"></p>
+<h3 id="collect-layer-options">Collect Layer Options</h3>
+<p>Searches for all spritesheets that:</p>
+<ul>
+<li>Are marked as <strong>Addressable</strong></li>
+<li>Match the <strong>Layer Asset Label</strong></li>
+<li>Have the same <strong>texture dimensions</strong> as the <strong>Base Spritesheet</strong></li>
 </ul>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="217">If all conditions are met, the spritesheet is added to the Layer Options list.</p>
-<hr sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="219">
-<h3 id="clear-options-list" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="221">Clear Options List</h3>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="222">Removes all entries from the <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="222">Layer Options list</strong>.</p>
-<div class="TIP" sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="224">
+<p>If all conditions are met, the spritesheet is added to the Layer Options list.</p>
+<hr>
+<h3 id="clear-options-list">Clear Options List</h3>
+<p>Removes all entries from the <strong>Layer Options list</strong>.</p>
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="225">This action can be undone using <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="225">Ctrl + Z</strong> (Windows) or <strong sourcefile="docs/character-types/character-layers.md" sourcestartlinenumber="225">Command + Z</strong> (Mac).</p>
+<p>This action can be undone using <strong>Ctrl + Z</strong> (Windows) or <strong>Command + Z</strong> (Mac).</p>
 </div>
 
 </article>

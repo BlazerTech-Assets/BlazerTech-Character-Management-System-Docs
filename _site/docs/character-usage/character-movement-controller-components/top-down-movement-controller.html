@@ -101,142 +101,142 @@
         </div>
 
         <article data-uid="top-down-character-movement-controller-component">
-<h1 id="top-down-character-movement-controller" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="6">Top Down Character Movement Controller</h1>
+<h1 id="top-down-character-movement-controller">Top Down Character Movement Controller</h1>
 
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="8">Handles player movement for 2d top-down games where there are four directions the player can move (Left, right, up, down).</p>
-<h2 id="input-configuration" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="10">Input Configuration</h2>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="12">This component uses Unitys <strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="12">New Input System</strong>. Every input action is configurable.</p>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="14"><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="14">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
-<h3 id="input-actions" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="16">Input Actions</h3>
-<table sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="18">
+<p>Handles player movement for 2d top-down games where there are four directions the player can move (Left, right, up, down).</p>
+<h2 id="input-configuration">Input Configuration</h2>
+<p>This component uses Unitys <strong>New Input System</strong>. Every input action is configurable.</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
+<h3 id="input-actions">Input Actions</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="18">
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="18">Input Action</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="18">Type</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="18">Usage</th>
+<tr>
+<th>Input Action</th>
+<th>Type</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20">Move Action</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20">Vector2</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="20">The input action used to control player movement along the X and Y axes.</td>
+<tr>
+<td><strong>Move Action</strong></td>
+<td><code>Vector2</code></td>
+<td>The input action used to control player movement along the X and Y axes.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21">Sprint Action</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21">Button</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="21">The input action used to let the player sprint. (If enabled)</td>
+<tr>
+<td><strong>Sprint Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player sprint. (If enabled)</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22">Crouch Action</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22">Button</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="22">The input action used to let the player crouch. (If enabled)</td>
+<tr>
+<td><strong>Crouch Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player crouch. (If enabled)</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="24">A default <strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="24">Input Action asset</strong> is included under the <code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="24">/Input Actions</code> subfolder.<br>
+<p>A default <strong>Input Action asset</strong> is included under the <code>/Input Actions</code> subfolder.<br>
 This asset contains the default input actions for moving, sprinting and crouching.</p>
-<h3 id="auto-enable-actions" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="27">Auto Enable Actions</h3>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="29">If <strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="29">Auto Enable Actions</strong> is enabled, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
-This is useful when not using a <strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="30">PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="30">project‑wide input actions asset</a> that handles enabling automatically.</p>
-<h2 id="movement-settings" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="32">Movement Settings</h2>
-<table sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="34">
+<h3 id="auto-enable-actions">Auto Enable Actions</h3>
+<p>If <strong>Auto Enable Actions</strong> is enabled, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
+This is useful when not using a <strong>PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html">project‑wide input actions asset</a> that handles enabling automatically.</p>
+<h2 id="movement-settings">Movement Settings</h2>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="34">
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="34">Field</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="34">Type</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="34">Description</th>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36">Move Speed</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36">Float</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36">Base walk speed (Default: <code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="36">6.5</code>).</td>
+<tr>
+<td><strong>Move Speed</strong></td>
+<td><code>Float</code></td>
+<td>Base walk speed (Default: <code>6.5</code>).</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37">Can Move</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37">Bool</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="37">Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
+<tr>
+<td><strong>Can Move</strong></td>
+<td><code>Bool</code></td>
+<td>Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="sprinting--crouching" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="40">Sprinting &amp; Crouching</h2>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="42">Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
+<h2 id="sprinting--crouching">Sprinting &amp; Crouching</h2>
+<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
 Each system has customizable speed and button mode options.</p>
-<table sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="45">
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="45">
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="45">Field</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="45">Type</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="45">Description</th>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47">Speed</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47">Float</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="47">Movement speed while sprint or crouching.</td>
+<tr>
+<td><strong>Speed</strong></td>
+<td><code>Float</code></td>
+<td>Movement speed while sprint or crouching.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48">Mode</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48">Enum</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48">Determines whether the button must be held or toggled. (Default: <code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="48">Hold</code>)</td>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Determines whether the button must be held or toggled. (Default: <code>Hold</code>)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="references" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="50">References</h2>
-<table sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="52">
+<h2 id="references">References</h2>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="52">
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="52">Reference</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="52">Type</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="52">Description</th>
+<tr>
+<th>Reference</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54">Rigidbody2D</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54">Rigidbody2D</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="54">Required reference used for applying movement.</td>
+<tr>
+<td><strong>Rigidbody2D</strong></td>
+<td><code>Rigidbody2D</code></td>
+<td>Required reference used for applying movement.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="runtime-properties" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="56">Runtime Properties</h2>
-<table sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="58">
+<h2 id="runtime-properties">Runtime Properties</h2>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="58">
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="58">Property</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="58">Type</th>
-<th sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="58">Description</th>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60">IsMoving</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60">bool</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="60">True if the player is currently moving.</td>
+<tr>
+<td><strong>IsMoving</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently moving.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61">IsSprinting</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61">bool</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="61">True if the player is currently sprinting.</td>
+<tr>
+<td><strong>IsSprinting</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently sprinting.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62">IsCrouching</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62">bool</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="62">True if the player is currently crouching.</td>
+<tr>
+<td><strong>IsCrouching</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently crouching.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63">
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63"><strong sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63">Movement</strong></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63"><code sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63">Vector2</code></td>
-<td sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="63">Current normalized movement direction.</td>
+<tr>
+<td><strong>Movement</strong></td>
+<td><code>Vector2</code></td>
+<td>Current normalized movement direction.</td>
 </tr>
 </tbody>
 </table>
-<div class="TIP" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="65">
+<div class="TIP">
 <h5>Tip</h5>
-<p sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="66">Designed to be used along with a <a href="#character-animator-handlers" sourcefile="docs/character-usage/character-movement-controller-components/top-down-movement-controller.md" sourcestartlinenumber="66">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
+<p>Designed to be used along with a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
 </div>
 
 </article>

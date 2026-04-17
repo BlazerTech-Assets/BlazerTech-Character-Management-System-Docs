@@ -101,250 +101,250 @@
         </div>
 
         <article data-uid="character-animation-setup">
-<h1 id="character-animation-setup" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="6">Character Animation Setup</h1>
+<h1 id="character-animation-setup">Character Animation Setup</h1>
 
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="8">This page goes over how to <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="8">create and properly configure an Animator Controller</strong> to be used by a <a class="xref" href="character-types/character-types.html" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber=8>Character Type</a> asset.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="10">
-<h2 id="overview" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="12">Overview</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="14">Every <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="14">Character Type asset</strong> can include an <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="14">Animator Controller</strong>.<br>
-All animations should use sprites from the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="15">Base Spritesheet</strong> assigned in the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="15">Character Type asset</strong>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="17">All characters using the same <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="17">Character Type</strong> can use a single <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="17">Animator Controller</strong>. No need to create a separate Animator/Override Controller for every new character.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="19">Confused how it's possible to only use one <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="19">Animator Controller</strong> for every character? Read about <a class="xref" href="getting-started/basic-concepts.html#the-character-shader" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber=19>The Character Shader</a>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="21">The setup process is the same for both <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="21">Unified</strong> and <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="21">Layered Character Types</strong>.</p>
-<div class="IMPORTANT" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="23">
+<p>This page goes over how to <strong>create and properly configure an Animator Controller</strong> to be used by a <a class="xref" href="character-types/character-types.html">Character Type</a> asset.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Every <strong>Character Type asset</strong> can include an <strong>Animator Controller</strong>.<br>
+All animations should use sprites from the <strong>Base Spritesheet</strong> assigned in the <strong>Character Type asset</strong>.</p>
+<p>All characters using the same <strong>Character Type</strong> can use a single <strong>Animator Controller</strong>. No need to create a separate Animator/Override Controller for every new character.</p>
+<p>Confused how it's possible to only use one <strong>Animator Controller</strong> for every character? Read about <a class="xref" href="getting-started/basic-concepts.html#the-character-shader">The Character Shader</a>.</p>
+<p>The setup process is the same for both <strong>Unified</strong> and <strong>Layered Character Types</strong>.</p>
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="24">All animations <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="24">must only use sprites from the Base Spritesheet</strong>.<br>
-If sprites from other sheets are used, they <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="25">will not render correctly</strong> when used with the <a href="xref:character-usage#the-character-shader" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="25">Character Shader</a>.</p>
+<p>All animations <strong>must only use sprites from the Base Spritesheet</strong>.<br>
+If sprites from other sheets are used, they <strong>will not render correctly</strong> when used with the <a href="xref:character-usage#the-character-shader">Character Shader</a>.</p>
 </div>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="27">If you already have your own movement and animator handling scripts, you can setup the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="27">Animator Controller</strong>
+<p>If you already have your own movement and animator handling scripts, you can setup the <strong>Animator Controller</strong>
 however you need for you project. That means you can create your own parameters, animation states, blend trees, etc.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="30">
-<h2 id="integration-with-built-in-scripts" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="32">Integration with Built-In Scripts</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="33">The <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="33">BlazerTech Character Management System</strong> includes pre-built movement and animator handling scripts.
+<hr>
+<h2 id="integration-with-built-in-scripts">Integration with Built-In Scripts</h2>
+<p>The <strong>BlazerTech Character Management System</strong> includes pre-built movement and animator handling scripts.
 The included scripts contain support for the following movement animations:</p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="35">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="35"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="35">Idle</strong></li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="36"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="36">Walk</strong></li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="37"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="37">Sprint</strong></li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="38"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="38">Crouch-Idle</strong></li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="39"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="39">Crouch-Moving</strong></li>
+<ul>
+<li><strong>Idle</strong></li>
+<li><strong>Walk</strong></li>
+<li><strong>Sprint</strong></li>
+<li><strong>Crouch-Idle</strong></li>
+<li><strong>Crouch-Moving</strong></li>
 </ul>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="41">Additional animations can be played at runtime using:</p>
-<pre><code class="lang-csharp" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="42">PlayAnimation(&quot;AnimationName&quot;);
+<p>Additional animations can be played at runtime using:</p>
+<pre><code class="lang-csharp">PlayAnimation(&quot;AnimationName&quot;);
 </code></pre>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="45">on any <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="45">Character Animator Handler</strong> component.</p>
-<h2 id="1create-an-animator-controller" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="47">1️⃣Create an Animator Controller</h2>
-<ol sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="48">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="48">In the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="48">Project window</strong>, right-click and select<br>
-<code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="49">Create &gt; Animation &gt; Animator Controller</code>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="50"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="50">Name asset</strong> (Recommended to name it after the Character Type it's used for)</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="51">Double-click to open it in the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="51">Animator window</strong>.</li>
+<p>on any <strong>Character Animator Handler</strong> component.</p>
+<h2 id="1create-an-animator-controller">1️⃣Create an Animator Controller</h2>
+<ol>
+<li>In the <strong>Project window</strong>, right-click and select<br>
+<code>Create &gt; Animation &gt; Animator Controller</code>.</li>
+<li><strong>Name asset</strong> (Recommended to name it after the Character Type it's used for)</li>
+<li>Double-click to open it in the <strong>Animator window</strong>.</li>
 </ol>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="53">You should now see an empty Animator Controller.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="55">
-<h2 id="2add-parameters" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="57">2️⃣Add Parameters</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="58">The built-in <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="58">Character Animator Handler</strong> components do <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="58">not</strong> call animations directly.<br>
-Instead, they modify <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="59">parameters</strong> set in the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="59">Animator Controller</strong>, which control transitions between animation states.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="61">The <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="61">Parameters</strong> section is located in the top left of the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="61">Animator window</strong>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="63"><img src="../images/character-animation/character-animator-create-parameter.png" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="63" alt="Character Animator Controller Create Parameter"></p>
-<h3 id="required-parameters" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="65">Required Parameters</h3>
-<table sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="67">
+<p>You should now see an empty Animator Controller.</p>
+<hr>
+<h2 id="2add-parameters">2️⃣Add Parameters</h2>
+<p>The built-in <strong>Character Animator Handler</strong> components do <strong>not</strong> call animations directly.<br>
+Instead, they modify <strong>parameters</strong> set in the <strong>Animator Controller</strong>, which control transitions between animation states.</p>
+<p>The <strong>Parameters</strong> section is located in the top left of the <strong>Animator window</strong>.</p>
+<p><img src="../images/character-animation/character-animator-create-parameter.png" alt="Character Animator Controller Create Parameter"></p>
+<h3 id="required-parameters">Required Parameters</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="67">
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="67">Parameter Name</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="67">Type</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="67">Usage</th>
+<tr>
+<th>Parameter Name</th>
+<th>Type</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="69">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="69"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="69">Horiztonal Movement</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="69">Float</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="69">Ranges from -1 to 1. Represents left/right movement on the X-axis.</td>
+<tr>
+<td><strong>Horiztonal Movement</strong></td>
+<td>Float</td>
+<td>Ranges from -1 to 1. Represents left/right movement on the X-axis.</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="70">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="70"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="70">Vertical Movement</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="70">Float</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="70">Ranges from -1 to 1. Represents up/down movement on the Y-axis.</td>
+<tr>
+<td><strong>Vertical Movement</strong></td>
+<td>Float</td>
+<td>Ranges from -1 to 1. Represents up/down movement on the Y-axis.</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="71">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="71"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="71">Is Moving</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="71">Bool</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="71">True when the character is moving; otherwise false.</td>
+<tr>
+<td><strong>Is Moving</strong></td>
+<td>Bool</td>
+<td>True when the character is moving; otherwise false.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="optional-parameters" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="73">Optional Parameters</h3>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="75">Optional parameters will only be used if toggled in the movement and animator handler components.</p>
-<table sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="77">
+<h3 id="optional-parameters">Optional Parameters</h3>
+<p>Optional parameters will only be used if toggled in the movement and animator handler components.</p>
+<table>
 <thead>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="77">
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="77">Parameter Name</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="77">Type</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="77">Usage</th>
+<tr>
+<th>Parameter Name</th>
+<th>Type</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="79">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="79"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="79">Is Sprinting</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="79">Bool</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="79">True when the character is sprinting; otherwise false.</td>
+<tr>
+<td><strong>Is Sprinting</strong></td>
+<td>Bool</td>
+<td>True when the character is sprinting; otherwise false.</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="80">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="80"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="80">Is Crouching</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="80">Bool</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="80">True when the character is crouching; otherwise false.</td>
+<tr>
+<td><strong>Is Crouching</strong></td>
+<td>Bool</td>
+<td>True when the character is crouching; otherwise false.</td>
 </tr>
 </tbody>
 </table>
-<div class="IMPORTANT" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="82">
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="83">These parameter names must match <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="83">exactly</strong> with what's set in the built-in Animator Handler components.</p>
+<p>These parameter names must match <strong>exactly</strong> with what's set in the built-in Animator Handler components.</p>
 </div>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="85">
-<h2 id="3add-animation-states" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="87">3️⃣Add Animation States</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="88">Because the built-in animator handler components only modify parameters, you can design your animation state layout freely.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="90">A common approach is to use Blend Trees for animations that play in four directions (Up, Down, Left, Right).</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="92">In this example we'll be setting up an <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="92">Idle</strong> and <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="92">Walk</strong> blend tree.</p>
-<h3 id="create-animation-clips" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="94">Create Animation Clips</h3>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="96"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="96">Right Click</strong> the Project window and navigate to <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="96">Create &gt; Animation &gt; Animation Clip</code>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="98">We'll create 4 animation clips. 1 for each direction.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="100"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="100">Idle</strong></p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="101">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="101">Idle Down</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="102">Idle Up</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="103">Idle Left</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="104">Idle Right</li>
+<hr>
+<h2 id="3add-animation-states">3️⃣Add Animation States</h2>
+<p>Because the built-in animator handler components only modify parameters, you can design your animation state layout freely.</p>
+<p>A common approach is to use Blend Trees for animations that play in four directions (Up, Down, Left, Right).</p>
+<p>In this example we'll be setting up an <strong>Idle</strong> and <strong>Walk</strong> blend tree.</p>
+<h3 id="create-animation-clips">Create Animation Clips</h3>
+<p><strong>Right Click</strong> the Project window and navigate to <code>Create &gt; Animation &gt; Animation Clip</code>.</p>
+<p>We'll create 4 animation clips. 1 for each direction.</p>
+<p><strong>Idle</strong></p>
+<ul>
+<li>Idle Down</li>
+<li>Idle Up</li>
+<li>Idle Left</li>
+<li>Idle Right</li>
 </ul>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="106"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="106">Walk</strong></p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="107">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="107">Walk Down</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="108">Walk up</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="109">Walk Left</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="110">Walk Right</li>
+<p><strong>Walk</strong></p>
+<ul>
+<li>Walk Down</li>
+<li>Walk up</li>
+<li>Walk Left</li>
+<li>Walk Right</li>
 </ul>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="112">You can leave these clips empty for now, we’ll add frames later.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="114">
-<h3 id="create-and-setup-blend-trees" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="116">Create and Setup Blend Trees</h3>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="118">Repeat these steps for each 4 directional animation set you want to setup.</p>
-<ol sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="120">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="120"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="120">Right-click</strong> Animator window &gt; <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="120">Create State &gt; From New Blend Tree</code>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="121">Name the blend tree after the animation name (eg: Idle, Walk).</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="122">Double click the blend tree to open it.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="123">In the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="123">Blend Tree</strong>, set <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="123">Blend Type</strong> to <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="123">2D Simple Directional</code>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="124">Assign <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="124">Blend Parameters</strong> to:
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="125">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="125">X: <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="125">Horizontal Movement</code></li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="126">Y: <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="126">Vertical Movement</code></li>
+<p>You can leave these clips empty for now, we’ll add frames later.</p>
+<hr>
+<h3 id="create-and-setup-blend-trees">Create and Setup Blend Trees</h3>
+<p>Repeat these steps for each 4 directional animation set you want to setup.</p>
+<ol>
+<li><strong>Right-click</strong> Animator window &gt; <code>Create State &gt; From New Blend Tree</code>.</li>
+<li>Name the blend tree after the animation name (eg: Idle, Walk).</li>
+<li>Double click the blend tree to open it.</li>
+<li>In the <strong>Blend Tree</strong>, set <strong>Blend Type</strong> to <code>2D Simple Directional</code>.</li>
+<li>Assign <strong>Blend Parameters</strong> to:
+<ul>
+<li>X: <code>Horizontal Movement</code></li>
+<li>Y: <code>Vertical Movement</code></li>
 </ul>
 </li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="127">Add motions for each direction (Up, Down, Left, Right).</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="128">Assign animations to each motion from the animation clips we created earlier.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="129">Set X and Y position to correspond to all 4 directions for each animation.</li>
+<li>Add motions for each direction (Up, Down, Left, Right).</li>
+<li>Assign animations to each motion from the animation clips we created earlier.</li>
+<li>Set X and Y position to correspond to all 4 directions for each animation.</li>
 </ol>
-<h4 id="coordinate-cheat-sheet" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="131">Coordinate Cheat Sheet</h4>
-<table sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="133">
+<h4 id="coordinate-cheat-sheet">Coordinate Cheat Sheet</h4>
+<table>
 <thead>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="133">
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="133">X Coordinate</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="133">Y Coordinate</th>
-<th sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="133">Direction</th>
+<tr>
+<th>X Coordinate</th>
+<th>Y Coordinate</th>
+<th>Direction</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="135">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="135"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="135">0</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="135">-1</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="135">Down</td>
+<tr>
+<td><strong>0</strong></td>
+<td>-1</td>
+<td>Down</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="136">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="136"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="136">0</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="136">1</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="136">Up</td>
+<tr>
+<td><strong>0</strong></td>
+<td>1</td>
+<td>Up</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="137">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="137"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="137">-1</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="137">0</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="137">Left</td>
+<tr>
+<td><strong>-1</strong></td>
+<td>0</td>
+<td>Left</td>
 </tr>
-<tr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="138">
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="138"><strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="138">1</strong></td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="138">0</td>
-<td sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="138">Right</td>
+<tr>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>Right</td>
 </tr>
 </tbody>
 </table>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="140"><img src="../images/character-animation/character-animator-blend-tree.png" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="140" alt="Character Animator Blend Tree Example"></p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="142">
-<h2 id="4setup-state-transitions" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="144">4️⃣Setup State Transitions</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="145">Lets tell the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="145">Animator Controller</strong> how to transition between states.<br>
-The entry state should be the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="146">Idle blend tree</strong>.<br>
-<code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="147">Right click</code> the Idle blend tree and select <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="147">Set As Layer Default State</code>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="149">Create a transition from <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="149">Idle</strong> to <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="149">Walk</strong>:</p>
-<ol sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="150">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="150"><code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="150">Right click</code> on the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="150">Idle Blend tree</strong>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="151">Select <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="151">Make Transition</code>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="152">Hover over and click on the <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="152">Walk</code> blend tree.</li>
+<p><img src="../images/character-animation/character-animator-blend-tree.png" alt="Character Animator Blend Tree Example"></p>
+<hr>
+<h2 id="4setup-state-transitions">4️⃣Setup State Transitions</h2>
+<p>Lets tell the <strong>Animator Controller</strong> how to transition between states.<br>
+The entry state should be the <strong>Idle blend tree</strong>.<br>
+<code>Right click</code> the Idle blend tree and select <code>Set As Layer Default State</code>.</p>
+<p>Create a transition from <strong>Idle</strong> to <strong>Walk</strong>:</p>
+<ol>
+<li><code>Right click</code> on the <strong>Idle Blend tree</strong>.</li>
+<li>Select <code>Make Transition</code>.</li>
+<li>Hover over and click on the <code>Walk</code> blend tree.</li>
 </ol>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="154">Now lets add a condition to the transition.</p>
-<ol sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="155">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="155">Right click the new transition line.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="156">Add a new condition.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="157">Assign the <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="157">Is Moving</code> parameter and the value to true.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="158">Disable <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="158">Has Exit Time</code> to avoid a delay when transitioning.</li>
+<p>Now lets add a condition to the transition.</p>
+<ol>
+<li>Right click the new transition line.</li>
+<li>Add a new condition.</li>
+<li>Assign the <code>Is Moving</code> parameter and the value to true.</li>
+<li>Disable <code>Has Exit Time</code> to avoid a delay when transitioning.</li>
 </ol>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="160">Now when the character starts moving they will automatically go from the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="160">Idle</strong> blend tree to the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="160">Walk</strong> blend tree</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="162">Now Make another transition from <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="162">Walk</strong> to <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="162">Idle</strong>.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="164">Once again add a new condition, this time set <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="164">Is Moving</code> to false.<br>
+<p>Now when the character starts moving they will automatically go from the <strong>Idle</strong> blend tree to the <strong>Walk</strong> blend tree</p>
+<p>Now Make another transition from <strong>Walk</strong> to <strong>Idle</strong>.</p>
+<p>Once again add a new condition, this time set <code>Is Moving</code> to false.<br>
 This way when the character stops moving they'll go back to playing The idle animations.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="167">
-<h2 id="5setup-animation-clips" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="169">5️⃣Setup Animation Clips</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="171">Now it's time to setup the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="171">animation clips</strong> we created earlier.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="173">Add an <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="173">Animator</code> and <code sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="173">Sprite Renderer</code> component to any game object.</p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="174">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="174">Make sure the game object is selected.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="175">Go to the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="175">Animation</strong> Tab.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="176">Select the animation you want to edit.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="177">Bulk select all sprite frames.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="178">Drag and drop them into the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="178">Animation timeline</strong>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="179">Set Samples. This is essentially the frame rate of your animation. (Recommended: 12)</li>
+<hr>
+<h2 id="5setup-animation-clips">5️⃣Setup Animation Clips</h2>
+<p>Now it's time to setup the <strong>animation clips</strong> we created earlier.</p>
+<p>Add an <code>Animator</code> and <code>Sprite Renderer</code> component to any game object.</p>
+<ul>
+<li>Make sure the game object is selected.</li>
+<li>Go to the <strong>Animation</strong> Tab.</li>
+<li>Select the animation you want to edit.</li>
+<li>Bulk select all sprite frames.</li>
+<li>Drag and drop them into the <strong>Animation timeline</strong>.</li>
+<li>Set Samples. This is essentially the frame rate of your animation. (Recommended: 12)</li>
 </ul>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="181">Repeat for each animation clip.</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="183">
-<h2 id="6add-additional-animations-optional" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="185">6️⃣Add Additional Animations (Optional)</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="186">You can expand your Animator with as many custom animations as needed.</p>
-<h3 id="single-direction-animations" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="188">Single-Direction Animations</h3>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="189">For animation that only play in one direction:</p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="190">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="190">Create a new state.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="191">Assign the clip directly.</li>
+<p>Repeat for each animation clip.</p>
+<hr>
+<h2 id="6add-additional-animations-optional">6️⃣Add Additional Animations (Optional)</h2>
+<p>You can expand your Animator with as many custom animations as needed.</p>
+<h3 id="single-direction-animations">Single-Direction Animations</h3>
+<p>For animation that only play in one direction:</p>
+<ul>
+<li>Create a new state.</li>
+<li>Assign the clip directly.</li>
 </ul>
-<h3 id="multi-directional-animation" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="193">Multi-Directional Animation</h3>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="194">For Directional animations:</p>
-<ul sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="195">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="195">Create another <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="195">blend tree</strong> using the same setup as before.</li>
+<h3 id="multi-directional-animation">Multi-Directional Animation</h3>
+<p>For Directional animations:</p>
+<ul>
+<li>Create another <strong>blend tree</strong> using the same setup as before.</li>
 </ul>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="197">When played, the blend tree automatically chooses the correct direction.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="199">If an animation is not looped, add a transition back to Idle or the Exit node.</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="201">Animations can be triggered manually via:</p>
-<pre><code class="lang-csharp" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="202">animator.Play(&quot;AnimationName&quot;);
+<p>When played, the blend tree automatically chooses the correct direction.</p>
+<p>If an animation is not looped, add a transition back to Idle or the Exit node.</p>
+<p>Animations can be triggered manually via:</p>
+<pre><code class="lang-csharp">animator.Play(&quot;AnimationName&quot;);
 </code></pre>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="205">or</p>
-<pre><code class="lang-csharp" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="206">animatorHandler.PlayAnimation(&quot;AnimationName&quot;);
+<p>or</p>
+<pre><code class="lang-csharp">animatorHandler.PlayAnimation(&quot;AnimationName&quot;);
 </code></pre>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="209">(using the included Animator Handler components).</p>
-<hr sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="211">
-<h2 id="7assign-to-a-character-type" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="213">7️⃣Assign to a Character Type</h2>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="214">Once your Animator Controller is ready:</p>
-<ol sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="216">
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="216">Select your <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="216">Character Type asset</strong>.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="217">In the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="217">Inspector</strong>, find the <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="217">Animator Controller</strong> field.</li>
-<li sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="218">Drag your new <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="218">Animator Controller</strong> into this field.</li>
+<p>(using the included Animator Handler components).</p>
+<hr>
+<h2 id="7assign-to-a-character-type">7️⃣Assign to a Character Type</h2>
+<p>Once your Animator Controller is ready:</p>
+<ol>
+<li>Select your <strong>Character Type asset</strong>.</li>
+<li>In the <strong>Inspector</strong>, find the <strong>Animator Controller</strong> field.</li>
+<li>Drag your new <strong>Animator Controller</strong> into this field.</li>
 </ol>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="220">It should look like this:</p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="222"><img src="../images/character-types/character-type-animator-controller-field.png" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="222" alt="Animator Controller Field in Inspector"></p>
-<p sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="224">When used with a <a class="xref" href="character-usage/character-renderer-components/character-renderer-components.html" sourcefile="docs/character-animation-setup.md" sourcestartlinenumber=224>Character Renderer component</a>,<br>
-the assigned <strong sourcefile="docs/character-animation-setup.md" sourcestartlinenumber="225">Animator Controller</strong> will automatically be applied at runtime.</p>
+<p>It should look like this:</p>
+<p><img src="../images/character-types/character-type-animator-controller-field.png" alt="Animator Controller Field in Inspector"></p>
+<p>When used with a <a class="xref" href="character-usage/character-renderer-components/character-renderer-components.html">Character Renderer component</a>,<br>
+the assigned <strong>Animator Controller</strong> will automatically be applied at runtime.</p>
 
 </article>
 

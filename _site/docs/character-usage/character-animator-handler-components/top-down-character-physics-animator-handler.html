@@ -101,130 +101,130 @@
         </div>
 
         <article data-uid="top-down-character-physics-animator-handler-component">
-<h1 id="top-down-character-physics-animator-handler" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="6">Top Down Character Physics Animator Handler</h1>
+<h1 id="top-down-character-physics-animator-handler">Top Down Character Physics Animator Handler</h1>
 
-<p sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="8">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="8">Top-Down Character Physics Animator Handler</strong> is physics-driven, Every fixed update the position of the GameObject the component is attached to is compared to its possition last frame.</p>
-<p sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="10">This is used to determine the <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="10">direction</strong> the character is moving and <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="10">speed</strong> the character is traveling at.</p>
-<p sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="12"><img src="../../../images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="12" alt="Top Down Character Physics Animator Handler Component"></p>
-<div class="IMPORTANT" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="14">
+<p>The <strong>Top-Down Character Physics Animator Handler</strong> is physics-driven, Every fixed update the position of the GameObject the component is attached to is compared to its possition last frame.</p>
+<p>This is used to determine the <strong>direction</strong> the character is moving and <strong>speed</strong> the character is traveling at.</p>
+<p><img src="../../../images/components/character-animator-handler-components/top-down-character-physics-animator-handler/top-down-character-physics-animator-handler.png" alt="Top Down Character Physics Animator Handler Component"></p>
+<div class="IMPORTANT">
 <h5>Important</h5>
-<p sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="15">Due to the nature of how the <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="15">Top-Down Character Physics Animator Handler</strong> works, crouch animations can only be played when the character is moving.</p>
+<p>Due to the nature of how the <strong>Top-Down Character Physics Animator Handler</strong> works, crouch animations can only be played when the character is moving.</p>
 </div>
-<hr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="17">
-<h2 id="how-it-works" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="19">How It Works</h2>
-<ul sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="21">
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="21">Calculates movement each <code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="21">FixedUpdate()</code> by comparing current and previous positions.</li>
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="22">Determines direction and speed, then updates <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="22">Animator parameters</strong>.</li>
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="23">Optionally toggles <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="23">sprint/crouch</strong> states when enabled.</li>
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="24"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="24">Animator Controller</strong> uses those parameters to play specific animations.</li>
+<hr>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li>Calculates movement each <code>FixedUpdate()</code> by comparing current and previous positions.</li>
+<li>Determines direction and speed, then updates <strong>Animator parameters</strong>.</li>
+<li>Optionally toggles <strong>sprint/crouch</strong> states when enabled.</li>
+<li><strong>Animator Controller</strong> uses those parameters to play specific animations.</li>
 </ul>
-<hr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="27">
-<h2 id="inspector-fields" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="29">Inspector Fields</h2>
-<h3 id="references" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="31">References</h3>
-<table sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="33">
+<hr>
+<h2 id="inspector-fields">Inspector Fields</h2>
+<h3 id="references">References</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="33">
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="33">Parameter</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="33">Type</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="33">Description</th>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35">Animator</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35">Animator</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="35">Animator component</strong> used to set parameters.</td>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>The <strong>Animator component</strong> used to set parameters.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="parameter-names" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="37">Parameter Names</h3>
-<table sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="39">
+<h3 id="parameter-names">Parameter Names</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="39">
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="39">Parameter</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="39">Type</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="39">Description</th>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">Is Moving Param</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">Bool</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">Animator parameter name</strong> used to indicate whether the character is moving.<br>Set to <code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="41">true</code> when movement is detected.</td>
+<tr>
+<td><strong>Is Moving Param</strong></td>
+<td><code>Bool</code></td>
+<td>The <strong>Animator parameter name</strong> used to indicate whether the character is moving.<br>Set to <code>true</code> when movement is detected.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">Horizontal Movement Param</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">String</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">Animator parameter name</strong> for horizontal input.<br><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">-1</code> when moving left and <code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="42">1</code> when moving right.</td>
+<tr>
+<td><strong>Horizontal Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for horizontal input.<br><code>-1</code> when moving left and <code>1</code> when moving right.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">Vertical Movement Param</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">String</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">Animator parameter name</strong> for vertical input.<br><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">-1</code> when moving down and <code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="43">1</code> when moving up.</td>
+<tr>
+<td><strong>Vertical Movement Param</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for vertical input.<br><code>-1</code> when moving down and <code>1</code> when moving up.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="sprint-animation" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="45">Sprint Animation</h3>
-<table sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="47">
+<h3 id="sprint-animation">Sprint Animation</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="47">
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="47">Field</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="47">Type</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="47">Description</th>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49">Enable Sprint</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49">Bool</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49">If true, enables sprinting animations when speed is greater than <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="49">Sprint Min Speed</strong>.</td>
+<tr>
+<td><strong>Enable Sprint</strong></td>
+<td><code>Bool</code></td>
+<td>If true, enables sprinting animations when speed is greater than <strong>Sprint Min Speed</strong>.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50">Sprint Min Speed</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50">Float</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="50">Minimum speed required to trigger sprint animation.</td>
+<tr>
+<td><strong>Sprint Min Speed</strong></td>
+<td><code>Float</code></td>
+<td>Minimum speed required to trigger sprint animation.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51">Sprint Parameter Name</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51">String</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="51">Animator parameter name</strong> for the sprint state (default: &quot;Is Sprinting&quot;).</td>
+<tr>
+<td><strong>Sprint Parameter Name</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for the sprint state (default: &quot;Is Sprinting&quot;).</td>
 </tr>
 </tbody>
 </table>
-<h3 id="crouch-animation" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="53">Crouch Animation</h3>
-<table sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="55">
+<h3 id="crouch-animation">Crouch Animation</h3>
+<table>
 <thead>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="55">
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="55">Field</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="55">Type</th>
-<th sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="55">Description</th>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57">Enable Crouch</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57">Bool</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57">If true, enables crouching animations when speed is less than <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="57">Crouch Max Speed</strong>.</td>
+<tr>
+<td><strong>Enable Crouch</strong></td>
+<td><code>Bool</code></td>
+<td>If true, enables crouching animations when speed is less than <strong>Crouch Max Speed</strong>.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58">Crouch Max Speed</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58">Float</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="58">Maximum speed for crouch animations to be used.</td>
+<tr>
+<td><strong>Crouch Max Speed</strong></td>
+<td><code>Float</code></td>
+<td>Maximum speed for crouch animations to be used.</td>
 </tr>
-<tr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59">
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59"><strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59">Crouch Parameter Name</strong></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59">String</code></td>
-<td sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59">The <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="59">Animator parameter name</strong> for the crouch state (default: &quot;Is Crouching&quot;).</td>
+<tr>
+<td><strong>Crouch Parameter Name</strong></td>
+<td><code>String</code></td>
+<td>The <strong>Animator parameter name</strong> for the crouch state (default: &quot;Is Crouching&quot;).</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="61">
-<h2 id="public-methods" sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="63">Public Methods</h2>
-<p sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="65">All of these methods can be called directly from any instance of the <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="65">Top Down Character Physics Animator Handler</strong> component.</p>
-<ul sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="67">
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="67"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="67">ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="68"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="68">PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
-<li sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="69"><code sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="69">PlayDefaultAnimation()</code>: Play the default animation state defined in the <strong sourcefile="docs/character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md" sourcestartlinenumber="69">Animator Controller</strong>.</li>
+<hr>
+<h2 id="public-methods">Public Methods</h2>
+<p>All of these methods can be called directly from any instance of the <strong>Top Down Character Physics Animator Handler</strong> component.</p>
+<ul>
+<li><code>ChangeDirection(FourDirectional/EightDirectional)</code>: Immediately update the direction the character is facing.</li>
+<li><code>PlayAnimation(string)</code>: Play a specific animation or blend tree by state name.</li>
+<li><code>PlayDefaultAnimation()</code>: Play the default animation state defined in the <strong>Animator Controller</strong>.</li>
 </ul>
 
 </article>

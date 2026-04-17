@@ -101,61 +101,61 @@
         </div>
 
         <article data-uid="ccm-history-tracking-system">
-<h1 id="history-tracking-system" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="5">History Tracking System</h1>
+<h1 id="history-tracking-system">History Tracking System</h1>
 
-<p sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="6">The <strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="6">History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be looked through or undone at anytime.</p>
-<hr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="8">
-<h2 id="features" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="10">Features</h2>
-<table sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="12">
+<p>The <strong>History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be looked through or undone at anytime.</p>
+<hr>
+<h2 id="features">Features</h2>
+<table>
 <thead>
-<tr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="12">
-<th sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="12">Feature</th>
-<th sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="12">Description</th>
+<tr>
+<th>Feature</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="14">
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="14"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="14">Automatic Tracking</strong></td>
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="14">Every change to the character is recorded as a snapshot.</td>
+<tr>
+<td><strong>Automatic Tracking</strong></td>
+<td>Every change to the character is recorded as a snapshot.</td>
 </tr>
-<tr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="15">
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="15"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="15">Undo/Redo</strong></td>
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="15">Step backward or forward through the snapshot list.</td>
+<tr>
+<td><strong>Undo/Redo</strong></td>
+<td>Step backward or forward through the snapshot list.</td>
 </tr>
-<tr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="16">
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="16"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="16">Direct Selection</strong></td>
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="16">Select any snapshot to instantly restore the character.</td>
+<tr>
+<td><strong>Direct Selection</strong></td>
+<td>Select any snapshot to instantly restore the character.</td>
 </tr>
-<tr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="17">
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="17"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="17">Snapshot Limit</strong></td>
-<td sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="17">Configurable maximum number of snapshots (1-100, default = 30).</td>
+<tr>
+<td><strong>Snapshot Limit</strong></td>
+<td>Configurable maximum number of snapshots (1-100, default = 30).</td>
 </tr>
 </tbody>
 </table>
-<hr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="19">
-<h2 id="history-tracker-component" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="21">History Tracker Component</h2>
-<p sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="23">The <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber=23>CCMHistoryTracker</a> component can be added to any game object inside the contents of the Character Creation Menu.</p>
-<ul sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="24">
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="24">Tracks all layer changes made to the character and saves them as a snapshot.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="25">A snapshot contains all information required to restore the character to that exact state.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="26">Snapshots are saved in a list.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="27">Max Snapshots can be set anywhere between 1-100 (Default is 30).</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="28">When the max amount of snapshots is met, oldest snapshots will start being replaced.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="29">The <strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="29">Preserve First Snapshot</strong> bool can be toggled which will stop the first snapshot created from being deleted or replaced.</li>
+<hr>
+<h2 id="history-tracker-component">History Tracker Component</h2>
+<p>The <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCMHistoryTracker</a> component can be added to any game object inside the contents of the Character Creation Menu.</p>
+<ul>
+<li>Tracks all layer changes made to the character and saves them as a snapshot.</li>
+<li>A snapshot contains all information required to restore the character to that exact state.</li>
+<li>Snapshots are saved in a list.</li>
+<li>Max Snapshots can be set anywhere between 1-100 (Default is 30).</li>
+<li>When the max amount of snapshots is met, oldest snapshots will start being replaced.</li>
+<li>The <strong>Preserve First Snapshot</strong> bool can be toggled which will stop the first snapshot created from being deleted or replaced.</li>
 </ul>
-<hr sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="31">
-<h2 id="ui-integration" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="33">UI Integration</h2>
-<ol sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="35">
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="35"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="35">Undo/Redo Buttons:</strong>
-<ul sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="36">
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="36">Buttons can be added which can undo or redo changes you've made.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="37"><a class="xref" href="character-creator-history-undo-redo.html" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber=37>Read More → History Undo/Redo</a></li>
+<hr>
+<h2 id="ui-integration">UI Integration</h2>
+<ol>
+<li><strong>Undo/Redo Buttons:</strong>
+<ul>
+<li>Buttons can be added which can undo or redo changes you've made.</li>
+<li><a class="xref" href="character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></li>
 </ul>
 </li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="38"><strong sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="38">History Panels:</strong>
-<ul sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="39">
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="39">Multiple types of panels can be added which display every change made in a clean list.</li>
-<li sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber="40"><a class="xref" href="character-creator-history-panels.html" sourcefile="docs/character-creator/history/character-creator-history-tracking-system.md" sourcestartlinenumber=40>Read More → History Panels</a></li>
+<li><strong>History Panels:</strong>
+<ul>
+<li>Multiple types of panels can be added which display every change made in a clean list.</li>
+<li><a class="xref" href="character-creator-history-panels.html">Read More → History Panels</a></li>
 </ul>
 </li>
 </ol>
