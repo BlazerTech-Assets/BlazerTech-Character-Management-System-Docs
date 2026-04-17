@@ -101,120 +101,120 @@
         </div>
 
         <article data-uid="character-overlay-layer-configuration">
-<h1 id="character-overlay-layer-configuration">Character Overlay Layer Configuration</h1>
+<h1 id="character-overlay-layer-configuration" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="6">Character Overlay Layer Configuration</h1>
 
-<p>This page explains how to create and configure a <strong>Character Overlay Layer asset</strong>.</p>
-<p>Overlay Layers let you add additional visual elements to a character. They can be used for equipement, visual effects, accessories, or any other visuals that need extra functionality or need to be animated separately from the character.</p>
-<p>Not sure what a <strong>Character Overlay Layer</strong> is?</p>
-<p><a class="xref" href="character-overlay-layers.html">Read More → Character Overlay Layers</a></p>
-<hr>
-<h2 id="quick-setup-overview">Quick Setup Overview</h2>
-<p>A typical workflow for configuring an overlay layer looks like this:</p>
-<ol>
-<li>Create the <strong>Overlay Layer asset</strong></li>
-<li>Assign a <strong>Character Type</strong> asset</li>
-<li>Assign an <strong>Animator Controller</strong> (Optional)</li>
-<li>Choose the appropriate <strong>Animation Sync Mode</strong></li>
-<li>Set the <strong>Layer Sorting Mode</strong></li>
-<li>Adjust <strong>Offsets</strong> if the overlay does not line up correctly</li>
-<li>Add any <strong>Overlay Layer Extensions</strong> if additional logic is required</li>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="8">This page explains how to create and configure a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="8">Character Overlay Layer asset</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="10">Overlay Layers let you add additional visual elements to a character. They can be used for equipement, visual effects, accessories, or any other visuals that need extra functionality or need to be animated separately from the character.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="12">Not sure what a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="12">Character Overlay Layer</strong> is?</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="14"><a class="xref" href="character-overlay-layers.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber=14>Read More → Character Overlay Layers</a></p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="16">
+<h2 id="quick-setup-overview" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="18">Quick Setup Overview</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="20">A typical workflow for configuring an overlay layer looks like this:</p>
+<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="22">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="22">Create the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="22">Overlay Layer asset</strong></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="23">Assign a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="23">Character Type</strong> asset</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="24">Assign an <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="24">Animator Controller</strong> (Optional)</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="25">Choose the appropriate <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="25">Animation Sync Mode</strong></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="26">Set the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="26">Layer Sorting Mode</strong></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="27">Adjust <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="27">Offsets</strong> if the overlay does not line up correctly</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="28">Add any <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="28">Overlay Layer Extensions</strong> if additional logic is required</li>
 </ol>
-<hr>
-<h2 id="creating-an-overlay-layer">Creating an Overlay Layer</h2>
-<p>To create a new Overlay Layer asset:</p>
-<ol>
-<li><code>Right click</code> the <strong>Project window</strong></li>
-<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Overlay Layers</strong></li>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="30">
+<h2 id="creating-an-overlay-layer" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="32">Creating an Overlay Layer</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="34">To create a new Overlay Layer asset:</p>
+<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="36">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="36"><code sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="36">Right click</code> the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="36">Project window</strong></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="37">Navigate to: <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="37">Create &gt; BlazerTech &gt; Character Management System &gt; Character Overlay Layers</strong></li>
 </ol>
-<p><img src="../../images/overlay-layers/create-character-overlay-layer.png" alt="Create Character Overlay Layer"></p>
-<hr>
-<h1 id="overlay-layer-setup">Overlay Layer Setup</h1>
-<h2 id="character-type">Character Type</h2>
-<p>Assign the <strong>Character Type asset</strong> that this <strong>Overlay Layer</strong> will be used with.</p>
-<p><img src="../../images/overlay-layers/references/character-type-field.png" alt="Character Type Field"></p>
-<p>Overlay Layers are tied to a specific Character Type so the system knows which characters the Overlay Layer is compatible with.</p>
-<div class="NOTE">
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="39"><img src="../../images/overlay-layers/create-character-overlay-layer.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="39" alt="Create Character Overlay Layer"></p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="41">
+<h1 id="overlay-layer-setup" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="43">Overlay Layer Setup</h1>
+<h2 id="character-type" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="45">Character Type</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="47">Assign the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="47">Character Type asset</strong> that this <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="47">Overlay Layer</strong> will be used with.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="49"><img src="../../images/overlay-layers/references/character-type-field.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="49" alt="Character Type Field"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="51">Overlay Layers are tied to a specific Character Type so the system knows which characters the Overlay Layer is compatible with.</p>
+<div class="NOTE" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="53">
 <h5>Note</h5>
-<p>Overlay Layers can only be used with their assigned Character Type.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="54">Overlay Layers can only be used with their assigned Character Type.</p>
 </div>
-<h2 id="animator-controller-optional">Animator Controller (Optional)</h2>
-<p>Assign the <strong>Animator Controller</strong> used to animate the <strong>Overlay Layer</strong>.</p>
-<p><img src="../../images/overlay-layers/references/animator-controller-field.png" alt="Animator Controller Field"></p>
-<p>Overlay Layers use their own Animator Controller, separate from the controlled used by the character itself.</p>
-<p>This controller can:</p>
-<ul>
-<li>Play its own independant animations</li>
-<li>Synchronize paramters with the characters Animator Controller</li>
-<li>Combine both approaches</li>
+<h2 id="animator-controller-optional" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="56">Animator Controller (Optional)</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="58">Assign the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="58">Animator Controller</strong> used to animate the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="58">Overlay Layer</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="60"><img src="../../images/overlay-layers/references/animator-controller-field.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="60" alt="Animator Controller Field"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="62">Overlay Layers use their own Animator Controller, separate from the controlled used by the character itself.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="64">This controller can:</p>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="66">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="66">Play its own independant animations</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="67">Synchronize paramters with the characters Animator Controller</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="68">Combine both approaches</li>
 </ul>
-<p>How the controller behaves depends on the <a href="#animation-sync-mode">Animation Sync Mode</a> selected.</p>
-<hr>
-<h2 id="animation-sync-mode">Animation Sync Mode</h2>
-<p>Determines whether the <strong>Overlay Layer Animator Controller</strong> synchronizes parameters with the <strong>Character Type Animator Controller</strong>.</p>
-<h3 id="full-parameter-sync">Full Parameter Sync</h3>
-<p>All parameters in the <strong>Overlay Layer Animator Controller</strong> are synchronized with the parameters in the <strong>Character Type Animator Controller</strong>.</p>
-<p>This mode assumes both controllers contain the <strong>same parameters with identical names and types</strong>.</p>
-<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" alt="Animation Sync Mode: Full Paramter Sync"></p>
-<p>When this mode is selected, a new section appears in the inspector called:</p>
-<p><strong>Overlay Layer Parameter Validation</strong></p>
-<p>This section compares the two Animator Controllers and checks whether the Overlay Controller is missing any paramters required for synchronization.</p>
-<p><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" alt="Overlay Controller Parameter Validation Section"></p>
-<p>If any paramters are not included in the Overlay Controller at runtime, an error will be thrown for each missing parameter.</p>
-<hr>
-<h3 id="partial-parameter-sync">Partial Parameter Sync</h3>
-<p>Only selected parameters are synchronized between the two Animator Controllers.</p>
-<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" alt="Animation Sync Mode: Partial Paramter Sync"></p>
-<p>When this mode is selected, a new section appears in the inspector called:</p>
-<p><strong>Overlay Controller Synced Parameters</strong></p>
-<p>This section lists all parameters found in the <strong>Character Type Animator Controller</strong>.</p>
-<p>Paramters can be enabled if a parameter with the same <strong>name</strong> and <strong>type</strong> exist in the <strong>Overlay Layer Animator Controller</strong>.<br>
-If the parameter does not exist in the <strong>Overlay Controller</strong>, the parameter cannot be enabled and a notice will be displayed.</p>
-<p><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" alt="Overlay Controller Synced Parameters Section"></p>
-<hr>
-<h3 id="not-synced">Not Synced</h3>
-<p>The <strong>Overlay Layer Animator Controller</strong> runs completely independently from the character.</p>
-<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" alt="Animation Sync Mode: Not Synced"></p>
-<p>This mode is great for visual elements that need to play their own animations and don't care about the state of the character.</p>
-<hr>
-<h2 id="layer-sorting-mode">Layer Sorting Mode</h2>
-<p>Determines how the <strong>Overlay Layer</strong> is rendered in relation to the Character.</p>
-<p><img src="../../images/overlay-layers/settings/layer-sorting-mode-field.png" alt="Layer Sorting Mode Field"></p>
-<hr>
-<h3 id="in-front-of-character">In Front of Character</h3>
-<p>The <strong>Overlay Layer</strong> is rendered <strong>in front of the character</strong>.</p>
-<p>This is typically used for things like:</p>
-<ul>
-<li>Weapons</li>
-<li>Held objects</li>
-<li>Damage/Health Indicators</li>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="70">How the controller behaves depends on the <a href="#animation-sync-mode" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="70">Animation Sync Mode</a> selected.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="72">
+<h2 id="animation-sync-mode" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="74">Animation Sync Mode</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="76">Determines whether the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="76">Overlay Layer Animator Controller</strong> synchronizes parameters with the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="76">Character Type Animator Controller</strong>.</p>
+<h3 id="full-parameter-sync" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="78">Full Parameter Sync</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="80">All parameters in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="80">Overlay Layer Animator Controller</strong> are synchronized with the parameters in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="80">Character Type Animator Controller</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="82">This mode assumes both controllers contain the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="82">same parameters with identical names and types</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="84"><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="84" alt="Animation Sync Mode: Full Paramter Sync"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="86">When this mode is selected, a new section appears in the inspector called:</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="88"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="88">Overlay Layer Parameter Validation</strong></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="90">This section compares the two Animator Controllers and checks whether the Overlay Controller is missing any paramters required for synchronization.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="92"><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="92" alt="Overlay Controller Parameter Validation Section"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="94">If any paramters are not included in the Overlay Controller at runtime, an error will be thrown for each missing parameter.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="96">
+<h3 id="partial-parameter-sync" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="98">Partial Parameter Sync</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="100">Only selected parameters are synchronized between the two Animator Controllers.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="102"><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="102" alt="Animation Sync Mode: Partial Paramter Sync"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="104">When this mode is selected, a new section appears in the inspector called:</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="106"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="106">Overlay Controller Synced Parameters</strong></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="108">This section lists all parameters found in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="108">Character Type Animator Controller</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="110">Paramters can be enabled if a parameter with the same <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="110">name</strong> and <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="110">type</strong> exist in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="110">Overlay Layer Animator Controller</strong>.<br>
+If the parameter does not exist in the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="111">Overlay Controller</strong>, the parameter cannot be enabled and a notice will be displayed.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="113"><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="113" alt="Overlay Controller Synced Parameters Section"></p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="115">
+<h3 id="not-synced" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="117">Not Synced</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="119">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="119">Overlay Layer Animator Controller</strong> runs completely independently from the character.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="121"><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="121" alt="Animation Sync Mode: Not Synced"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="123">This mode is great for visual elements that need to play their own animations and don't care about the state of the character.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="125">
+<h2 id="layer-sorting-mode" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="127">Layer Sorting Mode</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="129">Determines how the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="129">Overlay Layer</strong> is rendered in relation to the Character.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="131"><img src="../../images/overlay-layers/settings/layer-sorting-mode-field.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="131" alt="Layer Sorting Mode Field"></p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="133">
+<h3 id="in-front-of-character" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="135">In Front of Character</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="137">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="137">Overlay Layer</strong> is rendered <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="137">in front of the character</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="139">This is typically used for things like:</p>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="141">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="141">Weapons</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="142">Held objects</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="143">Damage/Health Indicators</li>
 </ul>
-<hr>
-<h3 id="behind-character">Behind Character</h3>
-<p>The <strong>Overlay Layer</strong> is rendered <strong>behind the character</strong>.</p>
-<p>This is useful for things like:</p>
-<ul>
-<li>Back-mounted equipement</li>
-<li>Capes</li>
-<li>Wings</li>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="145">
+<h3 id="behind-character" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="147">Behind Character</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="149">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="149">Overlay Layer</strong> is rendered <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="149">behind the character</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="151">This is useful for things like:</p>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="153">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="153">Back-mounted equipement</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="154">Capes</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="155">Wings</li>
 </ul>
-<hr>
-<h2 id="offset-mode">Offset Mode</h2>
-<p>Sometimes the Overlay Layer might not line up correctly with the character sprite.<br>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="157">
+<h2 id="offset-mode" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="159">Offset Mode</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="161">Sometimes the Overlay Layer might not line up correctly with the character sprite.<br>
 Offsets allow you to manually adjust its position.</p>
-<p><img src="../../images/overlay-layers/settings/offset-mode-field.png" alt="Offset Mode Field"></p>
-<p>The <strong>Offset Mode</strong> determines how the offset values are interpreted.</p>
-<ol>
-<li><strong>Pixel Offset</strong> - Applies the offset in pixels, which are converted to <strong>Unity Units</strong> at runtime.</li>
-<li><strong>Unit Offset</strong> - Applies the offset directly in <strong>Unity World Units</strong>.</li>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="164"><img src="../../images/overlay-layers/settings/offset-mode-field.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="164" alt="Offset Mode Field"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="166">The <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="166">Offset Mode</strong> determines how the offset values are interpreted.</p>
+<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="168">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="168"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="168">Pixel Offset</strong> - Applies the offset in pixels, which are converted to <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="168">Unity Units</strong> at runtime.</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="169"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="169">Unit Offset</strong> - Applies the offset directly in <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="169">Unity World Units</strong>.</li>
 </ol>
-<hr>
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><p>Learn how to apply an Overlay Layer to a character at runtime.<br>
-<a class="xref" href="character-overlay-layer-usage.html">Read More → Character Overlay Layer Usage</a></p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="171">
+<h2 id="next-steps" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="173">Next Steps</h2>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="175">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="175"><p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="175">Learn how to apply an Overlay Layer to a character at runtime.<br>
+<a class="xref" href="character-overlay-layer-usage.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber=176>Read More → Character Overlay Layer Usage</a></p>
 </li>
-<li><p>Learn how to extend Overlay Layers with custom behavior<br>
-<a class="xref" href="character-overlay-layer-extensions.html">Read More → Character Overlay Layer Extensions</a></p>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="178"><p sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber="178">Learn how to extend Overlay Layers with custom behavior<br>
+<a class="xref" href="character-overlay-layer-extensions.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-configuration.md" sourcestartlinenumber=179>Read More → Character Overlay Layer Extensions</a></p>
 </li>
 </ul>
 

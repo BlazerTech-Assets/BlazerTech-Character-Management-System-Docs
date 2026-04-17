@@ -13,7 +13,7 @@ Menu Controls are UI buttons that provide core user actions such as saving, clos
 
 The included prefabs can be quickly added to a **Character Creation Menu** or replaced with custom implementations using the CCM Relay component.
 
-![Menu Controls Example](~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png)
+<img src="~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500" />
 
 ---
 

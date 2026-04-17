@@ -101,161 +101,161 @@
         </div>
 
         <article data-uid="layered-character-group-entry-renderer-component">
-<h1 id="layered-character-group-entry-renderer-component">Layered Character Group Entry Renderer Component</h1>
+<h1 id="layered-character-group-entry-renderer-component" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="6">Layered Character Group Entry Renderer Component</h1>
 
-<p>The <strong>Layered Character Group Entry Renderer</strong> loads a <strong>Layered Character</strong> from a <strong>Layered Character Group</strong> and renders it in-game.</p>
-<p>This component is responsible for:</p>
-<ul>
-<li>Loading a <strong>layered character</strong> from a group</li>
-<li>Applying the <strong>Character Shader</strong></li>
-<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
-<li>Managing <strong>Overlay Layers</strong></li>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="8">The <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="8">Layered Character Group Entry Renderer</strong> loads a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="8">Layered Character</strong> from a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="8">Layered Character Group</strong> and renders it in-game.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="10">This component is responsible for:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="11">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="11">Loading a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="11">layered character</strong> from a group</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="12">Applying the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="12">Character Shader</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="13">Assigning the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="13">Animator Controller</strong> (Optional)</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="14">Managing <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="14">Overlay Layers</strong></li>
 </ul>
-<p><strong>Requirements</strong>:</p>
-<ul>
-<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
-<li>At least one <strong>Layered Character</strong> saved in a group</li>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="16"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="16">Requirements</strong>:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="17">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="17">A <a class="xref" href="../../character-types/layered-character-type.html" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber=17>Layered Character Type</a></li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="18">At least one <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="18">Layered Character</strong> saved in a group</li>
 </ul>
-<p><a class="xref" href="../../character-grouping-system.html">Read More → Character Groups</a></p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png" alt="Layered Character Group Entry Renderer Component"></p>
-<hr>
-<h2 id="quick-setup-overview">Quick Setup Overview</h2>
-<p>Quick overview of how to setup the <strong>Layered Character Group Entry Renderer</strong> component.</p>
-<ol>
-<li>Add the component to a <strong>GameObject</strong>.</li>
-<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
-<li>optionally assign <strong>Animator</strong>.</li>
-<li>Configure <strong>Loading Settings</strong>.</li>
-<li>Assign the <strong>Character Type</strong> you want to load a character from.</li>
-<li>Select the <strong>Character Group</strong> (Primary, Flexible or Fixed) and configure parameters.</li>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="20"><a class="xref" href="../../character-grouping-system.html" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber=20>Read More → Character Groups</a></p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="22"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="22" alt="Layered Character Group Entry Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="24">
+<h2 id="quick-setup-overview" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="26">Quick Setup Overview</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="28">Quick overview of how to setup the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="28">Layered Character Group Entry Renderer</strong> component.</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="30">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="30">Add the component to a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="30">GameObject</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="31">Assign <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="31">Renderer</strong> (Usually a Sprite Renderer).</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="32">optionally assign <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="32">Animator</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="33">Configure <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="33">Loading Settings</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="34">Assign the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="34">Character Type</strong> you want to load a character from.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="35">Select the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="35">Character Group</strong> (Primary, Flexible or Fixed) and configure parameters.</li>
 </ol>
-<hr>
-<h2 id="setup">Setup</h2>
-<p>Full step-by-step guide to setup the <strong>Layered Character Group Entry Renderer</strong> component.</p>
-<h3 id="add-component">Add Component</h3>
-<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/add-component.png" alt="Add Layered Character Template Renderer Component"></p>
-<hr>
-<h3 id="assign-renderer-component">Assign Renderer Component</h3>
-<p>Assign the component responsible for rendering the character's sprites.</p>
-<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
-The <strong>Character Shader</strong> will be applied to this renderer.</p>
-<p><img src="../../../images/components/character-renderer-components/renderer.png" alt="Renderer Reference"></p>
-<hr>
-<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
-<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
-<p>To enable this:</p>
-<ol>
-<li>Enable <code>Set Animator Controller</code>.</li>
-<li>Assign the target Animator component.</li>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="37">
+<h2 id="setup" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="39">Setup</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="41">Full step-by-step guide to setup the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="41">Layered Character Group Entry Renderer</strong> component.</p>
+<h3 id="add-component" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="43">Add Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="44">Add the component to a GameObject by clicking <code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="44">Add Component</code> in the inspector window.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="46"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/add-component.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="46" alt="Add Layered Character Template Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="48">
+<h3 id="assign-renderer-component" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="50">Assign Renderer Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="52">Assign the component responsible for rendering the character's sprites.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="54">In most cases, this will be a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="54">Sprite Renderer</strong>.
+The <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="55">Character Shader</strong> will be applied to this renderer.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="57"><img src="../../../images/components/character-renderer-components/renderer.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="57" alt="Renderer Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="59">
+<h3 id="assign-animator-component-optional" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="61">Assign Animator Component (Optional)</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="63">If your <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="63">Character Type</strong> asset includes an <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="63">Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="65">To enable this:</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="66">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="66">Enable <code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="66">Set Animator Controller</code>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="67">Assign the target Animator component.</li>
 </ol>
-<p><img src="../../../images/components/character-renderer-components/animator.png" alt="Animator Reference"></p>
-<hr>
-<h3 id="configure-loading-settings">Configure Loading Settings</h3>
-<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
-<p><img src="../../../images/components/character-renderer-components/loading-settings.png" alt="Loading Mode"></p>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="69"><img src="../../../images/components/character-renderer-components/animator.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="69" alt="Animator Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="71">
+<h3 id="configure-loading-settings" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="73">Configure Loading Settings</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="75">The <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="75">Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="77"><img src="../../../images/components/character-renderer-components/loading-settings.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="77" alt="Loading Mode"></p>
+<table sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">
 <thead>
-<tr>
-<th>Loading Mode</th>
-<th>Description</th>
-<th>Advantages</th>
-<th>Cons</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">Loading Mode</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">Description</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">Advantages</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="79">Cons</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Asynchronous</strong></td>
-<td>Loads the character in the background.</td>
-<td>No frame stutters or freezes.</td>
-<td>Character is temporarily invisible while loading.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81">Asynchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81">Loads the character in the background.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81">No frame stutters or freezes.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="81">Character is temporarily invisible while loading.</td>
 </tr>
-<tr>
-<td><strong>Synchronous</strong></td>
-<td>Loads the character on the main thread.</td>
-<td>Character is immedietely renderered the same frame.</td>
-<td>May cause frame stutters depending on spritesheet size.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82">Synchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82">Loads the character on the main thread.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82">Character is immedietely renderered the same frame.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="82">May cause frame stutters depending on spritesheet size.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="recommended-usage">Recommended Usage</h4>
-<ul>
-<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
-<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+<h4 id="recommended-usage" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="84">Recommended Usage</h4>
+<ul sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="85">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="85">Use <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="85">Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="86">Use <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="86">Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
 </ul>
-<hr>
-<h4 id="load-character-on-start">Load Character On Start</h4>
-<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
-<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
-<hr>
-<h3 id="assign-character-type">Assign Character Type</h3>
-<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="88">
+<h4 id="load-character-on-start" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="90">Load Character On Start</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="92">If <code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="92">Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="92">Start()</code> method</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="94">If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber=94>GetAndShowCharacter()</a> method</p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="96">
+<h3 id="assign-character-type" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="98">Assign Character Type</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="100">Assign a <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="100">Layered Character Type</strong> asset.<br>
 This will be used when looking for a character group.</p>
-<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" alt="Character Specifications"></h2>
-<h3 id="set-character-group-type">Set Character Group Type</h3>
-<p>Choose the type of group you want to load from.</p>
-<table>
+<h2 id="character-specifications" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="104"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="104" alt="Character Specifications"></h2>
+<h3 id="set-character-group-type" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="106">Set Character Group Type</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="108">Choose the type of group you want to load from.</p>
+<table sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="110">
 <thead>
-<tr>
-<th>Group Type</th>
-<th>Description</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="110">
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="110">Group Type</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="110">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Primary Character Slot</strong></td>
-<td>A single character attached to the Character Type asset. No additional parameters required.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="112">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="112"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="112">Primary Character Slot</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="112">A single character attached to the Character Type asset. No additional parameters required.</td>
 </tr>
-<tr>
-<td><strong>Flexible Group</strong></td>
-<td>A group of characters that can be added, removed, or edited at any time.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="113">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="113"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="113">Flexible Group</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="113">A group of characters that can be added, removed, or edited at any time.</td>
 </tr>
-<tr>
-<td><strong>Fixed Group</strong></td>
-<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="114">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="114"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="114">Fixed Group</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="114">A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
 </tr>
 </tbody>
 </table>
-<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="116">If <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="116">Flexible Group</strong> or <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="116">Fixed Group</strong> is selected, the following parameters are required:</p>
+<table sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="118">
 <thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="118">
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="118">Parameter</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="118">Type</th>
+<th sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="118">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Character Group Name</strong></td>
-<td><code>String</code></td>
-<td>A unique name used to find the Fixed or Flexible group.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120">Character Group Name</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120"><code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120">String</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="120">A unique name used to find the Fixed or Flexible group.</td>
 </tr>
-<tr>
-<td><strong>Character Load Method</strong></td>
-<td><code>Enum</code></td>
-<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121"><strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Character Load Method</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121"><code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Enum</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Determines how a character is selected from the group: <br> - <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Character Name</strong> &gt; Load a character by its saved name. <br> - <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="121">Randomized</strong> &gt; Randomly load a character from the group.</td>
 </tr>
 </tbody>
 </table>
-<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/group-types.png" alt="Character Group Types"></p>
-<hr>
-<h4 id="create-character-if-null">Create Character If Null</h4>
-<p>If enabled and a group was successfully found but no character was found in the group matching your criteria, a new blank character will be created and added to the group.</p>
-<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/create-character-if-null.png" alt="Create Character If Null"></p>
-<div class="NOTE">
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="123"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/group-types.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="123" alt="Character Group Types"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="125">
+<h4 id="create-character-if-null" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="127">Create Character If Null</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="129">If enabled and a group was successfully found but no character was found in the group matching your criteria, a new blank character will be created and added to the group.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="131"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/create-character-if-null.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="131" alt="Create Character If Null"></p>
+<div class="NOTE" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="133">
 <h5>Note</h5>
-<p>Only affects the <strong>Primary Slot</strong> and <strong>Flexible Character Groups</strong>. <strong>Fixed Character Groups</strong> can't have characters added to them after creation.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="134">Only affects the <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="134">Primary Slot</strong> and <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="134">Flexible Character Groups</strong>. <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="134">Fixed Character Groups</strong> can't have characters added to them after creation.</p>
 </div>
-<hr>
-<h3 id="hit-play">Hit Play</h3>
-<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
-<p>Enter Play Mode and if:</p>
-<ol>
-<li><code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong></li>
-<li>The renderer is able to find the character group</li>
+<hr sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="137">
+<h3 id="hit-play" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="139">Hit Play</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="141"><img src="../../../images/misc/play-buttons.png" sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="141" alt="Play Buttons"></p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="143">Enter Play Mode and if:</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="145">
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="145"><code sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="145">Load Character On Start</code> is enabled in <strong sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="145">Loading Settings</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="146">The renderer is able to find the character group</li>
 </ol>
-<p>Then the character will be automatically loaded and displayed.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md" sourcestartlinenumber="148">Then the character will be automatically loaded and displayed.</p>
 
 </article>
 

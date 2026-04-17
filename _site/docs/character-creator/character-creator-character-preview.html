@@ -101,84 +101,84 @@
         </div>
 
         <article data-uid="ccm-character-preview">
-<h1 id="character-preview">Character Preview</h1>
+<h1 id="character-preview" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="5">Character Preview</h1>
 
-<p>The <strong>character preview</strong> shows a live view of the character the player is customizing. Whenever a layer of the character is modifed, the preview is refreshed automatically.</p>
-<div class="TIP">
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="7">The <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="7">character preview</strong> shows a live view of the character the player is customizing. Whenever a layer of the character is modifed, the preview is refreshed automatically.</p>
+<div class="TIP" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="9">
 <h5>Tip</h5>
-<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Character Preview</strong></p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="10">Prefabs Location: <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="10">Prefabs &gt; Character Creator &gt; Character Preview</strong></p>
 </div>
-<h2 id="core-character-preview">Core Character Preview</h2>
-<p><img src="../../images/ccm-character-preview/core-character-preview.png" alt="Core Character Preview"></p>
-<p>Inside the base <strong>Character Preview</strong> folder is the core prefab as well variations. the core prefab can be used on it's own, or combined with add-on prefabs which add extra functioanlity such as rotation or animation switching button.</p>
-<p>The Core Character Preview contains the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html">CCMCharacterPreviewHandler</a> component which is responsible for handling and updating the preview.</p>
-<h3 id="preview-mode">Preview Mode</h3>
-<p>The preview mode determines how the character preview is displayed.</p>
-<ol>
-<li><strong>Static</strong>
-<ul>
-<li>Uses the <strong>Character Preview Sprite</strong> assigned in the <strong>Character Creator Settings</strong> section of the <strong>Layered Character Type</strong>.</li>
+<h2 id="core-character-preview" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="12">Core Character Preview</h2>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="14"><img src="../../images/ccm-character-preview/core-character-preview.png" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="14" alt="Core Character Preview"></p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="16">Inside the base <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="16">Character Preview</strong> folder is the core prefab as well variations. the core prefab can be used on it's own, or combined with add-on prefabs which add extra functioanlity such as rotation or animation switching button.</p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="18">The Core Character Preview contains the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber=18>CCMCharacterPreviewHandler</a> component which is responsible for handling and updating the preview.</p>
+<h3 id="preview-mode" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="20">Preview Mode</h3>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="21">The preview mode determines how the character preview is displayed.</p>
+<ol sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="23">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="23"><strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="23">Static</strong>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="24">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="24">Uses the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="24">Character Preview Sprite</strong> assigned in the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="24">Character Creator Settings</strong> section of the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="24">Layered Character Type</strong>.</li>
 </ul>
 </li>
-<li><strong>Animated</strong>
-<ul>
-<li>Uses the <strong>Character Preview Controller</strong> assigned in the <strong>Character Creator Settings</strong> section of the <strong>Layered Character Type</strong> to animate the character preview.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="character-preview-rotation">Character Preview Rotation</h2>
-<p><img src="../../images/ccm-character-preview/character-preview-rotation-buttons.png" alt="Character Preview Rotation Buttons"></p>
-<p>located in the <strong>/Character Rotation</strong> subfolder are prefabs which add rotation controls to the preview.<br>
-<strong>Setup Instructions:</strong></p>
-<ol>
-<li>Add the prefab to your scene.</li>
-<li>Assign the <strong>OnClick</strong> event for each button to the method<br>
-<code>CCMCharacterPreviewHandler.RotateCharacterPreview(bool rotateLeft)</code>.
-<ul>
-<li><code>true</code> → rotate left</li>
-<li><code>false</code> → rotate right</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="25"><strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="25">Animated</strong>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="26">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="26">Uses the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="26">Character Preview Controller</strong> assigned in the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="26">Character Creator Settings</strong> section of the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="26">Layered Character Type</strong> to animate the character preview.</li>
 </ul>
 </li>
 </ol>
-<div class="NOTE">
+<hr sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="28">
+<h2 id="character-preview-rotation" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="30">Character Preview Rotation</h2>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="32"><img src="../../images/ccm-character-preview/character-preview-rotation-buttons.png" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="32" alt="Character Preview Rotation Buttons"></p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="34">located in the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="34">/Character Rotation</strong> subfolder are prefabs which add rotation controls to the preview.<br>
+<strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="35">Setup Instructions:</strong></p>
+<ol sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="36">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="36">Add the prefab to your scene.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="37">Assign the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="37">OnClick</strong> event for each button to the method<br>
+<code sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="38">CCMCharacterPreviewHandler.RotateCharacterPreview(bool rotateLeft)</code>.
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="39">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="39"><code sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="39">true</code> → rotate left</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="40"><code sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="40">false</code> → rotate right</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="42">
 <h5>Note</h5>
-<p>Rotation Controls only work with animated character previews.</p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="43">Rotation Controls only work with animated character previews.</p>
 </div>
-<hr>
-<h2 id="character-preview-animation-buttons">Character Preview Animation Buttons</h2>
-<p><img src="../../images/ccm-character-preview/character-preview-animation-buttons.png" alt="Character Preview Animation Buttons"></p>
-<p>Located in the <strong>/Animation Control</strong> subfolder are prefabs for switching between character animations.<br>
+<hr sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="45">
+<h2 id="character-preview-animation-buttons" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="47">Character Preview Animation Buttons</h2>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="49"><img src="../../images/ccm-character-preview/character-preview-animation-buttons.png" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="49" alt="Character Preview Animation Buttons"></p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="51">Located in the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="51">/Animation Control</strong> subfolder are prefabs for switching between character animations.<br>
 Three prefabs exist:</p>
-<ol>
-<li><strong>Animation Buttons [Auto Create]</strong>
-<ul>
-<li>automatically creates a button for each animation in the assigned Character Type at runtime.</li>
+<ol sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="53">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="53"><strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="53">Animation Buttons [Auto Create]</strong>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="54">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="54">automatically creates a button for each animation in the assigned Character Type at runtime.</li>
 </ul>
 </li>
-<li><strong>Animation Buttons [Initialize Existing]</strong>
-<ul>
-<li>Uses animation buttons already in the prefab hierarchy.</li>
-<li>Logs a warning if not enough buttons exist.</li>
-<li>Can optionally disable or hide unused buttons.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="55"><strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="55">Animation Buttons [Initialize Existing]</strong>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="56">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="56">Uses animation buttons already in the prefab hierarchy.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="57">Logs a warning if not enough buttons exist.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="58">Can optionally disable or hide unused buttons.</li>
 </ul>
 </li>
-<li><strong>Animation Button</strong>
-<ul>
-<li>Prefab used by the other two prefabs. Cannot be used on it's own.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="59"><strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="59">Animation Button</strong>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="60">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="60">Prefab used by the other two prefabs. Cannot be used on it's own.</li>
 </ul>
 </li>
 </ol>
-<hr>
-<h2 id="complete-character-previews">Complete Character Previews</h2>
-<p><img src="../../images/ccm-character-preview/character-preview-complete.png" alt="Character Preview Complete"></p>
-<p>Located in the <strong>/Complete Previews</strong> subfolder are prefabs which combine all elements of the character preview.</p>
-<ul>
-<li>The core preview.</li>
-<li>Rotation Buttons</li>
-<li>Animation Switching Buttons.</li>
+<hr sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="62">
+<h2 id="complete-character-previews" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="64">Complete Character Previews</h2>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="66"><img src="../../images/ccm-character-preview/character-preview-complete.png" sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="66" alt="Character Preview Complete"></p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="68">Located in the <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="68">/Complete Previews</strong> subfolder are prefabs which combine all elements of the character preview.</p>
+<ul sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="69">
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="69">The core preview.</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="70">Rotation Buttons</li>
+<li sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="71">Animation Switching Buttons.</li>
 </ul>
-<p>These <strong>Complete Previews</strong> are already setup and completely functional. All you need to do is add them to your Character Creation Menu.</p>
+<p sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="73">These <strong sourcefile="docs/character-creator/character-creator-character-preview.md" sourcestartlinenumber="73">Complete Previews</strong> are already setup and completely functional. All you need to do is add them to your Character Creation Menu.</p>
 
 </article>
 

@@ -101,103 +101,103 @@
         </div>
 
         <article data-uid="character-display-name-renderer-component">
-<h1 id="character-display-name-renderer">Character Display Name Renderer</h1>
+<h1 id="character-display-name-renderer" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="6">Character Display Name Renderer</h1>
 
-<p>Provides an easy way to show the Display Name of a character in-game.</p>
-<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png" alt="Character Display Name Renderer"></p>
-<hr>
-<h2 id="config">Config</h2>
-<p>Choose how you'll get a reference to a character. There are two options:</p>
-<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png" alt="Fetch Character Mode"></p>
-<hr>
-<h3 id="from-character-renderer">From Character Renderer</h3>
-<p>Uses a <a class="xref" href="character-renderer-components.html">Character Renderer component</a> to find a character.</p>
-<p>Assign a reference to a <strong>Character Renderer component</strong>.</p>
-<p>When the Character Renderer component loads a character:</p>
-<ol>
-<li>The <strong>Display Name Renderer</strong> will be notified and retrieve the character.</li>
-<li>The <strong>display Name Renderer</strong> will get the <strong>Display Name</strong> of the character and set the text of the assigned text component to the characters display name.</li>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="8">Provides an easy way to show the Display Name of a character in-game.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="10"><img src="../../../images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="10" alt="Character Display Name Renderer"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="12">
+<h2 id="config" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="14">Config</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="16">Choose how you'll get a reference to a character. There are two options:</p>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="18"><img src="../../../images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="18" alt="Fetch Character Mode"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="20">
+<h3 id="from-character-renderer" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="22">From Character Renderer</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="24">Uses a <a class="xref" href="character-renderer-components.html" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber=24>Character Renderer component</a> to find a character.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="26">Assign a reference to a <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="26">Character Renderer component</strong>.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="28">When the Character Renderer component loads a character:</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="29">
+<li sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="29">The <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="29">Display Name Renderer</strong> will be notified and retrieve the character.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="30">The <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="30">display Name Renderer</strong> will get the <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="30">Display Name</strong> of the character and set the text of the assigned text component to the characters display name.</li>
 </ol>
-<hr>
-<h3 id="from-character-group">From Character Group</h3>
-<p>Attempts to find a character from a character group at runtime.</p>
-<h4 id="assign-character-type">Assign Character Type</h4>
-<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+<hr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="32">
+<h3 id="from-character-group" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="34">From Character Group</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="36">Attempts to find a character from a character group at runtime.</p>
+<h4 id="assign-character-type" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="38">Assign Character Type</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="40">Assign a <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="40">Layered Character Type</strong> asset.<br>
 This will be used when looking for a character group.</p>
-<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" alt="Character Specifications"></h2>
-<h4 id="set-character-group-type">Set Character Group Type</h4>
-<p>Choose the type of group you want to load from.</p>
-<table>
+<h2 id="character-specifications" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="44"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="44" alt="Character Specifications"></h2>
+<h4 id="set-character-group-type" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="46">Set Character Group Type</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="48">Choose the type of group you want to load from.</p>
+<table sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="50">
 <thead>
-<tr>
-<th>Group Type</th>
-<th>Description</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="50">
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="50">Group Type</th>
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="50">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Primary Character Slot</strong></td>
-<td>A single character attached to the Character Type asset. No additional parameters required.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="52">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="52"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="52">Primary Character Slot</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="52">A single character attached to the Character Type asset. No additional parameters required.</td>
 </tr>
-<tr>
-<td><strong>Flexible Group</strong></td>
-<td>A group of characters that can be added, removed, or edited at any time.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="53">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="53"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="53">Flexible Group</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="53">A group of characters that can be added, removed, or edited at any time.</td>
 </tr>
-<tr>
-<td><strong>Fixed Group</strong></td>
-<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="54">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="54"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="54">Fixed Group</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="54">A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
 </tr>
 </tbody>
 </table>
-<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="56">If <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="56">Flexible Group</strong> or <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="56">Fixed Group</strong> is selected, the following parameters are required:</p>
+<table sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="58">
 <thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="58">
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="58">Parameter</th>
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="58">Type</th>
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="58">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Character Group Name</strong></td>
-<td><code>String</code></td>
-<td>A unique name used to find the Fixed or Flexible group.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60">Character Group Name</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60"><code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60">String</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="60">A unique name used to find the Fixed or Flexible group.</td>
 </tr>
-<tr>
-<td><strong>Character Load Method</strong></td>
-<td><code>Enum</code></td>
-<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Character Load Method</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61"><code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Enum</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Determines how a character is selected from the group: <br> - <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Character Name</strong> &gt; Load a character by its saved name. <br> - <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="61">Randomized</strong> &gt; Randomly load a character from the group.</td>
 </tr>
 </tbody>
 </table>
-<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/group-types.png" alt="Character Group Types"></p>
-<h2 id="references">References</h2>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="63"><img src="../../../images/components/character-renderer-components/character-display-name-renderer/group-types.png" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="63" alt="Character Group Types"></p>
+<h2 id="references" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="65">References</h2>
+<table sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="67">
 <thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="67">
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="67">Field</th>
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="67">Type</th>
+<th sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="67">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Display Name Parent</strong></td>
-<td><code>GameObject</code></td>
-<td>Parent GameObject used to disable text when <code>Display Name</code> is blank.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69">Display Name Parent</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69"><code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69">GameObject</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69">Parent GameObject used to disable text when <code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="69">Display Name</code> is blank.</td>
 </tr>
-<tr>
-<td><strong>Display Name Text</strong></td>
-<td><code>TMP_Text</code></td>
-<td>Reference to a <code>TMP Text</code> component used to render the <code>Display Name</code> text.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70"><strong sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">Display Name Text</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70"><code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">TMP_Text</code></td>
+<td sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">Reference to a <code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">TMP Text</code> component used to render the <code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="70">Display Name</code> text.</td>
 </tr>
 </tbody>
 </table>
-<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/References.png" alt="References"></p>
-<div class="TIP">
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="72"><img src="../../../images/components/character-renderer-components/character-display-name-renderer/References.png" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="72" alt="References"></p>
+<div class="TIP" sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="74">
 <h5>Tip</h5>
-<p>Use a canvas with a <code>Render Mode</code> set to <code>World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of the character and follow along with it.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="75">Use a canvas with a <code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="75">Render Mode</code> set to <code sourcefile="docs/character-usage/character-renderer-components/character-display-name-renderer.md" sourcestartlinenumber="75">World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of the character and follow along with it.</p>
 </div>
 
 </article>

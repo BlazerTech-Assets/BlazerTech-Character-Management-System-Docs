@@ -101,103 +101,103 @@
         </div>
 
         <article data-uid="random-layered-character-renderer-component">
-<h1 id="random-layered-character-renderer-component">Random Layered Character Renderer Component</h1>
+<h1 id="random-layered-character-renderer-component" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="6">Random Layered Character Renderer Component</h1>
 
-<p>The <strong>Random Layered Character Renderer</strong> creates a new completely randomized <strong>Layered Character</strong> at runtime by selecting a random <strong>Layer Option</strong> for each layer of the character.</p>
-<div class="NOTE">
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="8">The <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="8">Random Layered Character Renderer</strong> creates a new completely randomized <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="8">Layered Character</strong> at runtime by selecting a random <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="8">Layer Option</strong> for each layer of the character.</p>
+<div class="NOTE" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="10">
 <h5>Note</h5>
-<p>This component contains no options for controlling how the character is randomized. For advanced character randomization use a <a class="xref" href="../../character-templates/randomized-layered-character-templates.html">Randomized Layered Character Template</a>.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="11">This component contains no options for controlling how the character is randomized. For advanced character randomization use a <a class="xref" href="../../character-templates/randomized-layered-character-templates.html" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber=11>Randomized Layered Character Template</a>.</p>
 </div>
-<p>This component is responsible for:</p>
-<ul>
-<li>Creating a random <strong>layered character</strong></li>
-<li>Applying the <strong>Character Shader</strong></li>
-<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
-<li>Managing <strong>Overlay Layers</strong></li>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="13">This component is responsible for:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="14">
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="14">Creating a random <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="14">layered character</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="15">Applying the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="15">Character Shader</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="16">Assigning the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="16">Animator Controller</strong> (Optional)</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="17">Managing <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="17">Overlay Layers</strong></li>
 </ul>
-<p><strong>Requirements</strong>:</p>
-<ul>
-<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="19"><strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="19">Requirements</strong>:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="20">
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="20">A <a class="xref" href="../../character-types/layered-character-type.html" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber=20>Layered Character Type</a></li>
 </ul>
-<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" alt="Random Layered Character Renderer Component"></p>
-<hr>
-<h2 id="quick-setup-overview">Quick Setup Overview</h2>
-<p>Quick overview of how to setup the <strong>Random Layered Character Renderer</strong> component.</p>
-<ol>
-<li>Add the component to a <strong>GameObject</strong>.</li>
-<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
-<li>optionally assign <strong>Animator</strong>.</li>
-<li>Configure <strong>Loading Settings</strong>.</li>
-<li>Assign the <strong>Layered Character Type</strong> you want to use.</li>
-<li>Play your game and if <strong>Load Character On Start</strong> is enabled, a new completely randomized character will be displayed.</li>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="22"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/random-layered-character-renderer.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="22" alt="Random Layered Character Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="24">
+<h2 id="quick-setup-overview" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="26">Quick Setup Overview</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="28">Quick overview of how to setup the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="28">Random Layered Character Renderer</strong> component.</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="30">
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="30">Add the component to a <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="30">GameObject</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="31">Assign <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="31">Renderer</strong> (Usually a Sprite Renderer).</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="32">optionally assign <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="32">Animator</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="33">Configure <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="33">Loading Settings</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="34">Assign the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="34">Layered Character Type</strong> you want to use.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="35">Play your game and if <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="35">Load Character On Start</strong> is enabled, a new completely randomized character will be displayed.</li>
 </ol>
-<hr>
-<h2 id="setup">Setup</h2>
-<p>Full step-by-step guide to setup the <strong>Random Layered Character Renderer</strong> component.</p>
-<h3 id="add-component">Add Component</h3>
-<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
-<p><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/add-component.png" alt="Add Random Layered Character Renderer Component"></p>
-<hr>
-<h3 id="assign-renderer-component">Assign Renderer Component</h3>
-<p>Assign the component responsible for rendering the character's sprites.</p>
-<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
-The <strong>Character Shader</strong> will be applied to this renderer.</p>
-<p><img src="../../../images/components/character-renderer-components/renderer.png" alt="Renderer Reference"></p>
-<hr>
-<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
-<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
-<p>To enable this:</p>
-<ol>
-<li>Enable <code>Set Animator Controller</code>.</li>
-<li>Assign the target Animator component.</li>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="37">
+<h2 id="setup" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="39">Setup</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="41">Full step-by-step guide to setup the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="41">Random Layered Character Renderer</strong> component.</p>
+<h3 id="add-component" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="43">Add Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="44">Add the component to a GameObject by clicking <code sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="44">Add Component</code> in the inspector window.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="46"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/add-component.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="46" alt="Add Random Layered Character Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="48">
+<h3 id="assign-renderer-component" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="50">Assign Renderer Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="52">Assign the component responsible for rendering the character's sprites.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="54">In most cases, this will be a <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="54">Sprite Renderer</strong>.
+The <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="55">Character Shader</strong> will be applied to this renderer.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="57"><img src="../../../images/components/character-renderer-components/renderer.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="57" alt="Renderer Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="59">
+<h3 id="assign-animator-component-optional" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="61">Assign Animator Component (Optional)</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="63">If your <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="63">Character Type</strong> asset includes an <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="63">Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="65">To enable this:</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="66">
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="66">Enable <code sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="66">Set Animator Controller</code>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="67">Assign the target Animator component.</li>
 </ol>
-<p><img src="../../../images/components/character-renderer-components/animator.png" alt="Animator Reference"></p>
-<hr>
-<h3 id="configure-loading-settings">Configure Loading Settings</h3>
-<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
-<p><img src="../../../images/components/character-renderer-components/loading-settings.png" alt="Loading Mode"></p>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="69"><img src="../../../images/components/character-renderer-components/animator.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="69" alt="Animator Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="71">
+<h3 id="configure-loading-settings" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="73">Configure Loading Settings</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="75">The <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="75">Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="77"><img src="../../../images/components/character-renderer-components/loading-settings.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="77" alt="Loading Mode"></p>
+<table sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">
 <thead>
-<tr>
-<th>Loading Mode</th>
-<th>Description</th>
-<th>Advantages</th>
-<th>Cons</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">
+<th sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">Loading Mode</th>
+<th sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">Description</th>
+<th sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">Advantages</th>
+<th sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="79">Cons</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Asynchronous</strong></td>
-<td>Loads the character in the background.</td>
-<td>No frame stutters or freezes.</td>
-<td>Character is temporarily invisible while loading.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81">
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81"><strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81">Asynchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81">Loads the character in the background.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81">No frame stutters or freezes.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="81">Character is temporarily invisible while loading.</td>
 </tr>
-<tr>
-<td><strong>Synchronous</strong></td>
-<td>Loads the character on the main thread.</td>
-<td>Character is immedietely renderered the same frame.</td>
-<td>May cause frame stutters depending on spritesheet size.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82">
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82"><strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82">Synchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82">Loads the character on the main thread.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82">Character is immedietely renderered the same frame.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="82">May cause frame stutters depending on spritesheet size.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="recommended-usage">Recommended Usage</h4>
-<ul>
-<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
-<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+<h4 id="recommended-usage" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="84">Recommended Usage</h4>
+<ul sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="85">
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="85">Use <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="85">Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="86">Use <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="86">Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
 </ul>
-<hr>
-<h4 id="load-character-on-start">Load Character On Start</h4>
-<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
-<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
-<hr>
-<h3 id="assign-character-type">Assign Character Type</h3>
-<p>Assign a <strong>Layered Character Type</strong> asset.<br>
-The renderer will create a randomized character using the <strong>Character Type</strong> asset you assign.</p>
-<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/character-specifications.png" alt="Character Specifications"></h2>
-<h3 id="hit-play">Hit Play</h3>
-<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
-<p>Enter Play Mode.</p>
-<p>If <code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong>, the character will be automatically created and displayed.</p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="88">
+<h4 id="load-character-on-start" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="90">Load Character On Start</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="92">If <code sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="92">Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="92">Start()</code> method</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="94">If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber=94>GetAndShowCharacter()</a> method</p>
+<hr sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="96">
+<h3 id="assign-character-type" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="98">Assign Character Type</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="100">Assign a <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="100">Layered Character Type</strong> asset.<br>
+The renderer will create a randomized character using the <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="101">Character Type</strong> asset you assign.</p>
+<h2 id="character-specifications" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="104"><img src="../../../images/components/character-renderer-components/random-layered-character-renderer/character-specifications.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="104" alt="Character Specifications"></h2>
+<h3 id="hit-play" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="106">Hit Play</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="108"><img src="../../../images/misc/play-buttons.png" sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="108" alt="Play Buttons"></p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="110">Enter Play Mode.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="112">If <code sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="112">Load Character On Start</code> is enabled in <strong sourcefile="docs/character-usage/character-renderer-components/random-layered-character-renderer.md" sourcestartlinenumber="112">Loading Settings</strong>, the character will be automatically created and displayed.</p>
 
 </article>
 

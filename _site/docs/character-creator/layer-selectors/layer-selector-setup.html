@@ -101,75 +101,75 @@
         </div>
 
         <article data-uid="ccm-layer-selector-setup">
-<h1 id="layer-selector-setup">Layer Selector Setup</h1>
+<h1 id="layer-selector-setup" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="5">Layer Selector Setup</h1>
 
-<p>Not sure what a <strong>Layer Selector</strong> is?<br>
-<a class="xref" href="../character-creator-overview.html#layer-selectors">Read More → Layer Selectors</a></p>
-<hr>
-<h2 id="character-layer-selection-manager">Character Layer Selection Manager</h2>
-<p>A <strong>Layer Selector</strong> cannot function on its own.<br>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="7">Not sure what a <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="7">Layer Selector</strong> is?<br>
+<a class="xref" href="../character-creator-overview.html#layer-selectors" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber=8>Read More → Layer Selectors</a></p>
+<hr sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="10">
+<h2 id="character-layer-selection-manager" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="12">Character Layer Selection Manager</h2>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="14">A <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="14">Layer Selector</strong> cannot function on its own.<br>
 The most common way to use Layer Selectors is through the<br>
-<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a> component.</p>
-<p>This manager is responsible for connecting UI Layer Selectors to the<br>
-<a class="xref" href="../character-creator-overview.html">Character Creation Menu</a>.</p>
-<h3 id="initialization-modes">Initialization Modes</h3>
-<p>The <strong>Character Layer Selection Manager</strong> supports two initialization modes:</p>
-<h4 id="1-auto-create">1. Auto Create</h4>
-<ul>
-<li>At runtime, the manager will <strong>instantiate new layer selectors</strong> for each character layer.</li>
-<li>Requires assigning a <strong>Character Layer Selector Prefab</strong>.</li>
-<li>Each layer selector instance is linked automatically to a layer.</li>
+<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber=16><code sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="16">CCMCharacterLayerSelectionManager</code></a> component.</p>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="18">This manager is responsible for connecting UI Layer Selectors to the<br>
+<a class="xref" href="../character-creator-overview.html" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber=19>Character Creation Menu</a>.</p>
+<h3 id="initialization-modes" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="21">Initialization Modes</h3>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="23">The <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="23">Character Layer Selection Manager</strong> supports two initialization modes:</p>
+<h4 id="1-auto-create" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="25">1. Auto Create</h4>
+<ul sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="26">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="26">At runtime, the manager will <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="26">instantiate new layer selectors</strong> for each character layer.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="27">Requires assigning a <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="27">Character Layer Selector Prefab</strong>.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="28">Each layer selector instance is linked automatically to a layer.</li>
 </ul>
-<h4 id="2-initialize-existing">2. Initialize Existing</h4>
-<ul>
-<li>Use <strong>pre-existing layer selectors</strong> already placed in the scene.</li>
-<li>Each selector is initialized with a character layer at runtime.</li>
-<li>Extra selectors (more than the number of layers) can optionally be <strong>hidden</strong> or <strong>disabled</strong>.</li>
+<h4 id="2-initialize-existing" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="30">2. Initialize Existing</h4>
+<ul sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="31">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="31">Use <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="31">pre-existing layer selectors</strong> already placed in the scene.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="32">Each selector is initialized with a character layer at runtime.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="33">Extra selectors (more than the number of layers) can optionally be <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="33">hidden</strong> or <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="33">disabled</strong>.</li>
 </ul>
-<h3 id="layer-selector-parent">Layer Selector Parent</h3>
-<p>Regardless of the initialization mode, a <strong>Layer Selector Parent</strong> is required:</p>
-<ul>
-<li>This should be the <strong>parent GameObject</strong> that contains all layer selectors.</li>
-<li>In <strong>Initialize Existing</strong> mode, place all pre-made layer selectors as children of this parent.</li>
-<li>In <strong>Create New</strong> mode, new selectors will be instantiated as children of this parent.</li>
+<h3 id="layer-selector-parent" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="35">Layer Selector Parent</h3>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="37">Regardless of the initialization mode, a <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="37">Layer Selector Parent</strong> is required:</p>
+<ul sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="39">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="39">This should be the <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="39">parent GameObject</strong> that contains all layer selectors.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="40">In <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="40">Initialize Existing</strong> mode, place all pre-made layer selectors as children of this parent.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="41">In <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="41">Create New</strong> mode, new selectors will be instantiated as children of this parent.</li>
 </ul>
-<hr>
-<h2 id="layer-selector-prefabs">Layer Selector Prefabs</h2>
-<div class="TIP">
+<hr sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="43">
+<h2 id="layer-selector-prefabs" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="45">Layer Selector Prefabs</h2>
+<div class="TIP" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="47">
 <h5>Tip</h5>
-<p>All Layer Selector prefabs can be found under:<br>
-<strong>BlazerTech Character Management System &gt; Prefabs &gt; Character Creator &gt; Layer Selectors</strong>  .
-Subfolders exist for each individual <strong>Layer Selector</strong>.</p>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="48">All Layer Selector prefabs can be found under:<br>
+<strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="49">BlazerTech Character Management System &gt; Prefabs &gt; Character Creator &gt; Layer Selectors</strong>  .
+Subfolders exist for each individual <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="50">Layer Selector</strong>.</p>
 </div>
-<p>Each Layer Selector exists as a prefab and is organized into its own folder with the following structure:</p>
-<ul>
-<li><p><strong>Base Folder</strong><br>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="52">Each Layer Selector exists as a prefab and is organized into its own folder with the following structure:</p>
+<ul sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="54">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="54"><p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="54"><strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="54">Base Folder</strong><br>
 Contains the core Layer Selector prefab and any variant prefabs.</p>
 </li>
-<li><p><strong>Pre-Setup Folder</strong><br>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="57"><p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="57"><strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="57">Pre-Setup Folder</strong><br>
 Contains prefabs that already include a configured
-<a href="#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
+<a href="#character-layer-selection-manager" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="59">Character Layer Selection Manager</a>.<br>
 Two versions are provided:</p>
-<ol>
-<li><strong>Auto Create</strong> – Instantiates Layer Selectors at runtime.</li>
-<li><strong>Initialize Existing</strong> – Uses Layer Selectors already present in the prefab hierarchy.</li>
+<ol sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="61">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="61"><strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="61">Auto Create</strong> – Instantiates Layer Selectors at runtime.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="62"><strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="62">Initialize Existing</strong> – Uses Layer Selectors already present in the prefab hierarchy.</li>
 </ol>
 </li>
 </ul>
-<p>This makes it easy to either drop in a ready-to-use prefab or build a custom setup.</p>
-<hr>
-<h2 id="character-layer-selection-manager-setup">Character Layer Selection Manager Setup</h2>
-<p>If you want to setup a <strong>Character Layer Selection Manager</strong> yourself without using a prefab follow these steps:</p>
-<ol>
-<li>Add the <code>CCMCharacterLayerSelectionManager</code> component to your UI object.</li>
-<li>Assign the <strong>Layer Selector Parent</strong>.</li>
-<li>Choose an <strong>Initialization Mode</strong>:
-<ul>
-<li><em>Create New</em> → Provide a <code>Character Layer Selector Prefab</code>.</li>
-<li><em>Initialize Existing</em> → Place selectors as children under the parent.</li>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="64">This makes it easy to either drop in a ready-to-use prefab or build a custom setup.</p>
+<hr sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="66">
+<h2 id="character-layer-selection-manager-setup" sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="68">Character Layer Selection Manager Setup</h2>
+<p sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="69">If you want to setup a <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="69">Character Layer Selection Manager</strong> yourself without using a prefab follow these steps:</p>
+<ol sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="70">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="70">Add the <code sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="70">CCMCharacterLayerSelectionManager</code> component to your UI object.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="71">Assign the <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="71">Layer Selector Parent</strong>.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="72">Choose an <strong sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="72">Initialization Mode</strong>:
+<ul sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="73">
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="73"><em sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="73">Create New</em> → Provide a <code sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="73">Character Layer Selector Prefab</code>.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="74"><em sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="74">Initialize Existing</em> → Place selectors as children under the parent.</li>
 </ul>
 </li>
-<li>Run the scene, selectors will now control the layers of the active character.</li>
+<li sourcefile="docs/character-creator/layer-selectors/layer-selector-setup.md" sourcestartlinenumber="75">Run the scene, selectors will now control the layers of the active character.</li>
 </ol>
 
 </article>

@@ -101,101 +101,101 @@
         </div>
 
         <article data-uid="unified-character-template-renderer-component">
-<h1 id="unified-character-template-renderer-component">Unified Character Template Renderer Component</h1>
+<h1 id="unified-character-template-renderer-component" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="6">Unified Character Template Renderer Component</h1>
 
-<p>The <strong>Unified Character Template Renderer</strong> creates a new <strong>Unified Character</strong> from a <strong>Unified Character Template</strong> and renders it in-game.</p>
-<p>This component is responsible for:</p>
-<ul>
-<li>Creating a <strong>unified character</strong></li>
-<li>Applying the <strong>Character Shader</strong></li>
-<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
-<li>Managing <strong>Overlay Layers</strong></li>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="8">The <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="8">Unified Character Template Renderer</strong> creates a new <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="8">Unified Character</strong> from a <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="8">Unified Character Template</strong> and renders it in-game.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="10">This component is responsible for:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="11">
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="11">Creating a <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="11">unified character</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="12">Applying the <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="12">Character Shader</strong></li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="13">Assigning the <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="13">Animator Controller</strong> (Optional)</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="14">Managing <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="14">Overlay Layers</strong></li>
 </ul>
-<p><strong>Requirements</strong>:</p>
-<ul>
-<li>A <a class="xref" href="../../character-types/unified-character-type.html">Unified Character Type</a></li>
-<li>At least one <a class="xref" href="../../character-templates/character-templates.html#Unified-character-template">Unified Character Template</a></li>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="16"><strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="16">Requirements</strong>:</p>
+<ul sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="17">
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="17">A <a class="xref" href="../../character-types/unified-character-type.html" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber=17>Unified Character Type</a></li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="18">At least one <a class="xref" href="../../character-templates/character-templates.html#Unified-character-template" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber=18>Unified Character Template</a></li>
 </ul>
-<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Unified Character Template Renderer Component"></p>
-<hr>
-<h2 id="quick-setup-overview">Quick Setup Overview</h2>
-<p>Quick overview of how to setup the <strong>Unified Character Tempalte Renderer</strong> component.</p>
-<ol>
-<li>Add the component to a <strong>GameObject</strong>.</li>
-<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
-<li>optionally assign <strong>Animator</strong>.</li>
-<li>Configure <strong>Loading Settings</strong>.</li>
-<li>Assign the <strong>Unified Character Template</strong> you want to use.</li>
-<li>Play your game and if <strong>Load Character On Start</strong> is enabled, your character will be displayed.</li>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="20"><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="20" alt="Unified Character Template Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="22">
+<h2 id="quick-setup-overview" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="24">Quick Setup Overview</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="26">Quick overview of how to setup the <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="26">Unified Character Tempalte Renderer</strong> component.</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="28">
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="28">Add the component to a <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="28">GameObject</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="29">Assign <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="29">Renderer</strong> (Usually a Sprite Renderer).</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="30">optionally assign <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="30">Animator</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="31">Configure <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="31">Loading Settings</strong>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="32">Assign the <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="32">Unified Character Template</strong> you want to use.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="33">Play your game and if <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="33">Load Character On Start</strong> is enabled, your character will be displayed.</li>
 </ol>
-<hr>
-<h2 id="setup">Setup</h2>
-<p>Full step-by-step guide to setup the <strong>Unified Character Tempalte Renderer</strong> component.</p>
-<h3 id="add-component">Add Component</h3>
-<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
-<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/add-component.png" alt="Add Unified Character Template Renderer Component"></p>
-<hr>
-<h3 id="assign-renderer-component">Assign Renderer Component</h3>
-<p>Assign the component responsible for rendering the character's sprites.</p>
-<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
-The <strong>Character Shader</strong> will be applied to this renderer.</p>
-<p><img src="../../../images/components/character-renderer-components/renderer.png" alt="Renderer Reference"></p>
-<hr>
-<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
-<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
-<p>To enable this:</p>
-<ol>
-<li>Enable <code>Set Animator Controller</code>.</li>
-<li>Assign the target Animator component.</li>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="35">
+<h2 id="setup" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="37">Setup</h2>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="39">Full step-by-step guide to setup the <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="39">Unified Character Tempalte Renderer</strong> component.</p>
+<h3 id="add-component" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="41">Add Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="42">Add the component to a GameObject by clicking <code sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="42">Add Component</code> in the inspector window.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="44"><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/add-component.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="44" alt="Add Unified Character Template Renderer Component"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="46">
+<h3 id="assign-renderer-component" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="48">Assign Renderer Component</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="50">Assign the component responsible for rendering the character's sprites.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="52">In most cases, this will be a <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="52">Sprite Renderer</strong>.
+The <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="53">Character Shader</strong> will be applied to this renderer.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="55"><img src="../../../images/components/character-renderer-components/renderer.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="55" alt="Renderer Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="57">
+<h3 id="assign-animator-component-optional" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="59">Assign Animator Component (Optional)</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="61">If your <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="61">Character Type</strong> asset includes an <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="61">Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="63">To enable this:</p>
+<ol sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="64">
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="64">Enable <code sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="64">Set Animator Controller</code>.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="65">Assign the target Animator component.</li>
 </ol>
-<p><img src="../../../images/components/character-renderer-components/animator.png" alt="Animator Reference"></p>
-<hr>
-<h3 id="configure-loading-settings">Configure Loading Settings</h3>
-<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
-<p><img src="../../../images/components/character-renderer-components/loading-settings.png" alt="Loading Mode"></p>
-<table>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="67"><img src="../../../images/components/character-renderer-components/animator.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="67" alt="Animator Reference"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="69">
+<h3 id="configure-loading-settings" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="71">Configure Loading Settings</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="73">The <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="73">Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="75"><img src="../../../images/components/character-renderer-components/loading-settings.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="75" alt="Loading Mode"></p>
+<table sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">
 <thead>
-<tr>
-<th>Loading Mode</th>
-<th>Description</th>
-<th>Advantages</th>
-<th>Cons</th>
+<tr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">
+<th sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">Loading Mode</th>
+<th sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">Description</th>
+<th sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">Advantages</th>
+<th sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="77">Cons</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Asynchronous</strong></td>
-<td>Loads the character in the background.</td>
-<td>No frame stutters or freezes.</td>
-<td>Character is temporarily invisible while loading.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79">
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79"><strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79">Asynchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79">Loads the character in the background.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79">No frame stutters or freezes.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="79">Character is temporarily invisible while loading.</td>
 </tr>
-<tr>
-<td><strong>Synchronous</strong></td>
-<td>Loads the character on the main thread.</td>
-<td>Character is immedietely renderered the same frame.</td>
-<td>May cause frame stutters depending on spritesheet size.</td>
+<tr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80">
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80"><strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80">Synchronous</strong></td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80">Loads the character on the main thread.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80">Character is immedietely renderered the same frame.</td>
+<td sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="80">May cause frame stutters depending on spritesheet size.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="recommended-usage">Recommended Usage</h4>
-<ul>
-<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
-<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+<h4 id="recommended-usage" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="82">Recommended Usage</h4>
+<ul sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="83">
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="83">Use <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="83">Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="84">Use <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="84">Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
 </ul>
-<hr>
-<h4 id="load-character-on-start">Load Character On Start</h4>
-<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
-<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
-<hr>
-<h3 id="assign-template">Assign Template</h3>
-<p>Assign a <strong>Unified Character Template</strong> asset.<br>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="86">
+<h4 id="load-character-on-start" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="88">Load Character On Start</h4>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="90">If <code sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="90">Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="90">Start()</code> method</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="92">If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber=92>GetAndShowCharacter()</a> method</p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="94">
+<h3 id="assign-template" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="96">Assign Template</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="98">Assign a <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="98">Unified Character Template</strong> asset.<br>
 This will be used to create a new character based on the specifications of the template.</p>
-<p><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/assign-template.png" alt="Character Specifications"></p>
-<hr>
-<h3 id="hit-play">Hit Play</h3>
-<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
-<p>Enter Play Mode.</p>
-<p>If <code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong>, the character will be automatically created and displayed.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="101"><img src="../../../images/components/character-renderer-components/unified-character-template-renderer/assign-template.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="101" alt="Character Specifications"></p>
+<hr sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="103">
+<h3 id="hit-play" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="105">Hit Play</h3>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="107"><img src="../../../images/misc/play-buttons.png" sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="107" alt="Play Buttons"></p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="109">Enter Play Mode.</p>
+<p sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="111">If <code sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="111">Load Character On Start</code> is enabled in <strong sourcefile="docs/character-usage/character-renderer-components/unified-character-template-renderer.md" sourcestartlinenumber="111">Loading Settings</strong>, the character will be automatically created and displayed.</p>
 
 </article>
 

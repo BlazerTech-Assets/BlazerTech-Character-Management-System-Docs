@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Creator Menu Controls | BlazerTech Character Management System </title>
+      <title> | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Creator Menu Controls | BlazerTech Character Management System ">
+      <meta name="title" content=" | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="Character Creator Menu Controls | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Character Creator Menu Controls | BlazerTech Character Management System">
+    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
 
       <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
       <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
@@ -101,74 +101,7 @@
         </div>
 
         <article data-uid="">
-<h1 id="character-creator-menu-controls">Character Creator Menu Controls</h1>
 
-<p>Menu Controls are UI button groups used inside the <strong>Character Creation Menu</strong> to provide core user actions such as saving, closing, randomizing, and resetting a character.</p>
-<p>They are optional prefabs that can be dropped into a Character Creator UI or replaced with custom implementations using the CCM Relay system.</p>
-<hr>
-<h2 id="overview">Overview</h2>
-<p>Menu Controls typically provide the following actions:</p>
-<ul>
-<li>Close or exit the Character Creator</li>
-<li>Save or confirm character changes</li>
-<li>Reset the character to its original state</li>
-<li>Randomize the character appearance</li>
-</ul>
-<hr>
-<h2 id="prefabs">Prefabs</h2>
-<p><strong>Location:</strong> <code>Prefabs &gt; Character Creator &gt; Modules &gt; Menu Controls</code></p>
-<p>The system includes ready-made prefab variants that can be used without any additional setup. Drag and drop them directly into your Character Creation Menu hierarchy.</p>
-<h3 id="variants">Variants</h3>
-<p>Each variation folder contains the same layout but different button combinations and sprite styles.</p>
-<p>Available prefab layouts:</p>
-<ol>
-<li>Menu Controls (Back, Confirm, Randomize, Reset)</li>
-<li>Menu Controls (Back, Confirm, Randomize)</li>
-<li>Menu Controls (Back, Confirm)</li>
-</ol>
-<p>These variants allow you to choose the level of functionality needed for your UI.</p>
-<hr>
-<h2 id="generic-buttons">Generic Buttons</h2>
-<p>Inside the same prefabs directory, the <strong>Generic Buttons</strong> folder contains individual button prefabs designed for reuse.</p>
-<p>Each prefab includes:</p>
-<ul>
-<li>A UI Button</li>
-<li>A preconfigured <strong>CCM Relay</strong> component</li>
-<li>A unique visual style (sprite variation only)</li>
-</ul>
-<p>These are intended for building fully custom menu layouts while still retaining built-in functionality.</p>
-<hr>
-<h2 id="ccm-relay-component">CCM Relay Component</h2>
-<p>The <strong>CCM Relay</strong> component acts as a bridge between UI buttons and the Character Creation Menu system.</p>
-<p>It forwards button events to the active Character Creation Menu Manager, allowing UI elements to remain decoupled from core logic.</p>
-<h3 id="usage">Usage</h3>
-<p>To create a custom button using CCM Relay:</p>
-<ol>
-<li>Add the <code>CCM Relay</code> component to a GameObject</li>
-<li>Add a Unity <code>Button</code> component</li>
-<li>Assign the Button's <strong>On Click</strong> event to call a method on the CCM Relay component</li>
-</ol>
-<p>Example usage flow:</p>
-<ul>
-<li>Button click → CCM Relay method → Character Creation Menu Manager action</li>
-</ul>
-<h3 id="example">Example</h3>
-<p><img src="../images/character-creator-setup/ccm-relay-usage-example.png" alt="CCM Relay Usage Example"></p>
-<hr>
-<h2 id="ccm-relay-methods">CCM Relay Methods</h2>
-<p>The following public methods are available on the <code>CCM Relay</code> component:</p>
-<h3 id="disablemenu">DisableMenu()</h3>
-<p>Closes and disables the Character Creation Menu if it is currently open.</p>
-<hr>
-<h3 id="savecharacter">SaveCharacter()</h3>
-<p>Saves the currently edited character from the Character Creation Menu.<br>
-If the system supports grouping, the character is also added to the appropriate group.</p>
-<hr>
-<h3 id="randomizeentirecharacter">RandomizeEntireCharacter()</h3>
-<p>Randomizes all character layers in the current Character Creation Menu instance.</p>
-<hr>
-<h3 id="resetcharacter">ResetCharacter()</h3>
-<p>Restores the character to the state it was in when the Character Creation Menu was first opened.</p>
 
 </article>
 

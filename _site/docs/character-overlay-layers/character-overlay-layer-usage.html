@@ -101,88 +101,88 @@
         </div>
 
         <article data-uid="character-overlay-layer-usage">
-<h1 id="character-overlay-layer-usage">Character Overlay Layer Usage</h1>
+<h1 id="character-overlay-layer-usage" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="6">Character Overlay Layer Usage</h1>
 
-<p>This page explains how to apply <strong>Overlay Layers</strong> to a character using a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer Component</a>.</p>
-<p>Overlay Layers can be applied in two ways:</p>
-<ol>
-<li>Automatically when the character loads</li>
-<li>Dynamically at runtime through code</li>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="8">This page explains how to apply <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="8">Overlay Layers</strong> to a character using a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber=8>Character Renderer Component</a>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="10">Overlay Layers can be applied in two ways:</p>
+<ol sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="12">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="12">Automatically when the character loads</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="13">Dynamically at runtime through code</li>
 </ol>
-<hr>
-<h2 id="applying-overlay-layers-automatically">Applying Overlay Layers Automatically</h2>
-<h3 id="default-overlay-layers">Default Overlay Layers</h3>
-<p>Every <strong>Character Renderer component</strong> contains a <strong>Default Overlay Layers</strong> list.</p>
-<p>Any Overlay Layer in this list is automatically applied when the character is loaded.</p>
-<p><img src="../../images/overlay-layers/default-overlay-layers.png" alt="Default Overlay Layers"></p>
-<p>This is useful when a character should always spawn with specific visual elements.</p>
-<p><strong>Overlay Layers are applied in the order listed</strong>.</p>
-<div class="CAUTION">
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="15">
+<h2 id="applying-overlay-layers-automatically" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="17">Applying Overlay Layers Automatically</h2>
+<h3 id="default-overlay-layers" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="19">Default Overlay Layers</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="21">Every <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="21">Character Renderer component</strong> contains a <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="21">Default Overlay Layers</strong> list.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="23">Any Overlay Layer in this list is automatically applied when the character is loaded.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="25"><img src="../../images/overlay-layers/default-overlay-layers.png" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="25" alt="Default Overlay Layers"></p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="27">This is useful when a character should always spawn with specific visual elements.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="29"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="29">Overlay Layers are applied in the order listed</strong>.</p>
+<div class="CAUTION" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="31">
 <h5>Caution</h5>
-<p><strong>Overlay Layers</strong> must use the <strong>same Character Type</strong> as the character they are applied to.<br>
-If the <strong>Character Types</strong> do not match, the <strong>Overlay Layer</strong> will not be applied.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="32"><strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="32">Overlay Layers</strong> must use the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="32">same Character Type</strong> as the character they are applied to.<br>
+If the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="33">Character Types</strong> do not match, the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="33">Overlay Layer</strong> will not be applied.</p>
 </div>
-<hr>
-<h2 id="managing-overlay-layers-through-code">Managing Overlay Layers Through Code</h2>
-<p>Overlay Layers can also be <strong>added, removed, or reordered at runtime</strong>.</p>
-<p>All functionality is provided through the <strong>OverlayLayerHandler</strong>, which exists on every <strong>Character Renderer component</strong>.</p>
-<p>This handler manages all overlay layers currently applied to the character.</p>
-<hr>
-<h3 id="accessing-the-overlaylayerhandler">Accessing the OverlayLayerHandler</h3>
-<p>Every <strong>Character Renderer component</strong> exposes the handler through the <code>OverlayLayerHandler</code> property.</p>
-<p>Example reference:</p>
-<pre><code class="lang-cs">CharacterRenderer.OverlayLayerHandler
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="35">
+<h2 id="managing-overlay-layers-through-code" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="37">Managing Overlay Layers Through Code</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="39">Overlay Layers can also be <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="39">added, removed, or reordered at runtime</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="41">All functionality is provided through the <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="41">OverlayLayerHandler</strong>, which exists on every <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="41">Character Renderer component</strong>.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="43">This handler manages all overlay layers currently applied to the character.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="45">
+<h3 id="accessing-the-overlaylayerhandler" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="47">Accessing the OverlayLayerHandler</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="49">Every <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="49">Character Renderer component</strong> exposes the handler through the <code sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="49">OverlayLayerHandler</code> property.</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="51">Example reference:</p>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="53">CharacterRenderer.OverlayLayerHandler
 </code></pre>
-<p>Once accessed, the handler can be used to manager <strong>Overlay Layers</strong>.</p>
-<hr>
-<h3 id="adding-an-overlay-layer">Adding an Overlay Layer</h3>
-<p>Adds a new Overlay Layer to the character.</p>
-<pre><code class="lang-cs">AddOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="57">Once accessed, the handler can be used to manager <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="57">Overlay Layers</strong>.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="59">
+<h3 id="adding-an-overlay-layer" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="61">Adding an Overlay Layer</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="63">Adds a new Overlay Layer to the character.</p>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="65">AddOverlayLayer(CharacterOverlayLayerSO overlayLayer)
 </code></pre>
-<h4 id="behavior">Behavior</h4>
-<ul>
-<li>Instantiates the Overlay Layer</li>
-<li>Adds it to the end of list of active Overlay Layers</li>
-<li>Initializes the Overlay Layer</li>
+<h4 id="behavior" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="69">Behavior</h4>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="70">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="70">Instantiates the Overlay Layer</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="71">Adds it to the end of list of active Overlay Layers</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="72">Initializes the Overlay Layer</li>
 </ul>
-<p>If the same Overlay Layer is added multiple times, <strong>duplicates will be created</strong>.</p>
-<h4 id="example">Example</h4>
-<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.AddOverlayLayer(overlayLayer);
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="74">If the same Overlay Layer is added multiple times, <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="74">duplicates will be created</strong>.</p>
+<h4 id="example" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="76">Example</h4>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="78">characterRenderer.OverlayLayerHandler.AddOverlayLayer(overlayLayer);
 </code></pre>
-<hr>
-<h3 id="removing-an-overlay-layer">Removing an Overlay Layer</h3>
-<p>Removes an overlay Layer from a character.</p>
-<pre><code class="lang-cs">RemoveOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="82">
+<h3 id="removing-an-overlay-layer" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="84">Removing an Overlay Layer</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="86">Removes an overlay Layer from a character.</p>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="88">RemoveOverlayLayer(CharacterOverlayLayerSO overlayLayer)
 </code></pre>
-<h4 id="behavior-1">Behavior</h4>
-<ul>
-<li>Searches for the first instance of the Overlay Layer</li>
-<li>Removes it if found</li>
+<h4 id="behavior-1" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="92">Behavior</h4>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="94">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="94">Searches for the first instance of the Overlay Layer</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="95">Removes it if found</li>
 </ul>
-<p>If multiple instances of the same overlay layer exist, <strong>only the first instance is removed</strong>.</p>
-<h4 id="example-1">Example</h4>
-<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.RemoveOverlayLayer(overlayLayer);
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="97">If multiple instances of the same overlay layer exist, <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="97">only the first instance is removed</strong>.</p>
+<h4 id="example-1" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="99">Example</h4>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="101">characterRenderer.OverlayLayerHandler.RemoveOverlayLayer(overlayLayer);
 </code></pre>
-<hr>
-<h3 id="changing-overlay-layer-order">Changing Overlay Layer Order</h3>
-<p>Overlay Layers are rendered based on their GameObject position in the hierarchy</p>
-<p>You can change the position of an Overlay Layer using:</p>
-<pre><code class="lang-cs">ChangeOverlayLayerIndex(CharacterOverlayLayerSO overlayLayer, int newIndex)
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="105">
+<h3 id="changing-overlay-layer-order" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="107">Changing Overlay Layer Order</h3>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="109">Overlay Layers are rendered based on their GameObject position in the hierarchy</p>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="111">You can change the position of an Overlay Layer using:</p>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="113">ChangeOverlayLayerIndex(CharacterOverlayLayerSO overlayLayer, int newIndex)
 </code></pre>
-<h4 id="behavior-2">Behavior</h4>
-<ul>
-<li>Finds the Overlay Layer</li>
-<li>Moves it to the specified index</li>
-<li>Updates the GameObjects position in the hierarchy</li>
+<h4 id="behavior-2" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="117">Behavior</h4>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="119">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="119">Finds the Overlay Layer</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="120">Moves it to the specified index</li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="121">Updates the GameObjects position in the hierarchy</li>
 </ul>
-<h4 id="example-2">Example</h4>
-<pre><code class="lang-cs">characterRenderer.OverlayLayerHandler.ChangeOverlayLayerIndex(overlayLayer, 1);
+<h4 id="example-2" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="123">Example</h4>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="125">characterRenderer.OverlayLayerHandler.ChangeOverlayLayerIndex(overlayLayer, 1);
 </code></pre>
-<p>If the index is outside the valid range, the value is <strong>clamped automatically</strong>.</p>
-<hr>
-<h2 id="example-script">Example Script</h2>
-<p>The following example demonstrates adding an <strong>Overlay Layer</strong> and moving it to a specific position.</p>
-<pre><code class="lang-cs">using BlazerTech.CharacterManagement.Components;
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="129">If the index is outside the valid range, the value is <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="129">clamped automatically</strong>.</p>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="131">
+<h2 id="example-script" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="133">Example Script</h2>
+<p sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="135">The following example demonstrates adding an <strong sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="135">Overlay Layer</strong> and moving it to a specific position.</p>
+<pre><code class="lang-cs" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="137">using BlazerTech.CharacterManagement.Components;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -202,12 +202,12 @@ public class AddOverlayLayerOnPress : MonoBehaviour
     }
 }
 </code></pre>
-<hr>
-<h2 id="related">Related</h2>
-<ul>
-<li><a class="xref" href="character-overlay-layers.html">Character Overlay Layers</a></li>
-<li><a class="xref" href="character-overlay-layer-configuration.html">Character Overlay Layer Configuration</a></li>
-<li><a class="xref" href="character-overlay-layer-extensions.html">Character Overlay Layer Extensions</a></li>
+<hr sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="159">
+<h2 id="related" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="161">Related</h2>
+<ul sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="162">
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="162"><a class="xref" href="character-overlay-layers.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber=162>Character Overlay Layers</a></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="163"><a class="xref" href="character-overlay-layer-configuration.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber=163>Character Overlay Layer Configuration</a></li>
+<li sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber="164"><a class="xref" href="character-overlay-layer-extensions.html" sourcefile="docs/character-overlay-layers/character-overlay-layer-usage.md" sourcestartlinenumber=164>Character Overlay Layer Extensions</a></li>
 </ul>
 
 </article>

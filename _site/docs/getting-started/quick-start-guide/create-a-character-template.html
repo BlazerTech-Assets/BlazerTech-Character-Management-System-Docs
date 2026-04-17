@@ -101,65 +101,65 @@
         </div>
 
         <article data-uid="quick-start-create-a-character-template">
-<h1 id="create-a-character-template">Create A Character Template</h1>
+<h1 id="create-a-character-template" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="6">Create A Character Template</h1>
 
-<p>There are a multitude of ways to create characters in the <strong>Character Management System</strong>, however for this guide we're going to focus on <strong>Character Templates</strong>.</p>
-<p>Think of a <strong>Character Template</strong> as a blueprint to create a character during runtime.<br>
-The Template defines the <strong>name</strong> of the character and the <strong>spritesheet(s)</strong> used.</p>
-<h2 id="create-character-template-asset">Create Character Template Asset</h2>
-<p>To create a Character Template asset:</p>
-<ol>
-<li><code>Right Click</code> the <strong>Project window</strong></li>
-<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt;</strong></li>
-<li>Select either <strong>Layered</strong> or <strong>Unified Character Template</strong></li>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="8">There are a multitude of ways to create characters in the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="8">Character Management System</strong>, however for this guide we're going to focus on <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="8">Character Templates</strong>.</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="10">Think of a <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="10">Character Template</strong> as a blueprint to create a character during runtime.<br>
+The Template defines the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="11">name</strong> of the character and the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="11">spritesheet(s)</strong> used.</p>
+<h2 id="create-character-template-asset" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="13">Create Character Template Asset</h2>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="15">To create a Character Template asset:</p>
+<ol sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="16">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="16"><code sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="16">Right Click</code> the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="16">Project window</strong></li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="17">Navigate to: <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="17">Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt;</strong></li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="18">Select either <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="18">Layered</strong> or <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="18">Unified Character Template</strong></li>
 </ol>
-<hr>
-<h2 id="unified-character-template-setup">Unified Character Template Setup</h2>
-<p>A <strong>Unified Character Template</strong> requires:</p>
-<ol>
-<li>A reference to a <strong>Unified Character Type</strong>.</li>
-<li>A <strong>name</strong> for the character when it gets created.</li>
-<li>A reference to the <strong>spritesheet</strong> the character will use.</li>
+<hr sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="20">
+<h2 id="unified-character-template-setup" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="22">Unified Character Template Setup</h2>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="24">A <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="24">Unified Character Template</strong> requires:</p>
+<ol sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="25">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="25">A reference to a <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="25">Unified Character Type</strong>.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="26">A <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="26">name</strong> for the character when it gets created.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="27">A reference to the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="27">spritesheet</strong> the character will use.</li>
 </ol>
-<p><img src="../../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
-<h4 id="spritesheet-requirements">Spritesheet Requirements:</h4>
-<ul>
-<li>Must be the exact same size as the <strong>Base Spritesheet</strong> assigned in the <strong>Character Type</strong> and contain the same animations.</li>
-<li><strong>Sprite Mode:</strong> <code>Single</code> - We won't be using the spritesheet directly. It'll be passed to the <a class="xref" href="../basic-concepts.html#the-character-shader">Character Shader</a>.</li>
-<li><strong>Filter Mode:</strong> <code>Point (No Filter)</code>.</li>
-<li>(Optional) <strong>Compression:</strong> <code>None</code> - Generally not needed for pixel art.</li>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="29"><img src="../../../images/character-templates/unified-character-templates/unified-character-template.png" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="29" alt="Unified Character Template"></p>
+<h4 id="spritesheet-requirements" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="31">Spritesheet Requirements:</h4>
+<ul sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="32">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="32">Must be the exact same size as the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="32">Base Spritesheet</strong> assigned in the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="32">Character Type</strong> and contain the same animations.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="33"><strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="33">Sprite Mode:</strong> <code sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="33">Single</code> - We won't be using the spritesheet directly. It'll be passed to the <a class="xref" href="../basic-concepts.html#the-character-shader" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber=33>Character Shader</a>.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="34"><strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="34">Filter Mode:</strong> <code sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="34">Point (No Filter)</code>.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="35">(Optional) <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="35">Compression:</strong> <code sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="35">None</code> - Generally not needed for pixel art.</li>
 </ul>
-<p>Once finished, skip to <a href="#next-steps">Next Steps</a>.</p>
-<ul>
-<li><a class="xref" href="../../character-templates/unified-character-templates.html">Read Also → Unified Character Templates</a></li>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="37">Once finished, skip to <a href="#next-steps" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="37">Next Steps</a>.</p>
+<ul sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="39">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="39"><a class="xref" href="../../character-templates/unified-character-templates.html" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber=39>Read Also → Unified Character Templates</a></li>
 </ul>
-<hr>
-<h2 id="layered-character-template-setup">Layered Character Template Setup</h2>
-<p>Start by setting the basic required fields:</p>
-<ol>
-<li>A reference to a <strong>Layered Character Type</strong>.</li>
-<li>A <strong>Name</strong> for the character when it gets created.</li>
-<li>Optionally a <strong>Display Name</strong> that can be displayed along with the character.</li>
+<hr sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="41">
+<h2 id="layered-character-template-setup" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="43">Layered Character Template Setup</h2>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="45">Start by setting the basic required fields:</p>
+<ol sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="46">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="46">A reference to a <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="46">Layered Character Type</strong>.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="47">A <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="47">Name</strong> for the character when it gets created.</li>
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="48">Optionally a <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="48">Display Name</strong> that can be displayed along with the character.</li>
 </ol>
-<p><img src="../../../images/character-templates/layered-character-templates/layered-character-template.png" alt="Layered Character Template"></p>
-<h3 id="assign-layer-options">Assign Layer Options</h3>
-<p>Once a <strong>Layered Character Type</strong> has been assigned, a list of <strong>Layers</strong> will appear. These are the same layers you assigned in your <strong>Layered Character Type</strong>.</p>
-<p>Each entry in the list has an assigned <strong>Layer Option</strong>, that's the <strong>spritesheet</strong> that'll be used for that layer of the character.</p>
-<p>Selecting an entry will open a dropdown containing all <strong>valid Layer Options</strong> that can be selected. This is the same list of <strong>Layer Options</strong> contained in each <strong>Character Layer Definition asset</strong>.</p>
-<p><img src="../../../images/character-templates/layered-character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
-<div class="TIP">
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="50"><img src="../../../images/character-templates/layered-character-templates/layered-character-template.png" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="50" alt="Layered Character Template"></p>
+<h3 id="assign-layer-options" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="52">Assign Layer Options</h3>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="54">Once a <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="54">Layered Character Type</strong> has been assigned, a list of <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="54">Layers</strong> will appear. These are the same layers you assigned in your <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="54">Layered Character Type</strong>.</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="56">Each entry in the list has an assigned <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="56">Layer Option</strong>, that's the <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="56">spritesheet</strong> that'll be used for that layer of the character.</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="58">Selecting an entry will open a dropdown containing all <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="58">valid Layer Options</strong> that can be selected. This is the same list of <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="58">Layer Options</strong> contained in each <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="58">Character Layer Definition asset</strong>.</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="60"><img src="../../../images/character-templates/layered-character-templates/layered-character-template-layers-list.png" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="60" alt="Layered Character Template Layers List"></p>
+<div class="TIP" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="62">
 <h5>Tip</h5>
-<p>If the layers list ever appears incorrect or invalid, click <strong>Recreate List</strong> at the bottom to remake the list.<br>
-(Note: This will <strong>reset</strong> any selected options)</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="63">If the layers list ever appears incorrect or invalid, click <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="63">Recreate List</strong> at the bottom to remake the list.<br>
+(Note: This will <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="64">reset</strong> any selected options)</p>
 </div>
-<p>Once finished, Go to <a href="#next-steps">Next Steps</a>.</p>
-<ul>
-<li><a class="xref" href="../../character-templates/layered-character-templates.html">Read Also → Layered Character Templates</a></li>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="66">Once finished, Go to <a href="#next-steps" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="66">Next Steps</a>.</p>
+<ul sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="68">
+<li sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="68"><a class="xref" href="../../character-templates/layered-character-templates.html" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber=68>Read Also → Layered Character Templates</a></li>
 </ul>
-<hr>
-<h2 id="next-steps">Next Steps</h2>
-<p>Learn how to <strong>create and render characters</strong> from your <strong>Character Template</strong> during runtime.</p>
-<p><a class="xref" href="use-your-character.html">Read More → Use Your Character</a></p>
+<hr sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="70">
+<h2 id="next-steps" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="72">Next Steps</h2>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="74">Learn how to <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="74">create and render characters</strong> from your <strong sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="74">Character Template</strong> during runtime.</p>
+<p sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber="76"><a class="xref" href="use-your-character.html" sourcefile="docs/getting-started/quick-start-guide/create-a-character-template.md" sourcestartlinenumber=76>Read More → Use Your Character</a></p>
 
 </article>
 

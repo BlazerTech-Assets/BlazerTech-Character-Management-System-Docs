@@ -101,190 +101,190 @@
         </div>
 
         <article data-uid="basic-concepts">
-<h1 id="basic-concepts">Basic Concepts</h1>
+<h1 id="basic-concepts" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="6">Basic Concepts</h1>
 
-<p>This page introduces the <strong>main features</strong> of the <strong>Character Management System</strong>:</p>
-<ul>
-<li><a href="#types-of-characters"><strong>Types of Characters</strong></a> – The two fundamental different kinds of characters.</li>
-<li><a href="#character-type-assets"><strong>Character Type Assets</strong></a> – The core of every character.</li>
-<li><a href="#the-character-shader"><strong>The Character Shader</strong></a> – How characters are rendered in-game.</li>
-<li><a href="#character-templates"><strong>Character Templates</strong></a> – Blueprints for creating characters later.</li>
-<li><a href="#character-usage"><strong>Character Usage</strong></a> – Scripts to load and render characters.</li>
-<li><a href="#built-in-characters"><strong>Built-in Modular Characters</strong></a> - Modular characters pre-setup and ready for use.</li>
-<li><a href="#character-grouping-system"><strong>Character Grouping System</strong></a> - Groups used to save and manage characters.</li>
-<li><a href="#character-creator"><strong>Character Creator</strong></a> – Modular UI framework for building customizable characters in-game.</li>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="8">This page introduces the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="8">main features</strong> of the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="8">Character Management System</strong>:</p>
+<ul sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="9">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="9"><a href="#types-of-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="9"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="9">Types of Characters</strong></a> – The two fundamental different kinds of characters.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="10"><a href="#character-type-assets" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="10"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="10">Character Type Assets</strong></a> – The core of every character.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="11"><a href="#the-character-shader" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="11"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="11">The Character Shader</strong></a> – How characters are rendered in-game.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="12"><a href="#character-templates" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="12"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="12">Character Templates</strong></a> – Blueprints for creating characters later.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="13"><a href="#character-usage" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="13"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="13">Character Usage</strong></a> – Scripts to load and render characters.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="14"><a href="#built-in-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="14"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="14">Built-in Modular Characters</strong></a> - Modular characters pre-setup and ready for use.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="15"><a href="#character-grouping-system" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="15"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="15">Character Grouping System</strong></a> - Groups used to save and manage characters.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="16"><a href="#character-creator" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="16"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="16">Character Creator</strong></a> – Modular UI framework for building customizable characters in-game.</li>
 </ul>
-<hr>
-<h2 id="types-of-characters">Types of Characters</h2>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="18">
+<h2 id="types-of-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="20">Types of Characters</h2>
 <img src="../../images/character-types/character-types-showcase.png" alt="Character Types" width="500">  
-<p>The <strong>Character Management System</strong> contains two types of characters for different use cases.</p>
-<h3 id="unified-characters">Unified Characters</h3>
-<p>A <strong>Unified Character</strong> uses a <strong>single spritesheet</strong> containing the full character with all animations and frames.</p>
-<p><strong>Unified Characters</strong> are easy to setup and use but lack runtime customization since the character is pre-created in one spritesheet.</p>
-<h3 id="layered-characters">Layered Characters</h3>
-<p>A <strong>Layered Character</strong> combines <strong>multiple spritesheets</strong> into one at runtime to create the final character.<br>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="24">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="24">Character Management System</strong> contains two types of characters for different use cases.</p>
+<h3 id="unified-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="26">Unified Characters</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="28">A <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="28">Unified Character</strong> uses a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="28">single spritesheet</strong> containing the full character with all animations and frames.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="30"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="30">Unified Characters</strong> are easy to setup and use but lack runtime customization since the character is pre-created in one spritesheet.</p>
+<h3 id="layered-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="32">Layered Characters</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="34">A <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="34">Layered Character</strong> combines <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="34">multiple spritesheets</strong> into one at runtime to create the final character.<br>
 Every spritesheet must be the same size and contain the same frame sizes and positioning to work properly.</p>
-<p>Each spritesheet is layered on top of another in order at runtime.</p>
-<p>For example: If we had a character with four layers: <strong>Body, Outfit, Hairstyle and Accessory</strong>.</p>
-<p>When the character is used, the body layer will be renderered first, then the outfit on top of that, then the hairstyle and finally the accessory layer.<br>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="37">Each spritesheet is layered on top of another in order at runtime.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="39">For example: If we had a character with four layers: <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="39">Body, Outfit, Hairstyle and Accessory</strong>.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="41">When the character is used, the body layer will be renderered first, then the outfit on top of that, then the hairstyle and finally the accessory layer.<br>
 You have full control over the order the layers are rendered in.</p>
-<p><img src="../../images/character-types/layered-characters/layered-character-example.png" alt="Layered Character Example"></p>
-<hr>
-<h2 id="character-type-assets">Character Type Assets</h2>
-<p>Every character is defined by a <strong>Character Type asset</strong>, which is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a></p>
-<p>A Character Type:</p>
-<ul>
-<li>Defines if a character is <strong>Unified</strong> or <strong>Layered</strong></li>
-<li>Stores the <strong>Base Spritesheet</strong></li>
-<li>References a single <strong>shared Animator Controller</strong> for all characters to use (Optional)</li>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="44"><img src="../../images/character-types/layered-characters/layered-character-example.png" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="44" alt="Layered Character Example"></p>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="46">
+<h2 id="character-type-assets" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="48">Character Type Assets</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="50">Every character is defined by a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="50">Character Type asset</strong>, which is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="50">Scriptable Object</a></p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="52">A Character Type:</p>
+<ul sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="54">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="54">Defines if a character is <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="54">Unified</strong> or <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="54">Layered</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="55">Stores the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="55">Base Spritesheet</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="56">References a single <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="56">shared Animator Controller</strong> for all characters to use (Optional)</li>
 </ul>
-<h3 id="base-spritesheet">Base Spritesheet</h3>
-<p>The <strong>Base Spritesheet</strong> defines the layout that all other spritesheets must follow.</p>
-<p>This spritesheet is sliced into multiple frames, these are the frames that are used for any character using the same Character Type asset.</p>
-<hr>
-<h2 id="the-character-shader">The Character Shader</h2>
-<p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
-Sprites from the <strong>Base Spritesheet</strong> are used directly in a renderer component (such as a <strong>Sprite Renderer</strong>) or used in an <strong>Animator Controller</strong>.</p>
-<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and renders that over the <strong>Base Spritesheet</strong>.<br>
-If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
-<p>The renderer component is only ever using sprites from the <strong>Base Spritesheet</strong> meaning all other spritesheet do <strong>NOT</strong> need to be sliced, they should instead have a <code>Sprite Mode</code> of <code>Single</code>.</p>
-<p>This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.</p>
-<div class="NOTE">
+<h3 id="base-spritesheet" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="58">Base Spritesheet</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="60">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="60">Base Spritesheet</strong> defines the layout that all other spritesheets must follow.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="62">This spritesheet is sliced into multiple frames, these are the frames that are used for any character using the same Character Type asset.</p>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="64">
+<h2 id="the-character-shader" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="66">The Character Shader</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="68">A shader is used to visually display a character over the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="68">Base Spritesheet</strong>.<br>
+Sprites from the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="69">Base Spritesheet</strong> are used directly in a renderer component (such as a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="69">Sprite Renderer</strong>) or used in an <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="69">Animator Controller</strong>.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="72">If a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="72">Unified Character</strong> is used, the shader takes the single spritesheet of the character and renders that over the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="72">Base Spritesheet</strong>.<br>
+If a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="73">Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="75">The renderer component is only ever using sprites from the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="75">Base Spritesheet</strong> meaning all other spritesheet do <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="75">NOT</strong> need to be sliced, they should instead have a <code sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="75">Sprite Mode</code> of <code sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="75">Single</code>.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="77">This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.</p>
+<div class="NOTE" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="79">
 <h5>Note</h5>
-<p>If a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer</a> component is used the shader will be applied automatically.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="80">If a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=80>Character Renderer</a> component is used the shader will be applied automatically.</p>
 </div>
-<hr>
-<h2 id="character-templates">Character Templates</h2>
-<p>A <strong>Character Template</strong> is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that acts as a <strong>blueprint</strong> for creating characters later at runtime. Templates are supported for both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
-<p>Templates allow you to create a character once and resue it anywhere it in your project just by referencing it.</p>
-<p>Additionally templates provide extra functionality for <strong>Layered Characters</strong> allowing you to <strong>randomize specific layers</strong> based on pre-set rules you define in the editor.</p>
-<p><a class="xref" href="../character-templates/character-templates.html">Read More → Character Templates</a></p>
-<hr>
-<h2 id="character-usage">Character Usage</h2>
-<h3 id="character-renderer-components">Character Renderer Components</h3>
-<p><strong>Character Renderer components</strong> are responsible for loading and showing a character in-game.</p>
-<p><strong>Renderer components handle</strong>:</p>
-<ol>
-<li>Creating/loading a character</li>
-<li>Applying the <strong>Character Shader</strong></li>
-<li>Assigning the <strong>Animator Controller</strong> if applicable</li>
-<li>Managing <strong>Overlay Layers</strong></li>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="82">
+<h2 id="character-templates" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="84">Character Templates</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">A <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">Character Template</strong> is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">Scriptable Object</a> that acts as a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">blueprint</strong> for creating characters later at runtime. Templates are supported for both <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">Unified</strong> and <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="85">Layered Characters</strong>.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="87">Templates allow you to create a character once and resue it anywhere it in your project just by referencing it.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="89">Additionally templates provide extra functionality for <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="89">Layered Characters</strong> allowing you to <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="89">randomize specific layers</strong> based on pre-set rules you define in the editor.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="91"><a class="xref" href="../character-templates/character-templates.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=91>Read More → Character Templates</a></p>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="93">
+<h2 id="character-usage" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="95">Character Usage</h2>
+<h3 id="character-renderer-components" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="97">Character Renderer Components</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="99"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="99">Character Renderer components</strong> are responsible for loading and showing a character in-game.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="101"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="101">Renderer components handle</strong>:</p>
+<ol sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="102">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="102">Creating/loading a character</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="103">Applying the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="103">Character Shader</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="104">Assigning the <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="104">Animator Controller</strong> if applicable</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="105">Managing <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="105">Overlay Layers</strong></li>
 </ol>
-<table>
+<table sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="107">
 <thead>
-<tr>
-<th>Renderer Component</th>
-<th>Purpose</th>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="107">
+<th sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="107">Renderer Component</th>
+<th sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="107">Purpose</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a class="xref" href="../character-usage/character-renderer-components/layered-character-template-renderer.html">Layered Character Template Renderer</a></td>
-<td>Create and show a <strong>Layered Character</strong> from a template.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="109">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="109"><a class="xref" href="../character-usage/character-renderer-components/layered-character-template-renderer.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=109>Layered Character Template Renderer</a></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="109">Create and show a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="109">Layered Character</strong> from a template.</td>
 </tr>
-<tr>
-<td><a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Unified Character Template Renderer</a></td>
-<td>Create and show a <strong>Unified Character</strong> from a template.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="110">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="110"><a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=110>Unified Character Template Renderer</a></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="110">Create and show a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="110">Unified Character</strong> from a template.</td>
 </tr>
-<tr>
-<td><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html">Random Layered Character Renderer</a></td>
-<td>Create and show a new <strong>Layered Character</strong> with completely random layer options.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="111">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="111"><a class="xref" href="../character-usage/character-renderer-components/random-layered-character-renderer.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=111>Random Layered Character Renderer</a></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="111">Create and show a new <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="111">Layered Character</strong> with completely random layer options.</td>
 </tr>
-<tr>
-<td><a class="xref" href="../character-usage/character-renderer-components/layered-character-group-entry-renderer.html">Layered Character Group Entry Renderer</a></td>
-<td>Load and render a saved <strong>Layered Character</strong> from a group.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="112">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="112"><a class="xref" href="../character-usage/character-renderer-components/layered-character-group-entry-renderer.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=112>Layered Character Group Entry Renderer</a></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="112">Load and render a saved <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="112">Layered Character</strong> from a group.</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<h2 id="built-in-characters">Built-in Characters</h2>
-<p>The <strong>BlazerTech Character Management System</strong> includes fully configured modular characters which can be used in any commercial or non-commercial project.</p>
-<p>The <strong>BlazerTech Modular Characters</strong> consist of four layers:</p>
-<ol>
-<li><strong>Body</strong></li>
-<li><strong>Outfit</strong></li>
-<li><strong>Hairstyle</strong></li>
-<li><strong>Accessory</strong></li>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="114">
+<h2 id="built-in-characters" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="116">Built-in Characters</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="117">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="117">BlazerTech Character Management System</strong> includes fully configured modular characters which can be used in any commercial or non-commercial project.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="119">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="119">BlazerTech Modular Characters</strong> consist of four layers:</p>
+<ol sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="120">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="120"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="120">Body</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="121"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="121">Outfit</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="122"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="122">Hairstyle</strong></li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="123"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="123">Accessory</strong></li>
 </ol>
-<p>Included:</p>
-<ul>
-<li>Layered Character Type</li>
-<li>Unified Character Type</li>
-<li>A few Layered and Unified sample templates</li>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="125">Included:</p>
+<ul sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="126">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="126">Layered Character Type</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="127">Unified Character Type</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="128">A few Layered and Unified sample templates</li>
 </ul>
-<p>These characters will also be purchasable separately upon the full release of the Character Management System</p>
-<p><a class="xref" href="../built-in-characters.html">Read More → Built-In Characters</a></p>
-<hr>
-<h2 id="character-grouping-system">Character Grouping System</h2>
-<p>Charcter groups are used to sort characters. They're great for organizing characters into meaningful collections, whether that's for a dynamic roster or a fixed group size.</p>
-<p><a class="xref" href="../character-grouping-system.html">Read More → Character Grouping System</a></p>
-<p>Two types of groups exist.</p>
-<h3 id="flexible-group-type">Flexible Group Type</h3>
-<p>A dynamic list that characters can be added to, removed from, or edited at anytime.</p>
-<p>Example Uses:</p>
-<ul>
-<li>A roster of playable characters the player can create, edit, and delete.</li>
-<li>A collection of background NPCs that will later be randomly selected from.</li>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="130">These characters will also be purchasable separately upon the full release of the Character Management System</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="132"><a class="xref" href="../built-in-characters.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=132>Read More → Built-In Characters</a></p>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="134">
+<h2 id="character-grouping-system" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="136">Character Grouping System</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="138">Charcter groups are used to sort characters. They're great for organizing characters into meaningful collections, whether that's for a dynamic roster or a fixed group size.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="140"><a class="xref" href="../character-grouping-system.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=140>Read More → Character Grouping System</a></p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="142">Two types of groups exist.</p>
+<h3 id="flexible-group-type" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="144">Flexible Group Type</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="145">A dynamic list that characters can be added to, removed from, or edited at anytime.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="147">Example Uses:</p>
+<ul sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="148">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="148">A roster of playable characters the player can create, edit, and delete.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="149">A collection of background NPCs that will later be randomly selected from.</li>
 </ul>
-<p><a class="xref" href="../character-grouping-system.html#flexible-group-type">Read More → Flexible Group Type</a></p>
-<h3 id="fixed-group-type">Fixed Group Type</h3>
-<p>An immutable list of characters. When the list is created all characters are created immedietely. Characters can then be edited but not removed and new characters cannot be added.</p>
-<p>Example Uses:</p>
-<ul>
-<li>A predined set of characters the player can choose to play as.</li>
-<li>A set of main characters the player can customize.</li>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="151"><a class="xref" href="../character-grouping-system.html#flexible-group-type" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=151>Read More → Flexible Group Type</a></p>
+<h3 id="fixed-group-type" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="152">Fixed Group Type</h3>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="153">An immutable list of characters. When the list is created all characters are created immedietely. Characters can then be edited but not removed and new characters cannot be added.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="155">Example Uses:</p>
+<ul sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="156">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="156">A predined set of characters the player can choose to play as.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="157">A set of main characters the player can customize.</li>
 </ul>
-<p><a class="xref" href="../character-grouping-system.html#fixed-group-type">Read More → Fixed Group Type</a></p>
-<hr>
-<h2 id="character-creator">Character Creator</h2>
-<p>The <strong>Character Creator</strong> is a prefab based <strong>Character Creation Menu Framework</strong>.<br>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="159"><a class="xref" href="../character-grouping-system.html#fixed-group-type" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=159>Read More → Fixed Group Type</a></p>
+<hr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="161">
+<h2 id="character-creator" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="163">Character Creator</h2>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="164">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="164">Character Creator</strong> is a prefab based <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="164">Character Creation Menu Framework</strong>.<br>
 Prefabs can be combined and customized to create whatever design you want.<br>
-It makes the process of building a <strong>Character Creation Menu</strong> into your game easy.</p>
-<div class="TIP">
+It makes the process of building a <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="166">Character Creation Menu</strong> into your game easy.</p>
+<div class="TIP" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="168">
 <h5>Tip</h5>
-<p>The <strong>Character Creator</strong> only works with <strong>Layered Characters</strong>. <strong>Unified Characters</strong> do not support runtime customization.</p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="169">The <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="169">Character Creator</strong> only works with <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="169">Layered Characters</strong>. <strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="169">Unified Characters</strong> do not support runtime customization.</p>
 </div>
-<h3 id="example-use-cases">Example Use Cases</h3>
-<ol>
-<li><strong>Customizable Player Character</strong> – Easily setup the menu for a single character such as the player character.</li>
-<li><strong>Editing Character Lists</strong> – Allow players to edit a predefined roster, or manage a dynamic list (create, edit, delete).</li>
+<h3 id="example-use-cases" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="171">Example Use Cases</h3>
+<ol sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="172">
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="172"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="172">Customizable Player Character</strong> – Easily setup the menu for a single character such as the player character.</li>
+<li sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="173"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="173">Editing Character Lists</strong> – Allow players to edit a predefined roster, or manage a dynamic list (create, edit, delete).</li>
 </ol>
-<h3 id="key-features">Key Features</h3>
-<table>
+<h3 id="key-features" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="175">Key Features</h3>
+<table sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="176">
 <thead>
-<tr>
-<th>Feature</th>
-<th>Description</th>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="176">
+<th sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="176">Feature</th>
+<th sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="176">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Layer Selectors</strong></td>
-<td>Dropdowns, carousels, tabs, etc.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="178">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="178"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="178">Layer Selectors</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="178">Dropdowns, carousels, tabs, etc.</td>
 </tr>
-<tr>
-<td><strong>Character Preview</strong></td>
-<td>Static or animated, with options to rotate or swap animations.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="179">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="179"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="179">Character Preview</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="179">Static or animated, with options to rotate or swap animations.</td>
 </tr>
-<tr>
-<td><strong>History Tracking</strong></td>
-<td>Every change is logged and can be shown as text or image snapshots.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="180">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="180"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="180">History Tracking</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="180">Every change is logged and can be shown as text or image snapshots.</td>
 </tr>
-<tr>
-<td><strong>Randomization</strong></td>
-<td>Randomize the entire character or specific layers.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="181">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="181"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="181">Randomization</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="181">Randomize the entire character or specific layers.</td>
 </tr>
-<tr>
-<td><strong>Loading Screens</strong></td>
-<td>Customizable loading screens which hide the menu until it's ready.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="182">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="182"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="182">Loading Screens</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="182">Customizable loading screens which hide the menu until it's ready.</td>
 </tr>
-<tr>
-<td><strong>Character Naming</strong></td>
-<td>Optional name field.</td>
+<tr sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="183">
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="183"><strong sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="183">Character Naming</strong></td>
+<td sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="183">Optional name field.</td>
 </tr>
 </tbody>
 </table>
-<p><a class="xref" href="../character-creator/character-creator-overview.html">Read More → Character Creator</a></p>
+<p sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber="185"><a class="xref" href="../character-creator/character-creator-overview.html" sourcefile="docs/getting-started/basic-concepts.md" sourcestartlinenumber=185>Read More → Character Creator</a></p>
 
 </article>
 

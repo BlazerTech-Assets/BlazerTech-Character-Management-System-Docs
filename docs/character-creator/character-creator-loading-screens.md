@@ -38,7 +38,7 @@ When enabled, the Loading Screen Handler automatically enabled the loading scree
 | **Delay After Loading Finished** | The time in milliseconds to wait before disabling the menu after loading has finished |
 | **Loading Screen Contents**      | The parent GameObject containing the actual contents of the loading screen            |
 
-![CCM Loading Screen Handler Component](/images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png)
+![CCM Loading Screen Handler Component](~/images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png)
 
 ---
 
