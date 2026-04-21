@@ -103,9 +103,9 @@
         <article data-uid="ccm-history-tracking-system">
 <h1 id="history-tracking-system">History Tracking System</h1>
 
-<p>The <strong>History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be looked through or undone at anytime.</p>
+<p>The <strong>History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie open. Changes can then be looked through and undone at anytime.</p>
 <hr>
-<h2 id="features">Features</h2>
+<h2 id="features-overview">Features Overview</h2>
 <table>
 <thead>
 <tr>
@@ -116,11 +116,11 @@
 <tbody>
 <tr>
 <td><strong>Automatic Tracking</strong></td>
-<td>Every change to the character is recorded as a snapshot.</td>
+<td>Every change to the character can be recorded as a snapshot.</td>
 </tr>
 <tr>
 <td><strong>Undo/Redo</strong></td>
-<td>Step backward or forward through the snapshot list.</td>
+<td>Step backward or forward through the list of changes made to the character.</td>
 </tr>
 <tr>
 <td><strong>Direct Selection</strong></td>
@@ -134,31 +134,31 @@
 </table>
 <hr>
 <h2 id="history-tracker-component">History Tracker Component</h2>
-<p>The <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCMHistoryTracker</a> component can be added to any game object inside the contents of the Character Creation Menu.</p>
+<p>Introducing the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCM History Tracker</a> component.<br>
+This component will track every time a layer on the character is changed and record the change as a snapshot.</p>
 <ul>
-<li>Tracks all layer changes made to the character and saves them as a snapshot.</li>
-<li>A snapshot contains all information required to restore the character to that exact state.</li>
-<li>Snapshots are saved in a list.</li>
-<li>Max Snapshots can be set anywhere between 1-100 (Default is 30).</li>
+<li>A snapshot contains all information required to restore a character to the exact state it was in when the snapshot was taken.</li>
+<li>Snapshots are saved in a list with newest entries added to the end of the list.</li>
+<li><strong>Max Snapshots</strong> can be set anywhere between <strong>1-100</strong> (Default is <strong>30</strong>).</li>
 <li>When the max amount of snapshots is met, oldest snapshots will start being replaced.</li>
 <li>The <strong>Preserve First Snapshot</strong> bool can be toggled which will stop the first snapshot created from being deleted or replaced.</li>
 </ul>
+<p><img src="../../../images/character-creation-menu/ccm-history/history-tracker-component.png" alt="CCM History Tracker Component"></p>
+<h3 id="component-placement">Component Placement</h3>
+<p>The <strong>CCM History Tracker</strong> component should be placed inside the <strong>Character Creation Menu Contents</strong>.<br>
+This is the <strong>Menu Contents</strong> GameObject the <strong>Character Creation Menu Manager</strong> component references.</p>
+<p><img src="../../../images/character-creation-menu/ccm-history/history-tracker-component-placement-example.png" alt="History Tracker Component Placement Example"></p>
 <hr>
-<h2 id="ui-integration">UI Integration</h2>
-<ol>
-<li><strong>Undo/Redo Buttons:</strong>
-<ul>
-<li>Buttons can be added which can undo or redo changes you've made.</li>
-<li><a class="xref" href="character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></li>
-</ul>
-</li>
-<li><strong>History Panels:</strong>
-<ul>
-<li>Multiple types of panels can be added which display every change made in a clean list.</li>
-<li><a class="xref" href="character-creator-history-panels.html">Read More → History Panels</a></li>
-</ul>
-</li>
-</ol>
+<h2 id="integrations">Integrations</h2>
+<p>Additional UI elements which integrate with the <strong>History Tracking System</strong>.</p>
+<h3 id="undoredo-buttons">Undo/Redo Buttons</h3>
+<p>Buttons for un-doing or re-doing changes made to the character.</p>
+<img src="../../../images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png" alt="History Undo/Redo Buttons" width="500">  
+<p><a class="xref" href="character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></p>
+<h3 id="history-panels">History Panels</h3>
+<p>Panels which display every change made in a clean list.</p>
+<img src="../../../images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="History Panel" width="500">  
+<p><a class="xref" href="character-creator-history-panels.html">Read More → History Panels</a></p>
 
 </article>
 

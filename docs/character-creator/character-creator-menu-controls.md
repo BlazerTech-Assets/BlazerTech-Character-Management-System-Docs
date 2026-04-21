@@ -52,7 +52,7 @@ Inside the same prefabs directory, the **Generic Buttons** folder contains indiv
 
 Each prefab includes:
 
-- A UI Button
+- A Unity **Button** component
 - A **CCM Relay** component
 
 When using the generic button prefabs, add an **On Click** event to the button and assign the **CCM Relay** component. You can then call different methods on the **CCM Relay** component to perform actions such as saving changes or exiting the menu.

@@ -2692,20 +2692,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-history/history-panel-sprite-preview.png",
+      "source_relative_path": "images/character-creation-menu/ccm-history/history-tracker-component-placement-example.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-history/history-panel-sprite-preview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-history/history-panel-text.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-creation-menu/ccm-history/history-panel-text.png"
+          "relative_path": "images/character-creation-menu/ccm-history/history-tracker-component-placement-example.png"
         }
       },
       "version": ""
@@ -2722,10 +2712,60 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-history/history-undo-redo-buttons.png",
+      "source_relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-component.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-history/history-undo-redo-buttons.png"
+          "relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-text.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/panels/history-panel-text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/undo-redo/prefabs-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/undo-redo/prefabs-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-history/undo-redo/timeline-button-handler-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-history/undo-redo/timeline-button-handler-component.png"
         }
       },
       "version": ""
@@ -2802,16 +2842,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png",
       "output": {
         "resource": {
@@ -2822,10 +2852,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-additions.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-additions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png",
       "output": {
         "resource": {
           "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screen-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png"
         }
       },
       "version": ""

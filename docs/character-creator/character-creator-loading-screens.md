@@ -7,7 +7,7 @@ uid: ccm-loading-screens
 When a **Character Creation Menu** is first opened it can take time before the menu is ready as it needs to load all layer options first.  
 A **loading screen** can be used to hide the **Character Creation Menu** while it loads and give the player something to look at until the menu is ready.
 
-<img src="~/images/character-creation-menu/ccm-loading-screen/loading-screen-1.png" alt="Loading Screen Example" width="500" />
+![Loading Screen Images](~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png)
 
 ---
 
@@ -60,10 +60,11 @@ This prefab can be added to using the [Additions prefabs](#additions).
 
 Contained within the **Pre-Setup** subfolder.
 
-Complete Loading Screens with other features included. These are drag and drop solutions.  
-Any of the Pre-Setup Loading Screen prefabs can be included in any Character Creation Menu without any other setup required.
+These are Loading Screens with additional features included. They're drag and drop solutions, meaning once added, no other setup is required.
 
-[INCLUDE IMAGE HERE]
+Four **Pre-Setup** loading screens are included. Each one uses a different background and different elements such as loading bars, progress text, loading icons, etc.
+
+<img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />
 
 ### Additions Prefabs
 
@@ -78,7 +79,7 @@ Additional prefabs that can be added to the [Core loading screen prefab](#core).
 - **Loading Progress Text** - Text which displays the percentage the Character Creation Menu has loaded from 0%-100%
 - **Loading Repeating Text** - Text which cycles through a list of preset sentences at a set interval.
 
-[INCLUDE COMPILATION IMAGE HERE]
+<img src="~/images/character-creation-menu/ccm-loading-screen/loading-screen-additions.png" alt="Loading Screen Additions" width="500" />
 
 ---
 
