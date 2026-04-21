@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Creator Setup | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Creator Setup | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-setup.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-setup.html">
+
+    <meta property="og:title" content="Character Creator Setup | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Creator Setup | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-creator-setup">
+<h1 id="character-creator-setup">Character Creator Setup</h1>
+
+<p>This page will guide you through the process of implementing your own <strong>Character Creation Menu</strong> into your game.</p>
+<h2 id="the-character-creation-menu-manager">The Character Creation Menu Manager</h2>
+<p>The <code>CharacterCreationMenuManager</code> is the beating heart of the menu.</p>
+<p>It lives outside the contents of the menu and should be enabled at all times.<br>
+It requires two things.</p>
+<ol>
+<li><strong>Default Character Type</strong> - The character type used when enabling the menu. Can be overridden.</li>
+<li><strong>Menu Contents</strong> - Parent game object of the actual Character Creation Menu contents.</li>
+</ol>
+<h3 id="how-to-enable-the-menu">How to Enable the Menu</h3>
+<p>The <code>Character Creation Menu Manager</code> provides 4 methods to open the menu.<br>
+Most methods use the Character Grouping System.<br>
+Learn more about the <a class="xref" href="../character-grouping-system.html">Character Grouping System here</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Descripion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_">EnableMenu_PrimaryCharacterSlot</a></td>
+<td>Opens the menu using the Primary Character Slot in the Character Type Used.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_">EnableMenu_EditCharacter</a></td>
+<td>Open the menu to edit a layered character that already exists.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_">EnableMenu_NewPrimaryCharacterSlot</a></td>
+<td>Opens the menu with a new character that overrides the Primary Character slot.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_"><span style="white-space:nowrap">EnableMenu_NewCharacterInFlexibleGroup</span></a></td>
+<td>Opens the menu with a new character &amp; puts it inside the provided Flexible Group when saved.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="character-creation-menu-events">Character Creation Menu Events</h3>
+<p>Two Unity Events are exposted in the <code>Character Creation Menu Manager</code> component.</p>
+<ol>
+<li><strong>On Character Saved</strong>
+<ul>
+<li>Called when the character in the <strong>Character Creation Menu</strong> is saved.</li>
+<li>Provides the charater that was saved as an argument.</li>
+<li>For example you can hook up to this event, when it's invoked call <code>CharacterCreationMenuManager.DisableMenu</code> to disable and close the menu.</li>
+</ul>
+</li>
+<li><strong>On Menu Disabled</strong>
+<ul>
+<li>Called after the <strong>Character Creation Menu</strong> is disabled and closed. You can hook up to this event and when invoked open any other menu you'd like using your own menu system.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="premade-character-creation-menus">Premade Character Creation Menus</h2>
+<p>The easiest solution is to use a <strong>premade character creation menu</strong>. These prefabs contain everything needed for a functional Character Creation Menu.
+At bare minimum they contain the following:</p>
+<table>
+<thead>
+<tr>
+<th>Content</th>
+<th>Descripion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Layer Selectors</strong></td>
+<td>Used to change layers of the character.</td>
+</tr>
+<tr>
+<td><strong>Character preview</strong></td>
+<td>Used to preview the character while editing.</td>
+</tr>
+<tr>
+<td><strong>Loading Screen</strong></td>
+<td>Displayed over the Character Creation Menu while it's loading.</td>
+</tr>
+<tr>
+<td><strong>Save &amp; Back Buttons</strong></td>
+<td>Used to save character changes or close the menu without saving.</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Premade Character Creation Menu prefabs location: <strong>Prefabs &gt; Character Creator &gt; Premade Menus</strong></p>
+</div>
+<h3 id="premade-menus">Premade Menus:</h3>
+<ol>
+<li><strong>Character Creation Menu 1</strong>:
+<ul>
+<li><strong>Carousel Selectors [Initialize Existing]</strong> - Includes 4 carousel selectors.</li>
+<li><strong>Character Preview</strong> - Includes rotation &amp; animation change controls.</li>
+<li><strong>Undo/Redo Buttons</strong>.</li>
+<li><strong>Randomize Entire Character button</strong>.</li>
+<li><strong>Save and Back buttons</strong>.</li>
+<li><strong>Loading Screen</strong> - Includes progress bar and text.</li>
+<li><img src="../../images/premade-character-creation-menus/premade-character-creation-menu-1.png" alt="Premade Character Creation Menu #1" width="500">
+</li>
+</ul>
+</li>
+<li><strong>Character Creation Menu 2</strong>:
+<ul>
+<li><strong>Dropdown Selectors [Initialize Existing]</strong>. - Includes 6 dropdown selectors.</li>
+<li><strong>Character Preview</strong> - Includes rotation controls.</li>
+<li><strong>Loading Screen</strong> - Includes progress bar and text.</li>
+<li><strong>Save &amp; Back buttons</strong>.</li>
+<li><img src="../../images/premade-character-creation-menus/premade-character-creation-menu-2.png" alt="Premade Character Creation Menu #2" width="500">
+</li>
+</ul>
+</li>
+<li><strong>Character Creation Menu 3</strong>:
+<ul>
+<li><strong>Dropdown Selectors [Initialize Existing]</strong> - Includes 6 dropdown selectors.</li>
+<li><strong>Character Preview</strong> - Includes rotation &amp; animation change controls.</li>
+<li><strong>Randomize Entire Character button</strong>.</li>
+<li><strong>Save and Back buttons</strong>.</li>
+<li><strong>Character Display Name Field</strong>.</li>
+<li><strong>Character History Tracking</strong> - Max 30 snapshots (Configurable).</li>
+<li><strong>Horizontal History List</strong>.</li>
+<li><strong>Loading Screen</strong> - Includes progress bar and text.</li>
+<li><img src="../../images/premade-character-creation-menus/premade-character-creation-menu-3.png" alt="Premade Character Creation Menu #2" width="500">
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="creating-your-own-character-creation-menu">Creating Your Own Character Creation Menu</h2>
+<p>You'll need two game objects.</p>
+<ul>
+<li>#1 holds the <code>Character Creation Menu Manager</code> component and will manage the menu. <strong>SHOULD</strong> be enabled at runtime.</li>
+<li>#2 Holds the actual contents of the menu and is referenced in the <code>Menu Contents</code> field in the <code>Character Creation Menu Manager</code>. Doesn't matter if it's enabled or disabled.</li>
+</ul>
+<p><img src="../../images/character-creator-setup/character-creation-menu-structure.png" alt="Character Creation Menu Structure"></p>
+<h3 id="character-creation-menu-contents">Character Creation Menu Contents</h3>
+<p>Use this section as a checklist for everything that can be added to the <strong>Character Creation Menu</strong>.<br>
+Starting with the essentials and then bonus features.</p>
+<p>All parts of the menu are contained as prefabs. These prefabs can be placed anywhere in the character creation menu contents parent.<br>
+Most do not require any manual references and can be added without any extra setup.</p>
+<h4 id="essentials">Essentials</h4>
+<ol>
+<li><strong>Layer Selectors</strong>
+<ul>
+<li>Lets the player change selected options for each layer of the character.</li>
+<li>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors</strong>. Choose any folder within there.</li>
+<li>Within your chosen Layer Selector folder use a prefab within the <code>/Pre-Setup</code> subfolder which contains a set of already setup <strong>Layer Selectors</strong>.</li>
+<li>Learn more about Layer Selectors <a class="xref" href="layer-selectors/layer-selector-setup.html">here</a>.</li>
+</ul>
+</li>
+<li><strong>Character Preview</strong>
+<ul>
+<li>A character preview lets the player see a live version of the character they're creating.</li>
+<li>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Character Preview</strong>.</li>
+<li>Base folder contains the core character preview prefab which can be added to the menu as is.</li>
+<li>Additional functionality can be added through addon prefabs.</li>
+<li>Learn more about character previews and addon prefabs <a class="xref" href="character-creator-character-preview.html">here</a>.</li>
+</ul>
+</li>
+<li><strong>Menu Controls</strong>
+<ul>
+<li>The two core controls you need are <strong>Back</strong> and <strong>Save Character</strong> buttons</li>
+<li>These can easily be setup without prefabs. Simply add a <code>button</code> and <code>CCMRelay</code> component to a game object.</li>
+<li>Set the <strong>On Click Event</strong> of the button to run <strong>CCMRelay.DisableMenu()</strong> or <strong>CCMRelay.SaveCharacter()</strong>.</li>
+<li>Prefabs also exist under <strong>Prefabs &gt; Character Creator &gt; Menu Controls</strong>.</li>
+<li>Additional controls can also be setup. Learn more about Menu Controls <a class="xref" href="character-creator-menu-controls.html">here</a>.</li>
+</ul>
+</li>
+<li><strong>Loading Screen</strong>
+<ul>
+<li>A loading screen hides the menu while it's being setup.</li>
+<li>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Loading Screen</strong></li>
+<li>In the base folder contains the Loading Screen Core which only contains a black screen.</li>
+<li>Additional addon prefabs are located in the <code>/Loading Screen Components</code> subfolder.</li>
+<li>Addon prefabs can be added as children of the Loading Screen Core and require a reference to the <strong>Loading Screen Handler</strong> located in the <strong>Loading Screen Core</strong>.</li>
+<li>Pre-setup feature complete loading screen prefabs are located in the <code>/Complete Loading Screens</code> subfolder.</li>
+<li>Complete loading screens include additional features such as a loading bar/text.</li>
+<li>Learn more about setting up loading screens <a class="xref" href="character-creator-loading-screens.html">here</a>.</li>
+</ul>
+</li>
+</ol>
+<h4 id="bonus-features">Bonus Features</h4>
+<ol>
+<li><strong>Character Randomization</strong>
+<ul>
+<li>A simple <strong>Randomize all layers button</strong> can be setup using a <code>button</code> and the <code>CCM Relay component</code> the same way other Menu Controls are setup.</li>
+<li>Controlled Randomization can be setup instead. This allows specific layers to be toggled off so only specific layers are randomized.</li>
+<li>Some <strong>Layer Selectors</strong> have variants that contain a randomize button to randomize that specific layer.</li>
+<li>Prefabs for both options are included at <strong>Prefabs &gt; Character Creation &gt; Randomization</strong>.</li>
+<li>Read more about character randomization setup <a class="xref" href="character-creator-character-randomization.html">here</a>.</li>
+</ul>
+</li>
+<li><strong>Character History</strong>
+<ul>
+<li>The <code>CCM History Tacker</code> component can be added to any game object in the Character Creation Menu contents.</li>
+<li>The <strong>History Tracker</strong> will track all changes made to the character.</li>
+<li>History Prefabs are located under <strong>Prefabs &gt; Character Creator &gt; History</strong>.</li>
+<li>In the <code>/Undo-Redo</code> subfolder are prefabs which include undo/redo buttons which when pressed can undo or redo changes made to the character.</li>
+<li>In the <code>/History Panels</code> subfolder are prefabs which include lists that show all changes to the character. Clicking an entry in the list will revert the character.</li>
+<li>Two History Panel prefabs exist.</li>
+<li>The first history panel is a vertical list and is text based. Each entry contains text describing what changed.</li>
+<li>The second history panel is a horizontal list and is sprite based. Every entry contains a preview of the character.</li>
+<li>Read more about the <strong>Character History System</strong> <a class="xref" href="history/character-creator-history-tracking-system.html">here</a>.</li>
+</ul>
+</li>
+<li><strong>Character Display Name Field</strong>
+<ul>
+<li>A text input field can be added to let the player set a display name for their character.</li>
+<li>The display name can later be optionally displayed near the character.</li>
+<li>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Character Display Name Field</strong>.</li>
+</ul>
+</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-setup.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

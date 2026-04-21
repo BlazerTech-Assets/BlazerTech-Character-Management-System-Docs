@@ -38,6 +38,8 @@ Prefer to create a **Character Preview** from scratch? Here's how to do that.
 
 Create a new GameObject within the **Character Creation Menu contents** and add the **CCM Character Preview Handler** component. This is the component responsible for initializing and updating your character preview.
 
+![Character Preview Handler Component](~/images/character-creation-menu/ccm-character-preview/character-preview-handler-component.png)
+
 ### Step 2
 
 Select the **Preview Mode**.
@@ -61,16 +63,29 @@ Now once you enter play mode you'll see the character being edited displayed in 
 
 ### Adding Rotation Controls
 
-To add buttons to rotate the character preview with follow these steps:
+To add buttons to rotate the character preview with, follow these steps:
 
 1. Create a new GameObject
-2. Add the Unity Button component
+2. Add the Unity `Button` component
 3. Assign the Buttons **On Click** event to the `CCMCharacterPreviewHandler` component and call the `RotateCharacterPreview()` method.
 4. The `RotateCharacterPreview()` requires a bool, disabled = rotate left, enabled = rotate right.
 
 ---
 
 ### Adding Animation Buttons
+
+Animation buttons are controls for switching the animation the **Character Preview** is playing.
+
+> [!NOTE]
+> Animation Buttons can only be used if the Character Preview has a **Preview Mode** of **Animated**.
+
+1. Create a new GameObject.
+2. Add the `CCM Animation Switcher` component to the GameObject
+3. Set **Animation Button Parent**. This is the parent GameObject for your Animation Buttons (Can be the same GameObject)
+4. Set the Initialization Mode.
+   - Initialize Existing: Will find pre-created animation buttons within the Animation Button Parent
+   - Auto Create: Will instantiate new Animation Buttons as children of the Animation Button Parent. Uses the Aniamtion Button Prefab you assign.
+5. Assign Character Preview Handler reference. This is used to actually change the currently playing animation.
 
 <!-- ## Character Preview Animation Buttons
 

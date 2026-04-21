@@ -123,6 +123,7 @@
 <p>Prefer to create a <strong>Character Preview</strong> from scratch? Here's how to do that.</p>
 <h3 id="step-1">Step 1</h3>
 <p>Create a new GameObject within the <strong>Character Creation Menu contents</strong> and add the <strong>CCM Character Preview Handler</strong> component. This is the component responsible for initializing and updating your character preview.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-preview/character-preview-handler-component.png" alt="Character Preview Handler Component"></p>
 <h3 id="step-2">Step 2</h3>
 <p>Select the <strong>Preview Mode</strong>.</p>
 <p>The <strong>Preview Mode</strong> determines how the character preview is displayed.</p>
@@ -144,15 +145,32 @@
 <p>Now once you enter play mode you'll see the character being edited displayed in the preview you just created.</p>
 <hr>
 <h3 id="adding-rotation-controls">Adding Rotation Controls</h3>
-<p>To add buttons to rotate the character preview with follow these steps:</p>
+<p>To add buttons to rotate the character preview with, follow these steps:</p>
 <ol>
 <li>Create a new GameObject</li>
-<li>Add the Unity Button component</li>
+<li>Add the Unity <code>Button</code> component</li>
 <li>Assign the Buttons <strong>On Click</strong> event to the <code>CCMCharacterPreviewHandler</code> component and call the <code>RotateCharacterPreview()</code> method.</li>
 <li>The <code>RotateCharacterPreview()</code> requires a bool, disabled = rotate left, enabled = rotate right.</li>
 </ol>
 <hr>
 <h3 id="adding-animation-buttons">Adding Animation Buttons</h3>
+<p>Animation buttons are controls for switching the animation the <strong>Character Preview</strong> is playing.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Animation Buttons can only be used if the Character Preview has a <strong>Preview Mode</strong> of <strong>Animated</strong>.</p>
+</div>
+<ol>
+<li>Create a new GameObject.</li>
+<li>Add the <code>CCM Animation Switcher</code> component to the GameObject</li>
+<li>Set <strong>Animation Button Parent</strong>. This is the parent GameObject for your Animation Buttons (Can be the same GameObject)</li>
+<li>Set the Initialization Mode.
+<ul>
+<li>Initialize Existing: Will find pre-created animation buttons within the Animation Button Parent</li>
+<li>Auto Create: Will instantiate new Animation Buttons as children of the Animation Button Parent. Uses the Aniamtion Button Prefab you assign.</li>
+</ul>
+</li>
+<li>Assign Character Preview Handler reference. This is used to actually change the currently playing animation.</li>
+</ol>
 <!-- ## Character Preview Animation Buttons
 
 ![Character Preview Animation Buttons](~/images/ccm-character-preview/character-preview-animation-buttons.png)

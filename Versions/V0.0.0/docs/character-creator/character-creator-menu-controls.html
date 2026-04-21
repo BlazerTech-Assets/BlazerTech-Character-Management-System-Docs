@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Creator Menu Controls | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Creator Menu Controls | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-menu-controls.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-menu-controls.html">
+
+    <meta property="og:title" content="Character Creator Menu Controls | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Creator Menu Controls | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-menu-controls">
+<h1 id="character-creator-menu-controls">Character Creator Menu Controls</h1>
+
+<p>Menu Controls are UI buttons that provide core user actions such as saving, closing, randomizing and reseting a character.</p>
+<p>The included prefabs can be quickly added to a <strong>Character Creation Menu</strong> or replaced with custom implementations using the CCM Relay component.</p>
+<img src="../../images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500">
+<hr>
+<h2 id="included-actions">Included Actions</h2>
+<p>Menu Controls provide the following actions:</p>
+<ul>
+<li>Close or exit the Character Creation Menu.</li>
+<li>Save or confirm character changes.</li>
+<li>Reset the character to its original state.</li>
+<li>Randomize the characters appearance.</li>
+</ul>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Prefabs Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Menu Controls</code>.</p>
+<p>Ready-made prefabs are included and can be used without any additional setup. Drag and drop them directly into your Character Creation Menu hierarchy and they're immediately ready to be used.</p>
+<h3 id="variants">Variants</h3>
+<p>Within the prefabs folder you'll see 4 variation folders. The only difference between variants is the sprites used.</p>
+<p><strong>Available prefabs</strong>:</p>
+<ol>
+<li>Menu Controls [Back, Confirm, Randomize, Reset]</li>
+<li>Menu Controls [Back, Confirm, Randomize]</li>
+<li>Menu Controls [Back, Confirm]</li>
+</ol>
+<p>The brackets dictate what actions are included in the prefab.</p>
+<h3 id="generic-buttons">Generic Buttons</h3>
+<p>Inside the same prefabs directory, the <strong>Generic Buttons</strong> folder contains individual button prefabs with no default assigned functionality.</p>
+<p>Each prefab includes:</p>
+<ul>
+<li>A UI Button</li>
+<li>A <strong>CCM Relay</strong> component</li>
+</ul>
+<p>When using the generic button prefabs, add an <strong>On Click</strong> event to the button and assign the <strong>CCM Relay</strong> component. You can then call different methods on the <strong>CCM Relay</strong> component to perform actions such as saving changes or exiting the menu.</p>
+<hr>
+<h2 id="ccm-relay-component">CCM Relay Component</h2>
+<p>The <strong>CCM Relay</strong> (Character Creation Menu Relay) component acts as a bridge between the UI and the Character Creation Menu system.</p>
+<p>It forwards button events to the active Character Creation Menu Manager, making it easy to setup simple functionality without writing any code.</p>
+<h3 id="usage">Usage</h3>
+<p>To create a custom button using the <strong>CCM Relay</strong>:</p>
+<ol>
+<li>Add the <code>CCM Relay</code> component to a GameObject</li>
+<li>Add the Unity <code>Button</code> component</li>
+<li>Assign the Buttons <strong>On Click</strong> event to call a method on the <strong>CCM Relay</strong> component</li>
+</ol>
+<h3 id="example">Example</h3>
+<p><img src="../../images/character-creator-setup/ccm-relay-usage-example.png" alt="CCM Relay Usage Example"></p>
+<hr>
+<h2 id="ccm-relay-methods">CCM Relay Methods</h2>
+<p>The following public methods are available on the <strong>CCM Relay</strong> component:</p>
+<h3 id="disablemenu">DisableMenu()</h3>
+<p>Closes the disables the <strong>Character Creation Menu</strong>.</p>
+<hr>
+<h3 id="savecharacter">SaveCharacter()</h3>
+<p>Saves changes made to the currently edited character.</p>
+<hr>
+<h3 id="randomizeentirecharacter">RandomizeEntireCharacter()</h3>
+<p>Randomizes all character layers of the character currently being edited.</p>
+<hr>
+<h3 id="resetcharacter">ResetCharacter()</h3>
+<p>Restores the character to the state it was in when the <strong>Character Creation Menu</strong> was first opened.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-menu-controls.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

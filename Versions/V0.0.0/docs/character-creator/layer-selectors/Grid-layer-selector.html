@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Grid Layer Selector | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Grid Layer Selector | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/layer-selectors/Grid-layer-selector.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/layer-selectors/Grid-layer-selector.html">
+
+    <meta property="og:title" content="Grid Layer Selector | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Grid Layer Selector | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-grid-layer-selector">
+<h1 id="grid-layer-selector">Grid Layer Selector</h1>
+
+<h2 id="overview">Overview</h2>
+<p>A <strong>Grid Layer Selector</strong> contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
+<p><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png" alt="Grid Layer Selector"></p>
+<h2 id="grid-layer-selector-variant-2"><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png" alt="Grid Layer Selector Variant 2"></h2>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Grid Selector</strong></p>
+</div>
+<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<ul>
+<li><strong>Layer Grid Selector [Sprite]</strong> – Most common grid selector. Each element in the grid is displayed as a sprite.</li>
+<li><strong>Layer Grid Selector [Text]</strong> – Each element in the grid is displayed as text.</li>
+<li><strong>Layer Grid Selector [Sprite + Text]</strong> - Hybrid. Each element in the grid is displayed as both sprite and text.</li>
+<li><strong>Layer Grid Selector [Vertical + Title]</strong> – Grid is vertical &amp; includes a title with the name of the assigned layer at the top.</li>
+</ul>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
+These will work out of the box without any extra setup required.</p>
+<ul>
+<li><strong>Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
+<li><strong>Grid Selectors [Initialize Existing]</strong> – Uses grid selectors already present in the prefab hierarchy.</li>
+</ul>
+<h3 id="grid-entries">Grid Entries</h3>
+<p>A grid entry is referenced in a Layer Grid Selector and defines how each entry in the grid looks and functions.
+They live in the <strong>/Grid Entries subfolder</strong>.<br>
+The following are pre-created entries that can be used in any <strong>Layer Grid Selector</strong>:</p>
+<ol>
+<li><strong>Layer Option Grid Element [Sprite]</strong> - Displays only a sprite preview of what the layer option looks like.</li>
+<li><strong>Layer Option Grid Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
+<li><strong>Layer Option Grid Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
+</ol>
+<hr>
+<h2 id="customization">Customization</h2>
+<ul>
+<li><strong>Names</strong> – If grid elements have a display mode of text they can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
+<li><strong>Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the grid and individual element backgrounds.</li>
+</ul>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>The grid can be quite big and clunky at times. Works best when used with a<br>
+<a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/layer-selectors/Grid-layer-selector.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Overlay Layer Configuration | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Overlay Layer Configuration | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-overlay-layers/character-overlay-layer-configuration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-overlay-layers/character-overlay-layer-configuration.html">
+
+    <meta property="og:title" content="Character Overlay Layer Configuration | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Overlay Layer Configuration | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Learn how to create and setup a Character overlay Layer asset.">
+      <meta name="twitter:description" content="Learn how to create and setup a Character overlay Layer asset.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-overlay-layer-configuration">
+<h1 id="character-overlay-layer-configuration">Character Overlay Layer Configuration</h1>
+
+<p>This page explains how to create and configure a <strong>Character Overlay Layer asset</strong>.</p>
+<p>Overlay Layers let you add additional visual elements to a character. They can be used for equipement, visual effects, accessories, or any other visuals that need extra functionality or need to be animated separately from the character.</p>
+<p>Not sure what a <strong>Character Overlay Layer</strong> is?</p>
+<p><a class="xref" href="character-overlay-layers.html">Read More → Character Overlay Layers</a></p>
+<hr>
+<h2 id="quick-setup-overview">Quick Setup Overview</h2>
+<p>A typical workflow for configuring an overlay layer looks like this:</p>
+<ol>
+<li>Create the <strong>Overlay Layer asset</strong></li>
+<li>Assign a <strong>Character Type</strong> asset</li>
+<li>Assign an <strong>Animator Controller</strong> (Optional)</li>
+<li>Choose the appropriate <strong>Animation Sync Mode</strong></li>
+<li>Set the <strong>Layer Sorting Mode</strong></li>
+<li>Adjust <strong>Offsets</strong> if the overlay does not line up correctly</li>
+<li>Add any <strong>Overlay Layer Extensions</strong> if additional logic is required</li>
+</ol>
+<hr>
+<h2 id="creating-an-overlay-layer">Creating an Overlay Layer</h2>
+<p>To create a new Overlay Layer asset:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Overlay Layers</strong></li>
+</ol>
+<p><img src="../../images/overlay-layers/create-character-overlay-layer.png" alt="Create Character Overlay Layer"></p>
+<hr>
+<h1 id="overlay-layer-setup">Overlay Layer Setup</h1>
+<h2 id="character-type">Character Type</h2>
+<p>Assign the <strong>Character Type asset</strong> that this <strong>Overlay Layer</strong> will be used with.</p>
+<p><img src="../../images/overlay-layers/references/character-type-field.png" alt="Character Type Field"></p>
+<p>Overlay Layers are tied to a specific Character Type so the system knows which characters the Overlay Layer is compatible with.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Overlay Layers can only be used with their assigned Character Type.</p>
+</div>
+<h2 id="animator-controller-optional">Animator Controller (Optional)</h2>
+<p>Assign the <strong>Animator Controller</strong> used to animate the <strong>Overlay Layer</strong>.</p>
+<p><img src="../../images/overlay-layers/references/animator-controller-field.png" alt="Animator Controller Field"></p>
+<p>Overlay Layers use their own Animator Controller, separate from the controlled used by the character itself.</p>
+<p>This controller can:</p>
+<ul>
+<li>Play its own independant animations</li>
+<li>Synchronize paramters with the characters Animator Controller</li>
+<li>Combine both approaches</li>
+</ul>
+<p>How the controller behaves depends on the <a href="#animation-sync-mode">Animation Sync Mode</a> selected.</p>
+<hr>
+<h2 id="animation-sync-mode">Animation Sync Mode</h2>
+<p>Determines whether the <strong>Overlay Layer Animator Controller</strong> synchronizes parameters with the <strong>Character Type Animator Controller</strong>.</p>
+<h3 id="full-parameter-sync">Full Parameter Sync</h3>
+<p>All parameters in the <strong>Overlay Layer Animator Controller</strong> are synchronized with the parameters in the <strong>Character Type Animator Controller</strong>.</p>
+<p>This mode assumes both controllers contain the <strong>same parameters with identical names and types</strong>.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-full-parameter-sync.png" alt="Animation Sync Mode: Full Paramter Sync"></p>
+<p>When this mode is selected, a new section appears in the inspector called:</p>
+<p><strong>Overlay Layer Parameter Validation</strong></p>
+<p>This section compares the two Animator Controllers and checks whether the Overlay Controller is missing any paramters required for synchronization.</p>
+<p><img src="../../images/overlay-layers/overlay-controller-parameter-validation.png" alt="Overlay Controller Parameter Validation Section"></p>
+<p>If any paramters are not included in the Overlay Controller at runtime, an error will be thrown for each missing parameter.</p>
+<hr>
+<h3 id="partial-parameter-sync">Partial Parameter Sync</h3>
+<p>Only selected parameters are synchronized between the two Animator Controllers.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-partial-parameter-sync.png" alt="Animation Sync Mode: Partial Paramter Sync"></p>
+<p>When this mode is selected, a new section appears in the inspector called:</p>
+<p><strong>Overlay Controller Synced Parameters</strong></p>
+<p>This section lists all parameters found in the <strong>Character Type Animator Controller</strong>.</p>
+<p>Paramters can be enabled if a parameter with the same <strong>name</strong> and <strong>type</strong> exist in the <strong>Overlay Layer Animator Controller</strong>.<br>
+If the parameter does not exist in the <strong>Overlay Controller</strong>, the parameter cannot be enabled and a notice will be displayed.</p>
+<p><img src="../../images/overlay-layers/overlay-controller-synced-parameters-section.png" alt="Overlay Controller Synced Parameters Section"></p>
+<hr>
+<h3 id="not-synced">Not Synced</h3>
+<p>The <strong>Overlay Layer Animator Controller</strong> runs completely independently from the character.</p>
+<p><img src="../../images/overlay-layers/animation-sync-mode/animation-sync-mode-not-synced.png" alt="Animation Sync Mode: Not Synced"></p>
+<p>This mode is great for visual elements that need to play their own animations and don't care about the state of the character.</p>
+<hr>
+<h2 id="layer-sorting-mode">Layer Sorting Mode</h2>
+<p>Determines how the <strong>Overlay Layer</strong> is rendered in relation to the Character.</p>
+<p><img src="../../images/overlay-layers/settings/layer-sorting-mode-field.png" alt="Layer Sorting Mode Field"></p>
+<hr>
+<h3 id="in-front-of-character">In Front of Character</h3>
+<p>The <strong>Overlay Layer</strong> is rendered <strong>in front of the character</strong>.</p>
+<p>This is typically used for things like:</p>
+<ul>
+<li>Weapons</li>
+<li>Held objects</li>
+<li>Damage/Health Indicators</li>
+</ul>
+<hr>
+<h3 id="behind-character">Behind Character</h3>
+<p>The <strong>Overlay Layer</strong> is rendered <strong>behind the character</strong>.</p>
+<p>This is useful for things like:</p>
+<ul>
+<li>Back-mounted equipement</li>
+<li>Capes</li>
+<li>Wings</li>
+</ul>
+<hr>
+<h2 id="offset-mode">Offset Mode</h2>
+<p>Sometimes the Overlay Layer might not line up correctly with the character sprite.<br>
+Offsets allow you to manually adjust its position.</p>
+<p><img src="../../images/overlay-layers/settings/offset-mode-field.png" alt="Offset Mode Field"></p>
+<p>The <strong>Offset Mode</strong> determines how the offset values are interpreted.</p>
+<ol>
+<li><strong>Pixel Offset</strong> - Applies the offset in pixels, which are converted to <strong>Unity Units</strong> at runtime.</li>
+<li><strong>Unit Offset</strong> - Applies the offset directly in <strong>Unity World Units</strong>.</li>
+</ol>
+<hr>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><p>Learn how to apply an Overlay Layer to a character at runtime.<br>
+<a class="xref" href="character-overlay-layer-usage.html">Read More → Character Overlay Layer Usage</a></p>
+</li>
+<li><p>Learn how to extend Overlay Layers with custom behavior<br>
+<a class="xref" href="character-overlay-layer-extensions.html">Read More → Character Overlay Layer Extensions</a></p>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-overlay-layers/character-overlay-layer-configuration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

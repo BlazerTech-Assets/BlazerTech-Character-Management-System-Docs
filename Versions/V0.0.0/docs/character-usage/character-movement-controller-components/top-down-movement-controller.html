@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Top Down Character Movement Controller | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Top Down Character Movement Controller | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-movement-controller-components/top-down-movement-controller.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-usage/character-movement-controller-components/top-down-movement-controller.html">
+
+    <meta property="og:title" content="Top Down Character Movement Controller | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Top Down Character Movement Controller | BlazerTech Character Management System">
+
+      <meta property="og:description" content="character controller for 2d four-directional movement.">
+      <meta name="twitter:description" content="character controller for 2d four-directional movement.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="top-down-character-movement-controller-component">
+<h1 id="top-down-character-movement-controller">Top Down Character Movement Controller</h1>
+
+<p>Handles player movement for 2d top-down games where there are four directions the player can move (Left, right, up, down).</p>
+<h2 id="input-configuration">Input Configuration</h2>
+<p>This component uses Unitys <strong>New Input System</strong>. Every input action is configurable.</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
+<h3 id="input-actions">Input Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Input Action</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Action</strong></td>
+<td><code>Vector2</code></td>
+<td>The input action used to control player movement along the X and Y axes.</td>
+</tr>
+<tr>
+<td><strong>Sprint Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player sprint. (If enabled)</td>
+</tr>
+<tr>
+<td><strong>Crouch Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player crouch. (If enabled)</td>
+</tr>
+</tbody>
+</table>
+<p>A default <strong>Input Action asset</strong> is included under the <code>/Input Actions</code> subfolder.<br>
+This asset contains the default input actions for moving, sprinting and crouching.</p>
+<h3 id="auto-enable-actions">Auto Enable Actions</h3>
+<p>If <strong>Auto Enable Actions</strong> is enabled, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
+This is useful when not using a <strong>PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html">project‑wide input actions asset</a> that handles enabling automatically.</p>
+<h2 id="movement-settings">Movement Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Speed</strong></td>
+<td><code>Float</code></td>
+<td>Base walk speed (Default: <code>6.5</code>).</td>
+</tr>
+<tr>
+<td><strong>Can Move</strong></td>
+<td><code>Bool</code></td>
+<td>Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sprinting--crouching">Sprinting &amp; Crouching</h2>
+<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
+Each system has customizable speed and button mode options.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td><code>Float</code></td>
+<td>Movement speed while sprint or crouching.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Determines whether the button must be held or toggled. (Default: <code>Hold</code>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rigidbody2D</strong></td>
+<td><code>Rigidbody2D</code></td>
+<td>Required reference used for applying movement.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="runtime-properties">Runtime Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IsMoving</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently moving.</td>
+</tr>
+<tr>
+<td><strong>IsSprinting</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently sprinting.</td>
+</tr>
+<tr>
+<td><strong>IsCrouching</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently crouching.</td>
+</tr>
+<tr>
+<td><strong>Movement</strong></td>
+<td><code>Vector2</code></td>
+<td>Current normalized movement direction.</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Designed to be used along with a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-movement-controller-components/top-down-movement-controller.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

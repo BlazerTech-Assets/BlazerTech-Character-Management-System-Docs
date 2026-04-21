@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Display Name Renderer | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Display Name Renderer | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/character-display-name-renderer.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-usage/character-renderer-components/character-display-name-renderer.html">
+
+    <meta property="og:title" content="Character Display Name Renderer | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Display Name Renderer | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Component for displaying the name of a character in-game">
+      <meta name="twitter:description" content="Component for displaying the name of a character in-game">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-display-name-renderer-component">
+<h1 id="character-display-name-renderer">Character Display Name Renderer</h1>
+
+<p>Provides an easy way to show the Display Name of a character in-game.</p>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/character-display-name-renderer.png" alt="Character Display Name Renderer"></p>
+<hr>
+<h2 id="config">Config</h2>
+<p>Choose how you'll get a reference to a character. There are two options:</p>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png" alt="Fetch Character Mode"></p>
+<hr>
+<h3 id="from-character-renderer">From Character Renderer</h3>
+<p>Uses a <a class="xref" href="character-renderer-components.html">Character Renderer component</a> to find a character.</p>
+<p>Assign a reference to a <strong>Character Renderer component</strong>.</p>
+<p>When the Character Renderer component loads a character:</p>
+<ol>
+<li>The <strong>Display Name Renderer</strong> will be notified and retrieve the character.</li>
+<li>The <strong>display Name Renderer</strong> will get the <strong>Display Name</strong> of the character and set the text of the assigned text component to the characters display name.</li>
+</ol>
+<hr>
+<h3 id="from-character-group">From Character Group</h3>
+<p>Attempts to find a character from a character group at runtime.</p>
+<h4 id="assign-character-type">Assign Character Type</h4>
+<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+This will be used when looking for a character group.</p>
+<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" alt="Character Specifications"></h2>
+<h4 id="set-character-group-type">Set Character Group Type</h4>
+<p>Choose the type of group you want to load from.</p>
+<table>
+<thead>
+<tr>
+<th>Group Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Character Slot</strong></td>
+<td>A single character attached to the Character Type asset. No additional parameters required.</td>
+</tr>
+<tr>
+<td><strong>Flexible Group</strong></td>
+<td>A group of characters that can be added, removed, or edited at any time.</td>
+</tr>
+<tr>
+<td><strong>Fixed Group</strong></td>
+<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+</tr>
+</tbody>
+</table>
+<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Group Name</strong></td>
+<td><code>String</code></td>
+<td>A unique name used to find the Fixed or Flexible group.</td>
+</tr>
+<tr>
+<td><strong>Character Load Method</strong></td>
+<td><code>Enum</code></td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/group-types.png" alt="Character Group Types"></p>
+<h2 id="references">References</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display Name Parent</strong></td>
+<td><code>GameObject</code></td>
+<td>Parent GameObject used to disable text when <code>Display Name</code> is blank.</td>
+</tr>
+<tr>
+<td><strong>Display Name Text</strong></td>
+<td><code>TMP_Text</code></td>
+<td>Reference to a <code>TMP Text</code> component used to render the <code>Display Name</code> text.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../../images/components/character-renderer-components/character-display-name-renderer/References.png" alt="References"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use a canvas with a <code>Render Mode</code> set to <code>World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of the character and follow along with it.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/character-display-name-renderer.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

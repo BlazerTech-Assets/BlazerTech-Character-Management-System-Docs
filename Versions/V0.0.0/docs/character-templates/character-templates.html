@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Templates | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Templates | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-templates/character-templates.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-templates/character-templates.html">
+
+    <meta property="og:title" content="Character Templates | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Templates | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Blueprints for creating characters during runtime.">
+      <meta name="twitter:description" content="Blueprints for creating characters during runtime.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-templates">
+<h1 id="character-templates">Character Templates</h1>
+
+<p><strong>Character Templates</strong> are Scriptable Objects that act as blueprints for creating characters at runtime.</p>
+<p>Instead of manually configuring characters in code, Templates let you define reusable character configurations directly in the Editor.
+They provide an easy way to use pre-made characters anywhere in your project.</p>
+<p><strong>Character Templates</strong> can be created by <strong>right clicking</strong> the project window and navigating to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code>.</p>
+<img src="../../images/character-templates/create-character-template-guide.png" alt="Create Character Tempalte Guide" width="500">
+<hr>
+<h2 id="what-is-a-character-template">What is a Character Template?</h2>
+<p>A Character Template defines:</p>
+<ul>
+<li>The <strong>Character Type</strong> the character will use</li>
+<li>The default <strong>Name</strong> and optional <strong>Display Name</strong></li>
+<li>How the character’s appearance is configured</li>
+</ul>
+<p>At runtime, a <strong>Renderer component</strong> can be used to easily create and display a character from a template.</p>
+<p><a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Read More → Character Renderer Components</a></p>
+<hr>
+<h2 id="character-template-variants">Character Template Variants</h2>
+<p>There are three types of Character Templates.</p>
+<hr>
+<h3 id="unified-character-templates">Unified Character Templates</h3>
+<p>Used to create characters with a single, fully assembled spritesheet.<br>
+They are linked to a <a class="xref" href="../character-types/unified-character-type.html">Unified Character Type</a> asset.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
+<p>Unified characters use a single spritesheet which contains all animations for the character. That spritesheet is assigned to the <strong>Unified Character Template</strong> and is used by any characters created by that template.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Character Spritesheet</strong> does <strong>NOT</strong> need to be sliced. All frame and slicing data is contained within the <strong>Unified Character Type</strong> the template is linked to.</p>
+</div>
+<p><a class="xref" href="unified-character-templates.html">Read More → Unified Character Templates</a></p>
+<hr>
+<h3 id="layered-character-templates">Layered Character Templates</h3>
+<p>Used to create modular characters composed of multiple layers.<br>
+They are linked to a <a class="xref" href="../character-types/layered-character-type.html">Layered Character Type</a> asset.</p>
+<p><img src="../../images/character-templates/layered-character-templates/layered-character-template.png" alt="Layered Character Template"></p>
+<p>A <strong>Layered Character Template</strong> lets you assign which Layer Option each layer should use.<br>
+This gives you full control over exactly how the character will look.</p>
+<p>When used, a new <strong>Layered Character</strong> is created using the <strong>Layer Options</strong> you assign for each layer of the character.</p>
+<p><a class="xref" href="layered-character-templates.html">Read More → Layered Character Templates</a></p>
+<hr>
+<h3 id="randomized-layered-character-templates">Randomized Layered Character Templates</h3>
+<p>Used to create randomized modular character based on a set of pre-defined rules. Unlike a standard <a href="#layered-character-templates">Layered Character Template</a> where the final character is the same every time, a Randomized Layered Character Template creates a new random character every time it's used.</p>
+<p><img src="../../images/character-templates/randomized-layered-character-templates/randomized-layered-character-template.png" alt="Randomized Layered Character Template"></p>
+<p><strong>Randomized Templates work great for</strong>:</p>
+<ul>
+<li>Background NPC generation</li>
+<li>Characters with slightly randomized appearances</li>
+<li>Situations that need controlled randomness with features for additional fitlering</li>
+</ul>
+<p><strong>Key Characteristics</strong>:</p>
+<ul>
+<li>Per-layer selection rules</li>
+<li>White/Black list support</li>
+<li>Weighing support</li>
+<li>Regex-based filtering</li>
+</ul>
+<p><a class="xref" href="randomized-layered-character-templates.html">Read More → Randomized Layered Character Templates</a></p>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="../character-types/character-types.html">Character Types</a></li>
+<li><a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer Components</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-templates/character-templates.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
