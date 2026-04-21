@@ -69,8 +69,8 @@ A shader is used to visually display a character over the **Base Spritesheet**.
 Sprites from the **Base Spritesheet** are used directly in a renderer component (such as a **Sprite Renderer**) or used in an **Animator Controller**.
 
 
-If a **Unified Character** is used, the shader takes the single spritesheet of the character and renders that over the **Base Spritesheet**.  
-If a **Layered Character** is used, the shader combines all layers into the final rendered character.  
+If a **Unified Character** is used, the shader overrides the **Base Spritesheet** with the single spritesheet of the character.
+If a **Layered Character** is used, the shader combines all layers into one spritesheet and overrides the **base Spritesheet** with the new spritesheet.
 
 The renderer component is only ever using sprites from the **Base Spritesheet** meaning all other spritesheet do **NOT** need to be sliced, they should instead have a `Sprite Mode` of `Single`.
 

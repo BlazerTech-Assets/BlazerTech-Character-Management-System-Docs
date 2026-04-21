@@ -145,8 +145,8 @@ You have full control over the order the layers are rendered in.</p>
 <h2 id="the-character-shader">The Character Shader</h2>
 <p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
 Sprites from the <strong>Base Spritesheet</strong> are used directly in a renderer component (such as a <strong>Sprite Renderer</strong>) or used in an <strong>Animator Controller</strong>.</p>
-<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and renders that over the <strong>Base Spritesheet</strong>.<br>
-If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<p>If a <strong>Unified Character</strong> is used, the shader overrides the <strong>Base Spritesheet</strong> with the single spritesheet of the character.
+If a <strong>Layered Character</strong> is used, the shader combines all layers into one spritesheet and overrides the <strong>base Spritesheet</strong> with the new spritesheet.</p>
 <p>The renderer component is only ever using sprites from the <strong>Base Spritesheet</strong> meaning all other spritesheet do <strong>NOT</strong> need to be sliced, they should instead have a <code>Sprite Mode</code> of <code>Single</code>.</p>
 <p>This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.</p>
 <div class="NOTE">
