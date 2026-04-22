@@ -103,102 +103,142 @@
         <article data-uid="ccm-character-randomization">
 <h1 id="character-randomization">Character Randomization</h1>
 
-<p>The character in the Character Creation Menu can be completely randomized by randomizing every layer or randomize only specific layers.</p>
+<p>The <strong>Character Creation Menu</strong> supports multiple ways to randomize a character’s appearance.<br>
+You can randomize:</p>
+<ul>
+<li>The <strong>entire character</strong></li>
+<li><strong>Selected layers only</strong></li>
+<li>A <strong>single layer</strong></li>
+</ul>
 <hr>
 <h2 id="complete-character-randomization">Complete Character Randomization</h2>
-<p>The simplest option. A button which when pressed will randomize all layers of the character.</p>
+<p>This is the simplest form of randomization.<br>
+A single button randomizes all layers of the character at once.</p>
 <p><img src="../../images/character-creation-menu/ccm-character-randomization/complete-randomization-button.png" alt="Complete Randomization Button"></p>
+<hr>
 <h3 id="prefabs">Prefabs</h3>
 <p>location: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls</code>.</p>
-<p>Within are multiple variation folders, each folder contains the same prefabs with the only difference being the sprites used.</p>
+<p>Within are variation folders, each folder contains identical prefabs with different visual styles.</p>
 <p><strong>Setup Steps</strong>:</p>
 <ol>
-<li>Pick a variation folder.</li>
+<li>Choose a variation folder.</li>
 <li>Locate the <strong>Randomize Character Button</strong> prefab.</li>
 <li>Drag and drop the prefab into the contents of your Character Creation Menu.</li>
 </ol>
-<p>When you enter <strong>Play Mode</strong> and click the button, all layers of your character will be randomized.</p>
+<p>When the button is pressed in <strong>Play Mode</strong>, all layers of the character are randomized.</p>
+<hr>
 <h3 id="manual-setup">Manual Setup</h3>
-<p>Setting up a complete randomization button yourself is extremely simple:</p>
+<p>To create a compelte randomization button from scratch:</p>
 <ol>
 <li>Create a new <strong>GameObject</strong>.</li>
 <li>Add the <code>Button</code> component.</li>
 <li>Add the <code>CCM Relay</code> component.
 <ul>
-<li>Read more → <a class="xref" href="character-creator-menu-controls.html#ccm-relay-component">CCM Relay component</a>.</li>
+<li>See: → <a class="xref" href="character-creator-menu-controls.html#ccm-relay-component">CCM Relay component</a>.</li>
 </ul>
 </li>
-<li>Add an <code>On Click</code> event on the <code>Button</code> and assign the <code>CCM Relay</code> component.</li>
-<li>Select the <code>RandomizeEntireCharacter</code> method on the <code>CCM Relay</code> component.</li>
-<li>Enter <strong>Play Mode</strong> and test your button. When pressed, all layers of your character should be randomized.</li>
+<li>Add an <code>On Click</code> event to the <code>Button</code></li>
+<li>Assign the <code>CCM Relay</code> component.</li>
+<li>Select the <code>RandomizeEntireCharacter()</code> method.</li>
+<li>Enter <strong>Play Mode</strong> and test your button.</li>
 </ol>
+<p>When your button is pressed, all layers of your character should be randomized.</p>
 <p><img src="../../images/character-creation-menu/ccm-character-randomization/complete-randomization-button-setup.png" alt="Complete Randomization Button Setup"></p>
 <hr>
 <h2 id="controlled-randomization">Controlled Randomization</h2>
-<p><strong>Controlled Randomization buttons</strong> contain additional options to define what layers of the character are randomized.</p>
-<p>An additional <strong>Options</strong> button is included which when clicked opens a popup containing all layers of the character, each one with a toggle next to it.</p>
-<p>When the <strong>Randomize</strong> button is pressed, only the selected layers are randomized.</p>
+<p>Controlled Randomization allows selective randomization of layers.</p>
+<p>It consists of:</p>
+<ul>
+<li>A <strong>Randomize</strong> button.</li>
+<li>An <strong>Options</strong> button.</li>
+</ul>
+<p>The <strong>Options</strong> button opens a popup listing all layers with toggles.<br>
+Only enabled layers are randomized when the <strong>Randomize</strong> button is pressed.</p>
 <img src="../../images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400">  
 <hr>
 <h3 id="prefabs-1">Prefabs</h3>
-<p>location: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls</code>.</p>
-<p>Within are multiple variation folders, each folder contains the same prefabs with the only difference being the sprites used.</p>
+<p>location: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls &gt; (Variation folder) &gt; Controlled Randomization</code>.</p>
+<p>Within The Randomization Controls folder are variation folders, each folder contains identical prefabs with different visual styles.</p>
 <p><strong>Setup Steps</strong>:</p>
 <ol>
-<li>Pick a variation folder.</li>
+<li>Choose a variation folder.</li>
 <li>Open the <strong>Controlled Randomization</strong> Subfolder.</li>
 <li>Drag and drop the <strong>Controlled Randomization</strong> prefab into the contents of your Character Creation Menu.</li>
 <li>Enter <strong>Play Mode</strong> and test your new randomization controls.</li>
 </ol>
-<h4 id="layer-toggle-prefabs">Layer Toggle Prefabs</h4>
-<p>Alongisde the <strong>Controlled Randomization</strong> Prefab is the <strong>Layer Toggle</strong> prefab.<br>
-This is the prefab used for toggles in the Randomization Options popup.</p>
+<hr>
+<h3 id="layer-toggle-prefab">Layer Toggle Prefab</h3>
+<p>Located inside the same folder.</p>
+<p>The <strong>Layer Toggle</strong> prefab is used inside the options popup.</p>
 <p>This prefab uses the <code>CCM Layer Randomize Toggle</code> component. It lives on the same GameObject as the <code>Toggle</code> component.<br>
-The Toggles on Value Changed event is set to call the <strong>CCM Layer Randomize Toggles</strong> <code>UpdateRandomizationToggle()</code> method.<br>
-The <code>CCM Layer Randomize Toggle</code> requires a reference to a text component which will be used to set the name of the layer.</p>
+The <code>CCM Layer Randomize Toggle</code> component updates the <code>Controlled Randomization Handler</code> when its state is changed.</p>
+<p>Additionally the component requires a refernce to a text component which is used to display the name of the layer.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-randomization/layer-toggle.png" alt="Layer Toggle"></p>
 <hr>
 <h3 id="manual-setup-1">Manual Setup</h3>
 <p>A <strong>step-by-step</strong> walkthrough to create your own <strong>Controlled Randomization</strong> prefab.</p>
-<h4 id="gameobject-creation">GameObject Creation</h4>
-<p><strong>We're going to create three GameObjects</strong>:</p>
+<hr>
+<h4 id="gameobject-structure">GameObject Structure</h4>
+<p>Create three GameObjects:</p>
 <ul>
-<li>GameObject #1: Name it <strong>Controlled Randomization</strong>. This is the parent GameObject.</li>
-<li>GameObject #2: Name it <strong>Buttons</strong>. This will hold the <strong>Randomize</strong> and <strong>Options</strong> buttons.</li>
-<li>GameObject #3 name it <strong>Randomization Options Popup</strong>. This is the popup that appears when the Options button is clicked.</li>
+<li><strong>Controlled Randomization</strong> (Root GameObject)</li>
+<li><strong>Buttons</strong> (Container for controls, place inside root)</li>
+<li><strong>Randomization Options Popup</strong> (Toggle list UI, place inside root)</li>
 </ul>
+<hr>
 <h4 id="handler-component-setup">Handler Component Setup</h4>
 <ol>
-<li>Add the <code>CCM Controlled Randomization Handler</code> component to the <strong>Controlled Randomization</strong> GameObject.</li>
+<li>Add the <code>CCM Controlled Randomization Handler</code> component to the <strong>root</strong> (Controlled Randomization) GameObject.</li>
 <li>Assign the <strong>Randomization Options Popup</strong> to the field of the same name.</li>
-<li>Assign the <strong>Layer Randomize Toggle Prefab</strong>. You can use the pre-created prefab or create your own.</li>
+<li>Assign the <strong>Layer Randomize Toggle Prefab</strong>. You can use the <a href="#layer-toggle-prefab">pre-created prefab</a> or create your own.</li>
 </ol>
+<hr>
 <h4 id="buttons-setup">Buttons Setup</h4>
 <ol>
-<li>Create two new <strong>GameObjects</strong> as children of the <strong>Buttons</strong> GameObject we previously created.</li>
-<li>Name the first GameObject <strong>Options Button</strong>.</li>
-<li>Name the second GameObject <strong>Randomize Layers Button</strong>.</li>
-<li>Add the <code>Button</code> component to both.</li>
-<li>Add an <code>On click</code> event to the Options Button and reference the <code>CCM Controlled Randomization Handler</code> component.</li>
-<li>Have the event call the <code>ToggleRandomizationOptionsUI()</code> method.</li>
-<li>Add an <code>On Click</code> event to the <strong>Randomize Layers Button</strong> and again reference the <code>CCM Controlled Randomization Handler</code> component.</li>
-<li>Have the event call the <code>RandomizeCharacter()</code> method.</li>
+<li>Create two child GameObjects under the <strong>Buttons</strong> GameObject:
+<ul>
+<li>Options Button</li>
+<li>Randomize Layers Button</li>
+</ul>
+</li>
+<li>Add <code>Button</code> components to both.</li>
+<li>Configure events:
+<ul>
+<li><strong>Options Button</strong>
+<ul>
+<li>Calls <code>ToggleRandomizationOptionsUI()</code></li>
+</ul>
+</li>
+<li><strong>Randomize Layers Button</strong>
+<ul>
+<li>Calls <code>RandomizeCharacter()</code></li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
+<hr>
 <h4 id="randomization-options-popup">Randomization Options Popup</h4>
-<p>The <strong>Randomization Options Popup</strong> GameObject should have some sort of grouping component to space out the toggles.<br>
+<p>The <strong>Randomization Options Popup</strong> GameObject should have a grouping component to space out the toggles.<br>
 This will usually be a <strong>Horizontal</strong>, <strong>Vertical</strong> or <strong>Grid Layout Group</strong>.</p>
 <p>A <code>Content Size Fitter</code> component can also be used to automatically expand the parent GameObject to the size the toggles take up. This is useful for a background to automatically adjust its size as toggles are added or removed.</p>
-<p>Optionally toggles can be added here in the editor, if not enough toggles are present, more will be added by the <code>CCM Controlled Rndomization Handler</code> component at runtime. If too many are present, excess will be disabled.</p>
-<p>The Randomization Options Popup GameObject can be enabled or disabled in the editor. Its state will be automatically managed during runtime.</p>
+<p>Toggles can be added directly in the editor.<br>
+<strong>At runtime</strong>:</p>
+<ul>
+<li>If too few toggles exist - More are created.</li>
+<li>If too many exist - Extras are disabled.</li>
+</ul>
+<p>The <strong>Randomization Options Popup</strong> GameObject can be enabled or disabled in the editor. Its state will be automatically managed during runtime.</p>
 <hr>
 <h2 id="single-layer-randomization">Single Layer Randomization</h2>
-<p>Some Layer Selectors include a variant that contains a randomize button that when pressed will randomize only that layer of the character.</p>
+<p>Some <strong>Layer Selectors</strong> include a variant with a built-in randomize button that affects only that layer.</p>
 <img src="../../images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png" alt="Single Layer Randomization Examples" width="400">  
-<h3 id="adding-missing-randomization-buttons">Adding Missing Randomization Buttons</h3>
-<p>If a Layer Selector does <strong>not</strong> include a variant with a randomize button, one can be added easily:</p>
+<h3 id="adding-a-randomize-button-to-a-layer-selector">Adding a Randomize Button to a Layer Selector</h3>
+<p>If a Layer Selector does <strong>not</strong> include a variant with a randomize button, one can be added:</p>
 <ol>
 <li>Create a new <strong>GameObject</strong>.</li>
 <li>Add the <code>Button</code> component.</li>
-<li>Add an <code>On CLick</code> event on the Button.</li>
+<li>Add an <code>On Click</code> event.</li>
 <li>Assign the <strong>Layer Selector</strong> Component to the event and select the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer">CharacterLayerSelector.RandomizeLayer()</a> method.</li>
 </ol>
 

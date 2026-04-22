@@ -2712,6 +2712,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/layer-toggle.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/layer-toggle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png",
       "output": {
         "resource": {
