@@ -29,6 +29,9 @@ This component will track every time a layer on the character is changed and rec
 - When the max amount of snapshots is met, oldest snapshots will start being replaced.
 - The **Preserve First Snapshot** bool can be toggled which will stop the first snapshot created from being deleted or replaced.
 
+> [!NOTE]
+> The `CCM History Tracker` component is required for both **History Panels** and **Undo/Redo controls** to function.
+
 ![CCM History Tracker Component](~/images/character-creation-menu/ccm-history/history-tracker-component.png)
 
 ### Component Placement

@@ -4,93 +4,169 @@ uid: ccm-history-panels
 
 # History Panels
 
-A History Panel displays a list of snaphots saved in the [History Tracker component](xref:ccm-history-tracking-system#history-tracker-component). 
+A **History Panel** displays a list of snapshots recorded by the [History Tracker](xref:ccm-history-tracking-system#history-tracker-component).
 
-This lets the player view and restore any changes they've previously made.
+These snapshots represent previous states of a character, allowing the player to:
+- Review past changes.
+- Revert to previous versions. 
 
 ---
 
 ## Panel Types
 
-There are two major types of **History Panels**. Both types display a list of modifcations made to the character but display that information in different ways.
+There are two primary types of **History Panels**. Both display a list of modifcations made to the character but show that information in different ways.
 
-### Text Based Panels
+---
 
-An entry in a **text based panel** uses text to describe what was changed in each entry:
+### Text-Based Panels
 
-- If only one layer was changed it says what layer was changed and what option it was changed to
-- If exactly two layers were changed it says the names of the layers changed.
-- If more than two layers were changed it says how many layers were changed.
+A **Text-Based Panel** describes each snapshot using text.
 
-Text based panels are usually vertical.
+- **1 Layer Changed** > Displays the layer name and selected option.
+- **2 Layers Changed** > Displays both layer names.
+- **3+ layers changed** > Displays the number of layers modified.
+
+**Typical Layout**: Vertical List.
 
 <img src="~/images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="History Panel Text" width="300" />  
 
-### Sprite Based Panels
+---
 
-An entry in a sprite based panel uses a sprites to visually show what the character previously looked like.
+### Sprite-Based Panels
 
-Sprite based panels are usually horizontal.
+A **Sprite-Based Panel** visually represents each snapshot using character previews.
 
-**To set the frame used for the preview**:
+Each entry reconstructs the characters appearance at that point in time by taking a single frame from each spritesheet contained in the snapshot and combining them together.
 
-1. Go to your **Layerd Character Type** asset and open it in the **Inspector**.
-2. Expand the **Character Creator Settings** section.
-3. Find **Character Preview Settings**.
-4. Set the **Preview Sprite**.
-
-The rect of the **Preview Sprite** will be used to extract the same frame from all layers of the character. All frames will then be overlayed on top of each other to create the final character preview.
+**Typical Layout**: Horizontal List.
 
 <img src="~/images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="History Panel" width="500" />  
+
+#### Preview Frame Setup
+
+To define which frame is used for preview generation:
+
+1. Select your **Layered Character Type** asset and go to the Inspector window.
+2. Expand **Character Creator Settings**
+3. Locate **Character Preview Settings**
+4. Assign a **Preview Sprite**
+
+> [!NOTE]
+> The **Preview Sprite** MUST be a sprite from the **Base Spritesheet**.
+
+The **rect** of this sprite determines the frame extracted from every layer.  
+All extracted frames are combined to render the final preview.  
+
 
 ---
 
 ## Prefabs
 
-Prefabs Location: `Prefabs > Character Creator > Modules > History > History Panels`
+Location: 
+`Prefabs > Character Creator > Modules > History > History Panels`
+
+---
 
 ### Pre-Setup
 
-These prefabs are contained in the **Pre-Setup** subfolder.
+Located in the **Pre-Setup** folder.
 
-There are two history panel prefabs already setup. **Drag and drop** them anywhere in the **contents of your Character Creation Menu**.
+These panels are ready to use:
+1. Drag and drop into your Character Creation Menu.
+2. Assign a **History Tracker**.
 
 You'll need to assign a **History Tracker** in order for the panel to be functional.  
 Don't have a **History Tracker** setup? [Read here](xref:ccm-history-tracking-system#history-tracker-component).
 
-The **History Tracker field** can be found in the **CCM History Panel** component which is located at the root of the prefab.
+The **History Tracker field** can be found in the **CCM History Panel** component at the root of the prefab.
 
 ![History Panel Component](~/images/character-creation-menu/ccm-history/panels/history-panel-component.png)
 
-### List Entry Prefabs
+---
 
-These prefabs are contained in the `History List Entries` subfolder.
+### Entry Prefabs
 
-The following are entries used in the pre-setup panels.
+Located in the **History List Entries** folder.
+
+Included prefabs:
 
 1. **History Panel Entry [Text]**
-   - Entry displaying text which describes what changed in the assigned snapshot.
+   - Displays a textual description of what changed in the snapshot.
 2. **History Panel Entry [Sprite]**
-   - Entry containing a dynmaic list of sprites. Each sprite displays a layer in the assigned character snapshot.
+   - Displays a collection of sprites with each sprite representing a layer of the character recorded in the snapshot.    
+
+These are the same prefabs used in the **Pre-Setup** History Panel prefabs.
 
 ---
 
-## Create Custom History Panel Entry
+## Creating a History Panel
+
+All **History Panels** use the `CCM History Panel` component to populate entries from snapshot data.
+
+### Setup Steps
+
+1. Create a new **GameObject**.
+2. Add the **CCM History Panel** component.
+3. Assign a **History Tracker**.
+   - [Setup Guide](xref:ccm-history-tracking-system#history-tracker-component).
+4. Assign a **List Parent**.
+5. Assign an **Entry Prefab**.
+
+[Existing entry prefabs](#entry-prefabs) can be used or you can [create your own entry prefab](#creating-a-history-panel-entry).
+
+---
+
+### List Parent
+
+The **List Parent** is the container where entries are instantiated.
+
+A **Vertical** or **Horintal Layout Group** component can be used to automatically space entries.  
+Or a **Scroll View** can be used which provides a scrollable list which overflow handling.
+
+The `CCM History Panel` component will instantiate entries as children of this **GameObject**, however it's up to you to decide how these entries will be layed out.
+
+---
+
+### Panel Settings
+
+| Setting           | Description                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------- |
+| **Mode**          | Controls whether entries appear only when used or are always visible.                                   |
+| **Newest On Top** | If enabled, inserts new entries at the top of the list. If disabled, inserts new entries at the bottom. |
+| **Preload Pool**  | Number of entries pre-instantiated on menu initialization.                                              |
+
+---
+
+## Creating a History Panel Entry
 
 Follow these steps to create your own **History Panel entry** from scratch:
-1. Create a new **GameObject** and add the [HistoryPanelEntry](xref:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry) component.
-2. Set the Display Mode:
-   - Text - Requires reference to a text objcet.
-   - Sprite - Requires reference to layer preview sprites parent. (The parent GameObject sprites will be instantiated inside)
-   - Text And Sprite - Requires both aforementioned references.
-3. Add the `Toggle` component and reference it in the `HistoryPanelEntry` component.
-4. Add an `Image` component - This will be the background image.
-5. Set the `Target Graphic` on the `toggle` to the image component.
-6. Add a new child game object and add another `Image` component to it.
-7. Name the new child game object something like **Highlight**. - This game object will only be active when the entry is selected.
-8. Set the `Graphic` on the `toggle` to the image component on the **Highlight** game object.
-9. Turn your game object into a prefab by dragging it into a folder in the project window.
-10. Finally, on the [CCMHistoryPanel](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel) component which lives on all **History Panels**, set the `Entry Prefab` to reference your new prefab.
 
-**Confused?**  
-Checkout one of the pre-existing entry prefabs to see how they're setup.
+### Setup Steps
+
+1. Create a new **GameObject**.
+2. Add the [History Panel Entry](xref:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry) component.
+3. Set the **Display Mode**:
+   - **Text** > Requires a text reference.
+   - **Sprite** > Requires a sprite container reference (Parent GameObject).
+   - **Text And Sprite** > Requires Both.
+4. Add a `Toggle` component.
+5. Assign the `Toggle` reference in the `History Panel Entry` component.
+6. Add an `image` component (This will be the entries background).
+7. Set the Toggle **Target Graphic** to this Image.
+
+### Selection Highlight
+
+8. Create a child GameObject and name it (e.g. **Highlight**).  
+9. Add an `Image` component to it.  
+10. Give it the sprite you want to be shown when selected.  
+11. Assign this image to the Toggle **Graphic** field.  
+
+---
+
+### Finalizing
+
+12. Drag the **GameObject** into the **Project window** to create a prefab.  
+13. Assign it to the **Entry Prefab** field on your **History Panel**.
+
+> [!TIP]
+> **Confused?** Check out one of the [included entry prefabs](#entry-prefabs) to understand how they're set up.

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>History Panels | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="History Panels | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="History Panels | BlazerTech Character Management System">
+    <meta name="twitter:title" content="History Panels | BlazerTech Character Management System">
 
       <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
       <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
@@ -100,8 +100,162 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="temp">
+<h1 id="history-panels">History Panels</h1>
 
+<p>A <strong>History Panel</strong> displays a list of snapshots recorded by the <a class="xref" href="character-creator/history/character-creator-history-tracking-system.html#history-tracker-component">History Tracker</a>.</p>
+<p>These snapshots represent previous states of a character, allowing the player to:</p>
+<ul>
+<li>Review past changes</li>
+<li>Restore earlier configurations</li>
+</ul>
+<hr>
+<h2 id="panel-types">Panel Types</h2>
+<p>There are two primary types of <strong>History Panels</strong>. Both present the same snapshot data but differ in how that information is displayed.</p>
+<hr>
+<h3 id="text-based-panels">Text-Based Panels</h3>
+<p>A <strong>Text-Based Panel</strong> describes each snapshot using text.</p>
+<p><strong>Entry behavior:</strong></p>
+<ul>
+<li><strong>1 layer changed</strong> → Displays the layer name and selected option</li>
+<li><strong>2 layers changed</strong> → Displays both layer names</li>
+<li><strong>3+ layers changed</strong> → Displays the number of layers modified</li>
+</ul>
+<p><strong>Typical layout:</strong> Vertical list</p>
+<img src="../images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="Text-Based History Panel" width="300">
+<hr>
+<h3 id="sprite-based-panels">Sprite-Based Panels</h3>
+<p>A <strong>Sprite-Based Panel</strong> visually represents each snapshot using character previews.</p>
+<p>Each entry reconstructs the character’s appearance at that point in time by combining layer sprites.</p>
+<p><strong>Typical layout:</strong> Horizontal list</p>
+<h4 id="preview-frame-setup">Preview Frame Setup</h4>
+<p>To define which frame is used for preview generation:</p>
+<ol>
+<li>Select your <strong>Layered Character Type</strong> asset</li>
+<li>Open it in the <strong>Inspector</strong></li>
+<li>Expand <strong>Character Creator Settings</strong></li>
+<li>Locate <strong>Character Preview Settings</strong></li>
+<li>Assign a <strong>Preview Sprite</strong></li>
+</ol>
+<p>The <strong>rect</strong> of this sprite determines the frame extracted from every layer.<br>
+All extracted frames are combined to render the final preview.</p>
+<img src="../images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="Sprite-Based History Panel" width="500">
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Location:</strong><br>
+<code>Prefabs &gt; Character Creator &gt; Modules &gt; History &gt; History Panels</code></p>
+<hr>
+<h3 id="pre-setup-panels">Pre-Setup Panels</h3>
+<p>Located in the <strong>Pre-Setup</strong> folder.</p>
+<p>These panels are ready to use:</p>
+<ol>
+<li>Drag and drop into your Character Creation Menu</li>
+<li>Assign a <strong>History Tracker</strong></li>
+</ol>
+<p>The <strong>History Tracker</strong> reference is found on the <code>CCM History Panel</code> component at the root of the prefab.</p>
+<p><img src="../images/character-creation-menu/ccm-history/panels/history-panel-component.png" alt="History Panel Component"></p>
+<hr>
+<h3 id="entry-prefabs">Entry Prefabs</h3>
+<p>Located in the <code>History List Entries</code> folder.</p>
+<p>Included prefabs:</p>
+<ul>
+<li><p><strong>History Panel Entry [Text]</strong><br>
+Displays a textual description of the snapshot</p>
+</li>
+<li><p><strong>History Panel Entry [Sprite]</strong><br>
+Displays layered sprite previews representing the snapshot</p>
+</li>
+</ul>
+<hr>
+<h2 id="creating-a-history-panel">Creating a History Panel</h2>
+<p>All panels use the <code>CCM History Panel</code> component to populate entries from snapshot data.</p>
+<h3 id="setup-steps">Setup Steps</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong></li>
+<li>Add the <code>CCM History Panel</code> component</li>
+<li>Assign a <strong>History Tracker</strong>
+<ul>
+<li><a class="xref" href="character-creator/history/character-creator-history-tracking-system.html#history-tracker-component">Setup guide</a></li>
+</ul>
+</li>
+<li>Assign a <strong>List Parent</strong></li>
+<li>Assign an <strong>Entry Prefab</strong></li>
+</ol>
+<hr>
+<h3 id="list-parent">List Parent</h3>
+<p>The <strong>List Parent</strong> is the container where entries are instantiated.</p>
+<p>Common setup options:</p>
+<ul>
+<li><strong>Vertical Layout Group</strong> → Stacked entries</li>
+<li><strong>Horizontal Layout Group</strong> → Row-based entries</li>
+<li><strong>Scroll View</strong> → Scrollable lists with overflow handling</li>
+</ul>
+<hr>
+<h3 id="panel-settings">Panel Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mode</strong></td>
+<td>Controls whether entries appear only when used or are always visible</td>
+</tr>
+<tr>
+<td><strong>Newest On Top</strong></td>
+<td>Inserts new entries at the top of the list</td>
+</tr>
+<tr>
+<td><strong>Preload Pool</strong></td>
+<td>Number of entries pre-instantiated on menu initialization</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="creating-a-custom-history-entry">Creating a Custom History Entry</h2>
+<p>To build a custom <strong>History Panel Entry</strong>:</p>
+<h3 id="step-by-step">Step-by-Step</h3>
+<ol>
+<li><p>Create a new <strong>GameObject</strong></p>
+</li>
+<li><p>Add the <a class="xref" href="../api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html">HistoryPanelEntry</a> component</p>
+</li>
+<li><p>Set the <strong>Display Mode</strong>:</p>
+<ul>
+<li><strong>Text</strong> → Requires a text reference</li>
+<li><strong>Sprite</strong> → Requires a sprite container (parent object)</li>
+<li><strong>Text And Sprite</strong> → Requires both</li>
+</ul>
+</li>
+<li><p>Add a <code>Toggle</code> component</p>
+</li>
+<li><p>Assign the <code>Toggle</code> reference in <code>HistoryPanelEntry</code></p>
+</li>
+<li><p>Add an <code>Image</code> component (background)</p>
+</li>
+<li><p>Set the Toggle <strong>Target Graphic</strong> to this image</p>
+</li>
+</ol>
+<hr>
+<h3 id="selection-highlight">Selection Highlight</h3>
+<ol start="8">
+<li>Create a child GameObject (e.g. <strong>Highlight</strong>)</li>
+<li>Add an <code>Image</code> component to it</li>
+<li>Assign this image to the Toggle <strong>Graphic</strong> field</li>
+<li>Configure it as the visual indicator for selection</li>
+</ol>
+<hr>
+<h3 id="finalizing">Finalizing</h3>
+<ol start="12">
+<li>Drag the GameObject into the Project window to create a prefab</li>
+<li>Assign it to the <strong>Entry Prefab</strong> field on the <code>CCM History Panel</code></li>
+</ol>
+<hr>
+<h3 id="tip">Tip</h3>
+<p>If setup is unclear, inspect one of the included entry prefabs to understand the structure and references.</p>
 
 </article>
 
