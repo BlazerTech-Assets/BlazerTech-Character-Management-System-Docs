@@ -93,7 +93,7 @@ You'll need two game objects.
 - #1 holds the `Character Creation Menu Manager` component and will manage the menu. **SHOULD** be enabled at runtime.
 - #2 Holds the actual contents of the menu and is referenced in the `Menu Contents` field in the `Character Creation Menu Manager`. Doesn't matter if it's enabled or disabled.
 
-![Character Creation Menu Structure](~/images/character-creator-setup/character-creation-menu-structure.png)
+![Character Creation Menu Structure](~/images/character-creation-menu/character-creation-menu-structure.png)
 
 ### Character Creation Menu Contents
 

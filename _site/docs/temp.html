@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>History Panels | BlazerTech Character Management System </title>
+      <title>Character Randomization | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="History Panels | BlazerTech Character Management System ">
+      <meta name="title" content="Character Randomization | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="History Panels | BlazerTech Character Management System">
-    <meta name="twitter:title" content="History Panels | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Randomization | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Randomization | BlazerTech Character Management System">
 
       <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
       <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
@@ -101,161 +101,163 @@
         </div>
 
         <article data-uid="temp">
-<h1 id="history-panels">History Panels</h1>
+<h1 id="character-randomization">Character Randomization</h1>
 
-<p>A <strong>History Panel</strong> displays a list of snapshots recorded by the <a class="xref" href="character-creator/history/character-creator-history-tracking-system.html#history-tracker-component">History Tracker</a>.</p>
-<p>These snapshots represent previous states of a character, allowing the player to:</p>
+<p>The <strong>Character Creation Menu</strong> supports multiple ways to randomize a character’s appearance.<br>
+You can randomize:</p>
 <ul>
-<li>Review past changes</li>
-<li>Restore earlier configurations</li>
+<li>The <strong>entire character</strong></li>
+<li><strong>Specific layers only</strong></li>
+<li>A <strong>single layer</strong></li>
 </ul>
 <hr>
-<h2 id="panel-types">Panel Types</h2>
-<p>There are two primary types of <strong>History Panels</strong>. Both present the same snapshot data but differ in how that information is displayed.</p>
+<h2 id="complete-character-randomization">Complete Character Randomization</h2>
+<p>This is the simplest form of randomization.<br>
+A single button randomizes <strong>all layers</strong> of the character at once.</p>
+<p><img src="../images/character-creation-menu/ccm-character-randomization/complete-randomization-button.png" alt="Complete Randomization Button"></p>
 <hr>
-<h3 id="text-based-panels">Text-Based Panels</h3>
-<p>A <strong>Text-Based Panel</strong> describes each snapshot using text.</p>
-<p><strong>Entry behavior:</strong></p>
-<ul>
-<li><strong>1 layer changed</strong> → Displays the layer name and selected option</li>
-<li><strong>2 layers changed</strong> → Displays both layer names</li>
-<li><strong>3+ layers changed</strong> → Displays the number of layers modified</li>
-</ul>
-<p><strong>Typical layout:</strong> Vertical list</p>
-<img src="../images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="Text-Based History Panel" width="300">
-<hr>
-<h3 id="sprite-based-panels">Sprite-Based Panels</h3>
-<p>A <strong>Sprite-Based Panel</strong> visually represents each snapshot using character previews.</p>
-<p>Each entry reconstructs the character’s appearance at that point in time by combining layer sprites.</p>
-<p><strong>Typical layout:</strong> Horizontal list</p>
-<h4 id="preview-frame-setup">Preview Frame Setup</h4>
-<p>To define which frame is used for preview generation:</p>
-<ol>
-<li>Select your <strong>Layered Character Type</strong> asset</li>
-<li>Open it in the <strong>Inspector</strong></li>
-<li>Expand <strong>Character Creator Settings</strong></li>
-<li>Locate <strong>Character Preview Settings</strong></li>
-<li>Assign a <strong>Preview Sprite</strong></li>
-</ol>
-<p>The <strong>rect</strong> of this sprite determines the frame extracted from every layer.<br>
-All extracted frames are combined to render the final preview.</p>
-<img src="../images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="Sprite-Based History Panel" width="500">
-<hr>
-<h2 id="prefabs">Prefabs</h2>
+<h3 id="prefabs">Prefabs</h3>
 <p><strong>Location:</strong><br>
-<code>Prefabs &gt; Character Creator &gt; Modules &gt; History &gt; History Panels</code></p>
-<hr>
-<h3 id="pre-setup-panels">Pre-Setup Panels</h3>
-<p>Located in the <strong>Pre-Setup</strong> folder.</p>
-<p>These panels are ready to use:</p>
+<code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls</code></p>
+<p>Each variation folder contains identical prefabs with different visual styles.</p>
+<p><strong>Setup Steps:</strong></p>
 <ol>
-<li>Drag and drop into your Character Creation Menu</li>
-<li>Assign a <strong>History Tracker</strong></li>
+<li>Choose a variation folder</li>
+<li>Locate <strong>Randomize Character Button</strong></li>
+<li>Drag it into your Character Creation Menu</li>
 </ol>
-<p>The <strong>History Tracker</strong> reference is found on the <code>CCM History Panel</code> component at the root of the prefab.</p>
-<p><img src="../images/character-creation-menu/ccm-history/panels/history-panel-component.png" alt="History Panel Component"></p>
+<p>When the button is pressed in <strong>Play Mode</strong>, all character layers are randomized.</p>
 <hr>
-<h3 id="entry-prefabs">Entry Prefabs</h3>
-<p>Located in the <code>History List Entries</code> folder.</p>
-<p>Included prefabs:</p>
-<ul>
-<li><p><strong>History Panel Entry [Text]</strong><br>
-Displays a textual description of the snapshot</p>
-</li>
-<li><p><strong>History Panel Entry [Sprite]</strong><br>
-Displays layered sprite previews representing the snapshot</p>
-</li>
-</ul>
-<hr>
-<h2 id="creating-a-history-panel">Creating a History Panel</h2>
-<p>All panels use the <code>CCM History Panel</code> component to populate entries from snapshot data.</p>
-<h3 id="setup-steps">Setup Steps</h3>
+<h3 id="manual-setup">Manual Setup</h3>
+<p>To create a complete randomization button:</p>
 <ol>
 <li>Create a new <strong>GameObject</strong></li>
-<li>Add the <code>CCM History Panel</code> component</li>
-<li>Assign a <strong>History Tracker</strong>
+<li>Add a <code>Button</code> component</li>
+<li>Add the <code>CCM Relay</code> component
 <ul>
-<li><a class="xref" href="character-creator/history/character-creator-history-tracking-system.html#history-tracker-component">Setup guide</a></li>
+<li>See: <a class="xref" href="character-creator/character-creator-menu-controls.html#ccm-relay-component">CCM Relay component</a></li>
 </ul>
 </li>
-<li>Assign a <strong>List Parent</strong></li>
-<li>Assign an <strong>Entry Prefab</strong></li>
+<li>Add an <strong>On Click</strong> event to the <code>Button</code></li>
+<li>Assign the <code>CCM Relay</code> component</li>
+<li>Select the <code>RandomizeEntireCharacter()</code> method</li>
+<li>Enter <strong>Play Mode</strong> and test</li>
 </ol>
+<p><img src="../images/character-creation-menu/ccm-character-randomization/complete-randomization-button-setup.png" alt="Complete Randomization Button Setup"></p>
 <hr>
-<h3 id="list-parent">List Parent</h3>
-<p>The <strong>List Parent</strong> is the container where entries are instantiated.</p>
-<p>Common setup options:</p>
+<h2 id="controlled-randomization">Controlled Randomization</h2>
+<p><strong>Controlled Randomization</strong> allows selective randomization of layers.</p>
+<p>It consists of:</p>
 <ul>
-<li><strong>Vertical Layout Group</strong> → Stacked entries</li>
-<li><strong>Horizontal Layout Group</strong> → Row-based entries</li>
-<li><strong>Scroll View</strong> → Scrollable lists with overflow handling</li>
+<li>A <strong>Randomize</strong> button</li>
+<li>An <strong>Options</strong> button</li>
 </ul>
+<p>The <strong>Options</strong> button opens a popup listing all layers with toggles.<br>
+Only enabled layers are randomized when the Randomize button is pressed.</p>
+<img src="../images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400">
 <hr>
-<h3 id="panel-settings">Panel Settings</h3>
-<table>
-<thead>
-<tr>
-<th>Setting</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Mode</strong></td>
-<td>Controls whether entries appear only when used or are always visible</td>
-</tr>
-<tr>
-<td><strong>Newest On Top</strong></td>
-<td>Inserts new entries at the top of the list</td>
-</tr>
-<tr>
-<td><strong>Preload Pool</strong></td>
-<td>Number of entries pre-instantiated on menu initialization</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="creating-a-custom-history-entry">Creating a Custom History Entry</h2>
-<p>To build a custom <strong>History Panel Entry</strong>:</p>
-<h3 id="step-by-step">Step-by-Step</h3>
+<h3 id="prefabs-1">Prefabs</h3>
+<p><strong>Location:</strong><br>
+<code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls</code></p>
+<p><strong>Setup Steps:</strong></p>
 <ol>
-<li><p>Create a new <strong>GameObject</strong></p>
-</li>
-<li><p>Add the <a class="xref" href="../api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html">HistoryPanelEntry</a> component</p>
-</li>
-<li><p>Set the <strong>Display Mode</strong>:</p>
+<li>Choose a variation folder</li>
+<li>Open the <strong>Controlled Randomization</strong> subfolder</li>
+<li>Drag the <strong>Controlled Randomization</strong> prefab into your menu</li>
+<li>Enter <strong>Play Mode</strong> to test</li>
+</ol>
+<hr>
+<h3 id="layer-toggle-prefab">Layer Toggle Prefab</h3>
+<p>The <strong>Layer Toggle</strong> prefab is used inside the options popup.</p>
+<p><strong>Key details:</strong></p>
 <ul>
-<li><strong>Text</strong> → Requires a text reference</li>
-<li><strong>Sprite</strong> → Requires a sprite container (parent object)</li>
-<li><strong>Text And Sprite</strong> → Requires both</li>
+<li>Uses the <code>CCM Layer Randomize Toggle</code> component</li>
+<li>Shares a GameObject with a <code>Toggle</code> component</li>
+<li>Calls <code>UpdateRandomizationToggle()</code> on value change</li>
+<li>Requires a text reference to display the layer name</li>
+</ul>
+<hr>
+<h3 id="manual-setup-1">Manual Setup</h3>
+<p>Create a custom <strong>Controlled Randomization</strong> system:</p>
+<hr>
+<h4 id="gameobject-structure">GameObject Structure</h4>
+<p>Create three GameObjects:</p>
+<ul>
+<li><strong>Controlled Randomization</strong> (root)</li>
+<li><strong>Buttons</strong> (container for controls)</li>
+<li><strong>Randomization Options Popup</strong> (toggle list UI)</li>
+</ul>
+<hr>
+<h4 id="handler-setup">Handler Setup</h4>
+<ol>
+<li>Add <code>CCM Controlled Randomization Handler</code> to the root</li>
+<li>Assign:
+<ul>
+<li><strong>Randomization Options Popup</strong></li>
+<li><strong>Layer Randomize Toggle Prefab</strong></li>
 </ul>
 </li>
-<li><p>Add a <code>Toggle</code> component</p>
+</ol>
+<hr>
+<h4 id="buttons-setup">Buttons Setup</h4>
+<ol>
+<li><p>Create two child objects under <strong>Buttons</strong>:</p>
+<ul>
+<li><strong>Options Button</strong></li>
+<li><strong>Randomize Layers Button</strong></li>
+</ul>
 </li>
-<li><p>Assign the <code>Toggle</code> reference in <code>HistoryPanelEntry</code></p>
+<li><p>Add <code>Button</code> components to both</p>
 </li>
-<li><p>Add an <code>Image</code> component (background)</p>
+<li><p>Configure events:</p>
+<ul>
+<li><strong>Options Button</strong>
+<ul>
+<li>Calls <code>ToggleRandomizationOptionsUI()</code></li>
+</ul>
 </li>
-<li><p>Set the Toggle <strong>Target Graphic</strong> to this image</p>
+<li><strong>Randomize Layers Button</strong>
+<ul>
+<li>Calls <code>RandomizeCharacter()</code></li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 <hr>
-<h3 id="selection-highlight">Selection Highlight</h3>
-<ol start="8">
-<li>Create a child GameObject (e.g. <strong>Highlight</strong>)</li>
-<li>Add an <code>Image</code> component to it</li>
-<li>Assign this image to the Toggle <strong>Graphic</strong> field</li>
-<li>Configure it as the visual indicator for selection</li>
-</ol>
+<h4 id="options-popup-setup">Options Popup Setup</h4>
+<p>The popup should include a layout system:</p>
+<ul>
+<li><strong>Vertical Layout Group</strong></li>
+<li><strong>Horizontal Layout Group</strong></li>
+<li><strong>Grid Layout Group</strong></li>
+</ul>
+<p>Optional:</p>
+<ul>
+<li>Add a <code>Content Size Fitter</code> to auto-resize the container</li>
+</ul>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>If too few toggles exist → more are created at runtime</li>
+<li>If too many exist → extras are disabled</li>
+<li>Visibility is automatically managed at runtime</li>
+</ul>
 <hr>
-<h3 id="finalizing">Finalizing</h3>
-<ol start="12">
-<li>Drag the GameObject into the Project window to create a prefab</li>
-<li>Assign it to the <strong>Entry Prefab</strong> field on the <code>CCM History Panel</code></li>
-</ol>
+<h2 id="single-layer-randomization">Single Layer Randomization</h2>
+<p>Some <strong>Layer Selectors</strong> include a built-in randomize button that affects only that layer.</p>
+<img src="../images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png" alt="Single Layer Randomization Examples" width="400">
 <hr>
-<h3 id="tip">Tip</h3>
-<p>If setup is unclear, inspect one of the included entry prefabs to understand the structure and references.</p>
+<h3 id="adding-a-randomize-button-to-a-layer">Adding a Randomize Button to a Layer</h3>
+<p>If a selector does not include one:</p>
+<ol>
+<li>Create a new <strong>GameObject</strong></li>
+<li>Add a <code>Button</code> component</li>
+<li>Add an <strong>On Click</strong> event</li>
+<li>Assign the <strong>Layer Selector</strong> component</li>
+<li>Call:
+<a class="xref" href="../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer">CharacterLayerSelector.RandomizeLayer()</a></li>
+</ol>
+<p>This will randomize only the associated layer.</p>
 
 </article>
 

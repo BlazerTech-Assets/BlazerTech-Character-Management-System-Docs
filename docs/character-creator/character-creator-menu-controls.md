@@ -11,7 +11,7 @@ uid: ccm-menu-controls
 
 Menu Controls are UI buttons that provide core user actions such as saving, closing, randomizing and reseting a character.
 
-The included prefabs can be quickly added to a **Character Creation Menu** or replaced with custom implementations using the CCM Relay component.
+The included prefabs can be quickly added to a **Character Creation Menu** or replaced with custom implementations using the **CCM Relay** component.
 
 <img src="~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500" />
 
@@ -74,7 +74,7 @@ To create a custom button using the **CCM Relay**:
 3. Assign the Buttons **On Click** event to call a method on the **CCM Relay** component
 
 ### Example
-![CCM Relay Usage Example](~/images/character-creator-setup/ccm-relay-usage-example.png)
+![CCM Relay Usage Example](~/images/character-creation-menu/ccm-menu-controls/ccm-relay-usage-example.png)
 
 ---
 

@@ -8939,7 +8939,7 @@ references:
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
 - uid: temp
-  name: History Panels
+  name: Character Randomization
   href: docs/temp.html
 - uid: top-down-character-animator-handler-component
   name: Top Down Character Animator Handler

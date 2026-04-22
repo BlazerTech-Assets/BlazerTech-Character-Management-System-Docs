@@ -2682,10 +2682,40 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization-example.png",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/complete-randomization-button-setup.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization-example.png"
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/complete-randomization-button-setup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/complete-randomization-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/complete-randomization-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/controlled-randomization.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png"
         }
       },
       "version": ""
@@ -2922,6 +2952,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-menu-controls/ccm-relay-usage-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-menu-controls/ccm-relay-usage-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creation-menu/ccm-menu-controls/menu-controls-example.png",
       "output": {
         "resource": {
@@ -2932,20 +2972,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-creator-setup/ccm-relay-usage-example.png",
+      "source_relative_path": "images/character-creation-menu/character-creation-menu-structure.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-creator-setup/ccm-relay-usage-example.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/character-creator-setup/character-creation-menu-structure.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/character-creator-setup/character-creation-menu-structure.png"
+          "relative_path": "images/character-creation-menu/character-creation-menu-structure.png"
         }
       },
       "version": ""
