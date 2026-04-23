@@ -30,7 +30,7 @@ Menu Controls provide the following actions:
 
 ## Prefabs
 
-**Prefabs Location**: `Prefabs > Character Creator > Modules > Menu Controls`.
+**Location**: `Prefabs > Character Creator > Modules > Menu Controls`.
 
 Ready-made prefabs are included and can be used without any additional setup. Drag and drop them directly into your Character Creation Menu hierarchy and they're immediately ready to be used.
 
@@ -81,6 +81,8 @@ To create a custom button using the **CCM Relay**:
 ## CCM Relay Methods
 
 The following public methods are available on the **CCM Relay** component:
+
+---
 
 ### DisableMenu()
 

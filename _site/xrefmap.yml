@@ -8917,9 +8917,6 @@ references:
 - uid: project-settings
   name: Project Settings
   href: docs/project-settings.html
-- uid: quick-start
-  name: Quick Start Guide
-  href: docs/getting-started/quick-start.html
 - uid: quick-start-create-a-character-template
   name: Create A Character Template
   href: docs/getting-started/quick-start-guide/create-a-character-template.html

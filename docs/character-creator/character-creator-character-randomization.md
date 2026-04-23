@@ -157,7 +157,9 @@ The **Randomization Options Popup** GameObject can be enabled or disabled in the
 
 ## Single Layer Randomization
 
-Some **Layer Selectors** include a variant with a built-in randomize button that affects only that layer.
+Some **Layer Selectors** include a variant with a built-in randomize button that affects only that layer.  
+
+Check each Layer Selectors **prefab folder** to see if it includes a variant with randomization controls.
 
 <img src="~/images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png" alt="Single Layer Randomization Examples" width="400" />  
 

@@ -14,8 +14,6 @@
     - name: Use Your Character
       href: getting-started/quick-start-guide/use-your-character.md
 
-- name: Quick Start (Old)
-  href: getting-started/quick-start.md
 - name: Changelog
   href: changelog.md
 
@@ -84,7 +82,7 @@
 - name: Character Overlay Layer Usage
   href: character-overlay-layers/character-overlay-layer-usage.md
 
-- name: 🟪Included Content
+- name: 🟪Integrations
 - name: Built In Characters
   href: built-in-characters.md
 - name: LimeZu Modern Interiors Support
@@ -105,12 +103,8 @@
   href: character-creator/character-creator-setup.md
 - name: Character Preview
   href: character-creator/character-creator-character-preview.md
-- name: Character Randomization
-  href: character-creator/character-creator-character-randomization.md
 - name: Menu Controls
   href: character-creator/character-creator-menu-controls.md
-- name: Loading Screens
-  href: character-creator/character-creator-loading-screens.md
 - name: Layer Selectors
   items:
     - name: Layer Selector Setup
@@ -133,3 +127,7 @@
       href: character-creator/history/character-creator-history-panels.md
     - name: History Undo/Redo
       href: character-creator/history/character-creator-history-undo-redo.md
+- name: Character Randomization
+  href: character-creator/character-creator-character-randomization.md
+- name: Loading Screens
+  href: character-creator/character-creator-loading-screens.md

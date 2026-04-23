@@ -6,6 +6,8 @@ uid: ccm-character-preview
 
 The **character preview** shows a live view of the character the player is customizing. Whenever a layer of the character is modifed, the preview is refreshed automatically.
 
+---
+
 ## Prefabs
 
 Prefabs offer easy implementation of character previews without the need to set them up yourself.

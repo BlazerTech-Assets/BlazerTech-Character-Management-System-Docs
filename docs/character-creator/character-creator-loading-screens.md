@@ -15,6 +15,8 @@ A **loading screen** can be used to hide the **Character Creation Menu** while i
 
 Just like the Character Creation Menu itself, loading screens are also modular. Pieces can be added or removed to create your own loading screen.
 
+---
+
 **The Hierarchy is as follows:**
 
 1. **First GameObject** manages the loading screen and holds the [CCMLoadingScreenHandler](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler) component. This GameObject should be kept enabled.
@@ -24,6 +26,8 @@ Just like the Character Creation Menu itself, loading screens are also modular. 
 The **Contents** GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.
 
 ![Loading Screen Hierarchy](~/images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png)
+
+---
 
 ### Loading Screen Handler Component
 
@@ -44,9 +48,11 @@ When the Character Creation Menu is enabled, the Loading Screen Handler automati
 
 ## Prefabs
 
-Loading Screen prefabs are available to easily drop into your own project.
+Loading Screen prefabs are available to drop into your own project without the need of setting them up yourself.
 
-These prefabs are located under `Pefabs > Character Creator > Modules > Loading Screen`.
+Location: `Pefabs > Character Creator > Modules > Loading Screen`.
+
+---
 
 ### Core Prefab
 
@@ -55,6 +61,8 @@ Contained within the **Core** Subfolder.
 A loading screen in its most basic state. Only a background to display during the loading process. 
 
 This prefab can be added to using the [Additions prefabs](#additions).
+
+---
 
 ### Pre-Setup Prefabs
 
@@ -65,6 +73,8 @@ These are Loading Screens with additional features included. They're drag and dr
 Four **Pre-Setup** loading screens are included. Each one uses a different background and different elements such as loading bars, progress text, loading icons, etc.
 
 <img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />
+
+---
 
 ### Additions Prefabs
 
@@ -90,6 +100,8 @@ Additional prefabs that can be added to the [Core loading screen prefab](#core).
 These components can be added to a loading screen to add additional features.  
 They're also used in the [Additions Prefabs](#additions-prefabs). If you're looking for a simple drag and drop implementation, use those instead.
 
+---
+
 ### LoadingScreenProgressText Component
 
 - Adds progress text indicating how far loading has progressed.
@@ -99,6 +111,8 @@ They're also used in the [Additions Prefabs](#additions-prefabs). If you're look
 
 [Component Link](xref:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText)
 
+---
+
 ### LoadingScreenProgressBar Component
 
 - Adds a progress bar which fills up as the loading progresses.
@@ -107,6 +121,8 @@ They're also used in the [Additions Prefabs](#additions-prefabs). If you're look
 -  `Smoothing Speed` value can be changed to modify loading bar lerp speed through loading progress. 
 
 [Component Link](xref:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar)
+
+---
 
 ### LoadingScreenRepeatingText Component
 

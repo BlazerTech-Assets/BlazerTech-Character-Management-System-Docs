@@ -117,12 +117,16 @@ Character randomization functionality can be added in multiple differents ways
 - **Controlled Randomization** - A randomize button with additional options to select which layers to randomize.
 - **Layer Specific Randomization** - Randomization buttons included in [Layer Selectors](#layer-selectors).
 
+<img src="~/images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400" />
+
 [Read More → Character Randomization](xref:ccm-character-randomization)  
 
 ---
 
 ## Loading Screens
 Loading screens hide the **Character Creation Menu** while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.
+
+<img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />
 
 [Read More → Loading Screen](xref:ccm-loading-screens)  
 

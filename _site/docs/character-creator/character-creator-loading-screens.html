@@ -109,6 +109,7 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 <hr>
 <h2 id="how-it-works">How It Works</h2>
 <p>Just like the Character Creation Menu itself, loading screens are also modular. Pieces can be added or removed to create your own loading screen.</p>
+<hr>
 <p><strong>The Hierarchy is as follows:</strong></p>
 <ol>
 <li><p><strong>First GameObject</strong> manages the loading screen and holds the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component. This GameObject should be kept enabled.</p>
@@ -118,6 +119,7 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 </ol>
 <p>The <strong>Contents</strong> GameObject will hold the loading screen background and any additional pieces of the loading screen such as a progress bar/text or loading icon.</p>
 <p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-Hierarchy.png" alt="Loading Screen Hierarchy"></p>
+<hr>
 <h3 id="loading-screen-handler-component">Loading Screen Handler Component</h3>
 <p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is responsible for toggling the state of a loading screen.</p>
 <p>When the Character Creation Menu is enabled, the Loading Screen Handler automatically enables the loading screen and listens for when the Character Creation Menu finishes loading. Once finished, it disables the loading screen.</p>
@@ -143,17 +145,20 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 <p><img src="../../images/character-creation-menu/ccm-loading-screen/loading-screen-handler-component.png" alt="CCM Loading Screen Handler Component"></p>
 <hr>
 <h2 id="prefabs">Prefabs</h2>
-<p>Loading Screen prefabs are available to easily drop into your own project.</p>
-<p>These prefabs are located under <code>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</code>.</p>
+<p>Loading Screen prefabs are available to drop into your own project without the need of setting them up yourself.</p>
+<p>Location: <code>Pefabs &gt; Character Creator &gt; Modules &gt; Loading Screen</code>.</p>
+<hr>
 <h3 id="core-prefab">Core Prefab</h3>
 <p>Contained within the <strong>Core</strong> Subfolder.</p>
 <p>A loading screen in its most basic state. Only a background to display during the loading process.</p>
 <p>This prefab can be added to using the <a href="#additions">Additions prefabs</a>.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
 <p>Contained within the <strong>Pre-Setup</strong> subfolder.</p>
 <p>These are Loading Screens with additional features included. They're drag and drop solutions, meaning once added, no other setup is required.</p>
 <p>Four <strong>Pre-Setup</strong> loading screens are included. Each one uses a different background and different elements such as loading bars, progress text, loading icons, etc.</p>
 <img src="../../images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500">
+<hr>
 <h3 id="additions-prefabs">Additions Prefabs</h3>
 <p>Contained within the <strong>Additions</strong> Subfolder.</p>
 <p>Additional prefabs that can be added to the <a href="#core">Core loading screen prefab</a>.</p>
@@ -173,6 +178,7 @@ A <strong>loading screen</strong> can be used to hide the <strong>Character Crea
 </div>
 <p>These components can be added to a loading screen to add additional features.<br>
 They're also used in the <a href="#additions-prefabs">Additions Prefabs</a>. If you're looking for a simple drag and drop implementation, use those instead.</p>
+<hr>
 <h3 id="loadingscreenprogresstext-component">LoadingScreenProgressText Component</h3>
 <ul>
 <li>Adds progress text indicating how far loading has progressed.</li>
@@ -181,6 +187,7 @@ They're also used in the <a href="#additions-prefabs">Additions Prefabs</a>. If 
 <li><code>Smoothing Speed</code> value can be changed to modify lerp speed through loading progress.</li>
 </ul>
 <p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html">Component Link</a></p>
+<hr>
 <h3 id="loadingscreenprogressbar-component">LoadingScreenProgressBar Component</h3>
 <ul>
 <li>Adds a progress bar which fills up as the loading progresses.</li>
@@ -189,6 +196,7 @@ They're also used in the <a href="#additions-prefabs">Additions Prefabs</a>. If 
 <li><code>Smoothing Speed</code> value can be changed to modify loading bar lerp speed through loading progress.</li>
 </ul>
 <p><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html">Component Link</a></p>
+<hr>
 <h3 id="loadingscreenrepeatingtext-component">LoadingScreenRepeatingText Component</h3>
 <ul>
 <li>Adds text which cylces through a list of pre-set strings.</li>

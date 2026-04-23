@@ -2549,16 +2549,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started/quick-start.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started/quick-start.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/limezu-modern-interiors-support.md",
       "output": {
         ".html": {

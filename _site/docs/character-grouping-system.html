@@ -105,10 +105,12 @@
 
 <p>Character groups are a convenient way to store/sort characters. They are for <a class="xref" href="character-types/layered-character-type.html">Layered Characters</a> only.
 Characters in a group are automatically saved to disk and loaded again next session.</p>
+<hr>
 <h2 id="the-primary-character-slot">The Primary Character Slot</h2>
 <p>Every Character Type contains a <strong>Primary Character Slot</strong> which can hold a singular character. This is useful for simple setups where only one character is used.</p>
 <p>The main use for the <strong>Primary Character Slot</strong> is for use with the <a class="xref" href="character-creator/character-creator-overview.html">Character Creation Menu</a>.<br>
 The menu can be opened using the character contained within the <strong>Primary Character Slot</strong>.</p>
+<hr>
 <h2 id="group-types">Group Types</h2>
 <p><strong>There are two types of groups:</strong></p>
 <h3 id="flexible-group-type">Flexible Group Type</h3>
@@ -116,6 +118,7 @@ The menu can be opened using the character contained within the <strong>Primary 
 <p>Flexibe Groups are great when you want the player to have full control of the list.
 For example a list of playable characters with the ability for the player to create new characters.</p>
 <p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">API</a></p>
+<hr>
 <h3 id="fixed-group-type">Fixed Group Type</h3>
 <p>A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</p>
 <p>Best for situations where an immutable list is needed. Such as a set of pre-created characters the player can edit the designs of but not change the count. Or a set of playable characters the player can choose from.</p>
@@ -124,6 +127,7 @@ For example a list of playable characters with the ability for the player to cre
 <h2 id="character-group-registries">Character Group Registries</h2>
 <p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> is a wrapper class. An instance of this class exists for each <strong>Layered Character Type</strong>.
 This wrapper class holds the <a href="#the-primary-character-slot">Primary Character Slot</a> as well as all flexible and fixed groups created for the same <strong>Layered Character Type</strong>.</p>
+<hr>
 <h2 id="character-group-manager">Character Group Manager</h2>
 <p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> is a static class which handles all groups.</p>
 <p>The Layered Character Group Manager contains a dictionary of type <code>CharacterGroupRegistry</code>. One entry for each <strong>Layered Character Type</strong> used.</p>
