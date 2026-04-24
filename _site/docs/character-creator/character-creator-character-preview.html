@@ -103,13 +103,57 @@
         <article data-uid="ccm-character-preview">
 <h1 id="character-preview">Character Preview</h1>
 
-<p>The <strong>character preview</strong> shows a live view of the character the player is customizing. Whenever a layer of the character is modifed, the preview is refreshed automatically.</p>
+<p>A <strong>character preview</strong> shows a live view of the character in the <strong>Character Creation Menu</strong>.</p>
+<p>Whenever a layer of the character is modified, the preview is updated automatically.</p>
+<hr>
+<h2 id="character-preview-controller">Character Preview Controller</h2>
+<p>An Animator Controller is required for the Character Preview if using a <strong>Preview Mode</strong> of <strong>Animated</strong>.<br>
+This controller has some specific requirements.</p>
+<p><a class="xref" href="character-creator-character-preview-controller.html">Read More → Character Preview Controller</a></p>
+<hr>
+<h2 id="character-preview-setup">Character Preview Setup</h2>
+<ul>
+<li>For the easiest implementation use the <a href="#pre-setup-prefabs">Pre-Setup prefabs</a>. They require no setup after being added to your Character Creation Menu.</li>
+<li>If you prefer to design your own Character Preview from scratch skip to the <a href="#manual-setup">Manual Setup</a> section.</li>
+</ul>
+<p>Regardless how you implemented your <strong>Character Preview</strong>, we've still got a few settings which need to be adjusted.</p>
+<hr>
+<h3 id="preview-mode">Preview Mode</h3>
+<p>The Character Preview can be displayed in two ways:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Static</strong></td>
+<td>Displays a single sprite</td>
+</tr>
+<tr>
+<td><strong>Animated</strong></td>
+<td>Uses an Animator Controller to animate the character</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="static">Static</h4>
+<p>The simplest option. Inside the <strong>Character Creator Settings</strong> section of your <strong>Layerd Character Type</strong> is the <code>Preview Sprite</code> field. The sprite assigned in that field will be used by the Character Preview Module at runtime.</p>
+<hr>
+<h4 id="animated">Animated</h4>
+<p>Requires an <strong>Animator Controller</strong> specifcally setup to animate UI.<br>
+The Animator Controller is assigned in the Layerd Character Type.</p>
+<p><a class="xref" href="character-creator-character-preview-controller.html">Read More → Character Preview Controller</a></p>
 <hr>
 <h2 id="prefabs">Prefabs</h2>
 <p>Prefabs offer easy implementation of character previews without the need to set them up yourself.</p>
-<p><strong>Prefabs Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Preview</code>.</p>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Character Preview</code>.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
-<p>Within the <strong>Pre-Setup</strong> subfolder are three prefabs all completely setup and ready for use. Drag and drop them into your Character Creation Menu and they're ready, no other setup needed.</p>
+<p>Located under the <strong>Pre-Setup</strong> subfolder.</p>
+<p>Three pre-setup prefabs are provided. Drag and drop them into your Character Creation Menu and they're ready, no other setup is required.</p>
 <p>The included prefabs are as follows:</p>
 <ul>
 <li><strong>Character Preview</strong> - Shows an animated preview of the character with no other controls.</li>
@@ -117,14 +161,26 @@
 <li><strong>Character Preview [+Rotation Controls, Anim Buttons]</strong> - Includes rotation controls and buttons at the bottom to switch the animation the character is playing.</li>
 </ul>
 <img src="../../images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="700">
-<h3 id="animation-buttons-prefabs">Animation Buttons Prefabs</h3>
-<p>The same animation buttons included in the third Pre-Setup prefab are also contained in their own subfolder. This subfolder contains 4 variations in total. These variations only differ in the sprites used. Any of these variations can be swapped out in the Pre-Setup prefab.</p>
+<hr>
+<h3 id="animation-controls-prefabs">Animation Controls Prefabs</h3>
+<p>Located under the <strong>Animation Conrols</strong> subfolder.</p>
+<p>The same animation buttons that are included in the <strong>third Pre-Setup prefab</strong> are also provided separately here.</p>
+<p>Four variations are provided, each in their own folder.<br>
+Variations only contain different sprites but do not change any functionality.<br>
+Within each variation folder are two prefabs:</p>
+<ol>
+<li><strong>Animation Button</strong> - A single animation button, not functional on its own.</li>
+<li><strong>Animation Controls [Initialize Existing]</strong> - A collection of Animation Buttons setup with the <code>CCM Animation Switcher</code> component.</li>
+</ol>
+<p>The second prefab (Animation Controls) can be connected to a <strong>Character Preview</strong> by referencing the <code>Character Preview Handler</code> inside the <code>CCM Animation Switcher</code>. Once connected, the <strong>Animation Controls</strong> will be automatically initialized and functional during runtime.</p>
 <hr>
 <h2 id="manual-setup">Manual Setup</h2>
-<p>Prefer to create a <strong>Character Preview</strong> from scratch? Here's how to do that.</p>
+<p>Want to create a <strong>Character Preview</strong> from scratch? Here's how to do that.</p>
+<hr>
 <h3 id="step-1">Step 1</h3>
 <p>Create a new GameObject within the <strong>Character Creation Menu contents</strong> and add the <strong>CCM Character Preview Handler</strong> component. This is the component responsible for initializing and updating your character preview.</p>
 <p><img src="../../images/character-creation-menu/ccm-character-preview/character-preview-handler-component.png" alt="Character Preview Handler Component"></p>
+<hr>
 <h3 id="step-2">Step 2</h3>
 <p>Select the <strong>Preview Mode</strong>.</p>
 <p>The <strong>Preview Mode</strong> determines how the character preview is displayed.</p>
@@ -140,28 +196,30 @@
 </ul>
 </li>
 </ol>
-<p>If <strong>Animated</strong> is selected, assign the Character Animator, this is the Animator component the Animator Controller will be assigned to.</p>
+<p>If <strong>Animated</strong> is selected, assign the <strong>Character Animator</strong>, this is the <strong>Animator component</strong> the <strong>Animator Controller</strong> will be assigned to.</p>
+<hr>
 <h3 id="step-3">Step 3</h3>
 <p>Assign the <strong>Character Image</strong>. This is the Image component that the <a class="xref" href="../getting-started/basic-concepts.html#the-character-shader">Character Shader</a> will be applied to.</p>
-<p>Now once you enter play mode you'll see the character being edited displayed in the preview you just created.</p>
+<p>Now once you enter <strong>Play Mode</strong>, you'll see the character displayed in the preview you just created.</p>
 <hr>
 <h3 id="adding-rotation-controls">Adding Rotation Controls</h3>
 <p>To add buttons to rotate the character preview with, follow these steps:</p>
 <ol>
-<li>Create a new GameObject</li>
-<li>Add the Unity <code>Button</code> component</li>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the Unity <code>Button</code> component.</li>
 <li>Assign the Buttons <strong>On Click</strong> event to the <code>CCMCharacterPreviewHandler</code> component and call the <code>RotateCharacterPreview()</code> method.</li>
 <li>The <code>RotateCharacterPreview()</code> requires a bool, disabled = rotate left, enabled = rotate right.</li>
 </ol>
+<p>Follow these steps twice to create two buttons, one for rotating left, the other for rotating right.</p>
 <hr>
-<h3 id="adding-animation-buttons">Adding Animation Buttons</h3>
-<p>Animation buttons are controls for switching the animation the <strong>Character Preview</strong> is playing.</p>
+<h3 id="adding-animation-controls">Adding Animation Controls</h3>
+<p>Animation Controls are buttons for switching the animation the <strong>Character Preview</strong> is playing.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Animation Buttons can only be used if the Character Preview has a <strong>Preview Mode</strong> of <strong>Animated</strong>.</p>
+<p>Animation Controls can only be used if the Character Preview has a <strong>Preview Mode</strong> of <strong>Animated</strong>.</p>
 </div>
 <ol>
-<li>Create a new GameObject.</li>
+<li>Create a new <strong>GameObject</strong>.</li>
 <li>Add the <code>CCM Animation Switcher</code> component to the GameObject</li>
 <li>Set <strong>Animation Button Parent</strong>. This is the parent GameObject for your Animation Buttons (Can be the same GameObject)</li>
 <li>Set the Initialization Mode.
@@ -170,7 +228,7 @@
 <li>Auto Create: Will instantiate new Animation Buttons as children of the Animation Button Parent. Uses the Aniamtion Button Prefab you assign.</li>
 </ul>
 </li>
-<li>Assign Character Preview Handler reference. This is used to actually change the currently playing animation.</li>
+<li>Assign <code>Character Preview Handler</code> reference. This is used to change the currently playing animation on the Character Preview.</li>
 </ol>
 <!-- ## Character Preview Animation Buttons
 

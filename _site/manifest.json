@@ -2099,6 +2099,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-character-preview-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-character-preview-controller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/character-creator-character-preview.md",
       "output": {
         ".html": {
@@ -2569,6 +2579,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/temp-2.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/temp-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/temp.md",
       "output": {
         ".html": {
@@ -2636,6 +2656,16 @@
       "output": {
         "resource": {
           "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-contrtolls, anim buttons).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-controller/preview-controller-component-target.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview-controller/preview-controller-component-target.png"
         }
       },
       "version": ""

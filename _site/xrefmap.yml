@@ -8812,6 +8812,9 @@ references:
 - uid: ccm-character-preview
   name: Character Preview
   href: docs/character-creator/character-creator-character-preview.html
+- uid: ccm-character-preview-controller
+  name: Character Preview Controller
+  href: docs/character-creator/character-creator-character-preview-controller.html
 - uid: ccm-character-randomization
   name: Character Randomization
   href: docs/character-creator/character-creator-character-randomization.html
@@ -8935,9 +8938,6 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
-- uid: temp
-  name: Character Randomization
-  href: docs/temp.html
 - uid: top-down-character-animator-handler-component
   name: Top Down Character Animator Handler
   href: docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html

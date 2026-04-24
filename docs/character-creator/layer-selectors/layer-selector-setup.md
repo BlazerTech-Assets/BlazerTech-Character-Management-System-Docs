@@ -4,8 +4,7 @@ uid: ccm-layer-selector-setup
 
 # Layer Selector Setup
 
-Not sure what a **Layer Selector** is?  
-[Read More → Layer Selectors](xref:character-creator-overview#layer-selectors)
+A **Layer Selector** is any UI element that lets the player change a specific **layer** of a [Layered Character](xref:layered-character-type). 
 
 ---
 

@@ -61,6 +61,8 @@
 
 - name: Temp
   href: temp.md
+- name: Temp 2
+  href: temp-2.md
 
 - name: 🟦Character Templates
 - name: Character Templates
@@ -103,6 +105,9 @@
   href: character-creator/character-creator-setup.md
 - name: Character Preview
   href: character-creator/character-creator-character-preview.md
+  items:
+    - name: Character Preview Controller
+      href: character-creator/character-creator-character-preview-controller.md
 - name: Menu Controls
   href: character-creator/character-creator-menu-controls.md
 - name: Layer Selectors

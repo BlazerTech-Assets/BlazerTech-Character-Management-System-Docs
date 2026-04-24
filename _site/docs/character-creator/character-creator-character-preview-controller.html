@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Preview Controller | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Preview Controller | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-preview-controller.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-character-preview-controller.html">
+
+    <meta property="og:title" content="Character Preview Controller | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Preview Controller | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-character-preview-controller">
+<h1 id="character-preview-controller">Character Preview Controller</h1>
+
+<p>The <strong>Character Preview Controller</strong> is the <strong>Animator Controller</strong> used to animate the character within the <strong>Character Creation Menu</strong>.</p>
+<p>It is specifcally designed for use with the <a class="xref" href="character-creator-character-preview.html">Character Preview</a> module.</p>
+<p>The controller is assigned in the <strong>Layered Character Type</strong> under the <strong>Character Creator Setting</strong> section.</p>
+<hr>
+<h2 id="ui-animation-requirement">UI Animation Requirement</h2>
+<p>The Character Preview is rendered using a <strong>UI Image component</strong>, not a <strong>Sprite Renderer</strong>.</p>
+<p>When creating animations in Unity, the animated property is tied to the component type used at the time of recording.
+If an animation was created using a <code>Sprite Renderer</code>, it will only affect <code>Sprite Renderer</code> components.</p>
+<p>As a result, using those animations in UI (which uses an <code>Image</code>) will not work.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-preview/character-preview-controller/preview-controller-component-target.png" alt="Preview Controller Component Target"></p>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Animations must target an <code>Image</code> component.</li>
+<li>Animations that only target a <code>Sprite Renderer</code> will not function in the <strong>Character Creation Menu</strong>.</li>
+</ul>
+<h3 id="options">Options</h3>
+<ol>
+<li>Create a new set of animations targeting an <code>Image</code> component.</li>
+<li>Modify existing animation to also animate an <code>Image</code> component.</li>
+</ol>
+<hr>
+<h2 id="animator-controller-setup-requirements">Animator Controller Setup Requirements</h2>
+<p>If the Character Preview does <strong>not</strong> use <strong>Rotation</strong> or <strong>Animation Controls</strong>:</p>
+<ul>
+<li>There are no strict setup requirements.</li>
+<li>The default animation will play automatically at runtime.</li>
+</ul>
+<p>If using additional features:</p>
+<ul>
+<li>Rotation Controls &gt; see <a href="#rotation-controls">Rotation Controls</a>.</li>
+<li>Animation Controls &gt; Animations are played directly by name, so state transitions should not be included.</li>
+</ul>
+<hr>
+<h2 id="rotation-controls">Rotation Controls</h2>
+<p><strong>Rotation Controls</strong> allow the character to change the direction they're facing direction using buttons.</p>
+<p>When implemented, the <strong>Animator Controller</strong> requires one parameter:<br>
+Type: <strong>Float</strong>
+Name: <strong>Direction</strong></p>
+<h3 id="direction-values">Direction Values</h3>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Forward</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Backward</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Right</td>
+</tr>
+</tbody>
+</table>
+<p>The value of this paramter is updated at runtime when rotation buttons are pressed.<br>
+It's used by the Animator to determine which directional animation should be played.</p>
+<hr>
+<h2 id="recommended-setup-blend-trees">Recommended Setup (Blend Trees)</h2>
+<p><strong>Blend Trees</strong> are the recommended approach for handling directional animations.</p>
+<p>They allow a single animation state (such as <strong>Idle</strong> or <strong>Walk</strong>) to automatically switch between directions based on the <strong>Direction</strong> paramter.</p>
+<hr>
+<h3 id="concept">Concept</h3>
+<p>Instead of creating separate states like:</p>
+<ul>
+<li>Idle_Forward</li>
+<li>Idle_Backward</li>
+<li>Idle_Left</li>
+<li>Idle_Right</li>
+</ul>
+<p>A <strong>Blend Tree</strong> combines all of these into a single state:</p>
+<ul>
+<li><strong>Idle (Blend Tree)</strong></li>
+</ul>
+<p>The Animator then selects the correct animation based on the <strong>Direction</strong> value.</p>
+<hr>
+<h3 id="step-1-create-blend-tree-state">Step 1: Create Blend Tree State</h3>
+<ol>
+<li>Open the <strong>Animator Controller</strong></li>
+<li>Create a new state (e.g. <code>Idle</code>).</li>
+<li>Create new Blend Tree: <code>Right click</code> &gt; <strong>Create State &gt; From New Blend Tree</strong>.</li>
+<li>Give the Blend Tree a name (e.g. <code>Idle</code>).</li>
+</ol>
+<hr>
+<h3 id="step-2-configure-blend-tree">Step 2: Configure Blend Tree</h3>
+<ul>
+<li>Set <strong>Blend Type</strong>: <code>1D</code>.</li>
+<li>Set <strong>Parameter</strong>: <code>Direction</code>.</li>
+</ul>
+<hr>
+<h3 id="step-3-add-motions">Step 3: Add Motions</h3>
+<p>Add four motions to the Blend Tree:</p>
+<table>
+<thead>
+<tr>
+<th>Motion</th>
+<th>Threshold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idle_Forward</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Idle_Backward</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Idle_Left</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Idle_Right</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Each motion is a separate animation clip.<br>
+The <strong>Threshold</strong> defines which value of the <code>Direction</code> paramter will trigger that animation.</p>
+<hr>
+<h3 id="how-it-works">How It Works</h3>
+<p>At runtime:</p>
+<ol>
+<li>The <code>Character Preview Handler</code> updates the Direction paramter.</li>
+<li>The Blend Tree evaluates its thresholds.</li>
+<li>The matching directional animation is played.</li>
+</ol>
+<p>Example:</p>
+<p><code>Direction = 2</code> &gt; plays <strong>Idle_Left</strong>.</p>
+<hr>
+<h3 id="extending-to-multiple-animations">Extending to Multiple Animations</h3>
+<p>This structure can be reused for additional animations.<br>
+For example:</p>
+<ul>
+<li>Idle</li>
+<li>Walk</li>
+<li>Run</li>
+</ul>
+<p>If you have <a class="xref" href="character-creator-character-preview.html#animation-controls">Animation Controls</a> setup they can call these other <strong>Blend Trees</strong>, when called they will play the correct directional animation depending on the value of <code>Direction</code>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-preview-controller.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
