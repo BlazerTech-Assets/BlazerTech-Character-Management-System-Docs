@@ -83,5 +83,4 @@ Drag and drop a prefab into the **Character Creation Menu** and assign the **Cha
 
 ## Limitations
 
-- The list can take up a lot of space whem multiple are used at a time. Works best when used with a  
-[Tab Layer Selector](xref:ccm-tab-layer-selector).
+- The list can take up a lot of space whem multiple are used at a time. Works best when used with a [Tab Layer Selector](xref:ccm-tab-layer-selector).

@@ -71,5 +71,4 @@ Drag and drop a prefab into the **Character Creation Menu** and assign the **Cha
 
 ## Limitations
 
-- The **Carousel Layer Selector** only shows **text**. If you need visual previews, consider the  
-  [Grid Layer Selector](xref:ccm-grid-layer-selector) or [List Layer Selector](xref:ccm-list-layer-selector).
+- The **Carousel Layer Selector** only shows **text**. If you need visual previews, consider the [Grid Layer Selector](xref:ccm-grid-layer-selector) or [List Layer Selector](xref:ccm-list-layer-selector).
