@@ -103,44 +103,96 @@
         <article data-uid="ccm-tab-layer-selector">
 <h1 id="tab-layer-selector">Tab Layer Selector</h1>
 
-<p>A <strong>Tab Layer Selector</strong> won't do much on it's own. It must be paired with another <strong>Layer Selector</strong>. When a Tab Layer Selector is pressed it will change the selected layer in the <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a> which can then be used to change the assigned layer of another selector.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The <strong>Tab Layer Selector</strong> was designed to work with <a class="xref" href="Grid-layer-selector.html">Grid Layer Selectors</a> &amp; <a class="xref" href="list-layer-selector.html">List Layer Selectors</a> originally but can work with any <strong>Layer Selector</strong>.</p>
-</div>
+<p>A <strong>Tab Layer Selector</strong> is a button. It won't do much on its own. It must be paired with another <strong>Layer Selector</strong>.<br>
+When a Tab Layer Selector is pressed it will change the assigned layer of another Layer Selector.</p>
+<p>The Tab Layer Selector can be used as an alternative to a <a class="xref" href="layer-selector-setup.html#bulk-selector-setup">bulk layer selector setup</a>. Instead only requiring one Layer Selector in the menu that can be changed to control different layers using Tab Layer Selectors.</p>
+<p>On its own, a Tab Layer Selector does not modify the character.<br>
+Instead, it updates the <strong>Selected Layer</strong> in the <strong>Character Layer Selection Manager</strong>, which other selectors can respond to.</p>
 <p><img src="../../../images/character-creation-menu/ccm-layer-selectors/tab-layer-selector.png" alt="Tab Layer Selector"></p>
 <hr>
-<h2 id="prefabs">Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Tab Selector</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li>Each tab represents a specific <strong>character layer</strong> (Body, Outfit, Hairstyle, etc.)</li>
+<li>When a tab is pressed:
+<ul>
+<li>The <strong>Selected Layer</strong> in the <strong>Character Layer Selection Manager</strong> is updated.</li>
+</ul>
+</li>
+<li>A separate <strong>Layer Selector</strong> is setup with a handler which listens for changes and updates <strong>the Layer Selector</strong> to control the newly selected layer.</li>
+</ul>
+<p>This allows you to:</p>
+<ul>
+<li>Use one <strong>Layer Selector</strong> to control <strong>multiple layers</strong>.</li>
+<li>Reduce UI clutter compared to having one selector per layer.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Tab Layer Selector</strong> was originally designed to work with <a class="xref" href="Grid-layer-selector.html">Grid Layer Selectors</a> &amp; <a class="xref" href="list-layer-selector.html">List Layer Selectors</a> but can work with any <strong>Layer Selector</strong>.</p>
 </div>
-<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<hr>
+<h2 id="usage">Usage</h2>
+<p>Tab Layer Selectors are setup the same way as other Layer Selectors, using the <strong>Character Layer Selection Manager</strong>.</p>
+<p>Follow this guide to setup your <strong>Tab Layer Selectors</strong>.
+<a class="xref" href="layer-selector-setup.html#bulk-selector-setup">Bulk Selector Setup</a></p>
+<hr>
+<h2 id="required-companion-setup">Required Companion Setup</h2>
+<p>Tab Layer Selectors require one additional component to function properly:</p>
+<p><code>CCM Selected Tab Handler</code></p>
+<p>This component listens for changes to the <strong>Selected Layer</strong> and updates a target <strong>Layer Selector</strong>.</p>
+<hr>
+<h3 id="pre-setup-tab-prefabs">Pre-Setup Tab Prefabs</h3>
+<p>Each Layer Selector type includes a Pre-Setup Tab folder.</p>
+<p>These prefabs already include the <code>CCM Selected Layer Tab Handler</code> component.</p>
+<h4 id="setup">Setup</h4>
+<ol>
+<li>Drag a prefab into your <strong>Character Creation Menu</strong>.</li>
+<li>Assign a reference to the <code>CCM Character Layer Selection Manager</code>.</li>
+</ol>
+<p>Once assigned, setup is complete.</p>
+<hr>
+<h2 id="manual-setup">Manual Setup</h2>
+<p>Follow these steps to manually setup <strong>Tab Layer Selectors</strong> with its <strong>companion Layer Selector</strong>.</p>
+<hr>
+<h3 id="step-1-add-tab-selectors">Step 1️⃣ Add Tab Selectors</h3>
+<p>Use the <a href="#pre-setup-prefabs">Pre-Setup prefabs</a> or follow the <a class="xref" href="layer-selector-setup.html#manual-setup">Manual Setup</a> guide to setup your <strong>Tab Layer Selectors</strong>.</p>
+<hr>
+<h3 id="step-2-create-handler-gameobject">Step 2️⃣ Create Handler GameObject</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the <code>CCM Selected Layer Tab Handler</code> component.</li>
+<li>Assign the <strong>Character Layer Selection Manager</strong> reference.</li>
+</ol>
+<hr>
+<h3 id="step-3-add-target-layer-selector">Step 3️⃣ Add Target Layer Selector</h3>
+<ol>
+<li>Add any Layer Selector to your Menu (From a <a class="xref" href="layer-selector-setup.html#core-folder">Core</a> folder)</li>
+<li>Place it under your <strong>handler GameObject</strong> (recommended but not required)</li>
+<li>Assign it to the <strong>Layer Selecter</strong> field in the handler.</li>
+</ol>
+<p>This selector will dynamically change which layer it controls.</p>
+<p>Now enter <strong>Play Mode</strong> and test it. When you press any of the <strong>Tab Layer Selectors</strong>, the handler will update the assigned layer in the <strong>target Layer Selector</strong>.</p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors &gt; Tab Selector</code></p>
+<p>Four visual variation folders are included.<br>
+All variations contain identical functionality and differ only in appearance.</p>
+<h3 id="core-prefabs">Core Prefabs</h3>
 <ul>
 <li><strong>Layer Tab Selector</strong> – Basic tab selector (Just a button).</li>
 </ul>
+<p>Not functional on its own.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
-<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
-These will work out of the box without any extra setup required.</p>
 <ul>
-<li><strong>Dropdown Selectors [Initialize Existing]</strong> – Uses tab selectors already present in the prefab hierarchy.</li>
+<li><strong>Tab Selectors [Initialize Existing]</strong> – Uses tab selectors already present in the prefab hierarchy.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>No [Auto Create] variant is available for <strong>tab layer selectors</strong> because they require a reference to the <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a> which must be set manually. This means they <strong>cannot</strong> be created automatically at runtime.</p>
+<p>There is no <strong>Auto Create</strong> variant for <strong>Tab Layer Selectors</strong>.</p>
+<p>Tab Layer Selectors require a reference to the <a class="xref" href="layer-selector-setup.html#how-layer-selectors-work">Character Layer Selection Manager</a> which must be set manually.<br>
+This means they <strong>cannot</strong> be created automatically at runtime.</p>
 </div>
 <hr>
-<h2 id="setting-up-the-second-layer-selector">Setting Up The Second Layer Selector</h2>
-<p>The <code>CCMSelectedlayerTabHandler</code> component can be used to change the assigned layer of another selector to the one selected in the <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
-It takes two references:</p>
-<ol>
-<li><strong>Character Layer Selection Manager</strong> - Used to detect when the selected layer has been changed.</li>
-<li><strong>Layer Selector</strong> - Any type of layer selector can be used. It will automatically be updated to use the layer selected in the <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.</li>
-</ol>
-<h2 id="customization">Customization</h2>
-<ul>
-<li><strong>Styling</strong> The tab layer selector can be freely modified (Change background sprite, font, colors, etc).</li>
-</ul>
 
 </article>
 
