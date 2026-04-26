@@ -2,7 +2,7 @@
 uid: character-creator-overview
 ---
 
-# Character Creator
+# Character Creator Overview
 
 The **Character Creator** is a modular prefab based framework for building **Character Creation Menus**.  
 
@@ -48,7 +48,9 @@ The following selector types are included.
 
 ## Character Preview Module
 
-The **Character Preview** shows the character currently being customized. Options include:
+The **Character Preview** shows the character currently being customized.  
+
+Options include:
 
 - **Static Sprite Preview** – Displays the `preview sprite` defined in the Character Type.
 - **Animated Preview** – Uses an Animator Controller to play character animations.
@@ -140,11 +142,9 @@ Loading screens hide the **Character Creation Menu** while it's being setup. The
 
 [Read More → Loading Screen](xref:ccm-loading-screens)  
 
----
+<!-- ---
 
 ## Other Features
 
 - **Mid-Play Editing** – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.  
-- **Optional Display Name** – Add a name field so players can assign a display name to their character.  
-
----
+- **Optional Display Name** – Add a name field so players can assign a display name to their character.   -->
