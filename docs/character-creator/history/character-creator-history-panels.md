@@ -62,8 +62,7 @@ All extracted frames are combined to render the final preview.
 
 ## Prefabs
 
-Location: 
-`Prefabs > Character Creator > Modules > History > History Panels`
+Location: `Prefabs > Character Creator > Modules > History > History Panels`
 
 ---
 

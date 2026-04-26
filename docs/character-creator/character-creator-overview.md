@@ -14,7 +14,7 @@ It's fully customizable; combine and edit different prefabs to create the exact 
 
 ## Character Creator Modules
 
-The Character Creator is **modular**, it's split into a bunch of smaller pieces each with a simple task. When these pieces are put together they form a complete and functioning **Character Creation Menu**.
+The Character Creator is **modular**, it's split into a bunch of smaller pieces that we call modules, each with a simple task. When these modules are put together they form a complete and functioning **Character Creation Menu**.
 
 | Module                                                | Description                                                                                              |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ The Character Creator is **modular**, it's split into a bunch of smaller pieces 
 
 ---
 
-## Layer Selectors
+## Layer Selector Module
 
 A **Layer Selector** is any UI element that lets the player change a specific **layer** of a [Layered Character](xref:layered-character-type).  
 The following selector types are included.  
@@ -46,7 +46,7 @@ The following selector types are included.
 
 ---
 
-## Character Preview
+## Character Preview Module
 
 The **Character Preview** shows the character currently being customized. Options include:
 
@@ -55,11 +55,13 @@ The **Character Preview** shows the character currently being customized. Option
 - **Animation Swapping** – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.
 - **Rotate Character** – Add rotation buttons to view the character from different sides.
 
+<img src="~/images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="500" />
+
 [Read More → Character Preview](xref:ccm-character-preview)  
 
 ---
 
-## Menu Controls
+## Menu Controls Module
 
 Necessary controls for every **Character Creation Menu** along with some additional niceties. These controls include:
 
@@ -68,11 +70,13 @@ Necessary controls for every **Character Creation Menu** along with some additio
 - Reset character button
 - Simple Randomization button
 
+<img src="~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500" />
+
 [Read More → Menu Controls](xref:ccm-menu-controls)  
 
 ---
 
-## Character History
+## Character History Module
 
 Changes made to the character can be recorded using the **CCM History Tracker** component.  
 Each time a layer is modified, a **snapshot** is stored.
@@ -85,6 +89,8 @@ The component contains the following settings:
 
 [Read More → History Tracking System](xref:ccm-history-tracking-system)
 
+---
+
 ### Undo & Redo
 
 Use the **CCM Timeline Button Handler** component on a button to undo or redo changes on the **History Tracker** component.
@@ -92,6 +98,8 @@ Use the **CCM Timeline Button Handler** component on a button to undo or redo ch
 <img src="~/images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500" />
 
 [Read More → History Undo/Redo](xref:ccm-history-undo-redo)
+
+---
 
 ### History Panels
 
@@ -111,7 +119,8 @@ A **History Panel** displays the list of snapshots recorded in the **History Tra
 
 ---
 
-## Randomization Controls
+## Randomization Controls Module
+
 Character randomization functionality can be added in multiple differents ways
 - **Randomize Button** - A simple Randomize button which randomizes all layers of the character.
 - **Controlled Randomization** - A randomize button with additional options to select which layers to randomize.
@@ -123,7 +132,8 @@ Character randomization functionality can be added in multiple differents ways
 
 ---
 
-## Loading Screens
+## Loading Screens Module
+
 Loading screens hide the **Character Creation Menu** while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.
 
 <img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />

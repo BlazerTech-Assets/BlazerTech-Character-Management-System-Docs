@@ -34,6 +34,8 @@ Menu Controls provide the following actions:
 
 Ready-made prefabs are included and can be used without any additional setup. Drag and drop them directly into your Character Creation Menu hierarchy and they're immediately ready to be used.
 
+---
+
 ### Variants
 
 Within the prefabs folder you'll see 4 variation folders. The only difference between variants is the sprites used.
@@ -45,6 +47,8 @@ Within the prefabs folder you'll see 4 variation folders. The only difference be
 3. Menu Controls [Back, Confirm]
 
 The brackets dictate what actions are included in the prefab.
+
+---
 
 ### Generic Buttons
 

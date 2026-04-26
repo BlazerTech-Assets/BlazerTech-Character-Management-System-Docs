@@ -34,6 +34,8 @@ This component will track every time a layer on the character is changed and rec
 
 ![CCM History Tracker Component](~/images/character-creation-menu/ccm-history/history-tracker-component.png)
 
+---
+
 ### Component Placement
 
 The **CCM History Tracker** component should be placed inside the **Character Creation Menu Contents**.  
@@ -47,6 +49,8 @@ This is the **Menu Contents** GameObject the **Character Creation Menu Manager**
 
 Additional UI elements which integrate with the **History Tracking System**.
 
+---
+
 ### Undo/Redo Buttons
 
 Buttons for un-doing or re-doing changes made to the character.
@@ -54,6 +58,8 @@ Buttons for un-doing or re-doing changes made to the character.
 <img src="~/images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png" alt="History Undo/Redo Buttons" width="500" />  
 
 [Read More → History Undo/Redo](xref:ccm-history-undo-redo)
+
+---
 
 ### History Panels
 

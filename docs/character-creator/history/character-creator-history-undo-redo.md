@@ -15,7 +15,7 @@ With the [History Tracker component](xref:ccm-history-tracking-system#history-tr
 
 ## Prefabs
 
-Prefabs Location: `Prefabs > Character Creator > Modules > History > Undo-Redo`
+Location: `Prefabs > Character Creator > Modules > History > Undo-Redo`
 
 These prefabs contain both **Undo and Redo buttons** pre-setup.  
 Drag and drop them anywhere inside the **contents of your Character Creation Menu**.
