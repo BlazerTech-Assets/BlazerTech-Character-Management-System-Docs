@@ -90,13 +90,6 @@
 - name: LimeZu Modern Interiors Support
   href: limezu-modern-interiors-support.md
 
-- name: 🟫Configuration
-- name: Project Settings
-  href: project-settings.md
-
-- name: 🟥Character Grouping System
-- name: Character Grouping System
-  href: character-grouping-system.md
 
 - name: 🟨Character Creation Menu System (Alpha)
 - name: Character Creator Overview
@@ -136,3 +129,11 @@
   href: character-creator/character-creator-character-randomization.md
 - name: Loading Screens
   href: character-creator/character-creator-loading-screens.md
+
+- name: 🟫Configuration
+- name: Project Settings
+  href: project-settings.md
+
+- name: 🟥Character Grouping System
+- name: Character Grouping System
+  href: character-grouping-system.md

@@ -8,7 +8,7 @@ The **Character Preview Controller** is the **Animator Controller** used to anim
 
 It is specifcally designed for use with the [Character Preview](xref:ccm-character-preview) module.
 
-The controller is assigned in the **Layered Character Type** under the **Character Creator Setting** section.
+The controller is assigned in the **Layered Character Type** under the **Character Creator Settings** section.
 
 ---
 
