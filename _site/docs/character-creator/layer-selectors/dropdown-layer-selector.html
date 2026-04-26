@@ -108,29 +108,36 @@
 When opened, it displays a list of all available options for the assigned character layer.</p>
 <p><img src="../../../images/character-creation-menu/ccm-layer-selectors/dropdown-layer-selector.png" alt="Dropdown Layer Selector"></p>
 <hr>
+<h2 id="usage">Usage</h2>
+<p>The <strong>Dropdown Layer Selector</strong> can be used in two ways.</p>
+<ol>
+<li>Use in a bulk setup alongisde a set of other Dropdown Layer Selectors.
+<ul>
+<li><a class="xref" href="layer-selector-setup.html#bulk-selector-setup">Read the setup guide here</a>.</li>
+</ul>
+</li>
+<li>Use a single dropdown with a Tab Layer Selector.</li>
+</ol>
+<hr>
 <h2 id="prefabs">Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Dropdown Selector</strong></p>
-</div>
-<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors &gt; Dropdown Selector</code>.</p>
+<hr>
+<h3 id="core-prefabs">Core Prefabs</h3>
+<p>Located in the <strong>Core</strong> subfolder</p>
+<p>Contains individual Dropdown Layer Selector prefabs.</p>
 <ul>
 <li><strong>Layer Dropdown Selector</strong> – Basic dropdown selector.</li>
 <li><strong>Layer Dropdown Selector [+Randomize]</strong> – Includes a randomize button next to the dropdown.</li>
+<li><strong>Layer Dropdown Selector [+Title]</strong> - Includes a title above the dropdown with the layer name.</li>
 </ul>
+<p>These prefabs are <strong>not</strong> functional on their own.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
-<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
-These will work out of the box without any extra setup required.</p>
+<p>Prefabs that contain a pre-configured <a class="xref" href="layer-selector-setup.html#how-layer-selectors-work">Character Layer Selection Manager</a>.<br>
+These prefabs will work out of the box without any extra setup.</p>
 <ul>
 <li><strong>Dropdown Selectors [Auto Create]</strong> – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.</li>
 <li><strong>Dropdown Selectors [Initialize Existing]</strong> – Uses dropdown selectors already present in the prefab hierarchy.</li>
-</ul>
-<hr>
-<h2 id="customization">Customization</h2>
-<ul>
-<li><strong>Names</strong> – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
-<li><strong>Randomization</strong> – The “[+Randomize]” prefab adds a randomize option for the current layer.</li>
-<li><strong>Styling</strong> The dropdown can be freely modified (Change sprites, fonts, colors, etc)</li>
 </ul>
 <hr>
 <h2 id="limitations">Limitations</h2>

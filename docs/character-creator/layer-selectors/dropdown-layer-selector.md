@@ -13,29 +13,42 @@ When opened, it displays a list of all available options for the assigned charac
 
 ---
 
-## Prefabs
+## Usage
 
-> [!TIP]
-> Location: **Prefabs > Character Creator > Layer Selectors > Dropdown Selector**
+The **Dropdown Layer Selector** can be used in two ways.
 
-### Layer Selector Prefabs
-- **Layer Dropdown Selector** – Basic dropdown selector.  
-- **Layer Dropdown Selector [+Randomize]** – Includes a randomize button next to the dropdown.  
-
-### Pre-Setup Prefabs
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
-These will work out of the box without any extra setup required.
-
-- **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  
-- **Dropdown Selectors [Initialize Existing]** – Uses dropdown selectors already present in the prefab hierarchy.  
+1. Use in a bulk setup alongisde a set of other Dropdown Layer Selectors.
+   - [Read the setup guide here](xref:ccm-layer-selector-setup#bulk-selector-setup).
+2. Use a single dropdown with a Tab Layer Selector.
 
 ---
 
-## Customization
+## Prefabs
 
-- **Names** – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.
-- **Randomization** – The “[+Randomize]” prefab adds a randomize option for the current layer.  
-- **Styling** The dropdown can be freely modified (Change sprites, fonts, colors, etc)  
+**Location**: `Prefabs > Character Creator > Modules > Layer Selectors > Dropdown Selector`.
+
+---
+
+### Core Prefabs
+
+Located in the **Core** subfolder
+
+Contains individual Dropdown Layer Selector prefabs.
+
+- **Layer Dropdown Selector** – Basic dropdown selector.  
+- **Layer Dropdown Selector [+Randomize]** – Includes a randomize button next to the dropdown.  
+- **Layer Dropdown Selector [+Title]** - Includes a title above the dropdown with the layer name.
+
+These prefabs are **not** functional on their own.
+
+---
+
+### Pre-Setup Prefabs
+Prefabs that contain a pre-configured [Character Layer Selection Manager](xref:ccm-layer-selector-setup#how-layer-selectors-work).  
+These prefabs will work out of the box without any extra setup.
+
+- **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  
+- **Dropdown Selectors [Initialize Existing]** – Uses dropdown selectors already present in the prefab hierarchy.  
 
 ---
 

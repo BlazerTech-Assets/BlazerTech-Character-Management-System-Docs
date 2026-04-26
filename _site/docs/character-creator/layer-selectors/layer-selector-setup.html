@@ -103,73 +103,190 @@
         <article data-uid="ccm-layer-selector-setup">
 <h1 id="layer-selector-setup">Layer Selector Setup</h1>
 
-<p>A <strong>Layer Selector</strong> is any UI element that lets the player change a specific <strong>layer</strong> of a <a class="xref" href="../../character-types/layered-character-type.html">Layered Character</a>.</p>
+<p>A <strong>Layer Selector</strong> is a UI element that lets the player modify a specific <strong>layer</strong> of a <a class="xref" href="../../character-types/layered-character-type.html">Layered Character</a>.</p>
+<p>Each selector is responsible for controlling one layer of the character. (e.g. Body, Outfit, Hairstyle, etc.)</p>
 <hr>
-<h2 id="character-layer-selection-manager">Character Layer Selection Manager</h2>
-<p>A <strong>Layer Selector</strong> cannot function on its own.<br>
-The most common way to use Layer Selectors is through the<br>
-<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a> component.</p>
-<p>This manager is responsible for connecting UI Layer Selectors to the<br>
-<a class="xref" href="../character-creator-overview.html">Character Creation Menu</a>.</p>
-<h3 id="initialization-modes">Initialization Modes</h3>
-<p>The <strong>Character Layer Selection Manager</strong> supports two initialization modes:</p>
-<h4 id="1-auto-create">1. Auto Create</h4>
+<h2 id="layer-selector-types">Layer Selector Types</h2>
+<p>The following selector types are included:</p>
+<table>
+<thead>
+<tr>
+<th>Selector Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a class="xref" href="dropdown-layer-selector.html">Dropdown Selector</a></strong></td>
+<td>a Simple dropdown listing all options for a layer.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="carousel-layer-selector.html">Carousel Selector</a></strong></td>
+<td>Displays the current option with button to cycle left/rght.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="Grid-layer-selector.html">Grid Selector</a></strong></td>
+<td>A grid of preview thumbnails for each layer option.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="list-layer-selector.html">List Selector</a></strong></td>
+<td>A vertical or horizontal list of options, optionally with preview images.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="tab-layer-selector.html">Tab Selector</a></strong></td>
+<td>Works alongside another selector. Clicking a tab switches which layer another selector is controlling.</td>
+</tr>
+</tbody>
+</table>
+<img src="../../../images/character-creation-menu/ccm-layer-selectors/layer-selectors.png" alt="Layer Selectors" width="500">  
+<hr>
+<h2 id="how-layer-selectors-work">How Layer Selectors Work</h2>
+<p>A <strong>Layer Selector cannot function on its own</strong>.</p>
+<p>All selectors must be initialized and managed by the <code>CCM Character Layer Selection Manager</code>.</p>
+<p>This component:</p>
 <ul>
-<li>At runtime, the manager will <strong>instantiate new layer selectors</strong> for each character layer.</li>
-<li>Requires assigning a <strong>Character Layer Selector Prefab</strong>.</li>
-<li>Each layer selector instance is linked automatically to a layer.</li>
-</ul>
-<h4 id="2-initialize-existing">2. Initialize Existing</h4>
-<ul>
-<li>Use <strong>pre-existing layer selectors</strong> already placed in the scene.</li>
-<li>Each selector is initialized with a character layer at runtime.</li>
-<li>Extra selectors (more than the number of layers) can optionally be <strong>hidden</strong> or <strong>disabled</strong>.</li>
-</ul>
-<h3 id="layer-selector-parent">Layer Selector Parent</h3>
-<p>Regardless of the initialization mode, a <strong>Layer Selector Parent</strong> is required:</p>
-<ul>
-<li>This should be the <strong>parent GameObject</strong> that contains all layer selectors.</li>
-<li>In <strong>Initialize Existing</strong> mode, place all pre-made layer selectors as children of this parent.</li>
-<li>In <strong>Create New</strong> mode, new selectors will be instantiated as children of this parent.</li>
+<li>Initializes Layer Selectors.</li>
+<li>Assigns each selector to a specific layer.</li>
+<li>Handles Layer Selector overflows.</li>
 </ul>
 <hr>
-<h2 id="layer-selector-prefabs">Layer Selector Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>All Layer Selector prefabs can be found under:<br>
-<strong>BlazerTech Character Management System &gt; Prefabs &gt; Character Creator &gt; Layer Selectors</strong>  .
-Subfolders exist for each individual <strong>Layer Selector</strong>.</p>
+<h2 id="bulk-selector-setup">Bulk Selector Setup</h2>
+<p>The most common setup is to use <strong>multiple Layer Selectors</strong>, one for each layer with all Layer Selectors shown on screen at once.</p>
+<p>There are two ways to setup Layer Selectors:</p>
+<ul>
+<li><a href="#pre-setup-folder">Pre-Setup Prefabs</a> - Use prefabs which are already full setup and functional.</li>
+<li><a href="#manager-setup">Manual Setup</a> - Setup Layer Selectors from scratch.</li>
+</ul>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors</code>.</p>
+<p>Each Layer Selector type has its own folder containing two subfolders:</p>
+<hr>
+<h3 id="core-folder">Core Folder</h3>
+<p>Contains individual Layer Selector prefabs.</p>
+<ul>
+<li>Usually includes multiple variations.</li>
+<li>Not functional on their own.</li>
+<li>Intended for manual setup.</li>
+</ul>
+<hr>
+<h3 id="pre-setup-folder">Pre-Setup Folder</h3>
+<p>Contains collections of the <strong>Layer Selector</strong> fully configured with the <code>Character Layer Selection Manager component</code>.</p>
+<p>They can be dropped straight into any <strong>Character Creation Menu</strong> and are functional without any other setup.</p>
+<p>Two variations of the <strong>Pre-Setup</strong> prefab are provided:</p>
+<hr>
+<h4 id="initialize-existing">[Initialize Existing]</h4>
+<p>Prefabs that contain <strong>[Initialize Existing]</strong> at the end of the name include a set of <strong>Layer Selectors</strong> within the prefab.</p>
+<p><strong>Vertical</strong>, <strong>Horizontal</strong> or <strong>Grid Layout Groups</strong> are included and configured. These are used to space out Layer Selectors automatically.</p>
+<p>These prefabs are useful when you want to control exact placement of each Layer Selector. The downside is if not enough Layer Selectors are included, not all layers of the character will be editable and a warning will be logged.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If too many <strong>Layer Selectors</strong> are included, by default <strong>unsued Layer Selectors will be disabled and hidden</strong>. This action can be changed in the <strong>Character Layer Selection Manager</strong> component.</p>
 </div>
-<p>Each Layer Selector exists as a prefab and is organized into its own folder with the following structure:</p>
-<ul>
-<li><p><strong>Base Folder</strong><br>
-Contains the core Layer Selector prefab and any variant prefabs.</p>
-</li>
-<li><p><strong>Pre-Setup Folder</strong><br>
-Contains prefabs that already include a configured
-<a href="#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
-Two versions are provided:</p>
-<ol>
-<li><strong>Auto Create</strong> – Instantiates Layer Selectors at runtime.</li>
-<li><strong>Initialize Existing</strong> – Uses Layer Selectors already present in the prefab hierarchy.</li>
-</ol>
-</li>
-</ul>
-<p>This makes it easy to either drop in a ready-to-use prefab or build a custom setup.</p>
 <hr>
-<h2 id="character-layer-selection-manager-setup">Character Layer Selection Manager Setup</h2>
-<p>If you want to setup a <strong>Character Layer Selection Manager</strong> yourself without using a prefab follow these steps:</p>
-<ol>
-<li>Add the <code>CCMCharacterLayerSelectionManager</code> component to your UI object.</li>
-<li>Assign the <strong>Layer Selector Parent</strong>.</li>
-<li>Choose an <strong>Initialization Mode</strong>:
+<h4 id="auto-create">[Auto Create]</h4>
+<p>Prefabs that contain <strong>[Auto Create]</strong> at the end of the name do <strong>NOT</strong> include <strong>Layer Selectors</strong> beforehand, instead they are automatically instantiated at runtime and are placed inside a child GameObject with a <strong>Grid Layout Group</strong> setup to organize them.</p>
+<p>These can be useful for situations where the amount of layers a character will have can change. For example if the <strong>Character Creation Menu</strong> will be used with <strong>multiple different Character Types</strong> with different amounts of layers.</p>
+<p>When the <strong>Character Creation Menu</strong> is opened, the appropriate amount of <strong>Layer Selectors</strong> will be instantiated automatically.</p>
+<hr>
+<h2 id="layer-selector-customization">Layer Selector Customization</h2>
+<p>All Layer Selectors can be customized:</p>
 <ul>
-<li><em>Create New</em> → Provide a <code>Character Layer Selector Prefab</code>.</li>
-<li><em>Initialize Existing</em> → Place selectors as children under the parent.</li>
+<li>Sprites can be changed</li>
+<li>Fonts and text size can be changed</li>
+<li>Colors can be modified</li>
+</ul>
+<p>Go wild! Make those Layer Selectors unique to your game.</p>
+<hr>
+<h2 id="manual-setup">Manual Setup</h2>
+<p>Steps to setup your own collection of Layer Selectors with the <strong>Character Layer Selection Manager</strong>.</p>
+<hr>
+<h3 id="create-manager">Create Manager</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong> named &quot;<strong>Layer Selectors</strong>&quot;.</li>
+<li>Add the <code>CCM Character Layer Selection Manager</code> component.</li>
+</ol>
+<hr>
+<h3 id="choose-initialization-mode">Choose Initialization Mode</h3>
+<p>There are two Initialization Modes:</p>
+<hr>
+<h4 id="auto-create-1">Auto Create</h4>
+<p>At runtime, the manager will instantiate a new <strong>Layer Selector</strong> for each character layer.</p>
+<p><strong>Required Fields</strong>:</p>
+<ol>
+<li><p><strong>Layer Selector Prefab</strong></p>
+<ul>
+<li>The prefab used when instantiating Layer Selectors.</li>
+<li>Found under: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors &gt; [Type] &gt; Core</code>.</li>
+<li>Unsure which Layer Selector to choose? <a href="#layer-selector-types">Check out the list here</a>.</li>
 </ul>
 </li>
-<li>Run the scene, selectors will now control the layers of the active character.</li>
+<li><p><strong>Layer Selector Parent</strong></p>
+</li>
 </ol>
+<ul>
+<li>The parent GameObject where selectors will be instantiated.</li>
+<li>Typically uses a <strong>Layout Group component</strong> for automatic spacing.</li>
+</ul>
+<hr>
+<h4 id="initialize-existing-1">Initialize Existing</h4>
+<p>All Layer Selectors must already exist in the hierarchy.</p>
+<p>Setup Steps:</p>
+<ol>
+<li>Navigate to: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors</code>.</li>
+<li>Open the folder for the Layer Selector you want to use.</li>
+<li>Open the <a href="#core-folder">Core</a> folder.</li>
+<li>Drag selector prefabs into your scene.</li>
+<li>Make them children of the <a href="#layer-selector-parent">Layer Selectors Parent</a> GameObject.</li>
+</ol>
+<p>Unsure which Layer Selector to choose? <a href="#layer-selector-types">Check out the list here</a>.</p>
+<hr>
+<h3 id="layer-selector-parent">Layer Selector Parent</h3>
+<ul>
+<li>Reference to the parent GameObject containg all Layer Selectors.</li>
+<li>Required for initialization.</li>
+<li>Can be the same GameObject as the manager.</li>
+</ul>
+<h3 id="unused-selector-action">Unused Selector Action</h3>
+<p>Determines what happens when there are more selectors than layers:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nothing</td>
+<td>Leaves the selector unchanged.</td>
+</tr>
+<tr>
+<td>Disable</td>
+<td>Disables interactivity but keeps it visible.</td>
+</tr>
+<tr>
+<td>Disable and Change Alpha</td>
+<td>Disables interactivity and fades using a Canvas Group.</td>
+</tr>
+<tr>
+<td>Hide (Default)</td>
+<td>Completely hides the selector.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="test">Test</h3>
+<ol>
+<li>Enter <strong>Play Mode</strong>.</li>
+<li>Open the <strong>Character Creation Menu</strong>.</li>
+</ol>
+<p>If setup correctly:</p>
+<ul>
+<li>Layer Selectors will initialize automatically.</li>
+<li>Each selector will control a different layer.</li>
+<li>Changing a selector updates the character in real-time.</li>
+</ul>
 
 </article>
 
