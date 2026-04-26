@@ -103,49 +103,72 @@
         <article data-uid="ccm-grid-layer-selector">
 <h1 id="grid-layer-selector">Grid Layer Selector</h1>
 
-<h2 id="overview">Overview</h2>
 <p>A <strong>Grid Layer Selector</strong> contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
 <p><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector.png" alt="Grid Layer Selector"></p>
-<h2 id="grid-layer-selector-variant-2"><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png" alt="Grid Layer Selector Variant 2"></h2>
+<p><img src="../../../images/character-creation-menu/ccm-layer-selectors/grid-layer-selector-variant-2.png" alt="Grid Layer Selector Variant 2"></p>
+<hr>
+<h2 id="usage">Usage</h2>
+<p>The Grid Layer Selector can be used in two ways.</p>
+<ol>
+<li>Use a single Grid Layer Selector with <strong>Tab Layer Selectors</strong> (Recommended).
+<ul>
+<li><a class="xref" href="tab-layer-selector.html">Read more about Tab Layer Selectors here</a></li>
+</ul>
+</li>
+<li>Use in a <strong>bulk setup</strong> alongside a set of other <strong>Grid Layer Selectors</strong>.
+<ul>
+<li><a class="xref" href="layer-selector-setup.html#bulk-selector-setup">Read the setup guide here</a>.</li>
+</ul>
+</li>
+</ol>
+<hr>
 <h2 id="prefabs">Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Grid Selector</strong></p>
-</div>
-<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors &gt; Grid Selector</code></p>
+<hr>
+<h3 id="core-prefabs">Core Prefabs</h3>
+<p>Located in the <strong>Core</strong> subfolder.</p>
+<p>Contains individual Grid Layer Selector prefabs.</p>
 <ul>
 <li><strong>Layer Grid Selector [Sprite]</strong> – Most common grid selector. Each element in the grid is displayed as a sprite.</li>
 <li><strong>Layer Grid Selector [Text]</strong> – Each element in the grid is displayed as text.</li>
 <li><strong>Layer Grid Selector [Sprite + Text]</strong> - Hybrid. Each element in the grid is displayed as both sprite and text.</li>
 <li><strong>Layer Grid Selector [Vertical + Title]</strong> – Grid is vertical &amp; includes a title with the name of the assigned layer at the top.</li>
 </ul>
+<p>These prefabs are <strong>not</strong> functional on their own.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
-<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
+<p>Located in the <strong>Pre-Setup</strong> subfolder.</p>
+<p>These are bulk prefabs that contain multiple <strong>Grid Layer Selectors</strong>.</p>
+<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#how-layer-selectors-work">Character Layer Selection Manager</a>.<br>
 These will work out of the box without any extra setup required.</p>
 <ul>
-<li><strong>Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
+<li><strong>Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a <strong>Horizontal Layout Group component</strong> to sort them.</li>
 <li><strong>Grid Selectors [Initialize Existing]</strong> – Uses grid selectors already present in the prefab hierarchy.</li>
 </ul>
+<hr>
 <h3 id="grid-entries">Grid Entries</h3>
-<p>A grid entry is referenced in a Layer Grid Selector and defines how each entry in the grid looks and functions.
-They live in the <strong>/Grid Entries subfolder</strong>.<br>
-The following are pre-created entries that can be used in any <strong>Layer Grid Selector</strong>:</p>
+<p>Located in the <strong>Grid Entries</strong> subfolder.</p>
+<p>These are the entries used in the grid for the <strong>Layer Grid Selector</strong>.</p>
+<p>A <strong>grid entry</strong> is referenced in a <strong>Layer Grid Selector</strong> and defines how each entry in the grid looks and functions.</p>
+<p>The following are entries that can be used in any <strong>Layer Grid Selector</strong>:</p>
 <ol>
-<li><strong>Layer Option Grid Element [Sprite]</strong> - Displays only a sprite preview of what the layer option looks like.</li>
-<li><strong>Layer Option Grid Element [Text]</strong> - Displays only text containing the name of the assigned layer option.</li>
+<li><strong>Layer Option Grid Element [Sprite]</strong> - Displays a sprite preview of what the layer option looks like.</li>
+<li><strong>Layer Option Grid Element [Text]</strong> - Displays text containing the name of the assigned layer option.</li>
 <li><strong>Layer Option Grid Element [Text + Sprite]</strong> Displays text containing the name of the assigned layer option &amp; a preview of what the layer option looks like.</li>
 </ol>
 <hr>
-<h2 id="customization">Customization</h2>
+<h3 id="pre-setup-tab">Pre-Setup Tab</h3>
+<p>Located in the <strong>Pre-Setup Tab</strong> subfolder.</p>
+<p>Pre-configured with the <code>CCM Selected Layer Tab Handler</code> component and ready to be used with <a class="xref" href="tab-layer-selector.html">Tab Layer Selectors</a>.</p>
+<p>Included prefabs:</p>
 <ul>
-<li><strong>Names</strong> – If grid elements have a display mode of text they can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
-<li><strong>Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the grid and individual element backgrounds.</li>
+<li><strong>Grid Layer Tab</strong></li>
 </ul>
+<p>Drag and drop a prefab into the <strong>Character Creation Menu</strong> and assign the <strong>Character Layer Selection Manager</strong>.</p>
 <hr>
 <h2 id="limitations">Limitations</h2>
 <ul>
-<li>The grid can be quite big and clunky at times. Works best when used with a<br>
-<a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
+<li>The grid can be quite big and take up a lot of space at times. Works best when used with a <a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
 </ul>
 
 </article>

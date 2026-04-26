@@ -34,7 +34,7 @@ This allows you to:
 
 ## Usage
 
-Tab Layer Selectors are setup the same way as other Layer Selectors, using the **Character Layer Selection Manager**.
+**Tab Layer Selectors** are setup the same way as other Layer Selectors, using the **Character Layer Selection Manager**.
 
 Follow this guide to setup your **Tab Layer Selectors**.
 [Bulk Selector Setup](xref:ccm-layer-selector-setup#bulk-selector-setup)
@@ -106,6 +106,9 @@ Four visual variation folders are included.
 All variations contain identical functionality and differ only in appearance.
 
 ### Core Prefabs
+
+Located in the **Core** subfolder.
+
 - **Layer Tab Selector** – Basic tab selector (Just a button).
 
 Not functional on its own.
@@ -113,6 +116,8 @@ Not functional on its own.
 ---
 
 ### Pre-Setup Prefabs
+
+Located in the **Pre-Setup** subfolder.
 
 - **Tab Selectors [Initialize Existing]** – Uses tab selectors already present in the prefab hierarchy.  
 

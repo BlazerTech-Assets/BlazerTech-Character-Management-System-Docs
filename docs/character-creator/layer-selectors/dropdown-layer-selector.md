@@ -15,9 +15,9 @@ When opened, it displays a list of all available options for the assigned charac
 
 The **Dropdown Layer Selector** can be used in two ways.
 
-1. Use in a **bulk setup** alongisde a set of other **Dropdown Layer Selectors**.
+1. Use in a **bulk setup** alongside a set of other **Dropdown Layer Selectors**.
    - [Read the setup guide here](xref:ccm-layer-selector-setup#bulk-selector-setup).
-2. Use a single dropdown with a **Tab Layer Selector**.
+2. Use a single dropdown with **Tab Layer Selectors**.
    - [Read more about Tab Layer Selectors here](xref:ccm-tab-layer-selector)
 
 ---
@@ -43,11 +43,29 @@ These prefabs are **not** functional on their own.
 ---
 
 ### Pre-Setup Prefabs
+
+Located in the **Pre-Setup** subfolder.
+
+These are bulk prefabs that contain multiple **Dropdown Layer Selectors**.
+
 Prefabs that contain a pre-configured [Character Layer Selection Manager](xref:ccm-layer-selector-setup#how-layer-selectors-work).  
 These prefabs will work out of the box without any extra setup.
 
 - **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  
 - **Dropdown Selectors [Initialize Existing]** – Uses dropdown selectors already present in the prefab hierarchy.  
+
+---
+
+### Pre-Setup Tab
+
+Located in the **Pre-Setup Tab** subfolder.
+
+Pre-configured with the `CCM Selected Layer Tab Handler` component and ready to be used with [Tab Layer Selectors](xref:ccm-tab-layer-selector).
+
+Included prefabs:
+- **Dropdown Layer Tab**
+
+Drag and drop a prefab into the **Character Creation Menu** and assign the **Character Layer Selection Manager**.
 
 ---
 

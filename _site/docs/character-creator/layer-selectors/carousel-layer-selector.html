@@ -103,35 +103,56 @@
         <article data-uid="ccm-carousel-layer-selector">
 <h1 id="carousel-layer-selector">Carousel Layer Selector</h1>
 
-<h2 id="overview">Overview</h2>
-<p>A <strong>Carousel Layer Selector</strong> displays the currently selected layer option and contains left/right buttons to cycle through other options available for the assigned layer.</p>
+<p>A <strong>Carousel Layer Selector</strong> displays the currently selected layer option in the middle with left/right controls to the side used to cycle through other options available for the assigned layer.</p>
 <p><img src="../../../images/character-creation-menu/ccm-layer-selectors/carousel-layer-selector.png" alt="Carousel Layer Selector"></p>
 <hr>
-<h2 id="prefabs">Prefabs</h2>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Carousel Selector</strong></p>
-</div>
-<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<h2 id="usage">Usage</h2>
+<p>The <strong>Carousel Layer Selector</strong> can be used in two ways.</p>
+<ol>
+<li>Use in a <strong>bulk setup</strong> alongside a set of other <strong>Carousel Layer Selectors</strong>.
 <ul>
-<li><strong>Layer Carousel Selector</strong> – Basic carousel selector.</li>
-<li><strong>Layer Carousel Selector [+Randomize]</strong> – Includes a randomize button next to the carousel.</li>
+<li><a class="xref" href="layer-selector-setup.html#bulk-selector-setup">Read the setup guide here</a>.</li>
+</ul>
+</li>
+<li>Use a single Carousel with a <strong>Tab Layer Selector</strong>.
+<ul>
+<li><a class="xref" href="tab-layer-selector.html">Read more about Tab Layer Selectors here</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Layer Selectors &gt; Carousel Selector</code>.</p>
+<hr>
+<h3 id="core-prefabs">Core Prefabs</h3>
+<p>Located in the <strong>Core</strong> subfolder.</p>
+<p>Contains individual Carousel Layer Selector prefabs.</p>
+<ul>
+<li><strong>Layer Carousel Selector</strong> – Base carousel selector.</li>
+<li><strong>Layer Carousel Selector [+Randomize]</strong> – Includes a randomize button below the carousel.</li>
+<li><strong>Layer Carousel Selector [+Title]</strong> – Includes a title above the carousel with the layer name.</li>
 <li><strong>Layer Carousel Selector [-Background]</strong> - Basic carousel selector without a background.</li>
 </ul>
+<p>These prefabs are <strong>not</strong> functional on their own.</p>
+<hr>
 <h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
-<p>Pre-setup prefabs already include a <a class="xref" href="layer-selector-setup.html#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
+<p>Located in the <strong>Pre-Setup</strong> subfolder.</p>
+<p>These are bulk prefabs that contain multiple <strong>Carousel Layer Selectors</strong>.</p>
+<p><strong>Pre-setup</strong> prefabs already include a <a class="xref" href="layer-selector-setup.html#how-layer-selectors-work">Character Layer Selection Manager</a>.<br>
 These will work out of the box without any extra setup required.</p>
 <ul>
 <li><strong>Carousel Selectors [Auto Create]</strong> – Instantiates carousel selectors at runtime. Uses a Grid Layout Group component to sort them.</li>
 <li><strong>Carousel Selectors [Initialize Existing]</strong> – Uses carousel selectors already present in the prefab hierarchy.</li>
 </ul>
 <hr>
-<h2 id="customization">Customization</h2>
+<h3 id="pre-setup-tab">Pre-Setup Tab</h3>
+<p>Located in the <strong>Pre-Setup Tab</strong> subfolder.</p>
+<p>Pre-configured with the <code>CCM Selected Layer Tab Handler</code> component and ready to be used with <a class="xref" href="tab-layer-selector.html">Tab Layer Selectors</a>.</p>
+<p>Included prefabs:</p>
 <ul>
-<li><strong>Names</strong> – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
-<li><strong>Randomization</strong> – The “[+Randomize]” prefab adds a randomize option for the current layer.</li>
-<li><strong>Styling</strong> The carousel selector can be freely modified (Change sprites, fonts, colors, etc)</li>
+<li><strong>Carousel Layer Tab</strong></li>
 </ul>
+<p>Drag and drop a prefab into the <strong>Character Creation Menu</strong> and assign the <strong>Character Layer Selection Manager</strong>.</p>
 <hr>
 <h2 id="limitations">Limitations</h2>
 <ul>

@@ -4,26 +4,51 @@ uid: ccm-carousel-layer-selector
 
 # Carousel Layer Selector
 
-## Overview
-
-A **Carousel Layer Selector** displays the currently selected layer option and contains left/right buttons to cycle through other options available for the assigned layer.
+A **Carousel Layer Selector** displays the currently selected layer option in the middle with left/right controls to the side used to cycle through other options available for the assigned layer.
 
 ![Carousel Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/carousel-layer-selector.png)
 
 ---
 
+## Usage
+
+The **Carousel Layer Selector** can be used in two ways.
+
+1. Use in a **bulk setup** alongside a set of other **Carousel Layer Selectors**.
+   - [Read the setup guide here](xref:ccm-layer-selector-setup#bulk-selector-setup).
+2. Use a single Carousel with a **Tab Layer Selector**.
+   - [Read more about Tab Layer Selectors here](xref:ccm-tab-layer-selector)
+
+---
+
 ## Prefabs
 
-> [!TIP]
-> Location: **Prefabs > Character Creator > Layer Selectors > Carousel Selector**
+**Location**: `Prefabs > Character Creator > Modules > Layer Selectors > Carousel Selector`.
 
-### Layer Selector Prefabs
-- **Layer Carousel Selector** – Basic carousel selector.  
-- **Layer Carousel Selector [+Randomize]** – Includes a randomize button next to the carousel.
+---
+
+### Core Prefabs
+
+Located in the **Core** subfolder.
+
+Contains individual Carousel Layer Selector prefabs.
+
+- **Layer Carousel Selector** – Base carousel selector.  
+- **Layer Carousel Selector [+Randomize]** – Includes a randomize button below the carousel.
+- **Layer Carousel Selector [+Title]** – Includes a title above the carousel with the layer name.
 - **Layer Carousel Selector [-Background]** - Basic carousel selector without a background.  
 
+These prefabs are **not** functional on their own.
+
+---
+
 ### Pre-Setup Prefabs
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
+
+Located in the **Pre-Setup** subfolder.
+
+These are bulk prefabs that contain multiple **Carousel Layer Selectors**.
+
+**Pre-setup** prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#how-layer-selectors-work).  
 These will work out of the box without any extra setup required.
 
 - **Carousel Selectors [Auto Create]** – Instantiates carousel selectors at runtime. Uses a Grid Layout Group component to sort them.  
@@ -31,11 +56,16 @@ These will work out of the box without any extra setup required.
 
 ---
 
-## Customization
+### Pre-Setup Tab
 
-- **Names** – Can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.
-- **Randomization** – The “[+Randomize]” prefab adds a randomize option for the current layer.  
-- **Styling** The carousel selector can be freely modified (Change sprites, fonts, colors, etc)  
+Located in the **Pre-Setup Tab** subfolder.
+
+Pre-configured with the `CCM Selected Layer Tab Handler` component and ready to be used with [Tab Layer Selectors](xref:ccm-tab-layer-selector).
+
+Included prefabs:
+- **Carousel Layer Tab**
+
+Drag and drop a prefab into the **Character Creation Menu** and assign the **Character Layer Selection Manager**.
 
 ---
 

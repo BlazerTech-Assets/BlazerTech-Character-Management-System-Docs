@@ -44,7 +44,7 @@ To create a compelte randomization button from scratch:
 1. Create a new **GameObject**.
 2. Add the `Button` component.
 3. Add the `CCM Relay` component.
-   - See: → [CCM Relay component](xref:ccm-menu-controls#ccm-relay-component).
+   - See: [CCM Relay component](xref:ccm-menu-controls#ccm-relay-component).
 4. Add an `On Click` event to the `Button`
 5. Assign the `CCM Relay` component.
 6. Select the `RandomizeEntireCharacter()` method.
