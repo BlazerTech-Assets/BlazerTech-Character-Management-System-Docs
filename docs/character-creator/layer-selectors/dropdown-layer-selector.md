@@ -4,8 +4,6 @@ uid: ccm-dropdown-layer-selector
 
 # Dropdown Layer Selector
 
-## Overview
-
 A **Dropdown Layer Selector** is a standard dropdown UI element.  
 When opened, it displays a list of all available options for the assigned character layer.
 
@@ -17,9 +15,10 @@ When opened, it displays a list of all available options for the assigned charac
 
 The **Dropdown Layer Selector** can be used in two ways.
 
-1. Use in a bulk setup alongisde a set of other Dropdown Layer Selectors.
+1. Use in a **bulk setup** alongisde a set of other **Dropdown Layer Selectors**.
    - [Read the setup guide here](xref:ccm-layer-selector-setup#bulk-selector-setup).
-2. Use a single dropdown with a Tab Layer Selector.
+2. Use a single dropdown with a **Tab Layer Selector**.
+   - [Read more about Tab Layer Selectors here](xref:ccm-tab-layer-selector)
 
 ---
 
