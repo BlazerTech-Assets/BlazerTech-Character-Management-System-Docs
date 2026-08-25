@@ -150,7 +150,7 @@ Example Uses:
 
 [Read More → Flexible Group Type](xref:character-grouping-system#flexible-group-type)  
 ### Fixed Group Type
-An immutable list of characters. When the list is created all characters are created immedietely. Characters can then be edited but not removed and new characters cannot be added.
+An immutable list of characters. When the list is created, all characters are created immedietely. Characters can then be edited but not removed and new characters cannot be added.
 
 Example Uses:
 - A predined set of characters the player can choose to play as.  

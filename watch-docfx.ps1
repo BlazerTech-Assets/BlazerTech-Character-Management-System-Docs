@@ -32,7 +32,7 @@ if (-not (Test-Path $watchPath)) {
 # Start server in a new CMD window (robust with spaces in paths)
 try {
     # /k keeps the window open; cd /d switches drive & dir; everything is fully quoted
-    $cmdLine = "cd /d `"$scriptDir`" && `"$docfxCmd`" serve `"$siteFolder`""
+    $cmdLine = "cd /d `"$scriptDir`" && `"$docfxCmd`" serve `"$siteFolder`" --port 5000"
     Start-Process -FilePath "cmd.exe" -ArgumentList @('/k', $cmdLine) -WindowStyle Normal
     Write-Host "Started docfx server in a new window (serving: $siteFolder)."
 }

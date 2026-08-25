@@ -134,7 +134,7 @@ Character randomization functionality can be added in multiple differents ways
 
 ---
 
-## Loading Screens Module
+## Loading Screen Module
 
 Loading screens hide the **Character Creation Menu** while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.
 

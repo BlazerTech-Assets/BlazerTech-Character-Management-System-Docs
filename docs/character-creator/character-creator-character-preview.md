@@ -49,8 +49,8 @@ The Character Preview supports two display modes:
 
 #### Animated
 
-- Requires an Animator Controller
-- Assigned in the Layered Character Type > Character Creator Settings
+- Requires an **Animator Controller**.
+- Assigned in the **Layered Character Type** > **Character Creator Settings**.
 
 > [!TIP]  
 > Animator Controller setup and requirements are explained here:  
@@ -168,8 +168,8 @@ Animation Controls allow for switching between animations at runtime.
 > Requires Animated Preview Mode.
 
 1. Create a new **GameObject**.
-2. Add the `CCM Animation Switcher` component to the GameObject
-3. Set **Animation Button Parent**. This is the parent GameObject for your Animation Buttons (Can be the same GameObject)
+2. Add the `CCM Animation Switcher` component to the GameObject.
+3. Set **Animation Button Parent**. This is the parent GameObject for your Animation Buttons (Can be the same GameObject).
 4. Set the Initialization Mode.
    - **Initialize Existing**: Will find pre-created animation buttons within the Animation Button Parent
    - **Auto Create**: Will instantiate new Animation Buttons as children of the Animation Button Parent. Uses the Animation Button Prefab you assign.
