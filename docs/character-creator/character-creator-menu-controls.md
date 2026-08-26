@@ -42,9 +42,9 @@ Within the prefabs folder you'll see 4 variation folders. The only difference be
 
 **Available prefabs**:
 
-1. Menu Controls [Back, Confirm, Randomize, Reset]
-2. Menu Controls [Back, Confirm, Randomize]
-3. Menu Controls [Back, Confirm]
+1. Menu Controls [Back, Save, Randomize, Reset]
+2. Menu Controls [Back, Save, Randomize]
+3. Menu Controls [Back, Save]
 
 The brackets dictate what actions are included in the prefab.
 
@@ -67,7 +67,7 @@ When using the generic button prefabs, add an **On Click** event to the button a
 
 The **CCM Relay** (Character Creation Menu Relay) component acts as a bridge between the UI and the Character Creation Menu system.
 
-It forwards button events to the active Character Creation Menu Manager, making it easy to setup simple functionality without writing any code.
+It forwards button events to the **active Character Creation Menu Manager instance**, making it easy to setup simple functionality without writing any code.
 
 ### Usage
 
@@ -109,3 +109,22 @@ Randomizes all character layers of the character currently being edited.
 ### ResetCharacter()
 
 Restores the character to the state it was in when the **Character Creation Menu** was first opened.
+
+---
+
+## CCM Save Character Button Component
+
+The **CCM Save Character Button** component provides a ready-to-use save button for your Character Creation Menu. It automatically handles saving the current character and manages its interactable state based on whether there are unsaved changes.
+
+### Setup
+1. Create a new **GameObject**.
+2. Add an **Image** component.
+3. Add the **CCM Save Character Button** component. 
+   - The component inherits from Unity's `Button` component, so it provides all of the same properties and functionality.
+4. Assign the **Target Graphic** and configure the button's **Transition** settings as you would with any other Unity button.
+
+### Behavior
+
+An **On Click** event is **not required**. When clicked, the button automatically saves the current character and becomes disabled until additional changes are made.
+
+You can still add **On Click** event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event to close the Character Creation Menu after the character has been saved.

@@ -124,9 +124,9 @@
 <p>Within the prefabs folder you'll see 4 variation folders. The only difference between variants is the sprites used.</p>
 <p><strong>Available prefabs</strong>:</p>
 <ol>
-<li>Menu Controls [Back, Confirm, Randomize, Reset]</li>
-<li>Menu Controls [Back, Confirm, Randomize]</li>
-<li>Menu Controls [Back, Confirm]</li>
+<li>Menu Controls [Back, Save, Randomize, Reset]</li>
+<li>Menu Controls [Back, Save, Randomize]</li>
+<li>Menu Controls [Back, Save]</li>
 </ol>
 <p>The brackets dictate what actions are included in the prefab.</p>
 <hr>
@@ -141,7 +141,7 @@
 <hr>
 <h2 id="ccm-relay-component">CCM Relay Component</h2>
 <p>The <strong>CCM Relay</strong> (Character Creation Menu Relay) component acts as a bridge between the UI and the Character Creation Menu system.</p>
-<p>It forwards button events to the active Character Creation Menu Manager, making it easy to setup simple functionality without writing any code.</p>
+<p>It forwards button events to the <strong>active Character Creation Menu Manager instance</strong>, making it easy to setup simple functionality without writing any code.</p>
 <h3 id="usage">Usage</h3>
 <p>To create a custom button using the <strong>CCM Relay</strong>:</p>
 <ol>
@@ -166,6 +166,23 @@
 <hr>
 <h3 id="resetcharacter">ResetCharacter()</h3>
 <p>Restores the character to the state it was in when the <strong>Character Creation Menu</strong> was first opened.</p>
+<hr>
+<h2 id="ccm-save-character-button-component">CCM Save Character Button Component</h2>
+<p>The <strong>CCM Save Character Button</strong> component provides a ready-to-use save button for your Character Creation Menu. It automatically handles saving the current character and manages its interactable state based on whether there are unsaved changes.</p>
+<h3 id="setup">Setup</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add an <strong>Image</strong> component.</li>
+<li>Add the <strong>CCM Save Character Button</strong> component.
+<ul>
+<li>The component inherits from Unity's <code>Button</code> component, so it provides all of the same properties and functionality.</li>
+</ul>
+</li>
+<li>Assign the <strong>Target Graphic</strong> and configure the button's <strong>Transition</strong> settings as you would with any other Unity button.</li>
+</ol>
+<h3 id="behavior">Behavior</h3>
+<p>An <strong>On Click</strong> event is <strong>not required</strong>. When clicked, the button automatically saves the current character and becomes disabled until additional changes are made.</p>
+<p>You can still add <strong>On Click</strong> event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event to close the Character Creation Menu after the character has been saved.</p>
 
 </article>
 
