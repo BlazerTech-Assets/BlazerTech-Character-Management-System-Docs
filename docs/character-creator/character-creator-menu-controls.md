@@ -125,6 +125,6 @@ The **CCM Save Character Button** component provides a ready-to-use save button 
 
 ### Behavior
 
-An **On Click** event is **not required**. When clicked, the button automatically saves the current character and becomes disabled until additional changes are made.
-
-You can still add **On Click** event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event to close the Character Creation Menu after the character has been saved.
+- `Disable When No Changes` - When enabled, the button is automatically disabled if no changes have been made to the character since it was last saved.
+- An **On Click** event is **not required**. When clicked, the button automatically saves the current character.
+- You can still add **On Click** event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event that calls the [DisableMenu](#disablemenu) method on a **CCM Relay** to close the Character Creation Menu after the character has been saved.

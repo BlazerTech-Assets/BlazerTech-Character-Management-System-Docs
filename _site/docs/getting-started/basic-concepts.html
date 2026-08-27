@@ -109,7 +109,7 @@
 <li><a href="#character-type-assets"><strong>Character Type Assets</strong></a> – The core of every character.</li>
 <li><a href="#the-character-shader"><strong>The Character Shader</strong></a> – How characters are rendered in-game.</li>
 <li><a href="#character-templates"><strong>Character Templates</strong></a> – Blueprints for creating characters later.</li>
-<li><a href="#character-usage"><strong>Character Usage</strong></a> – Scripts to load and render characters.</li>
+<li><a href="#character-usage"><strong>Character Usage</strong></a> – Components to load and render characters.</li>
 <li><a href="#built-in-characters"><strong>Built-in Modular Characters</strong></a> - Modular characters pre-setup and ready for use.</li>
 <li><a href="#character-grouping-system"><strong>Character Grouping System</strong></a> - Groups used to save and manage characters.</li>
 <li><a href="#character-creator"><strong>Character Creator</strong></a> – Modular UI framework for building customizable characters in-game.</li>
@@ -151,7 +151,7 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <p>This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer</a> component is used the shader will be applied automatically.</p>
+<p>If a <a class="xref" href="../character-usage/character-renderer-components/character-renderer-components.html">Character Renderer</a> component is used, the shader will be applied automatically.</p>
 </div>
 <hr>
 <h2 id="character-templates">Character Templates</h2>
@@ -161,6 +161,7 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <p><a class="xref" href="../character-templates/character-templates.html">Read More → Character Templates</a></p>
 <hr>
 <h2 id="character-usage">Character Usage</h2>
+<p>The Character Management System contains components for loading and rendering characters, making it easy to spawn new characters or reuse existing ones.</p>
 <h3 id="character-renderer-components">Character Renderer Components</h3>
 <p><strong>Character Renderer components</strong> are responsible for loading and showing a character in-game.</p>
 <p><strong>Renderer components handle</strong>:</p>

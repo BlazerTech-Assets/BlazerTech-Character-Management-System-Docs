@@ -10,7 +10,7 @@ This page introduces the **main features** of the **Character Management System*
 - [**Character Type Assets**](#character-type-assets) – The core of every character.  
 - [**The Character Shader**](#the-character-shader) – How characters are rendered in-game.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
-- [**Character Usage**](#character-usage) – Scripts to load and render characters.  
+- [**Character Usage**](#character-usage) – Components to load and render characters.  
 - [**Built-in Modular Characters**](#built-in-characters) - Modular characters pre-setup and ready for use.
 - [**Character Grouping System**](#character-grouping-system) - Groups used to save and manage characters.
 - [**Character Creator**](#character-creator) – Modular UI framework for building customizable characters in-game.  
@@ -77,7 +77,7 @@ The renderer component is only ever using sprites from the **Base Spritesheet** 
 This approach saves a ton of time by avoiding the headache of slicing spritesheets and setting up Animator Controllers for every character.
 
 > [!NOTE]
-> If a [Character Renderer](xref:character-renderer-components) component is used the shader will be applied automatically.
+> If a [Character Renderer](xref:character-renderer-components) component is used, the shader will be applied automatically.
 
 ---
 
@@ -93,6 +93,8 @@ Additionally templates provide extra functionality for **Layered Characters** al
 ---
 
 ## Character Usage
+
+The Character Management System contains components for loading and rendering characters, making it easy to spawn new characters or reuse existing ones.
 
 ### Character Renderer Components
 

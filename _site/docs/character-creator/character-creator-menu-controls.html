@@ -181,8 +181,11 @@
 <li>Assign the <strong>Target Graphic</strong> and configure the button's <strong>Transition</strong> settings as you would with any other Unity button.</li>
 </ol>
 <h3 id="behavior">Behavior</h3>
-<p>An <strong>On Click</strong> event is <strong>not required</strong>. When clicked, the button automatically saves the current character and becomes disabled until additional changes are made.</p>
-<p>You can still add <strong>On Click</strong> event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event to close the Character Creation Menu after the character has been saved.</p>
+<ul>
+<li><code>Disable When No Changes</code> - When enabled, the button is automatically disabled if no changes have been made to the character since it was last saved.</li>
+<li>An <strong>On Click</strong> event is <strong>not required</strong>. When clicked, the button automatically saves the current character.</li>
+<li>You can still add <strong>On Click</strong> event actions if you want the button to perform additional actions after saving. For example, you could use an On Click event that calls the <a href="#disablemenu">DisableMenu</a> method on a <strong>CCM Relay</strong> to close the Character Creation Menu after the character has been saved.</li>
+</ul>
 
 </article>
 
