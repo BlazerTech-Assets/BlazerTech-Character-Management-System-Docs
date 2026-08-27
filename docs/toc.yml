@@ -17,6 +17,10 @@
 - name: Changelog
   href: changelog.md
 
+- name: 🟫Configuration
+- name: Project Settings
+  href: project-settings.md
+
 - name: 🟧Character Types
 - name: Character Types
   href: character-types/character-types.md
@@ -30,7 +34,7 @@
 - name: Character Animation Setup
   href: character-animation-setup.md
 
-- name: 🟩Character Usage Components
+- name: 🟩Character Usage
 - name: Character Renderer Components
   href: character-usage/character-renderer-components/character-renderer-components.md
   items:
@@ -59,10 +63,12 @@
     - name: Top Down Character Movement Controller
       href: character-usage/character-movement-controller-components/top-down-movement-controller.md
 
-- name: Temp
-  href: temp.md
-- name: Temp 2
-  href: temp-2.md
+- name: Character Grouping System
+  href: character-grouping-system.md
+# - name: Temp
+#   href: temp.md
+# - name: Temp 2
+#   href: temp-2.md
 
 - name: 🟦Character Templates
 - name: Character Templates
@@ -89,7 +95,6 @@
   href: built-in-characters.md
 - name: LimeZu Modern Interiors Support
   href: limezu-modern-interiors-support.md
-
 
 - name: 🟨Character Creation Menu System (Alpha)
 - name: Character Creator Overview
@@ -129,11 +134,3 @@
   href: character-creator/character-creator-character-randomization.md
 - name: Loading Screens
   href: character-creator/character-creator-loading-screens.md
-
-- name: 🟫Configuration
-- name: Project Settings
-  href: project-settings.md
-
-- name: 🟥Character Grouping System
-- name: Character Grouping System
-  href: character-grouping-system.md

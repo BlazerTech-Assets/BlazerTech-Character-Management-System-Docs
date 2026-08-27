@@ -44,7 +44,7 @@ This defines which character is created at runtime.
 
 ## 2️⃣Test Your Character
 
-Now entry **Play Mode**.  
+Now enter **Play Mode**.  
 If `Load Character On Start` is enabled, you'll see your character in-game.
 
 **Congrats!**  

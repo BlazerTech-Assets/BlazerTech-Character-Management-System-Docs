@@ -63,10 +63,11 @@ The `LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO
 
 A **Layered Character Group Template** is a scriptable object. It is a blueprint for creating a flexible or fixed group during runtime.
 
-To create a Layered Character Group Template **right click** the project window and navigate to **Create > BlazerTech > Character Management System > Character Templates > Layered Character Group Template**
+To create a Layered Character Group Template **right click** the project window and navigate to:  
+**Create > BlazerTech > Character Management System > Character Templates > Layered Character Group Template**
 
 > [!TIP]
-> If a **Layered Character Group Template** is placed inside a folder titled `Resources` the group will be automatically created at runtime.
+> If a **Layered Character Group Template** is placed inside a folder titled `Resources`, the group will be automatically created at runtime.
 
 ![Layered Character Group Template Example](~/images/character-templates/layered-character-group-template.png)
 
@@ -75,7 +76,7 @@ To create a Layered Character Group Template **right click** the project window 
 - **Default Group Name** - The name of the group when it's created. Can be overriden.
 - **Character Type** - The Character Type the group will be for when created.
 - **Group Type** - The type of group that will be created. Flexible or Fixed.
-- **Character In Group**  
+- **Characters In Group**  
 A list of all characters that will be created and put in the group when the group is created.  
 Each entry has two options:  
 1. **New Character**
