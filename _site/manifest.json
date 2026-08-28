@@ -3012,6 +3012,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/premade-character-creation-menus/premade-character-creation-menu-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-templates/create-character-template-guide.png",
       "output": {
         "resource": {
@@ -3976,36 +4016,6 @@
       "output": {
         "resource": {
           "relative_path": "images/overlay-layers/settings/offset-mode-field.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-3.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-3.png"
         }
       },
       "version": ""
