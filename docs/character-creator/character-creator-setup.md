@@ -12,17 +12,21 @@ The **Character Creator** provides a modular system for creating an in-game **Ch
 
 This page walks through the different ways to set up a Character Creation Menu, from using a premade menu to building your own.
 
+[Read Also → Character Creator Overview](xref:character-creator-overview)  
+
+---
+
 ## Choosing a Setup Method
 
 There are two ways to setup a Character Creation Menu:
 
-| Option                   | Best For                                                           |
-| ------------------------ | ------------------------------------------------------------------ |
-| **Use a Premade Menu**   | Getting a complete Character Creation Menu working quickly         |
-| **Create Your Own Menu** | Building a custom interface using the Character Creator components |
+| Option                   | Best For                                                        |
+| ------------------------ | --------------------------------------------------------------- |
+| **Use a Premade Menu**   | Getting a complete Character Creation Menu working quickly      |
+| **Create Your Own Menu** | Building a custom interface using the Character Creator modules |
 
 > [!TIP]
-> If you're new to the Character Creator, start with a **Premade Character Creation Menu**. You can customize or replace individual components later.
+> If you're new to the Character Creator, start with a **Premade Character Creation Menu**. You can customize or replace individual modules later.
 
 - [Use a Premade Character Creation Menu](#premade-character-creation-menus)
 - [Create Your Own Character Creation Menu](#creating-your-own-character-creation-menu)
@@ -92,16 +96,16 @@ Use this event to open another menu or perform other actions after the Character
 
 ## Premade Character Creation Menus
 
-Premade Character Creation Menus provide a complete starting point with the components needed for a functional character creator.
+Premade Character Creation Menus provide a complete starting point with the modules needed for a functional character creator.
 
 At minimum, a premade menu contains:
 
-| Component               | Purpose                                                   |
-| ----------------------- | --------------------------------------------------------- |
-| **Layer Selectors**     | Allow the player to change the character's appearance.    |
-| **Character Preview**   | Shows the character while it is being edited.             |
-| **Loading Screen**      | Covers the menu while it is being initialized.            |
-| **Save & Back Buttons** | Allow the player to save changes or leave without saving. |
+| Component               | Purpose                                                |
+| ----------------------- | ------------------------------------------------------ |
+| **Layer Selectors**     | Allow the player to change the character's appearance. |
+| **Character Preview**   | Shows the character while it's being edited.           |
+| **Loading Screen**      | Covers the menu while it's being initialized.          |
+| **Save & Back Buttons** | Allow the player to save changes and leave the page.    |
 
 ### Premade Menu Prefabs Location
 
@@ -203,7 +207,7 @@ The following modules provide the basic functionality needed for a usable Charac
 
 Layer Selector prefabs are located at:
 
-**`Prefabs > Character Creator > Layer Selectors`**
+**`Prefabs > Character Creator > Modules > Layer Selectors`**
 
 Choose the type of selector you want to use, then use a prefab from its **`/Pre-Setup`** folder. These prefabs contain a set of already-configured Layer Selectors.
 
@@ -215,11 +219,10 @@ The **Character Preview** displays a live preview of the character while it's be
 
 Character Preview prefabs are located at:
 
-**`Prefabs > Character Creator > Character Preview`**
+**`Prefabs > Character Creator > Modules > Character Preview`**
 
-The base folder contains the core Character Preview prefab, which can be added to the menu directly.
-
-Additional functionality can be added using Character Preview addon prefabs.
+Use any prefab inside the `/Pre-Setup` folder.  
+Three prefabs are available, a base version and two others with additional features.
 
 [Learn More → Character Previews](xref:ccm-character-preview)
 
@@ -227,7 +230,7 @@ Additional functionality can be added using Character Preview addon prefabs.
 
 At minimum, the menu should provide:
 
-- **Back**: Closes the menu without saving.
+- **Back**: Closes the menu.
 - **Save Character**: Saves the character's changes.
 
 These buttons can be created manually or added using the included prefabs.
@@ -245,7 +248,7 @@ To create a button manually:
 
 Menu Control prefabs are also available at:
 
-**`Prefabs > Character Creator > Menu Controls`**
+**`Prefabs > Character Creator > Modules > Menu Controls`**
 
 Additional menu controls can be added as needed.
 
@@ -257,13 +260,13 @@ A **Loading Screen** covers the Character Creation Menu while it's being initial
 
 Loading Screen prefabs are located at:
 
-**`Prefabs > Character Creator > Loading Screen`**
+**`Prefabs > Character Creator > Modules > Loading Screen`**
 
-There are three ways to use the included loading screen components:
+There are three folders for the loading screen module:
 
 - **Loading Screen Core** provides a basic black loading screen.
-- **Loading Screen Components** can be added as children of the Loading Screen Core to add additional functionality.
-- **Complete Loading Screens** provide pre-configured loading screens with additional features such as loading bars and text.
+- **Loading Screen Additions** are prefabs that can be added as children of the Loading Screen Core to add additional functionality.
+- **Pre-Setup Loading Screens** provide pre-configured loading screens with additional features such as loading bars and text.
 
 Addon components require a reference to the **Loading Screen Handler** found on the Loading Screen Core.
 
@@ -271,9 +274,9 @@ The folders are organized as follows:
 
 ```text
 Loading Screen
-├── Loading Screen Core
-├── Loading Screen Components
-└── Complete Loading Screens
+├── Core
+├── Additions
+└── Pre-Setup
 ```
 
 [Learn More → Loading Screens](xref:ccm-loading-screens)
@@ -296,7 +299,7 @@ There are several ways to add randomization:
 
 Randomization prefabs are located at:
 
-**`Prefabs > Character Creator > Randomization`**
+**`Prefabs > Character Creator > Modules > Randomization`**
 
 A simple **Randomize Entire Character** button can also be created using a `Button` and `CCMRelay`, in the same way as other Menu Controls.
 
@@ -304,13 +307,14 @@ A simple **Randomize Entire Character** button can also be created using a `Butt
 
 ### Character History
 
-The **Character History System** records changes made while editing a character.
+The **History Tracking System** records changes made while editing a character.
 
-To enable history tracking, add the `CCMHistoryTracker` component to a GameObject inside the Character Creation Menu Contents.
+To enable history tracking, add the `CCMHistoryTracker` component to a GameObject inside the Character Creation Menu Contents.  
+This is required for all modules part of the History Tracking System.
 
 History prefabs are located at:
 
-**`Prefabs > Character Creator > History`**
+**`Prefabs > Character Creator > Modules > History`**
 
 The included history prefabs are divided into two categories:
 
@@ -339,7 +343,7 @@ The display name can optionally be displayed near the character later.
 
 The prefab is located at:
 
-**`Prefabs > Character Creator > Character Display Name Field`**
+**`Prefabs > Character Creator > Modules > Character Display Name Field`**
 
 ---
 
