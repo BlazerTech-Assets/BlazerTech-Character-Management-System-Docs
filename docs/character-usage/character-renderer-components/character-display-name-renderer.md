@@ -17,8 +17,6 @@ Choose how you'll get a reference to a character. There are two options:
 
 ![Fetch Character Mode](~/images/components/character-renderer-components/character-display-name-renderer/fetch-character-mode.png)
 
----
-
 ### From Character Renderer
 
 Uses a [Character Renderer component](xref:character-renderer-components) to find a character.
@@ -28,8 +26,6 @@ Assign a reference to a **Character Renderer component**.
 When the Character Renderer component loads a character:
 1. The **Display Name Renderer** will be notified and retrieve the character.
 2. The **display Name Renderer** will get the **Display Name** of the character and set the text of the assigned text component to the characters display name.
-
----
 
 ### From Character Group
 
@@ -61,6 +57,8 @@ If **Flexible Group** or **Fixed Group** is selected, the following parameters a
 | **Character Load Method** | `Enum`   | Determines how a character is selected from the group: <br> - **Character Name** > Load a character by its saved name. <br> - **Character Index** > Load a character by its index position in the group. <br> - **Randomized** > Randomly load a character from the group. |
 
 ![Character Group Types](~/images/components/character-renderer-components/character-display-name-renderer/group-types.png)
+
+---
 
 ## References
 

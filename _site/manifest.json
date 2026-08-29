@@ -2099,6 +2099,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-character-display-name.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-character-display-name.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/character-creator-character-preview-controller.md",
       "output": {
         ".html": {
@@ -2636,6 +2646,16 @@
       "output": {
         "resource": {
           "relative_path": "images/character-animation/character-animator-parameters.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png"
         }
       },
       "version": ""

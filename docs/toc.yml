@@ -65,8 +65,8 @@
 
 - name: Character Grouping System
   href: character-grouping-system.md
-# - name: Temp
-#   href: temp.md
+- name: Temp
+  href: temp.md
 # - name: Temp 2
 #   href: temp-2.md
 
@@ -134,3 +134,5 @@
   href: character-creator/character-creator-character-randomization.md
 - name: Loading Screens
   href: character-creator/character-creator-loading-screens.md
+- name: Character Display Name
+  href: character-creator/character-creator-character-display-name.md

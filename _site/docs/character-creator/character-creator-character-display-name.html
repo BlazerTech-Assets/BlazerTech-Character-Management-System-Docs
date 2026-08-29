@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Display Name Field | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Display Name Field | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-display-name.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-character-display-name.html">
+
+    <meta property="og:title" content="Character Display Name Field | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Display Name Field | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-character-display-name">
+<h1 id="character-display-name-field">Character Display Name Field</h1>
+
+<p>The <strong>Character Display Name Field</strong> allows the player to give their character a display name. This name can later be used anywhere in your game, such as display it above the character's head.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png" alt="Character Display Name Field"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p><strong>Location</strong>: <code>Prefabs: Character Creator &gt; Modules &gt; Character Display Name Field</code></p>
+<p>Two prefabs are included:</p>
+<ul>
+<li><strong>Character Name Field</strong> - Contains the text field only.</li>
+<li><strong>Character Name Field [+Title]</strong> - Contains the text field with a title displayed above it.</li>
+</ul>
+<p>Add either of these prefabs as a child of the Character Creation Menu Contents.</p>
+<hr>
+<h2 id="manual-setup">Manual Setup</h2>
+<p>The Character Display Name Field uses a <strong>TextMeshPro Input Field</strong> to allow the player to enter a name.</p>
+<p>To setup one up manually:</p>
+<ol>
+<li>Add a <strong>TMP Input Field</strong> to the Character Creation Menu Contents.</li>
+<li>Add the <code>CCM Display Name Input Field Handler</code> component to the same GameObject.</li>
+<li>Assign the <strong>TMP Input Field</strong> to the handler's input field reference.</li>
+</ol>
+<p>When the Character Creation Menu is opened, the input field will automatically be populated with the character's current display name, if one has been set.</p>
+<p>When the character is saved, the value entered in the input field is saved as the character's display name.</p>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="../character-usage/character-renderer-components/character-display-name-renderer.html">Character Display Name Renderer</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-display-name.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

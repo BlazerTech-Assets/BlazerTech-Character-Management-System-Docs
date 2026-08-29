@@ -4,41 +4,46 @@ uid: character-creator-overview
 
 # Character Creator Overview
 
-The **Character Creator** is a modular prefab based framework for building **Character Creation Menus**.  
+The **Character Creator** is a modular, prefab based framework for building **Character Creation Menus**.  
 
-A **Character Creation Menu** is a menu that lets your players design their own characters for use later in your game. These menus could be used to create a player character, or customize the look of other NPCs.
+A Character Creation Menu allows players to create and customize characters for use in your game. For example, it can be used to create a player character or customize the appearance of an NPC.
 
-It's fully customizable; combine and edit different prefabs to create the exact design you want.
+The Character Creator is designed to be flexible. Each part of the menu is provided as a separate module, allowing you to combine, configure, and customize the modules to create the menu you want.
+
+> [!NOTE]
+> The Character Creator is designed to work for **Layered Characters** only. Its customization features work by modifying the individual layers that make up a Layered Character.
 
 ---
 
 ## Character Creator Modules
 
-The Character Creator is **modular**, it's split into a bunch of smaller pieces that we call modules, each with a simple task. When these modules are put together they form a complete and functioning **Character Creation Menu**.
+The Character Creator is **modular**, it's split into a bunch of smaller pieces we call modules, each provides a specific piece of functionality. When these modules are put together they form a complete and functioning **Character Creation Menu**.
 
-| Module                                                | Description                                                                                              |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **[Layer Selectors](#layer-selectors)**               | Changes the visual elements of each layer of the character.                                              |
-| **[Character Preview](#character-preview)**           | Displays an animated or static preview of the character that live updates when changes are made.         |
-| **[Menu Controls](#menu-controls)**                                 | Essential controls for the menu such as Save, Back and Reset buttons.                                    |
-| **[Character History](#character-history)**           | History panels with options to revert to previous versions of the character.                             |
-| **[Randomization Controls](#randomization-controls)** | Simple randomization buttons & advanced randomization buttons with options to randomize specific layers. |
-| **[Loading Screens](#loading-screens)**               | Backgrounds with animated elements that had the menu while it's loading.                                 |
+| Module                                                       | Description                                                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| **[Layer Selectors](#layer-selector-module)**                | Allow the player to change the visual elements for each character layer.                    |
+| **[Character Preview](#character-preview-module)**           | Displays an animated or static preview of the character that updates when changes are made. |
+| **[Menu Controls](#menu-controls-module)**                   | Essential controls for the menu such as Save, Back and Reset.                               |
+| **[Character History](#character-history-module)**           | Records changes and allows players to revert to previous versions of the character.         |
+| **[Randomization Controls](#randomization-controls-module)** | Provides options for randomizing the entire character or individual layers.                 |
+| **[Loading Screens](#loading-screen-module)**                | Hides the menu while it's being initialized and can display loading progress.               |
+| **[Character Display Name](#character-display-name-module)** | Allows the player to enter a display name for their character.                              |
 
 ---
 
 ## Layer Selector Module
 
-A **Layer Selector** is any UI element that lets the player change a specific **layer** of a [Layered Character](xref:layered-character-type).  
+A **Layer Selector** is a UI element that allows the playerto change a specific **layer** of a [Layered Character](xref:layered-character-type).  
+
 The following selector types are included.  
 
-| Selector Type                                             | Description                                                                                        |
-| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **[Dropdown Selector](xref:ccm-dropdown-layer-selector)** | Simple dropdown listing all options for a layer.                                                   |
-| **[Carousel Selector](xref:ccm-carousel-layer-selector)** | Displays the current option with arrows to cycle left/right through other layer options.           |
-| **[Grid Selector](xref:ccm-grid-layer-selector)**         | A grid of preview thumbnails for each layer option.                                                |
-| **[List Selector](xref:ccm-list-layer-selector)**         | A vertical or horizontal list of options (optionally with preview images).                         |
-| **[Tab Selector](xref:ccm-tab-layer-selector)**           | Works alongside another selector. Clicking a tab switches which layer the other selector controls. |
+| Selector Type                                             | Description                                                                                                     |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **[Dropdown Selector](xref:ccm-dropdown-layer-selector)** | Displays the available options in a dropdown list.                                                              |
+| **[Carousel Selector](xref:ccm-carousel-layer-selector)** | Displays the current option and allows the player to cycle through other options using left and right controls. |
+| **[Grid Selector](xref:ccm-grid-layer-selector)**         | Displays layer options as a grid of preview thumbnails.                                                         |
+| **[List Selector](xref:ccm-list-layer-selector)**         | Displays layer options in a vertical or horizontal list, optionally with preview images.                        |
+| **[Tab Selector](xref:ccm-tab-layer-selector)**           | Works alongside another selector and allows the player to switch which layer that selector controls.            |
 
 <img src="~/images/character-creation-menu/ccm-layer-selectors/layer-selectors.png" alt="Layer Selectors" width="500" />  
 
@@ -48,14 +53,14 @@ The following selector types are included.
 
 ## Character Preview Module
 
-The **Character Preview** shows the character currently being customized.  
+The **Character Preview** displays the character currently being customized.  
 
-Options include:
+Character previews can be configured with several options:
 
-- **Static Sprite Preview** – Displays the `preview sprite` defined in the Character Type.
+- **Static Sprite Preview** – Displays the `preview sprite` defined by the Character Type.
 - **Animated Preview** – Uses an Animator Controller to play character animations.
-- **Animation Swapping** – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.
-- **Rotate Character** – Add rotation buttons to view the character from different sides.
+- **Animation Swapping** – Allows additional animations defined by the Character Type to be selected from the menu.
+- **Rotate Character** – Adds controls that allow the player to view the character from different directions.
 
 <img src="~/images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="500" />
 
@@ -65,12 +70,13 @@ Options include:
 
 ## Menu Controls Module
 
-Necessary controls for every **Character Creation Menu** along with some additional niceties. These controls include:
+**Menu Controls** provide the buttons and controls used to interact with the Character Creation Menu, along with some additional niceties.  
 
-- Back/Close menu button
-- Save changes button
-- Reset character button
-- Simple Randomization button
+These controls include:
+- **Back/Close Menu button**: Closes the menu.
+- **Save button**: Saves the character's changes.
+- **Reset button**: Resets the character.
+- **Randomize button**: Randomizes all layers of the character.
 
 <img src="~/images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500" />
 
@@ -80,42 +86,46 @@ Necessary controls for every **Character Creation Menu** along with some additio
 
 ## Character History Module
 
-Changes made to the character can be recorded using the **CCM History Tracker** component.  
-Each time a layer is modified, a **snapshot** is stored.
+The **Character History System** records changes made while customizing a character.
 
-The component contains the following settings:  
-- **Snapshot Limit** – Configurable between **1–100** (default: 30).  
-- **Preserve First Snapshot** – Optionally prevent the first snapshot from being overwritten when the limit is reached.
+The `CCM History Tracker` component stores a **snapshot** of the character whenever a change is made. These snapshots can then be used to undo changes or return to an earlier version of the character.
+
+### History Tracker
+
+The History Tracker provides the following settings:
+
+- **Snapshot Limit**: Determines how many snapshots can be stored. The limit can be set between **1 and 100**, with a default of **30**.
+- **Preserve First Snapshot**: Prevents the first snapshot from being overwritten when the snapshot limit is reached.
 
 ![History Tracker Component](~/images/character-creation-menu/ccm-history/history-tracker-component.png)
 
 [Read More → History Tracking System](xref:ccm-history-tracking-system)
 
----
-
 ### Undo & Redo
 
-Use the **CCM Timeline Button Handler** component on a button to undo or redo changes on the **History Tracker** component.
+The **Undo & Redo** functionality allows players to move backward and forward through their character's history.
+
+Use the `CCM Timeline Button Handler` component on a button to connect it to a **History Tracker**.
 
 <img src="~/images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500" />
 
 [Read More → History Undo/Redo](xref:ccm-history-undo-redo)
 
----
-
 ### History Panels
 
-A **History Panel** displays the list of snapshots recorded in the **History Tracker**. Players can click an entry to revert back to that version of the character.  
+A **History Panel** displays the snapshots recorded by the History Tracker. Players can select an entry to revert the character to that version.
 
-| Panel Type       | Description                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- |
-| **Text Based**   | Each entry contains text describing what was changed (often in a vertical list). |
-| **Sprite Based** | Each entry shows a snapshot preview image (often in a horizontal list).          |
-| **Hybrid**       | Show both text and preview images in each entry.                                 |
+The Character Creator supports several presentation styles:
 
-<img src="~/images/character-creation-menu/ccm-history/history-panel-text.png" alt="History Panel Text" width="400" />
-<br><br>
-<img src="~/images/character-creation-menu/ccm-history/history-panel-sprite-preview.png" alt="History Panel Sprite Preview" width="500" />  
+| Panel Type       | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| **Text Based**   | Displays text describing what changed in each snapshot.          |
+| **Sprite Based** | Displays a preview image of the character for each snapshot.     |
+| **Hybrid**       | Displays both a description and preview image for each snapshot. |
+
+<img src="~/images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="Text Based History Panel" width="400" />
+
+<img src="~/images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="Sprite Based History Panel" width="500" />
 
 [Read More → History Panels](xref:ccm-history-panels)
 
@@ -124,9 +134,9 @@ A **History Panel** displays the list of snapshots recorded in the **History Tra
 ## Randomization Controls Module
 
 Character randomization functionality can be added in multiple differents ways
-- **Randomize Button** - A simple Randomize button which randomizes all layers of the character.
-- **Controlled Randomization** - A randomize button with additional options to select which layers to randomize.
-- **Layer Specific Randomization** - Randomization buttons included in [Layer Selectors](#layer-selectors).
+- **Randomize Button** - Randomizes all layers of the character.
+- **Controlled Randomization** - Allows the player to choose which layers should be randomized.
+- **Layer-Specific Randomization** - Allows individual layers to be randomized directly from [Layer Selectors](#layer-selectors).
 
 <img src="~/images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400" />
 
@@ -136,15 +146,22 @@ Character randomization functionality can be added in multiple differents ways
 
 ## Loading Screen Module
 
-Loading screens hide the **Character Creation Menu** while it's being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed to customize the loading screen.
+Loading screens hide the **Character Creation Menu** while it's being setup.  
+
+Loading Screens are modular, allowing additional elements such as loading bars and progress text to be added or removed as needed.
 
 <img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />
 
 [Read More → Loading Screen](xref:ccm-loading-screens)  
 
-<!-- ---
+---
 
-## Other Features
+## Character Display Name Module
 
-- **Mid-Play Editing** – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.  
-- **Optional Display Name** – Add a name field so players can assign a display name to their character.   -->
+The Character Display Name module allows the player to give their character a display name.
+
+The display name can later be displayed anywhere in your game, such as above the character's head.
+
+![Character Display Name Field](~/images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png)
+
+[Read More → Character Display Name](xref:ccm-character-display-name)  

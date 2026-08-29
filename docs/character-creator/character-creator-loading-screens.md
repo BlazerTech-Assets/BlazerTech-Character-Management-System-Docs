@@ -50,7 +50,7 @@ When the Character Creation Menu is enabled, the Loading Screen Handler automati
 
 Loading Screen prefabs are available to drop into your own project without the need of setting them up yourself.
 
-Location: `Pefabs > Character Creator > Modules > Loading Screen`.
+**Location**: `Pefabs > Character Creator > Modules > Loading Screen`.
 
 ---
 

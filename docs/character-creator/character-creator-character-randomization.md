@@ -24,7 +24,7 @@ A single button randomizes all layers of the character at once.
 
 ### Prefabs
 
-location: `Prefabs > Character Creator > Modules > Randomization Controls`.
+**location**: `Prefabs > Character Creator > Modules > Randomization Controls`.
 
 Within are variation folders, each folder contains identical prefabs with different visual styles.
 
