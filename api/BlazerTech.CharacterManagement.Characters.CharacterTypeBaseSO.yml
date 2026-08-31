@@ -6,14 +6,15 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PerformValidationCheck
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
   langs:
   - csharp
   - vb
@@ -25,14 +26,14 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTypeBaseSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: bass Scriptable Object for all Character Types.
+  summary: bass class for all Character Types.
   example: []
   syntax:
     content: 'public abstract class CharacterTypeBaseSO : ScriptableObject, IValidatable'
@@ -61,14 +62,14 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTypeID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: A **unique identifier** used to reference this character type. **Must be unique** across all character types.
+  summary: A **unique identifier** used to reference this Character Type. **Must be unique** across all character types.
   example: []
   syntax:
     content: public string CharacterTypeID { get; }
@@ -92,7 +93,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: BaseSpritesheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 29
@@ -100,7 +101,7 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   summary: >-
-    Defines the **required base sprite sheet** for the character type.  
+    Defines the **required base sprite sheet** for the Character Type.  
 
     Set this spritesheets **Sprite Mode** to **Multiple** and slice it. Whenever this character is used the sprites in the **BaseSpritesheet** will be used and a shader will then  override them with the finalized character.
 
@@ -113,23 +114,23 @@ items:
       type: UnityEngine.Texture2D
     content.vb: Public Property BaseSpritesheet As Texture2D
   overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
-  id: CharacterController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  id: AnimatorController
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
   langs:
   - csharp
   - vb
-  name: CharacterController
-  nameWithType: CharacterTypeBaseSO.CharacterController
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  name: AnimatorController
+  nameWithType: CharacterTypeBaseSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterController
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimatorController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 36
   assemblies:
@@ -138,15 +139,61 @@ items:
   summary: >-
     The animator controller asset assigned to characters of this type.  
 
-    Animations inside this controller should use sprites in the <xref href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet" data-throw-if-not-resolved="false"></xref>.
+    Animations inside this controller should use sprites from the <xref href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public RuntimeAnimatorController CharacterController { get; }
+    content: public RuntimeAnimatorController AnimatorController { get; }
     parameters: []
     return:
       type: UnityEngine.RuntimeAnimatorController
-    content.vb: Public Property CharacterController As RuntimeAnimatorController
-  overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController*
+    content.vb: Public Property AnimatorController As RuntimeAnimatorController
+  overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  id: PixelsPerUnit
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  langs:
+  - csharp
+  - vb
+  name: PixelsPerUnit
+  nameWithType: CharacterTypeBaseSO.PixelsPerUnit
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: PixelsPerUnit
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [BoxGroup("Settings")]
+
+      public int PixelsPerUnit
+    return:
+      type: System.Int32
+    content.vb: >-
+      <SerializeField>
+
+      <BoxGroup("Settings")>
+
+      Public PixelsPerUnit As Integer
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: NaughtyAttributes.BoxGroupAttribute
+    ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   id: IsValid
@@ -162,10 +209,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -198,10 +245,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 49
+    startLine: 50
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -231,14 +278,14 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValidCharacterSpriteSheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 71
+    startLine: 72
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: Returns true if the sprite fits the conditions for the Character Type.
+  summary: Returns true if the spritesheet is the same size as the <xref href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public virtual bool IsValidCharacterSpriteSheet(Sprite sprite)
@@ -266,10 +313,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsAddressable_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -294,10 +341,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: HasCorrectAddressableLabel_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 95
+    startLine: 96
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -322,10 +369,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AddAddressableLabel_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -478,12 +525,12 @@ references:
   name: BaseSpritesheet
   nameWithType: CharacterTypeBaseSO.BaseSpritesheet
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController
-  name: CharacterController
-  nameWithType: CharacterTypeBaseSO.CharacterController
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AnimatorController
+  name: AnimatorController
+  nameWithType: CharacterTypeBaseSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
 - uid: UnityEngine.RuntimeAnimatorController
   commentId: T:UnityEngine.RuntimeAnimatorController
   parent: UnityEngine
@@ -498,6 +545,17 @@ references:
   name: CharacterTypeBaseSO
   nameWithType: CharacterTypeBaseSO
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
   parent: BlazerTech.CharacterManagement.Core.IValidatable

@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  id: CharacterOverlayLayerSO.AnimatorParam
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor(System.Int32,UnityEngine.AnimatorControllerParameterType)
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Hash
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Type
+  langs:
+  - csharp
+  - vb
+  name: CharacterOverlayLayerSO.AnimatorParam
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimatorParam
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class CharacterOverlayLayerSO.AnimatorParam
+    content.vb: >-
+      <Serializable>
+
+      Public Class CharacterOverlayLayerSO.AnimatorParam
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Hash
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Hash
+  id: Hash
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  langs:
+  - csharp
+  - vb
+  name: Hash
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam.Hash
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Hash
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Hash
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public int Hash
+    return:
+      type: System.Int32
+    content.vb: Public Hash As Integer
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Type
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Type
+  id: Type
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam.Type
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.Type
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Type
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public AnimatorControllerParameterType Type
+    return:
+      type: UnityEngine.AnimatorControllerParameterType
+    content.vb: Public Type As AnimatorControllerParameterType
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor(System.Int32,UnityEngine.AnimatorControllerParameterType)
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor(System.Int32,UnityEngine.AnimatorControllerParameterType)
+  id: '#ctor(System.Int32,UnityEngine.AnimatorControllerParameterType)'
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  langs:
+  - csharp
+  - vb
+  name: AnimatorParam(int, AnimatorControllerParameterType)
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam.AnimatorParam(int, AnimatorControllerParameterType)
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.AnimatorParam(int, UnityEngine.AnimatorControllerParameterType)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public AnimatorParam(int hash, AnimatorControllerParameterType type)
+    parameters:
+    - id: hash
+      type: System.Int32
+    - id: type
+      type: UnityEngine.AnimatorControllerParameterType
+    content.vb: Public Sub New(hash As Integer, type As AnimatorControllerParameterType)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor*
+  nameWithType.vb: CharacterOverlayLayerSO.AnimatorParam.New(Integer, AnimatorControllerParameterType)
+  fullName.vb: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.New(Integer, UnityEngine.AnimatorControllerParameterType)
+  name.vb: New(Integer, AnimatorControllerParameterType)
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.AnimatorControllerParameterType
+  commentId: T:UnityEngine.AnimatorControllerParameterType
+  parent: UnityEngine
+  isExternal: true
+  name: AnimatorControllerParameterType
+  nameWithType: AnimatorControllerParameterType
+  fullName: UnityEngine.AnimatorControllerParameterType
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.#ctor
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AnimatorParam__ctor_System_Int32_UnityEngine_AnimatorControllerParameterType_
+  name: AnimatorParam
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam.AnimatorParam
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.AnimatorParam
+  nameWithType.vb: CharacterOverlayLayerSO.AnimatorParam.New
+  fullName.vb: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.New
+  name.vb: New

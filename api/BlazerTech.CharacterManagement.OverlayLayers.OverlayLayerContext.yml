@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  id: OverlayLayerContext
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor(UnityEngine.GameObject,UnityEngine.SpriteRenderer,UnityEngine.Animator)
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerContext
+  nameWithType: OverlayLayerContext
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerContext
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public sealed class OverlayLayerContext
+    content.vb: Public NotInheritable Class OverlayLayerContext
+  inheritance:
+  - System.Object
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+  id: SpriteRenderer
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  langs:
+  - csharp
+  - vb
+  name: SpriteRenderer
+  nameWithType: OverlayLayerContext.SpriteRenderer
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SpriteRenderer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public SpriteRenderer SpriteRenderer { get; }
+    parameters: []
+    return:
+      type: UnityEngine.SpriteRenderer
+    content.vb: Public ReadOnly Property SpriteRenderer As SpriteRenderer
+  overload: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+  id: Animator
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  langs:
+  - csharp
+  - vb
+  name: Animator
+  nameWithType: OverlayLayerContext.Animator
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Animator
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public Animator Animator { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Animator
+    content.vb: Public ReadOnly Property Animator As Animator
+  overload: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+  id: GameObject
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  langs:
+  - csharp
+  - vb
+  name: GameObject
+  nameWithType: OverlayLayerContext.GameObject
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GameObject
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public GameObject GameObject { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public ReadOnly Property GameObject As GameObject
+  overload: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor(UnityEngine.GameObject,UnityEngine.SpriteRenderer,UnityEngine.Animator)
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor(UnityEngine.GameObject,UnityEngine.SpriteRenderer,UnityEngine.Animator)
+  id: '#ctor(UnityEngine.GameObject,UnityEngine.SpriteRenderer,UnityEngine.Animator)'
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerContext(GameObject, SpriteRenderer, Animator)
+  nameWithType: OverlayLayerContext.OverlayLayerContext(GameObject, SpriteRenderer, Animator)
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.OverlayLayerContext(UnityEngine.GameObject, UnityEngine.SpriteRenderer, UnityEngine.Animator)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public OverlayLayerContext(GameObject gameObject, SpriteRenderer spriteRenderer, Animator animator)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+    - id: spriteRenderer
+      type: UnityEngine.SpriteRenderer
+    - id: animator
+      type: UnityEngine.Animator
+    content.vb: Public Sub New(gameObject As GameObject, spriteRenderer As SpriteRenderer, animator As Animator)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor*
+  nameWithType.vb: OverlayLayerContext.New(GameObject, SpriteRenderer, Animator)
+  fullName.vb: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.New(UnityEngine.GameObject, UnityEngine.SpriteRenderer, UnityEngine.Animator)
+  name.vb: New(GameObject, SpriteRenderer, Animator)
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html#BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerContext_SpriteRenderer
+  name: SpriteRenderer
+  nameWithType: OverlayLayerContext.SpriteRenderer
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.SpriteRenderer
+- uid: UnityEngine.SpriteRenderer
+  commentId: T:UnityEngine.SpriteRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: SpriteRenderer
+  nameWithType: SpriteRenderer
+  fullName: UnityEngine.SpriteRenderer
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html#BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerContext_Animator
+  name: Animator
+  nameWithType: OverlayLayerContext.Animator
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.Animator
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html#BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerContext_GameObject
+  name: GameObject
+  nameWithType: OverlayLayerContext.GameObject
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.GameObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.#ctor
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html#BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerContext__ctor_UnityEngine_GameObject_UnityEngine_SpriteRenderer_UnityEngine_Animator_
+  name: OverlayLayerContext
+  nameWithType: OverlayLayerContext.OverlayLayerContext
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.OverlayLayerContext
+  nameWithType.vb: OverlayLayerContext.New
+  fullName.vb: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.New
+  name.vb: New

@@ -4,10 +4,7 @@ items:
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   id: LayeredCharacterTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
-  children:
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck
+  children: []
   langs:
   - csharp
   - vb
@@ -17,29 +14,26 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/LayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTemplateSO
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 12
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 6
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: >-
-      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Character Templates/Layered Character Template", fileName = "New Layered Character Template")]
-
-      public class LayeredCharacterTemplateSO : CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>, IValidatable
-    content.vb: >-
-      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Character Templates/Layered Character Template", fileName:="New Layered Character Template")>
-
-      Public Class LayeredCharacterTemplateSO Inherits CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter) Implements IValidatable
+    content: 'public abstract class LayeredCharacterTemplateSO : CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>, IValidatable'
+    content.vb: Public MustInherit Class LayeredCharacterTemplateSO Inherits CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter) Implements IValidatable
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
   - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  derivedClasses:
+  - BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayeredCharacterTemplateSO
   implements:
   - BlazerTech.CharacterManagement.Core.IValidatable
   inheritedMembers:
@@ -51,108 +45,6 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.PerformValidationCheck
-  attributes:
-  - type: UnityEngine.CreateAssetMenuAttribute
-    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: menuName
-      type: System.String
-      value: BlazerTech/Character Management System/Character Templates/Layered Character Template
-    - name: fileName
-      type: System.String
-      value: New Layered Character Template
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-  id: LayerOptionMappings
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
-  langs:
-  - csharp
-  - vb
-  name: LayerOptionMappings
-  nameWithType: LayeredCharacterTemplateSO.LayerOptionMappings
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-  type: Property
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LayerOptionMappings
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 17
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public List<LayerOptionMapping> LayerOptionMappings { get; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayerOptionMapping}
-    content.vb: Public ReadOnly Property LayerOptionMappings As List(Of LayerOptionMapping)
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck
-  id: PerformValidationCheck
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
-  langs:
-  - csharp
-  - vb
-  name: PerformValidationCheck()
-  nameWithType: LayeredCharacterTemplateSO.PerformValidationCheck()
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck()
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: PerformValidationCheck
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 19
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  summary: Checks/Rechecks if the object is valid and updates <xref href="BlazerTech.CharacterManagement.Core.IValidatable.IsValid" data-throw-if-not-resolved="false"></xref> accordingly.
-  example: []
-  syntax:
-    content: public override bool PerformValidationCheck()
-    return:
-      type: System.Boolean
-      description: true if the object is valid after the check; otherwise, false.
-    content.vb: Public Overrides Function PerformValidationCheck() As Boolean
-  overridden: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.PerformValidationCheck
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter
-  id: CreateNewCharacter
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
-  langs:
-  - csharp
-  - vb
-  name: CreateNewCharacter()
-  nameWithType: LayeredCharacterTemplateSO.CreateNewCharacter()
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter()
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CreateNewCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 55
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  example: []
-  syntax:
-    content: protected override LayeredCharacter CreateNewCharacter()
-    return:
-      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    content.vb: Protected Overrides Function CreateNewCharacter() As LayeredCharacter
-  overridden: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -547,144 +439,3 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_PerformValidationCheck
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_LayerOptionMappings
-  name: LayerOptionMappings
-  nameWithType: LayeredCharacterTemplateSO.LayerOptionMappings
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayerOptionMapping}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayerOptionMapping}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<LayerOptionMapping>
-  nameWithType: List<LayerOptionMapping>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.LayerOptionMapping>
-  nameWithType.vb: List(Of LayerOptionMapping)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.LayerOptionMapping)
-  name.vb: List(Of LayerOptionMapping)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
-    name: LayerOptionMapping
-    href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
-    name: LayerOptionMapping
-    href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: BlazerTech.CharacterManagement.Core.IValidatable.IsValid
-  commentId: P:BlazerTech.CharacterManagement.Core.IValidatable.IsValid
-  parent: BlazerTech.CharacterManagement.Core.IValidatable
-  href: BlazerTech.CharacterManagement.Core.IValidatable.html#BlazerTech_CharacterManagement_Core_IValidatable_IsValid
-  name: IsValid
-  nameWithType: IValidatable.IsValid
-  fullName: BlazerTech.CharacterManagement.Core.IValidatable.IsValid
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_PerformValidationCheck
-  name: PerformValidationCheck
-  nameWithType: LayeredCharacterTemplateSO.PerformValidationCheck
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_CreateNewCharacter
-  name: CreateNewCharacter
-  nameWithType: LayeredCharacterTemplateSO.CreateNewCharacter
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  name: LayeredCharacter
-  nameWithType: LayeredCharacter
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter

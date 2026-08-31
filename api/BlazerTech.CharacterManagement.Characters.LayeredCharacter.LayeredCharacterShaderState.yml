@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  id: LayeredCharacter.LayeredCharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.OnCharacterLayerOptionUpdated
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.layeredCharacterMaterialInstance
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacter.LayeredCharacterShaderState
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterShaderState
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 447
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: 'public class LayeredCharacter.LayeredCharacterShaderState : CharacterShaderState, IDisposable'
+    content.vb: Public Class LayeredCharacter.LayeredCharacterShaderState Inherits CharacterShaderState Implements IDisposable
+  inheritance:
+  - System.Object
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.layeredCharacterMaterialInstance
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.layeredCharacterMaterialInstance
+  id: layeredCharacterMaterialInstance
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: layeredCharacterMaterialInstance
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.layeredCharacterMaterialInstance
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.layeredCharacterMaterialInstance
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: layeredCharacterMaterialInstance
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 451
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public Material layeredCharacterMaterialInstance
+    return:
+      type: UnityEngine.Material
+    content.vb: Public layeredCharacterMaterialInstance As Material
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  id: BakedCharacterRT
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: BakedCharacterRT
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: BakedCharacterRT
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 454
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public RenderTexture BakedCharacterRT { get; }
+    parameters: []
+    return:
+      type: UnityEngine.RenderTexture
+    content.vb: Public ReadOnly Property BakedCharacterRT As RenderTexture
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.OnCharacterLayerOptionUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.OnCharacterLayerOptionUpdated
+  id: OnCharacterLayerOptionUpdated
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterLayerOptionUpdated
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.OnCharacterLayerOptionUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.OnCharacterLayerOptionUpdated
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnCharacterLayerOptionUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 455
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public event EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs> OnCharacterLayerOptionUpdated
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+    content.vb: Public Event OnCharacterLayerOptionUpdated As EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterShaderState(LayeredCharacter)
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.LayeredCharacterShaderState(LayeredCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LayeredCharacterShaderState(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 460
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public LayeredCharacterShaderState(LayeredCharacter character)
+    parameters:
+    - id: character
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    content.vb: Public Sub New(character As LayeredCharacter)
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor*
+  nameWithType.vb: LayeredCharacter.LayeredCharacterShaderState.New(LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: New(LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+  id: LoadUnloadedLayersAsync
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: LoadUnloadedLayersAsync()
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync()
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadUnloadedLayersAsync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 491
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public Task LoadUnloadedLayersAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadUnloadedLayersAsync() As Task
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+  id: UpdateCharacterMaterialAsync
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: UpdateCharacterMaterialAsync()
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync()
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: UpdateCharacterMaterialAsync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 498
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public void UpdateCharacterMaterialAsync()
+    content.vb: Public Sub UpdateCharacterMaterialAsync()
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose
+  id: Dispose
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Dispose
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 534
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose*
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
+  name: CharacterShaderState
+  nameWithType: CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_CharacterShaderTextureName
+  name: CharacterShaderTextureName
+  nameWithType: CharacterShaderState.CharacterShaderTextureName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_CharacterMPB
+  name: CharacterMPB
+  nameWithType: CharacterShaderState.CharacterMPB
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacterShaderState_BakedCharacterRT
+  name: BakedCharacterRT
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.BakedCharacterRT
+- uid: UnityEngine.RenderTexture
+  commentId: T:UnityEngine.RenderTexture
+  parent: UnityEngine
+  isExternal: true
+  name: RenderTexture
+  nameWithType: RenderTexture
+  fullName: UnityEngine.RenderTexture
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs)
+  name.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.#ctor
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacterShaderState__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
+  name: LayeredCharacterShaderState
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.LayeredCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LayeredCharacterShaderState
+  nameWithType.vb: LayeredCharacter.LayeredCharacterShaderState.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.New
+  name.vb: New
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: LayeredCharacter
+  nameWithType: LayeredCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacterShaderState_LoadUnloadedLayersAsync
+  name: LoadUnloadedLayersAsync
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.LoadUnloadedLayersAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacterShaderState_UpdateCharacterMaterialAsync
+  name: UpdateCharacterMaterialAsync
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.UpdateCharacterMaterialAsync
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  name: Dispose()
+  nameWithType: CharacterShaderState.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacterShaderState_Dispose
+  name: Dispose
+  nameWithType: LayeredCharacter.LayeredCharacterShaderState.Dispose
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.Dispose

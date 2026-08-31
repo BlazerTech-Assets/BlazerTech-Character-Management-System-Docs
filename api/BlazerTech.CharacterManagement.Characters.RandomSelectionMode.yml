@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  id: RandomSelectionMode
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.AllowList
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Any
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Blank
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Fixed
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Regex
+  - BlazerTech.CharacterManagement.Characters.RandomSelectionMode.WeightedAllowList
+  langs:
+  - csharp
+  - vb
+  name: RandomSelectionMode
+  nameWithType: RandomSelectionMode
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: RandomSelectionMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public enum RandomSelectionMode
+    content.vb: Public Enum RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Any
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Any
+  id: Any
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: RandomSelectionMode.Any
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Any
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Any
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: Any = 0
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.AllowList
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.AllowList
+  id: AllowList
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: AllowList
+  nameWithType: RandomSelectionMode.AllowList
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.AllowList
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AllowList
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: AllowList = 1
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.WeightedAllowList
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.WeightedAllowList
+  id: WeightedAllowList
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: WeightedAllowList
+  nameWithType: RandomSelectionMode.WeightedAllowList
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.WeightedAllowList
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: WeightedAllowList
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: WeightedAllowList = 2
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Regex
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Regex
+  id: Regex
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: Regex
+  nameWithType: RandomSelectionMode.Regex
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Regex
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Regex
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: Regex = 3
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Fixed
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Fixed
+  id: Fixed
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: RandomSelectionMode.Fixed
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Fixed
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Fixed
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: Fixed = 4
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Blank
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Blank
+  id: Blank
+  parent: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: Blank
+  nameWithType: RandomSelectionMode.Blank
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.Blank
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Blank
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: Blank = 5
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.html
+  name: RandomSelectionMode
+  nameWithType: RandomSelectionMode
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode

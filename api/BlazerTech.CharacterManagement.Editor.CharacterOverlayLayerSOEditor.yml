@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  commentId: T:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  id: CharacterOverlayLayerSOEditor
+  parent: BlazerTech.CharacterManagement.Editor
+  children:
+  - BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI
+  - BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable
+  langs:
+  - csharp
+  - vb
+  name: CharacterOverlayLayerSOEditor
+  nameWithType: CharacterOverlayLayerSOEditor
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterOverlayLayerSOEditor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  syntax:
+    content: >-
+      [CustomEditor(typeof(CharacterOverlayLayerSO))]
+
+      public class CharacterOverlayLayerSOEditor : Editor
+    content.vb: >-
+      <CustomEditor(GetType(CharacterOverlayLayerSO))>
+
+      Public Class CharacterOverlayLayerSOEditor Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable
+  commentId: M:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable
+  id: OnEnable
+  parent: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: CharacterOverlayLayerSOEditor.OnEnable()
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnEnable
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  syntax:
+    content: protected void OnEnable()
+    content.vb: Protected Sub OnEnable()
+  overload: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable*
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI
+  commentId: M:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI
+  id: CreateInspectorGUI
+  parent: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateInspectorGUI()
+  nameWithType: CharacterOverlayLayerSOEditor.CreateInspectorGUI()
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CreateInspectorGUI
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterOverlayLayerSOEditor.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  summary: <p>Implement this method to make a custom UIElements inspector.</p>
+  example: []
+  syntax:
+    content: public override VisualElement CreateInspectorGUI()
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Overrides Function CreateInspectorGUI() As VisualElement
+  overridden: UnityEditor.Editor.CreateInspectorGUI
+  overload: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI*
+references:
+- uid: BlazerTech.CharacterManagement.Editor
+  commentId: N:BlazerTech.CharacterManagement.Editor
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Editor
+  nameWithType: BlazerTech.CharacterManagement.Editor
+  fullName: BlazerTech.CharacterManagement.Editor
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Editor
+    name: Editor
+    href: BlazerTech.CharacterManagement.Editor.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Editor
+    name: Editor
+    href: BlazerTech.CharacterManagement.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable*
+  commentId: Overload:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable
+  href: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.html#BlazerTech_CharacterManagement_Editor_CharacterOverlayLayerSOEditor_OnEnable
+  name: OnEnable
+  nameWithType: CharacterOverlayLayerSOEditor.OnEnable
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.OnEnable
+- uid: UnityEditor.Editor.CreateInspectorGUI
+  commentId: M:UnityEditor.Editor.CreateInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: CreateInspectorGUI()
+  nameWithType: Editor.CreateInspectorGUI()
+  fullName: UnityEditor.Editor.CreateInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.CreateInspectorGUI
+    name: CreateInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.CreateInspectorGUI
+    name: CreateInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI*
+  commentId: Overload:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI
+  href: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.html#BlazerTech_CharacterManagement_Editor_CharacterOverlayLayerSOEditor_CreateInspectorGUI
+  name: CreateInspectorGUI
+  nameWithType: CharacterOverlayLayerSOEditor.CreateInspectorGUI
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.CreateInspectorGUI
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true

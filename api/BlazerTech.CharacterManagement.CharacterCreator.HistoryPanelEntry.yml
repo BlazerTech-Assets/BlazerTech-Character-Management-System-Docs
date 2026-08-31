@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: HistoryPanelEntry
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 10
@@ -52,7 +52,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DisplayMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 12
@@ -81,7 +81,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Snapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 26
@@ -110,7 +110,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 40
@@ -141,7 +141,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Deactivate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 83
@@ -167,7 +167,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ApplyCharacterSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/HistoryPanelEntry.cs
     startLine: 134

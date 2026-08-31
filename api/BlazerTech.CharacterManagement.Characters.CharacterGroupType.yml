@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGroupType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
     startLine: 5
@@ -44,7 +44,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PrimarySlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
     startLine: 5
@@ -70,7 +70,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: FlexibleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
     startLine: 5
@@ -96,7 +96,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: FixedGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
     startLine: 5

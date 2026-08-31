@@ -25,7 +25,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: FlexibleCharacterGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 104
@@ -67,7 +67,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Characters
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 109
@@ -96,7 +96,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 111
@@ -130,7 +130,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 113
@@ -164,7 +164,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AddCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 125
@@ -197,7 +197,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SwapCharacters
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 148
@@ -239,7 +239,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RemoveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 162
@@ -270,7 +270,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ContainsCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 171
@@ -303,7 +303,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ContainsCharacterWithGUID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 172
@@ -336,7 +336,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ContainsCharacterWithName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
     startLine: 173

@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  commentId: T:BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  id: BTSampleNPCSpawner.NPCSpawnLocation
+  parent: BlazerTech.CharacterManagement.Samples
+  children:
+  - BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.NPCWalkDireciton
+  - BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.POS
+  langs:
+  - csharp
+  - vb
+  name: BTSampleNPCSpawner.NPCSpawnLocation
+  nameWithType: BTSampleNPCSpawner.NPCSpawnLocation
+  fullName: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: NPCSpawnLocation
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class BTSampleNPCSpawner.NPCSpawnLocation
+    content.vb: >-
+      <Serializable>
+
+      Public Class BTSampleNPCSpawner.NPCSpawnLocation
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.POS
+  commentId: F:BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.POS
+  id: POS
+  parent: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  langs:
+  - csharp
+  - vb
+  name: POS
+  nameWithType: BTSampleNPCSpawner.NPCSpawnLocation.POS
+  fullName: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.POS
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: POS
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: public Transform POS
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public POS As Transform
+- uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.NPCWalkDireciton
+  commentId: F:BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.NPCWalkDireciton
+  id: NPCWalkDireciton
+  parent: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  langs:
+  - csharp
+  - vb
+  name: NPCWalkDireciton
+  nameWithType: BTSampleNPCSpawner.NPCSpawnLocation.NPCWalkDireciton
+  fullName: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.NPCWalkDireciton
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: NPCWalkDireciton
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/BTSampleNPCSpawner.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: public FourDirectional NPCWalkDireciton
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+    content.vb: Public NPCWalkDireciton As FourDirectional
+references:
+- uid: BlazerTech.CharacterManagement.Samples
+  commentId: N:BlazerTech.CharacterManagement.Samples
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Samples
+  nameWithType: BlazerTech.CharacterManagement.Samples
+  fullName: BlazerTech.CharacterManagement.Samples
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.FourDirectional.html
+  name: FourDirectional
+  nameWithType: FourDirectional
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html

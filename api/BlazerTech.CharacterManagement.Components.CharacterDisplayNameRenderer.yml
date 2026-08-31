@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDisplayNameRenderer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 10
@@ -52,7 +52,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 22
@@ -81,7 +81,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterLoadMethod
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 25
@@ -110,7 +110,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 29
@@ -139,7 +139,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 31
@@ -168,7 +168,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
     startLine: 148

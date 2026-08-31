@@ -16,7 +16,7 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/RotateGO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RotateGO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/RotateGO.cs
     startLine: 4

@@ -5,9 +5,9 @@ items:
   id: CCMTimelineButtonHandler
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction
   - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
   langs:
   - csharp
   - vb
@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMTimelineButtonHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
     startLine: 6
@@ -59,7 +59,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
     startLine: 14
@@ -88,7 +88,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
     startLine: 30
@@ -102,34 +102,34 @@ items:
     content.vb: Protected Overrides Sub CharacterCreationMenuBeforeDisabled()
   overridden: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
-  id: UndoOrRedo
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction
+  id: CallAction
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
   langs:
   - csharp
   - vb
-  name: UndoOrRedo()
-  nameWithType: CCMTimelineButtonHandler.UndoOrRedo()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo()
+  name: CallAction()
+  nameWithType: CCMTimelineButtonHandler.CallAction()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: UndoOrRedo
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CallAction
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMTimelineButtonHandler.cs
     startLine: 53
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
-  summary: Calls either <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Undo" data-throw-if-not-resolved="false"></xref> or <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Redo" data-throw-if-not-resolved="false"></xref> depending on the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.mode" data-throw-if-not-resolved="false"></xref>.
+  summary: Calls either <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Undo" data-throw-if-not-resolved="false"></xref> or <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Redo" data-throw-if-not-resolved="false"></xref> depending on the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.action" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public void UndoOrRedo()
-    content.vb: Public Sub UndoOrRedo()
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo*
+    content: public void CallAction()
+    content.vb: Public Sub CallAction()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
@@ -403,14 +403,14 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_Redo
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.mode
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.mode
-  name: mode
-  nameWithType: CCMTimelineButtonHandler.mode
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.mode
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_UndoOrRedo
-  name: UndoOrRedo
-  nameWithType: CCMTimelineButtonHandler.UndoOrRedo
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.action
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.action
+  name: action
+  nameWithType: CCMTimelineButtonHandler.action
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.action
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_CallAction
+  name: CallAction
+  nameWithType: CCMTimelineButtonHandler.CallAction
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CallAction

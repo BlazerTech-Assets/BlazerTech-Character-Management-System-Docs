@@ -6,86 +6,86 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0,System.String)
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler(System.Object)
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync(System.Object)
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState(System.Object)
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.OnCharacterDisplayNameChanged
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.loadedCharacterHandler
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState(System.Object)
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.characterShaderState
   langs:
   - csharp
   - vb
-  name: CharacterBase<TCharacterType, TCharacterHandler>
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>
+  name: CharacterBase<TCharacterType, TCharacterShaderState>
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>
   type: Class
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterBase
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: 'public abstract class CharacterBase<TCharacterType, TCharacterHandler> : ICharacter<TCharacterType, TCharacterHandler>, IValidatable where TCharacterType : CharacterTypeBaseSO where TCharacterHandler : LoadedCharacterHandlerBase'
+    content: 'public abstract class CharacterBase<TCharacterType, TCharacterShaderState> : ICharacter<TCharacterType, TCharacterShaderState>, IValidatable where TCharacterType : CharacterTypeBaseSO where TCharacterShaderState : CharacterShaderState'
     typeParameters:
     - id: TCharacterType
-    - id: TCharacterHandler
-    content.vb: Public MustInherit Class CharacterBase(Of TCharacterType As CharacterTypeBaseSO, TCharacterHandler As LoadedCharacterHandlerBase) Implements ICharacter(Of TCharacterType, TCharacterHandler), IValidatable
+    - id: TCharacterShaderState
+    content.vb: Public MustInherit Class CharacterBase(Of TCharacterType As CharacterTypeBaseSO, TCharacterShaderState As CharacterShaderState) Implements ICharacter(Of TCharacterType, TCharacterShaderState), IValidatable
   inheritance:
   - System.Object
   derivedClasses:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter
   - BlazerTech.CharacterManagement.Characters.UnifiedCharacter
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   - BlazerTech.CharacterManagement.Core.IValidatable
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler)
-  name.vb: CharacterBase(Of TCharacterType, TCharacterHandler)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.loadedCharacterHandler
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterBase`2.loadedCharacterHandler
-  id: loadedCharacterHandler
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState)
+  name.vb: CharacterBase(Of TCharacterType, TCharacterShaderState)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.characterShaderState
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterBase`2.characterShaderState
+  id: characterShaderState
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: loadedCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.loadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.loadedCharacterHandler
+  name: characterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.characterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.characterShaderState
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: loadedCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: characterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: protected TCharacterHandler loadedCharacterHandler
+    content: protected TCharacterShaderState characterShaderState
     return:
-      type: '{TCharacterHandler}'
-    content.vb: Protected loadedCharacterHandler As TCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).loadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).loadedCharacterHandler
+      type: '{TCharacterShaderState}'
+    content.vb: Protected characterShaderState As TCharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).characterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).characterShaderState
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   id: CharacterType
@@ -94,17 +94,17 @@ items:
   - csharp
   - vb
   name: CharacterType
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -117,43 +117,43 @@ items:
     content.vb: Public ReadOnly Property CharacterType As TCharacterType
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType*
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterType
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler
-  id: LoadedCharacterHandler
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterType
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState
+  id: CharacterShaderState
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: LoadedCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
+  name: CharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterShaderState
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LoadedCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   example: []
   syntax:
-    content: public TCharacterHandler LoadedCharacterHandler { get; }
+    content: public TCharacterShaderState CharacterShaderState { get; }
     parameters: []
     return:
-      type: '{TCharacterHandler}'
-    content.vb: Public ReadOnly Property LoadedCharacterHandler As TCharacterHandler
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler*
+      type: '{TCharacterShaderState}'
+    content.vb: Public ReadOnly Property CharacterShaderState As TCharacterShaderState
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState*
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.LoadedCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterShaderState
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID
   id: CharacterGUID
@@ -162,17 +162,17 @@ items:
   - csharp
   - vb
   name: CharacterGUID
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterGUID
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterGUID
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterGUID
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterGUID
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGUID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -185,9 +185,9 @@ items:
     content.vb: Public ReadOnly Property CharacterGUID As Guid
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID*
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterGUID
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterGUID
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterGUID
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterGUID
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterGUID
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterGUID
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   id: CharacterName
@@ -196,17 +196,17 @@ items:
   - csharp
   - vb
   name: CharacterName
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -219,9 +219,9 @@ items:
     content.vb: Public ReadOnly Property CharacterName As String
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName*
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterName
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName
   id: CharacterDisplayName
@@ -230,17 +230,17 @@ items:
   - csharp
   - vb
   name: CharacterDisplayName
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterDisplayName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterDisplayName
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterDisplayName
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -253,9 +253,9 @@ items:
     content.vb: Public Property CharacterDisplayName As String
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName*
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterDisplayName
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterDisplayName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterDisplayName
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterDisplayName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.OnCharacterDisplayNameChanged
   commentId: E:BlazerTech.CharacterManagement.Characters.CharacterBase`2.OnCharacterDisplayNameChanged
   id: OnCharacterDisplayNameChanged
@@ -264,17 +264,17 @@ items:
   - csharp
   - vb
   name: OnCharacterDisplayNameChanged
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.OnCharacterDisplayNameChanged
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.OnCharacterDisplayNameChanged
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.OnCharacterDisplayNameChanged
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.OnCharacterDisplayNameChanged
   type: Event
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterDisplayNameChanged
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -285,9 +285,9 @@ items:
       type: System.EventHandler{System.String}
     content.vb: Public Event OnCharacterDisplayNameChanged As EventHandler(Of String)
   implements:
-  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.OnCharacterDisplayNameChanged
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).OnCharacterDisplayNameChanged
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).OnCharacterDisplayNameChanged
+  - BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.OnCharacterDisplayNameChanged
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).OnCharacterDisplayNameChanged
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).OnCharacterDisplayNameChanged
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
   id: IsValid
@@ -296,17 +296,17 @@ items:
   - csharp
   - vb
   name: IsValid
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.IsValid
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValid
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.IsValid
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.IsValid
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -321,8 +321,8 @@ items:
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid*
   implements:
   - BlazerTech.CharacterManagement.Core.IValidatable.IsValid
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).IsValid
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).IsValid
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0,System.String)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0,System.String)
   id: '#ctor(System.String,`0,System.String)'
@@ -331,17 +331,17 @@ items:
   - csharp
   - vb
   name: CharacterBase(string, TCharacterType, string)
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterBase(string, TCharacterType, string)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterBase(string, TCharacterType, string)
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterBase(string, TCharacterType, string)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterBase(string, TCharacterType, string)
   type: Constructor
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -356,8 +356,8 @@ items:
       type: System.String
     content.vb: Public Sub New(characterName As String, characterType As TCharacterType, displayName As String = "")
   overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).New(String, TCharacterType, String)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).New(String, TCharacterType, String)
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).New(String, TCharacterType, String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).New(String, TCharacterType, String)
   name.vb: New(String, TCharacterType, String)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck
@@ -367,17 +367,17 @@ items:
   - csharp
   - vb
   name: PerformValidationCheck()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.PerformValidationCheck()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.PerformValidationCheck()
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.PerformValidationCheck()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.PerformValidationCheck()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -400,222 +400,224 @@ items:
     commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   implements:
   - BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).PerformValidationCheck()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).PerformValidationCheck()
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
-  id: SetCharacterInvalid
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).PerformValidationCheck()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).PerformValidationCheck()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid
+  id: MarkCharacterInvalid
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: SetCharacterInvalid()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.SetCharacterInvalid()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.SetCharacterInvalid()
+  name: MarkCharacterInvalid()
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.MarkCharacterInvalid()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.MarkCharacterInvalid()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: SetCharacterInvalid
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: MarkCharacterInvalid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 94
+    startLine: 98
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Mark the character as invalid.
+  example: []
   syntax:
-    content: public void SetCharacterInvalid()
-    content.vb: Public Sub SetCharacterInvalid()
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).SetCharacterInvalid()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).SetCharacterInvalid()
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler(System.Object)
-  id: AcquireCharacterHandler(System.Object)
+    content: public void MarkCharacterInvalid()
+    content.vb: Public Sub MarkCharacterInvalid()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).MarkCharacterInvalid()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).MarkCharacterInvalid()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState(System.Object)
+  id: AcquireCharacterShaderState(System.Object)
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: AcquireCharacterHandler(object)
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandler(object)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandler(object)
+  name: AcquireCharacterShaderState(object)
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderState(object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderState(object)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: AcquireCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AcquireCharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 100
+    startLine: 104
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public TCharacterHandler AcquireCharacterHandler(object owner)
+    content: public TCharacterShaderState AcquireCharacterShaderState(object owner)
     parameters:
     - id: owner
       type: System.Object
     return:
-      type: '{TCharacterHandler}'
-    content.vb: Public Function AcquireCharacterHandler(owner As Object) As TCharacterHandler
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandler(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandler(Object)
-  name.vb: AcquireCharacterHandler(Object)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync(System.Object)
-  id: AcquireCharacterHandlerAsync(System.Object)
+      type: '{TCharacterShaderState}'
+    content.vb: Public Function AcquireCharacterShaderState(owner As Object) As TCharacterShaderState
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderState(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderState(Object)
+  name.vb: AcquireCharacterShaderState(Object)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync(System.Object)
+  id: AcquireCharacterShaderStateAsync(System.Object)
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: AcquireCharacterHandlerAsync(object)
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandlerAsync(object)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandlerAsync(object)
+  name: AcquireCharacterShaderStateAsync(object)
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderStateAsync(object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderStateAsync(object)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: AcquireCharacterHandlerAsync
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AcquireCharacterShaderStateAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 115
+    startLine: 119
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public Task<TCharacterHandler> AcquireCharacterHandlerAsync(object owner)
+    content: public Task<TCharacterShaderState> AcquireCharacterShaderStateAsync(object owner)
     parameters:
     - id: owner
       type: System.Object
     return:
-      type: System.Threading.Tasks.Task{{TCharacterHandler}}
-    content.vb: Public Function AcquireCharacterHandlerAsync(owner As Object) As Task(Of TCharacterHandler)
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandlerAsync(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandlerAsync(Object)
-  name.vb: AcquireCharacterHandlerAsync(Object)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)
-  id: ReleaseCharacterHandler(System.Object)
+      type: System.Threading.Tasks.Task{{TCharacterShaderState}}
+    content.vb: Public Function AcquireCharacterShaderStateAsync(owner As Object) As Task(Of TCharacterShaderState)
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderStateAsync(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderStateAsync(Object)
+  name.vb: AcquireCharacterShaderStateAsync(Object)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState(System.Object)
+  id: ReleaseCharacterShaderState(System.Object)
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: ReleaseCharacterHandler(object)
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.ReleaseCharacterHandler(object)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.ReleaseCharacterHandler(object)
+  name: ReleaseCharacterShaderState(object)
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.ReleaseCharacterShaderState(object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.ReleaseCharacterShaderState(object)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: ReleaseCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ReleaseCharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 126
+    startLine: 130
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public void ReleaseCharacterHandler(object owner)
+    content: public void ReleaseCharacterShaderState(object owner)
     parameters:
     - id: owner
       type: System.Object
-    content.vb: Public Sub ReleaseCharacterHandler(owner As Object)
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).ReleaseCharacterHandler(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).ReleaseCharacterHandler(Object)
-  name.vb: ReleaseCharacterHandler(Object)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler
-  id: LoadCharacterHandler
+    content.vb: Public Sub ReleaseCharacterShaderState(owner As Object)
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).ReleaseCharacterShaderState(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).ReleaseCharacterShaderState(Object)
+  name.vb: ReleaseCharacterShaderState(Object)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState
+  id: LoadCharacterShaderState
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: LoadCharacterHandler()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandler()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandler()
+  name: LoadCharacterShaderState()
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderState()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderState()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LoadCharacterHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 138
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: protected abstract void LoadCharacterHandler()
-    content.vb: Protected MustOverride Sub LoadCharacterHandler()
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandler()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandler()
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync
-  id: LoadCharacterHandlerAsync
-  parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
-  langs:
-  - csharp
-  - vb
-  name: LoadCharacterHandlerAsync()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandlerAsync()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandlerAsync()
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LoadCharacterHandlerAsync
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 140
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: protected abstract Task LoadCharacterHandlerAsync()
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Protected MustOverride Function LoadCharacterHandlerAsync() As Task
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandlerAsync()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandlerAsync()
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler
-  id: UnloadCharacterHandler
-  parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
-  langs:
-  - csharp
-  - vb
-  name: UnloadCharacterHandler()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.UnloadCharacterHandler()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.UnloadCharacterHandler()
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: UnloadCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadCharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
     startLine: 142
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: protected virtual void UnloadCharacterHandler()
-    content.vb: Protected Overridable Sub UnloadCharacterHandler()
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).UnloadCharacterHandler()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).UnloadCharacterHandler()
+    content: protected abstract void LoadCharacterShaderState()
+    content.vb: Protected MustOverride Sub LoadCharacterShaderState()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderState()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderState()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync
+  id: LoadCharacterShaderStateAsync
+  parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
+  langs:
+  - csharp
+  - vb
+  name: LoadCharacterShaderStateAsync()
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderStateAsync()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderStateAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadCharacterShaderStateAsync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: protected abstract Task LoadCharacterShaderStateAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected MustOverride Function LoadCharacterShaderStateAsync() As Task
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderStateAsync()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderStateAsync()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState
+  id: UnloadCharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
+  langs:
+  - csharp
+  - vb
+  name: UnloadCharacterShaderState()
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.UnloadCharacterShaderState()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.UnloadCharacterShaderState()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: UnloadCharacterShaderState
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs
+    startLine: 146
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: protected virtual void UnloadCharacterShaderState()
+    content.vb: Protected Overridable Sub UnloadCharacterShaderState()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState*
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).UnloadCharacterShaderState()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).UnloadCharacterShaderState()
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -658,17 +660,17 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}
   parent: BlazerTech.CharacterManagement.Characters
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
-  name: ICharacter<TCharacterType, TCharacterHandler>
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler)
-  name.vb: ICharacter(Of TCharacterType, TCharacterHandler)
+  name: ICharacter<TCharacterType, TCharacterShaderState>
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState)
+  name.vb: ICharacter(Of TCharacterType, TCharacterShaderState)
   spec.csharp:
   - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
     name: ICharacter
@@ -677,7 +679,7 @@ references:
   - name: TCharacterType
   - name: ','
   - name: " "
-  - name: TCharacterHandler
+  - name: TCharacterShaderState
   - name: '>'
   spec.vb:
   - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
@@ -689,7 +691,7 @@ references:
   - name: TCharacterType
   - name: ','
   - name: " "
-  - name: TCharacterHandler
+  - name: TCharacterShaderState
   - name: )
 - uid: BlazerTech.CharacterManagement.Core.IValidatable
   commentId: T:BlazerTech.CharacterManagement.Core.IValidatable
@@ -766,34 +768,34 @@ references:
   - uid: BlazerTech.CharacterManagement.Core
     name: Core
     href: BlazerTech.CharacterManagement.Core.html
-- uid: '{TCharacterHandler}'
-  commentId: '!:TCharacterHandler'
-  definition: TCharacterHandler
-  name: TCharacterHandler
-  nameWithType: TCharacterHandler
-  fullName: TCharacterHandler
-- uid: TCharacterHandler
-  name: TCharacterHandler
-  nameWithType: TCharacterHandler
-  fullName: TCharacterHandler
+- uid: '{TCharacterShaderState}'
+  commentId: '!:TCharacterShaderState'
+  definition: TCharacterShaderState
+  name: TCharacterShaderState
+  nameWithType: TCharacterShaderState
+  fullName: TCharacterShaderState
+- uid: TCharacterShaderState
+  name: TCharacterShaderState
+  nameWithType: TCharacterShaderState
+  fullName: TCharacterShaderState
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType
   name: CharacterType
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterType
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterType
   commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.CharacterType
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterType
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterType
   name: CharacterType
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterType
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterType
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.CharacterType
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).CharacterType
 - uid: '{TCharacterType}'
   commentId: '!:TCharacterType'
   definition: TCharacterType
@@ -812,50 +814,50 @@ references:
   name: TCharacterType
   nameWithType: TCharacterType
   fullName: TCharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler
-  name: LoadedCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.LoadedCharacterHandler
-  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.LoadedCharacterHandler
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
-  definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_LoadedCharacterHandler
-  name: LoadedCharacterHandler
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_LoadedCharacterHandler
-  name: LoadedCharacterHandler
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterShaderState
+  name: CharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterShaderState
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterShaderState
+  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.CharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
+  definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterShaderState
+  name: CharacterShaderState
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.CharacterShaderState
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).CharacterShaderState
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterShaderState
+  name: CharacterShaderState
+  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID
   name: CharacterGUID
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterGUID
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterGUID
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterGUID
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterGUID
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterGUID
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterGUID
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterGUID
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterGUID
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterGUID
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterGUID
   commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.CharacterGUID
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterGUID
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterGUID
   name: CharacterGUID
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterGUID
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterGUID
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterGUID
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterGUID
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.CharacterGUID
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.CharacterGUID
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).CharacterGUID
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).CharacterGUID
 - uid: System.Guid
   commentId: T:System.Guid
   parent: System
@@ -876,20 +878,20 @@ references:
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName
   name: CharacterName
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterName
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterName
   commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.CharacterName
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterName
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterName
   name: CharacterName
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterName
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterName
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.CharacterName
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).CharacterName
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -913,20 +915,20 @@ references:
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName
   name: CharacterDisplayName
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterDisplayName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterDisplayName
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterDisplayName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterDisplayName
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.CharacterDisplayName
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterDisplayName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.CharacterDisplayName
   commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.CharacterDisplayName
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterDisplayName
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterDisplayName
   name: CharacterDisplayName
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterDisplayName
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterDisplayName
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterDisplayName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterDisplayName
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.CharacterDisplayName
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).CharacterDisplayName
 - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterDisplayName
   commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterDisplayName
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterDisplayName
@@ -935,16 +937,16 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterDisplayName
   nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterDisplayName
   fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterDisplayName
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}.OnCharacterDisplayNameChanged
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}.OnCharacterDisplayNameChanged
   commentId: E:BlazerTech.CharacterManagement.Characters.ICharacter{`0,`1}.OnCharacterDisplayNameChanged
-  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterHandler}}
+  parent: BlazerTech.CharacterManagement.Characters.ICharacter{{TCharacterType},{TCharacterShaderState}}
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2.OnCharacterDisplayNameChanged
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_OnCharacterDisplayNameChanged
   name: OnCharacterDisplayNameChanged
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.OnCharacterDisplayNameChanged
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.OnCharacterDisplayNameChanged
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).OnCharacterDisplayNameChanged
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).OnCharacterDisplayNameChanged
+  nameWithType: ICharacter<TCharacterType, TCharacterShaderState>.OnCharacterDisplayNameChanged
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterShaderState>.OnCharacterDisplayNameChanged
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterShaderState).OnCharacterDisplayNameChanged
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterShaderState).OnCharacterDisplayNameChanged
 - uid: System.EventHandler{System.String}
   commentId: T:System.EventHandler{System.String}
   parent: System
@@ -1020,10 +1022,10 @@ references:
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
   name: IsValid
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.IsValid
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValid
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.IsValid
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.IsValid
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).IsValid
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).IsValid
 - uid: BlazerTech.CharacterManagement.Core.IValidatable.IsValid
   commentId: P:BlazerTech.CharacterManagement.Core.IValidatable.IsValid
   parent: BlazerTech.CharacterManagement.Core.IValidatable
@@ -1046,35 +1048,35 @@ references:
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2__ctor_System_String__0_System_String_
   name: CharacterBase
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterBase
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterBase
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).New
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).New
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterBase
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterBase
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).New
   name.vb: New
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType
   name: CharacterType
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterType
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterType
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName
   name: CharacterName
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.CharacterName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).CharacterName
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck
   name: PerformValidationCheck
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.PerformValidationCheck
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.PerformValidationCheck
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).PerformValidationCheck
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).PerformValidationCheck
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.PerformValidationCheck
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.PerformValidationCheck
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).PerformValidationCheck
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).PerformValidationCheck
 - uid: BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
   parent: BlazerTech.CharacterManagement.Core.IValidatable
@@ -1094,48 +1096,48 @@ references:
     href: BlazerTech.CharacterManagement.Core.IValidatable.html#BlazerTech_CharacterManagement_Core_IValidatable_PerformValidationCheck
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid
-  name: SetCharacterInvalid
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.SetCharacterInvalid
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.SetCharacterInvalid
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).SetCharacterInvalid
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).SetCharacterInvalid
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_
-  name: AcquireCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandler
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_
-  name: AcquireCharacterHandlerAsync
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandlerAsync
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.AcquireCharacterHandlerAsync
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandlerAsync
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).AcquireCharacterHandlerAsync
-- uid: System.Threading.Tasks.Task{{TCharacterHandler}}
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_MarkCharacterInvalid
+  name: MarkCharacterInvalid
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.MarkCharacterInvalid
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.MarkCharacterInvalid
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).MarkCharacterInvalid
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).MarkCharacterInvalid
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderState_System_Object_
+  name: AcquireCharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderState
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderStateAsync_System_Object_
+  name: AcquireCharacterShaderStateAsync
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderStateAsync
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.AcquireCharacterShaderStateAsync
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderStateAsync
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).AcquireCharacterShaderStateAsync
+- uid: System.Threading.Tasks.Task{{TCharacterShaderState}}
   commentId: T:System.Threading.Tasks.Task{`1}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<TCharacterHandler>
-  nameWithType: Task<TCharacterHandler>
-  fullName: System.Threading.Tasks.Task<TCharacterHandler>
-  nameWithType.vb: Task(Of TCharacterHandler)
-  fullName.vb: System.Threading.Tasks.Task(Of TCharacterHandler)
-  name.vb: Task(Of TCharacterHandler)
+  name: Task<TCharacterShaderState>
+  nameWithType: Task<TCharacterShaderState>
+  fullName: System.Threading.Tasks.Task<TCharacterShaderState>
+  nameWithType.vb: Task(Of TCharacterShaderState)
+  fullName.vb: System.Threading.Tasks.Task(Of TCharacterShaderState)
+  name.vb: Task(Of TCharacterShaderState)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - name: TCharacterHandler
+  - name: TCharacterShaderState
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1145,7 +1147,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TCharacterHandler
+  - name: TCharacterShaderState
   - name: )
 - uid: System.Threading.Tasks.Task`1
   commentId: T:System.Threading.Tasks.Task`1
@@ -1212,30 +1214,30 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_
-  name: ReleaseCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.ReleaseCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.ReleaseCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).ReleaseCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).ReleaseCharacterHandler
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler
-  name: LoadCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandler
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync
-  name: LoadCharacterHandlerAsync
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandlerAsync
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.LoadCharacterHandlerAsync
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandlerAsync
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).LoadCharacterHandlerAsync
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterShaderState_System_Object_
+  name: ReleaseCharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.ReleaseCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.ReleaseCharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).ReleaseCharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).ReleaseCharacterShaderState
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderState
+  name: LoadCharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderState
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderStateAsync
+  name: LoadCharacterShaderStateAsync
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderStateAsync
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.LoadCharacterShaderStateAsync
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderStateAsync
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).LoadCharacterShaderStateAsync
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -1244,11 +1246,11 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler
-  name: UnloadCharacterHandler
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.UnloadCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.UnloadCharacterHandler
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).UnloadCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).UnloadCharacterHandler
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterShaderState
+  name: UnloadCharacterShaderState
+  nameWithType: CharacterBase<TCharacterType, TCharacterShaderState>.UnloadCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterShaderState>.UnloadCharacterShaderState
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterShaderState).UnloadCharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterShaderState).UnloadCharacterShaderState

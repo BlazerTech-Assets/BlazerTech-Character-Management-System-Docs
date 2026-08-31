@@ -14,6 +14,7 @@ items:
   - BlazerTech.CharacterManagement.Core.EssentialsLoader
   - BlazerTech.CharacterManagement.Core.ExtensionMethods
   - BlazerTech.CharacterManagement.Core.FourDirectional
+  - BlazerTech.CharacterManagement.Core.GlobalConstants
   - BlazerTech.CharacterManagement.Core.IValidatable
   - BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
   - BlazerTech.CharacterManagement.Core.RotateGO
@@ -225,6 +226,12 @@ references:
   name: CMSInitializationHandler
   nameWithType: CMSInitializationHandler
   fullName: BlazerTech.CharacterManagement.Core.CMSInitializationHandler
+- uid: BlazerTech.CharacterManagement.Core.GlobalConstants
+  commentId: T:BlazerTech.CharacterManagement.Core.GlobalConstants
+  href: BlazerTech.CharacterManagement.Core.GlobalConstants.html
+  name: GlobalConstants
+  nameWithType: GlobalConstants
+  fullName: BlazerTech.CharacterManagement.Core.GlobalConstants
 - uid: BlazerTech.CharacterManagement.Core
   commentId: N:BlazerTech.CharacterManagement.Core
   href: BlazerTech.html

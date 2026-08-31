@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  commentId: T:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  id: CCMSaveCharacterButtonEditor
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: CCMSaveCharacterButtonEditor
+  nameWithType: CCMSaveCharacterButtonEditor
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CCMSaveCharacterButtonEditor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: >-
+      [CustomEditor(typeof(CCMSaveCharacterButton))]
+
+      public class CCMSaveCharacterButtonEditor : ButtonEditor
+    content.vb: >-
+      <CustomEditor(GetType(CCMSaveCharacterButton))>
+
+      Public Class CCMSaveCharacterButtonEditor Inherits ButtonEditor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  - UnityEditor.UI.SelectableEditor
+  - UnityEditor.UI.ButtonEditor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI
+  commentId: M:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: CCMSaveCharacterButtonEditor.OnInspectorGUI()
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnInspectorGUI
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  summary: <p>Implement this function to make a custom inspector.</p>
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overridden: UnityEditor.UI.ButtonEditor.OnInspectorGUI
+  overload: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI*
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: UnityEditor.UI.SelectableEditor
+  commentId: T:UnityEditor.UI.SelectableEditor
+  parent: UnityEditor.UI
+  isExternal: true
+  name: SelectableEditor
+  nameWithType: SelectableEditor
+  fullName: UnityEditor.UI.SelectableEditor
+- uid: UnityEditor.UI.ButtonEditor
+  commentId: T:UnityEditor.UI.ButtonEditor
+  parent: UnityEditor.UI
+  isExternal: true
+  name: ButtonEditor
+  nameWithType: ButtonEditor
+  fullName: UnityEditor.UI.ButtonEditor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.UI
+  commentId: N:UnityEditor.UI
+  isExternal: true
+  name: UnityEditor.UI
+  nameWithType: UnityEditor.UI
+  fullName: UnityEditor.UI
+  spec.csharp:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.UI
+    name: UI
+    isExternal: true
+- uid: UnityEditor.UI.ButtonEditor.OnInspectorGUI
+  commentId: M:UnityEditor.UI.ButtonEditor.OnInspectorGUI
+  parent: UnityEditor.UI.ButtonEditor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: ButtonEditor.OnInspectorGUI()
+  fullName: UnityEditor.UI.ButtonEditor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.UI.ButtonEditor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.UI.ButtonEditor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.html#BlazerTech_CharacterManagement_Components_CCMSaveCharacterButtonEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: CCMSaveCharacterButtonEditor.OnInspectorGUI
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.OnInspectorGUI

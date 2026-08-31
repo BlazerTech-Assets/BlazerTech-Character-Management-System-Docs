@@ -111,7 +111,7 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase&lt;TCharacterType, TCharacterHandler&gt;</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase&lt;TCharacterType, TCharacterShaderState&gt;</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -157,12 +157,16 @@ An instance of this class is used for each Layered Character Type.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO.html">CharacterLayerOption.EquippedCharacterLayerOption_DTO</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.html">CharacterLayerOption.CharacterLayerOption_DTO</a></dt>
       <dd><p>Data Transfer Object (DTO) used to save and load a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html">CharacterLayerOption.LoadedSpriteDataContainer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterShaderState.html">CharacterShaderState</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -172,7 +176,7 @@ An instance of this class is used for each Layered Character Type.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a></dt>
-      <dd><p>bass Scriptable Object for all Character Types.</p>
+      <dd><p>bass class for all Character Types.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -185,6 +189,10 @@ An instance of this class is used for each Layered Character Type.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.html">FixedCharacterGroup.FixedCharacterGroup_DTO</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO.html">FixedLayeredCharacterTemplateSO</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -212,11 +220,11 @@ Each layer can be placed on top of each other in order to create the final chara
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.html">LayeredCharacter.LayeredCharacter_DTO</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html">LayeredCharacter.LayeredCharacterShaderState</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.html">LayeredCharacter.LoadedLayeredCharacterHandler</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.html">LayeredCharacter.LayeredCharacter_DTO</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -230,12 +238,8 @@ Each layer can be placed on top of each other in order to create the final chara
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html">LayeredCharacterSnapshot</a></dt>
-      <dd><p>A snapshot of a character that can later be applied to the same character or another of the same <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>.</p>
+      <dd><p>A snapshot of a character that can later be applied to any character using the same <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>.</p>
 </dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.html">LayeredCharacterTemplateEditor</a></dt>
-      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html">LayeredCharacterTemplateSO</a></dt>
@@ -250,7 +254,19 @@ Each layer can be placed on top of each other in order to create the final chara
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html">LoadedCharacterHandlerBase</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.html">LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html">RandomizedLayerOptionMapping</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.html">RandomizedLayerOptionMapping.WeightedLayerOptionEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.RandomizedLayeredCharacterTemplateSO.html">RandomizedLayeredCharacterTemplateSO</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -267,7 +283,7 @@ Each layer can be placed on top of each other in order to create the final chara
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html">UnifiedCharacter.LoadedUnifiedCharacterHandler</a></dt>
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html">UnifiedCharacter.UnifiedCharacterShaderState</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -310,6 +326,10 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType.html">MultiCharacterGroupType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.RandomSelectionMode.html">RandomSelectionMode</a></dt>
       <dd></dd>
     </dl>
 

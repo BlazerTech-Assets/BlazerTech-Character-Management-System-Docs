@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  id: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  - BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+  href: BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE.html
+  name: GunShootOLE
+  nameWithType: GunShootOLE
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.html
+  name: OverlayLayerExtension
+  nameWithType: OverlayLayerExtension
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html
+  name: OverlayLayerContext
+  nameWithType: OverlayLayerContext
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.html
+  name: OverlayLayerSortingMode
+  nameWithType: OverlayLayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.html
+  name: OverlayLayerAnimationSyncMode
+  nameWithType: OverlayLayerAnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.html
+  name: OverlayLayerOffsetMode
+  nameWithType: OverlayLayerOffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO
+  nameWithType: CharacterOverlayLayerSO
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO.AnimatorParam
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html

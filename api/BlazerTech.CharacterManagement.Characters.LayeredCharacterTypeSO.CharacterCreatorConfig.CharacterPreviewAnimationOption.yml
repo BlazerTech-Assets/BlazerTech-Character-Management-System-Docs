@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  id: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.AnimName
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.DisplayName
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterPreviewAnimationOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+    content.vb: >-
+      <Serializable>
+
+      Public Class LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.AnimName
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.AnimName
+  id: AnimName
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  langs:
+  - csharp
+  - vb
+  name: AnimName
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.AnimName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.AnimName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+    startLine: 158
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string AnimName
+    return:
+      type: System.String
+    content.vb: Public AnimName As String
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.DisplayName
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.DisplayName
+  id: DisplayName
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.DisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.DisplayName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: DisplayName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string DisplayName
+    return:
+      type: System.String
+    content.vb: Public DisplayName As String
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

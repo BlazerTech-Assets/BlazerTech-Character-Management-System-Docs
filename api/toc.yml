@@ -1,11 +1,14 @@
 ### YamlMime:TableOfContent
 items:
-- uid: BlazerTech
-  name: BlazerTech
+- uid: BlazerTech.CharacterManagement.Attributes
+  name: BlazerTech.CharacterManagement.Attributes
   type: Namespace
   items:
-  - uid: BlazerTech.GameManager
-    name: GameManager
+  - uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+    name: BoxGroupAttribute
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+    name: ReadOnlyAttribute
     type: Class
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   name: BlazerTech.CharacterManagement.CharacterCreator
@@ -14,8 +17,8 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
     name: CCMAnimationPreviewButtonHandler
     type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager
-    name: CCMAnimationPreviewSwitcherManager
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationSwitcher
+    name: CCMAnimationSwitcher
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
     name: CCMBase
@@ -98,12 +101,12 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
     name: ILoadingScreen
     type: Interface
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement
-    name: LayerOptionUIElement
-    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
     name: LayerSelectorInitializationMode
     type: Enum
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+    name: LayerSelectorListElement
+    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
     name: LayeredCharacterListEntry
     type: Class
@@ -133,7 +136,7 @@ items:
   type: Namespace
   items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2
-    name: CharacterBase<TCharacterType, TCharacterHandler>
+    name: CharacterBase<TCharacterType, TCharacterShaderState>
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
     name: CharacterDraft
@@ -174,11 +177,14 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
     name: CharacterLayerOption
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO
-    name: CharacterLayerOption.EquippedCharacterLayerOption_DTO
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+    name: CharacterLayerOption.CharacterLayerOption_DTO
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
     name: CharacterLayerOption.LoadedSpriteDataContainer
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+    name: CharacterShaderState
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
     name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
@@ -194,6 +200,9 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
     name: FixedCharacterGroup.FixedCharacterGroup_DTO
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO
+    name: FixedLayeredCharacterTemplateSO
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup
     name: FlexibleCharacterGroup
@@ -213,11 +222,11 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     name: LayeredCharacter
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState
+    name: LayeredCharacter.LayeredCharacterShaderState
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
     name: LayeredCharacter.LayeredCharacter_DTO
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler
-    name: LayeredCharacter.LoadedLayeredCharacterHandler
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
     name: LayeredCharacterCreationMode
@@ -231,9 +240,6 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
     name: LayeredCharacterSnapshot
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
-    name: LayeredCharacterTemplateEditor
-    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
     name: LayeredCharacterTemplateSO
     type: Class
@@ -243,12 +249,24 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
     name: LayeredCharacterTypeSO.CharacterCreatorConfig
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-    name: LoadedCharacterHandlerBase
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+    name: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
     name: MultiCharacterGroupType
     type: Enum
+  - uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+    name: RandomSelectionMode
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+    name: RandomizedLayerOptionMapping
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+    name: RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayeredCharacterTemplateSO
+    name: RandomizedLayeredCharacterTemplateSO
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup
     name: SingleSlotCharacterGroup
     type: Class
@@ -258,8 +276,8 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
     name: UnifiedCharacter
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler
-    name: UnifiedCharacter.LoadedUnifiedCharacterHandler
+  - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+    name: UnifiedCharacter.UnifiedCharacterShaderState
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
     name: UnifiedCharacterTemplateSO
@@ -271,9 +289,18 @@ items:
   name: BlazerTech.CharacterManagement.Components
   type: Namespace
   items:
+  - uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+    name: AnimationSynchronizer
+    type: Class
   - uid: BlazerTech.CharacterManagement.Components.ButtonMode
     name: ButtonMode
     type: Enum
+  - uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+    name: CCMSaveCharacterButton
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+    name: CCMSaveCharacterButtonEditor
+    type: Class
   - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
     name: CharacterAnimatorHandlerBase
     type: Class
@@ -286,14 +313,23 @@ items:
   - uid: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
     name: CharacterMultiGroupLoadMethod
     type: Enum
+  - uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+    name: CharacterOverlayLayerHandler
+    type: Class
   - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase
     name: CharacterRendererBase
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
-    name: LayeredCharacterGroupRenderer
+  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
+    name: LayeredCharacterGroupEntryRenderer
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
     name: LayeredCharacterTemplateRenderer
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    name: OverlayLayersHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+    name: OverlayLayersHandler.ActiveOverlayLayerInfo
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
     name: RandomLayeredCharacterRenderer
@@ -344,6 +380,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Core.FourDirectional
     name: FourDirectional
     type: Enum
+  - uid: BlazerTech.CharacterManagement.Core.GlobalConstants
+    name: GlobalConstants
+    type: Class
   - uid: BlazerTech.CharacterManagement.Core.IValidatable
     name: IValidatable
     type: Interface
@@ -371,6 +410,22 @@ items:
   - uid: BlazerTech.CharacterManagement.Core.TwoDirectional
     name: TwoDirectional
     type: Enum
+- uid: BlazerTech.CharacterManagement.Editor
+  name: BlazerTech.CharacterManagement.Editor
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+    name: CharacterOverlayLayerSOEditor
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor
+    name: LayeredCharacterTemplateEditor
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor
+    name: RandomizedLayeredCharacterTemplateEditor
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+    name: ReadOnlyDrawer
+    type: Class
 - uid: BlazerTech.CharacterManagement.Editor.Inspectors
   name: BlazerTech.CharacterManagement.Editor.Inspectors
   type: Namespace
@@ -388,6 +443,13 @@ items:
   - uid: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer
     name: CharacterTypeGroupCollectionsViewer
     type: Class
+- uid: BlazerTech.CharacterManagement.Interfaces
+  name: BlazerTech.CharacterManagement.Interfaces
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable
+    name: IInteractable
+    type: Interface
 - uid: BlazerTech.CharacterManagement.Internal
   name: BlazerTech.CharacterManagement.Internal
   type: Namespace
@@ -414,6 +476,34 @@ items:
   - uid: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
     name: LoadingScreenObjectRotation
     type: Class
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    type: Class
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: CharacterOverlayLayerSO.AnimatorParam
+    type: Class
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+    name: GunShootOLE
+    type: Class
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+    name: OverlayLayerAnimationSyncMode
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+    name: OverlayLayerContext
+    type: Class
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+    name: OverlayLayerExtension
+    type: Class
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+    name: OverlayLayerOffsetMode
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+    name: OverlayLayerSortingMode
+    type: Enum
 - uid: BlazerTech.CharacterManagement.Samples
   name: BlazerTech.CharacterManagement.Samples
   type: Namespace
@@ -424,6 +514,12 @@ items:
   - uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
     name: AssetReferenceScene
     type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+    name: BTSampleNPCSpawner
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+    name: BTSampleNPCSpawner.NPCSpawnLocation
+    type: Class
   - uid: BlazerTech.CharacterManagement.Samples.InteractableBed
     name: InteractableBed
     type: Class
@@ -432,6 +528,15 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Samples.MenuBackRelay
     name: MenuBackRelay
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+    name: ObjectAccelerator
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler
+    name: PlayerInteractionHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.SampleNPCDeleter
+    name: SampleNPCDeleter
     type: Class
   - uid: BlazerTech.CharacterManagement.Samples.SceneChangeRelay
     name: SceneChangeRelay
@@ -448,5 +553,12 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Utilities.SerializableInterface`1
     name: SerializableInterface<T>
+    type: Class
+- uid: BlazerTech.DebugConsole
+  name: BlazerTech.DebugConsole
+  type: Namespace
+  items:
+  - uid: BlazerTech.DebugConsole.GameManager
+    name: GameManager
     type: Class
 memberLayout: SamePage

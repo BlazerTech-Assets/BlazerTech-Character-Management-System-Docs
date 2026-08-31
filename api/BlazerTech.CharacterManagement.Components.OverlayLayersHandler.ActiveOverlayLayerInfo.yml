@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  commentId: T:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  id: OverlayLayersHandler.ActiveOverlayLayerInfo
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayer
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayerHandler
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayersHandler.ActiveOverlayLayerInfo
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ActiveOverlayLayerInfo
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 343
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class OverlayLayersHandler.ActiveOverlayLayerInfo
+    content.vb: >-
+      <Serializable>
+
+      Public Class OverlayLayersHandler.ActiveOverlayLayerInfo
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayer
+  commentId: F:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayer
+  id: OverlayLayer
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayer
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayer
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayer
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 346
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public CharacterOverlayLayerSO OverlayLayer
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    content.vb: Public OverlayLayer As CharacterOverlayLayerSO
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayerHandler
+  commentId: F:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayerHandler
+  id: OverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerHandler
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.OverlayLayerHandler
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 347
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public CharacterOverlayLayerHandler OverlayLayerHandler
+    return:
+      type: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+    content.vb: Public OverlayLayerHandler As CharacterOverlayLayerHandler
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)
+  id: '#ctor(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)'
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  langs:
+  - csharp
+  - vb
+  name: ActiveOverlayLayerInfo(CharacterOverlayLayerSO, CharacterOverlayLayerHandler)
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo.ActiveOverlayLayerInfo(CharacterOverlayLayerSO, CharacterOverlayLayerHandler)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.ActiveOverlayLayerInfo(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 349
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public ActiveOverlayLayerInfo(CharacterOverlayLayerSO overlayLayer, CharacterOverlayLayerHandler overlayLayerHandler)
+    parameters:
+    - id: overlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    - id: overlayLayerHandler
+      type: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+    content.vb: Public Sub New(overlayLayer As CharacterOverlayLayerSO, overlayLayerHandler As CharacterOverlayLayerHandler)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor*
+  nameWithType.vb: OverlayLayersHandler.ActiveOverlayLayerInfo.New(CharacterOverlayLayerSO, CharacterOverlayLayerHandler)
+  fullName.vb: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.New(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler)
+  name.vb: New(CharacterOverlayLayerSO, CharacterOverlayLayerHandler)
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO
+  nameWithType: CharacterOverlayLayerSO
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html
+  name: CharacterOverlayLayerHandler
+  nameWithType: CharacterOverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.#ctor
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_ActiveOverlayLayerInfo__ctor_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_BlazerTech_CharacterManagement_Components_CharacterOverlayLayerHandler_
+  name: ActiveOverlayLayerInfo
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo.ActiveOverlayLayerInfo
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.ActiveOverlayLayerInfo
+  nameWithType.vb: OverlayLayersHandler.ActiveOverlayLayerInfo.New
+  fullName.vb: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.New
+  name.vb: New

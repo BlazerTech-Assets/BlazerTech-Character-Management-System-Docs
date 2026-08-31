@@ -8,8 +8,8 @@ items:
   - BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterDisplayName
   - BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterGUID
   - BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterName
+  - BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
   - BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterType
-  - BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
   - BlazerTech.CharacterManagement.Characters.ICharacter`2.OnCharacterDisplayNameChanged
   langs:
   - csharp
@@ -22,7 +22,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ICharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 5
@@ -56,7 +56,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 7
@@ -87,7 +87,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 8
@@ -118,7 +118,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGUID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 9
@@ -149,7 +149,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 10
@@ -165,37 +165,37 @@ items:
   overload: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterType*
   nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterType
   fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  id: LoadedCharacterHandler
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  commentId: P:BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  id: CharacterShaderState
   parent: BlazerTech.CharacterManagement.Characters.ICharacter`2
   langs:
   - csharp
   - vb
-  name: LoadedCharacterHandler
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
+  name: CharacterShaderState
+  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LoadedCharacterHandler
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: TCharacterHandler LoadedCharacterHandler { get; }
+    content: TCharacterHandler CharacterShaderState { get; }
     parameters: []
     return:
       type: '{TCharacterHandler}'
-    content.vb: ReadOnly Property LoadedCharacterHandler As TCharacterHandler
-  overload: BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler*
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
+    content.vb: ReadOnly Property CharacterShaderState As TCharacterHandler
+  overload: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState*
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
 - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.OnCharacterDisplayNameChanged
   commentId: E:BlazerTech.CharacterManagement.Characters.ICharacter`2.OnCharacterDisplayNameChanged
   id: OnCharacterDisplayNameChanged
@@ -211,7 +211,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterDisplayNameChanged
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/ICharacter.cs
     startLine: 13
@@ -387,14 +387,14 @@ references:
   name: TCharacterType
   nameWithType: TCharacterType
   fullName: TCharacterType
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.ICharacter`2.LoadedCharacterHandler
-  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_LoadedCharacterHandler
-  name: LoadedCharacterHandler
-  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.LoadedCharacterHandler
-  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).LoadedCharacterHandler
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.ICharacter`2.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html#BlazerTech_CharacterManagement_Characters_ICharacter_2_CharacterShaderState
+  name: CharacterShaderState
+  nameWithType: ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>.CharacterShaderState
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler).CharacterShaderState
 - uid: '{TCharacterHandler}'
   commentId: '!:TCharacterHandler'
   definition: TCharacterHandler
@@ -402,6 +402,7 @@ references:
   nameWithType: TCharacterHandler
   fullName: TCharacterHandler
 - uid: TCharacterHandler
+  commentId: '!:TCharacterHandler'
   name: TCharacterHandler
   nameWithType: TCharacterHandler
   fullName: TCharacterHandler

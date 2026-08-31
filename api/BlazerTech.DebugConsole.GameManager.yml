@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.DebugConsole.GameManager
+  commentId: T:BlazerTech.DebugConsole.GameManager
+  id: GameManager
+  parent: BlazerTech.DebugConsole
+  children:
+  - BlazerTech.DebugConsole.GameManager.CreateError
+  - BlazerTech.DebugConsole.GameManager.CreateLog
+  - BlazerTech.DebugConsole.GameManager.CreateWarning
+  langs:
+  - csharp
+  - vb
+  name: GameManager
+  nameWithType: GameManager
+  fullName: BlazerTech.DebugConsole.GameManager
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GameManager
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.DebugConsole
+  syntax:
+    content: 'public class GameManager : MonoBehaviour'
+    content.vb: Public Class GameManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.DebugConsole.GameManager.CreateLog
+  commentId: M:BlazerTech.DebugConsole.GameManager.CreateLog
+  id: CreateLog
+  parent: BlazerTech.DebugConsole.GameManager
+  langs:
+  - csharp
+  - vb
+  name: CreateLog()
+  nameWithType: GameManager.CreateLog()
+  fullName: BlazerTech.DebugConsole.GameManager.CreateLog()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CreateLog
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.DebugConsole
+  syntax:
+    content: public void CreateLog()
+    content.vb: Public Sub CreateLog()
+  overload: BlazerTech.DebugConsole.GameManager.CreateLog*
+- uid: BlazerTech.DebugConsole.GameManager.CreateWarning
+  commentId: M:BlazerTech.DebugConsole.GameManager.CreateWarning
+  id: CreateWarning
+  parent: BlazerTech.DebugConsole.GameManager
+  langs:
+  - csharp
+  - vb
+  name: CreateWarning()
+  nameWithType: GameManager.CreateWarning()
+  fullName: BlazerTech.DebugConsole.GameManager.CreateWarning()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CreateWarning
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.DebugConsole
+  syntax:
+    content: public void CreateWarning()
+    content.vb: Public Sub CreateWarning()
+  overload: BlazerTech.DebugConsole.GameManager.CreateWarning*
+- uid: BlazerTech.DebugConsole.GameManager.CreateError
+  commentId: M:BlazerTech.DebugConsole.GameManager.CreateError
+  id: CreateError
+  parent: BlazerTech.DebugConsole.GameManager
+  langs:
+  - csharp
+  - vb
+  name: CreateError()
+  nameWithType: GameManager.CreateError()
+  fullName: BlazerTech.DebugConsole.GameManager.CreateError()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CreateError
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Debug Console/Samples/BlazerTech Debug Console Example/GameManager.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.DebugConsole
+  syntax:
+    content: public void CreateError()
+    content.vb: Public Sub CreateError()
+  overload: BlazerTech.DebugConsole.GameManager.CreateError*
+references:
+- uid: BlazerTech.DebugConsole
+  commentId: N:BlazerTech.DebugConsole
+  href: BlazerTech.html
+  name: BlazerTech.DebugConsole
+  nameWithType: BlazerTech.DebugConsole
+  fullName: BlazerTech.DebugConsole
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.DebugConsole
+    name: DebugConsole
+    href: BlazerTech.DebugConsole.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.DebugConsole
+    name: DebugConsole
+    href: BlazerTech.DebugConsole.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.DebugConsole.GameManager.CreateLog*
+  commentId: Overload:BlazerTech.DebugConsole.GameManager.CreateLog
+  href: BlazerTech.DebugConsole.GameManager.html#BlazerTech_DebugConsole_GameManager_CreateLog
+  name: CreateLog
+  nameWithType: GameManager.CreateLog
+  fullName: BlazerTech.DebugConsole.GameManager.CreateLog
+- uid: BlazerTech.DebugConsole.GameManager.CreateWarning*
+  commentId: Overload:BlazerTech.DebugConsole.GameManager.CreateWarning
+  href: BlazerTech.DebugConsole.GameManager.html#BlazerTech_DebugConsole_GameManager_CreateWarning
+  name: CreateWarning
+  nameWithType: GameManager.CreateWarning
+  fullName: BlazerTech.DebugConsole.GameManager.CreateWarning
+- uid: BlazerTech.DebugConsole.GameManager.CreateError*
+  commentId: Overload:BlazerTech.DebugConsole.GameManager.CreateError
+  href: BlazerTech.DebugConsole.GameManager.html#BlazerTech_DebugConsole_GameManager_CreateError
+  name: CreateError
+  nameWithType: GameManager.CreateError
+  fullName: BlazerTech.DebugConsole.GameManager.CreateError

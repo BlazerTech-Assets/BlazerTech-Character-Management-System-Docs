@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSInitializationHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
     startLine: 7
@@ -69,7 +69,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Instance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
     startLine: 11
@@ -98,7 +98,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CoreInitializationFinished
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
     startLine: 15
@@ -127,7 +127,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AllInitializationFinished
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSInitializationHandler.cs
     startLine: 16

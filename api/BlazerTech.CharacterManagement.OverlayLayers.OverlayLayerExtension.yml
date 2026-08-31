@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  id: OverlayLayerExtension
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize(BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext)
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.overlayLayerContext
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerExtension
+  nameWithType: OverlayLayerExtension
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerExtension
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: 'public abstract class OverlayLayerExtension : MonoBehaviour'
+    content.vb: Public MustInherit Class OverlayLayerExtension Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - BlazerTech.CharacterManagement.OverlayLayers.GunShootOLE
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.overlayLayerContext
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.overlayLayerContext
+  id: overlayLayerContext
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  langs:
+  - csharp
+  - vb
+  name: overlayLayerContext
+  nameWithType: OverlayLayerExtension.overlayLayerContext
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.overlayLayerContext
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: overlayLayerContext
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: protected OverlayLayerContext overlayLayerContext
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+    content.vb: Protected overlayLayerContext As OverlayLayerContext
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize(BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext)
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize(BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext)
+  id: Initialize(BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext)
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+  langs:
+  - csharp
+  - vb
+  name: Initialize(OverlayLayerContext)
+  nameWithType: OverlayLayerExtension.Initialize(OverlayLayerContext)
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize(BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Initialize
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Overlay Layers/OverlayLayerExtension.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public virtual void Initialize(OverlayLayerContext context)
+    parameters:
+    - id: context
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+    content.vb: Public Overridable Sub Initialize(context As OverlayLayerContext)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize*
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext.html
+  name: OverlayLayerContext
+  nameWithType: OverlayLayerContext
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerContext
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.html#BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerExtension_Initialize_BlazerTech_CharacterManagement_OverlayLayers_OverlayLayerContext_
+  name: Initialize
+  nameWithType: OverlayLayerExtension.Initialize
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.Initialize

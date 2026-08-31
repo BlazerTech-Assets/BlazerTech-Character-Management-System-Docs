@@ -20,7 +20,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSSaveSystem
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 9
@@ -47,7 +47,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveFile
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 23
@@ -91,7 +91,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadFile
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 58
@@ -127,7 +127,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadFileWholePath
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 81
@@ -163,7 +163,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadFilesInFolder
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 130

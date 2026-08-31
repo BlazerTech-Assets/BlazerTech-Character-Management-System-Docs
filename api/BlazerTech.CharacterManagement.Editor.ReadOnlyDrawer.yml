@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  commentId: T:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  id: ReadOnlyDrawer
+  parent: BlazerTech.CharacterManagement.Editor
+  children:
+  - BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  - BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyDrawer
+  nameWithType: ReadOnlyDrawer
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ReadOnlyDrawer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  syntax:
+    content: >-
+      [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
+
+      public class ReadOnlyDrawer : PropertyDrawer
+    content.vb: >-
+      <CustomPropertyDrawer(GetType(ReadOnlyAttribute))>
+
+      Public Class ReadOnlyDrawer Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  - UnityEditor.GUIDrawer
+  - UnityEditor.PropertyDrawer
+  attributes:
+  - type: UnityEditor.CustomPropertyDrawer
+    ctor: UnityEditor.CustomPropertyDrawer.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnGUI
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  summary: <p>Override this method to make your own IMGUI based GUI for the property.</p>
+  example: []
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: UnityEngine.Rect
+      description: Rectangle on the screen to use for the property GUI.
+    - id: property
+      type: UnityEditor.SerializedProperty
+      description: The SerializedProperty to make the custom GUI for.
+    - id: label
+      type: UnityEngine.GUIContent
+      description: The label of this property.
+    content.vb: Public Overrides Sub OnGUI(position As Rect, [property] As SerializedProperty, label As GUIContent)
+  overridden: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  overload: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI*
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: ReadOnlyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GetPropertyHeight
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/Editor/ReadOnlyDrawer.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor
+  summary: <p>Override this method to specify how tall the GUI for this field is in pixels.</p>
+  example: []
+  syntax:
+    content: public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    parameters:
+    - id: property
+      type: UnityEditor.SerializedProperty
+      description: The SerializedProperty to make the custom GUI for.
+    - id: label
+      type: UnityEngine.GUIContent
+      description: The label of this property.
+    return:
+      type: System.Single
+      description: <p>The height in pixels.</p>
+    content.vb: Public Overrides Function GetPropertyHeight([property] As SerializedProperty, label As GUIContent) As Single
+  overridden: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  overload: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight*
+references:
+- uid: BlazerTech.CharacterManagement.Editor
+  commentId: N:BlazerTech.CharacterManagement.Editor
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Editor
+  nameWithType: BlazerTech.CharacterManagement.Editor
+  fullName: BlazerTech.CharacterManagement.Editor
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Editor
+    name: Editor
+    href: BlazerTech.CharacterManagement.Editor.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Editor
+    name: Editor
+    href: BlazerTech.CharacterManagement.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEditor.GUIDrawer
+  commentId: T:UnityEditor.GUIDrawer
+  parent: UnityEditor
+  isExternal: true
+  name: GUIDrawer
+  nameWithType: GUIDrawer
+  fullName: UnityEditor.GUIDrawer
+- uid: UnityEditor.PropertyDrawer
+  commentId: T:UnityEditor.PropertyDrawer
+  parent: UnityEditor
+  isExternal: true
+  name: PropertyDrawer
+  nameWithType: PropertyDrawer
+  fullName: UnityEditor.PropertyDrawer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI*
+  commentId: Overload:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI
+  href: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.html#BlazerTech_CharacterManagement_Editor_ReadOnlyDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  name: OnGUI
+  nameWithType: ReadOnlyDrawer.OnGUI
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.OnGUI
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEditor.SerializedProperty
+  commentId: T:UnityEditor.SerializedProperty
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: PropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: GetPropertyHeight
+    isExternal: true
+  - name: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: GetPropertyHeight
+    isExternal: true
+  - name: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight*
+  commentId: Overload:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight
+  href: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.html#BlazerTech_CharacterManagement_Editor_ReadOnlyDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  name: GetPropertyHeight
+  nameWithType: ReadOnlyDrawer.GetPropertyHeight
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.GetPropertyHeight
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

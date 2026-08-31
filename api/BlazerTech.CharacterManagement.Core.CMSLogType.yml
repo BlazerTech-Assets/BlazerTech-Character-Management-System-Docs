@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSLogType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 11
@@ -56,7 +56,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGroupSaveTriggerLogs
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 14
@@ -82,7 +82,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: NewCharacterCreatedLogs
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 15
@@ -108,7 +108,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterRecreatedFromDTOLogs
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 16
@@ -134,7 +134,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadedCharacterUpdatedLogs
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 17
@@ -160,7 +160,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuLogs
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
     startLine: 18

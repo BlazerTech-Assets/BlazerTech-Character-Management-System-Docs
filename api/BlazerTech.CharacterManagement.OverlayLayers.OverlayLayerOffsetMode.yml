@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  id: OverlayLayerOffsetMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.NoOffset
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.PixelOffset
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.UnitOffset
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerOffsetMode
+  nameWithType: OverlayLayerOffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerOffsetMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public enum OverlayLayerOffsetMode
+    content.vb: Public Enum OverlayLayerOffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.NoOffset
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.NoOffset
+  id: NoOffset
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  langs:
+  - csharp
+  - vb
+  name: NoOffset
+  nameWithType: OverlayLayerOffsetMode.NoOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.NoOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: NoOffset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: NoOffset = 0
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.PixelOffset
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.PixelOffset
+  id: PixelOffset
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  langs:
+  - csharp
+  - vb
+  name: PixelOffset
+  nameWithType: OverlayLayerOffsetMode.PixelOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.PixelOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: PixelOffset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: PixelOffset = 1
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.UnitOffset
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.UnitOffset
+  id: UnitOffset
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  langs:
+  - csharp
+  - vb
+  name: UnitOffset
+  nameWithType: OverlayLayerOffsetMode.UnitOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.UnitOffset
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: UnitOffset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: UnitOffset = 2
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.html
+  name: OverlayLayerOffsetMode
+  nameWithType: OverlayLayerOffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode

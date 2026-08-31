@@ -19,10 +19,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: InteractableBed
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Samples
@@ -36,7 +36,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   implements:
-  - IInteractable
+  - BlazerTech.CharacterManagement.Interfaces.IInteractable
 - uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
   commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
   id: Select(UnityEngine.GameObject)
@@ -52,10 +52,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Select
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Samples
@@ -68,7 +68,7 @@ items:
     content.vb: Public Sub [Select](gameObject As GameObject)
   overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Select*
   implements:
-  - IInteractable.Select(UnityEngine.GameObject)
+  - BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
 - uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
   commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
   id: Deselect(UnityEngine.GameObject)
@@ -84,10 +84,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Deselect
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Samples
@@ -100,7 +100,7 @@ items:
     content.vb: Public Sub Deselect(gameObject As GameObject)
   overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect*
   implements:
-  - IInteractable.Deselect(UnityEngine.GameObject)
+  - BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
 - uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
   commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
   id: Interact(UnityEngine.GameObject)
@@ -116,10 +116,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Interact
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Samples
@@ -132,7 +132,7 @@ items:
     content.vb: Public Sub Interact(objectInteracting As GameObject)
   overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact*
   implements:
-  - IInteractable.Interact(UnityEngine.GameObject)
+  - BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
 references:
 - uid: BlazerTech.CharacterManagement.Samples
   commentId: N:BlazerTech.CharacterManagement.Samples
@@ -203,12 +203,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
-- uid: IInteractable
-  commentId: T:IInteractable
-  href: IInteractable.html
+- uid: BlazerTech.CharacterManagement.Interfaces.IInteractable
+  commentId: T:BlazerTech.CharacterManagement.Interfaces.IInteractable
+  parent: BlazerTech.CharacterManagement.Interfaces
+  href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html
   name: IInteractable
   nameWithType: IInteractable
-  fullName: IInteractable
+  fullName: BlazerTech.CharacterManagement.Interfaces.IInteractable
 - uid: System
   commentId: N:System
   isExternal: true
@@ -222,33 +223,63 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Interfaces
+  commentId: N:BlazerTech.CharacterManagement.Interfaces
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Interfaces
+  nameWithType: BlazerTech.CharacterManagement.Interfaces
+  fullName: BlazerTech.CharacterManagement.Interfaces
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Interfaces
+    name: Interfaces
+    href: BlazerTech.CharacterManagement.Interfaces.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Interfaces
+    name: Interfaces
+    href: BlazerTech.CharacterManagement.Interfaces.html
 - uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Select*
   commentId: Overload:BlazerTech.CharacterManagement.Samples.InteractableBed.Select
   href: BlazerTech.CharacterManagement.Samples.InteractableBed.html#BlazerTech_CharacterManagement_Samples_InteractableBed_Select_UnityEngine_GameObject_
   name: Select
   nameWithType: InteractableBed.Select
   fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Select
-- uid: IInteractable.Select(UnityEngine.GameObject)
-  commentId: M:IInteractable.Select(UnityEngine.GameObject)
-  parent: IInteractable
+- uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Interfaces.IInteractable
   isExternal: true
-  href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+  href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Select_UnityEngine_GameObject_
   name: Select(GameObject)
   nameWithType: IInteractable.Select(GameObject)
-  fullName: IInteractable.Select(UnityEngine.GameObject)
+  fullName: BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
   spec.csharp:
-  - uid: IInteractable.Select(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
     name: Select
-    href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Select_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject
     isExternal: true
   - name: )
   spec.vb:
-  - uid: IInteractable.Select(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Select(UnityEngine.GameObject)
     name: Select
-    href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Select_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject
@@ -267,27 +298,27 @@ references:
   name: Deselect
   nameWithType: InteractableBed.Deselect
   fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect
-- uid: IInteractable.Deselect(UnityEngine.GameObject)
-  commentId: M:IInteractable.Deselect(UnityEngine.GameObject)
-  parent: IInteractable
+- uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Interfaces.IInteractable
   isExternal: true
-  href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+  href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Deselect_UnityEngine_GameObject_
   name: Deselect(GameObject)
   nameWithType: IInteractable.Deselect(GameObject)
-  fullName: IInteractable.Deselect(UnityEngine.GameObject)
+  fullName: BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
   spec.csharp:
-  - uid: IInteractable.Deselect(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
     name: Deselect
-    href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Deselect_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject
     isExternal: true
   - name: )
   spec.vb:
-  - uid: IInteractable.Deselect(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Deselect(UnityEngine.GameObject)
     name: Deselect
-    href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Deselect_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject
@@ -299,27 +330,27 @@ references:
   name: Interact
   nameWithType: InteractableBed.Interact
   fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact
-- uid: IInteractable.Interact(UnityEngine.GameObject)
-  commentId: M:IInteractable.Interact(UnityEngine.GameObject)
-  parent: IInteractable
+- uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Interfaces.IInteractable
   isExternal: true
-  href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+  href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Interact_UnityEngine_GameObject_
   name: Interact(GameObject)
   nameWithType: IInteractable.Interact(GameObject)
-  fullName: IInteractable.Interact(UnityEngine.GameObject)
+  fullName: BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
   spec.csharp:
-  - uid: IInteractable.Interact(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
     name: Interact
-    href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Interact_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject
     isExternal: true
   - name: )
   spec.vb:
-  - uid: IInteractable.Interact(UnityEngine.GameObject)
+  - uid: BlazerTech.CharacterManagement.Interfaces.IInteractable.Interact(UnityEngine.GameObject)
     name: Interact
-    href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+    href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html#BlazerTech_CharacterManagement_Interfaces_IInteractable_Interact_UnityEngine_GameObject_
   - name: (
   - uid: UnityEngine.GameObject
     name: GameObject

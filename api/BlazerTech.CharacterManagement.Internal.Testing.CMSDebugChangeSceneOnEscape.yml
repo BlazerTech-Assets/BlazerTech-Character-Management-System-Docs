@@ -16,10 +16,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/CMSDebugChangeSceneOnEscape.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSDebugChangeSceneOnEscape
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/CMSDebugChangeSceneOnEscape.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Internal.Testing

@@ -1,0 +1,411 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  id: LayerSelectorListElement
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState(System.Boolean)
+  - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  langs:
+  - csharp
+  - vb
+  name: LayerSelectorListElement
+  nameWithType: LayerSelectorListElement
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerSelectorListElement
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: 'public class LayerSelectorListElement : MonoBehaviour'
+    content.vb: Public Class LayerSelectorListElement Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+  id: DisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: DisplayMode
+  nameWithType: LayerSelectorListElement.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: DisplayMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public ElementDisplayMode DisplayMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+    content.vb: Public Property DisplayMode As ElementDisplayMode
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+  id: LayerOption
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: LayerOption
+  nameWithType: LayerSelectorListElement.LayerOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public CharacterLayerOption LayerOption { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public ReadOnly Property LayerOption As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+  id: Layer
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: Layer
+  nameWithType: LayerSelectorListElement.Layer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Layer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public CharacterLayer Layer { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    content.vb: Public ReadOnly Property Layer As CharacterLayer
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  id: Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: Setup(CharacterLayer, CharacterLayerOption, bool, CharacterLayerElementSelector)
+  nameWithType: LayerSelectorListElement.Setup(CharacterLayer, CharacterLayerOption, bool, CharacterLayerElementSelector)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.Characters.CharacterLayerOption, bool, BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Setup
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Setup(CharacterLayer layer, CharacterLayerOption layerOption, bool isSelected, CharacterLayerElementSelector characterLayerElementSelector)
+    parameters:
+    - id: layer
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    - id: layerOption
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    - id: isSelected
+      type: System.Boolean
+    - id: characterLayerElementSelector
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+    content.vb: Public Sub Setup(layer As CharacterLayer, layerOption As CharacterLayerOption, isSelected As Boolean, characterLayerElementSelector As CharacterLayerElementSelector)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup*
+  nameWithType.vb: LayerSelectorListElement.Setup(CharacterLayer, CharacterLayerOption, Boolean, CharacterLayerElementSelector)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.Characters.CharacterLayerOption, Boolean, BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  name.vb: Setup(CharacterLayer, CharacterLayerOption, Boolean, CharacterLayerElementSelector)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption
+  id: ApplyLayerOption
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: ApplyLayerOption()
+  nameWithType: LayerSelectorListElement.ApplyLayerOption()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ApplyLayerOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void ApplyLayerOption()
+    content.vb: Public Sub ApplyLayerOption()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState(System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState(System.Boolean)
+  id: SetSelectedState(System.Boolean)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
+  langs:
+  - csharp
+  - vb
+  name: SetSelectedState(bool)
+  nameWithType: LayerSelectorListElement.SetSelectedState(bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SetSelectedState
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Element Selector/LayerSelectorListElement.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void SetSelectedState(bool selected)
+    parameters:
+    - id: selected
+      type: System.Boolean
+    content.vb: Public Sub SetSelectedState(selected As Boolean)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState*
+  nameWithType.vb: LayerSelectorListElement.SetSelectedState(Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState(Boolean)
+  name.vb: SetSelectedState(Boolean)
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_DisplayMode
+  name: DisplayMode
+  nameWithType: LayerSelectorListElement.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
+  name: ElementDisplayMode
+  nameWithType: ElementDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_LayerOption
+  name: LayerOption
+  nameWithType: LayerSelectorListElement.LayerOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.LayerOption
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  name: CharacterLayerOption
+  nameWithType: CharacterLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_Layer
+  name: Layer
+  nameWithType: LayerSelectorListElement.Layer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Layer
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayer
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  name: CharacterLayer
+  nameWithType: CharacterLayer
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_Setup_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_Characters_CharacterLayerOption_System_Boolean_BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_
+  name: Setup
+  nameWithType: LayerSelectorListElement.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.Setup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html
+  name: CharacterLayerElementSelector
+  nameWithType: CharacterLayerElementSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_ApplyLayerOption
+  name: ApplyLayerOption
+  nameWithType: LayerSelectorListElement.ApplyLayerOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.ApplyLayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorListElement_SetSelectedState_System_Boolean_
+  name: SetSelectedState
+  nameWithType: LayerSelectorListElement.SetSelectedState
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement.SetSelectedState

@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  id: CharacterOverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable
+  - BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,UnityEngine.Animator)
+  langs:
+  - csharp
+  - vb
+  name: CharacterOverlayLayerHandler
+  nameWithType: CharacterOverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterOverlayLayerHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: 'public class CharacterOverlayLayerHandler : MonoBehaviour'
+    content.vb: Public Class CharacterOverlayLayerHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,UnityEngine.Animator)
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,UnityEngine.Animator)
+  id: Initialize(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,UnityEngine.Animator)
+  parent: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  langs:
+  - csharp
+  - vb
+  name: Initialize(CharacterOverlayLayerSO, Animator)
+  nameWithType: CharacterOverlayLayerHandler.Initialize(CharacterOverlayLayerSO, Animator)
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, UnityEngine.Animator)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Initialize
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void Initialize(CharacterOverlayLayerSO overlayLayer, Animator characterAnimator)
+    parameters:
+    - id: overlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    - id: characterAnimator
+      type: UnityEngine.Animator
+    content.vb: Public Sub Initialize(overlayLayer As CharacterOverlayLayerSO, characterAnimator As Animator)
+  overload: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize*
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable
+  id: Disable
+  parent: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: CharacterOverlayLayerHandler.Disable()
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Disable
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable()
+  overload: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable*
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize
+  href: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html#BlazerTech_CharacterManagement_Components_CharacterOverlayLayerHandler_Initialize_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_UnityEngine_Animator_
+  name: Initialize
+  nameWithType: CharacterOverlayLayerHandler.Initialize
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Initialize
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO
+  nameWithType: CharacterOverlayLayerSO
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable
+  href: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html#BlazerTech_CharacterManagement_Components_CharacterOverlayLayerHandler_Disable
+  name: Disable
+  nameWithType: CharacterOverlayLayerHandler.Disable
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.Disable

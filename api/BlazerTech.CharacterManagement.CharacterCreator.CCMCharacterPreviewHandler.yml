@@ -10,7 +10,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterAnimator
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterCreationMenuDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterCreationMenuEnabled
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.DefaultDirection
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.GetActiveBlendTreeHash
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.OnPreviewAnimationChanged
@@ -29,10 +29,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMCharacterPreviewHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -68,10 +68,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PreviewMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -82,35 +82,35 @@ items:
       type: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
     content.vb: Public Property PreviewMode As CharacterPreviewMode
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.PreviewMode*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
-  id: CharacterSprite
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
+  id: CharacterImage
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
   langs:
   - csharp
   - vb
-  name: CharacterSprite
-  nameWithType: CCMCharacterPreviewHandler.CharacterSprite
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
+  name: CharacterImage
+  nameWithType: CCMCharacterPreviewHandler.CharacterImage
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterSprite
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterImage
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: public Image CharacterSprite { get; }
+    content: public Image CharacterImage { get; }
     parameters: []
     return:
       type: UnityEngine.UI.Image
-    content.vb: Public Property CharacterSprite As Image
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite*
+    content.vb: Public Property CharacterImage As Image
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.DefaultDirection
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.DefaultDirection
   id: DefaultDirection
@@ -126,10 +126,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DefaultDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -155,10 +155,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterAnimator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -184,10 +184,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnPreviewAnimationChanged
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 33
+    startLine: 28
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -211,10 +211,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 35
+    startLine: 30
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -239,10 +239,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 42
+    startLine: 37
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -268,10 +268,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 74
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -297,10 +297,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangePreviewAnimation
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 130
+    startLine: 127
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -331,10 +331,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetCharacterPreviewDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 141
+    startLine: 138
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -360,10 +360,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RotateCharacterPreview
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 166
+    startLine: 163
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -389,10 +389,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RotateCharacterPreview
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 219
+    startLine: 216
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -421,10 +421,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetActiveBlendTreeHash
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 229
+    startLine: 226
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -615,12 +615,12 @@ references:
   name: CharacterPreviewMode
   nameWithType: CharacterPreviewMode
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_CharacterSprite
-  name: CharacterSprite
-  nameWithType: CCMCharacterPreviewHandler.CharacterSprite
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterSprite
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_CharacterImage
+  name: CharacterImage
+  nameWithType: CCMCharacterPreviewHandler.CharacterImage
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterImage
 - uid: UnityEngine.UI.Image
   commentId: T:UnityEngine.UI.Image
   parent: UnityEngine.UI

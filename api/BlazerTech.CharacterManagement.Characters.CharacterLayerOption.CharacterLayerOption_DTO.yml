@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  id: CharacterLayerOption.CharacterLayerOption_DTO
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(System.String,System.String)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerName
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.LayerOptionKey
+  langs:
+  - csharp
+  - vb
+  name: CharacterLayerOption.CharacterLayerOption_DTO
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterLayerOption_DTO
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 247
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Data Transfer Object (DTO) used to save and load a <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class CharacterLayerOption.CharacterLayerOption_DTO
+    content.vb: >-
+      <Serializable>
+
+      Public Class CharacterLayerOption.CharacterLayerOption_DTO
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerName
+  id: CharacterLayerName
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  langs:
+  - csharp
+  - vb
+  name: CharacterLayerName
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterLayerName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 250
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string CharacterLayerName
+    return:
+      type: System.String
+    content.vb: Public CharacterLayerName As String
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.LayerOptionKey
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.LayerOptionKey
+  id: LayerOptionKey
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionKey
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO.LayerOptionKey
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.LayerOptionKey
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerOptionKey
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string LayerOptionKey
+    return:
+      type: System.String
+    content.vb: Public LayerOptionKey As String
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)'
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  langs:
+  - csharp
+  - vb
+  name: CharacterLayerOption_DTO(CharacterLayerOption)
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO(CharacterLayerOption)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 253
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public CharacterLayerOption_DTO(CharacterLayerOption characterLayerOption)
+    parameters:
+    - id: characterLayerOption
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Sub New(characterLayerOption As CharacterLayerOption)
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor*
+  nameWithType.vb: CharacterLayerOption.CharacterLayerOption_DTO.New(CharacterLayerOption)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.New(BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  name.vb: New(CharacterLayerOption)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(System.String,System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+  langs:
+  - csharp
+  - vb
+  name: CharacterLayerOption_DTO(string, string)
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO(string, string)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 259
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public CharacterLayerOption_DTO(string characterLayerName, string layerOptionKey)
+    parameters:
+    - id: characterLayerName
+      type: System.String
+    - id: layerOptionKey
+      type: System.String
+    content.vb: Public Sub New(characterLayerName As String, layerOptionKey As String)
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor*
+  nameWithType.vb: CharacterLayerOption.CharacterLayerOption_DTO.New(String, String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.New(String, String)
+  name.vb: New(String, String)
+references:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  name: CharacterLayerOption
+  nameWithType: CharacterLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.#ctor
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_CharacterLayerOption_DTO__ctor_BlazerTech_CharacterManagement_Characters_CharacterLayerOption_
+  name: CharacterLayerOption_DTO
+  nameWithType: CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.CharacterLayerOption_DTO
+  nameWithType.vb: CharacterLayerOption.CharacterLayerOption_DTO.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.New
+  name.vb: New

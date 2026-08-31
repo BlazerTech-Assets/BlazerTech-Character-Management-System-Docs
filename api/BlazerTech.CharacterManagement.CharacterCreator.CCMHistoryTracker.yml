@@ -35,7 +35,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMHistoryTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 13
@@ -77,7 +77,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PreserveFirstSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 18
@@ -108,7 +108,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: MaxSnapshots
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 22
@@ -137,7 +137,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Snapshots
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 33
@@ -166,7 +166,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CurrentIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 36
@@ -195,7 +195,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CanUndo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 37
@@ -224,7 +224,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CanRedo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 38
@@ -253,7 +253,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Current
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 39
@@ -282,7 +282,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnSnapshotAdded
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 43
@@ -311,7 +311,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnSnapshotRemoved
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 45
@@ -340,7 +340,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnBulkSnapshotsRemoved
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 48
@@ -370,7 +370,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnHistoryChanged
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 50
@@ -399,7 +399,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCursorChanged
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 52
@@ -428,7 +428,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 56
@@ -457,7 +457,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 70
@@ -486,7 +486,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ScheduleSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 82
@@ -516,7 +516,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateNewSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 94
@@ -552,7 +552,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Undo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 153
@@ -580,7 +580,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Redo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 160
@@ -608,7 +608,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ApplySnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
     startLine: 180

@@ -23,7 +23,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OwnedResourceTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
     startLine: 7
@@ -31,14 +31,24 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: public abstract class OwnedResourceTracker<TResource>
+    content: >-
+      [Serializable]
+
+      public abstract class OwnedResourceTracker<TResource>
     typeParameters:
     - id: TResource
-    content.vb: Public MustInherit Class OwnedResourceTracker(Of TResource)
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class OwnedResourceTracker(Of TResource)
   inheritance:
   - System.Object
   derivedClasses:
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   nameWithType.vb: OwnedResourceTracker(Of TResource)
   fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource)
   name.vb: OwnedResourceTracker(Of TResource)
@@ -57,10 +67,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Owners
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -88,10 +98,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AcquireResourceAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -126,10 +136,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AcquireResource
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -164,10 +174,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ReleaseResource
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -196,10 +206,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetAndLoadResourceAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 49
+    startLine: 50
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -226,10 +236,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetAndLoadResource
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -256,10 +266,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UnloadResource
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/OwnedResourceTracker.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core

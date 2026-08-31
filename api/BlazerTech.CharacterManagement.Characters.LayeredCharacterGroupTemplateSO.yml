@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterGroupTemplateSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 11
@@ -69,7 +69,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DefaultGroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 16
@@ -98,7 +98,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 17
@@ -127,7 +127,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GroupType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 20
@@ -156,7 +156,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharactersInGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 22
@@ -185,7 +185,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
     startLine: 24

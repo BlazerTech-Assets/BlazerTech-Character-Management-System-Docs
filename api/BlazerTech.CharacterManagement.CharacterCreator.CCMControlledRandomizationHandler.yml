@@ -9,6 +9,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
   - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle(BlazerTech.CharacterManagement.Characters.CharacterLayer,System.Boolean)
   langs:
   - csharp
@@ -21,7 +22,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMControlledRandomizationHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
     startLine: 8
@@ -61,10 +62,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -89,7 +90,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
     startLine: 27
@@ -118,7 +119,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UpdateRandomizationToggle
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
     startLine: 49
@@ -154,7 +155,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ToggleRandomizationOptionsUI
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
     startLine: 60
@@ -165,6 +166,38 @@ items:
     content: public void ToggleRandomizationOptionsUI()
     content.vb: Public Sub ToggleRandomizationOptionsUI()
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(System.Boolean)
+  id: ToggleRandomizationOptionsUI(System.Boolean)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
+  langs:
+  - csharp
+  - vb
+  name: ToggleRandomizationOptionsUI(bool)
+  nameWithType: CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ToggleRandomizationOptionsUI
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void ToggleRandomizationOptionsUI(bool enabled)
+    parameters:
+    - id: enabled
+      type: System.Boolean
+    content.vb: Public Sub ToggleRandomizationOptionsUI(enabled As Boolean)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI*
+  nameWithType.vb: CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI(Boolean)
+  name.vb: ToggleRandomizationOptionsUI(Boolean)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
   id: RandomizeCharacter
@@ -180,10 +213,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RandomizeCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMControlledRandomizationHandler.cs
-    startLine: 68
+    startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator

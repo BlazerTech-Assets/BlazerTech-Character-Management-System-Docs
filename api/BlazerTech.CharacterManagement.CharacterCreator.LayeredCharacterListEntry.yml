@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterListEntry
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 12
@@ -50,7 +50,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 49
@@ -83,7 +83,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SelectCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 136
@@ -109,7 +109,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RemoveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 141

@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Interfaces
+  commentId: N:BlazerTech.CharacterManagement.Interfaces
+  id: BlazerTech.CharacterManagement.Interfaces
+  children:
+  - BlazerTech.CharacterManagement.Interfaces.IInteractable
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.CharacterManagement.Interfaces
+  nameWithType: BlazerTech.CharacterManagement.Interfaces
+  fullName: BlazerTech.CharacterManagement.Interfaces
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: BlazerTech.CharacterManagement.Interfaces.IInteractable
+  commentId: T:BlazerTech.CharacterManagement.Interfaces.IInteractable
+  parent: BlazerTech.CharacterManagement.Interfaces
+  href: BlazerTech.CharacterManagement.Interfaces.IInteractable.html
+  name: IInteractable
+  nameWithType: IInteractable
+  fullName: BlazerTech.CharacterManagement.Interfaces.IInteractable
+- uid: BlazerTech.CharacterManagement.Interfaces
+  commentId: N:BlazerTech.CharacterManagement.Interfaces
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Interfaces
+  nameWithType: BlazerTech.CharacterManagement.Interfaces
+  fullName: BlazerTech.CharacterManagement.Interfaces
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Interfaces
+    name: Interfaces
+    href: BlazerTech.CharacterManagement.Interfaces.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Interfaces
+    name: Interfaces
+    href: BlazerTech.CharacterManagement.Interfaces.html

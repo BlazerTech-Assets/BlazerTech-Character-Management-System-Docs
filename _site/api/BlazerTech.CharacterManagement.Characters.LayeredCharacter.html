@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_LayeredCharacter.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.LayeredCharacter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_LayeredCharacter.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.LayeredCharacter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -105,7 +105,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter" class="text-break">
-Class LayeredCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L28"><i class="bi bi-code-slash"></i></a>
+Class LayeredCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -120,7 +120,7 @@ Each layer can be placed on top of each other in order to create the final chara
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LayeredCharacter : CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;, ICharacter&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;, IValidatable</code></pre>
+    <pre><code class="lang-csharp hljs">public class LayeredCharacter : CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;, ICharacter&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;, IValidatable</code></pre>
   </div>
 
 
@@ -130,7 +130,7 @@ Each layer can be placed on top of each other in order to create the final chara
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.html">LoadedLayeredCharacterHandler</a>&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html">LayeredCharacterShaderState</a>&gt;</div>
       <div><span class="xref">LayeredCharacter</span></div>
     </dd>
   </dl>
@@ -138,7 +138,7 @@ Each layer can be placed on top of each other in order to create the final chara
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.html">LoadedLayeredCharacterHandler</a>&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacterShaderState.html">LayeredCharacterShaderState</a>&gt;</div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
     </dd>
   </dl>
@@ -148,52 +148,52 @@ Each layer can be placed on top of each other in order to create the final chara
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_loadedCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.loadedCharacterHandler</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_characterShaderState">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.characterShaderState</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterType</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.CharacterType</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadedCharacterHandler</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterShaderState">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.CharacterShaderState</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterGUID</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.CharacterGUID</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterName</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.CharacterName</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterDisplayName</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.CharacterDisplayName</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_OnCharacterDisplayNameChanged">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.OnCharacterDisplayNameChanged</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_OnCharacterDisplayNameChanged">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.OnCharacterDisplayNameChanged</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.IsValid</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.IsValid</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.PerformValidationCheck()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.PerformValidationCheck()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.SetCharacterInvalid()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_MarkCharacterInvalid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.MarkCharacterInvalid()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.AcquireCharacterHandler(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderState_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.AcquireCharacterShaderState(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.AcquireCharacterHandlerAsync(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderStateAsync_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.AcquireCharacterShaderStateAsync(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.ReleaseCharacterHandler(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterShaderState_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.ReleaseCharacterShaderState(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadCharacterHandler()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderState">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.LoadCharacterShaderState()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadCharacterHandlerAsync()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderStateAsync">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.LoadCharacterShaderStateAsync()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.UnloadCharacterHandler()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterShaderState">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LayeredCharacterShaderState&gt;.UnloadCharacterShaderState()</a>
     </div>
   </dd></dl>
 
@@ -203,7 +203,7 @@ Each layer can be placed on top of each other in order to create the final chara
   <h2 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>A <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a> is tied to a <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>,
 which defines the base spritesheet and animator controller used.
-It also defines the layers the character must include. Each equipped layer is represented
+It also defines the layers the character must include. Each layer is represented
 by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a>, which references one option in a
 <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a> asset.</p>
 </div>
@@ -215,9 +215,51 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*"></a>
 
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_FixedLayeredCharacterTemplateSO_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO)">
+  LayeredCharacter(FixedLayeredCharacterTemplateSO)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a new character from a Layered Character Template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public LayeredCharacter(FixedLayeredCharacterTemplateSO template)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>template</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO.html">FixedLayeredCharacterTemplateSO</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">template</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when <code class="paramref">template</code> is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*"></a>
+
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   LayeredCharacter(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Duplicate Character.</p>
@@ -259,7 +301,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_LayeredCharacter_DTO_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO)">
   LayeredCharacter(LayeredCharacter_DTO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Create a new character from a character Data Transfer Object (DTO).</p>
@@ -293,22 +335,28 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)">
-  LayeredCharacter(LayeredCharacterTemplateSO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Collections_Generic_List_BlazerTech_CharacterManagement_Characters_CharacterLayerOption__System_String_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption},System.String)">
+  LayeredCharacter(string, LayeredCharacterTypeSO, List&lt;CharacterLayerOption&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Create Character from Template.</p>
+  <div class="markdown level1 summary"><p>Create a new layered character from a list of layer options.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LayeredCharacter(LayeredCharacterTemplateSO template)</code></pre>
+    <pre><code class="lang-csharp hljs">public LayeredCharacter(string characterName, LayeredCharacterTypeSO characterType, List&lt;CharacterLayerOption&gt; layerOptions, string displayName = &quot;&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>template</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html">LayeredCharacterTemplateSO</a></dt>
+    <dt><code>characterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
+    <dd></dd>
+    <dt><code>layerOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -323,11 +371,9 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">template</code> is null.</p>
-</dd>
+    <dd></dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p>Thrown when <code class="paramref">template</code> is invalid.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -336,7 +382,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterCreationMode_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)">
   LayeredCharacter(string, LayeredCharacterTypeSO, string, LayeredCharacterCreationMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Create a new layered character with either default or randomized layer options.</p>
@@ -388,7 +434,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_Layers" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.Layers">
   Layers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -423,7 +469,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_ApplySnapshot_BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.ApplySnapshot(BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)">
   ApplySnapshot(LayeredCharacterSnapshot)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>'s inside <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_Layers">Layers</a> equal to those inside a <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html">LayeredCharacterSnapshot</a>.</p>
@@ -457,18 +503,18 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler">
-  LoadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterShaderState">
+  LoadCharacterShaderState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void LoadCharacterHandler()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void LoadCharacterShaderState()</code></pre>
   </div>
 
 
@@ -483,18 +529,18 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterHandlerAsync_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandlerAsync*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterShaderStateAsync_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterShaderStateAsync*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterHandlerAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandlerAsync">
-  LoadCharacterHandlerAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterShaderStateAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterShaderStateAsync">
+  LoadCharacterShaderStateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task LoadCharacterHandlerAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Task LoadCharacterShaderStateAsync()</code></pre>
   </div>
 
 
@@ -518,7 +564,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_OverrideLayerOptions_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.OverrideLayerOptions(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   OverrideLayerOptions(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the characters <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_Layers">Layers</a> equal to the same <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_Layers">Layers</a> of another <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.</p>
@@ -555,7 +601,7 @@ by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLa
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_PerformValidationCheck" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.PerformValidationCheck">
   PerformValidationCheck()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a> instance is valid,
@@ -604,7 +650,7 @@ requirements specific to layered characters.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_RandomizeAllLayers" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.RandomizeAllLayers">
   RandomizeAllLayers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Randomize every layer in the <span class="xref">BlazerTech.CharacterManagement.Characters.LayeredCharacter.layers</span> list.</p>
@@ -632,18 +678,18 @@ requirements specific to layered characters.</p>
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_UnloadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_UnloadCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_UnloadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterHandler">
-  UnloadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_UnloadCharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterShaderState">
+  UnloadCharacterShaderState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void UnloadCharacterHandler()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void UnloadCharacterShaderState()</code></pre>
   </div>
 
 
@@ -665,7 +711,7 @@ requirements specific to layered characters.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_OnLayerOptionsOverriden" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.OnLayerOptionsOverriden">
   OnLayerOptionsOverriden
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -702,7 +748,7 @@ requirements specific to layered characters.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L28" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -18,7 +18,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterTemplateSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
     startLine: 7
@@ -76,10 +76,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterSpritesheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -105,7 +105,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateNewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
     startLine: 17
@@ -114,10 +114,10 @@ items:
   namespace: BlazerTech.CharacterManagement.Characters
   example: []
   syntax:
-    content: protected override UnifiedCharacter CreateNewCharacter()
+    content: public override UnifiedCharacter CreateNewCharacter()
     return:
       type: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
-    content.vb: Protected Overrides Function CreateNewCharacter() As UnifiedCharacter
+    content.vb: Public Overrides Function CreateNewCharacter() As UnifiedCharacter
   overridden: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter}.CreateNewCharacter
   overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CreateNewCharacter*
 references:

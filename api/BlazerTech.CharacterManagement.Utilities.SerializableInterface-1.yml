@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Wrappers/SerializableInterface.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SerializableInterface
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Wrappers/SerializableInterface.cs
     startLine: 4
@@ -59,7 +59,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Wrappers/SerializableInterface.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Interface
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Wrappers/SerializableInterface.cs
     startLine: 8

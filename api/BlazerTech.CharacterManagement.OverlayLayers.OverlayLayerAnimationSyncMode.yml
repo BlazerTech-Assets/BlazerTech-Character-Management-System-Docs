@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  id: OverlayLayerAnimationSyncMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.FullParameterSync
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.NotSynced
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.partialParameterSync
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerAnimationSyncMode
+  nameWithType: OverlayLayerAnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerAnimationSyncMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public enum OverlayLayerAnimationSyncMode
+    content.vb: Public Enum OverlayLayerAnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.FullParameterSync
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.FullParameterSync
+  id: FullParameterSync
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  langs:
+  - csharp
+  - vb
+  name: FullParameterSync
+  nameWithType: OverlayLayerAnimationSyncMode.FullParameterSync
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.FullParameterSync
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: FullParameterSync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: FullParameterSync = 0
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.partialParameterSync
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.partialParameterSync
+  id: partialParameterSync
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  langs:
+  - csharp
+  - vb
+  name: partialParameterSync
+  nameWithType: OverlayLayerAnimationSyncMode.partialParameterSync
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.partialParameterSync
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: partialParameterSync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: partialParameterSync = 1
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.NotSynced
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.NotSynced
+  id: NotSynced
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  langs:
+  - csharp
+  - vb
+  name: NotSynced
+  nameWithType: OverlayLayerAnimationSyncMode.NotSynced
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.NotSynced
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: NotSynced
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: NotSynced = 2
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.html
+  name: OverlayLayerAnimationSyncMode
+  nameWithType: OverlayLayerAnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode

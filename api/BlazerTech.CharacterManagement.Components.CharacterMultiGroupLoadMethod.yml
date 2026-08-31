@@ -17,11 +17,11 @@ items:
   type: Enum
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterMultiGroupLoadMethod
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -42,11 +42,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -68,11 +68,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterIndex
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -94,11 +94,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Randomized
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterGroupEntryRenderer.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp

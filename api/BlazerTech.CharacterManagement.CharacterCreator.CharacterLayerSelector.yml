@@ -33,7 +33,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterLayerSelector
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 10
@@ -81,7 +81,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SelectorBase
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 18
@@ -110,7 +110,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayerNameText
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 19
@@ -119,14 +119,14 @@ items:
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
     content: >-
-      [Tooltip("If assinged; sets the text to the name of the assigned layer.")]
+      [Tooltip("If assinged, sets the text to the name of the assigned layer.")]
 
       public TMP_Text LayerNameText { get; }
     parameters: []
     return:
       type: TMPro.TMP_Text
     content.vb: >-
-      <Tooltip("If assinged; sets the text to the name of the assigned layer.")>
+      <Tooltip("If assinged, sets the text to the name of the assigned layer.")>
 
       Public Property LayerNameText As TMP_Text
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText*
@@ -135,7 +135,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: If assinged; sets the text to the name of the assigned layer.
+      value: If assinged, sets the text to the name of the assigned layer.
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   id: CharacterLayerOverride
@@ -151,7 +151,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterLayerOverride
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 22
@@ -180,7 +180,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: characterCreationMenuManager
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 25
@@ -207,7 +207,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AssignedLayer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 27
@@ -236,7 +236,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AssignLayer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 29
@@ -267,7 +267,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 59
@@ -295,7 +295,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterLayerUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 64
@@ -323,7 +323,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: MenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 69
@@ -351,7 +351,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DisableInteractivity
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 71
@@ -377,7 +377,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableInteractivity
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 73
@@ -403,7 +403,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Hide
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 75
@@ -429,7 +429,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Unhide
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 77
@@ -455,7 +455,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangeAlpha
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 79
@@ -487,7 +487,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RandomizeLayer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 90
@@ -513,7 +513,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnDestroy
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 92
@@ -539,7 +539,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Reset
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
     startLine: 101

@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  id: UnifiedCharacter.UnifiedCharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose
+  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+  langs:
+  - csharp
+  - vb
+  name: UnifiedCharacter.UnifiedCharacterShaderState
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: UnifiedCharacterShaderState
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: 'public class UnifiedCharacter.UnifiedCharacterShaderState : CharacterShaderState, IDisposable'
+    content.vb: Public Class UnifiedCharacter.UnifiedCharacterShaderState Inherits CharacterShaderState Implements IDisposable
+  inheritance:
+  - System.Object
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  - BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)'
+  parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: UnifiedCharacterShaderState(UnifiedCharacter)
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.UnifiedCharacterShaderState(UnifiedCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.UnifiedCharacterShaderState(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public UnifiedCharacterShaderState(UnifiedCharacter character)
+    parameters:
+    - id: character
+      type: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+    content.vb: Public Sub New(character As UnifiedCharacter)
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor*
+  nameWithType.vb: UnifiedCharacter.UnifiedCharacterShaderState.New(UnifiedCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.New(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  name.vb: New(UnifiedCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+  id: LoadCharacter
+  parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: LoadCharacter()
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public void LoadCharacter()
+    content.vb: Public Sub LoadCharacter()
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter*
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+  id: LoadCharacterAsync
+  parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: LoadCharacterAsync()
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync()
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadCharacterAsync
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public Task LoadCharacterAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadCharacterAsync() As Task
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync*
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose
+  id: Dispose
+  parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Dispose
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose*
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
+  name: CharacterShaderState
+  nameWithType: CharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_CharacterShaderTextureName
+  name: CharacterShaderTextureName
+  nameWithType: CharacterShaderState.CharacterShaderTextureName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterShaderTextureName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_CharacterMPB
+  name: CharacterMPB
+  nameWithType: CharacterShaderState.CharacterMPB
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.CharacterMPB
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.#ctor
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_UnifiedCharacterShaderState__ctor_BlazerTech_CharacterManagement_Characters_UnifiedCharacter_
+  name: UnifiedCharacterShaderState
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.UnifiedCharacterShaderState
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.UnifiedCharacterShaderState
+  nameWithType.vb: UnifiedCharacter.UnifiedCharacterShaderState.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.New
+  name.vb: New
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html
+  name: UnifiedCharacter
+  nameWithType: UnifiedCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_UnifiedCharacterShaderState_LoadCharacter
+  name: LoadCharacter
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacter
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_UnifiedCharacterShaderState_LoadCharacterAsync
+  name: LoadCharacterAsync
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.LoadCharacterAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+  parent: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+  href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  name: Dispose()
+  nameWithType: CharacterShaderState.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html#BlazerTech_CharacterManagement_Characters_CharacterShaderState_Dispose
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_UnifiedCharacterShaderState_Dispose
+  name: Dispose
+  nameWithType: UnifiedCharacter.UnifiedCharacterShaderState.Dispose
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.Dispose

@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  commentId: T:BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  id: AnimationSynchronizer
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator)
+  - BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator,System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam})
+  langs:
+  - csharp
+  - vb
+  name: AnimationSynchronizer
+  nameWithType: AnimationSynchronizer
+  fullName: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimationSynchronizer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  summary: synchronizes the parameters of two Animator Controllers.
+  example: []
+  syntax:
+    content: 'public class AnimationSynchronizer : MonoBehaviour'
+    content.vb: Public Class AnimationSynchronizer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator)
+  commentId: M:BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator)
+  id: Setup(UnityEngine.Animator)
+  parent: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  langs:
+  - csharp
+  - vb
+  name: Setup(Animator)
+  nameWithType: AnimationSynchronizer.Setup(Animator)
+  fullName: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Setup
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  summary: Setup Animation Synchronizer to automatically cach all parameters.
+  example: []
+  syntax:
+    content: public void Setup(Animator characterAnimator)
+    parameters:
+    - id: characterAnimator
+      type: UnityEngine.Animator
+    content.vb: Public Sub Setup(characterAnimator As Animator)
+  overload: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup*
+- uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator,System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam})
+  commentId: M:BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator,System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam})
+  id: Setup(UnityEngine.Animator,System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam})
+  parent: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  langs:
+  - csharp
+  - vb
+  name: Setup(Animator, List<AnimatorParam>)
+  nameWithType: AnimationSynchronizer.Setup(Animator, List<CharacterOverlayLayerSO.AnimatorParam>)
+  fullName: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator, System.Collections.Generic.List<BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam>)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Setup
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  summary: Setup Animation Synchronizer to only cache selected parameters.
+  example: []
+  syntax:
+    content: public void Setup(Animator characterAnimator, List<CharacterOverlayLayerSO.AnimatorParam> syncedParams)
+    parameters:
+    - id: characterAnimator
+      type: UnityEngine.Animator
+    - id: syncedParams
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+    content.vb: Public Sub Setup(characterAnimator As Animator, syncedParams As List(Of CharacterOverlayLayerSO.AnimatorParam))
+  overload: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup*
+  nameWithType.vb: AnimationSynchronizer.Setup(Animator, List(Of CharacterOverlayLayerSO.AnimatorParam))
+  fullName.vb: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup(UnityEngine.Animator, System.Collections.Generic.List(Of BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam))
+  name.vb: Setup(Animator, List(Of AnimatorParam))
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup
+  href: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.html#BlazerTech_CharacterManagement_Components_AnimationSynchronizer_Setup_UnityEngine_Animator_
+  name: Setup
+  nameWithType: AnimationSynchronizer.Setup
+  fullName: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.Setup
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CharacterOverlayLayerSO.AnimatorParam>
+  nameWithType: List<CharacterOverlayLayerSO.AnimatorParam>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam>
+  nameWithType.vb: List(Of CharacterOverlayLayerSO.AnimatorParam)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  name.vb: List(Of CharacterOverlayLayerSO.AnimatorParam)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

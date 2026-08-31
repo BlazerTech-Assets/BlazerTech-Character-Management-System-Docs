@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Editor
+  commentId: N:BlazerTech.CharacterManagement.Editor
+  id: BlazerTech.CharacterManagement.Editor
+  children:
+  - BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  - BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor
+  - BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor
+  - BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.CharacterManagement.Editor
+  nameWithType: BlazerTech.CharacterManagement.Editor
+  fullName: BlazerTech.CharacterManagement.Editor
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp-Editor
+references:
+- uid: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  commentId: T:BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+  href: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor.html
+  name: CharacterOverlayLayerSOEditor
+  nameWithType: CharacterOverlayLayerSOEditor
+  fullName: BlazerTech.CharacterManagement.Editor.CharacterOverlayLayerSOEditor
+- uid: BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor
+  commentId: T:BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor
+  href: BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor.html
+  name: RandomizedLayeredCharacterTemplateEditor
+  nameWithType: RandomizedLayeredCharacterTemplateEditor
+  fullName: BlazerTech.CharacterManagement.Editor.RandomizedLayeredCharacterTemplateEditor
+- uid: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  commentId: T:BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+  href: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer.html
+  name: ReadOnlyDrawer
+  nameWithType: ReadOnlyDrawer
+  fullName: BlazerTech.CharacterManagement.Editor.ReadOnlyDrawer
+- uid: BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor
+  commentId: T:BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor
+  href: BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor.html
+  name: LayeredCharacterTemplateEditor
+  nameWithType: LayeredCharacterTemplateEditor
+  fullName: BlazerTech.CharacterManagement.Editor.LayeredCharacterTemplateEditor

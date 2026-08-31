@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSLogger
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
     startLine: 4
@@ -46,7 +46,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Log
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
     startLine: 7
@@ -82,7 +82,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LogWarning
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
     startLine: 16
@@ -118,7 +118,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LogError
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
     startLine: 25

@@ -16,7 +16,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Debug/CMSDebugCreateSingleCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CMSDebugCreateSingleCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Debug/CMSDebugCreateSingleCharacter.cs
     startLine: 7

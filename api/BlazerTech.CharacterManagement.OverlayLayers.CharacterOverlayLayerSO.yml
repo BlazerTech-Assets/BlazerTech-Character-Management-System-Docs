@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  id: CharacterOverlayLayerSO
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+  - BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+  langs:
+  - csharp
+  - vb
+  name: CharacterOverlayLayerSO
+  nameWithType: CharacterOverlayLayerSO
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterOverlayLayerSO
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Character Overlay Layer", fileName = "New Overlay Layer")]
+
+      public class CharacterOverlayLayerSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Character Overlay Layer", fileName:="New Overlay Layer")>
+
+      Public Class CharacterOverlayLayerSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: BlazerTech/Character Management System/Character Overlay Layer
+    - name: fileName
+      type: System.String
+      value: New Overlay Layer
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+  id: CharacterType
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: CharacterType
+  nameWithType: CharacterOverlayLayerSO.CharacterType
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public CharacterTypeBaseSO CharacterType { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    content.vb: Public ReadOnly Property CharacterType As CharacterTypeBaseSO
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+  id: AnimatorController
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: AnimatorController
+  nameWithType: CharacterOverlayLayerSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimatorController
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public RuntimeAnimatorController AnimatorController { get; }
+    parameters: []
+    return:
+      type: UnityEngine.RuntimeAnimatorController
+    content.vb: Public ReadOnly Property AnimatorController As RuntimeAnimatorController
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+  id: OffsetMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: OffsetMode
+  nameWithType: CharacterOverlayLayerSO.OffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OffsetMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public OverlayLayerOffsetMode OffsetMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+    content.vb: Public ReadOnly Property OffsetMode As OverlayLayerOffsetMode
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+  id: PixelOffset
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: PixelOffset
+  nameWithType: CharacterOverlayLayerSO.PixelOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: PixelOffset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public Vector2 PixelOffset { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property PixelOffset As Vector2
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+  id: UnitOffset
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: UnitOffset
+  nameWithType: CharacterOverlayLayerSO.UnitOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: UnitOffset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public Vector2 UnitOffset { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property UnitOffset As Vector2
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+  id: LayerSortingMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: LayerSortingMode
+  nameWithType: CharacterOverlayLayerSO.LayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerSortingMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public OverlayLayerSortingMode LayerSortingMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+    content.vb: Public ReadOnly Property LayerSortingMode As OverlayLayerSortingMode
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+  id: AnimationSyncMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: AnimationSyncMode
+  nameWithType: CharacterOverlayLayerSO.AnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AnimationSyncMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public OverlayLayerAnimationSyncMode AnimationSyncMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+    content.vb: Public ReadOnly Property AnimationSyncMode As OverlayLayerAnimationSyncMode
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+  id: SyncedParameters
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: SyncedParameters
+  nameWithType: CharacterOverlayLayerSO.SyncedParameters
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SyncedParameters
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public IReadOnlyList<CharacterOverlayLayerSO.AnimatorParam> SyncedParameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+    content.vb: Public ReadOnly Property SyncedParameters As IReadOnlyList(Of CharacterOverlayLayerSO.AnimatorParam)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+  commentId: P:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+  id: OverlayLayerExtensions
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerExtensions
+  nameWithType: CharacterOverlayLayerSO.OverlayLayerExtensions
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerExtensions
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public IReadOnlyCollection<OverlayLayerExtension> OverlayLayerExtensions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension}
+    content.vb: Public ReadOnly Property OverlayLayerExtensions As IReadOnlyCollection(Of OverlayLayerExtension)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  id: AddSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: AddSyncedParamter_EditorOnly(AnimatorParam)
+  nameWithType: CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly(CharacterOverlayLayerSO.AnimatorParam)
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AddSyncedParamter_EditorOnly
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public void AddSyncedParamter_EditorOnly(CharacterOverlayLayerSO.AnimatorParam newParam)
+    parameters:
+    - id: newParam
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    content.vb: Public Sub AddSyncedParamter_EditorOnly(newParam As CharacterOverlayLayerSO.AnimatorParam)
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  id: RemoveSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: RemoveSyncedParamter_EditorOnly(AnimatorParam)
+  nameWithType: CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly(CharacterOverlayLayerSO.AnimatorParam)
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: RemoveSyncedParamter_EditorOnly
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public bool RemoveSyncedParamter_EditorOnly(CharacterOverlayLayerSO.AnimatorParam param)
+    parameters:
+    - id: param
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveSyncedParamter_EditorOnly(param As CharacterOverlayLayerSO.AnimatorParam) As Boolean
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly*
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly
+  commentId: M:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly
+  id: ClearSyncedParameters_EditorOnly
+  parent: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  langs:
+  - csharp
+  - vb
+  name: ClearSyncedParameters_EditorOnly()
+  nameWithType: CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly()
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ClearSyncedParameters_EditorOnly
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public void ClearSyncedParameters_EditorOnly()
+    content.vb: Public Sub ClearSyncedParameters_EditorOnly()
+  overload: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly*
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_CharacterType
+  name: CharacterType
+  nameWithType: CharacterOverlayLayerSO.CharacterType
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  name: CharacterTypeBaseSO
+  nameWithType: CharacterTypeBaseSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AnimatorController
+  name: AnimatorController
+  nameWithType: CharacterOverlayLayerSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorController
+- uid: UnityEngine.RuntimeAnimatorController
+  commentId: T:UnityEngine.RuntimeAnimatorController
+  parent: UnityEngine
+  isExternal: true
+  name: RuntimeAnimatorController
+  nameWithType: RuntimeAnimatorController
+  fullName: UnityEngine.RuntimeAnimatorController
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_OffsetMode
+  name: OffsetMode
+  nameWithType: CharacterOverlayLayerSO.OffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode.html
+  name: OverlayLayerOffsetMode
+  nameWithType: OverlayLayerOffsetMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerOffsetMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_PixelOffset
+  name: PixelOffset
+  nameWithType: CharacterOverlayLayerSO.PixelOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.PixelOffset
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_UnitOffset
+  name: UnitOffset
+  nameWithType: CharacterOverlayLayerSO.UnitOffset
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.UnitOffset
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_LayerSortingMode
+  name: LayerSortingMode
+  nameWithType: CharacterOverlayLayerSO.LayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.LayerSortingMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.html
+  name: OverlayLayerSortingMode
+  nameWithType: OverlayLayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AnimationSyncMode
+  name: AnimationSyncMode
+  nameWithType: CharacterOverlayLayerSO.AnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode.html
+  name: OverlayLayerAnimationSyncMode
+  nameWithType: OverlayLayerAnimationSyncMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerAnimationSyncMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_SyncedParameters
+  name: SyncedParameters
+  nameWithType: CharacterOverlayLayerSO.SyncedParameters
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.SyncedParameters
+- uid: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CharacterOverlayLayerSO.AnimatorParam>
+  nameWithType: IReadOnlyList<CharacterOverlayLayerSO.AnimatorParam>
+  fullName: System.Collections.Generic.IReadOnlyList<BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam>
+  nameWithType.vb: IReadOnlyList(Of CharacterOverlayLayerSO.AnimatorParam)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam)
+  name.vb: IReadOnlyList(Of CharacterOverlayLayerSO.AnimatorParam)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_OverlayLayerExtensions
+  name: OverlayLayerExtensions
+  nameWithType: CharacterOverlayLayerSO.OverlayLayerExtensions
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.OverlayLayerExtensions
+- uid: System.Collections.Generic.IReadOnlyCollection{BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<OverlayLayerExtension>
+  nameWithType: IReadOnlyCollection<OverlayLayerExtension>
+  fullName: System.Collections.Generic.IReadOnlyCollection<BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension>
+  nameWithType.vb: IReadOnlyCollection(Of OverlayLayerExtension)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension)
+  name.vb: IReadOnlyCollection(Of OverlayLayerExtension)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+    name: OverlayLayerExtension
+    href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension
+    name: OverlayLayerExtension
+    href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerExtension.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AddSyncedParamter_EditorOnly_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AnimatorParam_
+  name: AddSyncedParamter_EditorOnly
+  nameWithType: CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AddSyncedParamter_EditorOnly
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO.AnimatorParam
+  nameWithType: CharacterOverlayLayerSO.AnimatorParam
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam
+    name: AnimatorParam
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.AnimatorParam.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_RemoveSyncedParamter_EditorOnly_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_AnimatorParam_
+  name: RemoveSyncedParamter_EditorOnly
+  nameWithType: CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.RemoveSyncedParamter_EditorOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly*
+  commentId: Overload:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html#BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_ClearSyncedParameters_EditorOnly
+  name: ClearSyncedParameters_EditorOnly
+  nameWithType: CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.ClearSyncedParameters_EditorOnly

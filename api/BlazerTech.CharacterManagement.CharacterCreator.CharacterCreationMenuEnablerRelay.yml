@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnablerRelay
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
     startLine: 6
@@ -50,7 +50,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterGroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
     startLine: 18
@@ -79,7 +79,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
     startLine: 19
@@ -108,7 +108,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableCharacterCreationMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CharacterCreationMenuEnablerRelay.cs
     startLine: 21

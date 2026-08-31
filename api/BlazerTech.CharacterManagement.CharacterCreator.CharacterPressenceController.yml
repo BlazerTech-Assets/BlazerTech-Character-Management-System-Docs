@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Tests/Test 3/Scripts/CharacterPressenceController.cs
+      path: Assets/Tests/Test 3/Scripts/CharacterPressenceController.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterPressenceController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Test 3/Scripts/CharacterPressenceController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/Tests/Test 3/Scripts/CharacterPressenceController.cs
     startLine: 14
   assemblies:
   - Assembly-CSharp

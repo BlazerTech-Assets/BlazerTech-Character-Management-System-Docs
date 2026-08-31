@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  id: OverlayLayersHandler
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,System.Int32)
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize(BlazerTech.CharacterManagement.Components.CharacterRendererBase)
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayersHandler
+  nameWithType: OverlayLayersHandler
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayersHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 173
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public class OverlayLayersHandler
+    content.vb: Public Class OverlayLayersHandler
+  inheritance:
+  - System.Object
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+  commentId: P:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+  id: ActiveFrontOverlayLayers
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: ActiveFrontOverlayLayers
+  nameWithType: OverlayLayersHandler.ActiveFrontOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ActiveFrontOverlayLayers
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 187
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public IReadOnlyList<OverlayLayersHandler.ActiveOverlayLayerInfo> ActiveFrontOverlayLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo}
+    content.vb: Public ReadOnly Property ActiveFrontOverlayLayers As IReadOnlyList(Of OverlayLayersHandler.ActiveOverlayLayerInfo)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+  commentId: P:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+  id: ActiveBackOverlayLayers
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: ActiveBackOverlayLayers
+  nameWithType: OverlayLayersHandler.ActiveBackOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ActiveBackOverlayLayers
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 188
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public IReadOnlyList<OverlayLayersHandler.ActiveOverlayLayerInfo> ActiveBackOverlayLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo}
+    content.vb: Public ReadOnly Property ActiveBackOverlayLayers As IReadOnlyList(Of OverlayLayersHandler.ActiveOverlayLayerInfo)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize(BlazerTech.CharacterManagement.Components.CharacterRendererBase)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize(BlazerTech.CharacterManagement.Components.CharacterRendererBase)
+  id: Initialize(BlazerTech.CharacterManagement.Components.CharacterRendererBase)
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: Initialize(CharacterRendererBase)
+  nameWithType: OverlayLayersHandler.Initialize(CharacterRendererBase)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize(BlazerTech.CharacterManagement.Components.CharacterRendererBase)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Initialize
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 192
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void Initialize(CharacterRendererBase characterRenderer)
+    parameters:
+    - id: characterRenderer
+      type: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+    content.vb: Public Sub Initialize(characterRenderer As CharacterRendererBase)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  id: AddOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: AddOverlayLayer(CharacterOverlayLayerSO)
+  nameWithType: OverlayLayersHandler.AddOverlayLayer(CharacterOverlayLayerSO)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AddOverlayLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 197
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void AddOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+    parameters:
+    - id: overlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    content.vb: Public Sub AddOverlayLayer(overlayLayer As CharacterOverlayLayerSO)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  id: RemoveOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: RemoveOverlayLayer(CharacterOverlayLayerSO)
+  nameWithType: OverlayLayersHandler.RemoveOverlayLayer(CharacterOverlayLayerSO)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: RemoveOverlayLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 260
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void RemoveOverlayLayer(CharacterOverlayLayerSO overlayLayer)
+    parameters:
+    - id: overlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    content.vb: Public Sub RemoveOverlayLayer(overlayLayer As CharacterOverlayLayerSO)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  id: ReplaceOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: ReplaceOverlayLayer(CharacterOverlayLayerSO, CharacterOverlayLayerSO)
+  nameWithType: OverlayLayersHandler.ReplaceOverlayLayer(CharacterOverlayLayerSO, CharacterOverlayLayerSO)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ReplaceOverlayLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 292
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  summary: Replace the first instance of an Overlay Layer with a different one.
+  example: []
+  syntax:
+    content: public void ReplaceOverlayLayer(CharacterOverlayLayerSO currentOverlayLayer, CharacterOverlayLayerSO newOverlayLayer)
+    parameters:
+    - id: currentOverlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    - id: newOverlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    content.vb: Public Sub ReplaceOverlayLayer(currentOverlayLayer As CharacterOverlayLayerSO, newOverlayLayer As CharacterOverlayLayerSO)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer*
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,System.Int32)
+  commentId: M:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,System.Int32)
+  id: ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO,System.Int32)
+  parent: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  langs:
+  - csharp
+  - vb
+  name: ChangeOverlayLayerIndex(CharacterOverlayLayerSO, int)
+  nameWithType: OverlayLayersHandler.ChangeOverlayLayerIndex(CharacterOverlayLayerSO, int)
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ChangeOverlayLayerIndex
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 318
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void ChangeOverlayLayerIndex(CharacterOverlayLayerSO overlayLayer, int newIndex)
+    parameters:
+    - id: overlayLayer
+      type: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    - id: newIndex
+      type: System.Int32
+    content.vb: Public Sub ChangeOverlayLayerIndex(overlayLayer As CharacterOverlayLayerSO, newIndex As Integer)
+  overload: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex*
+  nameWithType.vb: OverlayLayersHandler.ChangeOverlayLayerIndex(CharacterOverlayLayerSO, Integer)
+  fullName.vb: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex(BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO, Integer)
+  name.vb: ChangeOverlayLayerIndex(CharacterOverlayLayerSO, Integer)
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_ActiveFrontOverlayLayers
+  name: ActiveFrontOverlayLayers
+  nameWithType: OverlayLayersHandler.ActiveFrontOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveFrontOverlayLayers
+- uid: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<OverlayLayersHandler.ActiveOverlayLayerInfo>
+  nameWithType: IReadOnlyList<OverlayLayersHandler.ActiveOverlayLayerInfo>
+  fullName: System.Collections.Generic.IReadOnlyList<BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo>
+  nameWithType.vb: IReadOnlyList(Of OverlayLayersHandler.ActiveOverlayLayerInfo)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo)
+  name.vb: IReadOnlyList(Of OverlayLayersHandler.ActiveOverlayLayerInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    name: OverlayLayersHandler
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+    name: ActiveOverlayLayerInfo
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    name: OverlayLayersHandler
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+    name: ActiveOverlayLayerInfo
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_ActiveBackOverlayLayers
+  name: ActiveBackOverlayLayers
+  nameWithType: OverlayLayersHandler.ActiveBackOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveBackOverlayLayers
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_Initialize_BlazerTech_CharacterManagement_Components_CharacterRendererBase_
+  name: Initialize
+  nameWithType: OverlayLayersHandler.Initialize
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.Initialize
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html
+  name: CharacterRendererBase
+  nameWithType: CharacterRendererBase
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_AddOverlayLayer_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_
+  name: AddOverlayLayer
+  nameWithType: OverlayLayersHandler.AddOverlayLayer
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.AddOverlayLayer
+- uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  name: CharacterOverlayLayerSO
+  nameWithType: CharacterOverlayLayerSO
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_RemoveOverlayLayer_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_
+  name: RemoveOverlayLayer
+  nameWithType: OverlayLayersHandler.RemoveOverlayLayer
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.RemoveOverlayLayer
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_ReplaceOverlayLayer_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_
+  name: ReplaceOverlayLayer
+  nameWithType: OverlayLayersHandler.ReplaceOverlayLayer
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ReplaceOverlayLayer
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html#BlazerTech_CharacterManagement_Components_OverlayLayersHandler_ChangeOverlayLayerIndex_BlazerTech_CharacterManagement_OverlayLayers_CharacterOverlayLayerSO_System_Int32_
+  name: ChangeOverlayLayerIndex
+  nameWithType: OverlayLayersHandler.ChangeOverlayLayerIndex
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ChangeOverlayLayerIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

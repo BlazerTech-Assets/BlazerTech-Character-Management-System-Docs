@@ -4,14 +4,20 @@ items:
   commentId: N:BlazerTech.CharacterManagement.Components
   id: BlazerTech.CharacterManagement.Components
   children:
+  - BlazerTech.CharacterManagement.Components.AnimationSynchronizer
   - BlazerTech.CharacterManagement.Components.ButtonMode
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
   - BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   - BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
+  - BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase
-  - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
+  - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
   - BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  - BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
   - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   - BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
@@ -27,6 +33,31 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
+- uid: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  commentId: T:BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+  href: BlazerTech.CharacterManagement.Components.AnimationSynchronizer.html
+  name: AnimationSynchronizer
+  nameWithType: AnimationSynchronizer
+  fullName: BlazerTech.CharacterManagement.Components.AnimationSynchronizer
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+  href: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html
+  name: TopDownCharacterPhysicsAnimatorHandler
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  commentId: T:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.html
+  name: CCMSaveCharacterButton
+  nameWithType: CCMSaveCharacterButton
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  commentId: T:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor.html
+  name: CCMSaveCharacterButtonEditor
+  nameWithType: CCMSaveCharacterButtonEditor
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButtonEditor
 - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   parent: BlazerTech.CharacterManagement.Components
@@ -41,18 +72,12 @@ references:
   name: CharacterMultiGroupLoadMethod
   nameWithType: CharacterMultiGroupLoadMethod
   fullName: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
-- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
-  commentId: T:BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
-  href: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html
-  name: LayeredCharacterGroupRenderer
-  nameWithType: LayeredCharacterGroupRenderer
-  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
-- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
-  commentId: T:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
-  href: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html
-  name: TopDownCharacterPhysicsAnimatorHandler
-  nameWithType: TopDownCharacterPhysicsAnimatorHandler
-  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
+  commentId: T:BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
+  href: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer.html
+  name: LayeredCharacterGroupEntryRenderer
+  nameWithType: LayeredCharacterGroupEntryRenderer
+  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   parent: BlazerTech.CharacterManagement.Components
@@ -67,6 +92,35 @@ references:
   name: CharacterRendererBase
   nameWithType: CharacterRendererBase
   fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  name: OverlayLayersHandler
+  nameWithType: OverlayLayersHandler
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  commentId: T:BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  name: OverlayLayersHandler.ActiveOverlayLayerInfo
+  nameWithType: OverlayLayersHandler.ActiveOverlayLayerInfo
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    name: OverlayLayersHandler
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+    name: ActiveOverlayLayerInfo
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    name: OverlayLayersHandler
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo
+    name: ActiveOverlayLayerInfo
+    href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.ActiveOverlayLayerInfo.html
 - uid: BlazerTech.CharacterManagement.Components.ButtonMode
   commentId: T:BlazerTech.CharacterManagement.Components.ButtonMode
   parent: BlazerTech.CharacterManagement.Components
@@ -93,6 +147,13 @@ references:
   name: UnifiedCharacterTemplateRenderer
   nameWithType: UnifiedCharacterTemplateRenderer
   fullName: BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html
+  name: CharacterOverlayLayerHandler
+  nameWithType: CharacterOverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
 - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   commentId: T:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   href: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html

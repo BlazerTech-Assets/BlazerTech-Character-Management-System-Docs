@@ -6,9 +6,14 @@ items:
   children:
   - BlazerTech.CharacterManagement.Samples.ActiveMenuHandler
   - BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  - BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+  - BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
   - BlazerTech.CharacterManagement.Samples.InteractableBed
   - BlazerTech.CharacterManagement.Samples.Menu
   - BlazerTech.CharacterManagement.Samples.MenuBackRelay
+  - BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  - BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler
+  - BlazerTech.CharacterManagement.Samples.SampleNPCDeleter
   - BlazerTech.CharacterManagement.Samples.SceneChangeRelay
   - BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput
   langs:
@@ -27,6 +32,12 @@ references:
   name: AssetReferenceScene
   nameWithType: AssetReferenceScene
   fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+- uid: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  commentId: T:BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  href: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.html
+  name: ObjectAccelerator
+  nameWithType: ObjectAccelerator
+  fullName: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
 - uid: BlazerTech.CharacterManagement.Samples.SceneChangeRelay
   commentId: T:BlazerTech.CharacterManagement.Samples.SceneChangeRelay
   href: BlazerTech.CharacterManagement.Samples.SceneChangeRelay.html
@@ -40,12 +51,46 @@ references:
   name: ActiveMenuHandler
   nameWithType: ActiveMenuHandler
   fullName: BlazerTech.CharacterManagement.Samples.ActiveMenuHandler
+- uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+  commentId: T:BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+  href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.html
+  name: BTSampleNPCSpawner
+  nameWithType: BTSampleNPCSpawner
+  fullName: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+- uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  commentId: T:BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.html
+  name: BTSampleNPCSpawner.NPCSpawnLocation
+  nameWithType: BTSampleNPCSpawner.NPCSpawnLocation
+  fullName: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+    name: BTSampleNPCSpawner
+    href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+    name: NPCSpawnLocation
+    href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner
+    name: BTSampleNPCSpawner
+    href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation
+    name: NPCSpawnLocation
+    href: BlazerTech.CharacterManagement.Samples.BTSampleNPCSpawner.NPCSpawnLocation.html
 - uid: BlazerTech.CharacterManagement.Samples.Menu
   commentId: T:BlazerTech.CharacterManagement.Samples.Menu
   href: BlazerTech.CharacterManagement.Samples.Menu.html
   name: Menu
   nameWithType: Menu
   fullName: BlazerTech.CharacterManagement.Samples.Menu
+- uid: BlazerTech.CharacterManagement.Samples.SampleNPCDeleter
+  commentId: T:BlazerTech.CharacterManagement.Samples.SampleNPCDeleter
+  href: BlazerTech.CharacterManagement.Samples.SampleNPCDeleter.html
+  name: SampleNPCDeleter
+  nameWithType: SampleNPCDeleter
+  fullName: BlazerTech.CharacterManagement.Samples.SampleNPCDeleter
 - uid: BlazerTech.CharacterManagement.Samples.MenuBackRelay
   commentId: T:BlazerTech.CharacterManagement.Samples.MenuBackRelay
   href: BlazerTech.CharacterManagement.Samples.MenuBackRelay.html
@@ -58,6 +103,12 @@ references:
   name: InteractableBed
   nameWithType: InteractableBed
   fullName: BlazerTech.CharacterManagement.Samples.InteractableBed
+- uid: BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler
+  commentId: T:BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler
+  href: BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler.html
+  name: PlayerInteractionHandler
+  nameWithType: PlayerInteractionHandler
+  fullName: BlazerTech.CharacterManagement.Samples.PlayerInteractionHandler
 - uid: BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput
   commentId: T:BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput
   href: BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput.html

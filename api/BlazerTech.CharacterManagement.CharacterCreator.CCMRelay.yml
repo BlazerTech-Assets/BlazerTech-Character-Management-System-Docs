@@ -20,7 +20,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMRelay
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
     startLine: 11
@@ -64,7 +64,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
     startLine: 39
@@ -92,7 +92,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RandomizeEntireCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
     startLine: 53
@@ -120,7 +120,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
     startLine: 67
@@ -148,7 +148,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DisableMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
     startLine: 81

@@ -6,8 +6,10 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.BaseSnapshot
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
@@ -22,10 +24,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDraft
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -56,10 +58,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Character
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -68,6 +70,66 @@ items:
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     content.vb: Public ReadOnly Character As LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.BaseSnapshot
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.BaseSnapshot
+  id: BaseSnapshot
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: BaseSnapshot
+  nameWithType: CharacterDraft.BaseSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.BaseSnapshot
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: BaseSnapshot
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: A snapshot of the <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft.Character" data-throw-if-not-resolved="false"></xref> captured when the <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft" data-throw-if-not-resolved="false"></xref> is first created.
+  example: []
+  syntax:
+    content: public readonly LayeredCharacterSnapshot BaseSnapshot
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+    content.vb: Public ReadOnly BaseSnapshot As LayeredCharacterSnapshot
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
+  id: LastSaveSnapshot
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: LastSaveSnapshot
+  nameWithType: CharacterDraft.LastSaveSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LastSaveSnapshot
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: A snapshot of the <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft.Character" data-throw-if-not-resolved="false"></xref> captured every time the <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter" data-throw-if-not-resolved="false"></xref> is called.
+  example: []
+  syntax:
+    content: public LayeredCharacterSnapshot LastSaveSnapshot { get; protected set; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+    content.vb: Public Property LastSaveSnapshot As LayeredCharacterSnapshot
+  overload: BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
   commentId: E:BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
   id: OnCharacterLayerOptionUpdated
@@ -83,10 +145,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterLayerOptionUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 16
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -110,10 +172,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 18
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -142,10 +204,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 28
+    startLine: 35
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -170,10 +232,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 48
+    startLine: 55
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -198,10 +260,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Dispose
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 50
+    startLine: 57
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -274,6 +336,52 @@ references:
   name: LayeredCharacter
   nameWithType: LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character
+  name: Character
+  nameWithType: CharacterDraft.Character
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html
+  name: CharacterDraft
+  nameWithType: CharacterDraft
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html
+  name: LayeredCharacterSnapshot
+  nameWithType: LayeredCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter
+  name: SaveCharacter()
+  nameWithType: CharacterDraft.SaveCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
+    name: SaveCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
+    name: SaveCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_LastSaveSnapshot
+  name: LastSaveSnapshot
+  nameWithType: CharacterDraft.LastSaveSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
 - uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
   commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
   parent: System
@@ -352,20 +460,6 @@ references:
   nameWithType.vb: CharacterDraft.New
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterDraft.New
   name.vb: New
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
-  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character
-  name: Character
-  nameWithType: CharacterDraft.Character
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html
-  name: CharacterDraft
-  nameWithType: CharacterDraft
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter

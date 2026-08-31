@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  commentId: T:BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  id: BoxGroupAttribute
+  parent: BlazerTech.CharacterManagement.Attributes
+  children:
+  - BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor(System.String)
+  - BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.GroupName
+  langs:
+  - csharp
+  - vb
+  name: BoxGroupAttribute
+  nameWithType: BoxGroupAttribute
+  fullName: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: BoxGroupAttribute
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Attributes
+  syntax:
+    content: 'public class BoxGroupAttribute : PropertyAttribute'
+    content.vb: Public Class BoxGroupAttribute Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+- uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.GroupName
+  commentId: F:BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.GroupName
+  id: GroupName
+  parent: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  langs:
+  - csharp
+  - vb
+  name: GroupName
+  nameWithType: BoxGroupAttribute.GroupName
+  fullName: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.GroupName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GroupName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Attributes
+  syntax:
+    content: public readonly string GroupName
+    return:
+      type: System.String
+    content.vb: Public ReadOnly GroupName As String
+- uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  langs:
+  - csharp
+  - vb
+  name: BoxGroupAttribute(string)
+  nameWithType: BoxGroupAttribute.BoxGroupAttribute(string)
+  fullName: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.BoxGroupAttribute(string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/BoxGroupAttribute.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Attributes
+  syntax:
+    content: public BoxGroupAttribute(string groupName)
+    parameters:
+    - id: groupName
+      type: System.String
+    content.vb: Public Sub New(groupName As String)
+  overload: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor*
+  nameWithType.vb: BoxGroupAttribute.New(String)
+  fullName.vb: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.New(String)
+  name.vb: New(String)
+references:
+- uid: BlazerTech.CharacterManagement.Attributes
+  commentId: N:BlazerTech.CharacterManagement.Attributes
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Attributes
+  nameWithType: BlazerTech.CharacterManagement.Attributes
+  fullName: BlazerTech.CharacterManagement.Attributes
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.#ctor
+  href: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.html#BlazerTech_CharacterManagement_Attributes_BoxGroupAttribute__ctor_System_String_
+  name: BoxGroupAttribute
+  nameWithType: BoxGroupAttribute.BoxGroupAttribute
+  fullName: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.BoxGroupAttribute
+  nameWithType.vb: BoxGroupAttribute.New
+  fullName.vb: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.New
+  name.vb: New

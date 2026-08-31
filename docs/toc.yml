@@ -1,138 +1,153 @@
-- name: 📌Getting Started
-- name: Basic Concepts
-  href: getting-started/basic-concepts.md
-- name: Installation And Requirements
-  href: getting-started/installation-and-requirements.md
+  - name: 📌Getting Started
+  - name: Basic Concepts
+    href: getting-started/basic-concepts.md
+  - name: Installation And Requirements
+    href: getting-started/installation-and-requirements.md
 
-- name: Quick Start Guide
-  href: getting-started/quick-start-guide/quick-start-guide.md
-  items:
-    - name: Create A Character Type
-      href: getting-started/quick-start-guide/create-a-character-type.md
-    - name: Create A Character Template
-      href: getting-started/quick-start-guide/create-a-character-template.md
-    - name: Use Your Character
-      href: getting-started/quick-start-guide/use-your-character.md
+  - name: Quick Start Guide
+    href: getting-started/quick-start-guide/quick-start-guide.md
+    items:
+      - name: Create A Character Type
+        href: getting-started/quick-start-guide/create-a-character-type.md
+      - name: Create A Character Template
+        href: getting-started/quick-start-guide/create-a-character-template.md
+      - name: Use Your Character
+        href: getting-started/quick-start-guide/use-your-character.md
 
-- name: Changelog
-  href: changelog.md
+  - name: Changelog
+    href: changelog.md
 
-- name: 🟫Configuration
-- name: Project Settings
-  href: project-settings.md
+  - name: 🟫Configuration
+  - name: Project Settings
+    href: project-settings.md
 
-- name: 🟧Character Types
-- name: Character Types
-  href: character-types/character-types.md
-- name: Layered Character Type
-  href: character-types/layered-character-type.md
-  items:
-    - name: Character Layers
-      href: character-types/character-layers.md
-- name: Unified Character Type
-  href: character-types/unified-character-type.md
-- name: Character Animation Setup
-  href: character-animation-setup.md
+  - name: 🟧Character Types
+  - name: Character Types
+    href: character-types/character-types.md
+  - name: Layered Character Type
+    href: character-types/layered-character-type.md
+    items:
+      - name: Character Layers
+        href: character-types/character-layers.md
+  - name: Unified Character Type
+    href: character-types/unified-character-type.md
+  - name: Character Animation Setup
+    href: character-animation-setup.md
 
-- name: 🟩Character Usage
-- name: Character Renderer Components
-  href: character-usage/character-renderer-components/character-renderer-components.md
-  items:
-    - name: Layered Character Template Renderer
-      href: character-usage/character-renderer-components/layered-character-template-renderer.md
-    - name: Unified Character Template Renderer
-      href: character-usage/character-renderer-components/unified-character-template-renderer.md
-    - name: Random Layered Character Renderer
-      href: character-usage/character-renderer-components/random-layered-character-renderer.md
-    - name: Layered Character Group Entry Renderer
-      href: character-usage/character-renderer-components/layered-character-group-entry-renderer.md
-    - name: Character Display Name Renderer
-      href: character-usage/character-renderer-components/character-display-name-renderer.md
+  - name: 🟩Character Usage
+  - name: Character Renderer Components
+    href: 
+      character-usage/character-renderer-components/character-renderer-components.md
+    items:
+      - name: Layered Character Template Renderer
+        href: 
+          character-usage/character-renderer-components/layered-character-template-renderer.md
+      - name: Unified Character Template Renderer
+        href: 
+          character-usage/character-renderer-components/unified-character-template-renderer.md
+      - name: Random Layered Character Renderer
+        href: 
+          character-usage/character-renderer-components/random-layered-character-renderer.md
+      - name: Layered Character Group Entry Renderer
+        href: 
+          character-usage/character-renderer-components/layered-character-group-entry-renderer.md
+      - name: Character Display Name Renderer
+        href: 
+          character-usage/character-renderer-components/character-display-name-renderer.md
 
-- name: Character Animator Handler Components
-  href: character-usage/character-animator-handler-components/character-animator-handler-components.md
-  items:
-    - name: Top Down Character Animator Handler
-      href: character-usage/character-animator-handler-components/top-down-character-animator-handler.md
-    - name: Top Down Character Physics Animator Handler
-      href: character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md
+  - name: Character Animator Handler Components
+    href: 
+      character-usage/character-animator-handler-components/character-animator-handler-components.md
+    items:
+      - name: Top Down Character Animator Handler
+        href: 
+          character-usage/character-animator-handler-components/top-down-character-animator-handler.md
+      - name: Top Down Character Physics Animator Handler
+        href: 
+          character-usage/character-animator-handler-components/top-down-character-physics-animator-handler.md
 
-- name: Character Movement Controller Components
-  href: character-usage/character-movement-controller-components/character-movement-controller-components.md
-  items:
-    - name: Top Down Character Movement Controller
-      href: character-usage/character-movement-controller-components/top-down-movement-controller.md
+  - name: Character Movement Controller Components
+    href: 
+      character-usage/character-movement-controller-components/character-movement-controller-components.md
+    items:
+      - name: Top Down Character Movement Controller
+        href: 
+          character-usage/character-movement-controller-components/top-down-movement-controller.md
 
-- name: Character Grouping System
-  href: character-grouping-system.md
-- name: Temp
-  href: temp.md
+  - name: Character Grouping System
+    href: character-grouping-system.md
+  - name: Temp
+    href: temp.md
 # - name: Temp 2
 #   href: temp-2.md
 
-- name: 🟦Character Templates
-- name: Character Templates
-  href: character-templates/character-templates.md
-- name: Unified Character Templates
-  href: character-templates/unified-character-templates.md
-- name: Layered Character Templates
-  href: character-templates/layered-character-templates.md
-- name: Randomized Layered Character Templates
-  href: character-templates/randomized-layered-character-templates.md
+  - name: 🟦Character Templates
+  - name: Character Templates
+    href: character-templates/character-templates.md
+  - name: Unified Character Templates
+    href: character-templates/unified-character-templates.md
+  - name: Layered Character Templates
+    href: character-templates/layered-character-templates.md
+  - name: Randomized Layered Character Templates
+    href: character-templates/randomized-layered-character-templates.md
 
-- name: 🔳Character Overlay Layers
-- name: Character Overlay Layers
-  href: character-overlay-layers/character-overlay-layers.md
-- name: Character Overlay Layer Configuration
-  href: character-overlay-layers/character-overlay-layer-configuration.md
-- name: Character Overlay Layer Extensions
-  href: character-overlay-layers/character-overlay-layer-extensions.md
-- name: Character Overlay Layer Usage
-  href: character-overlay-layers/character-overlay-layer-usage.md
+  - name: 🔳Character Overlay Layers
+  - name: Character Overlay Layers
+    href: character-overlay-layers/character-overlay-layers.md
+  - name: Character Overlay Layer Configuration
+    href: character-overlay-layers/character-overlay-layer-configuration.md
+  - name: Character Overlay Layer Extensions
+    href: character-overlay-layers/character-overlay-layer-extensions.md
+  - name: Character Overlay Layer Usage
+    href: character-overlay-layers/character-overlay-layer-usage.md
 
-- name: 🟪Integrations
-- name: Built In Characters
-  href: built-in-characters.md
-- name: LimeZu Modern Interiors Support
-  href: limezu-modern-interiors-support.md
+  - name: 🟪Integrations
+  - name: Built In Characters
+    href: built-in-characters.md
+  - name: LimeZu Modern Interiors Support
+    href: limezu-modern-interiors-support.md
 
-- name: 🟨Character Creation Menu System (Alpha)
-- name: Character Creator Overview
-  href: character-creator/character-creator-overview.md
-- name: Character Creator Setup
-  href: character-creator/character-creator-setup.md
-- name: Character Preview
-  href: character-creator/character-creator-character-preview.md
-  items:
-    - name: Character Preview Controller
-      href: character-creator/character-creator-character-preview-controller.md
-- name: Menu Controls
-  href: character-creator/character-creator-menu-controls.md
-- name: Layer Selectors
-  items:
-    - name: Layer Selector Setup
-      href: character-creator/layer-selectors/layer-selector-setup.md
-    - name: Dropdown Layer Selector
-      href: character-creator/layer-selectors/dropdown-layer-selector.md
-    - name: Carousel Layer Selector
-      href: character-creator/layer-selectors/carousel-layer-selector.md
-    - name: Grid Layer Selector
-      href: character-creator/layer-selectors/Grid-layer-selector.md
-    - name: List Layer Selector
-      href: character-creator/layer-selectors/list-layer-selector.md
-    - name: Tab Layer Selector
-      href: character-creator/layer-selectors/tab-layer-selector.md
-- name: History
-  items:
-    - name: History Tracking System
-      href: character-creator/history/character-creator-history-tracking-system.md
-    - name: History Panels
-      href: character-creator/history/character-creator-history-panels.md
-    - name: History Undo/Redo
-      href: character-creator/history/character-creator-history-undo-redo.md
-- name: Character Randomization
-  href: character-creator/character-creator-character-randomization.md
-- name: Loading Screens
-  href: character-creator/character-creator-loading-screens.md
-- name: Character Display Name
-  href: character-creator/character-creator-character-display-name.md
+  - name: 🟨Character Creation Menu System (Alpha)
+  - name: Character Creator Overview
+    href: character-creator/character-creator-overview.md
+  - name: Character Creator Setup
+    href: character-creator/character-creator-setup.md
+  - name: Character Preview
+    href: character-creator/character-creator-character-preview.md
+    items:
+      - name: Character Preview Controller
+        href: 
+          character-creator/character-creator-character-preview-controller.md
+  - name: Menu Controls
+    href: character-creator/character-creator-menu-controls.md
+  - name: Layer Selectors
+    items:
+      - name: Layer Selector Setup
+        href: character-creator/layer-selectors/layer-selector-setup.md
+      - name: Dropdown Layer Selector
+        href: character-creator/layer-selectors/dropdown-layer-selector.md
+      - name: Carousel Layer Selector
+        href: character-creator/layer-selectors/carousel-layer-selector.md
+      - name: Grid Layer Selector
+        href: character-creator/layer-selectors/Grid-layer-selector.md
+      - name: List Layer Selector
+        href: character-creator/layer-selectors/list-layer-selector.md
+      - name: Tab Layer Selector
+        href: character-creator/layer-selectors/tab-layer-selector.md
+  - name: History
+    items:
+      - name: History Tracking System
+        href: 
+          character-creator/history/character-creator-history-tracking-system.md
+      - name: History Panels
+        href: character-creator/history/character-creator-history-panels.md
+      - name: History Undo/Redo
+        href: character-creator/history/character-creator-history-undo-redo.md
+  - name: Character Randomization
+    href: character-creator/character-creator-character-randomization.md
+  - name: Loading Screens
+    href: character-creator/character-creator-loading-screens.md
+  - name: Character Display Name
+    href: character-creator/character-creator-character-display-name.md
+  - name: Temp 2
+    href: temp-2.md

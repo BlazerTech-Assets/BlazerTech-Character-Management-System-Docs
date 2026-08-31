@@ -5,7 +5,7 @@ items:
   id: CharacterPreviewMode
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Aniamted
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Animated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Static
   langs:
   - csharp
@@ -18,10 +18,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterPreviewMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -43,10 +43,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Static
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -54,30 +54,30 @@ items:
     content: Static = 0
     return:
       type: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Aniamted
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Aniamted
-  id: Aniamted
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Animated
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Animated
+  id: Animated
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
   langs:
   - csharp
   - vb
-  name: Aniamted
-  nameWithType: CharacterPreviewMode.Aniamted
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Aniamted
+  name: Animated
+  nameWithType: CharacterPreviewMode.Animated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Animated
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: Aniamted
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Animated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: Aniamted = 1
+    content: Animated = 1
     return:
       type: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
 references:

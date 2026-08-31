@@ -5,15 +5,11 @@ items:
   id: LayeredCharacterTypeSO.CharacterCreatorConfig
   parent: BlazerTech.CharacterManagement.Characters
   children:
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameHeight
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
   langs:
   - csharp
   - vb
@@ -25,10 +21,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreatorConfig
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 136
+    startLine: 131
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -47,64 +43,64 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  id: CharacterPreviewController
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  id: PreviewController
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
   langs:
   - csharp
   - vb
-  name: CharacterPreviewController
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
+  name: PreviewController
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterPreviewController
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: PreviewController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 139
+    startLine: 135
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public RuntimeAnimatorController CharacterPreviewController { get; }
+    content: public RuntimeAnimatorController PreviewController { get; }
     parameters: []
     return:
       type: UnityEngine.RuntimeAnimatorController
-    content.vb: Public Property CharacterPreviewController As RuntimeAnimatorController
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  id: CharacterPreviewSprite
+    content.vb: Public Property PreviewController As RuntimeAnimatorController
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
+  id: PreviewSprite
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
   langs:
   - csharp
   - vb
-  name: CharacterPreviewSprite
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
+  name: PreviewSprite
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterPreviewSprite
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: PreviewSprite
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 141
+    startLine: 137
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public Sprite CharacterPreviewSprite { get; set; }
+    content: public Sprite PreviewSprite { get; set; }
     parameters: []
     return:
       type: UnityEngine.Sprite
-    content.vb: Public Property CharacterPreviewSprite As Sprite
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite*
+    content.vb: Public Property PreviewSprite As Sprite
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
   id: CharacterPreviewAnimationOptions
@@ -120,19 +116,19 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterPreviewAnimationOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 142
+    startLine: 138
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public string[] CharacterPreviewAnimationOptions { get; }
+    content: public LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption[] CharacterPreviewAnimationOptions { get; }
     parameters: []
     return:
-      type: System.String[]
-    content.vb: Public Property CharacterPreviewAnimationOptions As String()
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption[]
+    content.vb: Public Property CharacterPreviewAnimationOptions As LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption()
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
@@ -149,10 +145,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: BaseLayer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 145
+    startLine: 142
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -163,157 +159,35 @@ items:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
     content.vb: Public Property BaseLayer As CharacterLayerDefinitionSO
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
-  id: BaseLayerDefaultOptionIndex
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
+  id: BL_DefaultOptionIndex
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
   langs:
   - csharp
   - vb
-  name: BaseLayerDefaultOptionIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  name: BL_DefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: BaseLayerDefaultOptionIndex
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: BL_DefaultOptionIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 149
+    startLine: 146
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public int BaseLayerDefaultOptionIndex { get; }
+    content: public int BL_DefaultOptionIndex { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public Property BaseLayerDefaultOptionIndex As Integer
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
-  id: PreviewFrameWidth
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
-  langs:
-  - csharp
-  - vb
-  name: PreviewFrameWidth
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
-  type: Field
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: PreviewFrameWidth
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 154
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: >-
-      [Header("Layer Option Preview Settings")]
-
-      public int PreviewFrameWidth
-    return:
-      type: System.Int32
-    content.vb: >-
-      <Header("Layer Option Preview Settings")>
-
-      Public PreviewFrameWidth As Integer
-  attributes:
-  - type: UnityEngine.HeaderAttribute
-    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Layer Option Preview Settings
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameHeight
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameHeight
-  id: PreviewFrameHeight
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
-  langs:
-  - csharp
-  - vb
-  name: PreviewFrameHeight
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameHeight
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameHeight
-  type: Field
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: PreviewFrameHeight
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 155
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public int PreviewFrameHeight
-    return:
-      type: System.Int32
-    content.vb: Public PreviewFrameHeight As Integer
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
-  id: CharacterPreviewFrameIndex
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
-  langs:
-  - csharp
-  - vb
-  name: CharacterPreviewFrameIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
-  type: Field
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterPreviewFrameIndex
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 156
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public int CharacterPreviewFrameIndex
-    return:
-      type: System.Int32
-    content.vb: Public CharacterPreviewFrameIndex As Integer
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  id: CleanLayerOptionNames
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
-  langs:
-  - csharp
-  - vb
-  name: CleanLayerOptionNames
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  type: Property
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CleanLayerOptionNames
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 158
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public bool CleanLayerOptionNames { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property CleanLayerOptionNames As Boolean
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames*
+    content.vb: Public Property BL_DefaultOptionIndex As Integer
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -363,12 +237,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_CharacterPreviewController
-  name: CharacterPreviewController
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_PreviewController
+  name: PreviewController
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewController
 - uid: UnityEngine.RuntimeAnimatorController
   commentId: T:UnityEngine.RuntimeAnimatorController
   parent: UnityEngine
@@ -382,12 +256,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_CharacterPreviewSprite
-  name: CharacterPreviewSprite
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewSprite
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_PreviewSprite
+  name: PreviewSprite
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewSprite
 - uid: UnityEngine.Sprite
   commentId: T:UnityEngine.Sprite
   parent: UnityEngine
@@ -401,27 +275,25 @@ references:
   name: CharacterPreviewAnimationOptions
   nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
-- uid: System.String[]
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption[]
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
-  nameWithType.vb: String()
-  fullName.vb: String()
-  name.vb: String()
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.html
+  name: CharacterPreviewAnimationOption[]
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption[]
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption[]
+  nameWithType.vb: LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption()
+  name.vb: CharacterPreviewAnimationOption()
   spec.csharp:
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+    name: CharacterPreviewAnimationOption
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption
+    name: CharacterPreviewAnimationOption
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOption.html
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer*
@@ -437,12 +309,12 @@ references:
   name: CharacterLayerDefinitionSO
   nameWithType: CharacterLayerDefinitionSO
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_BaseLayerDefaultOptionIndex
-  name: BaseLayerDefaultOptionIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_BL_DefaultOptionIndex
+  name: BL_DefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BL_DefaultOptionIndex
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -454,20 +326,3 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_CleanLayerOptionNames
-  name: CleanLayerOptionNames
-  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CleanLayerOptionNames
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean

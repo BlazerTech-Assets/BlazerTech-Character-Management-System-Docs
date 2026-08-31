@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMSelectedLayerTabHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 4
@@ -59,7 +59,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 10
@@ -88,7 +88,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RefreshLayerSelector
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 18
@@ -114,7 +114,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 24

@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: BlazerTechCMSSettingsProvider
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 7
@@ -49,7 +49,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: MenuPath
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 10
@@ -76,7 +76,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnActivate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 15
@@ -115,7 +115,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnGUI
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 23
@@ -151,7 +151,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 91
@@ -185,7 +185,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateSettingsProvider
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
     startLine: 95

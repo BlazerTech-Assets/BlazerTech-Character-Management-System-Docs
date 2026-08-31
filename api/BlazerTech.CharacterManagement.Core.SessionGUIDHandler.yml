@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SessionGUIDHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SessionGUIDHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SessionGUIDHandler.cs
     startLine: 5
@@ -60,7 +60,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SessionGUIDHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SessionGUID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SessionGUIDHandler.cs
     startLine: 8

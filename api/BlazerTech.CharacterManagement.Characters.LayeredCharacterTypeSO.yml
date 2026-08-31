@@ -23,10 +23,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTypeSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 15
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -34,13 +34,13 @@ items:
     content: >-
       [HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")]
 
-      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName = "New Layered Character Type")]
+      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Types/Layered Character Type", fileName = "New Layered Character Type")]
 
       public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable
     content.vb: >-
       <HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")>
 
-      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName:="New Layered Character Type")>
+      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Types/Layered Character Type", fileName:="New Layered Character Type")>
 
       Public Class LayeredCharacterTypeSO Inherits CharacterTypeBaseSO Implements IValidatable
   inheritance:
@@ -53,7 +53,8 @@ items:
   inheritedMembers:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
@@ -71,7 +72,7 @@ items:
     namedArguments:
     - name: menuName
       type: System.String
-      value: BlazerTech/Character Management System/Layered Character Type/Layered Character Type
+      value: BlazerTech/Character Management System/Layered Character Types/Layered Character Type
     - name: fileName
       type: System.String
       value: New Layered Character Type
@@ -90,10 +91,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreatorSettings
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 19
+    startLine: 14
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -119,10 +120,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Layers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 21
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -148,10 +149,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterMaterial
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 24
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -177,10 +178,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 37
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -211,10 +212,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AcquireAllLayerOptionsAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 61
+    startLine: 56
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -247,10 +248,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ReleaseAllLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 84
+    startLine: 79
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -279,10 +280,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayersValidated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 92
+    startLine: 87
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -376,13 +377,20 @@ references:
   name: BaseSpritesheet
   nameWithType: CharacterTypeBaseSO.BaseSpritesheet
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController
-  name: CharacterController
-  nameWithType: CharacterTypeBaseSO.CharacterController
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AnimatorController
+  name: AnimatorController
+  nameWithType: CharacterTypeBaseSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_PixelsPerUnit
+  name: PixelsPerUnit
+  nameWithType: CharacterTypeBaseSO.PixelsPerUnit
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO

@@ -24,7 +24,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTemplateBaseSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 11
@@ -68,7 +68,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 16
@@ -99,7 +99,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 24
@@ -130,7 +130,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 25
@@ -161,7 +161,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: isValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 33
@@ -190,7 +190,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 39
@@ -228,7 +228,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetOrCreateCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 59
@@ -260,7 +260,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateNewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 76
@@ -268,10 +268,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: protected abstract TCharacter CreateNewCharacter()
+    content: public abstract TCharacter CreateNewCharacter()
     return:
       type: '{TCharacter}'
-    content.vb: Protected MustOverride Function CreateNewCharacter() As TCharacter
+    content.vb: Public MustOverride Function CreateNewCharacter() As TCharacter
   overload: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter*
   nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
@@ -290,7 +290,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs
     startLine: 78

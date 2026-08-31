@@ -18,7 +18,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IValidatable
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
     startLine: 7
@@ -50,7 +50,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
     startLine: 13
@@ -84,7 +84,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Interfaces/IValidatable.cs
     startLine: 20

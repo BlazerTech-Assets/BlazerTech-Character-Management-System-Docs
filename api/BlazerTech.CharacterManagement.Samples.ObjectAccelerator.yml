@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  commentId: T:BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  id: ObjectAccelerator
+  parent: BlazerTech.CharacterManagement.Samples
+  children:
+  - BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  langs:
+  - csharp
+  - vb
+  name: ObjectAccelerator
+  nameWithType: ObjectAccelerator
+  fullName: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ObjectAccelerator.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ObjectAccelerator
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ObjectAccelerator.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: 'public class ObjectAccelerator : MonoBehaviour'
+    content.vb: Public Class ObjectAccelerator Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  commentId: M:BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  id: SetDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  parent: BlazerTech.CharacterManagement.Samples.ObjectAccelerator
+  langs:
+  - csharp
+  - vb
+  name: SetDirection(FourDirectional)
+  nameWithType: ObjectAccelerator.SetDirection(FourDirectional)
+  fullName: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ObjectAccelerator.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SetDirection
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ObjectAccelerator.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: public void SetDirection(FourDirectional direction)
+    parameters:
+    - id: direction
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+    content.vb: Public Sub SetDirection(direction As FourDirectional)
+  overload: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection*
+references:
+- uid: BlazerTech.CharacterManagement.Samples
+  commentId: N:BlazerTech.CharacterManagement.Samples
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Samples
+  nameWithType: BlazerTech.CharacterManagement.Samples
+  fullName: BlazerTech.CharacterManagement.Samples
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection
+  href: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.html#BlazerTech_CharacterManagement_Samples_ObjectAccelerator_SetDirection_BlazerTech_CharacterManagement_Core_FourDirectional_
+  name: SetDirection
+  nameWithType: ObjectAccelerator.SetDirection
+  fullName: BlazerTech.CharacterManagement.Samples.ObjectAccelerator.SetDirection
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.FourDirectional.html
+  name: FourDirectional
+  nameWithType: FourDirectional
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html

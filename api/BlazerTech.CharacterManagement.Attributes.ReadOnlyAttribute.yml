@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  commentId: T:BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  id: ReadOnlyAttribute
+  parent: BlazerTech.CharacterManagement.Attributes
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Attributes/ReadOnlyAttribute.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: ReadOnlyAttribute
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Attributes/ReadOnlyAttribute.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Attributes
+  syntax:
+    content: >-
+      [AttributeUsage(AttributeTargets.Field)]
+
+      public class ReadOnlyAttribute : PropertyAttribute
+    content.vb: >-
+      <AttributeUsage(AttributeTargets.Field)>
+
+      Public Class ReadOnlyAttribute Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 256
+references:
+- uid: BlazerTech.CharacterManagement.Attributes
+  commentId: N:BlazerTech.CharacterManagement.Attributes
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Attributes
+  nameWithType: BlazerTech.CharacterManagement.Attributes
+  fullName: BlazerTech.CharacterManagement.Attributes
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

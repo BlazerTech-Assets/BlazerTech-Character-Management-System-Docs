@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -105,7 +105,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO" class="text-break">
-Class LayeredCharacterTemplateSO  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class LayeredCharacterTemplateSO  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/LayeredCharacterTemplateSO.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -117,8 +117,7 @@ Class LayeredCharacterTemplateSO  <a class="header-action link-secondary" title=
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech/Character Management System/Character Templates/Layered Character Template&quot;, fileName = &quot;New Layered Character Template&quot;)]
-public class LayeredCharacterTemplateSO : CharacterTemplateBaseSO&lt;LayeredCharacterTypeSO, LayeredCharacter&gt;, IValidatable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class LayeredCharacterTemplateSO : CharacterTemplateBaseSO&lt;LayeredCharacterTypeSO, LayeredCharacter&gt;, IValidatable</code></pre>
   </div>
 
 
@@ -142,6 +141,13 @@ public class LayeredCharacterTemplateSO : CharacterTemplateBaseSO&lt;LayeredChar
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.FixedLayeredCharacterTemplateSO.html">FixedLayeredCharacterTemplateSO</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.RandomizedLayeredCharacterTemplateSO.html">RandomizedLayeredCharacterTemplateSO</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -177,114 +183,11 @@ public class LayeredCharacterTemplateSO : CharacterTemplateBaseSO&lt;LayeredChar
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_LayerOptionMappings_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_LayerOptionMappings" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.LayerOptionMappings">
-  LayerOptionMappings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;LayerOptionMapping&gt; LayerOptionMappings { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html">LayerOptionMapping</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_CreateNewCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_CreateNewCharacter" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter">
-  CreateNewCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L56"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override LayeredCharacter CreateNewCharacter()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_PerformValidationCheck_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_PerformValidationCheck" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.PerformValidationCheck">
-  PerformValidationCheck()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L20"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Checks/Rechecks if the object is valid and updates <a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html#BlazerTech_CharacterManagement_Core_IValidatable_IsValid">IsValid</a> accordingly.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool PerformValidationCheck()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the object is valid after the check; otherwise, false.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/LayeredCharacterTemplateSO.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

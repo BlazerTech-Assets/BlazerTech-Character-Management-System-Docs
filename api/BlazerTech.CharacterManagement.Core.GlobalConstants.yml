@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.GlobalConstants
+  commentId: T:BlazerTech.CharacterManagement.Core.GlobalConstants
+  id: GlobalConstants
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.GlobalConstants.AssetFolderName
+  - BlazerTech.CharacterManagement.Core.GlobalConstants.AssetPath
+  - BlazerTech.CharacterManagement.Core.GlobalConstants.LogoPath
+  langs:
+  - csharp
+  - vb
+  name: GlobalConstants
+  nameWithType: GlobalConstants
+  fullName: BlazerTech.CharacterManagement.Core.GlobalConstants
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GlobalConstants
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static class GlobalConstants
+    content.vb: Public Module GlobalConstants
+  inheritance:
+  - System.Object
+- uid: BlazerTech.CharacterManagement.Core.GlobalConstants.AssetFolderName
+  commentId: F:BlazerTech.CharacterManagement.Core.GlobalConstants.AssetFolderName
+  id: AssetFolderName
+  parent: BlazerTech.CharacterManagement.Core.GlobalConstants
+  langs:
+  - csharp
+  - vb
+  name: AssetFolderName
+  nameWithType: GlobalConstants.AssetFolderName
+  fullName: BlazerTech.CharacterManagement.Core.GlobalConstants.AssetFolderName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AssetFolderName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string AssetFolderName = "BT-CMS"
+    return:
+      type: System.String
+    content.vb: Public Const AssetFolderName As String = "BT-CMS"
+- uid: BlazerTech.CharacterManagement.Core.GlobalConstants.AssetPath
+  commentId: F:BlazerTech.CharacterManagement.Core.GlobalConstants.AssetPath
+  id: AssetPath
+  parent: BlazerTech.CharacterManagement.Core.GlobalConstants
+  langs:
+  - csharp
+  - vb
+  name: AssetPath
+  nameWithType: GlobalConstants.AssetPath
+  fullName: BlazerTech.CharacterManagement.Core.GlobalConstants.AssetPath
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AssetPath
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string AssetPath = "Assets/BT-CMS"
+    return:
+      type: System.String
+    content.vb: Public Const AssetPath As String = "Assets/BT-CMS"
+- uid: BlazerTech.CharacterManagement.Core.GlobalConstants.LogoPath
+  commentId: F:BlazerTech.CharacterManagement.Core.GlobalConstants.LogoPath
+  id: LogoPath
+  parent: BlazerTech.CharacterManagement.Core.GlobalConstants
+  langs:
+  - csharp
+  - vb
+  name: LogoPath
+  nameWithType: GlobalConstants.LogoPath
+  fullName: BlazerTech.CharacterManagement.Core.GlobalConstants.LogoPath
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LogoPath
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/GlobalConstants.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string LogoPath = "Assets/BT-CMS/Sprites/BlazerTech Character Management System Logo.png"
+    return:
+      type: System.String
+    content.vb: Public Const LogoPath As String = "Assets/BT-CMS/Sprites/BlazerTech Character Management System Logo.png"
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

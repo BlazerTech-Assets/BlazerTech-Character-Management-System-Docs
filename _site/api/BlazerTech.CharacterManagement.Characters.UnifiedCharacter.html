@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_UnifiedCharacter.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.UnifiedCharacter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_UnifiedCharacter.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.UnifiedCharacter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -105,7 +105,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter" class="text-break">
-Class UnifiedCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L24"><i class="bi bi-code-slash"></i></a>
+Class UnifiedCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -118,7 +118,7 @@ Class UnifiedCharacter  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UnifiedCharacter : CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;, ICharacter&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;, IValidatable</code></pre>
+    <pre><code class="lang-csharp hljs">public class UnifiedCharacter : CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;, ICharacter&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;, IValidatable</code></pre>
   </div>
 
 
@@ -128,7 +128,7 @@ Class UnifiedCharacter  <a class="header-action link-secondary" title="View sour
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html">UnifiedCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html">UnifiedCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html">LoadedUnifiedCharacterHandler</a>&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html">UnifiedCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html">UnifiedCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html">UnifiedCharacterShaderState</a>&gt;</div>
       <div><span class="xref">UnifiedCharacter</span></div>
     </dd>
   </dl>
@@ -136,7 +136,7 @@ Class UnifiedCharacter  <a class="header-action link-secondary" title="View sour
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html">UnifiedCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html">UnifiedCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html">LoadedUnifiedCharacterHandler</a>&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html">UnifiedCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html">UnifiedCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.UnifiedCharacterShaderState.html">UnifiedCharacterShaderState</a>&gt;</div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
     </dd>
   </dl>
@@ -146,52 +146,52 @@ Class UnifiedCharacter  <a class="header-action link-secondary" title="View sour
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_loadedCharacterHandler">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.loadedCharacterHandler</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_characterShaderState">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.characterShaderState</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.CharacterType</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.CharacterType</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.LoadedCharacterHandler</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterShaderState">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.CharacterShaderState</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.CharacterGUID</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.CharacterGUID</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.CharacterName</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.CharacterName</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.CharacterDisplayName</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.CharacterDisplayName</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_OnCharacterDisplayNameChanged">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.OnCharacterDisplayNameChanged</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_OnCharacterDisplayNameChanged">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.OnCharacterDisplayNameChanged</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.IsValid</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.IsValid</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.PerformValidationCheck()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.PerformValidationCheck()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.SetCharacterInvalid()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_MarkCharacterInvalid">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.MarkCharacterInvalid()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.AcquireCharacterHandler(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderState_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.AcquireCharacterShaderState(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.AcquireCharacterHandlerAsync(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderStateAsync_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.AcquireCharacterShaderStateAsync(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.ReleaseCharacterHandler(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterShaderState_System_Object_">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.ReleaseCharacterShaderState(object)</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.LoadCharacterHandler()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderState">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.LoadCharacterShaderState()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.LoadCharacterHandlerAsync()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderStateAsync">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.LoadCharacterShaderStateAsync()</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler&gt;.UnloadCharacterHandler()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterShaderState">CharacterBase&lt;UnifiedCharacterTypeSO, UnifiedCharacter.UnifiedCharacterShaderState&gt;.UnloadCharacterShaderState()</a>
     </div>
   </dd></dl>
 
@@ -214,7 +214,7 @@ which provides the character’s name, type, and spritesheet reference.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter__ctor_BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO)">
   UnifiedCharacter(UnifiedCharacterTemplateSO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -245,18 +245,18 @@ which provides the character’s name, type, and spritesheet reference.</p>
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandler">
-  LoadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterShaderState">
+  LoadCharacterShaderState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void LoadCharacterHandler()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void LoadCharacterShaderState()</code></pre>
   </div>
 
 
@@ -271,18 +271,18 @@ which provides the character’s name, type, and spritesheet reference.</p>
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterHandlerAsync_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandlerAsync*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterShaderStateAsync_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterShaderStateAsync*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterHandlerAsync" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandlerAsync">
-  LoadCharacterHandlerAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterShaderStateAsync" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterShaderStateAsync">
+  LoadCharacterShaderStateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task LoadCharacterHandlerAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Task LoadCharacterShaderStateAsync()</code></pre>
   </div>
 
 
@@ -311,7 +311,7 @@ which provides the character’s name, type, and spritesheet reference.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L24" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L24" class="edit-link">Edit this page</a>
         </div>
 
 

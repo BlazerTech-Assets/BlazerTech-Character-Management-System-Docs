@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  id: OverlayLayerSortingMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  children:
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.BehindCharacter
+  - BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.InFrontOfCharacter
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerSortingMode
+  nameWithType: OverlayLayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerSortingMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: public enum OverlayLayerSortingMode
+    content.vb: Public Enum OverlayLayerSortingMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.InFrontOfCharacter
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.InFrontOfCharacter
+  id: InFrontOfCharacter
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  langs:
+  - csharp
+  - vb
+  name: InFrontOfCharacter
+  nameWithType: OverlayLayerSortingMode.InFrontOfCharacter
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.InFrontOfCharacter
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: InFrontOfCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: InFrontOfCharacter = 0
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.BehindCharacter
+  commentId: F:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.BehindCharacter
+  id: BehindCharacter
+  parent: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  langs:
+  - csharp
+  - vb
+  name: BehindCharacter
+  nameWithType: OverlayLayerSortingMode.BehindCharacter
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.BehindCharacter
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: BehindCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterOverlayLayerSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.OverlayLayers
+  syntax:
+    content: BehindCharacter = 1
+    return:
+      type: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+references:
+- uid: BlazerTech.CharacterManagement.OverlayLayers
+  commentId: N:BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.OverlayLayers
+  nameWithType: BlazerTech.CharacterManagement.OverlayLayers
+  fullName: BlazerTech.CharacterManagement.OverlayLayers
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.OverlayLayers
+    name: OverlayLayers
+    href: BlazerTech.CharacterManagement.OverlayLayers.html
+- uid: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  commentId: T:BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode
+  parent: BlazerTech.CharacterManagement.OverlayLayers
+  href: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode.html
+  name: OverlayLayerSortingMode
+  nameWithType: OverlayLayerSortingMode
+  fullName: BlazerTech.CharacterManagement.OverlayLayers.OverlayLayerSortingMode

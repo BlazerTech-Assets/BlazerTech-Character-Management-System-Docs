@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMHistoryPanel
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 10
@@ -59,7 +59,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 32
@@ -88,7 +88,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RebuildAll
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 57
@@ -116,7 +116,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 132

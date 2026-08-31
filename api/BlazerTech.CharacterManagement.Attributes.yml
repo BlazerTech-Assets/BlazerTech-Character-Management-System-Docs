@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Attributes
+  commentId: N:BlazerTech.CharacterManagement.Attributes
+  id: BlazerTech.CharacterManagement.Attributes
+  children:
+  - BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  - BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.CharacterManagement.Attributes
+  nameWithType: BlazerTech.CharacterManagement.Attributes
+  fullName: BlazerTech.CharacterManagement.Attributes
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  commentId: T:BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+  href: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute.html
+  name: BoxGroupAttribute
+  nameWithType: BoxGroupAttribute
+  fullName: BlazerTech.CharacterManagement.Attributes.BoxGroupAttribute
+- uid: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  commentId: T:BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+  parent: BlazerTech.CharacterManagement.Attributes
+  href: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute.html
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: BlazerTech.CharacterManagement.Attributes.ReadOnlyAttribute
+- uid: BlazerTech.CharacterManagement.Attributes
+  commentId: N:BlazerTech.CharacterManagement.Attributes
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Attributes
+  nameWithType: BlazerTech.CharacterManagement.Attributes
+  fullName: BlazerTech.CharacterManagement.Attributes
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Attributes
+    name: Attributes
+    href: BlazerTech.CharacterManagement.Attributes.html

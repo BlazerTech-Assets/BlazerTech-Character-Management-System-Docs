@@ -25,14 +25,14 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMBase
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
-  summary: Base class for all classes part of the Character Creator Menu
+  summary: Base class for most classes part of the Character Creator Menu.
   example: []
   syntax:
     content: 'public abstract class CCMBase : MonoBehaviour'
@@ -44,7 +44,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationSwitcher
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
@@ -69,7 +69,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: referenceHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 10
@@ -96,7 +96,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: characterCreationMenuManager
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 11
@@ -123,7 +123,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: coreReferencesSet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 13
@@ -150,7 +150,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 15
@@ -176,7 +176,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 63
@@ -204,7 +204,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 68
@@ -232,7 +232,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 73
@@ -260,7 +260,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetCharacterCreationMenuManagerReference
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 75
@@ -288,7 +288,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetCCReferenceHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CCMBase.cs
     startLine: 91

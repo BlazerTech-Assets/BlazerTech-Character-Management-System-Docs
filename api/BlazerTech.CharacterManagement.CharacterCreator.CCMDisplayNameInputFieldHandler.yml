@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMDisplayNameInputFieldHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
     startLine: 7
@@ -59,7 +59,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
     startLine: 12
@@ -88,10 +88,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetCharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -120,10 +120,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Misc/CCMDisplayNameInputFieldHandler.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator

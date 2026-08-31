@@ -18,7 +18,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TwoDirectional
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
     startLine: 6
@@ -43,7 +43,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Left
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
     startLine: 6
@@ -69,7 +69,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Right
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
     startLine: 6

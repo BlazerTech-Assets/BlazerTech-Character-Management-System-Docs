@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/ExtensionMethods.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ExtensionMethods
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/ExtensionMethods.cs
     startLine: 5
@@ -45,7 +45,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/ExtensionMethods.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetRandom
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/ExtensionMethods.cs
     startLine: 14

@@ -11,8 +11,10 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayAnimation(System.String)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation
+  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
+  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.defaultDirection
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.verticalMovementParam
@@ -27,10 +29,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterAnimatorHandlerBase
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -61,10 +63,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: animator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -72,7 +74,7 @@ items:
     content: >-
       [SerializeField]
 
-      [BoxGroup("References")]
+      [BoxGroup("General")]
 
       protected Animator animator
     return:
@@ -80,7 +82,7 @@ items:
     content.vb: >-
       <SerializeField>
 
-      <BoxGroup("References")>
+      <BoxGroup("General")>
 
       Protected animator As Animator
   attributes:
@@ -91,7 +93,53 @@ items:
     ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: References
+      value: General
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.defaultDirection
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.defaultDirection
+  id: defaultDirection
+  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
+  langs:
+  - csharp
+  - vb
+  name: defaultDirection
+  nameWithType: CharacterAnimatorHandlerBase.defaultDirection
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.defaultDirection
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: defaultDirection
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [BoxGroup("General")]
+
+      protected FourDirectional defaultDirection
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+    content.vb: >-
+      <SerializeField>
+
+      <BoxGroup("General")>
+
+      Protected defaultDirection As FourDirectional
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: NaughtyAttributes.BoxGroupAttribute
+    ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   id: isMovingParam
@@ -107,7 +155,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: isMovingParam
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 11
@@ -153,7 +201,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: horizontalMovementParam
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 12
@@ -199,7 +247,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: verticalMovementParam
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 13
@@ -245,7 +293,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Animator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 15
@@ -274,7 +322,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 19
@@ -285,6 +333,32 @@ items:
     content: protected virtual void Awake()
     content.vb: Protected Overridable Sub Awake()
   overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake*
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start
+  id: Start
+  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: CharacterAnimatorHandlerBase.Start()
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Start
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: protected virtual void Start()
+    content.vb: Protected Overridable Sub Start()
+  overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start*
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   id: UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
@@ -300,10 +374,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UpdateAnimatorParameters
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 29
+    startLine: 37
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -336,10 +410,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangeDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -365,10 +439,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangeDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -394,10 +468,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PlayAnimation
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 116
+    startLine: 118
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -426,10 +500,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PlayDefaultAnimation
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 121
+    startLine: 123
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -527,59 +601,6 @@ references:
   name: Animator
   nameWithType: Animator
   fullName: UnityEngine.Animator
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Animator
-  name: Animator
-  nameWithType: CharacterAnimatorHandlerBase.Animator
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Awake
-  name: Awake
-  nameWithType: CharacterAnimatorHandlerBase.Awake
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
-  name: UpdateAnimatorParameters
-  nameWithType: CharacterAnimatorHandlerBase.UpdateAnimatorParameters
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: UnityEngine.Vector2
-  commentId: T:UnityEngine.Vector2
-  parent: UnityEngine
-  isExternal: true
-  name: Vector2
-  nameWithType: Vector2
-  fullName: UnityEngine.Vector2
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_ChangeDirection_BlazerTech_CharacterManagement_Core_FourDirectional_
-  name: ChangeDirection
-  nameWithType: CharacterAnimatorHandlerBase.ChangeDirection
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection
 - uid: BlazerTech.CharacterManagement.Core.FourDirectional
   commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
   parent: BlazerTech.CharacterManagement.Core
@@ -617,6 +638,65 @@ references:
   - uid: BlazerTech.CharacterManagement.Core
     name: Core
     href: BlazerTech.CharacterManagement.Core.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Animator
+  name: Animator
+  nameWithType: CharacterAnimatorHandlerBase.Animator
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Awake
+  name: Awake
+  nameWithType: CharacterAnimatorHandlerBase.Awake
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Start
+  name: Start
+  nameWithType: CharacterAnimatorHandlerBase.Start
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Start
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
+  name: UpdateAnimatorParameters
+  nameWithType: CharacterAnimatorHandlerBase.UpdateAnimatorParameters
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_ChangeDirection_BlazerTech_CharacterManagement_Core_FourDirectional_
+  name: ChangeDirection
+  nameWithType: CharacterAnimatorHandlerBase.ChangeDirection
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection
 - uid: BlazerTech.CharacterManagement.Core.EightDirectional
   commentId: T:BlazerTech.CharacterManagement.Core.EightDirectional
   parent: BlazerTech.CharacterManagement.Core

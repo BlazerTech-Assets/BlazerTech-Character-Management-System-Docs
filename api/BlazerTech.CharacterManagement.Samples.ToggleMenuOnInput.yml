@@ -16,10 +16,10 @@ items:
     remote:
       path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ToggleMenuOnInput.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ToggleMenuOnInput
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/ToggleMenuOnInput.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Samples

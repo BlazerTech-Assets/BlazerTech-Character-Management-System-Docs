@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SerializableKeyValuePair
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 37
@@ -62,7 +62,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 45
@@ -96,7 +96,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: key
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 51
@@ -127,7 +127,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: value
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 52

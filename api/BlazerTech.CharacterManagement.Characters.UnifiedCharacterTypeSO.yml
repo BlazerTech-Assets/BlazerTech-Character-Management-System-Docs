@@ -16,7 +16,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterTypeSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
     startLine: 5
@@ -42,7 +42,8 @@ items:
   inheritedMembers:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PerformValidationCheck
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
@@ -144,13 +145,20 @@ references:
   name: BaseSpritesheet
   nameWithType: CharacterTypeBaseSO.BaseSpritesheet
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController
-  name: CharacterController
-  nameWithType: CharacterTypeBaseSO.CharacterController
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AnimatorController
+  name: AnimatorController
+  nameWithType: CharacterTypeBaseSO.AnimatorController
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AnimatorController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_PixelsPerUnit
+  name: PixelsPerUnit
+  nameWithType: CharacterTypeBaseSO.PixelsPerUnit
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PixelsPerUnit
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO

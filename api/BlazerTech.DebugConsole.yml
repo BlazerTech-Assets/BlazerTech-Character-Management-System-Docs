@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.DebugConsole
+  commentId: N:BlazerTech.DebugConsole
+  id: BlazerTech.DebugConsole
+  children:
+  - BlazerTech.DebugConsole.GameManager
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.DebugConsole
+  nameWithType: BlazerTech.DebugConsole
+  fullName: BlazerTech.DebugConsole
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: BlazerTech.DebugConsole.GameManager
+  commentId: T:BlazerTech.DebugConsole.GameManager
+  href: BlazerTech.DebugConsole.GameManager.html
+  name: GameManager
+  nameWithType: GameManager
+  fullName: BlazerTech.DebugConsole.GameManager

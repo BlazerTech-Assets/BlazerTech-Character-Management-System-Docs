@@ -18,7 +18,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterListNewCharacterEntry
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
     startLine: 4
@@ -49,7 +49,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
     startLine: 7
@@ -78,7 +78,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CreateNewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListNewCharacterEntry.cs
     startLine: 13

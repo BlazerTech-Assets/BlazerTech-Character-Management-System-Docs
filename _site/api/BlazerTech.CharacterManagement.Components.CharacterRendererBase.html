@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Components_CharacterRendererBase.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Components.CharacterRendererBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Components_CharacterRendererBase.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Components.CharacterRendererBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -105,7 +105,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase" class="text-break">
-Class CharacterRendererBase  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class CharacterRendererBase  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -140,7 +140,7 @@ public abstract class CharacterRendererBase : MonoBehaviour</code></pre>
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html">LayeredCharacterGroupRenderer</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer.html">LayeredCharacterGroupEntryRenderer</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html">LayeredCharacterTemplateRenderer</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html">RandomLayeredCharacterRenderer</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html">UnifiedCharacterTemplateRenderer</a></div>
@@ -160,10 +160,10 @@ public abstract class CharacterRendererBase : MonoBehaviour</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase__animator" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase._animator">
   _animator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The Animator to apply the Animator Controller to</p>
+  <div class="markdown level1 summary"><p>The Animator component which the Animator Controller will be applied to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -194,7 +194,7 @@ protected Animator _animator</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase__renderer" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer">
   _renderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The Renderer to apply the character shader to.</p>
@@ -225,9 +225,73 @@ protected Renderer _renderer</code></pre>
 
 
 
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_characterSpriteParent" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.characterSpriteParent">
+  characterSpriteParent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[BoxGroup(&quot;References&quot;)]
+protected Transform characterSpriteParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_defaultOverlayLayers" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.defaultOverlayLayers">
+  defaultOverlayLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[BoxGroup(&quot;Overlay Layers&quot;)]
+protected List&lt;CharacterOverlayLayerSO&gt; defaultOverlayLayers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html">CharacterOverlayLayerSO</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_isValid" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.isValid">
   isValid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -257,7 +321,7 @@ protected Renderer _renderer</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_loadCharacterOnStart" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadCharacterOnStart">
   loadCharacterOnStart
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Toggles if the character should be loaded when the Start method is called.</p>
@@ -290,7 +354,7 @@ protected bool loadCharacterOnStart</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_loadingMode" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadingMode">
   loadingMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Option to load character asynchronously or synchronously.</p>
@@ -323,7 +387,7 @@ protected CharacterLoaderLoadingMode loadingMode</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_setAnimatorController" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.setAnimatorController">
   setAnimatorController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Toggles if the Animator Controller set in Character Type should be used.</p>
@@ -358,18 +422,18 @@ protected bool setAnimatorController</code></pre>
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadedCharacter_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter*"></a>
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_Animator_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadedCharacter" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter">
-  LoadedCharacter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_Animator" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator">
+  Animator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ICharacter&lt;CharacterTypeBaseSO, LoadedCharacterHandlerBase&gt; LoadedCharacter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Animator Animator { get; }</code></pre>
   </div>
 
 
@@ -378,7 +442,255 @@ protected bool setAnimatorController</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html">LoadedCharacterHandlerBase</a>&gt;</dt>
+    <dt><span class="xref">Animator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_CharacterSpriteParent_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_CharacterSpriteParent" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent">
+  CharacterSpriteParent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform CharacterSpriteParent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_DefaultOverlayLayers_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_DefaultOverlayLayers" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers">
+  DefaultOverlayLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;CharacterOverlayLayerSO&gt; DefaultOverlayLayers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html">CharacterOverlayLayerSO</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadCharacterOnStart_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadCharacterOnStart" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart">
+  LoadCharacterOnStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadCharacterOnStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadedCharacter_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadedCharacter" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter">
+  LoadedCharacter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ICharacter&lt;CharacterTypeBaseSO, CharacterShaderState&gt; LoadedCharacter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterShaderState.html">CharacterShaderState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadingMode_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadingMode" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode">
+  LoadingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterLoaderLoadingMode LoadingMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode.html">CharacterLoaderLoadingMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_OverlayLayerHandler_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_OverlayLayerHandler" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler">
+  OverlayLayerHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverlayLayersHandler OverlayLayerHandler { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html">OverlayLayersHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_Renderer_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_Renderer" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer">
+  Renderer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Renderer Renderer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Renderer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_SetAnimatorController_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_SetAnimatorController" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController">
+  SetAnimatorController
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAnimatorController { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -397,7 +709,7 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.GetAndShowCharacter">
   GetAndShowCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -424,23 +736,54 @@ protected bool setAnimatorController</code></pre>
 
 
 
-  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded*"></a>
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InstantiateNewOverlayLayer_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase__" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})">
-  InvokeOnCharacterLoaded(ICharacter&lt;CharacterTypeBaseSO, LoadedCharacterHandlerBase&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InstantiateNewOverlayLayer" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer">
+  InstantiateNewOverlayLayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void InvokeOnCharacterLoaded(ICharacter&lt;CharacterTypeBaseSO, LoadedCharacterHandlerBase&gt; character)</code></pre>
+    <pre><code class="lang-csharp hljs">public CharacterOverlayLayerHandler InstantiateNewOverlayLayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html">CharacterOverlayLayerHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_CharacterShaderState__" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState})">
+  InvokeOnCharacterLoaded(ICharacter&lt;CharacterTypeBaseSO, CharacterShaderState&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeOnCharacterLoaded(ICharacter&lt;CharacterTypeBaseSO, CharacterShaderState&gt; character)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>character</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html">LoadedCharacterHandlerBase</a>&gt;</dt>
+    <dt><code>character</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterShaderState.html">CharacterShaderState</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -459,7 +802,7 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_OnDestroy" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy">
   OnDestroy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -485,7 +828,7 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_ReleaseCharacter" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.ReleaseCharacter">
   ReleaseCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -511,14 +854,14 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_ShowCharacter" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.ShowCharacter">
   ShowCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void ShowCharacter()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void ShowCharacter()</code></pre>
   </div>
 
 
@@ -537,7 +880,7 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_TrySetCharacterAnimator_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.TrySetCharacterAnimator(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)">
   TrySetCharacterAnimator(CharacterTypeBaseSO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -568,7 +911,7 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_ValidationCheck" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.ValidationCheck">
   ValidationCheck()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -602,14 +945,14 @@ protected bool setAnimatorController</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Components_CharacterRendererBase_OnCharacterLoaded" data-uid="BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded">
   OnCharacterLoaded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ICharacter&lt;CharacterTypeBaseSO, LoadedCharacterHandlerBase&gt;&gt; OnCharacterLoaded</code></pre>
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ICharacter&lt;CharacterTypeBaseSO, CharacterShaderState&gt;&gt; OnCharacterLoaded</code></pre>
   </div>
 
 
@@ -619,7 +962,7 @@ protected bool setAnimatorController</code></pre>
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html">LoadedCharacterHandlerBase</a>&gt;&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterShaderState.html">CharacterShaderState</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -633,7 +976,7 @@ protected bool setAnimatorController</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

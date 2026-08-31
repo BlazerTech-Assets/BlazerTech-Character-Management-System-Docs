@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt; | BlazerTech Character Management System </title>
+      <title>Class CharacterBase&lt;TCharacterType, TCharacterShaderState&gt; | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt; | BlazerTech Character Management System ">
+      <meta name="title" content="Class CharacterBase&lt;TCharacterType, TCharacterShaderState&gt; | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_CharacterBase_2.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.CharacterBase%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_CharacterBase_2.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.CharacterBase%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -105,7 +105,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2" class="text-break">
-Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class CharacterBase&lt;TCharacterType, TCharacterShaderState&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -117,7 +117,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CharacterBase&lt;TCharacterType, TCharacterHandler&gt; : ICharacter&lt;TCharacterType, TCharacterHandler&gt;, IValidatable where TCharacterType : CharacterTypeBaseSO where TCharacterHandler : LoadedCharacterHandlerBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CharacterBase&lt;TCharacterType, TCharacterShaderState&gt; : ICharacter&lt;TCharacterType, TCharacterShaderState&gt;, IValidatable where TCharacterType : CharacterTypeBaseSO where TCharacterShaderState : CharacterShaderState</code></pre>
   </div>
 
 
@@ -126,7 +126,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
   <dl class="parameters">
     <dt><code>TCharacterType</code></dt>
     <dd></dd>
-    <dt><code>TCharacterHandler</code></dt>
+    <dt><code>TCharacterShaderState</code></dt>
     <dd></dd>
   </dl>
 
@@ -134,14 +134,14 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">CharacterBase&lt;TCharacterType, TCharacterHandler&gt;</span></div>
+      <div><span class="xref">CharacterBase&lt;TCharacterType, TCharacterShaderState&gt;</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;TCharacterType, TCharacterHandler&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.ICharacter-2.html">ICharacter</a>&lt;TCharacterType, TCharacterShaderState&gt;</div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
     </dd>
   </dl>
@@ -168,7 +168,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2__ctor_System_String__0_System_String_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0,System.String)">
   CharacterBase(string, TCharacterType, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -204,16 +204,16 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_loadedCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.loadedCharacterHandler">
-  loadedCharacterHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_characterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.characterShaderState">
+  characterShaderState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TCharacterHandler loadedCharacterHandler</code></pre>
+    <pre><code class="lang-csharp hljs">protected TCharacterShaderState characterShaderState</code></pre>
   </div>
 
 
@@ -221,7 +221,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">TCharacterHandler</span></dt>
+    <dt><span class="xref">TCharacterShaderState</span></dt>
     <dd></dd>
   </dl>
 
@@ -241,7 +241,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName">
   CharacterDisplayName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -272,7 +272,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID">
   CharacterGUID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -303,7 +303,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName">
   CharacterName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -330,11 +330,42 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterShaderState">
+  CharacterShaderState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TCharacterShaderState CharacterShaderState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TCharacterShaderState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType">
   CharacterType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -365,7 +396,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid">
   IsValid
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>True if the character was initiialized correctly; otherwise, false.</p>
@@ -393,53 +424,22 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler">
-  LoadedCharacterHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TCharacterHandler LoadedCharacterHandler { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">TCharacterHandler</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler(System.Object)">
-  AcquireCharacterHandler(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderState_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderState(System.Object)">
+  AcquireCharacterShaderState(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TCharacterHandler AcquireCharacterHandler(object owner)</code></pre>
+    <pre><code class="lang-csharp hljs">public TCharacterShaderState AcquireCharacterShaderState(object owner)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -450,7 +450,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">TCharacterHandler</span></dt>
+    <dt><span class="xref">TCharacterShaderState</span></dt>
     <dd></dd>
   </dl>
 
@@ -464,18 +464,18 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderStateAsync_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync(System.Object)">
-  AcquireCharacterHandlerAsync(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterShaderStateAsync_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterShaderStateAsync(System.Object)">
+  AcquireCharacterShaderStateAsync(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;TCharacterHandler&gt; AcquireCharacterHandlerAsync(object owner)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TCharacterShaderState&gt; AcquireCharacterShaderStateAsync(object owner)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -486,7 +486,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TCharacterHandler&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TCharacterShaderState&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -500,18 +500,18 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler">
-  LoadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderState">
+  LoadCharacterShaderState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void LoadCharacterHandler()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void LoadCharacterShaderState()</code></pre>
   </div>
 
 
@@ -526,18 +526,18 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderStateAsync_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync">
-  LoadCharacterHandlerAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterShaderStateAsync" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterShaderStateAsync">
+  LoadCharacterShaderStateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract Task LoadCharacterHandlerAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract Task LoadCharacterShaderStateAsync()</code></pre>
   </div>
 
 
@@ -557,11 +557,38 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_MarkCharacterInvalid_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_MarkCharacterInvalid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.MarkCharacterInvalid">
+  MarkCharacterInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mark the character as invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkCharacterInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck">
   PerformValidationCheck()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current character instance is valid by verifying
@@ -598,18 +625,18 @@ is assigned and valid.</p>
   </dl>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)">
-  ReleaseCharacterHandler(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterShaderState_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterShaderState(System.Object)">
+  ReleaseCharacterShaderState(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ReleaseCharacterHandler(object owner)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ReleaseCharacterShaderState(object owner)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -629,44 +656,18 @@ is assigned and valid.</p>
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterShaderState_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid">
-  SetCharacterInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterShaderState" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterShaderState">
+  UnloadCharacterShaderState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetCharacterInvalid()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler">
-  UnloadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L143"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void UnloadCharacterHandler()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void UnloadCharacterShaderState()</code></pre>
   </div>
 
 
@@ -688,7 +689,7 @@ is assigned and valid.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_OnCharacterDisplayNameChanged" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.OnCharacterDisplayNameChanged">
   OnCharacterDisplayNameChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -719,7 +720,7 @@ is assigned and valid.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/CharacterBase.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

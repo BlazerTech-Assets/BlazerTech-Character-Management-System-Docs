@@ -9,7 +9,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.CharacterDisplayName
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.CharacterName
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.CharacterTypeIdentifier
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.EquippedLayers
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.Layers
   langs:
   - csharp
   - vb
@@ -21,10 +21,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacter_DTO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 380
+    startLine: 423
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -58,10 +58,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTypeIdentifier
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 383
+    startLine: 426
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -85,10 +85,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 385
+    startLine: 428
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -112,10 +112,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 386
+    startLine: 429
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -124,33 +124,33 @@ items:
     return:
       type: System.String
     content.vb: Public CharacterDisplayName As String
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.EquippedLayers
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.EquippedLayers
-  id: EquippedLayers
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.Layers
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.Layers
+  id: Layers
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
   langs:
   - csharp
   - vb
-  name: EquippedLayers
-  nameWithType: LayeredCharacter.LayeredCharacter_DTO.EquippedLayers
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.EquippedLayers
+  name: Layers
+  nameWithType: LayeredCharacter.LayeredCharacter_DTO.Layers
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.Layers
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: EquippedLayers
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Layers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 387
+    startLine: 430
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public List<CharacterLayerOption.EquippedCharacterLayerOption_DTO> EquippedLayers
+    content: public List<CharacterLayerOption.CharacterLayerOption_DTO> Layers
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO}
-    content.vb: Public EquippedLayers As List(Of CharacterLayerOption.EquippedCharacterLayerOption_DTO)
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO}
+    content.vb: Public Layers As List(Of CharacterLayerOption.CharacterLayerOption_DTO)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
@@ -166,10 +166,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 389
+    startLine: 432
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -243,17 +243,17 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO}
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterLayerOption.EquippedCharacterLayerOption_DTO>
-  nameWithType: List<CharacterLayerOption.EquippedCharacterLayerOption_DTO>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO>
-  nameWithType.vb: List(Of CharacterLayerOption.EquippedCharacterLayerOption_DTO)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO)
-  name.vb: List(Of CharacterLayerOption.EquippedCharacterLayerOption_DTO)
+  name: List<CharacterLayerOption.CharacterLayerOption_DTO>
+  nameWithType: List<CharacterLayerOption.CharacterLayerOption_DTO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO>
+  nameWithType.vb: List(Of CharacterLayerOption.CharacterLayerOption_DTO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO)
+  name.vb: List(Of CharacterLayerOption.CharacterLayerOption_DTO)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
@@ -264,9 +264,9 @@ references:
     name: CharacterLayerOption
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO
-    name: EquippedCharacterLayerOption_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+    name: CharacterLayerOption_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -280,9 +280,9 @@ references:
     name: CharacterLayerOption
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO
-    name: EquippedCharacterLayerOption_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.EquippedCharacterLayerOption_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO
+    name: CharacterLayerOption_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption_DTO.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

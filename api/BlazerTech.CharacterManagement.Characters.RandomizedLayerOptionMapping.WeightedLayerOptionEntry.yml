@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  commentId: T:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  id: RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor(System.String)
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.LayerOptionID
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.Weight
+  langs:
+  - csharp
+  - vb
+  name: RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  nameWithType: RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: WeightedLayerOptionEntry
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 173
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+    content.vb: >-
+      <Serializable>
+
+      Public Class RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.LayerOptionID
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.LayerOptionID
+  id: LayerOptionID
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionID
+  nameWithType: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.LayerOptionID
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.LayerOptionID
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerOptionID
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string LayerOptionID
+    return:
+      type: System.String
+    content.vb: Public LayerOptionID As String
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.Weight
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.Weight
+  id: Weight
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.Weight
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.Weight
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Weight
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 177
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Min(0)]
+
+      public int Weight
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Min(0)>
+
+      Public Weight As Integer
+  attributes:
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+  langs:
+  - csharp
+  - vb
+  name: WeightedLayerOptionEntry(string)
+  nameWithType: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.WeightedLayerOptionEntry(string)
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.WeightedLayerOptionEntry(string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 179
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public WeightedLayerOptionEntry(string layerOptionID)
+    parameters:
+    - id: layerOptionID
+      type: System.String
+    content.vb: Public Sub New(layerOptionID As String)
+  overload: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor*
+  nameWithType.vb: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.New(String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.New(String)
+  name.vb: New(String)
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.#ctor
+  href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.html#BlazerTech_CharacterManagement_Characters_RandomizedLayerOptionMapping_WeightedLayerOptionEntry__ctor_System_String_
+  name: WeightedLayerOptionEntry
+  nameWithType: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.WeightedLayerOptionEntry
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.WeightedLayerOptionEntry
+  nameWithType.vb: RandomizedLayerOptionMapping.WeightedLayerOptionEntry.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.New
+  name.vb: New

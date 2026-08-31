@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Creator Overview | BlazerTech Character Management System </title>
+      <title> | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Creator Overview | BlazerTech Character Management System ">
+      <meta name="title" content=" | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="Character Creator Overview | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Character Creator Overview | BlazerTech Character Management System">
+    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
 
       <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
       <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
@@ -100,187 +100,8 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="temp">
-<h1 id="character-creator-overview">Character Creator Overview</h1>
+        <article data-uid="">
 
-<p>The <strong>Character Creator</strong> is a modular, prefab-based framework for building <strong>Character Creation Menus</strong>.</p>
-<p>A <strong>Character Creation Menu</strong> allows players to create and customize characters for use in your game. For example, it can be used to create a player character or customize the appearance of an NPC.</p>
-<p>The Character Creator is designed to be flexible. Each part of the menu is provided as a separate <strong>module</strong>, allowing you to combine, configure, and customize the modules to create the menu you want.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The Character Creator is designed for <strong>Layered Characters</strong>. Its customization features work by modifying the individual layers that make up a Layered Character.</p>
-</div>
-<hr>
-<h2 id="character-creator-modules">Character Creator Modules</h2>
-<p>A <strong>module</strong> is a component of the Character Creation Menu that provides a specific piece of functionality.</p>
-<p>Modules can be combined to create a complete Character Creation Menu. You only need to include the modules and features that your menu requires.</p>
-<table>
-<thead>
-<tr>
-<th>Module</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><a href="#layer-selectors">Layer Selectors</a></strong></td>
-<td>Allow the player to change the visual options for each character layer.</td>
-</tr>
-<tr>
-<td><strong><a href="#character-preview">Character Preview</a></strong></td>
-<td>Displays a static or animated preview of the character and updates as changes are made.</td>
-</tr>
-<tr>
-<td><strong><a href="#menu-controls">Menu Controls</a></strong></td>
-<td>Provides controls such as Save, Back, Reset, and Randomize.</td>
-</tr>
-<tr>
-<td><strong><a href="#character-history">Character History</a></strong></td>
-<td>Records changes and allows players to revert to previous versions of the character.</td>
-</tr>
-<tr>
-<td><strong><a href="#randomization-controls">Randomization Controls</a></strong></td>
-<td>Provides options for randomizing the entire character or individual layers.</td>
-</tr>
-<tr>
-<td><strong><a href="#loading-screens">Loading Screens</a></strong></td>
-<td>Hides the menu while it is being initialized and can display loading progress.</td>
-</tr>
-<tr>
-<td><strong><a href="#character-display-name">Character Display Name</a></strong></td>
-<td>Allows the player to enter a display name for their character.</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="layer-selectors">Layer Selectors</h2>
-<p>A <strong>Layer Selector</strong> is a UI element that allows the player to change a specific <strong>layer</strong> of a <a class="xref" href="character-types/layered-character-type.html">Layered Character</a>.</p>
-<p>Several selector types are included:</p>
-<table>
-<thead>
-<tr>
-<th>Selector Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><a class="xref" href="character-creator/layer-selectors/dropdown-layer-selector.html">Dropdown Selector</a></strong></td>
-<td>Displays the available options in a dropdown list.</td>
-</tr>
-<tr>
-<td><strong><a class="xref" href="character-creator/layer-selectors/carousel-layer-selector.html">Carousel Selector</a></strong></td>
-<td>Displays the current option and allows the player to cycle through other options using left and right controls.</td>
-</tr>
-<tr>
-<td><strong><a class="xref" href="character-creator/layer-selectors/Grid-layer-selector.html">Grid Selector</a></strong></td>
-<td>Displays layer options as a grid of preview thumbnails.</td>
-</tr>
-<tr>
-<td><strong><a class="xref" href="character-creator/layer-selectors/list-layer-selector.html">List Selector</a></strong></td>
-<td>Displays layer options in a vertical or horizontal list, optionally with preview images.</td>
-</tr>
-<tr>
-<td><strong><a class="xref" href="character-creator/layer-selectors/tab-layer-selector.html">Tab Selector</a></strong></td>
-<td>Works alongside another selector and allows the player to switch which layer that selector controls.</td>
-</tr>
-</tbody>
-</table>
-<img src="../images/character-creation-menu/ccm-layer-selectors/layer-selectors.png" alt="Layer Selectors" width="500">
-<p><a class="xref" href="character-creator/layer-selectors/layer-selector-setup.html">Read More → Layer Selector Setup</a></p>
-<hr>
-<h2 id="character-preview">Character Preview</h2>
-<p>The <strong>Character Preview</strong> displays the character currently being customized.</p>
-<p>Character previews can be configured with several features:</p>
-<ul>
-<li><strong>Static Sprite Preview</strong>: Displays the preview sprite defined by the Character Type.</li>
-<li><strong>Animated Preview</strong>: Uses an Animator Controller to play character animations.</li>
-<li><strong>Animation Swapping</strong>: Allows additional animations defined by the Character Type to be selected from the menu.</li>
-<li><strong>Character Rotation</strong>: Adds controls that allow the player to view the character from different directions.</li>
-</ul>
-<img src="../images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="500">
-<p><a class="xref" href="character-creator/character-creator-character-preview.html">Read More → Character Preview</a></p>
-<hr>
-<h2 id="menu-controls">Menu Controls</h2>
-<p><strong>Menu Controls</strong> provide the buttons and controls used to interact with the Character Creation Menu.</p>
-<p>Common controls include:</p>
-<ul>
-<li><strong>Back/Close</strong>: Closes the menu without saving changes.</li>
-<li><strong>Save</strong>: Saves the character's changes.</li>
-<li><strong>Reset</strong>: Resets the character.</li>
-<li><strong>Randomize</strong>: Randomizes the character's layers.</li>
-</ul>
-<img src="../images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500">
-<p><a class="xref" href="character-creator/character-creator-menu-controls.html">Read More → Menu Controls</a></p>
-<hr>
-<h2 id="character-history">Character History</h2>
-<p>The <strong>Character History System</strong> records changes made while customizing a character.</p>
-<p>The <code>CCM History Tracker</code> component stores a <strong>snapshot</strong> of the character whenever a change is made. These snapshots can then be used to undo changes or return to an earlier version of the character.</p>
-<h3 id="history-tracker">History Tracker</h3>
-<p>The History Tracker provides the following settings:</p>
-<ul>
-<li><strong>Snapshot Limit</strong>: Determines how many snapshots can be stored. The limit can be set between <strong>1 and 100</strong>, with a default of <strong>30</strong>.</li>
-<li><strong>Preserve First Snapshot</strong>: Prevents the first snapshot from being overwritten when the snapshot limit is reached.</li>
-</ul>
-<p><img src="../images/character-creation-menu/ccm-history/history-tracker-component.png" alt="History Tracker Component"></p>
-<p><a class="xref" href="character-creator/history/character-creator-history-tracking-system.html">Read More → History Tracking System</a></p>
-<h3 id="undo--redo">Undo &amp; Redo</h3>
-<p>The <strong>Undo &amp; Redo</strong> functionality allows players to move backward and forward through their character's history.</p>
-<p>Use the <code>CCM Timeline Button Handler</code> component on a button to connect it to a <strong>History Tracker</strong>.</p>
-<img src="../images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500">
-<p><a class="xref" href="character-creator/history/character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></p>
-<h3 id="history-panels">History Panels</h3>
-<p>A <strong>History Panel</strong> displays the snapshots recorded by the History Tracker. Players can select an entry to revert the character to that version.</p>
-<p>The Character Creator supports several presentation styles:</p>
-<table>
-<thead>
-<tr>
-<th>Panel Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Text Based</strong></td>
-<td>Displays text describing what changed in each snapshot.</td>
-</tr>
-<tr>
-<td><strong>Sprite Based</strong></td>
-<td>Displays a preview image of the character for each snapshot.</td>
-</tr>
-<tr>
-<td><strong>Hybrid</strong></td>
-<td>Displays both a description and preview image for each snapshot.</td>
-</tr>
-</tbody>
-</table>
-<img src="../images/character-creation-menu/ccm-history/history-panel-text.png" alt="Text Based History Panel" width="400">
-<p><br><br></p>
-<img src="../images/character-creation-menu/ccm-history/history-panel-sprite-preview.png" alt="Sprite Based History Panel" width="500">
-<p><a class="xref" href="character-creator/history/character-creator-history-panels.html">Read More → History Panels</a></p>
-<hr>
-<h2 id="randomization-controls">Randomization Controls</h2>
-<p><strong>Randomization Controls</strong> allow players to quickly generate character appearances without manually selecting each layer.</p>
-<p>There are several ways to add randomization:</p>
-<ul>
-<li><strong>Randomize Button</strong>: Randomizes all layers of the character.</li>
-<li><strong>Controlled Randomization</strong>: Allows the player to choose which layers should be randomized.</li>
-<li><strong>Layer-Specific Randomization</strong>: Allows individual layers to be randomized directly from <a href="#layer-selectors">Layer Selectors</a>.</li>
-</ul>
-<img src="../images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400">
-<p><a class="xref" href="character-creator/character-creator-character-randomization.html">Read More → Character Randomization</a></p>
-<hr>
-<h2 id="loading-screens">Loading Screens</h2>
-<p><strong>Loading Screens</strong> hide the Character Creation Menu while it is being initialized.</p>
-<p>Loading Screens are modular, allowing additional elements such as loading bars and progress text to be added or removed as needed.</p>
-<img src="../images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500">
-<p><a class="xref" href="character-creator/character-creator-loading-screens.html">Read More → Loading Screen</a></p>
-<hr>
-<h2 id="character-display-name">Character Display Name</h2>
-<p>The <strong>Character Display Name</strong> module allows the player to give their character a display name.</p>
-<p>The display name can later be displayed anywhere in your game, such as above the character's head.</p>
-<p><img src="../images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png" alt="Character Display Name Field"></p>
-<p><a class="xref" href="character-creator/character-creator-character-display-name.html">Read More → Character Display Name</a></p>
 
 </article>
 

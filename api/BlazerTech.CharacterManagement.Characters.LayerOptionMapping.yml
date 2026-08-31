@@ -7,8 +7,9 @@ items:
   children:
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
-  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
-  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
   langs:
   - csharp
   - vb
@@ -18,11 +19,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayerOptionMapping
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
     startLine: 62
   assemblies:
   - Assembly-CSharp
@@ -40,64 +41,66 @@ items:
       Public Class LayerOptionMapping
   inheritance:
   - System.Object
+  derivedClasses:
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
-  id: characterLayer
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  id: LayerDefinition
   parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
   langs:
   - csharp
   - vb
-  name: characterLayer
-  nameWithType: LayerOptionMapping.characterLayer
-  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  name: LayerDefinition
+  nameWithType: LayerOptionMapping.LayerDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: characterLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayerDefinition
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
     startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterLayerDefinitionSO characterLayer
+    content: public CharacterLayerDefinitionSO LayerDefinition
     return:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
-    content.vb: Public characterLayer As CharacterLayerDefinitionSO
-- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
-  id: LayerOptionID
+    content.vb: Public LayerDefinition As CharacterLayerDefinitionSO
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+  id: SelectedLayerOptionID
   parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
   langs:
   - csharp
   - vb
-  name: LayerOptionID
-  nameWithType: LayerOptionMapping.LayerOptionID
-  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
+  name: SelectedLayerOptionID
+  nameWithType: LayerOptionMapping.SelectedLayerOptionID
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: LayerOptionID
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SelectedLayerOptionID
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
     startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public string LayerOptionID
+    content: public string SelectedLayerOptionID
     return:
       type: System.String
-    content.vb: Public LayerOptionID As String
+    content.vb: Public SelectedLayerOptionID As String
 - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
   commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
   id: EditorSearchTerm
@@ -111,11 +114,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EditorSearchTerm
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
     startLine: 71
   assemblies:
   - Assembly-CSharp
@@ -148,25 +151,53 @@ items:
   type: Constructor
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
     startLine: 74
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public LayerOptionMapping(CharacterLayerDefinitionSO collectionSO)
+    content: public LayerOptionMapping(CharacterLayerDefinitionSO layer)
     parameters:
-    - id: collectionSO
+    - id: layer
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
-    content.vb: Public Sub New(collectionSO As CharacterLayerDefinitionSO)
+    content.vb: Public Sub New(layer As CharacterLayerDefinitionSO)
   overload: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor*
   nameWithType.vb: LayerOptionMapping.New(CharacterLayerDefinitionSO)
   fullName.vb: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.New(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
   name.vb: New(CharacterLayerDefinitionSO)
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  id: GetLayerOption
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: GetLayerOption()
+  nameWithType: LayerOptionMapping.GetLayerOption()
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GetLayerOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/FixedLayeredCharacterTemplateSO.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public virtual CharacterLayerOption GetLayerOption()
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Overridable Function GetLayerOption() As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption*
 references:
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
@@ -256,3 +287,9 @@ references:
   nameWithType.vb: LayerOptionMapping.New
   fullName.vb: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.New
   name.vb: New
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_GetLayerOption
+  name: GetLayerOption
+  nameWithType: LayerOptionMapping.GetLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption

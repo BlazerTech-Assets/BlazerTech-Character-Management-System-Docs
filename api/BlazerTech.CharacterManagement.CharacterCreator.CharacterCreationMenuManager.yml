@@ -20,6 +20,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnBeforeMenuDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
@@ -40,7 +41,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuManager
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 11
@@ -90,7 +91,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Instance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 17
@@ -121,7 +122,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DefaultCharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 23
@@ -152,7 +153,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: NewCharacterTemplate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 28
@@ -183,7 +184,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: MenuContents
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 34
@@ -214,7 +215,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AutoEnableWithPrimaryCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 39
@@ -245,7 +246,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ActiveCharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 47
@@ -276,7 +277,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterSaved
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 55
@@ -324,7 +325,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 56
@@ -363,7 +364,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ActiveCharacterDraft
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 59
@@ -392,7 +393,7 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnabledAndSetup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 64
@@ -408,6 +409,33 @@ items:
       type: System.Boolean
     content.vb: Public Property EnabledAndSetup As Boolean
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
+  id: OnCharacterLayerOptionUpdated
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterLayerOptionUpdated
+  nameWithType: CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnCharacterLayerOptionUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public event EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs> OnCharacterLayerOptionUpdated
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+    content.vb: Public Event OnCharacterLayerOptionUpdated As EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   id: OnMenuEnabledAndSetup
@@ -423,10 +451,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuEnabledAndSetup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 67
+    startLine: 68
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -450,10 +478,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnBeforeMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -477,10 +505,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuLoadingProgressUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 69
+    startLine: 70
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -504,10 +532,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterSavedInMenuInstance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 72
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -531,10 +559,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuInstanceDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -558,10 +586,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ActiveHistoryTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 81
+    startLine: 82
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -587,10 +615,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableMenu_EditCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -630,10 +658,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableMenu_NewCharacterInFlexibleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 155
+    startLine: 156
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -679,10 +707,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableMenu_PrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 183
+    startLine: 184
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -722,10 +750,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableMenu_NewPrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 230
+    startLine: 231
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -771,10 +799,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 315
+    startLine: 323
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -799,10 +827,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DisableMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 335
+    startLine: 343
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -827,10 +855,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 361
+    startLine: 370
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -855,10 +883,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetActiveHistoryTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 373
+    startLine: 382
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -1180,6 +1208,75 @@ references:
   name: EnabledAndSetup
   nameWithType: CharacterCreationMenuManager.EnabledAndSetup
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs)
+  name.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
 - uid: System.EventHandler
   commentId: T:System.EventHandler
   parent: System
@@ -1222,34 +1319,6 @@ references:
     name: Single
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.single
-  - name: )
-- uid: System.EventHandler`1
-  commentId: T:System.EventHandler`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  name: EventHandler<TEventArgs>
-  nameWithType: EventHandler<TEventArgs>
-  fullName: System.EventHandler<TEventArgs>
-  nameWithType.vb: EventHandler(Of TEventArgs)
-  fullName.vb: System.EventHandler(Of TEventArgs)
-  name.vb: EventHandler(Of TEventArgs)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: <
-  - name: TEventArgs
-  - name: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TEventArgs
   - name: )
 - uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
   commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}

@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  commentId: T:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  id: CCMSaveCharacterButton
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+  langs:
+  - csharp
+  - vb
+  name: CCMSaveCharacterButton
+  nameWithType: CCMSaveCharacterButton
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CCMSaveCharacterButton
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: 'public class CCMSaveCharacterButton : Button, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler, IEventSystemHandler'
+    content.vb: Public Class CCMSaveCharacterButton Inherits Button Implements IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler, IEventSystemHandler
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.EventSystems.UIBehaviour
+  - UnityEngine.UI.Selectable
+  - UnityEngine.UI.Button
+  implements:
+  - UnityEngine.EventSystems.IMoveHandler
+  - UnityEngine.EventSystems.IPointerDownHandler
+  - UnityEngine.EventSystems.IPointerUpHandler
+  - UnityEngine.EventSystems.IPointerEnterHandler
+  - UnityEngine.EventSystems.IPointerExitHandler
+  - UnityEngine.EventSystems.ISelectHandler
+  - UnityEngine.EventSystems.IDeselectHandler
+  - UnityEngine.EventSystems.IPointerClickHandler
+  - UnityEngine.EventSystems.ISubmitHandler
+  - UnityEngine.EventSystems.IEventSystemHandler
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+  commentId: M:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+  id: Start
+  parent: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: CCMSaveCharacterButton.Start()
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Start
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  example: []
+  syntax:
+    content: protected override void Start()
+    content.vb: Protected Overrides Sub Start()
+  overridden: UnityEngine.EventSystems.UIBehaviour.Start
+  overload: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start*
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: UnityEngine.UI.Selectable
+  commentId: T:UnityEngine.UI.Selectable
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Selectable
+  nameWithType: Selectable
+  fullName: UnityEngine.UI.Selectable
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.EventSystems.IMoveHandler
+  commentId: T:UnityEngine.EventSystems.IMoveHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IMoveHandler
+  nameWithType: IMoveHandler
+  fullName: UnityEngine.EventSystems.IMoveHandler
+- uid: UnityEngine.EventSystems.IPointerDownHandler
+  commentId: T:UnityEngine.EventSystems.IPointerDownHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IPointerDownHandler
+  nameWithType: IPointerDownHandler
+  fullName: UnityEngine.EventSystems.IPointerDownHandler
+- uid: UnityEngine.EventSystems.IPointerUpHandler
+  commentId: T:UnityEngine.EventSystems.IPointerUpHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IPointerUpHandler
+  nameWithType: IPointerUpHandler
+  fullName: UnityEngine.EventSystems.IPointerUpHandler
+- uid: UnityEngine.EventSystems.IPointerEnterHandler
+  commentId: T:UnityEngine.EventSystems.IPointerEnterHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IPointerEnterHandler
+  nameWithType: IPointerEnterHandler
+  fullName: UnityEngine.EventSystems.IPointerEnterHandler
+- uid: UnityEngine.EventSystems.IPointerExitHandler
+  commentId: T:UnityEngine.EventSystems.IPointerExitHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IPointerExitHandler
+  nameWithType: IPointerExitHandler
+  fullName: UnityEngine.EventSystems.IPointerExitHandler
+- uid: UnityEngine.EventSystems.ISelectHandler
+  commentId: T:UnityEngine.EventSystems.ISelectHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: ISelectHandler
+  nameWithType: ISelectHandler
+  fullName: UnityEngine.EventSystems.ISelectHandler
+- uid: UnityEngine.EventSystems.IDeselectHandler
+  commentId: T:UnityEngine.EventSystems.IDeselectHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IDeselectHandler
+  nameWithType: IDeselectHandler
+  fullName: UnityEngine.EventSystems.IDeselectHandler
+- uid: UnityEngine.EventSystems.IPointerClickHandler
+  commentId: T:UnityEngine.EventSystems.IPointerClickHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IPointerClickHandler
+  nameWithType: IPointerClickHandler
+  fullName: UnityEngine.EventSystems.IPointerClickHandler
+- uid: UnityEngine.EventSystems.ISubmitHandler
+  commentId: T:UnityEngine.EventSystems.ISubmitHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: ISubmitHandler
+  nameWithType: ISubmitHandler
+  fullName: UnityEngine.EventSystems.ISubmitHandler
+- uid: UnityEngine.EventSystems.IEventSystemHandler
+  commentId: T:UnityEngine.EventSystems.IEventSystemHandler
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: IEventSystemHandler
+  nameWithType: IEventSystemHandler
+  fullName: UnityEngine.EventSystems.IEventSystemHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.EventSystems.UIBehaviour.Start
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.Start
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: Start()
+  nameWithType: UIBehaviour.Start()
+  fullName: UnityEngine.EventSystems.UIBehaviour.Start()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.Start
+    name: Start
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.Start
+    name: Start
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.html#BlazerTech_CharacterManagement_Components_CCMSaveCharacterButton_Start
+  name: Start
+  nameWithType: CCMSaveCharacterButton.Start
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start

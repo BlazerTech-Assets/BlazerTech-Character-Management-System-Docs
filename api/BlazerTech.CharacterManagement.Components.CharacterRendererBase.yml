@@ -5,17 +5,28 @@ items:
   id: CharacterRendererBase
   parent: BlazerTech.CharacterManagement.Components
   children:
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.GetAndShowCharacter
-  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState})
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.ReleaseCharacter
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.ShowCharacter
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.TrySetCharacterAnimator(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.ValidationCheck
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase._animator
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.characterSpriteParent
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.defaultOverlayLayers
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.isValid
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadCharacterOnStart
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadingMode
@@ -31,10 +42,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterRendererBase
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -54,7 +65,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
+  - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupEntryRenderer
   - BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
   - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   - BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
@@ -77,19 +88,19 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadedCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: public abstract ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase> LoadedCharacter { get; }
+    content: public abstract ICharacter<CharacterTypeBaseSO, CharacterShaderState> LoadedCharacter { get; }
     parameters: []
     return:
-      type: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
-    content.vb: Public MustOverride ReadOnly Property LoadedCharacter As ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
+      type: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}
+    content.vb: Public MustOverride ReadOnly Property LoadedCharacter As ICharacter(Of CharacterTypeBaseSO, CharacterShaderState)
   overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
   commentId: E:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
@@ -106,18 +117,18 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterLoaded
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: public event EventHandler<ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>> OnCharacterLoaded
+    content: public event EventHandler<ICharacter<CharacterTypeBaseSO, CharacterShaderState>> OnCharacterLoaded
     return:
-      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}}
-    content.vb: Public Event OnCharacterLoaded As EventHandler(Of ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}}
+    content.vb: Public Event OnCharacterLoaded As EventHandler(Of ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
   id: _renderer
@@ -133,10 +144,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: _renderer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 19
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -166,6 +177,110 @@ items:
     arguments:
     - type: System.String
       value: References
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+  id: Renderer
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: Renderer
+  nameWithType: CharacterRendererBase.Renderer
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Renderer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public Renderer Renderer { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Renderer
+    content.vb: Public ReadOnly Property Renderer As Renderer
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer*
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.characterSpriteParent
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.characterSpriteParent
+  id: characterSpriteParent
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: characterSpriteParent
+  nameWithType: CharacterRendererBase.characterSpriteParent
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.characterSpriteParent
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: characterSpriteParent
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [BoxGroup("References")]
+
+      protected Transform characterSpriteParent
+    return:
+      type: UnityEngine.Transform
+    content.vb: >-
+      <SerializeField>
+
+      <BoxGroup("References")>
+
+      Protected characterSpriteParent As Transform
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: NaughtyAttributes.BoxGroupAttribute
+    ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: References
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
+  id: CharacterSpriteParent
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: CharacterSpriteParent
+  nameWithType: CharacterRendererBase.CharacterSpriteParent
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterSpriteParent
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public Transform CharacterSpriteParent { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property CharacterSpriteParent As Transform
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.setAnimatorController
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.setAnimatorController
   id: setAnimatorController
@@ -181,10 +296,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: setAnimatorController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 25
+    startLine: 36
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -223,6 +338,35 @@ items:
     arguments:
     - type: System.String
       value: References
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
+  id: SetAnimatorController
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: SetAnimatorController
+  nameWithType: CharacterRendererBase.SetAnimatorController
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SetAnimatorController
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public bool SetAnimatorController { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SetAnimatorController As Boolean
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase._animator
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase._animator
   id: _animator
@@ -238,14 +382,14 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: _animator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 30
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
-  summary: The Animator to apply the Animator Controller to
+  summary: The Animator component which the Animator Controller will be applied to.
   example: []
   syntax:
     content: >-
@@ -280,6 +424,35 @@ items:
     arguments:
     - type: System.String
       value: References
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
+  id: Animator
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: Animator
+  nameWithType: CharacterRendererBase.Animator
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Animator
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public Animator Animator { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Animator
+    content.vb: Public ReadOnly Property Animator As Animator
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadingMode
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadingMode
   id: loadingMode
@@ -295,10 +468,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: loadingMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 35
+    startLine: 50
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -328,6 +501,35 @@ items:
     arguments:
     - type: System.String
       value: Loading
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
+  id: LoadingMode
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: LoadingMode
+  nameWithType: CharacterRendererBase.LoadingMode
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadingMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public CharacterLoaderLoadingMode LoadingMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
+    content.vb: Public ReadOnly Property LoadingMode As CharacterLoaderLoadingMode
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadCharacterOnStart
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.loadCharacterOnStart
   id: loadCharacterOnStart
@@ -343,10 +545,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: loadCharacterOnStart
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 40
+    startLine: 57
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -376,6 +578,139 @@ items:
     arguments:
     - type: System.String
       value: Loading
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
+  id: LoadCharacterOnStart
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: LoadCharacterOnStart
+  nameWithType: CharacterRendererBase.LoadCharacterOnStart
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LoadCharacterOnStart
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public bool LoadCharacterOnStart { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property LoadCharacterOnStart As Boolean
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart*
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.defaultOverlayLayers
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.defaultOverlayLayers
+  id: defaultOverlayLayers
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: defaultOverlayLayers
+  nameWithType: CharacterRendererBase.defaultOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.defaultOverlayLayers
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: defaultOverlayLayers
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [BoxGroup("Overlay Layers")]
+
+      protected List<CharacterOverlayLayerSO> defaultOverlayLayers
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+    content.vb: >-
+      <SerializeField>
+
+      <BoxGroup("Overlay Layers")>
+
+      Protected defaultOverlayLayers As List(Of CharacterOverlayLayerSO)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: NaughtyAttributes.BoxGroupAttribute
+    ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Overlay Layers
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
+  id: DefaultOverlayLayers
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: DefaultOverlayLayers
+  nameWithType: CharacterRendererBase.DefaultOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: DefaultOverlayLayers
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public IReadOnlyList<CharacterOverlayLayerSO> DefaultOverlayLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+    content.vb: Public ReadOnly Property DefaultOverlayLayers As IReadOnlyList(Of CharacterOverlayLayerSO)
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers*
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
+  id: OverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: OverlayLayerHandler
+  nameWithType: CharacterRendererBase.OverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OverlayLayerHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public OverlayLayersHandler OverlayLayerHandler { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+    content.vb: Public ReadOnly Property OverlayLayerHandler As OverlayLayersHandler
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.isValid
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase.isValid
   id: isValid
@@ -391,10 +726,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: isValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 42
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -418,10 +753,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 62
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -446,10 +781,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 73
+    startLine: 107
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -474,16 +809,16 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 75
+    startLine: 109
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: protected abstract void ShowCharacter()
-    content.vb: Protected MustOverride Sub ShowCharacter()
+    content: protected virtual void ShowCharacter()
+    content.vb: Protected Overridable Sub ShowCharacter()
   overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.ShowCharacter*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.ReleaseCharacter
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.ReleaseCharacter
@@ -500,10 +835,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 77
+    startLine: 114
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -526,10 +861,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TrySetCharacterAnimator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 79
+    startLine: 123
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -540,38 +875,66 @@ items:
       type: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     content.vb: Protected Sub TrySetCharacterAnimator(characterType As CharacterTypeBaseSO)
   overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.TrySetCharacterAnimator*
-- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
-  id: InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState})
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState})
+  id: InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState})
   parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
   langs:
   - csharp
   - vb
-  name: InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>)
-  nameWithType: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase>)
+  name: InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, CharacterShaderState>)
+  nameWithType: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, CharacterShaderState>)
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState>)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: InvokeOnCharacterLoaded
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 98
+    startLine: 142
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: protected void InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase> character)
+    content: protected void InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, CharacterShaderState> character)
     parameters:
     - id: character
-      type: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
-    content.vb: Protected Sub InvokeOnCharacterLoaded(character As ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+      type: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}
+    content.vb: Protected Sub InvokeOnCharacterLoaded(character As ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
   overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded*
-  nameWithType.vb: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase))
-  name.vb: InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+  nameWithType.vb: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
+  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState))
+  name.vb: InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer
+  id: InstantiateNewOverlayLayer
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  langs:
+  - csharp
+  - vb
+  name: InstantiateNewOverlayLayer()
+  nameWithType: CharacterRendererBase.InstantiateNewOverlayLayer()
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: InstantiateNewOverlayLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public CharacterOverlayLayerHandler InstantiateNewOverlayLayer()
+    return:
+      type: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+    content.vb: Public Function InstantiateNewOverlayLayer() As CharacterOverlayLayerHandler
+  overload: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer*
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
   id: OnDestroy
@@ -587,10 +950,10 @@ items:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
       branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnDestroy
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 100
+    startLine: 149
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -687,17 +1050,17 @@ references:
   name: LoadedCharacter
   nameWithType: CharacterRendererBase.LoadedCharacter
   fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
-- uid: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
-  commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}
+  commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}
   parent: BlazerTech.CharacterManagement.Characters
   definition: BlazerTech.CharacterManagement.Characters.ICharacter`2
   href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
-  name: ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>
-  nameWithType: ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>
-  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase>
-  nameWithType.vb: ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase)
-  name.vb: ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
+  name: ICharacter<CharacterTypeBaseSO, CharacterShaderState>
+  nameWithType: ICharacter<CharacterTypeBaseSO, CharacterShaderState>
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState>
+  nameWithType.vb: ICharacter(Of CharacterTypeBaseSO, CharacterShaderState)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState)
+  name.vb: ICharacter(Of CharacterTypeBaseSO, CharacterShaderState)
   spec.csharp:
   - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
     name: ICharacter
@@ -708,9 +1071,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
   - name: ','
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-    name: LoadedCharacterHandlerBase
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+    name: CharacterShaderState
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
   - name: '>'
   spec.vb:
   - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
@@ -724,9 +1087,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
   - name: ','
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-    name: LoadedCharacterHandlerBase
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+    name: CharacterShaderState
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
   commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter`2
@@ -789,17 +1152,17 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters
     name: Characters
     href: BlazerTech.CharacterManagement.Characters.html
-- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}}
-  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}}
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.CharacterShaderState}}
   parent: System
   definition: System.EventHandler`1
   href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  name: EventHandler<ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>>
-  nameWithType: EventHandler<ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>>
-  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase>>
-  nameWithType.vb: EventHandler(Of ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
-  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase))
-  name.vb: EventHandler(Of ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+  name: EventHandler<ICharacter<CharacterTypeBaseSO, CharacterShaderState>>
+  nameWithType: EventHandler<ICharacter<CharacterTypeBaseSO, CharacterShaderState>>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState>>
+  nameWithType.vb: EventHandler(Of ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.CharacterShaderState))
+  name.vb: EventHandler(Of ICharacter(Of CharacterTypeBaseSO, CharacterShaderState))
   spec.csharp:
   - uid: System.EventHandler`1
     name: EventHandler
@@ -815,9 +1178,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
   - name: ','
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-    name: LoadedCharacterHandlerBase
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+    name: CharacterShaderState
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
   - name: '>'
   - name: '>'
   spec.vb:
@@ -839,9 +1202,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
   - name: ','
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-    name: LoadedCharacterHandlerBase
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterShaderState
+    name: CharacterShaderState
+    href: BlazerTech.CharacterManagement.Characters.CharacterShaderState.html
   - name: )
   - name: )
 - uid: System.EventHandler`1
@@ -879,6 +1242,25 @@ references:
   name: Renderer
   nameWithType: Renderer
   fullName: UnityEngine.Renderer
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_Renderer
+  name: Renderer
+  nameWithType: CharacterRendererBase.Renderer
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Renderer
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_CharacterSpriteParent
+  name: CharacterSpriteParent
+  nameWithType: CharacterRendererBase.CharacterSpriteParent
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.CharacterSpriteParent
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -890,6 +1272,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_SetAnimatorController
+  name: SetAnimatorController
+  nameWithType: CharacterRendererBase.SetAnimatorController
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.SetAnimatorController
 - uid: UnityEngine.Animator
   commentId: T:UnityEngine.Animator
   parent: UnityEngine
@@ -897,6 +1285,12 @@ references:
   name: Animator
   nameWithType: Animator
   fullName: UnityEngine.Animator
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_Animator
+  name: Animator
+  nameWithType: CharacterRendererBase.Animator
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.Animator
 - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   parent: BlazerTech.CharacterManagement.Components
@@ -904,6 +1298,196 @@ references:
   name: CharacterLoaderLoadingMode
   nameWithType: CharacterLoaderLoadingMode
   fullName: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadingMode
+  name: LoadingMode
+  nameWithType: CharacterRendererBase.LoadingMode
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadingMode
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadCharacterOnStart
+  name: LoadCharacterOnStart
+  nameWithType: CharacterRendererBase.LoadCharacterOnStart
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadCharacterOnStart
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CharacterOverlayLayerSO>
+  nameWithType: List<CharacterOverlayLayerSO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO>
+  nameWithType.vb: List(Of CharacterOverlayLayerSO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  name.vb: List(Of CharacterOverlayLayerSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_DefaultOverlayLayers
+  name: DefaultOverlayLayers
+  nameWithType: CharacterRendererBase.DefaultOverlayLayers
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.DefaultOverlayLayers
+- uid: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CharacterOverlayLayerSO>
+  nameWithType: IReadOnlyList<CharacterOverlayLayerSO>
+  fullName: System.Collections.Generic.IReadOnlyList<BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO>
+  nameWithType.vb: IReadOnlyList(Of CharacterOverlayLayerSO)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO)
+  name.vb: IReadOnlyList(Of CharacterOverlayLayerSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO
+    name: CharacterOverlayLayerSO
+    href: BlazerTech.CharacterManagement.OverlayLayers.CharacterOverlayLayerSO.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_OverlayLayerHandler
+  name: OverlayLayerHandler
+  nameWithType: CharacterRendererBase.OverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OverlayLayerHandler
+- uid: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.OverlayLayersHandler
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.OverlayLayersHandler.html
+  name: OverlayLayersHandler
+  nameWithType: OverlayLayersHandler
+  fullName: BlazerTech.CharacterManagement.Components.OverlayLayersHandler
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.ValidationCheck*
   commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.ValidationCheck
   href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_ValidationCheck
@@ -988,10 +1572,23 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded*
   commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded
-  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase__
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_CharacterShaderState__
   name: InvokeOnCharacterLoaded
   nameWithType: CharacterRendererBase.InvokeOnCharacterLoaded
   fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InstantiateNewOverlayLayer
+  name: InstantiateNewOverlayLayer
+  nameWithType: CharacterRendererBase.InstantiateNewOverlayLayer
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InstantiateNewOverlayLayer
+- uid: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler.html
+  name: CharacterOverlayLayerHandler
+  nameWithType: CharacterOverlayLayerHandler
+  fullName: BlazerTech.CharacterManagement.Components.CharacterOverlayLayerHandler
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy*
   commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
   href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_OnDestroy

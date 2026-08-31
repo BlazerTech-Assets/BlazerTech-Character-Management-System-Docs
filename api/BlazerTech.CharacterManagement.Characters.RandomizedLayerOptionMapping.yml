@@ -1,0 +1,736 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  commentId: T:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  id: RandomizedLayerOptionMapping
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowBlank
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowList
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.Blacklist
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.CaseSensitive
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.EditorFoldoutState
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.InvertMatch
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RegexPattern
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.SelectionMode
+  - BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedAllowList
+  langs:
+  - csharp
+  - vb
+  name: RandomizedLayerOptionMapping
+  nameWithType: RandomizedLayerOptionMapping
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: RandomizedLayerOptionMapping
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class RandomizedLayerOptionMapping : LayerOptionMapping
+    content.vb: >-
+      <Serializable>
+
+      Public Class RandomizedLayerOptionMapping Inherits LayerOptionMapping
+  inheritance:
+  - System.Object
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  inheritedMembers:
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.SelectionMode
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.SelectionMode
+  id: SelectionMode
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: SelectionMode
+  nameWithType: RandomizedLayerOptionMapping.SelectionMode
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.SelectionMode
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: SelectionMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public RandomSelectionMode SelectionMode
+    return:
+      type: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+    content.vb: Public SelectionMode As RandomSelectionMode
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowBlank
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowBlank
+  id: AllowBlank
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: AllowBlank
+  nameWithType: RandomizedLayerOptionMapping.AllowBlank
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowBlank
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AllowBlank
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Tooltip("Allow this layer to have a blank layer option.")]
+
+      public bool AllowBlank
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Allow this layer to have a blank layer option.")>
+
+      Public AllowBlank As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Allow this layer to have a blank layer option.
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowList
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowList
+  id: AllowList
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: AllowList
+  nameWithType: RandomizedLayerOptionMapping.AllowList
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.AllowList
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: AllowList
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public List<string> AllowList
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public AllowList As List(Of String)
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.Blacklist
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.Blacklist
+  id: Blacklist
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: Blacklist
+  nameWithType: RandomizedLayerOptionMapping.Blacklist
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.Blacklist
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Blacklist
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool Blacklist
+    return:
+      type: System.Boolean
+    content.vb: Public Blacklist As Boolean
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedAllowList
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedAllowList
+  id: WeightedAllowList
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: WeightedAllowList
+  nameWithType: RandomizedLayerOptionMapping.WeightedAllowList
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedAllowList
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: WeightedAllowList
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public List<RandomizedLayerOptionMapping.WeightedLayerOptionEntry> WeightedAllowList
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry}
+    content.vb: Public WeightedAllowList As List(Of RandomizedLayerOptionMapping.WeightedLayerOptionEntry)
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RegexPattern
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RegexPattern
+  id: RegexPattern
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: RegexPattern
+  nameWithType: RandomizedLayerOptionMapping.RegexPattern
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RegexPattern
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: RegexPattern
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string RegexPattern
+    return:
+      type: System.String
+    content.vb: Public RegexPattern As String
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.CaseSensitive
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.CaseSensitive
+  id: CaseSensitive
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: CaseSensitive
+  nameWithType: RandomizedLayerOptionMapping.CaseSensitive
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.CaseSensitive
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CaseSensitive
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool CaseSensitive
+    return:
+      type: System.Boolean
+    content.vb: Public CaseSensitive As Boolean
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.InvertMatch
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.InvertMatch
+  id: InvertMatch
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: InvertMatch
+  nameWithType: RandomizedLayerOptionMapping.InvertMatch
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.InvertMatch
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: InvertMatch
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool InvertMatch
+    return:
+      type: System.Boolean
+    content.vb: Public InvertMatch As Boolean
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.EditorFoldoutState
+  commentId: F:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.EditorFoldoutState
+  id: EditorFoldoutState
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: EditorFoldoutState
+  nameWithType: RandomizedLayerOptionMapping.EditorFoldoutState
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.EditorFoldoutState
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: EditorFoldoutState
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool EditorFoldoutState
+    return:
+      type: System.Boolean
+    content.vb: Public EditorFoldoutState As Boolean
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)'
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: RandomizedLayerOptionMapping(CharacterLayerDefinitionSO)
+  nameWithType: RandomizedLayerOptionMapping.RandomizedLayerOptionMapping(CharacterLayerDefinitionSO)
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RandomizedLayerOptionMapping(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public RandomizedLayerOptionMapping(CharacterLayerDefinitionSO layer)
+    parameters:
+    - id: layer
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+    content.vb: Public Sub New(layer As CharacterLayerDefinitionSO)
+  overload: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor*
+  nameWithType.vb: RandomizedLayerOptionMapping.New(CharacterLayerDefinitionSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.New(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  name.vb: New(CharacterLayerDefinitionSO)
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption
+  commentId: M:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption
+  id: GetLayerOption
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: GetLayerOption()
+  nameWithType: RandomizedLayerOptionMapping.GetLayerOption()
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GetLayerOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  example: []
+  syntax:
+    content: public override CharacterLayerOption GetLayerOption()
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Overrides Function GetLayerOption() As CharacterLayerOption
+  overridden: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption*
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+  commentId: M:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+  id: GetLayerOptionsFromRegex
+  parent: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: GetLayerOptionsFromRegex()
+  nameWithType: RandomizedLayerOptionMapping.GetLayerOptionsFromRegex()
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: GetLayerOptionsFromRegex
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/Layered Character Templates/RandomizedLayeredCharacterTemplateSO.cs
+    startLine: 128
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public List<CharacterLayerOption> GetLayerOptionsFromRegex()
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+    content.vb: Public Function GetLayerOptionsFromRegex() As List(Of CharacterLayerOption)
+  overload: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex*
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html
+  name: LayerOptionMapping
+  nameWithType: LayerOptionMapping
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_LayerDefinition
+  name: LayerDefinition
+  nameWithType: LayerOptionMapping.LayerDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerDefinition
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_SelectedLayerOptionID
+  name: SelectedLayerOptionID
+  nameWithType: LayerOptionMapping.SelectedLayerOptionID
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.SelectedLayerOptionID
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_EditorSearchTerm
+  name: EditorSearchTerm
+  nameWithType: LayerOptionMapping.EditorSearchTerm
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.RandomSelectionMode.html
+  name: RandomSelectionMode
+  nameWithType: RandomSelectionMode
+  fullName: BlazerTech.CharacterManagement.Characters.RandomSelectionMode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<RandomizedLayerOptionMapping.WeightedLayerOptionEntry>
+  nameWithType: List<RandomizedLayerOptionMapping.WeightedLayerOptionEntry>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry>
+  nameWithType.vb: List(Of RandomizedLayerOptionMapping.WeightedLayerOptionEntry)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry)
+  name.vb: List(Of RandomizedLayerOptionMapping.WeightedLayerOptionEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+    name: RandomizedLayerOptionMapping
+    href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+    name: WeightedLayerOptionEntry
+    href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping
+    name: RandomizedLayerOptionMapping
+    href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry
+    name: WeightedLayerOptionEntry
+    href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.WeightedLayerOptionEntry.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.#ctor
+  href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_RandomizedLayerOptionMapping__ctor_BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_
+  name: RandomizedLayerOptionMapping
+  nameWithType: RandomizedLayerOptionMapping.RandomizedLayerOptionMapping
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.RandomizedLayerOptionMapping
+  nameWithType.vb: RandomizedLayerOptionMapping.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.New
+  name.vb: New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html
+  name: CharacterLayerDefinitionSO
+  nameWithType: CharacterLayerDefinitionSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_GetLayerOption
+  name: GetLayerOption()
+  nameWithType: LayerOptionMapping.GetLayerOption()
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+    name: GetLayerOption
+    href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_GetLayerOption
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.GetLayerOption
+    name: GetLayerOption
+    href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping_GetLayerOption
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption
+  href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_RandomizedLayerOptionMapping_GetLayerOption
+  name: GetLayerOption
+  nameWithType: RandomizedLayerOptionMapping.GetLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOption
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  name: CharacterLayerOption
+  nameWithType: CharacterLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+- uid: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+  href: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_RandomizedLayerOptionMapping_GetLayerOptionsFromRegex
+  name: GetLayerOptionsFromRegex
+  nameWithType: RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+  fullName: BlazerTech.CharacterManagement.Characters.RandomizedLayerOptionMapping.GetLayerOptionsFromRegex
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CharacterLayerOption>
+  nameWithType: List<CharacterLayerOption>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterLayerOption>
+  nameWithType.vb: List(Of CharacterLayerOption)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  name.vb: List(Of CharacterLayerOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  - name: )
