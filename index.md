@@ -14,7 +14,7 @@ Providing an easy solution to create, use and save characters in your Unity proj
 
 - [Installation Guide](xref:installation)  
 - [Basic Concepts](xref:basic-concepts)  
-- [Get Started](xref:quick-start)  
+- [Getting Started](xref:quick-start-guide)  
 - [Changelog](xref:changelog)  
 
 Join the Discord server for updates and to get help from the community.
