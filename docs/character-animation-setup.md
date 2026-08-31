@@ -22,7 +22,7 @@ The setup process is the same for both **Unified** and **Layered Character Types
 
 > [!IMPORTANT]
 > All animations **must only use sprites from the Base Spritesheet**.  
-> If sprites from other sheets are used, they **will not render correctly** when used with the [Character Shader](xref:character-usage#the-character-shader).
+> If sprites from other sheets are used, they **will not render correctly** when used with the [Character Shader](xref:basic-concepts#the-character-shader).
 
 If you already have your own movement and animator handling scripts, you can setup the **Animator Controller** 
 however you need for you project. That means you can create your own parameters, animation states, blend trees, etc.
