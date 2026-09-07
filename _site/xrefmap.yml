@@ -10212,6 +10212,9 @@ references:
 - uid: character-display-name-renderer-component
   name: Character Display Name Renderer
   href: docs/character-usage/character-renderer-components/character-display-name-renderer.html
+- uid: character-group-editor
+  name: Character Group Editor
+  href: docs/character-creator/character-group-editor.html
 - uid: character-grouping-system
   name: Character Grouping System
   href: docs/character-grouping-system.html

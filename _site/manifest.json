@@ -2683,6 +2683,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-group-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-group-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/history/character-creator-history-panels.md",
       "output": {
         ".html": {

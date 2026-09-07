@@ -60,6 +60,6 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 ## Legend
 - 🆕 **Added** — New features or systems.
 - 🔄 **Changed** — Updates, improvements, or refactors.
-- 🐛 **Fixed** — Bugs or issue resolution.
+- 🐛 **Fixed** — Bug or issue resolution.
 - ⚠ **Deprecated** — Soon-to-be removed features.
 - ❌ **Removed** — Old features now removed.
