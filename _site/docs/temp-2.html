@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Character Group Editor | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Character Group Editor | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,8 +34,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp-2.html">
 
-    <meta property="og:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
-    <meta name="twitter:title" content="BlazerTech Character Management System | BlazerTech Character Management System">
+    <meta property="og:title" content="Character Group Editor | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Group Editor | BlazerTech Character Management System">
 
       <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
       <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
@@ -100,8 +100,429 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="character-group-editor">
+<h1 id="character-group-editor">Character Group Editor</h1>
 
+<p>The <strong>Character Group Editor</strong> is a menu component for viewing and managing characters stored in a <a class="xref" href="character-grouping-system.html">Character Group</a>.</p>
+<p>It provides a ready-to-use interface for displaying the characters in a group and, when configured as a <strong>Flexible</strong> group, allows players to create and remove characters from the group.</p>
+<p>The editor supports both <strong>Fixed</strong> and <strong>Flexible</strong> Character Groups. The type of group is determined by the <strong>List Type</strong> assigned in the <code>CharacterGroupEditor</code> component.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Character Group Editor</strong> is designed for <strong>Layered Characters</strong> and requires a <a class="xref" href="character-types/layered-character-type.html">Layered Character Type</a>.</p>
+</div>
+<h2 id="how-it-works">How It Works</h2>
+<p>When a Character Group Editor is enabled, it checks the <a class="xref" href="character-grouping-system.html">Character Grouping System</a> for a group matching its configured <strong>Group Name</strong> and <strong>List Type</strong>.</p>
+<p>If a matching group already exists, that group is loaded.</p>
+<p>If no matching group exists, a new group is created automatically.</p>
+<p>This allows a Character Group Editor to be placed in a scene without manually creating the group beforehand.</p>
+<h3 id="group-identification">Group Identification</h3>
+<p>A group is identified using both its <strong>Group Name</strong> and <strong>List Type</strong>.</p>
+<p>This means a Fixed group and a Flexible group can have the same name without conflicting with each other.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Group Name</th>
+<th>List Type</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Characters</code></td>
+<td>Fixed</td>
+<td>One Fixed Character Group</td>
+</tr>
+<tr>
+<td><code>Characters</code></td>
+<td>Flexible</td>
+<td>One Flexible Character Group</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fixed-groups">Fixed Groups</h3>
+<p>When the editor is configured to use a <strong>Fixed</strong> List Type, the <strong>Fixed Group Size</strong> must be specified in the Inspector.</p>
+<p>When the group is created, all characters required by the group are created immediately.</p>
+<p>The editor then creates a list entry for each character in the group.</p>
+<h3 id="flexible-groups">Flexible Groups</h3>
+<p>When the editor is configured to use a <strong>Flexible</strong> List Type, the group initially contains no characters.</p>
+<p>Players can add new characters to the group through the <strong>New Character</strong> entry and, when permitted, remove existing characters from the list.</p>
+<p>The <strong>Create New Characters Permission</strong> and <strong>Remove Characters Permission</strong> settings can be used to control these actions.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Flexible groups are useful for menus where the player can maintain a dynamic collection of characters, such as a roster, party, or collection of customizable NPCs.</p>
+</div>
+<hr>
+<h1 id="setup">Setup</h1>
+<p>Add the <code>CharacterGroupEditor</code> component to a GameObject in your Character Group Editor menu.</p>
+<p>The following settings are required or available in the Inspector.</p>
+<h2 id="list-settings">List Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Layered Character Type</strong></td>
+<td>The <a class="xref" href="character-types/layered-character-type.html">Layered Character Type</a> used by the Character Group.</td>
+</tr>
+<tr>
+<td><strong>List Type</strong></td>
+<td>Determines whether the editor uses a Fixed or Flexible Character Group.</td>
+</tr>
+<tr>
+<td><strong>Group Name</strong></td>
+<td>The name used to find an existing Character Group or create a new one.</td>
+</tr>
+<tr>
+<td><strong>Fixed Group Size</strong></td>
+<td>The number of characters in a Fixed group. Only shown when <strong>List Type</strong> is set to Fixed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="layered-character-type">Layered Character Type</h3>
+<p>Assign the <strong>Layered Character Type</strong> that the characters in the group should use.</p>
+<p>This determines the available character layers and options when creating or editing characters.</p>
+<h3 id="list-type">List Type</h3>
+<p>Select the type of Character Group the editor should use:</p>
+<ul>
+<li><strong>Flexible</strong> - Characters can be added and removed from the group.</li>
+<li><strong>Fixed</strong> - The group contains a fixed number of characters.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Character Group Editor does not convert between Fixed and Flexible groups. The selected List Type is part of how the editor identifies the Character Group.</p>
+</div>
+<h3 id="group-name">Group Name</h3>
+<p>The <strong>Group Name</strong> is used to find or create the Character Group.</p>
+<p>If a group with the same name and type already exists, the existing group is loaded. Otherwise, a new group is created.</p>
+<p>A Fixed and Flexible group can have the same Group Name because the group type is also used when finding the group.</p>
+<h3 id="fixed-group-size">Fixed Group Size</h3>
+<p>When using a <strong>Fixed</strong> List Type, specify the number of characters the group should contain.</p>
+<p>This setting is only available for Fixed groups.</p>
+<hr>
+<h1 id="permissions">Permissions</h1>
+<p>Flexible Character Groups provide two optional permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Create New Characters Permission</strong></td>
+<td>Determines whether the New Character entry is added to the list.</td>
+</tr>
+<tr>
+<td><strong>Remove Characters Permission</strong></td>
+<td>Determines whether existing characters can be removed from the list.</td>
+</tr>
+</tbody>
+</table>
+<p>These settings are only available for Flexible Character Groups.</p>
+<p>Disabling <strong>Create New Characters Permission</strong> prevents the New Character entry from being displayed.</p>
+<p>Disabling <strong>Remove Characters Permission</strong> prevents the remove button on character list entries from being displayed.</p>
+<hr>
+<h1 id="entry-click-action">Entry Click Action</h1>
+<p>The <strong>Entry Click Action</strong> determines what happens when a character in the list is selected.</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>None</strong></td>
+<td>Disables interaction with the character entry.</td>
+</tr>
+<tr>
+<td><strong>Edit</strong></td>
+<td>Opens the Character Creation Menu to edit the selected character.</td>
+</tr>
+<tr>
+<td><strong>Custom Action</strong></td>
+<td>Invokes a UnityEvent assigned by the developer.</td>
+</tr>
+</tbody>
+</table>
+<p>By default, <strong>Edit</strong> is selected.</p>
+<h3 id="edit">Edit</h3>
+<p>When <strong>Edit</strong> is selected, clicking a character calls the Character Creation Menu Manager to open the Character Creation Menu for the selected character.</p>
+<p>An instance of the Character Creation Menu must be enabled in the scene for this to work.</p>
+<h3 id="none">None</h3>
+<p>Selecting <strong>None</strong> disables interaction with character entries.</p>
+<p>The entries remain visible, but selecting a character does not perform an action.</p>
+<h3 id="custom-action">Custom Action</h3>
+<p><strong>Custom Action</strong> allows custom events to be assigned using a UnityEvent.</p>
+<p>The selected <code>LayeredCharacter</code> is passed to the event, allowing the character to be used by custom methods.</p>
+<p>For example, a developer could use the event to open a custom character information screen, select a character for gameplay, or perform another custom action.</p>
+<p>If the developer wants to perform additional actions <strong>after opening the Character Creation Menu</strong>, the first event can be set to:</p>
+<p><code>CharacterGroupEditor.EditCharacter</code></p>
+<p>Additional events can then be placed after it.</p>
+<hr>
+<h1 id="references">References</h1>
+<p>The <strong>References</strong> section contains the prefabs and Transform required to build the character list.</p>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>List Entry Prefab</strong></td>
+<td>Prefab used for each character in the list.</td>
+</tr>
+<tr>
+<td><strong>List New Character Entry Prefab</strong></td>
+<td>Prefab used for the New Character entry in Flexible groups.</td>
+</tr>
+<tr>
+<td><strong>List Parent</strong></td>
+<td>Transform that acts as the parent for all character list entries.</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>List New Character Entry Prefab</strong> is only required when using a Flexible Character Group.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The List Parent should contain only the list entries used by the Character Group Editor. Any existing children that do not contain a <code>LayeredCharacterListEntry</code> component are removed when the editor initializes.</p>
+</div>
+<hr>
+<h1 id="prefabs">Prefabs</h1>
+<p>Several ready-to-use prefabs are included with the Character Management System.</p>
+<p>All Character Group Editor prefabs can be found under:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor</code></p>
+<h2 id="character-list-entries">Character List Entries</h2>
+<p>Character list entry prefabs are located under:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries</code></p>
+<p>Four folders are provided.</p>
+<h3 id="new-character-entry">New Character Entry</h3>
+<p>Contains the prefabs used for the first entry in a Flexible Character Group.</p>
+<p>Two variants are included:</p>
+<ul>
+<li><strong>New Character Entry [Sprite]</strong> - Displays a character skeleton sprite and text saying <strong>New Character</strong>.</li>
+<li><strong>New Character Entry [Text]</strong> - Displays only the text <strong>New Character</strong>.</li>
+</ul>
+<p>The text-only version is intended for text-based character lists.</p>
+<p>The New Character Entry is instantiated as the first item in the list. Selecting it opens the Character Creation Menu and creates a new character. When the character is saved, it is added to the Flexible Character Group.</p>
+<h3 id="sprite-and-text-based">Sprite And Text Based</h3>
+<p>Contains:</p>
+<p><code>Character Entry</code></p>
+<p>This entry displays both:</p>
+<ul>
+<li>A preview of the character.</li>
+<li>The character's name.</li>
+</ul>
+<p>This is useful for lists where both visual identification and character names are desired.</p>
+<h3 id="sprite-based">Sprite Based</h3>
+<p>Contains:</p>
+<p><code>Character Entry</code></p>
+<p>This entry displays only a preview of the character.</p>
+<p>This is useful for character grids where the appearance of each character provides enough information to identify them.</p>
+<h3 id="text-based">Text Based</h3>
+<p>Contains:</p>
+<p><code>Character Entry</code></p>
+<p>This entry displays only the character's name.</p>
+<p>This is useful for compact lists where character previews are not required.</p>
+<hr>
+<h2 id="layeredcharacterlistentry">LayeredCharacterListEntry</h2>
+<p>The <code>LayeredCharacterListEntry</code> component is used by character list entries.</p>
+<p>It supports three display modes:</p>
+<table>
+<thead>
+<tr>
+<th>Display Type</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text</strong></td>
+<td>Character name</td>
+</tr>
+<tr>
+<td><strong>Sprite</strong></td>
+<td>Character preview</td>
+</tr>
+<tr>
+<td><strong>Text And Sprite</strong></td>
+<td>Character preview and character name</td>
+</tr>
+</tbody>
+</table>
+<p>The component automatically obtains the character's layer resources when a sprite preview is required and releases those resources when the entry is disabled.</p>
+<p>The component also handles the Select and Remove buttons.</p>
+<p>The Remove button is only displayed when:</p>
+<ul>
+<li>The Character Group Editor allows character removal.</li>
+<li>The Character Group is Flexible.</li>
+</ul>
+<hr>
+<h2 id="layeredcharacterlistnewcharacterentry">LayeredCharacterListNewCharacterEntry</h2>
+<p>The <strong>LayeredCharacterListNewCharacterEntry</strong> component is used by the New Character Entry prefab.</p>
+<p>This component provides the entry that appears at the beginning of a Flexible Character Group list.</p>
+<p>When selected, it opens the Character Creation Menu for creating a new character in the group.</p>
+<hr>
+<h1 id="loading-screens">Loading Screens</h1>
+<p>Loading screen prefabs are located under:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Loading Screens</code></p>
+<p>Four loading screen prefabs are included, each using a different background.</p>
+<p>Character Group Editor loading screens work similarly to the loading screens included with the Character Creation Menu.</p>
+<p>The main difference is that a Character Group Editor loading screen requires an explicit reference to the <strong>CharacterGroupEditor</strong> component.</p>
+<p>Assign the Character Group Editor component to the loading screen prefab so it can receive loading progress and setup information from the editor.</p>
+<hr>
+<h1 id="premade-character-group-editors">Premade Character Group Editors</h1>
+<p>Complete Character Group Editor prefabs are provided under:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Premade Character Group Editors</code></p>
+<p>Two folders are included:</p>
+<ul>
+<li><strong>Fixed</strong></li>
+<li><strong>Flexible</strong></li>
+</ul>
+<p>Each folder contains two complete menu prefabs:</p>
+<ul>
+<li><strong>Text Vertical List</strong></li>
+<li><strong>Sprite Grid</strong></li>
+</ul>
+<p>The Sprite Grid versions use a <code>GridLayoutGroup</code> to arrange character entries into a grid.</p>
+<p>The Text Vertical List versions are intended for traditional vertical character lists.</p>
+<p>These prefabs provide a complete starting point and can be customized to match the visual style of your game.</p>
+<hr>
+<h1 id="manual-setup">Manual Setup</h1>
+<p>The premade Character Group Editor prefabs are convenient for most projects, but the system can also be assembled manually.</p>
+<p>A manually created Character Group Editor follows this general GameObject structure:</p>
+<pre><code class="lang-text">Character Group Editor
+├── Contents
+└── Loading Screen
+</code></pre>
+<h2 id="1-create-the-character-group-editor">1. Create the Character Group Editor</h2>
+<p>Create a GameObject named:</p>
+<p><code>Character Group Editor</code></p>
+<p>Add the <code>CharacterGroupEditor</code> component to it.</p>
+<p>Configure the component's List Settings, Entry Click Action, and References.</p>
+<hr>
+<h2 id="2-create-the-contents">2. Create the Contents</h2>
+<p>Create a child GameObject named:</p>
+<p><code>Contents</code></p>
+<p>The Contents GameObject acts as the container for the visible menu.</p>
+<p>It can contain any UI structure required by your game.</p>
+<p>A typical Character Group Editor might contain:</p>
+<pre><code class="lang-text">Character Group Editor
+├── Contents
+│   ├── Background
+│   ├── Title
+│   ├── Back Button
+│   └── Scroll View
+│       └── Content
+└── Loading Screen
+</code></pre>
+<p>The exact structure is completely customizable.</p>
+<p>For example, a custom implementation could use a grid, carousel, paginated list, or another UI system instead of a standard Unity <code>ScrollView</code>.</p>
+<hr>
+<h2 id="3-create-the-list-parent">3. Create the List Parent</h2>
+<p>Create a GameObject or Transform that acts as the parent for the character entries.</p>
+<p>For a typical ScrollView, this would be the ScrollView's Content object:</p>
+<pre><code class="lang-text">Scroll View
+└── Content
+    ├── Character Entry
+    ├── Character Entry
+    ├── Character Entry
+    └── ...
+</code></pre>
+<p>Assign this Transform to the <strong>List Parent</strong> field on the <code>CharacterGroupEditor</code>.</p>
+<p>Every character in the Character Group is represented by a list entry under this Transform.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>A <code>ContentSizeFitter</code> with <strong>Vertical Fit</strong> set to <strong>Min Size</strong> is recommended when using a vertically scrolling list. This allows the Content object to automatically expand to accommodate the number of character entries created by the Character Group Editor. Without an appropriately sized Content object, entries may overlap or the ScrollView may not correctly determine the size of its scrollable area.</p>
+</div>
+<p>The same concept can be applied to other layouts when the list is arranged horizontally or as a grid.</p>
+<hr>
+<h2 id="4-add-the-list-entry-prefab">4. Add the List Entry Prefab</h2>
+<p>Choose one of the character list entry prefabs from:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries</code></p>
+<p>Add it as a child of the List Parent.</p>
+<p>The Character Group Editor searches the List Parent for existing <code>LayeredCharacterListEntry</code> components when it initializes.</p>
+<p>It then creates additional entries as required to match the number of characters in the Character Group.</p>
+<p>Assign the same prefab to the <strong>List Entry Prefab</strong> field.</p>
+<p>The editor will instantiate this prefab whenever additional entries are required.</p>
+<hr>
+<h2 id="5-configure-the-list-entry">5. Configure the List Entry</h2>
+<p>The <code>LayeredCharacterListEntry</code> component can be configured to display the character as:</p>
+<ul>
+<li>Text</li>
+<li>Sprite</li>
+<li>Text and Sprite</li>
+</ul>
+<p>Assign the appropriate UI components for the selected display type.</p>
+<p>For example:</p>
+<pre><code class="lang-text">Character Entry
+├── Character Image
+├── Character Name
+├── Select Button
+└── Remove Button
+</code></pre>
+<p>The Select Button calls the Character Group Editor's entry action.</p>
+<p>The Remove Button removes the assigned character from the Flexible Character Group when removal is enabled.</p>
+<hr>
+<h2 id="6-configure-flexible-groups">6. Configure Flexible Groups</h2>
+<p>When using a Flexible Character Group, assign a <strong>List New Character Entry Prefab</strong>.</p>
+<p>The prefab can be found under:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries &gt; New Character Entry</code></p>
+<p>The Character Group Editor creates this entry before the character entries and places it at the beginning of the list.</p>
+<p>If <strong>Create New Characters Permission</strong> is disabled, the New Character Entry is not created.</p>
+<hr>
+<h2 id="7-add-a-loading-screen">7. Add a Loading Screen</h2>
+<p>Create another child GameObject under the Character Group Editor and add one of the provided loading screen prefabs.</p>
+<p>For example:</p>
+<pre><code class="lang-text">Character Group Editor
+├── Contents
+└── Loading Screen
+</code></pre>
+<p>Assign the parent <code>CharacterGroupEditor</code> component to the loading screen's required reference.</p>
+<p>The loading screen can then display while the Character Group Editor loads and prepares its character entries.</p>
+<hr>
+<h1 id="example-setup">Example Setup</h1>
+<p>A complete manually configured Flexible Character Group Editor could look like this:</p>
+<pre><code class="lang-text">Character Group Editor
+│
+├── CharacterGroupEditor
+│   ├── Layered Character Type: Player Characters
+│   ├── List Type: Flexible
+│   ├── Group Name: Player Roster
+│   ├── Entry Click Action: Edit
+│   ├── List Entry Prefab: Character Entry
+│   ├── List New Character Entry Prefab: New Character Entry [Sprite]
+│   └── List Parent: Content
+│
+├── Contents
+│   ├── Background
+│   ├── Title
+│   ├── Back Button
+│   └── Scroll View
+│       └── Content
+│
+└── Loading Screen
+</code></pre>
+<p>When the menu is opened:</p>
+<ol>
+<li>The <code>CharacterGroupEditor</code> initializes.</li>
+<li>It searches for the <strong>Player Roster</strong> Flexible Character Group.</li>
+<li>If the group does not exist, it is created.</li>
+<li>The New Character Entry is added to the list.</li>
+<li>Existing characters in the group are given list entries.</li>
+<li>The entries are configured with their character's name and, when applicable, character preview.</li>
+<li>Once setup is complete, the menu can be displayed.</li>
+</ol>
+<p>The Character Group Editor performs this setup automatically when it is enabled.</p>
 
 </article>
 

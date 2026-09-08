@@ -73,8 +73,10 @@
       - name: Top Down Character Movement Controller
         href: 
           character-usage/character-movement-controller-components/top-down-movement-controller.md
-  # - name: Temp
-  #   href: temp.md
+  - name: Temp
+    href: temp.md
+  - name: Temp 2
+    href: temp-2.md
 
   - name: 🟦Character Templates
   - name: Character Templates
