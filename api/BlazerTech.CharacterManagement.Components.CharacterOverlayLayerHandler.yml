@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterOverlayLayerHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -47,11 +47,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Initialize
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -78,11 +78,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Disable
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterOverlayLayerHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterOverlayLayerHandler.cs
     startLine: 80
   assemblies:
   - Assembly-CSharp

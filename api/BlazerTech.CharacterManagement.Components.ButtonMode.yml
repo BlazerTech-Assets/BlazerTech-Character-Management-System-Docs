@@ -16,11 +16,11 @@ items:
   type: Enum
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ButtonMode
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -41,11 +41,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Hold
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -67,11 +67,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Toggle
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp

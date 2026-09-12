@@ -27,11 +27,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterAnimatorHandlerBase
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
@@ -61,11 +61,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: animator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
@@ -107,11 +107,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: defaultDirection
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp
@@ -153,11 +153,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: isMovingParam
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -199,11 +199,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: horizontalMovementParam
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -245,11 +245,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: verticalMovementParam
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -291,11 +291,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Animator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -320,11 +320,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -346,11 +346,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Start
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 31
   assemblies:
   - Assembly-CSharp
@@ -372,11 +372,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UpdateAnimatorParameters
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 37
   assemblies:
   - Assembly-CSharp
@@ -408,11 +408,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangeDirection
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 56
   assemblies:
   - Assembly-CSharp
@@ -437,11 +437,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ChangeDirection
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 78
   assemblies:
   - Assembly-CSharp
@@ -466,11 +466,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PlayAnimation
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 118
   assemblies:
   - Assembly-CSharp
@@ -498,11 +498,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PlayDefaultAnimation
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/CharacterAnimatorHandlerBase.cs
     startLine: 123
   assemblies:
   - Assembly-CSharp

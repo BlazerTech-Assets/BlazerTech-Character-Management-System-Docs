@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TopDownCharacterAnimatorHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -62,11 +62,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: sprintParamName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -124,11 +124,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: crouchParamName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -179,11 +179,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -207,11 +207,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UpdateAnimatorParameters
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterAnimatorHandler.cs
     startLine: 36
   assemblies:
   - Assembly-CSharp

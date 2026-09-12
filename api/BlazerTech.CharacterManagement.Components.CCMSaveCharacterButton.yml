@@ -5,7 +5,8 @@ items:
   id: CCMSaveCharacterButton
   parent: BlazerTech.CharacterManagement.Components
   children:
-  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable
+  - BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable
   langs:
   - csharp
   - vb
@@ -47,34 +48,62 @@ items:
   - UnityEngine.EventSystems.IPointerClickHandler
   - UnityEngine.EventSystems.ISubmitHandler
   - UnityEngine.EventSystems.IEventSystemHandler
-- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
-  commentId: M:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
-  id: Start
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable
+  commentId: M:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable
+  id: OnEnable
   parent: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
   langs:
   - csharp
   - vb
-  name: Start()
-  nameWithType: CCMSaveCharacterButton.Start()
-  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start()
+  name: OnEnable()
+  nameWithType: CCMSaveCharacterButton.OnEnable()
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: Start
+    id: OnEnable
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   example: []
   syntax:
-    content: protected override void Start()
-    content.vb: Protected Overrides Sub Start()
-  overridden: UnityEngine.EventSystems.UIBehaviour.Start
-  overload: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start*
+    content: protected override void OnEnable()
+    content.vb: Protected Overrides Sub OnEnable()
+  overridden: UnityEngine.UI.Selectable.OnEnable
+  overload: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable*
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable
+  commentId: M:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable
+  id: OnDisable
+  parent: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: CCMSaveCharacterButton.OnDisable()
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnDisable
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  example: []
+  syntax:
+    content: protected override void OnDisable()
+    content.vb: Protected Overrides Sub OnDisable()
+  overridden: UnityEngine.UI.Selectable.OnDisable
+  overload: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable*
 references:
 - uid: BlazerTech.CharacterManagement.Components
   commentId: N:BlazerTech.CharacterManagement.Components
@@ -293,28 +322,53 @@ references:
   - uid: UnityEngine.UI
     name: UI
     isExternal: true
-- uid: UnityEngine.EventSystems.UIBehaviour.Start
-  commentId: M:UnityEngine.EventSystems.UIBehaviour.Start
-  parent: UnityEngine.EventSystems.UIBehaviour
+- uid: UnityEngine.UI.Selectable.OnEnable
+  commentId: M:UnityEngine.UI.Selectable.OnEnable
+  parent: UnityEngine.UI.Selectable
   isExternal: true
-  name: Start()
-  nameWithType: UIBehaviour.Start()
-  fullName: UnityEngine.EventSystems.UIBehaviour.Start()
+  name: OnEnable()
+  nameWithType: Selectable.OnEnable()
+  fullName: UnityEngine.UI.Selectable.OnEnable()
   spec.csharp:
-  - uid: UnityEngine.EventSystems.UIBehaviour.Start
-    name: Start
+  - uid: UnityEngine.UI.Selectable.OnEnable
+    name: OnEnable
     isExternal: true
   - name: (
   - name: )
   spec.vb:
-  - uid: UnityEngine.EventSystems.UIBehaviour.Start
-    name: Start
+  - uid: UnityEngine.UI.Selectable.OnEnable
+    name: OnEnable
     isExternal: true
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
-  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.html#BlazerTech_CharacterManagement_Components_CCMSaveCharacterButton_Start
-  name: Start
-  nameWithType: CCMSaveCharacterButton.Start
-  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.Start
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.html#BlazerTech_CharacterManagement_Components_CCMSaveCharacterButton_OnEnable
+  name: OnEnable
+  nameWithType: CCMSaveCharacterButton.OnEnable
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnEnable
+- uid: UnityEngine.UI.Selectable.OnDisable
+  commentId: M:UnityEngine.UI.Selectable.OnDisable
+  parent: UnityEngine.UI.Selectable
+  isExternal: true
+  name: OnDisable()
+  nameWithType: Selectable.OnDisable()
+  fullName: UnityEngine.UI.Selectable.OnDisable()
+  spec.csharp:
+  - uid: UnityEngine.UI.Selectable.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.Selectable.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable
+  href: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.html#BlazerTech_CharacterManagement_Components_CCMSaveCharacterButton_OnDisable
+  name: OnDisable
+  nameWithType: CCMSaveCharacterButton.OnDisable
+  fullName: BlazerTech.CharacterManagement.Components.CCMSaveCharacterButton.OnDisable

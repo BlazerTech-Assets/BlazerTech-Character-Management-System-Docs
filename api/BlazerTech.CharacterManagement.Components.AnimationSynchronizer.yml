@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: AnimationSynchronizer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -49,11 +49,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
     startLine: 20
   assemblies:
   - Assembly-CSharp
@@ -80,11 +80,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/AnimationSynchronizer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/AnimationSynchronizer.cs
     startLine: 37
   assemblies:
   - Assembly-CSharp

@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  id: CharacterGroupEditorNewEntry
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize(BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  langs:
+  - csharp
+  - vb
+  name: CharacterGroupEditorNewEntry
+  nameWithType: CharacterGroupEditorNewEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterGroupEditorNewEntry
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: 'public class CharacterGroupEditorNewEntry : MonoBehaviour'
+    content.vb: Public Class CharacterGroupEditorNewEntry Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize(BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize(BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  id: Initialize(BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  langs:
+  - csharp
+  - vb
+  name: Initialize(CharacterGroupEditor)
+  nameWithType: CharacterGroupEditorNewEntry.Initialize(CharacterGroupEditor)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize(BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Initialize
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Initialize(CharacterGroupEditor list)
+    parameters:
+    - id: list
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+    content.vb: Public Sub Initialize(list As CharacterGroupEditor)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter
+  id: CreateNewCharacter
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  langs:
+  - csharp
+  - vb
+  name: CreateNewCharacter()
+  nameWithType: CharacterGroupEditorNewEntry.CreateNewCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CreateNewCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorNewEntry.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void CreateNewCharacter()
+    content.vb: Public Sub CreateNewCharacter()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter*
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorNewEntry_Initialize_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
+  name: Initialize
+  nameWithType: CharacterGroupEditorNewEntry.Initialize
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.Initialize
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor.html
+  name: CharacterGroupEditor
+  nameWithType: CharacterGroupEditor
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorNewEntry_CreateNewCharacter
+  name: CreateNewCharacter
+  nameWithType: CharacterGroupEditorNewEntry.CreateNewCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.CreateNewCharacter

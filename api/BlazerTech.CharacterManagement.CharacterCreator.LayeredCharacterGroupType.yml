@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  id: LayeredCharacterGroupType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Fixed
+  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Flexible
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterGroupType
+  nameWithType: LayeredCharacterGroupType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterGroupType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public enum LayeredCharacterGroupType
+    content.vb: Public Enum LayeredCharacterGroupType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Flexible
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Flexible
+  id: Flexible
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  langs:
+  - csharp
+  - vb
+  name: Flexible
+  nameWithType: LayeredCharacterGroupType.Flexible
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Flexible
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Flexible
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: Flexible = 0
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Fixed
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Fixed
+  id: Fixed
+  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: LayeredCharacterGroupType.Fixed
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.Fixed
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Fixed
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: Fixed = 1
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.html
+  name: LayeredCharacterGroupType
+  nameWithType: LayeredCharacterGroupType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType

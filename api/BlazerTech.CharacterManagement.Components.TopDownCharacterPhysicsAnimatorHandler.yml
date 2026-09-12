@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TopDownCharacterPhysicsAnimatorHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -62,11 +62,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsMoving
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
     startLine: 20
   assemblies:
   - Assembly-CSharp
@@ -91,11 +91,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Speed
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
     startLine: 21
   assemblies:
   - Assembly-CSharp
@@ -120,11 +120,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Awake
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterPhysicsAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Animation Handler Components/TopDownCharacterPhysicsAnimatorHandler.cs
     startLine: 23
   assemblies:
   - Assembly-CSharp

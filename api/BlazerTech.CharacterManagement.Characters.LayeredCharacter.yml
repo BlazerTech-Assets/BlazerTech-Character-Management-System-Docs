@@ -521,7 +521,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OverrideLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 366
+    startLine: 372
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -555,7 +555,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ApplySnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 393
+    startLine: 399
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -591,7 +591,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RandomizeAllLayers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 412
+    startLine: 418
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

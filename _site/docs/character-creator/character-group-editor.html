@@ -103,7 +103,7 @@
         <article data-uid="character-group-editor">
 <h1 id="character-group-editor">Character Group Editor</h1>
 
-<p>The Character Group Editor is a menu for viewing and managing characters stored in a <a class="xref" href="../character-grouping-system.html">Character Group</a>.</p>
+<p>The Character Group Editor is a menu for players to view and manage characters stored in a <a class="xref" href="../character-grouping-system.html">Character Group</a>.</p>
 <p>It provides an interface for displaying characters in a group and, when configured as a Flexible group, allows players to create and remove characters from the group.</p>
 <p>The Character Group Editor supports both Fixed and Flexible character groups, The type of group is determined by the List Type assgined in the <code>CharacterGroupEditor</code> component.</p>
 <hr>
@@ -127,7 +127,7 @@
 <hr>
 <h2 id="setup">Setup</h2>
 <p>This section goes over all settings and fields in the Character Group Editor.</p>
-<p>Add the CharacterGroupEditor component to the parent GameObject of your Character Group Editor menu. If using a prefab, one will already be present.</p>
+<p>Add the <code>CharacterGroupEditor</code> component to the parent GameObject of your Character Group Editor menu. If using a prefab, one will already be present.</p>
 <p>The following settings are required or available in the inspector.</p>
 <h3 id="group-settings">Group Settings</h3>
 <table>
@@ -227,7 +227,7 @@
 <p>An instance of a Character Creation Menu must be enabled in the scene for this to work.</p>
 <p><a class="xref" href="character-creator-setup.html">Read More → Character Creator Setup</a></p>
 <h3 id="none">None</h3>
-<p>Selecting <strong>None</strong> disabled interaction with character entries.</p>
+<p>Selecting <strong>None</strong> disables interaction with character entries.</p>
 <p>The entries remain visible, but selection a character does not perform an action.</p>
 <h2 id="custom-action">Custom Action</h2>
 <p>Custom Action allows custom events to be assigned using a UnityEvent.</p>
@@ -253,7 +253,7 @@
 <td>Prefab used for each character in the list.</td>
 </tr>
 <tr>
-<td><strong>List New Character Entry Prefab</strong></td>
+<td><strong>New Character List Entry Prefab</strong></td>
 <td>Prefab used for the New Character entry in Flexible groups.</td>
 </tr>
 <tr>
@@ -262,24 +262,199 @@
 </tr>
 </tbody>
 </table>
-<p>A <strong>List New Character Entry Prefab</strong> is only required when using a Flexible Character Group.</p>
+<p>A <strong>New Character List Entry Prefab</strong> is only required when using a Flexible Character Group.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>The List Parent should contain only the list entries used by the Character Group Editor. Any existing children that do not contain a <code>LayeredCharacterListEntry</code> component are removed when the editor initializes.</p>
+<p>The List Parent should contain only the list entries used by the Character Group Editor. Any existing children that do not contain a <code>LayeredCharacterListEntry</code> component are removed when the editor initializes at runtime.</p>
 </div>
 <hr>
 <h2 id="prefabs">Prefabs</h2>
-<p>(To be written)</p>
-<hr>
-<h2 id="layeredcharacterlistentry">LayeredCharacterListEntry</h2>
-<hr>
-<h2 id="layeredcharacterlistnewcharacterentry">LayeredCharacterListNewCharacterEntry</h2>
+<p>Ready-to-use prefabs, these include complete pre-made Character Group Editor menus and individual modules to create one yourself.</p>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Group Editor</code></p>
+<h3 id="character-list-entries">Character List Entries</h3>
+<p>These prefabs are used as entries in the Character List.</p>
+<p>Location: <code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries</code></p>
+<p>Four folders are provided.</p>
+<h4 id="sprite-based-entries">Sprite Based Entries</h4>
+<p>Displays only a preview of the character. Does <strong>not</strong> display the characters name.</p>
+<!-- Insert Sprite Based Entry Screenshot Here -->
+<h4 id="text-based-entries">Text Based Entries</h4>
+<p>Displays only the character's name. Does <strong>not</strong> display any visual representation of the character.</p>
+<p>Uses the characters Display Name if set, otherwise uses the characters name.</p>
+<p>This is useful for compact lists.</p>
+<!-- Insert Sprite Based Entry Screenshot Here -->
+<h4 id="sprite-and-text-based-entries">Sprite and Text Based Entries</h4>
+<p>Displays both:</p>
+<ul>
+<li>A preview of the character.</li>
+<li>The character's name.</li>
+</ul>
+<p>Use this when you want you entries to show the character and the characters name.</p>
+<h4 id="new-character-list-entry">New Character List Entry</h4>
+<p>Contains the prefabs used for the first entry in a Flexible Character Group.</p>
+<!-- Insert Sprite and Text Based Entry Screenshot Here -->
+<p>Two variants are incldued:</p>
+<ul>
+<li>New Character Entry [Sprite] - Display a character skeleton sprite (Changeable) and text saying <strong>New Character</strong>.</li>
+<li>New Character Entry [Text] - Displays only the text <strong>New Character</strong>.</li>
+</ul>
+<p>The text-only version is intended for compact lists.</p>
+<p>The <strong>New Character Entry</strong> is instantiated as the first item in the list. Selecting it opens the Character Creation Menu and create a new character. When the character is saved, it is added to the Flexible Character Group.</p>
 <hr>
 <h2 id="loading-screens">Loading Screens</h2>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Loading Screens</code></p>
+<!-- Add loading screen screenshot -->
+<p>Four loading screen prefabs are included, each using a different background.</p>
+<p>Character Group Editor loading screens work similarly to the loading screens included with the Character Creation Menu.</p>
+<p>The main difference is that a Character Group Editor loading screen requires an explicit reference to the <code>CharacterGroupEditor</code> component.</p>
+<p>Once the component has been added to your Character Group Editor menu, assign the Character Group Editor component to the loading screen prefab so it can receive loading progress and setup information from the editor.</p>
+<hr>
+<h2 id="charactergroupeditorentry">CharacterGroupEditorEntry</h2>
+<!-- Add component API reference -->
+<p>The <code>CharacterGroupEditorEntry</code> component is used by <strong>character list entries</strong>.</p>
+<p>It supports three display modes:</p>
+<table>
+<thead>
+<tr>
+<th>Display Type</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text</strong></td>
+<td>Character name</td>
+</tr>
+<tr>
+<td><strong>Sprite</strong></td>
+<td>Character preview</td>
+</tr>
+<tr>
+<td><strong>Text And Sprite</strong></td>
+<td>Character preview and character name</td>
+</tr>
+</tbody>
+</table>
+<p>The component automatically handles if the Remove character button is shown.</p>
+<p>The button is only shown when:</p>
+<ul>
+<li>The Character Group Editor allows character removal.</li>
+<li>The Character Group Type is set to Flexible.</li>
+</ul>
+<hr>
+<h2 id="charactergroupeditornewentry">CharacterGroupEditorNewEntry</h2>
+<!-- Add component API reference -->
+<p>The <code>CharacterGroupEditorNewEntry</code> component is used by the <strong>New Character Entry</strong>.</p>
+<p>This component provides the entry that appears at the beginning of a Flexible Character Group list.</p>
+<p>When selected, it opens the Character Creation Menu for creating a new character in the group.</p>
 <hr>
 <h2 id="premade-character-group-editors">Premade Character Group Editors</h2>
+<p>Premade menus that provide all functionaliy needed out of the box, these are the easiest to setup.</p>
+<p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Premade Character Group Editors</code></p>
+<p>Two folders are included:</p>
+<ul>
+<li><strong>Fixed</strong></li>
+<li><strong>Flexible</strong></li>
+</ul>
+<p>Each folder contains two complete menu prefabs:</p>
+<ul>
+<li><strong>Text Vertical List</strong></li>
+<li><strong>Sprite Grid</strong></li>
+</ul>
+<p>The Sprite Grid versions use a <code>GridLayoutGroup</code> to arrange the character entries into a grid.</p>
+<p>The Text Vertical List versions use a <code>VerticalLayoutGroup</code> and are intended for traditional vertical character lists.</p>
+<p>These prefabs can be customized to be unique to your game, change backgrounds, rearange elements, everything can be modified. The <code>CharacterGroupEditor</code> only needs a reference to a GameObject to instantiate character entries into.</p>
 <hr>
 <h2 id="manual-setup">Manual Setup</h2>
+<p>A Character Group Editor can be assembled manually. Building it yourself gives you full control over how the menu looks and behaves.</p>
+<p>A Character Group Editor menu follows this general GameObject structure:</p>
+<pre><code class="lang-text">Character Group Editor
+├── Contents
+└── Loading Screen
+</code></pre>
+<h3 id="1-create-the-character-group-editor">1️⃣ Create the Character Group Editor</h3>
+<p>Create a GameObject named <code>Character Group Editor</code>.</p>
+<p>Add the <code>CharacterGroupEditor</code> component to it.</p>
+<p>Configure the components List Settings, Entry Click Action, and references.</p>
+<hr>
+<h3 id="2-create-the-contents">2️⃣ Create the Contents</h3>
+<p>Create a child GameObject named <code>Contents</code>.</p>
+<p>The Contents GameObject acts as the container for the visible menu.</p>
+<p>It can contain any UI structured required by your game.</p>
+<p>A typical Character Group Editor might contain:</p>
+<pre><code class="lang-text">Character Group Editor
+├── Contents
+│   ├── Background
+│   ├── Title
+│   ├── Back Button
+│   └── Scroll View
+│       └── Content
+└── Loading Screen
+</code></pre>
+<hr>
+<h3 id="3-create-the-list-parent">3️⃣ Create the List Parent</h3>
+<p>Create a GameObject or Transform that acts as the parent for the character entries.</p>
+<p>For a typical ScrollView, this would be the ScrollView's Content object:</p>
+<pre><code class="lang-text">Scroll View
+└── Content
+    ├── Character Entry
+    ├── Character Entry
+    ├── Character Entry
+    └── ...
+</code></pre>
+<p>Assign this Transform to the List Parent field on the <code>CharacterGroupEditor</code>.</p>
+<p>Every character in the Character Group is represented by a list entry under this Transform.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>A <code>ContentSizeFitter</code> with <strong>Vertical Fit</strong> set to <strong>Min Size</strong> is recommended when using a vertically scrolling list. This allows the Content object to automatically expand to accommodate the number of character entries created by the Character Group Editor. Without an appropriately sized Content object, the ScrollView may not correctly determine the size of its scrollable area.</p>
+</div>
+<p>The same concept can be applied to other layouts when the list is arranged horizontally or as a grid.</p>
+<hr>
+<h3 id="4-add-the-list-entry-prefab">4️⃣ Add the List Entry Prefab</h3>
+<p>Two options here:</p>
+<h4 id="option-1-use-premade-list-entry-prefab">Option 1: Use Premade List Entry Prefab</h4>
+<p>You can use the already created list entry prefabs that are used in the <a href="#premade-character-group-editors">Premade Character Group Editor prefabs</a>.</p>
+<p>Assign any of the <a href="#character-list-entries">Character List Entry prefabs</a> to the <strong>List Entry Prefab</strong> variable in the <code>CharacterGroupEditor</code>.</p>
+<h4 id="option-2-create-your-own-prefab">Option 2: Create Your Own Prefab</h4>
+<p>To create your own Character List Entry follow these steps:</p>
+<ol>
+<li>Create a new GameObject.</li>
+<li>Add the <code>CharacterGroupEditorEntry</code> component.</li>
+<li>Set <strong>Display Type</strong> (Text, Sprite, Both).</li>
+<li>Set <strong>Character Name Text</strong> reference (If Display Type is Text or Both).</li>
+<li>Set <strong>Character Image</strong> reference (If Display Type is Sprite or Both).</li>
+<li>Set <strong>Select Character Button</strong> reference.</li>
+<li>Set <strong>Remove Character Button</strong> reference.</li>
+<li>Drag and drop parent GameObject into Project window to turn it into a prefab.</li>
+<li>Assign the prefab to the <strong>List Entry Prefab</strong> variable in the <code>CharacterGroupEditor</code>.</li>
+</ol>
+<p>A usual GameObject structure will look like this:</p>
+<pre><code class="lang-text">Character Entry
+├── Contents
+│   ├── Background
+│   ├── Character Sprite
+├── Character Name Text
+└── Remove Character Button
+</code></pre>
+<hr>
+<h3 id="5-configure-flexible-groups">5️⃣ Configure Flexible Groups</h3>
+<p>When using a Flexible Character Group, assign a <strong>New Character List Entry prefab</strong>.</p>
+<p>This can be one of the premade prefabs located at:</p>
+<p><code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries &gt; New Character Entry</code></p>
+<p>Or you can create your own:</p>
+<ol>
+<li>Create a new GameObject.</li>
+<li>Add the <code>CharacterGroupEditorNewEntry</code> component.</li>
+<li>Drag and drop parent GameObject into Project window to turn it into a prefab.</li>
+<li>Assign the prefab to the <strong>New Character List Entry Prefab</strong> variable in the <code>CharacterGroupEditor</code>.</li>
+</ol>
+<p>The Character Group Editor creates this entry before the character entries and places it at the beginning of the list.</p>
+<p>If <strong>Create New Characters Permission</strong> is disabled, the <strong>New Character Entry</strong> is not created.</p>
+<hr>
+<h3 id="6-add-a-loading-screen">6️⃣ Add a Loading Screen</h3>
+<p>Create another child GameObject under the <strong>Character Group Editor</strong> and add one of the provided <a href="#loading-screens">loading screen prefabs</a>.</p>
+<p>Assign the parent CharacterGroupEditor component to the loading screens' required reference.</p>
+<p>The loading screen will then automatically enable itself when the Character Group Editor is loading.</p>
 <hr>
 <h2 id="related">Related</h2>
 <ul>

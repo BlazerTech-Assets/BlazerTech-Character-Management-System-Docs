@@ -26,7 +26,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterShaderState
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 447
+    startLine: 453
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -59,7 +59,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: layeredCharacterMaterialInstance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 451
+    startLine: 457
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -86,7 +86,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: BakedCharacterRT
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 454
+    startLine: 460
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -115,7 +115,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterLayerOptionUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 455
+    startLine: 461
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -142,7 +142,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 460
+    startLine: 466
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -174,7 +174,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadUnloadedLayersAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 491
+    startLine: 497
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -202,7 +202,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: UpdateCharacterMaterialAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 498
+    startLine: 504
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -228,7 +228,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Dispose
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 534
+    startLine: 540
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

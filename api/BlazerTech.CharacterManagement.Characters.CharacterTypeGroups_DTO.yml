@@ -25,7 +25,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTypeGroups_DTO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 147
+    startLine: 140
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -52,7 +52,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterTypeIdentifier
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 149
+    startLine: 142
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -79,7 +79,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: PrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 151
+    startLine: 144
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -106,7 +106,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: FlexibleGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 152
+    startLine: 145
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: FixedGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 153
+    startLine: 146
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 155
+    startLine: 148
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -192,7 +192,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 167
+    startLine: 160
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

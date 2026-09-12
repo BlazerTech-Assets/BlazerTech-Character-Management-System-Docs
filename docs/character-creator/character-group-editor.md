@@ -4,7 +4,7 @@ uid: character-group-editor
 
 # Character Group Editor
 
-The Character Group Editor is a menu for viewing and managing characters stored in a [Character Group](xref:character-grouping-system).
+The Character Group Editor is a menu for players to view and manage characters stored in a [Character Group](xref:character-grouping-system).
 
 It provides an interface for displaying characters in a group and, when configured as a Flexible group, allows players to create and remove characters from the group.
 
@@ -52,7 +52,7 @@ If the **Remove Characters permission** is enabled, player can remove characters
 
 This section goes over all settings and fields in the Character Group Editor.
 
-Add the CharacterGroupEditor component to the parent GameObject of your Character Group Editor menu. If using a prefab, one will already be present.
+Add the `CharacterGroupEditor` component to the parent GameObject of your Character Group Editor menu. If using a prefab, one will already be present.
 
 The following settings are required or available in the inspector.
 
@@ -133,7 +133,7 @@ An instance of a Character Creation Menu must be enabled in the scene for this t
 
 ### None
 
-Selecting **None** disabled interaction with character entries.
+Selecting **None** disables interaction with character entries.
 
 The entries remain visible, but selection a character does not perform an action.
 
@@ -162,39 +162,282 @@ The References section contains the prefabs and GameObject references required t
 | Reference                           | Description                                                       |
 | ----------------------------------- | ----------------------------------------------------------------- |
 | **List Entry Prefab**               | Prefab used for each character in the list.                       |
-| **List New Character Entry Prefab** | Prefab used for the New Character entry in Flexible groups.       |
+| **New Character List Entry Prefab** | Prefab used for the New Character entry in Flexible groups.       |
 | **List Parent**                     | Transform that acts as the parent for all character list entries. |
 
-A **List New Character Entry Prefab** is only required when using a Flexible Character Group.
+A **New Character List Entry Prefab** is only required when using a Flexible Character Group.
 
 > [!IMPORTANT]
-> The List Parent should contain only the list entries used by the Character Group Editor. Any existing children that do not contain a `LayeredCharacterListEntry` component are removed when the editor initializes.
+> The List Parent should contain only the list entries used by the Character Group Editor. Any existing children that do not contain a `LayeredCharacterListEntry` component are removed when the editor initializes at runtime.
 
 ---
 
 ## Prefabs
 
-(To be written)
+Ready-to-use prefabs, these include complete pre-made Character Group Editor menus and individual modules to create one yourself.
 
----
+**Location**: `Prefabs > Character Creator > Character Group Editor`
 
-## LayeredCharacterListEntry
+### Character List Entries
 
----
+These prefabs are used as entries in the Character List.
 
-## LayeredCharacterListNewCharacterEntry
+Location: `Prefabs > Character Creator > Character Group Editor > Character List Entries`
+
+Four folders are provided.
+
+#### Sprite Based Entries
+
+Displays only a preview of the character. Does **not** display the characters name.
+
+<!-- Insert Sprite Based Entry Screenshot Here -->
+
+#### Text Based Entries
+
+Displays only the character's name. Does **not** display any visual representation of the character.
+
+Uses the characters Display Name if set, otherwise uses the characters name.
+
+This is useful for compact lists.
+
+<!-- Insert Sprite Based Entry Screenshot Here -->
+
+#### Sprite and Text Based Entries
+
+Displays both:
+- A preview of the character.
+- The character's name.
+
+Use this when you want you entries to show the character and the characters name.
+
+#### New Character List Entry
+
+Contains the prefabs used for the first entry in a Flexible Character Group.
+
+<!-- Insert Sprite and Text Based Entry Screenshot Here -->
+
+Two variants are incldued:
+
+- New Character Entry [Sprite] - Display a character skeleton sprite (Changeable) and text saying **New Character**.
+- New Character Entry [Text] - Displays only the text **New Character**.
+
+The text-only version is intended for compact lists.
+
+The **New Character Entry** is instantiated as the first item in the list. Selecting it opens the Character Creation Menu and create a new character. When the character is saved, it is added to the Flexible Character Group.
 
 ---
 
 ## Loading Screens
 
+**Location**: `Prefabs > Character Creator > Character Group Editor > Loading Screens`
+
+<!-- Add loading screen screenshot -->
+
+Four loading screen prefabs are included, each using a different background.
+
+Character Group Editor loading screens work similarly to the loading screens included with the Character Creation Menu.
+
+The main difference is that a Character Group Editor loading screen requires an explicit reference to the `CharacterGroupEditor` component.
+
+Once the component has been added to your Character Group Editor menu, assign the Character Group Editor component to the loading screen prefab so it can receive loading progress and setup information from the editor.
+
+---
+
+## CharacterGroupEditorEntry
+
+<!-- Add component API reference -->
+
+The `CharacterGroupEditorEntry` component is used by **character list entries**.
+
+It supports three display modes:
+
+| Display Type        | Contents                             |
+| ------------------- | ------------------------------------ |
+| **Text**            | Character name                       |
+| **Sprite**          | Character preview                    |
+| **Text And Sprite** | Character preview and character name |
+
+The component automatically handles if the Remove character button is shown.
+
+The button is only shown when:
+- The Character Group Editor allows character removal.
+- The Character Group Type is set to Flexible.
+
+---
+
+## CharacterGroupEditorNewEntry
+
+<!-- Add component API reference -->
+
+The `CharacterGroupEditorNewEntry` component is used by the **New Character Entry**.
+
+This component provides the entry that appears at the beginning of a Flexible Character Group list.
+
+When selected, it opens the Character Creation Menu for creating a new character in the group.
+
 ---
 
 ## Premade Character Group Editors
 
+Premade menus that provide all functionaliy needed out of the box, these are the easiest to setup.
+
+**Location**: `Prefabs > Character Creator > Character Group Editor > Premade Character Group Editors`
+
+Two folders are included:
+
+- **Fixed**
+- **Flexible**
+
+Each folder contains two complete menu prefabs:
+
+- **Text Vertical List**
+- **Sprite Grid**
+
+The Sprite Grid versions use a `GridLayoutGroup` to arrange the character entries into a grid.
+
+The Text Vertical List versions use a `VerticalLayoutGroup` and are intended for traditional vertical character lists.
+
+These prefabs can be customized to be unique to your game, change backgrounds, rearange elements, everything can be modified. The `CharacterGroupEditor` only needs a reference to a GameObject to instantiate character entries into.
+
 ---
 
 ## Manual Setup
+
+A Character Group Editor can be assembled manually. Building it yourself gives you full control over how the menu looks and behaves.
+
+A Character Group Editor menu follows this general GameObject structure:
+
+```text
+Character Group Editor
+├── Contents
+└── Loading Screen
+```
+
+### 1️⃣ Create the Character Group Editor
+
+Create a GameObject named `Character Group Editor`.
+
+Add the `CharacterGroupEditor` component to it.
+
+Configure the components List Settings, Entry Click Action, and references.
+
+---
+
+### 2️⃣ Create the Contents
+
+Create a child GameObject named `Contents`.
+
+The Contents GameObject acts as the container for the visible menu.
+
+It can contain any UI structured required by your game.
+
+A typical Character Group Editor might contain:
+
+```text
+Character Group Editor
+├── Contents
+│   ├── Background
+│   ├── Title
+│   ├── Back Button
+│   └── Scroll View
+│       └── Content
+└── Loading Screen
+```
+
+---
+
+### 3️⃣ Create the List Parent
+
+Create a GameObject or Transform that acts as the parent for the character entries.
+
+For a typical ScrollView, this would be the ScrollView's Content object:
+
+```text
+Scroll View
+└── Content
+    ├── Character Entry
+    ├── Character Entry
+    ├── Character Entry
+    └── ...
+```
+
+Assign this Transform to the List Parent field on the `CharacterGroupEditor`.
+
+Every character in the Character Group is represented by a list entry under this Transform.
+
+> [!TIP]
+> A `ContentSizeFitter` with **Vertical Fit** set to **Min Size** is recommended when using a vertically scrolling list. This allows the Content object to automatically expand to accommodate the number of character entries created by the Character Group Editor. Without an appropriately sized Content object, the ScrollView may not correctly determine the size of its scrollable area.
+
+The same concept can be applied to other layouts when the list is arranged horizontally or as a grid.
+
+---
+
+### 4️⃣ Add the List Entry Prefab
+
+Two options here:
+
+#### Option 1: Use Premade List Entry Prefab
+
+You can use the already created list entry prefabs that are used in the [Premade Character Group Editor prefabs](#premade-character-group-editors).
+
+Assign any of the [Character List Entry prefabs](#character-list-entries) to the **List Entry Prefab** variable in the `CharacterGroupEditor`.
+
+
+#### Option 2: Create Your Own Prefab
+
+To create your own Character List Entry follow these steps:
+
+1. Create a new GameObject.
+2. Add the `CharacterGroupEditorEntry` component.
+3. Set **Display Type** (Text, Sprite, Both).
+4. Set **Character Name Text** reference (If Display Type is Text or Both).
+5. Set **Character Image** reference (If Display Type is Sprite or Both).
+6. Set **Select Character Button** reference.
+7. Set **Remove Character Button** reference.
+8. Drag and drop parent GameObject into Project window to turn it into a prefab.
+9. Assign the prefab to the **List Entry Prefab** variable in the `CharacterGroupEditor`.
+
+A usual GameObject structure will look like this:
+
+```text
+Character Entry
+├── Contents
+│   ├── Background
+│   ├── Character Sprite
+├── Character Name Text
+└── Remove Character Button
+```
+
+---
+
+### 5️⃣ Configure Flexible Groups
+
+When using a Flexible Character Group, assign a **New Character List Entry prefab**.
+
+This can be one of the premade prefabs located at:
+
+`Prefabs > Character Creator > Character Group Editor > Character List Entries > New Character Entry`
+
+Or you can create your own:
+
+1. Create a new GameObject.
+2. Add the `CharacterGroupEditorNewEntry` component.
+3. Drag and drop parent GameObject into Project window to turn it into a prefab.
+4. Assign the prefab to the **New Character List Entry Prefab** variable in the `CharacterGroupEditor`.
+
+The Character Group Editor creates this entry before the character entries and places it at the beginning of the list.
+
+If **Create New Characters Permission** is disabled, the **New Character Entry** is not created.
+
+---
+
+### 6️⃣ Add a Loading Screen
+
+Create another child GameObject under the **Character Group Editor** and add one of the provided [loading screen prefabs](#loading-screens).
+
+Assign the parent CharacterGroupEditor component to the loading screens' required reference.
+
+The loading screen will then automatically enable itself when the Character Group Editor is loading.
 
 ---
 

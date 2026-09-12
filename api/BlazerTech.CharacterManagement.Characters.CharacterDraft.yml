@@ -11,6 +11,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   langs:
@@ -148,15 +149,46 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterLayerOptionUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 22
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Called when a layer of the character is updated.
+  example: []
   syntax:
     content: public event EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs> OnCharacterLayerOptionUpdated
     return:
       type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
     content.vb: Public Event OnCharacterLayerOptionUpdated As EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
+  id: OnCharacterUpdated
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterUpdated
+  nameWithType: CharacterDraft.OnCharacterUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnCharacterUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Called when a layer of the character or the characters display name is updated.
+  example: []
+  syntax:
+    content: public event EventHandler OnCharacterUpdated
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnCharacterUpdated As EventHandler
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
@@ -175,7 +207,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 24
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -207,7 +239,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 35
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -235,7 +267,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 55
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -263,7 +295,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Dispose
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 57
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -451,6 +483,14 @@ references:
   - name: " "
   - name: TEventArgs
   - name: )
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor
   href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_

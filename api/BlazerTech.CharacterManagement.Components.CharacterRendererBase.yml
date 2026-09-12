@@ -40,11 +40,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterRendererBase
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -86,11 +86,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadedCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -115,11 +115,11 @@ items:
   type: Event
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterLoaded
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 17
   assemblies:
   - Assembly-CSharp
@@ -142,11 +142,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: _renderer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp
@@ -190,11 +190,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Renderer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 26
   assemblies:
   - Assembly-CSharp
@@ -219,11 +219,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: characterSpriteParent
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 28
   assemblies:
   - Assembly-CSharp
@@ -265,11 +265,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterSpriteParent
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 30
   assemblies:
   - Assembly-CSharp
@@ -294,11 +294,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: setAnimatorController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 36
   assemblies:
   - Assembly-CSharp
@@ -351,11 +351,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetAnimatorController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 38
   assemblies:
   - Assembly-CSharp
@@ -380,11 +380,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: _animator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 43
   assemblies:
   - Assembly-CSharp
@@ -437,11 +437,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Animator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 45
   assemblies:
   - Assembly-CSharp
@@ -466,11 +466,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: loadingMode
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 50
   assemblies:
   - Assembly-CSharp
@@ -514,11 +514,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadingMode
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 52
   assemblies:
   - Assembly-CSharp
@@ -543,11 +543,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: loadCharacterOnStart
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 57
   assemblies:
   - Assembly-CSharp
@@ -591,11 +591,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadCharacterOnStart
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 59
   assemblies:
   - Assembly-CSharp
@@ -620,11 +620,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: defaultOverlayLayers
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 61
   assemblies:
   - Assembly-CSharp
@@ -666,11 +666,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DefaultOverlayLayers
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 63
   assemblies:
   - Assembly-CSharp
@@ -695,11 +695,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OverlayLayerHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 67
   assemblies:
   - Assembly-CSharp
@@ -724,11 +724,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: isValid
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 69
   assemblies:
   - Assembly-CSharp
@@ -751,11 +751,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ValidationCheck
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 90
   assemblies:
   - Assembly-CSharp
@@ -779,11 +779,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 107
   assemblies:
   - Assembly-CSharp
@@ -807,11 +807,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 109
   assemblies:
   - Assembly-CSharp
@@ -833,11 +833,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 114
   assemblies:
   - Assembly-CSharp
@@ -859,11 +859,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TrySetCharacterAnimator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 123
   assemblies:
   - Assembly-CSharp
@@ -888,11 +888,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: InvokeOnCharacterLoaded
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 142
   assemblies:
   - Assembly-CSharp
@@ -920,11 +920,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: InstantiateNewOverlayLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 144
   assemblies:
   - Assembly-CSharp
@@ -948,11 +948,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnDestroy
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/CharacterRendererBase.cs
     startLine: 149
   assemblies:
   - Assembly-CSharp

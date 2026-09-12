@@ -278,6 +278,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.yml",
       "output": {
         ".html": {
@@ -488,58 +544,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType",
       "Summary": null
     },
     {

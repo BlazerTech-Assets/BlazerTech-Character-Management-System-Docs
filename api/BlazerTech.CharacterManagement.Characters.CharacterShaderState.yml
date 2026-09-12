@@ -89,7 +89,7 @@ items:
   summary: >-
     Contains a Render Texture of the current state of the character spritesheet. Can be applied
 
-    to a renderer component to override the texture used In the Character Shader.
+    to a renderer component to override the texture used in the Character Shader.
   remarks: Mostly used by <xref href="BlazerTech.CharacterManagement.Components.CharacterRendererBase" data-throw-if-not-resolved="false"></xref> components.
   example: []
   syntax:

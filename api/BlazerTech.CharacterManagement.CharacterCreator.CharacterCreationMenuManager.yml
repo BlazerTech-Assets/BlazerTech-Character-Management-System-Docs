@@ -11,10 +11,10 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
@@ -23,6 +23,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterLayerOptionUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuInstanceDisabled
@@ -436,6 +437,33 @@ items:
     return:
       type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
     content.vb: Public Event OnCharacterLayerOptionUpdated As EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterUpdated
+  id: OnCharacterUpdated
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterUpdated
+  nameWithType: CharacterCreationMenuManager.OnCharacterUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterUpdated
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: OnCharacterUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public event EventHandler OnCharacterUpdated
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnCharacterUpdated As EventHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   id: OnMenuEnabledAndSetup
@@ -454,7 +482,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuEnabledAndSetup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -481,7 +509,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnBeforeMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 69
+    startLine: 70
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -508,7 +536,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuLoadingProgressUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -535,7 +563,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnCharacterSavedInMenuInstance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -562,7 +590,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnMenuInstanceDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -589,7 +617,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ActiveHistoryTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -618,7 +646,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableMenu_EditCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 127
+    startLine: 128
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -643,25 +671,25 @@ items:
   nameWithType.vb: CharacterCreationMenuManager.EnableMenu_EditCharacter(LayeredCharacter, Boolean)
   fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, Boolean)
   name.vb: EnableMenu_EditCharacter(LayeredCharacter, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  id: EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+  id: EnableMenu_CreateCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: EnableMenu_NewCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(string, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, bool)
+  name: EnableMenu_CreateCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(string, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, bool)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: EnableMenu_NewCharacterInFlexibleGroup
+    id: EnableMenu_CreateCharacterInFlexibleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 156
+    startLine: 157
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -669,7 +697,7 @@ items:
   remarks: A new character will be created and editable. When saved any changes made to the copy will be applied to the original character.
   example: []
   syntax:
-    content: public void EnableMenu_NewCharacterInFlexibleGroup(string characterName, FlexibleCharacterGroup flexibleGroup, bool enableMenuContents = true)
+    content: public void EnableMenu_CreateCharacterInFlexibleGroup(string characterName, FlexibleCharacterGroup flexibleGroup, bool enableMenuContents = true)
     parameters:
     - id: characterName
       type: System.String
@@ -680,8 +708,8 @@ items:
     - id: enableMenuContents
       type: System.Boolean
       description: Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.
-    content.vb: Public Sub EnableMenu_NewCharacterInFlexibleGroup(characterName As String, flexibleGroup As FlexibleCharacterGroup, enableMenuContents As Boolean = True)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup*
+    content.vb: Public Sub EnableMenu_CreateCharacterInFlexibleGroup(characterName As String, flexibleGroup As FlexibleCharacterGroup, enableMenuContents As Boolean = True)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
@@ -689,28 +717,28 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when the <code class="paramref">characterName</code> is blank.
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, Boolean)
-  name.vb: EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  id: EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup(String, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, Boolean)
+  name.vb: EnableMenu_CreateCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  id: EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
-  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  name: EnableMenu_EditOrCreatePrimaryCharacter(LayeredCharacterTypeSO, bool)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(LayeredCharacterTypeSO, bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: EnableMenu_PrimaryCharacterSlot
+    id: EnableMenu_EditOrCreatePrimaryCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 184
+    startLine: 185
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -718,7 +746,7 @@ items:
   remarks: If a character already exists it will be copied and editable inside the menu. When the character is saved, all changes will be applied to the original character.
   example: []
   syntax:
-    content: public void EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
+    content: public void EnableMenu_EditOrCreatePrimaryCharacter(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
@@ -726,34 +754,34 @@ items:
     - id: enableMenuContents
       type: System.Boolean
       description: Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.
-    content.vb: Public Sub EnableMenu_PrimaryCharacterSlot(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot*
+    content.vb: Public Sub EnableMenu_EditOrCreatePrimaryCharacter(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when <code class="paramref">characterType</code> is invalid.
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  name.vb: EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  id: EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(LayeredCharacterTypeSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  name.vb: EnableMenu_EditOrCreatePrimaryCharacter(LayeredCharacterTypeSO, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  id: EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  name: EnableMenu_CreateOrReplacePrimaryCharacter(LayeredCharacterTypeSO, bool)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(LayeredCharacterTypeSO, bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: EnableMenu_NewPrimaryCharacterSlot
+    id: EnableMenu_CreateOrReplacePrimaryCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 231
+    startLine: 232
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -764,7 +792,7 @@ items:
     If a character already exists it will overridden when the new character is saved.
   example: []
   syntax:
-    content: public void EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
+    content: public void EnableMenu_CreateOrReplacePrimaryCharacter(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
@@ -772,8 +800,8 @@ items:
     - id: enableMenuContents
       type: System.Boolean
       description: Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.
-    content.vb: Public Sub EnableMenu_NewPrimaryCharacterSlot(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot*
+    content.vb: Public Sub EnableMenu_CreateOrReplacePrimaryCharacter(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
@@ -781,9 +809,9 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when <code class="paramref">characterType</code> is invalid.
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  name.vb: EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(LayeredCharacterTypeSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  name.vb: EnableMenu_CreateOrReplacePrimaryCharacter(LayeredCharacterTypeSO, Boolean)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   id: ResetCharacter
@@ -802,7 +830,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 323
+    startLine: 324
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -830,7 +858,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: DisableMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 343
+    startLine: 344
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -858,7 +886,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 370
+    startLine: 372
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -886,7 +914,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SetActiveHistoryTracker
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 382
+    startLine: 384
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -1433,12 +1461,12 @@ references:
   name: ArgumentException
   nameWithType: ArgumentException
   fullName: System.ArgumentException
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
-  name: EnableMenu_NewCharacterInFlexibleGroup
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_CreateCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
+  name: EnableMenu_CreateCharacterInFlexibleGroup
+  nameWithType: CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateCharacterInFlexibleGroup
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1456,18 +1484,18 @@ references:
   name: LayeredCharacterGroupManager
   nameWithType: LayeredCharacterGroupManager
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  name: EnableMenu_PrimaryCharacterSlot
-  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  name: EnableMenu_NewPrimaryCharacterSlot
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditOrCreatePrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  name: EnableMenu_EditOrCreatePrimaryCharacter
+  nameWithType: CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditOrCreatePrimaryCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_CreateOrReplacePrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  name: EnableMenu_CreateOrReplacePrimaryCharacter
+  nameWithType: CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_CreateOrReplacePrimaryCharacter
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ResetCharacter

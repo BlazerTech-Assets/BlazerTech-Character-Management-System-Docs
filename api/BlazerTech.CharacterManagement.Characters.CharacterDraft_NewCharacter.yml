@@ -22,7 +22,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CharacterDraft_NewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 69
+    startLine: 87
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -41,6 +41,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.BaseSnapshot
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.LastSaveSnapshot
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.Group
@@ -61,7 +62,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Group
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 71
+    startLine: 89
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -88,7 +89,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 72
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -122,7 +123,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 77
+    startLine: 95
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -219,6 +220,13 @@ references:
   name: OnCharacterLayerOptionUpdated
   nameWithType: CharacterDraft.OnCharacterLayerOptionUpdated
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_OnCharacterUpdated
+  name: OnCharacterUpdated
+  nameWithType: CharacterDraft.OnCharacterUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterUpdated
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   parent: BlazerTech.CharacterManagement.Characters.CharacterDraft

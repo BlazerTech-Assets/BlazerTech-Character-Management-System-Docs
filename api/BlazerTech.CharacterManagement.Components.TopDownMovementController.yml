@@ -23,11 +23,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: TopDownMovementController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
@@ -54,11 +54,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Instance
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -81,11 +81,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: MoveSpeed
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 36
   assemblies:
   - Assembly-CSharp
@@ -110,11 +110,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CanMove
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 38
   assemblies:
   - Assembly-CSharp
@@ -139,11 +139,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableSprint
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 42
   assemblies:
   - Assembly-CSharp
@@ -168,11 +168,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: EnableCrouch
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 46
   assemblies:
   - Assembly-CSharp
@@ -197,11 +197,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsMoving
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 56
   assemblies:
   - Assembly-CSharp
@@ -226,11 +226,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsSprinting
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 57
   assemblies:
   - Assembly-CSharp
@@ -255,11 +255,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsCrouching
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 58
   assemblies:
   - Assembly-CSharp
@@ -284,11 +284,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Movement
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Movement Controller Components/TopDownMovementController.cs
     startLine: 59
   assemblies:
   - Assembly-CSharp

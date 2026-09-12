@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTemplateRenderer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp
@@ -73,11 +73,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: LoadedCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
     startLine: 16
   assemblies:
   - Assembly-CSharp
@@ -104,11 +104,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -134,11 +134,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
     startLine: 70
   assemblies:
   - Assembly-CSharp
@@ -162,11 +162,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+      path: Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: ShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Components/Character Renderer Components/Layered Character Renderers/LayeredCharacterTemplateRenderer.cs
     startLine: 75
   assemblies:
   - Assembly-CSharp

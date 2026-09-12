@@ -62,6 +62,18 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
     name: CharacterCreationMenuManager
     type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+    name: CharacterGroupEditor
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+    name: CharacterGroupEditorEntry
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+    name: CharacterGroupEditorNewEntry
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+    name: CharacterGroupEntryAction
+    type: Enum
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
     name: CharacterLayerCarouselSelector
     type: Class
@@ -107,18 +119,9 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
     name: LayerSelectorListElement
     type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-    name: LayeredCharacterListEntry
-    type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
-    name: LayeredCharacterListNewCharacterEntry
-    type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
-    name: LayeredCharacterListType
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+    name: LayeredCharacterGroupType
     type: Enum
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-    name: LayeredCharacterSelectionList
-    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
     name: LoadingScreenProgress
     type: Class

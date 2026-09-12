@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  id: CharacterGroupEntryAction
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.CustomAction
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.Edit
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.None
+  langs:
+  - csharp
+  - vb
+  name: CharacterGroupEntryAction
+  nameWithType: CharacterGroupEntryAction
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterGroupEntryAction
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public enum CharacterGroupEntryAction
+    content.vb: Public Enum CharacterGroupEntryAction
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.None
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.None
+  id: None
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: CharacterGroupEntryAction.None
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.None
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: None
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: None = 0
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.Edit
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.Edit
+  id: Edit
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: CharacterGroupEntryAction.Edit
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.Edit
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: Edit
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: Edit = 1
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.CustomAction
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.CustomAction
+  id: CustomAction
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  langs:
+  - csharp
+  - vb
+  name: CustomAction
+  nameWithType: CharacterGroupEntryAction.CustomAction
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.CustomAction
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CustomAction
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditor.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: CustomAction = 2
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.html
+  name: CharacterGroupEntryAction
+  nameWithType: CharacterGroupEntryAction
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction

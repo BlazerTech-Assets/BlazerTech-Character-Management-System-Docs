@@ -1,125 +1,125 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-  id: LayeredCharacterListEntry
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  id: CharacterGroupEditorEntry
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   langs:
   - csharp
   - vb
-  name: LayeredCharacterListEntry
-  nameWithType: LayeredCharacterListEntry
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
+  name: CharacterGroupEditorEntry
+  nameWithType: CharacterGroupEditorEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: LayeredCharacterListEntry
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+    id: CharacterGroupEditorEntry
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: 'public class LayeredCharacterListEntry : MonoBehaviour'
-    content.vb: Public Class LayeredCharacterListEntry Inherits MonoBehaviour
+    content: 'public class CharacterGroupEditorEntry : MonoBehaviour'
+    content.vb: Public Class CharacterGroupEditorEntry Inherits MonoBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList)
-  id: Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList)
-  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  id: Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   langs:
   - csharp
   - vb
-  name: Setup(LayeredCharacter, LayeredCharacterSelectionList)
-  nameWithType: LayeredCharacterListEntry.Setup(LayeredCharacter, LayeredCharacterSelectionList)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList)
+  name: Setup(LayeredCharacter, CharacterGroupEditor)
+  nameWithType: CharacterGroupEditorEntry.Setup(LayeredCharacter, CharacterGroupEditor)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
-    startLine: 49
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
+    startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: public Task Setup(LayeredCharacter character, LayeredCharacterSelectionList list)
+    content: public Task Setup(LayeredCharacter character, CharacterGroupEditor editor)
     parameters:
     - id: character
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    - id: list
-      type: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
+    - id: editor
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function Setup(character As LayeredCharacter, list As LayeredCharacterSelectionList) As Task
-  overload: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter
+    content.vb: Public Function Setup(character As LayeredCharacter, editor As CharacterGroupEditor) As Task
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
   id: SelectCharacter
-  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   langs:
   - csharp
   - vb
   name: SelectCharacter()
-  nameWithType: LayeredCharacterListEntry.SelectCharacter()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter()
+  nameWithType: CharacterGroupEditorEntry.SelectCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter()
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: SelectCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
-    startLine: 136
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
+    startLine: 173
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
     content: public void SelectCharacter()
     content.vb: Public Sub SelectCharacter()
-  overload: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
   id: RemoveCharacter
-  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   langs:
   - csharp
   - vb
   name: RemoveCharacter()
-  nameWithType: LayeredCharacterListEntry.RemoveCharacter()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter()
+  nameWithType: CharacterGroupEditorEntry.RemoveCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter()
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: RemoveCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
-    startLine: 141
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
+    startLine: 179
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
     content: public void RemoveCharacter()
     content.vb: Public Sub RemoveCharacter()
-  overload: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter*
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
@@ -203,12 +203,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html#BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterListEntry_Setup_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterSelectionList_
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_Setup_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
   name: Setup
-  nameWithType: LayeredCharacterListEntry.Setup
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.Setup
+  nameWithType: CharacterGroupEditorEntry.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters
@@ -216,13 +216,13 @@ references:
   name: LayeredCharacter
   nameWithType: LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
   parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.html
-  name: LayeredCharacterSelectionList
-  nameWithType: LayeredCharacterSelectionList
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor.html
+  name: CharacterGroupEditor
+  nameWithType: CharacterGroupEditor
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -298,15 +298,15 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html#BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterListEntry_SelectCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_SelectCharacter
   name: SelectCharacter
-  nameWithType: LayeredCharacterListEntry.SelectCharacter
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.SelectCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html#BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterListEntry_RemoveCharacter
+  nameWithType: CharacterGroupEditorEntry.SelectCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_RemoveCharacter
   name: RemoveCharacter
-  nameWithType: LayeredCharacterListEntry.RemoveCharacter
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.RemoveCharacter
+  nameWithType: CharacterGroupEditorEntry.RemoveCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter

@@ -20,6 +20,10 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuEnablerRelay
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
@@ -35,10 +39,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
   - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
   - BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
+  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
@@ -91,6 +92,27 @@ references:
   name: CharacterPressenceController
   nameWithType: CharacterPressenceController
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType.html
+  name: LayeredCharacterGroupType
+  nameWithType: LayeredCharacterGroupType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterGroupType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction.html
+  name: CharacterGroupEntryAction
+  nameWithType: CharacterGroupEntryAction
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor.html
+  name: CharacterGroupEditor
+  nameWithType: CharacterGroupEditor
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html
@@ -117,6 +139,19 @@ references:
   name: CCMSelectedLayerTabHandler
   nameWithType: CCMSelectedLayerTabHandler
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType.html
+  name: CharacterListEntryDisplayType
+  nameWithType: CharacterListEntryDisplayType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html
+  name: CharacterGroupEditorEntry
+  nameWithType: CharacterGroupEditorEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
 - uid: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
   parent: BlazerTech.CharacterManagement.CharacterCreator
@@ -124,6 +159,12 @@ references:
   name: ILoadingScreen
   nameWithType: ILoadingScreen
   fullName: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
+  name: CharacterSelectionLoadingScreenHandler
+  nameWithType: CharacterSelectionLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.html
@@ -143,19 +184,6 @@ references:
   name: CCMCharacterLayerSelectionManager
   nameWithType: CCMCharacterLayerSelectionManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
-  parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType.html
-  name: CharacterListEntryDisplayType
-  nameWithType: CharacterListEntryDisplayType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html
-  name: LayeredCharacterListEntry
-  nameWithType: LayeredCharacterListEntry
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationSwitcher
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationSwitcher
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationSwitcher.html
@@ -168,12 +196,6 @@ references:
   name: CharacterLayerTabSelector
   nameWithType: CharacterLayerTabSelector
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
-  name: CharacterSelectionLoadingScreenHandler
-  nameWithType: CharacterSelectionLoadingScreenHandler
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
   href: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html
@@ -245,20 +267,6 @@ references:
   name: CharacterLayerSelector
   nameWithType: CharacterLayerSelector
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
-  parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType.html
-  name: LayeredCharacterListType
-  nameWithType: LayeredCharacterListType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-  parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.html
-  name: LayeredCharacterSelectionList
-  nameWithType: LayeredCharacterSelectionList
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
   parent: BlazerTech.CharacterManagement.CharacterCreator
@@ -266,18 +274,18 @@ references:
   name: LayerSelectorListElement
   nameWithType: LayerSelectorListElement
   fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorListElement
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry.html
-  name: LayeredCharacterListNewCharacterEntry
-  nameWithType: LayeredCharacterListNewCharacterEntry
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
 - uid: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   href: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier.html
   name: GameObjectStateNotifier
   nameWithType: GameObjectStateNotifier
   fullName: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html
+  name: CharacterGroupEditorNewEntry
+  nameWithType: CharacterGroupEditorNewEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html

@@ -6,6 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.String)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.IsIdentical(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.IsIdentical(BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
@@ -104,6 +105,35 @@ items:
       type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
     content.vb: Public ReadOnly Property LayerOptions As IReadOnlyList(Of CharacterLayerOption)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
+  id: CharacterDisplayName
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CharacterDisplayName
+  nameWithType: LayeredCharacterSnapshot.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
+    id: CharacterDisplayName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string CharacterDisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CharacterDisplayName As String
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
   id: Note
@@ -122,7 +152,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: Note
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -153,7 +183,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -190,7 +220,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsIdentical
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -225,7 +255,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: IsIdentical
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
-    startLine: 66
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -408,12 +438,12 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_Note
-  name: Note
-  nameWithType: LayeredCharacterSnapshot.Note
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_CharacterDisplayName
+  name: CharacterDisplayName
+  nameWithType: LayeredCharacterSnapshot.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterDisplayName
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -425,6 +455,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_Note
+  name: Note
+  nameWithType: LayeredCharacterSnapshot.Note
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters

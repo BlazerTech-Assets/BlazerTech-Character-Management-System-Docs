@@ -20,7 +20,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: CCMSaveCharacterButtonEditor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
-    startLine: 71
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
     id: OnInspectorGUI
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Menu Controls/CCMSaveCharacterButton.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
