@@ -323,11 +323,11 @@ The same concept can be applied to other layouts when the list is arranged horiz
 
 You can either use a premade prefab or build your own.
 
-#### Option 1: Use a premade list entry Prefab
+#### Option 1: Use a premade list entry prefab
 
 Assign any of the [Character List Entry prefabs](#character-list-entries) to the **List Entry Prefab** field on the `CharacterGroupEditor`. These are the same prefabs used by the [premade menus](#premade-character-group-editors).
 
-#### Option 2: Create Your Own Prefab
+#### Option 2: Create your own prefab
 
 To create your own Character List Entry follow these steps:
 
