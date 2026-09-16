@@ -22,6 +22,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEntryAction
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
@@ -32,7 +33,6 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
   - BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
   - BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
@@ -159,12 +159,6 @@ references:
   name: ILoadingScreen
   nameWithType: ILoadingScreen
   fullName: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
-  name: CharacterSelectionLoadingScreenHandler
-  nameWithType: CharacterSelectionLoadingScreenHandler
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.html
@@ -254,6 +248,12 @@ references:
   name: CharacterCreationMenuManager
   nameWithType: CharacterCreationMenuManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.html
+  name: CharacterGroupEditorLoadingScreenHandler
+  nameWithType: CharacterGroupEditorLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html

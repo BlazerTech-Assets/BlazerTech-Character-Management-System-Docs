@@ -5,9 +5,9 @@ items:
   id: CharacterGroupEditorEntry
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   langs:
   - csharp
   - vb
@@ -35,30 +35,30 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
-  id: Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  id: InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   langs:
   - csharp
   - vb
-  name: Setup(LayeredCharacter, CharacterGroupEditor)
-  nameWithType: CharacterGroupEditorEntry.Setup(LayeredCharacter, CharacterGroupEditor)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  name: InitializeAsync(LayeredCharacter, CharacterGroupEditor)
+  nameWithType: CharacterGroupEditorEntry.InitializeAsync(LayeredCharacter, CharacterGroupEditor)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
       branch: main
       repo: https://github.com/BlazerTech-Assets/BlazerTech-Character-Management-System.git
-    id: Setup
+    id: InitializeAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Group Editor/CharacterGroupEditorEntry.cs
     startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: public Task Setup(LayeredCharacter character, CharacterGroupEditor editor)
+    content: public Task InitializeAsync(LayeredCharacter character, CharacterGroupEditor editor)
     parameters:
     - id: character
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
@@ -66,8 +66,8 @@ items:
       type: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function Setup(character As LayeredCharacter, editor As CharacterGroupEditor) As Task
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup*
+    content.vb: Public Function InitializeAsync(character As LayeredCharacter, editor As CharacterGroupEditor) As Task
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
   id: SelectCharacter
@@ -203,12 +203,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_Setup_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
-  name: Setup
-  nameWithType: CharacterGroupEditorEntry.Setup
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_InitializeAsync_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
+  name: InitializeAsync
+  nameWithType: CharacterGroupEditorEntry.InitializeAsync
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters

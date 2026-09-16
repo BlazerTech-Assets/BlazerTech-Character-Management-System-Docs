@@ -163,7 +163,7 @@ A **New Character List Entry Prefab** is only required when using a Flexible Cha
 
 <!-- Add component API reference -->
 
-The `CharacterGroupEditorEntry` component is used by character list entries.
+The [CharacterGroupEditorEntry](xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry) component is used by character list entries.
 
 It supports three display modes:
 
@@ -182,7 +182,7 @@ The component handles the remove button automatically. The button is shown only 
 
 <!-- Add component API reference -->
 
-The `CharacterGroupEditorNewEntry` component is used by the New Character entry, the entry that appears at the start of a Flexible Character Group list.
+The [CharacterGroupEditorNewEntry](xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry) component is used by the New Character entry, the entry that appears at the start of a Flexible Character Group list.
 
 When selected, it opens the Character Creation Menu to create a new character in the group.
 

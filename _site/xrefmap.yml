@@ -1699,6 +1699,19 @@ references:
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
   nameWithType: CharacterGroupEditorEntry
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  name: InitializeAsync(LayeredCharacter, CharacterGroupEditor)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_InitializeAsync_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
+  nameWithType: CharacterGroupEditorEntry.InitializeAsync(LayeredCharacter, CharacterGroupEditor)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync*
+  name: InitializeAsync
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_InitializeAsync_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.InitializeAsync
+  nameWithType: CharacterGroupEditorEntry.InitializeAsync
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.RemoveCharacter
   name: RemoveCharacter()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_RemoveCharacter
@@ -1725,19 +1738,24 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.SelectCharacter
   nameWithType: CharacterGroupEditorEntry.SelectCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
-  name: Setup(LayeredCharacter, CharacterGroupEditor)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_Setup_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditor_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditor)
-  nameWithType: CharacterGroupEditorEntry.Setup(LayeredCharacter, CharacterGroupEditor)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup*
-  name: Setup
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorEntry_Setup_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.Setup
-  nameWithType: CharacterGroupEditorEntry.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+  name: CharacterGroupEditorLoadingScreenHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+  nameWithType: CharacterGroupEditorLoadingScreenHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingFinished
+  name: OnLoadingFinished
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorLoadingScreenHandler_OnLoadingFinished
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingFinished
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingFinished
+  nameWithType: CharacterGroupEditorLoadingScreenHandler.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingProgressUpdated
+  name: OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterGroupEditorLoadingScreenHandler_OnLoadingProgressUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingProgressUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.OnLoadingProgressUpdated
+  nameWithType: CharacterGroupEditorLoadingScreenHandler.OnLoadingProgressUpdated
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
   name: CharacterGroupEditorNewEntry
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html
@@ -2453,24 +2471,6 @@ references:
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Static
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Static
   nameWithType: CharacterPreviewMode.Static
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  name: CharacterSelectionLoadingScreenHandler
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-  nameWithType: CharacterSelectionLoadingScreenHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
-  name: OnLoadingFinished
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreenHandler_OnLoadingFinished
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
-  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingFinished
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
-  name: OnLoadingProgressUpdated
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreenHandler_OnLoadingProgressUpdated
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
-  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
 - uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
   name: ElementDisplayMode
   href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
@@ -10381,9 +10381,6 @@ references:
 - uid: randomized-layered-character-templates
   name: Randomized Layered Character Templates
   href: docs/character-templates/randomized-layered-character-templates.html
-- uid: temp
-  name: Character Group Editor
-  href: docs/temp-2.html
 - uid: top-down-character-animator-handler-component
   name: Top Down Character Animator Handler
   href: docs/character-usage/character-animator-handler-components/top-down-character-animator-handler.html

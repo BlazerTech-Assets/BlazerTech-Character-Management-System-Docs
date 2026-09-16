@@ -68,6 +68,9 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry
     name: CharacterGroupEditorEntry
     type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler
+    name: CharacterGroupEditorLoadingScreenHandler
+    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry
     name: CharacterGroupEditorNewEntry
     type: Class
@@ -98,9 +101,6 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
     name: CharacterPreviewMode
     type: Enum
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
-    name: CharacterSelectionLoadingScreenHandler
-    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
     name: ElementDisplayMode
     type: Enum

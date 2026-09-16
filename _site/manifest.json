@@ -306,6 +306,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorLoadingScreenHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.yml",
       "output": {
         ".html": {
@@ -442,20 +456,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler",
       "Summary": null
     },
     {
