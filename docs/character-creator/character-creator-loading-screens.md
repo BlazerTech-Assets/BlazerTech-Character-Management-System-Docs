@@ -95,7 +95,7 @@ Additional prefabs that can be added to the [Core loading screen prefab](#core).
 
 ## Loading Screen Components
 > [!NOTE]
-> All loading screen components require a reference to the **Loading Screen handler**.
+> Most loading screen components require a reference to the **Loading Screen Handler**.
 
 These components can be added to a loading screen to add additional features.  
 They're also used in the [Additions Prefabs](#additions-prefabs). If you're looking for a simple drag and drop implementation, use those instead.
