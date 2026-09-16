@@ -17,7 +17,7 @@ This guide covers the **requirements** and **installation steps** for the **Blaz
 | Package | Purpose | Notes / Links |
 |---------|---------|---------------|
 | **Addressables** | Dynamically load/unload character spritesheets. | Found in the **Unity Registry** via Package Manager. |
-| **Naughty Attributes** | Adds additional attributes to the Unity Inspector. | [Installation Guide](https://dbrizov.github.io/na-docs/general/installation.html) <br> [Unity Asset Store Link](https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996) |
+| **Naughty Attributes** | Adds additional attributes to the Unity Inspector. | [Installation Guide](https://unity.naughtyattributes.com/general/installation.html) <br> [Unity Asset Store Link](https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996) |
 
 > [!IMPORTANT]  
 > **Addressables Settings file** must be created **before** importing BT-CMS. If not created beforehand the included characters will not be functional.
@@ -38,7 +38,7 @@ Make sure **Naughty Attributes** and **Addressables** are both installed and the
 - If bought from the Unity Asset Store, navigate to `Window > Package Manager > My Assets` and find `BlazerTech Character Management System` from within the list. Click `Download` if not already downloaded and then `Import`.
 
 **Import Popup:**
-- Regardless of the installation method a popup will appear prompting you to import the `BlazerTech Character Management System` into your project. Make sure all assets are selected and click the `Import` button.  
+- Regardless of the installation method, a popup will appear prompting you to import the `BlazerTech Character Management System` into your project. Make sure all assets are selected and click the `Import` button.  
 ![Import Popup](~/images/setup/import-popup.png)
 
 ### After Installtion
