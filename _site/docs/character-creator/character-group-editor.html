@@ -104,8 +104,9 @@
 <h1 id="character-group-editor">Character Group Editor</h1>
 
 <p>The Character Group Editor is a menu for players to view and manage characters stored in a <a class="xref" href="../character-grouping-system.html">Character Group</a>.</p>
+<img src="../../images/character-group-editor/premade/premade-character-group-editor-sprite-based.png" alt="Character Group Editor Example" width="500">
 <p>It provides an interface for displaying characters in a group and, when configured as a Flexible group, lets players create and remove characters from the group.</p>
-<p>TBoth Fixed and Flexible character groups are supported. Which one is used is determined by the <strong>Group Type</strong> field on the <code>CharacterGroupEditor</code> component.</p>
+<p>Both Fixed and Flexible character groups are supported. Which one is used is determined by the <strong>Group Type</strong> field on the <code>CharacterGroupEditor</code> component.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>The fastest way to get started is to drop one of the <a href="#premade-character-group-editors">premade menu prefabs</a> into your scene and change its <strong>Group Name</strong>, <strong>Group Type</strong>, and <strong>Layered Character Type</strong>. Everything else is already set up.</p>
@@ -270,7 +271,6 @@
 <hr>
 <h2 id="entry-components">Entry Components</h2>
 <h3 id="charactergroupeditorentry">CharacterGroupEditorEntry</h3>
-<!-- Add component API reference -->
 <p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry.html">CharacterGroupEditorEntry</a> component is used by character list entries.</p>
 <p>It supports three display modes:</p>
 <table>
@@ -301,7 +301,6 @@
 <li>The Group Type is set to Flexible.</li>
 </ul>
 <h3 id="charactergroupeditornewentry">CharacterGroupEditorNewEntry</h3>
-<!-- Add component API reference -->
 <p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry.html">CharacterGroupEditorNewEntry</a> component is used by the New Character entry, the entry that appears at the start of a Flexible Character Group list.</p>
 <p>When selected, it opens the Character Creation Menu to create a new character in the group.</p>
 <hr>
@@ -317,32 +316,37 @@
 <li><strong>Sprite Grid</strong> — uses a <code>GridLayoutGroup</code> to arrange character entries into a grid.</li>
 </ul>
 <p>These prefabs can be customized freely. Backgrounds, layout, and element arrangement can all be changed; the <code>CharacterGroupEditor</code> only needs a reference to a GameObject to instantiate character entries into.</p>
+<img src="../../images/character-group-editor/premade/premade-character-group-editor-sprite-based.png" alt="Character Group Editor Sprite Based" width="500">
+<img src="../../images/character-group-editor/premade/premade-character-group-editor-text-based.png" alt="Character Group Editor Text Based" width="400">
 <h3 id="character-list-entries">Character List Entries</h3>
 <p>Prefabs used as entries in the character list.</p>
 <p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Character List Entries</code></p>
 <p>Four folders are provided.</p>
 <h4 id="sprite-based-entries">Sprite Based Entries</h4>
 <p>Displays a preview of the character only. Does not display the character's name.</p>
-<!-- Insert Sprite Based Entry screenshot here -->
+<img src="../../images/character-group-editor/list-entries/character-list-entry-sprite-based.png" alt="Character List Entry Sprite Based" width="200">
 <h4 id="text-based-entries">Text Based Entries</h4>
 <p>Displays the character's name only, with no visual representation of the character.</p>
 <p>Uses the character's Display Name if one is set, otherwise the character's name.</p>
 <p>Useful for compact lists.</p>
-<!-- Insert Text Based Entry screenshot here -->
+<img src="../../images/character-group-editor/list-entries/character-list-entry-text-based.png" alt="Character List Entry Text Based" width="250">
 <h4 id="sprite-and-text-based-entries">Sprite and Text Based Entries</h4>
 <p>Displays both a preview of the character and the character's name.</p>
-<!-- Insert Sprite and Text Based Entry screenshot here -->
+<img src="../../images/character-group-editor/list-entries/character-list-entry-sprite-and-text-based.png" alt="Character List Entry Sprite and Text Based" width="200">
 <h4 id="new-character-list-entry">New Character List Entry</h4>
 <p>The prefabs used for the first entry in a Flexible Character Group. Two variants are included:</p>
 <ul>
 <li><strong>New Character Entry [Sprite]</strong> — displays a character skeleton sprite (changeable) and the text <strong>New Character</strong>.</li>
 <li><strong>New Character Entry [Text]</strong> — displays only the text <strong>New Character</strong>, intended for compact lists.</li>
 </ul>
-<!-- Insert New Character Entry screenshot here -->
+<img src="../../images/character-group-editor/list-entries/character-list-new-entry-sprite-based.png" alt="Character List New Entry Sprite Based" width="200">
+<img src="../../images/character-group-editor/list-entries/character-list-new-entry-text-based.png" alt="Character List New Entry Text Based" width="400">
+<!-- ![Character List New Entry Sprite Based](~/images/character-group-editor/list-entries/character-list-new-entry-sprite-based.png)
+![Character List New Entry Text Based](~/images/character-group-editor/list-entries/character-list-new-entry-text-based.png) -->
 <p>The New Character entry is instantiated as the first item in the list. Selecting it opens the Character Creation Menu to create a new character, and the character is added to the Flexible Character Group when it is saved.</p>
 <h3 id="loading-screens">Loading Screens</h3>
 <p><strong>Location</strong>: <code>Prefabs &gt; Character Creator &gt; Character Group Editor &gt; Loading Screens</code></p>
-<!-- Insert loading screen screenshot here -->
+<img src="../../images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500">
 <p>Four loading screen prefabs are included, each using a different background.</p>
 <p>These work much like the loading screens included with the Character Creation Menu, with one difference: a Character Group Editor loading screen needs an explicit reference to the <code>CharacterGroupEditor</code> component.</p>
 <p>Once the component has been added to your menu, assign it to the loading screen prefab so the loading screen can receive progress and setup information from the editor.</p>

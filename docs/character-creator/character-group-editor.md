@@ -6,9 +6,11 @@ uid: character-group-editor
 
 The Character Group Editor is a menu for players to view and manage characters stored in a [Character Group](xref:character-grouping-system).
 
+<img src="~/images/character-group-editor/premade/premade-character-group-editor-sprite-based.png" alt="Character Group Editor Example" width="500" />
+
 It provides an interface for displaying characters in a group and, when configured as a Flexible group, lets players create and remove characters from the group.
 
-TBoth Fixed and Flexible character groups are supported. Which one is used is determined by the **Group Type** field on the `CharacterGroupEditor` component.
+Both Fixed and Flexible character groups are supported. Which one is used is determined by the **Group Type** field on the `CharacterGroupEditor` component.
 
 > [!TIP]
 > The fastest way to get started is to drop one of the [premade menu prefabs](#premade-character-group-editors) into your scene and change its **Group Name**, **Group Type**, and **Layered Character Type**. Everything else is already set up.
@@ -160,9 +162,6 @@ A **New Character List Entry Prefab** is only required when using a Flexible Cha
 ## Entry Components
 
 ### CharacterGroupEditorEntry
-
-<!-- Add component API reference -->
-
 The [CharacterGroupEditorEntry](xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorEntry) component is used by character list entries.
 
 It supports three display modes:
@@ -179,8 +178,6 @@ The component handles the remove button automatically. The button is shown only 
 - The Group Type is set to Flexible.
 
 ### CharacterGroupEditorNewEntry
-
-<!-- Add component API reference -->
 
 The [CharacterGroupEditorNewEntry](xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterGroupEditorNewEntry) component is used by the New Character entry, the entry that appears at the start of a Flexible Character Group list.
 
@@ -207,6 +204,9 @@ Two folders are included, **Fixed** and **Flexible**, each containing two menu p
 
 These prefabs can be customized freely. Backgrounds, layout, and element arrangement can all be changed; the `CharacterGroupEditor` only needs a reference to a GameObject to instantiate character entries into.
 
+<img src="~/images/character-group-editor/premade/premade-character-group-editor-sprite-based.png" alt="Character Group Editor Sprite Based" width="500" />
+<img src="~/images/character-group-editor/premade/premade-character-group-editor-text-based.png" alt="Character Group Editor Text Based" width="400" />
+
 ### Character List Entries
 
 Prefabs used as entries in the character list.
@@ -219,7 +219,7 @@ Four folders are provided.
 
 Displays a preview of the character only. Does not display the character's name.
 
-<!-- Insert Sprite Based Entry screenshot here -->
+<img src="~/images/character-group-editor/list-entries/character-list-entry-sprite-based.png" alt="Character List Entry Sprite Based" width="200" />
 
 #### Text Based Entries
 
@@ -229,13 +229,13 @@ Uses the character's Display Name if one is set, otherwise the character's name.
 
 Useful for compact lists.
 
-<!-- Insert Text Based Entry screenshot here -->
+<img src="~/images/character-group-editor/list-entries/character-list-entry-text-based.png" alt="Character List Entry Text Based" width="250" />
 
 #### Sprite and Text Based Entries
 
 Displays both a preview of the character and the character's name.
 
-<!-- Insert Sprite and Text Based Entry screenshot here -->
+<img src="~/images/character-group-editor/list-entries/character-list-entry-sprite-and-text-based.png" alt="Character List Entry Sprite and Text Based" width="200" />
 
 #### New Character List Entry
 
@@ -244,7 +244,11 @@ The prefabs used for the first entry in a Flexible Character Group. Two variants
 - **New Character Entry [Sprite]** — displays a character skeleton sprite (changeable) and the text **New Character**.
 - **New Character Entry [Text]** — displays only the text **New Character**, intended for compact lists.
 
-<!-- Insert New Character Entry screenshot here -->
+<img src="~/images/character-group-editor/list-entries/character-list-new-entry-sprite-based.png" alt="Character List New Entry Sprite Based" width="200" />
+<img src="~/images/character-group-editor/list-entries/character-list-new-entry-text-based.png" alt="Character List New Entry Text Based" width="400" />
+
+<!-- ![Character List New Entry Sprite Based](~/images/character-group-editor/list-entries/character-list-new-entry-sprite-based.png)
+![Character List New Entry Text Based](~/images/character-group-editor/list-entries/character-list-new-entry-text-based.png) -->
 
 The New Character entry is instantiated as the first item in the list. Selecting it opens the Character Creation Menu to create a new character, and the character is added to the Flexible Character Group when it is saved.
 
@@ -252,7 +256,7 @@ The New Character entry is instantiated as the first item in the list. Selecting
 
 **Location**: `Prefabs > Character Creator > Character Group Editor > Loading Screens`
 
-<!-- Insert loading screen screenshot here -->
+<img src="~/images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500" />
 
 Four loading screen prefabs are included, each using a different background.
 
