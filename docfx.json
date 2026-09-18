@@ -50,7 +50,7 @@
       "ogUrl": "https://legendaryswordsman2.github.io/BlazerTech-Character-Management-System-Docs/",
       "_appLogoPath": "images/logos/logo.png",
       "_enableSearch": true,
-      "pdf": false
+      "pdf": true
     }
   }
 }

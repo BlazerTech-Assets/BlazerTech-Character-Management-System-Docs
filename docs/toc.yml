@@ -1,3 +1,7 @@
+pdf: true
+
+items:
+
   - name: 📌Getting Started
   - name: Basic Concepts
     href: getting-started/basic-concepts.md
