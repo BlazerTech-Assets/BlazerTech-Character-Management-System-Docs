@@ -66,7 +66,7 @@ A **Character Layer Option** represents a single spritesheet that can be used fo
 
 Each entry in the **Layer Options list** corresponds to one possible appearance for that layer.
 
-![Character Layer Options List](~/images/character-types/character-layers/character-layer-options-list.png)
+![Character Layer Options List](~/images/character-types/layered-characters/character-layers/character-layer-options-list.png)
 
 For a **Layered Character** to be created, a **Layer Option** must be chosen from every layer.
 

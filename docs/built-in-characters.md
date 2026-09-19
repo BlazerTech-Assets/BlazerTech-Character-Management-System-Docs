@@ -34,9 +34,9 @@ To create a character template **right click** the **Project window** and naviga
 
 Once created, assign the **BlazerTech Layered Character Type** to the **Character Type field**. A list will appear with 4 entries, one for each layer. Assign the option you want to use for each layer of the character.  
 
-<img src="~/images/character-templates/layered-character-template.png" alt="BlazerTech Layered Character Template Example" width="300" />  
+<img src="~/images/character-templates/layered-character-templates/layered-character-template.png" alt="BlazerTech Layered Character Template Example" width="300" />  
 
-When you want to use your template add the [Layered Character Template Renderer](xref:character-usage#layered-character-template-renderer) component to a GameObject and assign a reference to the **Layered Character Template** you just created.
+When you want to use your template add the [Layered Character Template Renderer](xref:layered-character-template-renderer-component) component to a GameObject and assign a reference to the **Layered Character Template** you just created.
 
 Then enter play mode and you'll see the character you created from the template.
 

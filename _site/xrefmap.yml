@@ -10343,7 +10343,7 @@ references:
   name: Installation and Requirements
   href: docs/getting-started/installation-and-requirements.html
 - uid: landing
-  name: BlazerTech Character Management System
+  name: landing
   href: index.html
 - uid: layered-character-group-entry-renderer-component
   name: Layered Character Group Entry Renderer Component

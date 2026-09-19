@@ -9,7 +9,7 @@ With the [History Tracker component](xref:ccm-history-tracking-system#history-tr
 > [!NOTE]
 > A [CCM History Tracker](xref:ccm-history-tracking-system#history-tracker-component) component **must** be present somewhere inside the **menu contents** for the Undo/Redo buttons to be functional.
 
-<img src="~/images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo/Redo Buttons" width="500" /> 
+<img src="~/images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png" alt="History Undo/Redo Buttons" width="500" /> 
 
 ---
 

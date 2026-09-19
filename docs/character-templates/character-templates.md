@@ -37,7 +37,7 @@ There are three types of Character Templates.
 
 ---
 
-### Unified Character Templates
+### Unified Character Template
 
 Used to create characters with a single, fully assembled spritesheet.  
 They are linked to a [Unified Character Type](xref:unified-character-type) asset.
@@ -54,7 +54,7 @@ Unified characters use a single spritesheet which contains all animations for th
 
 ---
 
-### Layered Character Templates
+### Layered Character Template
 
 Used to create modular characters composed of multiple layers.  
 They are linked to a [Layered Character Type](xref:layered-character-type) asset.

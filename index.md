@@ -6,7 +6,7 @@ uid: landing
 
 ![BlazerTech Character Management System Cover Image](~/images/logos/blazertech-character-management-system-logo.png)
 
-# **BlazerTech Character Management System**
+<!-- # **BlazerTech Character Management System** -->
 > **Easily create, manage, and customize sprite based characters!**
 
 A comprehensive framework designed to handle both **modular** & **premade** characters.
@@ -36,23 +36,17 @@ Join the Discord server for updates and to get help from the community.
 
 ---
 
-## How It Works
+## Built for Different Workflows
+Layered characters allow seamless character modification at any time; clothing, hairstyles and other accessories can be quickly added or removed at runtime. Unified characters can be quickly set up for situations where a character's appearance will never change. The system works with all sprite-based characters, whether that's the included characters, your own, or third-party assets.
 
-Every character is built from a **Character Type**, which defines:
-- Animations and required spritesheet size.  
-- An optional Animator Controller
-- Character layers if using the layered character type.
 
-Once the Character Type is set up:
-1. New characters can be made by creating a character template and assigning the new spritesheet or dynamically creating new characters at runtime.
-2. If used, one Animator Controller can be used for all characters of the same character type. 
+## Create Characters Without Building the Systems Yourself
+Characters are set up initiality by defining a base spritesheet along with its animations and frames. Then adding new characters becomes simple. Just add new spritesheets that follow the same rules you've already set up, or add new layers and layer options for existing Layered Characters.
 
-### Character Type Variants
+That same building-block approach carries into the included Character Creator UI Framework, which provides ready-made modules,  layer selectors, live previews, randomization, history tracking and more, for assembling a Character Creation Menu that lets your players build their own characters.
 
-| Type                       | Description                                                                      |
-| -------------------------- | -------------------------------------------------------------------------------- |
-| [Layered Character Type](xref:layered-character-type) | Multiple spritesheets (e.g., Body, Hair, Outfit, Accessory) combined at runtime. |
-| [Unified Character Type](xref:unified-character-type) | A single preassembled spritesheet for the whole character.                       |
+## Populate Your Game With Unique Characters
+Random character generation works by splitting a character into individual layers, then randomizing each one either completely at random or through a set of predefined rules. This turns a modest collection of character art into a vast and varied collection of unique characters, perfect for background NPCs or large crowds.
 
 ---
 
@@ -64,7 +58,7 @@ Start with the [**Basic Concepts**](xref:basic-concepts) to learn about characte
 - [Built-in Characters](xref:built-in-characters)
 - [Character Types](xref:character-types)
 - [Character Templates](xref:character-templates)
-- [Character Usage](xref:character-usage)
+- [Character Usage](xref:character-renderer-components)
 - [Character Creator](xref:character-creator-overview)
 
 ---

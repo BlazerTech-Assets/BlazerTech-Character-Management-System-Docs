@@ -60,7 +60,7 @@ Contained within the **Core** Subfolder.
 
 A loading screen in its most basic state. Only a background to display during the loading process. 
 
-This prefab can be added to using the [Additions prefabs](#additions).
+This prefab can be added to using the [Additions prefabs](#additions-prefabs).
 
 ---
 
@@ -80,7 +80,7 @@ Four **Pre-Setup** loading screens are included. Each one uses a different backg
 
 Contained within the **Additions** Subfolder.
 
-Additional prefabs that can be added to the [Core loading screen prefab](#core).
+Additional prefabs that can be added to the [Core loading screen prefab](#core-prefab).
 
 **These prefabs include the following**:
 

@@ -63,4 +63,4 @@ Each system has customizable speed and button mode options.
 | **Movement**    | `Vector2` | Current normalized movement direction.     |
 
 > [!TIP]
-> Designed to be used along with a [Character Animator Handler](#character-animator-handlers) component. When used together they provide both character movement and animation functionality.
+> Designed to be used along with a [Character Animator Handler](xref:character-animator-handler-components) component. When used together they provide both character movement and animation functionality.

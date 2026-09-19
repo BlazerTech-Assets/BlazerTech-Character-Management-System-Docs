@@ -44,7 +44,7 @@ Make sure **Naughty Attributes** and **Addressables** are both installed and the
 ### After Installtion
 Here's some things to do after installing the **BlazerTech Character Management System**:
 1. Check out the **Quick Start Guide** to learn how to setup your own characters or use the included ones.  
-[Read More → Quick Start](xref:quick-start)
+[Read More → Quick Start Guide](xref:quick-start-guide)
 1. **Play sample scenes** - Go into the **Samples** folder and run some of the sample scenes to learn more about the Character Management System.
 2. **Create your own character type** - make a new character type asset to use your own character spritesheets or third party ones.  
 [Read More → Character Types](xref:character-types)

@@ -1,10 +1,10 @@
 ---
 uid: character-creator-setup
 ---
-[EnableMenu_PrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+[EnableMenu_EditOrCreatePrimaryCharacter]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditOrCreatePrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
 [EnableMenu_EditCharacter]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_
-[EnableMenu_NewPrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-[EnableMenu_NewCharacterInFlexibleGroup]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
+[EnableMenu_CreateOrReplacePrimaryCharacter]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_CreateOrReplacePrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+[EnableMenu_CreateCharacterInFlexibleGroup]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_CreateCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
 
 # Character Creator Setup
 
@@ -67,12 +67,12 @@ Most of these methods use the **Character Grouping System** to determine which c
 
 [Learn More → Character Grouping System](xref:character-grouping-system)
 
-| Method                                                                           | Purpose                                                                                       |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [EnableMenu_PrimaryCharacterSlot]                                                | Opens the menu using the Primary Character Slot for the specified Character Type.             |
-| [EnableMenu_EditCharacter]                                                       | Opens the menu to edit an existing Layered Character.                                         |
-| [EnableMenu_NewPrimaryCharacterSlot]                                             | Opens the menu with a new character that overrides the Primary Character Slot.                |
-| [EnableMenu_NewCharacterInFlexibleGroup][EnableMenu_NewCharacterInFlexibleGroup] | Opens the menu with a new character and places it in the specified Flexible Group when saved. |
+| Method                                                                                 | Purpose                                                                                       |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [EnableMenu_EditOrCreatePrimaryCharacter]                                              | Opens the menu using the Primary Character Slot for the specified Character Type.             |
+| [EnableMenu_EditCharacter]                                                             | Opens the menu to edit an existing Layered Character.                                         |
+| [EnableMenu_CreateOrReplacePrimaryCharacter]                                           | Opens the menu with a new character that overrides the Primary Character Slot.                |
+| [EnableMenu_CreateCharacterInFlexibleGroup][EnableMenu_CreateCharacterInFlexibleGroup] | Opens the menu with a new character and places it in the specified Flexible Group when saved. |
 
 ### Menu Events
 
@@ -105,7 +105,7 @@ At minimum, a premade menu contains:
 | **Layer Selectors**     | Allow the player to change the character's appearance. |
 | **Character Preview**   | Shows the character while it's being edited.           |
 | **Loading Screen**      | Covers the menu while it's being initialized.          |
-| **Save & Back Buttons** | Allow the player to save changes and leave the page.    |
+| **Save & Back Buttons** | Allow the player to save changes and leave the page.   |
 
 ### Premade Menu Prefabs Location
 

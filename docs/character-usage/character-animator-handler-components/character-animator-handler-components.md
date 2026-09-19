@@ -16,7 +16,7 @@ All **Animator Handler components** require a reference to an **Animator compone
 
 ## Top Down Character Animator Handler
 
-Reads input from a [Top Down Movement Controller](xref:top-down-movement-controller-component) component to update **paramters** in an **Animator Controller**.
+Reads input from a [Top Down Movement Controller](xref:top-down-character-movement-controller-component) component to update **paramters** in an **Animator Controller**.
 
 ![Top Down Character Animator Handler Component](~/images/components/character-animator-handler-components/top-down-character-animator-handler/top-down-character-animator-handler.png)
 

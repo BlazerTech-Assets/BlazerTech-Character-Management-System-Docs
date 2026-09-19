@@ -183,7 +183,7 @@ Always selects a blank Layer Option.
 ![Selection Mode: Regex](~/images/character-templates/randomized-layered-character-templates/selection-mode-blank.png)
 
 > [!NOTE]
-> Only available if the layer is allowed to be blank. Can be toggled in the [Layer Definition Asset](xref:character-layers#include-none-option)
+> Only available if the layer is allowed to be blank. Can be toggled in the [Layer Definition Asset](xref:character-layers#include-blank-option)
 
 **Best for**: Explicitly disabling a layer.
 

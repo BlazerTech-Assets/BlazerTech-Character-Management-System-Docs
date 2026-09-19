@@ -107,7 +107,7 @@ The **Undo & Redo** functionality allows players to move backward and forward th
 
 Use the `CCM Timeline Button Handler` component on a button to connect it to a **History Tracker**.
 
-<img src="~/images/character-creation-menu/ccm-history/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500" />
+<img src="~/images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500" />
 
 [Read More → History Undo/Redo](xref:ccm-history-undo-redo)
 
@@ -136,7 +136,7 @@ The Character Creator supports several presentation styles:
 Character randomization functionality can be added in multiple differents ways
 - **Randomize Button** - Randomizes all layers of the character.
 - **Controlled Randomization** - Allows the player to choose which layers should be randomized.
-- **Layer-Specific Randomization** - Allows individual layers to be randomized directly from [Layer Selectors](#layer-selectors).
+- **Layer-Specific Randomization** - Allows individual layers to be randomized directly from [Layer Selectors](#layer-selector-module).
 
 <img src="~/images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400" />
 
