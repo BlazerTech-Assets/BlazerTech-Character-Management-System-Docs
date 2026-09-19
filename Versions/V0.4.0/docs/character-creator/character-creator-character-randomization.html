@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Randomization | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Randomization | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-randomization.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-character-randomization.html">
+
+    <meta property="og:title" content="Character Randomization | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Randomization | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-character-randomization">
+<h1 id="character-randomization">Character Randomization</h1>
+
+<p>The <strong>Character Creation Menu</strong> supports multiple ways to randomize a character’s appearance.<br>
+You can randomize:</p>
+<ul>
+<li>The <strong>entire character</strong></li>
+<li><strong>Selected layers only</strong></li>
+<li>A <strong>single layer</strong></li>
+</ul>
+<hr>
+<h2 id="complete-character-randomization">Complete Character Randomization</h2>
+<p>This is the simplest form of randomization.<br>
+A single button randomizes all layers of the character at once.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-randomization/complete-randomization-button.png" alt="Complete Randomization Button"></p>
+<hr>
+<h3 id="prefabs">Prefabs</h3>
+<p><strong>location</strong>: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls</code>.</p>
+<p>Within are variation folders, each folder contains identical prefabs with different visual styles.</p>
+<p><strong>Setup Steps</strong>:</p>
+<ol>
+<li>Choose a variation folder.</li>
+<li>Locate the <strong>Randomize Character Button</strong> prefab.</li>
+<li>Drag and drop the prefab into the contents of your Character Creation Menu.</li>
+</ol>
+<p>When the button is pressed in <strong>Play Mode</strong>, all layers of the character are randomized.</p>
+<hr>
+<h3 id="manual-setup">Manual Setup</h3>
+<p>To create a compelte randomization button from scratch:</p>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the <code>Button</code> component.</li>
+<li>Add the <code>CCM Relay</code> component.
+<ul>
+<li>See: <a class="xref" href="character-creator-menu-controls.html#ccm-relay-component">CCM Relay component</a>.</li>
+</ul>
+</li>
+<li>Add an <code>On Click</code> event to the <code>Button</code></li>
+<li>Assign the <code>CCM Relay</code> component.</li>
+<li>Select the <code>RandomizeEntireCharacter()</code> method.</li>
+<li>Enter <strong>Play Mode</strong> and test your button.</li>
+</ol>
+<p>When your button is pressed, all layers of your character should be randomized.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-randomization/complete-randomization-button-setup.png" alt="Complete Randomization Button Setup"></p>
+<hr>
+<h2 id="controlled-randomization">Controlled Randomization</h2>
+<p>Controlled Randomization allows selective randomization of layers.</p>
+<p>It consists of:</p>
+<ul>
+<li>A <strong>Randomize</strong> button.</li>
+<li>An <strong>Options</strong> button.</li>
+</ul>
+<p>The <strong>Options</strong> button opens a popup listing all layers with toggles.<br>
+Only enabled layers are randomized when the <strong>Randomize</strong> button is pressed.</p>
+<img src="../../images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400">  
+<hr>
+<h3 id="prefabs-1">Prefabs</h3>
+<p>location: <code>Prefabs &gt; Character Creator &gt; Modules &gt; Randomization Controls &gt; (Variation folder) &gt; Controlled Randomization</code>.</p>
+<p>Within The Randomization Controls folder are variation folders, each folder contains identical prefabs with different visual styles.</p>
+<p><strong>Setup Steps</strong>:</p>
+<ol>
+<li>Choose a variation folder.</li>
+<li>Open the <strong>Controlled Randomization</strong> Subfolder.</li>
+<li>Drag and drop the <strong>Controlled Randomization</strong> prefab into the contents of your Character Creation Menu.</li>
+<li>Enter <strong>Play Mode</strong> and test your new randomization controls.</li>
+</ol>
+<hr>
+<h3 id="layer-toggle-prefab">Layer Toggle Prefab</h3>
+<p>Located inside the same folder.</p>
+<p>The <strong>Layer Toggle</strong> prefab is used inside the options popup.</p>
+<p>This prefab uses the <code>CCM Layer Randomize Toggle</code> component. It lives on the same GameObject as the <code>Toggle</code> component.<br>
+The <code>CCM Layer Randomize Toggle</code> component updates the <code>Controlled Randomization Handler</code> when its state is changed.</p>
+<p>Additionally the component requires a refernce to a text component which is used to display the name of the layer.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-randomization/layer-toggle.png" alt="Layer Toggle"></p>
+<hr>
+<h3 id="manual-setup-1">Manual Setup</h3>
+<p>A <strong>step-by-step</strong> walkthrough to create your own <strong>Controlled Randomization</strong> prefab.</p>
+<hr>
+<h4 id="gameobject-structure">GameObject Structure</h4>
+<p>Create three GameObjects:</p>
+<ul>
+<li><strong>Controlled Randomization</strong> (Root GameObject)</li>
+<li><strong>Buttons</strong> (Container for controls, place inside root)</li>
+<li><strong>Randomization Options Popup</strong> (Toggle list UI, place inside root)</li>
+</ul>
+<hr>
+<h4 id="handler-component-setup">Handler Component Setup</h4>
+<ol>
+<li>Add the <code>CCM Controlled Randomization Handler</code> component to the <strong>root</strong> (Controlled Randomization) GameObject.</li>
+<li>Assign the <strong>Randomization Options Popup</strong> to the field of the same name.</li>
+<li>Assign the <strong>Layer Randomize Toggle Prefab</strong>. You can use the <a href="#layer-toggle-prefab">pre-created prefab</a> or create your own.</li>
+</ol>
+<hr>
+<h4 id="buttons-setup">Buttons Setup</h4>
+<ol>
+<li>Create two child GameObjects under the <strong>Buttons</strong> GameObject:
+<ul>
+<li>Options Button</li>
+<li>Randomize Layers Button</li>
+</ul>
+</li>
+<li>Add <code>Button</code> components to both.</li>
+<li>Configure events:
+<ul>
+<li><strong>Options Button</strong>
+<ul>
+<li>Calls <code>ToggleRandomizationOptionsUI()</code></li>
+</ul>
+</li>
+<li><strong>Randomize Layers Button</strong>
+<ul>
+<li>Calls <code>RandomizeCharacter()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="randomization-options-popup">Randomization Options Popup</h4>
+<p>The <strong>Randomization Options Popup</strong> GameObject should have a grouping component to space out the toggles.<br>
+This will usually be a <strong>Horizontal</strong>, <strong>Vertical</strong> or <strong>Grid Layout Group</strong>.</p>
+<p>A <code>Content Size Fitter</code> component can also be used to automatically expand the parent GameObject to the size the toggles take up. This is useful for a background to automatically adjust its size as toggles are added or removed.</p>
+<p>Toggles can be added directly in the editor.<br>
+<strong>At runtime</strong>:</p>
+<ul>
+<li>If too few toggles exist - More are created.</li>
+<li>If too many exist - Extras are disabled.</li>
+</ul>
+<p>The <strong>Randomization Options Popup</strong> GameObject can be enabled or disabled in the editor. Its state will be automatically managed during runtime.</p>
+<hr>
+<h2 id="single-layer-randomization">Single Layer Randomization</h2>
+<p>Some <strong>Layer Selectors</strong> include a variant with a built-in randomize button that affects only that layer.</p>
+<p>Check each Layer Selectors <strong>prefab folder</strong> to see if it includes a variant with randomization controls.</p>
+<img src="../../images/character-creation-menu/ccm-character-randomization/single-layer-randomization-examples.png" alt="Single Layer Randomization Examples" width="400">  
+<h3 id="adding-a-randomize-button-to-a-layer-selector">Adding a Randomize Button to a Layer Selector</h3>
+<p>If a Layer Selector does <strong>not</strong> include a variant with a randomize button, one can be added:</p>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the <code>Button</code> component.</li>
+<li>Add an <code>On Click</code> event.</li>
+<li>Assign the <strong>Layer Selector</strong> Component to the event and select the <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer">CharacterLayerSelector.RandomizeLayer()</a> method.</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-character-randomization.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

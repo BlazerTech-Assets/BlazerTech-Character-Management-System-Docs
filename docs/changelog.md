@@ -10,6 +10,41 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 
 ---
 
+## [0.4.0] - 9-19-2026
+
+### Added
+- Added [Randomized Layered Character Template](xref:randomized-layered-character-templates).
+- Added [Character Overlay Layers](xref:character-overlay-layers).
+- Added **Default Direction** setting to all Animator Handlers.
+- Added **Display Name option** to [Character Preview Animation Options](xref:ccm-character-preview#assigning-animations) in Layered Character Type assets.
+- Added [CCMSaveCharacterButton](xref:ccm-menu-controls#ccm-save-character-button-component) component.
+- Added fourth sample scene - Continuous randomized NPC spawning demo.
+
+### Changed
+- Character Shader result is now cached instead of being re-run every frame to vastly improve performance.
+- Improved many logs, warnings and errors to be more descriptive.
+- Renamed `Character Piece Shaders` dictionary to `Layered Character Shaders` in CMS Reference Handler.
+- **Layer Options list** in Layer Definition assets are now cleared when `Layer Asset Label` is changed.
+- Extracted **Fixed** and **Randomized Layered Character Template editors** into their own classes.
+- Renamed `LoadedCharacterHandler` class to `CharacterShaderState` to better convey its purpose.
+- Renamed `Layered Character Group Renderer` component to `Layered Character Group Entry Renderer`.
+- Renamed `Character Controller` to `Animator Controller` in Character Type asset.
+- Converted all input related scripts to **New Input System**.
+- The Character Previews `Preview Mode` now defaults to `Animated` instead of `Static`. 
+- Renamed `CCMAnimationPreviewSwitcherManager` to `CCMAnimationSwitcher`.
+- Renamed `LayerOptionUIElement` to `LayerSelectorListElement`.
+- Renamed `LayeredCharacterSelectionList` to `CharacterGroupEditor`.
+- Renamed **Enable Menu methods** in `Character Creation Menu Manager` to better convey their meaning.
+
+### Fixed
+- Fixed Character Creator animation preview buttons staying enabled if the animation assigned to play does not exist.
+
+### Removed
+- Removed `Log When Character Material Updated` bool in `CCMCharacterPreviewHandler` component in favor of using the new **CMS logging system**.
+- Removed **Layer Option Preview Settings** section of **Character Creator Settings** in favor of using **Character Preview Sprite**.
+
+---
+
 ## [0.3.0] - 11-13-2025
 
 ### Added

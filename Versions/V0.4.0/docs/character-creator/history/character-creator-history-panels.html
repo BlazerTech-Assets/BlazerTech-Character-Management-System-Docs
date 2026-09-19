@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>History Panels | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="History Panels | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/character-creator-history-panels.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/history/character-creator-history-panels.html">
+
+    <meta property="og:title" content="History Panels | BlazerTech Character Management System">
+    <meta name="twitter:title" content="History Panels | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ccm-history-panels">
+<h1 id="history-panels">History Panels</h1>
+
+<p>A <strong>History Panel</strong> displays a list of snapshots recorded by the <a class="xref" href="character-creator-history-tracking-system.html#history-tracker-component">History Tracker</a>.</p>
+<p>These snapshots represent previous states of a character, allowing the player to:</p>
+<ul>
+<li>Review past changes.</li>
+<li>Revert to previous versions.</li>
+</ul>
+<hr>
+<h2 id="panel-types">Panel Types</h2>
+<p>There are two primary types of <strong>History Panels</strong>. Both display a list of modifcations made to the character but show that information in different ways.</p>
+<hr>
+<h3 id="text-based-panels">Text-Based Panels</h3>
+<p>A <strong>Text-Based Panel</strong> describes each snapshot using text.</p>
+<ul>
+<li><strong>1 Layer Changed</strong> &gt; Displays the layer name and selected option.</li>
+<li><strong>2 Layers Changed</strong> &gt; Displays both layer names.</li>
+<li><strong>3+ layers changed</strong> &gt; Displays the number of layers modified.</li>
+</ul>
+<p><strong>Typical Layout</strong>: Vertical List.</p>
+<img src="../../../images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="History Panel Text" width="300">  
+<hr>
+<h3 id="sprite-based-panels">Sprite-Based Panels</h3>
+<p>A <strong>Sprite-Based Panel</strong> visually represents each snapshot using character previews.</p>
+<p>Each entry reconstructs the characters appearance at that point in time by taking a single frame from each spritesheet contained in the snapshot and combining them together.</p>
+<p><strong>Typical Layout</strong>: Horizontal List.</p>
+<img src="../../../images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="History Panel" width="500">  
+<h4 id="preview-frame-setup">Preview Frame Setup</h4>
+<p>To define which frame is used for preview generation:</p>
+<ol>
+<li>Select your <strong>Layered Character Type</strong> asset and go to the Inspector window.</li>
+<li>Expand <strong>Character Creator Settings</strong></li>
+<li>Locate <strong>Character Preview Settings</strong></li>
+<li>Assign a <strong>Preview Sprite</strong></li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Preview Sprite</strong> MUST be a sprite from the <strong>Base Spritesheet</strong>.</p>
+</div>
+<p>The <strong>rect</strong> of this sprite determines the frame extracted from every layer.<br>
+All extracted frames are combined to render the final preview.</p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<p>Location: <code>Prefabs &gt; Character Creator &gt; Modules &gt; History &gt; History Panels</code></p>
+<hr>
+<h3 id="pre-setup">Pre-Setup</h3>
+<p>Located in the <strong>Pre-Setup</strong> folder.</p>
+<p>These panels are ready to use:</p>
+<ol>
+<li>Drag and drop into your Character Creation Menu.</li>
+<li>Assign a <strong>History Tracker</strong>.</li>
+</ol>
+<p>You'll need to assign a <strong>History Tracker</strong> in order for the panel to be functional.<br>
+Don't have a <strong>History Tracker</strong> setup? <a class="xref" href="character-creator-history-tracking-system.html#history-tracker-component">Read here</a>.</p>
+<p>The <strong>History Tracker field</strong> can be found in the <strong>CCM History Panel</strong> component at the root of the prefab.</p>
+<p><img src="../../../images/character-creation-menu/ccm-history/panels/history-panel-component.png" alt="History Panel Component"></p>
+<hr>
+<h3 id="entry-prefabs">Entry Prefabs</h3>
+<p>Located in the <strong>History List Entries</strong> folder.</p>
+<p>Included prefabs:</p>
+<ol>
+<li><strong>History Panel Entry [Text]</strong>
+<ul>
+<li>Displays a textual description of what changed in the snapshot.</li>
+</ul>
+</li>
+<li><strong>History Panel Entry [Sprite]</strong>
+<ul>
+<li>Displays a collection of sprites with each sprite representing a layer of the character recorded in the snapshot.</li>
+</ul>
+</li>
+</ol>
+<p>These are the same prefabs used in the <strong>Pre-Setup</strong> History Panel prefabs.</p>
+<hr>
+<h2 id="creating-a-history-panel">Creating a History Panel</h2>
+<p>All <strong>History Panels</strong> use the <code>CCM History Panel</code> component to populate entries from snapshot data.</p>
+<h3 id="setup-steps">Setup Steps</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the <strong>CCM History Panel</strong> component.</li>
+<li>Assign a <strong>History Tracker</strong>.
+<ul>
+<li><a class="xref" href="character-creator-history-tracking-system.html#history-tracker-component">Setup Guide</a>.</li>
+</ul>
+</li>
+<li>Assign a <strong>List Parent</strong>.</li>
+<li>Assign an <strong>Entry Prefab</strong>.</li>
+</ol>
+<p><a href="#entry-prefabs">Existing entry prefabs</a> can be used or you can <a href="#creating-a-history-panel-entry">create your own entry prefab</a>.</p>
+<hr>
+<h3 id="list-parent">List Parent</h3>
+<p>The <strong>List Parent</strong> is the container where entries are instantiated.</p>
+<p>A <strong>Vertical</strong> or <strong>Horintal Layout Group</strong> component can be used to automatically space entries.<br>
+Or a <strong>Scroll View</strong> can be used which provides a scrollable list which overflow handling.</p>
+<p>The <code>CCM History Panel</code> component will instantiate entries as children of this <strong>GameObject</strong>, however it's up to you to decide how these entries will be layed out.</p>
+<hr>
+<h3 id="panel-settings">Panel Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mode</strong></td>
+<td>Controls whether entries appear only when used or are always visible.</td>
+</tr>
+<tr>
+<td><strong>Newest On Top</strong></td>
+<td>If enabled, inserts new entries at the top of the list. If disabled, inserts new entries at the bottom.</td>
+</tr>
+<tr>
+<td><strong>Preload Pool</strong></td>
+<td>Number of entries pre-instantiated on menu initialization.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="creating-a-history-panel-entry">Creating a History Panel Entry</h2>
+<p>Follow these steps to create your own <strong>History Panel entry</strong> from scratch:</p>
+<h3 id="setup-steps-1">Setup Steps</h3>
+<ol>
+<li>Create a new <strong>GameObject</strong>.</li>
+<li>Add the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html">History Panel Entry</a> component.</li>
+<li>Set the <strong>Display Mode</strong>:
+<ul>
+<li><strong>Text</strong> &gt; Requires a text reference.</li>
+<li><strong>Sprite</strong> &gt; Requires a sprite container reference (Parent GameObject).</li>
+<li><strong>Text And Sprite</strong> &gt; Requires Both.</li>
+</ul>
+</li>
+<li>Add a <code>Toggle</code> component.</li>
+<li>Assign the <code>Toggle</code> reference in the <code>History Panel Entry</code> component.</li>
+<li>Add an <code>image</code> component (This will be the entries background).</li>
+<li>Set the Toggle <strong>Target Graphic</strong> to this Image.</li>
+</ol>
+<h3 id="selection-highlight">Selection Highlight</h3>
+<ol start="8">
+<li>Create a child GameObject and name it (e.g. <strong>Highlight</strong>).</li>
+<li>Add an <code>Image</code> component to it.</li>
+<li>Give it the sprite you want to be shown when selected.</li>
+<li>Assign this image to the Toggle <strong>Graphic</strong> field.</li>
+</ol>
+<hr>
+<h3 id="finalizing">Finalizing</h3>
+<ol start="12">
+<li>Drag the <strong>GameObject</strong> into the <strong>Project window</strong> to create a prefab.</li>
+<li>Assign it to the <strong>Entry Prefab</strong> field on your <strong>History Panel</strong>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Confused?</strong> Check out one of the <a href="#entry-prefabs">included entry prefabs</a> to understand how they're set up.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/character-creator-history-panels.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -63,4 +63,4 @@ Start with the [**Basic Concepts**](xref:basic-concepts) to learn about characte
 
 ---
 
-_Last updated: 11-13-2025 — V0.3.0_
+_Last updated: 9-19-2026 — V0.4.0_

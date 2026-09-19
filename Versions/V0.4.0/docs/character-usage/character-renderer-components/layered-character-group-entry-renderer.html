@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Layered Character Group Entry Renderer Component | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Layered Character Group Entry Renderer Component | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.html">
+
+    <meta property="og:title" content="Layered Character Group Entry Renderer Component | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Layered Character Group Entry Renderer Component | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Component for creating and displaying a Layered Character from a Layered Character Group in-game">
+      <meta name="twitter:description" content="Component for creating and displaying a Layered Character from a Layered Character Group in-game">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="layered-character-group-entry-renderer-component">
+<h1 id="layered-character-group-entry-renderer-component">Layered Character Group Entry Renderer Component</h1>
+
+<p>The <strong>Layered Character Group Entry Renderer</strong> loads a <strong>Layered Character</strong> from a <strong>Layered Character Group</strong> and renders it in-game.</p>
+<p>This component is responsible for:</p>
+<ul>
+<li>Loading a <strong>layered character</strong> from a group</li>
+<li>Applying the <strong>Character Shader</strong></li>
+<li>Assigning the <strong>Animator Controller</strong> (Optional)</li>
+<li>Managing <strong>Overlay Layers</strong></li>
+</ul>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li>A <a class="xref" href="../../character-types/layered-character-type.html">Layered Character Type</a></li>
+<li>At least one <strong>Layered Character</strong> saved in a group</li>
+</ul>
+<p><a class="xref" href="../../character-grouping-system.html">Read More → Character Groups</a></p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/layered-character-group-entry-renderer.png" alt="Layered Character Group Entry Renderer Component"></p>
+<hr>
+<h2 id="quick-setup-overview">Quick Setup Overview</h2>
+<p>Quick overview of how to setup the <strong>Layered Character Group Entry Renderer</strong> component.</p>
+<ol>
+<li>Add the component to a <strong>GameObject</strong>.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure <strong>Loading Settings</strong>.</li>
+<li>Assign the <strong>Character Type</strong> you want to load a character from.</li>
+<li>Select the <strong>Character Group</strong> (Primary, Flexible or Fixed) and configure parameters.</li>
+</ol>
+<hr>
+<h2 id="setup">Setup</h2>
+<p>Full step-by-step guide to setup the <strong>Layered Character Group Entry Renderer</strong> component.</p>
+<h3 id="add-component">Add Component</h3>
+<p>Add the component to a GameObject by clicking <code>Add Component</code> in the inspector window.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/add-component.png" alt="Add Layered Character Template Renderer Component"></p>
+<hr>
+<h3 id="assign-renderer-component">Assign Renderer Component</h3>
+<p>Assign the component responsible for rendering the character's sprites.</p>
+<p>In most cases, this will be a <strong>Sprite Renderer</strong>.
+The <strong>Character Shader</strong> will be applied to this renderer.</p>
+<p><img src="../../../images/components/character-renderer-components/renderer.png" alt="Renderer Reference"></p>
+<hr>
+<h3 id="assign-animator-component-optional">Assign Animator Component (Optional)</h3>
+<p>If your <strong>Character Type</strong> asset includes an <strong>Animator Controller</strong>, it can be applied automatically when the character is loaded.</p>
+<p>To enable this:</p>
+<ol>
+<li>Enable <code>Set Animator Controller</code>.</li>
+<li>Assign the target Animator component.</li>
+</ol>
+<p><img src="../../../images/components/character-renderer-components/animator.png" alt="Animator Reference"></p>
+<hr>
+<h3 id="configure-loading-settings">Configure Loading Settings</h3>
+<p>The <strong>Loading Mode</strong> determines how the character is loaded at runtime. This can significantly impact performance.</p>
+<p><img src="../../../images/components/character-renderer-components/loading-settings.png" alt="Loading Mode"></p>
+<table>
+<thead>
+<tr>
+<th>Loading Mode</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asynchronous</strong></td>
+<td>Loads the character in the background.</td>
+<td>No frame stutters or freezes.</td>
+<td>Character is temporarily invisible while loading.</td>
+</tr>
+<tr>
+<td><strong>Synchronous</strong></td>
+<td>Loads the character on the main thread.</td>
+<td>Character is immedietely renderered the same frame.</td>
+<td>May cause frame stutters depending on spritesheet size.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="recommended-usage">Recommended Usage</h4>
+<ul>
+<li>Use <strong>Asynchronous</strong> loading for background NPCs or characters that aren't time sensitive.</li>
+<li>Use <strong>Synchronous</strong> loading when the character must appear Immediately, such as a player character.</li>
+</ul>
+<hr>
+<h4 id="load-character-on-start">Load Character On Start</h4>
+<p>If <code>Load Character on Start</code> is enabled, the character is automatically created and rendered during the <code>Start()</code> method</p>
+<p>If disabled, the character must be loaded manually through script using the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_GetAndShowCharacter">GetAndShowCharacter()</a> method</p>
+<hr>
+<h3 id="assign-character-type">Assign Character Type</h3>
+<p>Assign a <strong>Layered Character Type</strong> asset.<br>
+This will be used when looking for a character group.</p>
+<h2 id="character-specifications"><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/character-type.png" alt="Character Specifications"></h2>
+<h3 id="set-character-group-type">Set Character Group Type</h3>
+<p>Choose the type of group you want to load from.</p>
+<table>
+<thead>
+<tr>
+<th>Group Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Character Slot</strong></td>
+<td>A single character attached to the Character Type asset. No additional parameters required.</td>
+</tr>
+<tr>
+<td><strong>Flexible Group</strong></td>
+<td>A group of characters that can be added, removed, or edited at any time.</td>
+</tr>
+<tr>
+<td><strong>Fixed Group</strong></td>
+<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+</tr>
+</tbody>
+</table>
+<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Group Name</strong></td>
+<td><code>String</code></td>
+<td>A unique name used to find the Fixed or Flexible group.</td>
+</tr>
+<tr>
+<td><strong>Character Load Method</strong></td>
+<td><code>Enum</code></td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/group-types.png" alt="Character Group Types"></p>
+<hr>
+<h4 id="create-character-if-null">Create Character If Null</h4>
+<p>If enabled and a group was successfully found but no character was found in the group matching your criteria, a new blank character will be created and added to the group.</p>
+<p><img src="../../../images/components/character-renderer-components/layered-character-group-entry-renderer/create-character-if-null.png" alt="Create Character If Null"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Only affects the <strong>Primary Slot</strong> and <strong>Flexible Character Groups</strong>. <strong>Fixed Character Groups</strong> can't have characters added to them after creation.</p>
+</div>
+<hr>
+<h3 id="hit-play">Hit Play</h3>
+<p><img src="../../../images/misc/play-buttons.png" alt="Play Buttons"></p>
+<p>Enter Play Mode and if:</p>
+<ol>
+<li><code>Load Character On Start</code> is enabled in <strong>Loading Settings</strong></li>
+<li>The renderer is able to find the character group</li>
+</ol>
+<p>Then the character will be automatically loaded and displayed.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-usage/character-renderer-components/layered-character-group-entry-renderer.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -37,7 +37,7 @@ As a result, using those animations in UI (which uses an `Image`) will not work.
 ## Animator Controller Setup Requirements
 
 If the Character Preview does **not** use **Rotation Controls** or **Animation Controls**:
-- There are no strict setup requirements.
+- There are no setup requirements.
 - The default animation will play automatically at runtime.
 
 If using additional features:

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Project Settings | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Project Settings | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../images/logos/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/project-settings.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/project-settings.html">
+
+    <meta property="og:title" content="Project Settings | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Project Settings | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Settings for the **BlazerTech Character Management System**.">
+      <meta name="twitter:description" content="Settings for the **BlazerTech Character Management System**.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="project-settings">
+<h1 id="project-settings">Project Settings</h1>
+
+<p>All global settings for the <strong>BlazerTech Character Management System</strong> are managed through the <strong>Project Settings window</strong>.<br>
+Located under <strong><code>Edit &gt; Project Settings &gt; BlazerTech &gt; Character Management System</code></strong>.</p>
+<p><img src="../images/project-settings/project-settings.png" alt="Project Settings"></p>
+<hr>
+<h2 id="saving-settings">Saving Settings</h2>
+<p>Configure when <strong>Character Groups</strong> are automatically saved to disk.</p>
+<h3 id="auto-save-triggers">Auto Save Triggers</h3>
+<p>A multi-select dropdown defining the events that trigger automatic saves.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Game Exit</strong></td>
+<td>Saves all character groups when the application quits.</td>
+</tr>
+<tr>
+<td><strong>Character Creator Save</strong></td>
+<td>Saves all character groups whenever a character is saved from the Character Creation Menu.</td>
+</tr>
+<tr>
+<td><strong>Scene Change</strong></td>
+<td>Saves all character groups when the active scene changes.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="save-format">Save Format</h3>
+<p>Select the format used when <strong>Character Groups</strong> are saved to disk.</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JSON (Default)</strong></td>
+<td>Human-readable format (<code>.json</code>). Easy to open and manually edit.</td>
+</tr>
+<tr>
+<td><strong>Binary</strong></td>
+<td>Compact binary format (<code>.bin</code>). Almost impossible to read or modify manually.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Binary saves are more secure against tampering, while JSON saves are ideal during development and debugging.</p>
+</div>
+<hr>
+<h2 id="active-character-types">Active Character Types</h2>
+<p>The <strong>Active Character Types</strong> list contains all <strong>Character Type assets</strong> that are enabled and ready to be used at runtime.</p>
+<p><img src="../images/project-settings/active-character-types-list.png" alt="Active Character Types list"></p>
+<p>When a new Character Type is created, You are prompted to add it to the <strong>Active Character Types list</strong> before proceeding.</p>
+<p><img src="../images/project-settings/add-character-type-to-list.png" alt="Add Character Type to list"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If a Character Type asset is not contained inside this list it will NOT be functional.</p>
+</div>
+<hr>
+<h2 id="debug-options">Debug Options</h2>
+<p>These settings control what types of logs are shown to help debugging issues with the <strong>BlazerTech Character Management System</strong>.</p>
+<h3 id="logs-to-show">Logs to show</h3>
+<p>A multi-select dropdown which decides what kind of logs are shown.</p>
+<table>
+<thead>
+<tr>
+<th>Log Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Group Save Trigger Logs</strong></td>
+<td>Logs when character groups are saved.</td>
+</tr>
+<tr>
+<td><strong>New Character Created Logs</strong></td>
+<td>Logs when new characters of any type are created.</td>
+</tr>
+<tr>
+<td><strong>Character Recreated From DTO Logs</strong></td>
+<td>Logs when a character is reconstructed from saved data (DTO).</td>
+</tr>
+<tr>
+<td><strong>Loaded Character Updated Logs</strong></td>
+<td>Logs when an already loaded character is modified.</td>
+</tr>
+<tr>
+<td><strong>Character Creation Menu Logs</strong></td>
+<td>Logs events within the Character Creation Menu.</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>These logs are meant for debugging purposes and should usually be disabled in release builds.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/project-settings.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

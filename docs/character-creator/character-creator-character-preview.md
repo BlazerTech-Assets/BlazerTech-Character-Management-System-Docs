@@ -94,6 +94,17 @@ Each animation is represented by a button. Selecting an animation causes the Cha
 
 [Manual Setup](#adding-animation-controls)
 
+#### Assigning Animations
+
+To assign animations to be used in animation controls:
+1. Navigate to your **Layered Character Type**.
+2. Expand **Character Creator Settings**.
+3. Add entries to the **Character Preview Animation Options** list.
+4. Each entry needs an **Animation Name**, which **MUST** match the name of an animation or blend tree in the **Preview Controller**.
+5. Optionally a **Display Name** can be set. This is the name that will be displayed by the **Animation Controls**. If not set, the **Animation Name** will be used instead.
+
+<img src="~/images/character-creation-menu/ccm-character-preview/character-preview-animation-options.png" alt="Character Preview Animation Options" width="300" />
+
 ---
 
 ## Prefabs

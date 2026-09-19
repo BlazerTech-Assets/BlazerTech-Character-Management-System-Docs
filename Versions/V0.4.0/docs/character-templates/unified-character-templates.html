@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Unified Character Templates | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Unified Character Templates | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-templates/unified-character-templates.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-templates/unified-character-templates.html">
+
+    <meta property="og:title" content="Unified Character Templates | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Unified Character Templates | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Blueprints for creating unified characters during runtime.">
+      <meta name="twitter:description" content="Blueprints for creating unified characters during runtime.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="unified-character-templates">
+<h1 id="unified-character-templates">Unified Character Templates</h1>
+
+<p>A <strong>Unified Character Template</strong> is a <strong>Scriptable Object</strong> and is the most common method to create <strong>Unified Characters</strong> at runtime.</p>
+<p>It acts as a reusable blueprint that defines:</p>
+<ul>
+<li>The <strong>Character Type asset</strong> the character will use</li>
+<li>The <strong>default name</strong> assigned when a character is created</li>
+<li>The <strong>spritesheet</strong> used for rendering and animation</li>
+</ul>
+<hr>
+<h2 id="workflow-overview">Workflow Overview</h2>
+<ol>
+<li>Create a <strong>Unified Character Template</strong> asset</li>
+<li>Assign a <strong>Character Type</strong></li>
+<li>Set the default name</li>
+<li>Assign a properly structured spritesheet</li>
+<li>Attach the template to a <strong>Unified Character Renderer</strong> component</li>
+</ol>
+<p>The template can now be reused anywhere in your project to consistently create that character.</p>
+<hr>
+<h2 id="setup">Setup</h2>
+<h3 id="create">Create</h3>
+<p>To create a Unified Character Template <code>right click</code> the <code>Project window</code> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Unified Character Template</code>.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
+<h3 id="character-type">Character Type</h3>
+<p>Assign the <strong>Character Type asset</strong> that all characters created from this template will use.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template-character-type.png" alt="Unified Character Template: Character Type"></p>
+<p>This is used to determine:</p>
+<ul>
+<li>If the <strong>Character Spritesheet</strong> is valid</li>
+<li>The <strong>Animator Controller</strong> used to animate the character</li>
+</ul>
+<h3 id="default-character-name">Default Character Name</h3>
+<p>Set the default name assigned when a character is created from this template.</p>
+<p>You may also optionally set a <strong>Display Name</strong> for use alongside created characters in-game.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template-character-name.png" alt="Unified Character Template: Character Name"></p>
+<h3 id="character-spritesheet">Character Spritesheet</h3>
+<p>Assign a spritesheet that has the same size and layout as the Character Spritesheet in the attached Character Type.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template-character-spritesheet.png" alt="Unified Character Template: Character Spritesheet"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When the <strong>Character Spritesheet</strong> is assigned, the spritesheet is marked as <strong>Addressable</strong> automatically, allowing it to be loaded/unloaded during runtime.</p>
+</div>
+<h4 id="spritesheet-requirements">Spritesheet Requirements</h4>
+<p>When a character is created from the template the spritesheet will replace the <strong>Base Spritesheet</strong> used in the <strong>Character Type</strong>, this means the spritesheet must contain the same animations and layout.</p>
+<p>Read more about the <a class="xref" href="../getting-started/basic-concepts.html#the-character-shader">Character Shader</a> for more info.</p>
+<p>The assigned spritesheet must:</p>
+<ul>
+<li>Be the same size as the <strong>Base Spritesheet</strong> in the Character Type</li>
+<li>Contain all the same animations and frames in the <strong>Base Spritesheet</strong> in the Character Type</li>
+<li>Have the <code>Sprite Mode</code> set to <code>Single</code></li>
+</ul>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>If the assigned spritesheet is not the correct size it will be rejected at runtime.</p>
+</div>
+<hr>
+<h2 id="runtime-usage">Runtime Usage</h2>
+<p>Once the <strong>Character Template</strong> is setup it can be assigned in a <strong>Unified Character Template Renderer component</strong> which at runtime will create a character from the template and animate it using the <strong>Animator Controller</strong> assigned in the <strong>Character Type</strong>.</p>
+<p><img src="../../images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png" alt="Unified Character Renderer Component"></p>
+<p><a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Read More → Unified Character Template Renderer component</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-templates/unified-character-templates.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

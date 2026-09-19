@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Unified Character Type | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Unified Character Type | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types/unified-character-type.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-types/unified-character-type.html">
+
+    <meta property="og:title" content="Unified Character Type | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Unified Character Type | BlazerTech Character Management System">
+
+      <meta property="og:description" content="Deep dive into Unified Characters and how to set up a Unified Character Type.">
+      <meta name="twitter:description" content="Deep dive into Unified Characters and how to set up a Unified Character Type.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="unified-character-type">
+<h1 id="unified-character-type">Unified Character Type</h1>
+
+<p>A <strong>Unified Character Type</strong> defines how a <strong>Unified Character</strong> is structured.</p>
+<p>It contains the core data shared across all characters of that type, such as the <strong>Base Spritesheet</strong> and <strong>Animator Controller</strong>.</p>
+<p>A <strong>Unified Character</strong> uses a <strong>single spritesheet</strong> that contains the complete character and all its animations.</p>
+<p><img src="../../images/character-types/unified-characters/unified-character-type-asset.png" alt="Unified Character Type Asset"></p>
+<hr>
+<h2 id="unified-characters">Unified Characters</h2>
+<p>A <strong>Unified Character</strong> has the entire character contained in a single spritesheet.</p>
+<p>This means unlike <strong>Layered Characters</strong>, the character is not built from multiple layers, instead, each character is self contained in its own spritesheet.</p>
+<p>For example, if your game contains a set of characters, each character variation would have its own spritesheet.
+Example list:</p>
+<ul>
+<li>Knight</li>
+<li>Knight (Armored)</li>
+<li>Knight (Winter Outfit)</li>
+</ul>
+<p>Each character spritesheet must follow the same layout so that all animations align correctly.</p>
+<p><strong>All Unified Character Spritesheets must share</strong>:</p>
+<ul>
+<li>The same <strong>Spritesheet size</strong></li>
+<li>The same <strong>frame sizes</strong></li>
+<li>The same <strong>frame positioning</strong></li>
+</ul>
+<hr>
+<h2 id="create-a-unified-character-type-asset">Create a Unified Character Type Asset</h2>
+<p>To create a new Unified Character Type:</p>
+<ol>
+<li><code>Right click</code> the <strong>Project window</strong></li>
+<li>Navigate to: <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Unified Character Type</strong></li>
+</ol>
+<p><img src="../../images/character-types/unified-characters/create-unified-character-type.png" alt="Create Unified Character Type Asset"></p>
+<hr>
+<h2 id="character-type-setup">Character Type Setup</h2>
+<p>A <strong>Unified Character Type</strong> uses the same core properties shared by all <strong>Character Types</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a class="xref" href="character-types.html#character-type-id">Characte Type ID</a></strong></td>
+<td>String</td>
+<td>A <strong>unique</strong> identifer</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="character-types.html#base-spritesheet">Base Spritesheet</a></strong></td>
+<td>Sprite</td>
+<td>The <strong>character spritesheet</strong> used by all characters</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="character-types.html#animator-controller-optional">Animator Controller</a></strong></td>
+<td>RuntimeAnimatorController</td>
+<td>Single <strong>Animator Controller</strong> for all characters</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="character-types.html#pixels-per-unit">Pixels Per Unit</a></strong></td>
+<td>int</td>
+<td>PPU of your Base Spritesheet</td>
+</tr>
+</tbody>
+</table>
+<p>Read <a class="xref" href="character-types.html#character-type-setup">Character Type Setup</a> for a step-by-setup guide on how to setup each field.</p>
+<hr>
+<h2 id="creating-unified-characters">Creating Unified Characters</h2>
+<p>A <strong>Unified Character</strong> can be created through a <strong>Unified Character Template</strong>.</p>
+<p><img src="../../images/character-templates/unified-character-templates/unified-character-template.png" alt="Unified Character Template"></p>
+<p>The template will store a reference to the spritesheet for that character.</p>
+<p>The <strong>Unified Character Template Renderer</strong> component can create and render a <strong>Unified Character</strong> from a template.</p>
+<p><a class="xref" href="../character-templates/unified-character-templates.html">Read More → Unified Character Templates</a><br>
+<a class="xref" href="../character-usage/character-renderer-components/unified-character-template-renderer.html">Read More → Unified Character Template Renderer component</a></p>
+<hr>
+<h2 id="related">Related</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types/unified-character-type.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

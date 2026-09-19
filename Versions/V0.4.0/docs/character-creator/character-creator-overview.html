@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Creator Overview | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Creator Overview | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../../images/logos/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-overview.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/character-creator/character-creator-overview.html">
+
+    <meta property="og:title" content="Character Creator Overview | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Character Creator Overview | BlazerTech Character Management System">
+
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="character-creator-overview">
+<h1 id="character-creator-overview">Character Creator Overview</h1>
+
+<p>The <strong>Character Creator</strong> is a modular, prefab based framework for building <strong>Character Creation Menus</strong>.</p>
+<p>A Character Creation Menu allows players to create and customize characters for use in your game. For example, it can be used to create a player character or customize the appearance of an NPC.</p>
+<p>The Character Creator is designed to be flexible. Each part of the menu is provided as a separate module, allowing you to combine, configure, and customize the modules to create the menu you want.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Character Creator is designed to work for <strong>Layered Characters</strong> only. Its customization features work by modifying the individual layers that make up a Layered Character.</p>
+</div>
+<hr>
+<h2 id="character-creator-modules">Character Creator Modules</h2>
+<p>The Character Creator is <strong>modular</strong>, it's split into a bunch of smaller pieces we call modules, each provides a specific piece of functionality. When these modules are put together they form a complete and functioning <strong>Character Creation Menu</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="#layer-selector-module">Layer Selectors</a></strong></td>
+<td>Allow the player to change the visual elements for each character layer.</td>
+</tr>
+<tr>
+<td><strong><a href="#character-preview-module">Character Preview</a></strong></td>
+<td>Displays an animated or static preview of the character that updates when changes are made.</td>
+</tr>
+<tr>
+<td><strong><a href="#menu-controls-module">Menu Controls</a></strong></td>
+<td>Essential controls for the menu such as Save, Back and Reset.</td>
+</tr>
+<tr>
+<td><strong><a href="#character-history-module">Character History</a></strong></td>
+<td>Records changes and allows players to revert to previous versions of the character.</td>
+</tr>
+<tr>
+<td><strong><a href="#randomization-controls-module">Randomization Controls</a></strong></td>
+<td>Provides options for randomizing the entire character or individual layers.</td>
+</tr>
+<tr>
+<td><strong><a href="#loading-screen-module">Loading Screens</a></strong></td>
+<td>Hides the menu while it's being initialized and can display loading progress.</td>
+</tr>
+<tr>
+<td><strong><a href="#character-display-name-module">Character Display Name</a></strong></td>
+<td>Allows the player to enter a display name for their character.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="layer-selector-module">Layer Selector Module</h2>
+<p>A <strong>Layer Selector</strong> is a UI element that allows the playerto change a specific <strong>layer</strong> of a <a class="xref" href="../character-types/layered-character-type.html">Layered Character</a>.</p>
+<p>The following selector types are included.</p>
+<table>
+<thead>
+<tr>
+<th>Selector Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/dropdown-layer-selector.html">Dropdown Selector</a></strong></td>
+<td>Displays the available options in a dropdown list.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/carousel-layer-selector.html">Carousel Selector</a></strong></td>
+<td>Displays the current option and allows the player to cycle through other options using left and right controls.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/Grid-layer-selector.html">Grid Selector</a></strong></td>
+<td>Displays layer options as a grid of preview thumbnails.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/list-layer-selector.html">List Selector</a></strong></td>
+<td>Displays layer options in a vertical or horizontal list, optionally with preview images.</td>
+</tr>
+<tr>
+<td><strong><a class="xref" href="layer-selectors/tab-layer-selector.html">Tab Selector</a></strong></td>
+<td>Works alongside another selector and allows the player to switch which layer that selector controls.</td>
+</tr>
+</tbody>
+</table>
+<img src="../../images/character-creation-menu/ccm-layer-selectors/layer-selectors.png" alt="Layer Selectors" width="500">  
+<p><a class="xref" href="layer-selectors/layer-selector-setup.html">Read More → Layer Selector Setup</a></p>
+<hr>
+<h2 id="character-preview-module">Character Preview Module</h2>
+<p>The <strong>Character Preview</strong> displays the character currently being customized.</p>
+<p>Character previews can be configured with several options:</p>
+<ul>
+<li><strong>Static Sprite Preview</strong> – Displays the <code>preview sprite</code> defined by the Character Type.</li>
+<li><strong>Animated Preview</strong> – Uses an Animator Controller to play character animations.</li>
+<li><strong>Animation Swapping</strong> – Allows additional animations defined by the Character Type to be selected from the menu.</li>
+<li><strong>Rotate Character</strong> – Adds controls that allow the player to view the character from different directions.</li>
+</ul>
+<img src="../../images/character-creation-menu/ccm-character-preview/character-previews-example.png" alt="Character Previews Example" width="500">
+<p><a class="xref" href="character-creator-character-preview.html">Read More → Character Preview</a></p>
+<hr>
+<h2 id="menu-controls-module">Menu Controls Module</h2>
+<p><strong>Menu Controls</strong> provide the buttons and controls used to interact with the Character Creation Menu, along with some additional niceties.</p>
+<p>These controls include:</p>
+<ul>
+<li><strong>Back/Close Menu button</strong>: Closes the menu.</li>
+<li><strong>Save button</strong>: Saves the character's changes.</li>
+<li><strong>Reset button</strong>: Resets the character.</li>
+<li><strong>Randomize button</strong>: Randomizes all layers of the character.</li>
+</ul>
+<img src="../../images/character-creation-menu/ccm-menu-controls/menu-controls-example.png" alt="Menu Controls Example" width="500">
+<p><a class="xref" href="character-creator-menu-controls.html">Read More → Menu Controls</a></p>
+<hr>
+<h2 id="character-history-module">Character History Module</h2>
+<p>The <strong>Character History System</strong> records changes made while customizing a character.</p>
+<p>The <code>CCM History Tracker</code> component stores a <strong>snapshot</strong> of the character whenever a change is made. These snapshots can then be used to undo changes or return to an earlier version of the character.</p>
+<h3 id="history-tracker">History Tracker</h3>
+<p>The History Tracker provides the following settings:</p>
+<ul>
+<li><strong>Snapshot Limit</strong>: Determines how many snapshots can be stored. The limit can be set between <strong>1 and 100</strong>, with a default of <strong>30</strong>.</li>
+<li><strong>Preserve First Snapshot</strong>: Prevents the first snapshot from being overwritten when the snapshot limit is reached.</li>
+</ul>
+<p><img src="../../images/character-creation-menu/ccm-history/history-tracker-component.png" alt="History Tracker Component"></p>
+<p><a class="xref" href="history/character-creator-history-tracking-system.html">Read More → History Tracking System</a></p>
+<h3 id="undo--redo">Undo &amp; Redo</h3>
+<p>The <strong>Undo &amp; Redo</strong> functionality allows players to move backward and forward through their character's history.</p>
+<p>Use the <code>CCM Timeline Button Handler</code> component on a button to connect it to a <strong>History Tracker</strong>.</p>
+<img src="../../images/character-creation-menu/ccm-history/undo-redo/history-undo-redo-buttons.png" alt="History Undo-Redo Buttons" width="500">
+<p><a class="xref" href="history/character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></p>
+<h3 id="history-panels">History Panels</h3>
+<p>A <strong>History Panel</strong> displays the snapshots recorded by the History Tracker. Players can select an entry to revert the character to that version.</p>
+<p>The Character Creator supports several presentation styles:</p>
+<table>
+<thead>
+<tr>
+<th>Panel Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text Based</strong></td>
+<td>Displays text describing what changed in each snapshot.</td>
+</tr>
+<tr>
+<td><strong>Sprite Based</strong></td>
+<td>Displays a preview image of the character for each snapshot.</td>
+</tr>
+<tr>
+<td><strong>Hybrid</strong></td>
+<td>Displays both a description and preview image for each snapshot.</td>
+</tr>
+</tbody>
+</table>
+<img src="../../images/character-creation-menu/ccm-history/panels/history-panel-text.png" alt="Text Based History Panel" width="400">
+<img src="../../images/character-creation-menu/ccm-history/panels/history-panel-sprite-preview.png" alt="Sprite Based History Panel" width="500">
+<p><a class="xref" href="history/character-creator-history-panels.html">Read More → History Panels</a></p>
+<hr>
+<h2 id="randomization-controls-module">Randomization Controls Module</h2>
+<p>Character randomization functionality can be added in multiple differents ways</p>
+<ul>
+<li><strong>Randomize Button</strong> - Randomizes all layers of the character.</li>
+<li><strong>Controlled Randomization</strong> - Allows the player to choose which layers should be randomized.</li>
+<li><strong>Layer-Specific Randomization</strong> - Allows individual layers to be randomized directly from <a href="#layer-selector-module">Layer Selectors</a>.</li>
+</ul>
+<img src="../../images/character-creation-menu/ccm-character-randomization/controlled-randomization.png" alt="Controlled Randomization" width="400">
+<p><a class="xref" href="character-creator-character-randomization.html">Read More → Character Randomization</a></p>
+<hr>
+<h2 id="loading-screen-module">Loading Screen Module</h2>
+<p>Loading screens hide the <strong>Character Creation Menu</strong> while it's being setup.</p>
+<p>Loading Screens are modular, allowing additional elements such as loading bars and progress text to be added or removed as needed.</p>
+<img src="../../images/character-creation-menu/ccm-loading-screen/loading-screens/loading-screens.png" alt="Loading Screens" width="500">
+<p><a class="xref" href="character-creator-loading-screens.html">Read More → Loading Screen</a></p>
+<hr>
+<h2 id="character-display-name-module">Character Display Name Module</h2>
+<p>The Character Display Name module allows the player to give their character a display name.</p>
+<p>The display name can later be displayed anywhere in your game, such as above the character's head.</p>
+<p><img src="../../images/character-creation-menu/ccm-character-display-name-field/character-display-name-field.png" alt="Character Display Name Field"></p>
+<p><a class="xref" href="character-creator-character-display-name.html">Read More → Character Display Name</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/character-creator-overview.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
