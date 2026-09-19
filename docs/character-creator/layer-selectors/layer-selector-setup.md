@@ -46,7 +46,7 @@ The most common setup is to use **multiple Layer Selectors**, one for each layer
 There are two ways to setup Layer Selectors:
 
 - [Pre-Setup Prefabs](#pre-setup-folder) - Use prefabs which are already full setup and functional.
-- [Manual Setup](#manager-setup) - Setup Layer Selectors from scratch.
+- [Manual Setup](#manual-setup) - Setup Layer Selectors from scratch.
 
 ---
 

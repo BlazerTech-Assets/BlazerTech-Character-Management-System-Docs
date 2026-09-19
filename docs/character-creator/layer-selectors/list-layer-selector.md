@@ -6,7 +6,7 @@ uid: ccm-list-layer-selector
 
 A **List Layer Selector** contains a vertical list where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.
 
-![List Layer Selector](~/images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png)
+<img src="~/images/character-creation-menu/ccm-layer-selectors/list-layer-selector.png" alt="List Layer Selector" width="500" />
 
 ---
 
@@ -46,7 +46,7 @@ Located in the **Pre-Setup** subfolder.
 
 These are bulk prefabs that contain multiple **List Layer Selectors**.
 
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#how-layer-selectors-work).  
 These will work out of the box without any extra setup required.
 
 - **List Selectors [Auto Create]** – Instantiates list selectors [+Title] at runtime. Uses a **Horizontal Layout Group component** to sort them.  

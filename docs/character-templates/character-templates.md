@@ -35,8 +35,6 @@ At runtime, a **Renderer component** can be used to easily create and display a 
 
 There are three types of Character Templates.
 
----
-
 ### Unified Character Template
 
 Used to create characters with a single, fully assembled spritesheet.  
@@ -72,7 +70,7 @@ When used, a new **Layered Character** is created using the **Layer Options** yo
 
 ### Randomized Layered Character Templates
 
-Used to create randomized modular character based on a set of pre-defined rules. Unlike a standard [Layered Character Template](#layered-character-templates) where the final character is the same every time, a Randomized Layered Character Template creates a new random character every time it's used.
+Used to create randomized modular character based on a set of pre-defined rules. Unlike a standard [Layered Character Template](#layered-character-template) where the final character is the same every time, a Randomized Layered Character Template creates a new random character every time it's used.
 
 ![Randomized Layered Character Template](~/images/character-templates/randomized-layered-character-templates/randomized-layered-character-template.png)
 

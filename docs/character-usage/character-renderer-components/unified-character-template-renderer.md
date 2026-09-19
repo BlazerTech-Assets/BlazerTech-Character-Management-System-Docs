@@ -15,7 +15,7 @@ This component is responsible for:
 
 **Requirements**:
 - A [Unified Character Type](xref:unified-character-type)
-- At least one [Unified Character Template](xref:character-templates#Unified-character-template)
+- At least one [Unified Character Template](xref:character-templates#unified-character-template)
 
 ![Unified Character Template Renderer Component](~/images/components/character-renderer-components/unified-character-template-renderer/unified-character-template-renderer.png)
 

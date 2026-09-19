@@ -105,6 +105,7 @@
 
 <p>A <strong>character preview</strong> shows a live view of the character in the <strong>Character Creation Menu</strong>.</p>
 <p>Whenever a layer of the character is modified, the preview is updated automatically.</p>
+<img src="../../images/character-creation-menu/ccm-character-preview/character-preview(rotation-contrtolls%2C%20anim%20buttons).png" alt="Character Preview Example" width="300">
 <hr>
 <h2 id="character-preview-controller">Character Preview Controller</h2>
 <p>If using the <strong>Animated Preview Mode</strong>, an <strong>Animator Controller</strong> is required.</p>
@@ -116,7 +117,7 @@
 <li><strong>Fastest Setup</strong> &gt; Use the <a href="#pre-setup-prefabs">Pre-Setup Prefabs</a></li>
 <li><strong>Custom Setup</strong> &gt; Follow the <a href="#manual-setup">Manual Setup</a></li>
 </ul>
-<p>Regardless of the setup method. The <strong>preview Mode</strong> must be configured.</p>
+<p>Regardless of the setup method. The <strong>Preview Mode</strong> must be configured.</p>
 <hr>
 <h3 id="preview-mode">Preview Mode</h3>
 <p>The Character Preview supports two display modes:</p>
@@ -155,6 +156,24 @@
 <p>Animator Controller setup and requirements are explained here:<br>
 <a class="xref" href="character-creator-character-preview-controller.html">Character Preview Controller</a></p>
 </div>
+<hr>
+<h2 id="additional-controls">Additional Controls</h2>
+<p>Additional controls can be added to a <strong>Character Preview</strong> to add more functionality.</p>
+<p>The <strong>Character Preview</strong> contains two types of additional controls:</p>
+<hr>
+<h3 id="rotation-controls">Rotation Controls</h3>
+<p><strong>Rotation Controls</strong> allow the player to change the character's facing direction.</p>
+<img src="../../images/character-creation-menu/ccm-character-preview/character-preview(rotation-controls).png" alt="Rotation Controls" width="300">
+<p>Two button can be added to the preview, allowing the player to rotate the character left or right.</p>
+<p><strong>Rotation Controls</strong> require <strong>Animated Preview Mode</strong>.</p>
+<p><a href="#adding-rotation-controls">Manual Setup</a></p>
+<hr>
+<h3 id="animation-controls">Animation Controls</h3>
+<p><strong>Animation Controls</strong> allow the player to switch between different pre-defined animations.</p>
+<img src="../../images/character-creation-menu/ccm-character-preview/character-preview(anim-buttons).png" alt="Animation Controls" width="300">
+<p>Each animation is represented by a button. Selecting an animation causes the Character Preview to play the related animation.</p>
+<p><strong>Animation Controls</strong> require <strong>Animated Preview Mode</strong>.</p>
+<p><a href="#adding-animation-controls">Manual Setup</a></p>
 <hr>
 <h2 id="prefabs">Prefabs</h2>
 <p>Prefabs offer easy implementation of character previews without the need to set them up yourself.</p>
@@ -225,7 +244,7 @@ Variations contain different sprites but do not change any functionality.</p>
 <p>Now once you enter <strong>Play Mode</strong>, you'll see the character displayed in the preview you just created.</p>
 <hr>
 <h3 id="adding-rotation-controls">Adding Rotation Controls</h3>
-<p>Rotation Controls allow the player to change the characters facing direction.</p>
+<p>Rotation Controls allow the player to change the character's facing direction.</p>
 <h4 id="setup-1">Setup</h4>
 <ol>
 <li>Create a new <strong>GameObject</strong>.</li>

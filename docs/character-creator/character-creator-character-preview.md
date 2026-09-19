@@ -8,6 +8,8 @@ A **character preview** shows a live view of the character in the **Character Cr
 
 Whenever a layer of the character is modified, the preview is updated automatically.
 
+<img src="~/images/character-creation-menu/ccm-character-preview/character-preview(rotation-contrtolls, anim buttons).png" alt="Character Preview Example" width="300" />
+
 ---
 
 ## Character Preview Controller
@@ -25,7 +27,7 @@ This controller has specific guidelines that must be followed.
 - **Fastest Setup** > Use the [Pre-Setup Prefabs](#pre-setup-prefabs)  
 - **Custom Setup** > Follow the [Manual Setup](#manual-setup)
 
-Regardless of the setup method. The **preview Mode** must be configured.
+Regardless of the setup method. The **Preview Mode** must be configured.
 
 ---
 
@@ -55,6 +57,42 @@ The Character Preview supports two display modes:
 > [!TIP]  
 > Animator Controller setup and requirements are explained here:  
 > [Character Preview Controller](xref:ccm-character-preview-controller)
+
+---
+
+## Additional Controls
+
+Additional controls can be added to a **Character Preview** to add more functionality.
+
+The **Character Preview** contains two types of additional controls:
+
+---
+
+### Rotation Controls
+
+**Rotation Controls** allow the player to change the character's facing direction.
+
+<img src="~/images/character-creation-menu/ccm-character-preview/character-preview(rotation-controls).png" alt="Rotation Controls" width="300" />
+
+Two button can be added to the preview, allowing the player to rotate the character left or right.
+
+**Rotation Controls** require **Animated Preview Mode**.
+
+[Manual Setup](#adding-rotation-controls)
+
+---
+
+### Animation Controls
+
+**Animation Controls** allow the player to switch between different pre-defined animations.
+
+<img src="~/images/character-creation-menu/ccm-character-preview/character-preview(anim-buttons).png" alt="Animation Controls" width="300" />
+
+Each animation is represented by a button. Selecting an animation causes the Character Preview to play the related animation.
+
+**Animation Controls** require **Animated Preview Mode**.
+
+[Manual Setup](#adding-animation-controls)
 
 ---
 
@@ -147,7 +185,7 @@ Now once you enter **Play Mode**, you'll see the character displayed in the prev
 
 ### Adding Rotation Controls
 
-Rotation Controls allow the player to change the characters facing direction.
+Rotation Controls allow the player to change the character's facing direction.
 
 #### Setup
 

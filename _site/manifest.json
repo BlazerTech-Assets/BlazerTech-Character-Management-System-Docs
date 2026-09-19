@@ -3190,6 +3190,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(anim-buttons).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(anim-buttons).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creation-menu/ccm-character-preview/character-preview(rotation-controls).png",
       "output": {
         "resource": {

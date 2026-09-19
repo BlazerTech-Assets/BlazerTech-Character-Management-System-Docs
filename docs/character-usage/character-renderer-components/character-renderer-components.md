@@ -48,7 +48,7 @@ Creates a Unified Character from a Unified Character Template and displays it in
 
 ### Requirements
 - A [Unified Character Type](xref:unified-character-type)
-- At least one [Unified Character Template](xref:character-templates#Unified-character-template)
+- At least one [Unified Character Template](xref:character-templates#unified-character-template)
 
 ---
 
